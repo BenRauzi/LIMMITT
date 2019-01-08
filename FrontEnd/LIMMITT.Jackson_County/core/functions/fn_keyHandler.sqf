@@ -64,6 +64,14 @@ switch (_code) do
 	{
 		if (isNull (findDisplay 5002)) then { [] call Harris_openTwitterType; } else { [] call Harris_sendMessage }; true;
 	};
+
+	case 15:
+	{
+		if (alive player && !_alt && !_shift && !_ctrlKey && !(isNull (findDisplay 46))) then {
+				[]call Harris_openInteraction;
+		};
+	};
+
 /*
 	case 15:
 	{

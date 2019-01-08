@@ -25,12 +25,23 @@ TrafficLights_Functions =
   ["fn_manageTrafficLights", "Foski_manageTrafficLights"]
 ];
 
+InteractionDir = "\Harris_Server\Functions\Interaction\";
+Interaction_Functions = 
+[
+  ["fn_colourRadialInner", "Harris_colourRadialInner"],
+  ["fn_colourRadialOuter", "Harris_colourRadialOuter"],
+  ["fn_colourRadialOuter", "Harris_colourRadialOuter"],
+  ["fn_interactionExecute", "Harris_interactionExecute"],
+  ["fn_openinteraction", "Harris_openinteraction"]
+];
+
 
 functionArrays = 
 "[
   ['ServerInit_Functions','ServerInitDir'],
   ['Twitter_Functions','TwitterDir'],
-  ['TrafficLights_Functions','TrafficLightsDir']
+  ['TrafficLights_Functions','TrafficLightsDir'],
+  ['Interaction_Functions','InteractionDir']
 ]";
 
 functionArrays2 = call compile functionArrays;
