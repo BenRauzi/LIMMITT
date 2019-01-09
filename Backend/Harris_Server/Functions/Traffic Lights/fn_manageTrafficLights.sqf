@@ -6,13 +6,13 @@
 Foski_manageTrafficLights ={
 	[] spawn {
 		while {true} do {
-			["red","green"] call Foski_changeTrafficLights;	
+			["red","green"] remoteExecCall ["Foski_changeTrafficLights", 0];	
 			sleep 10;
-			["red","yellow"] call Foski_changeTrafficLights;
+			["red","yellow"] remoteExecCall ["Foski_changeTrafficLights", 0];
 			sleep 3;
-			["green","red"] call Foski_changeTrafficLights;
+			["green","red"] remoteExecCall ["Foski_changeTrafficLights", 0];
 			sleep 10;
-			["yellow","red"] call Foski_changeTrafficLights;
+			["yellow","red"] remoteExecCall ["Foski_changeTrafficLights", 0];
 			sleep 3;
 		};
 	};

@@ -1,9 +1,16 @@
 class cfgInteractions
 {
+	class OpenPhone
+	{
+		condition = "[alive player, !(player getVariable ''tied''), !(player getVariable ''restrained''), (player distance Harris_currentCursorObject < 3)]";
+		action = "[] call fnc_opentablet;";
+		icon = "001_SmartPhone.paa";
+		text = "Open Phone";
+	};
 	class PoliceVehicle
 	{
 		action = "";
-		icon = "013_police-shield.paa";
+		icon = "027-hat-of-a-policeman.paa";
 		text = "Police";
 		class Registration
 		{
@@ -67,27 +74,7 @@ class cfgInteractions
 			icon = "002_Tag.paa";
 			text = "Push Boat";
 		};
-		class unFlip 
-		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air')]";
-			action = "Harris_currentCursorObject setPos [getPos Harris_currentCursorObject select 0, getPos Harris_currentCursorObject select 1, (getPos Harris_currentCursorObject select 2)+0.5];";
-			icon = "002_Tag.paa";
-			text = "Unflip";
-		};
-	};
-	class ctrlVehicle
-	{
-		action = "";
-		icon = "023-car-repair.paa";
-		text = "Vehicle";
-		class pushBoat 
-		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Sea')]";
-			action = "[] spawn life_fnc_pushObject;";
-			icon = "002_Tag.paa";
-			text = "Push Boat";
-		};
-		class unFlip 
+		class unFlip
 		{
 			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air')]";
 			action = "Harris_currentCursorObject setPos [getPos Harris_currentCursorObject select 0, getPos Harris_currentCursorObject select 1, (getPos Harris_currentCursorObject select 2)+0.5];";

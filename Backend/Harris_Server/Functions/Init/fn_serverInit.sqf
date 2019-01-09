@@ -4,5 +4,5 @@
 */
 
 LIMMITT_ServerInit ={
-	[] call Foski_manageTrafficLights; // Call the traffic lights script
+	missionNameSpace setVariable ["firstLogin", true, true];
 };

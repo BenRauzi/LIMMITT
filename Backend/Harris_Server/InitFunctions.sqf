@@ -3,10 +3,11 @@
   Description: Initialises All Server-Side Functions, Meaning they can be saved server-side but accessed by the client
 */
 
-ServerInitDir = "\Harris_Server\Functions\Server Init\";
-ServerInit_Functions =
+InitDir = "\Harris_Server\Functions\Init\";
+Init_Functions =
 [
-  ["fn_serverInit","LIMMITT_ServerInit"]
+  ["fn_serverInit","LIMMITT_ServerInit"],
+  ["fn_clientInit","LIMMITT_clientInit"]
 ];
 
 TwitterDir = "\Harris_Server\Functions\Twitter\";
@@ -30,7 +31,6 @@ Interaction_Functions =
 [
   ["fn_colourRadialInner", "Harris_colourRadialInner"],
   ["fn_colourRadialOuter", "Harris_colourRadialOuter"],
-  ["fn_colourRadialOuter", "Harris_colourRadialOuter"],
   ["fn_interactionExecute", "Harris_interactionExecute"],
   ["fn_openinteraction", "Harris_openinteraction"]
 ];
@@ -38,7 +38,7 @@ Interaction_Functions =
 
 functionArrays = 
 "[
-  ['ServerInit_Functions','ServerInitDir'],
+  ['Init_Functions','InitDir'],
   ['Twitter_Functions','TwitterDir'],
   ['TrafficLights_Functions','TrafficLightsDir'],
   ['Interaction_Functions','InteractionDir']
