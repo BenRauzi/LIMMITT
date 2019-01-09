@@ -423,8 +423,8 @@ class rscTitles
 				idc = 1000;
 				text = "LIMMITT Twitter Feed"; //--- ToDo: Localize;
 				x = 0.0 * safezoneW + safezoneX;
-				y = 0.62 * safezoneH + safezoneY;
-				w = 0.095 * safezoneW;
+				y = 0.61 * safezoneH + safezoneY;
+				w = 0.15 * safezoneW;
 				h = 0.05 * safezoneH;
 				sizeEx = 0.05;
 			};
@@ -452,8 +452,8 @@ class Harris_twitterType
 			idc = 1000;
 			text = "LIMMITT Twitter Feed"; //--- ToDo: Localize;
 			x = 0.0 * safezoneW + safezoneX;
-			y = 0.62 * safezoneH + safezoneY;
-			w = 0.095 * safezoneW;
+			y = 0.61 * safezoneH + safezoneY;
+			w = 0.15 * safezoneW;
 			h = 0.05 * safezoneH;
 			sizeEx = 0.05;
 		};
