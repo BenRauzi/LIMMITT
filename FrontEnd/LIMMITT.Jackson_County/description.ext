@@ -5,7 +5,15 @@ joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 1;
 disabledAI = true;
-disableChannels[]={0,1,2,3,4,5};
+disableChannels[] = {
+	{0, false, false}, //--- Global Chat
+	{1, false, false}, //--- Side Chat
+	{2, false, false}, //--- Command Chat
+	{3, false, false}, //--- Group Chat
+	{4, false, false}, //--- Vehicle Chat
+	{5, false, false}, //--- Direct Chat
+	{6, false, false} //--- System Chat
+};
 enableDebugConsole[] = {"76561198072625284","76561198099644981","76561198062192032"}; 
 
 respawnDialog = 0;
