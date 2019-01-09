@@ -110,8 +110,8 @@ class rscTitles
 				text = "\Harris_Client\Misc\logo.paa";
 				x = "0.005 * safezoneW + safezoneX";
 				y = "0.00500001 * safezoneH + safezoneY";
-				w = "0.118594 * safezoneW";
-				h = "0.033 * safezoneH";
+				w = "0.16 * safezoneW";
+				h = "0.04 * safezoneH";
 			};
 			class hudstatus: RscStructuredText
 			{
@@ -424,7 +424,7 @@ class rscTitles
 				text = "LIMMITT Twitter Feed"; //--- ToDo: Localize;
 				x = 0.0 * safezoneW + safezoneX;
 				y = 0.62 * safezoneH + safezoneY;
-				w = 0.1 * safezoneW;
+				w = 0.095 * safezoneW;
 				h = 0.05 * safezoneH;
 				sizeEx = 0.05;
 			};
@@ -453,7 +453,7 @@ class Harris_twitterType
 			text = "LIMMITT Twitter Feed"; //--- ToDo: Localize;
 			x = 0.0 * safezoneW + safezoneX;
 			y = 0.62 * safezoneH + safezoneY;
-			w = 0.1 * safezoneW;
+			w = 0.095 * safezoneW;
 			h = 0.05 * safezoneH;
 			sizeEx = 0.05;
 		};
