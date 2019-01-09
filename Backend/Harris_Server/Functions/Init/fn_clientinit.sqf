@@ -23,6 +23,34 @@ LIMMITT_clientInit ={
 	waitUntil {!(isNull (findDisplay 46))};
 	if !(isNil {missionNamespace getVariable "firstLogin"}) then {
 		[] remoteExecCall ["Foski_manageTrafficLights",2];
+		[] remoteExec ["Harris_initOreLoop", 2];
 		missionNamespace setVariable ["firstLogin", nil, true];
 	};
+
+	HHarris_mineObjects = ["JD_OreCoal","JD_OreDiamond","JD_OreGold","JD_OreIron"]; 
+
+	Harris_oreMined = 0;
+
+	Harris_action = false;
+
+	Harris_oreTypes =
+	[
+		["JD_OreCoal","Harris_coalOre"],
+		["JD_OreDiamond","Harris_diamondOre"],
+		["JD_OreGold","Harris_goldOre"],
+		["JD_OreIron","Harris_ironOre"]
+	];
+
+	Harris_mineArea = 
+	[
+		["Coal_1_MineArea","Coal","JD_OreCoal"],
+		["Iron_1_MineArea","Iron","JD_OreIron"],
+		["Gold_1_MineArea","Gold","JD_OreGold"],
+		["Diamond_1_MineArea","Gold","JD_OreDiamond"]
+	];
+
+
+	player addEventHandler["Fired", {_this call Harris_mineObject; }];
+
 };
+

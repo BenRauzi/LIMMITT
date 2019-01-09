@@ -35,13 +35,22 @@ Interaction_Functions =
   ["fn_openinteraction", "Harris_openinteraction"]
 ];
 
+MiningDir = "\Harris_Server\Functions\Mining\";
+Mining_Functions = 
+[
+  ["fn_initOreLoop", "Harris_initOreLoop"],
+  ["fn_mineObject", "Harris_mineObject"],
+  ["fn_oreSpawn", "Harris_oreSpawn"]
+];
+
 
 functionArrays = 
 "[
   ['Init_Functions','InitDir'],
   ['Twitter_Functions','TwitterDir'],
   ['TrafficLights_Functions','TrafficLightsDir'],
-  ['Interaction_Functions','InteractionDir']
+  ['Interaction_Functions','InteractionDir'],
+  ['Mining_Functions','MiningDir']
 ]";
 
 functionArrays2 = call compile functionArrays;

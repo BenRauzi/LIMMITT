@@ -2059,3 +2059,71 @@ class CfgSounds
 		titles[] = {};
 	};
 };
+class CfgWeapons
+{
+	class ToolKit;
+	class Harris_coalOre: ToolKit
+	{
+		displayName = "Coal Ore";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 10;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\a3l_rocks\bits_small_rock - Coal.p3d";
+		picture = "\Harris_Client\Data\coalUnrefined.paa";
+		descriptionShort = "Unrefined Coal";
+	};
+	class Harris_diamondOre: ToolKit
+	{
+		displayName = "Diamond Ore";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 10;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\a3l_rocks\bits_small_rock.p3d";
+		picture = "\Harris_Client\Data\ironOre.paa";
+		descriptionShort = "Diamond Ore";
+	};
+	class Harris_ironOre: ToolKit
+	{
+		displayName = "Iron Ore";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 10;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\a3l_rocks\bits_small_rock - Iron.p3d";
+		picture = "\Harris_Client\Data\ironOre.paa";
+		descriptionShort = "Iron Ore";
+	};
+	class Harris_goldOre: ToolKit
+	{
+		displayName = "Gold Ore";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 10;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\a3l_rocks\bits_small_rock - Gold.p3d";
+		picture = "\Harris_Client\Data\ironOre.paa";
+		descriptionShort = "Gold Ore";
+	};
+};
