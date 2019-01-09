@@ -43,6 +43,12 @@ Mining_Functions =
   ["fn_oreSpawn", "Harris_oreSpawn"]
 ];
 
+NotificationsDir = "\Harris_Server\Functions\Notifications\";
+Notifications_Functions = 
+[
+  ["fn_Notifications", "Harris_Notifications"]
+];
+
 
 functionArrays = 
 "[
@@ -50,7 +56,8 @@ functionArrays =
   ['Twitter_Functions','TwitterDir'],
   ['TrafficLights_Functions','TrafficLightsDir'],
   ['Interaction_Functions','InteractionDir'],
-  ['Mining_Functions','MiningDir']
+  ['Mining_Functions','MiningDir'],
+  ['Notifications_Functions','NotificationsDir']
 ]";
 
 functionArrays2 = call compile functionArrays;

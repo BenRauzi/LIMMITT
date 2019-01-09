@@ -52,5 +52,12 @@ LIMMITT_clientInit ={
 
 	player addEventHandler["Fired", {_this call Harris_mineObject; }];
 
+	Harris_Messages = 0;
+	message1_active = false;
+	message2_active = false;
+	message3_active = false;
+	message4_active = false;
+	message5_active = false;
+
 };
 

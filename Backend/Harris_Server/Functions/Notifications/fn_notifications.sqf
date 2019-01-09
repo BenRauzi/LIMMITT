@@ -19,13 +19,6 @@
 		message5_active = false;
 */
 
-Harris_Messages = 0;
-message1_active = false;
-message2_active = false;
-message3_active = false;
-message4_active = false;
-message5_active = false;
-
 Harris_Notifications = {
 	params["_Title","_Body","_Type"];
 
@@ -162,7 +155,6 @@ Harris_Notifications = {
 	_bodyCtrl ctrlCommit 0.5;
 
 	player say "hint";
-
 
 	[_messages] spawn {
 		sleep 5;
