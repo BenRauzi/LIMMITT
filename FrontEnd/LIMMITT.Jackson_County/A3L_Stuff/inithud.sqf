@@ -289,7 +289,7 @@ _gunmodetext = parseText format ["<t font='puristaLight' color='#FFFFFF' size='1
 
 _weapontexthud = parseText format ["<t font='puristaLight' color='#FFFFFF' size='1' align='left'>%1</t>", _weaponname];
 ((uiNamespace getVariable "a3lhud") displayCtrl 41652) ctrlSetStructuredText _playerstatustext;
-((uiNamespace getVariable "a3lhud") displayCtrl 16418) ctrlSetText _picture;
+((uiNamespace getVariable "a3lhud") displayCtrl 16418) ctrlSetText "";
 ((uiNamespace getVariable "a3lhud") displayCtrl 62362) ctrlSetStructuredText _playernametext;
 //((uiNamespace getVariable "a3lhud") displayCtrl 16423) ctrlSetStructuredText _zeroinghudtext;
 ((uiNamespace getVariable "a3lhud") displayCtrl 16422) ctrlSetStructuredText _ammohudtext;

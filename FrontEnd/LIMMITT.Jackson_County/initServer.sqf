@@ -29,3 +29,4 @@ publicVariable "ticketLog";
 
 execVM "gmtime.sqf";
 
+missionNameSpace setVariable ["firstLogin", false, true];

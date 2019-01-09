@@ -20,8 +20,9 @@ LIMMITT_clientInit ={
 	outerButton3 = [1221,2221,3221,4221,5221,6221,7221,8221];
 	outerButton4 = [1222,2222,3222,4222,5222,6222,7222,8222];
 
+	waitUntil {!(isNull (findDisplay 46))};
 	if !(isNil {missionNamespace getVariable "firstLogin"}) then {
+		[] remoteExecCall ["Foski_manageTrafficLights",2];
 		missionNamespace setVariable ["firstLogin", nil, true];
-		[] remoteExecCall["Foski_manageTrafficLights",2];
 	};
 };

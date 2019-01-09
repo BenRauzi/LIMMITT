@@ -66,5 +66,3 @@ functionArrays2 = call compile functionArrays;
   } foreach Harris_File;
 
 } foreach functionArrays2
-
-[] call LIMMITT_ServerInit; // Call Server Init Function

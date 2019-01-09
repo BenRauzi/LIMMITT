@@ -2,7 +2,7 @@ class cfgInteractions
 {
 	class OpenPhone
 	{
-		condition = "[alive player, !(player getVariable ''tied''), !(player getVariable ''restrained''), (player distance Harris_currentCursorObject < 3)]";
+		condition = "[alive player, !(player getVariable 'tied'), !(player getVariable 'restrained'), (player distance Harris_currentCursorObject < 3)]";
 		action = "[] call fnc_opentablet;";
 		icon = "001_SmartPhone.paa";
 		text = "Open Phone";

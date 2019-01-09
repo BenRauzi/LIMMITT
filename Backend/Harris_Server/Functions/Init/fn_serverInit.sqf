@@ -4,5 +4,5 @@
 */
 
 LIMMITT_ServerInit ={
-	missionNameSpace setVariable ["firstLogin", true, true];
+	missionNameSpace setVariable ["firstLogin", false, true];
 };
