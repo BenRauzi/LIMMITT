@@ -22,7 +22,7 @@ HC_UID = getPlayerUID hc_1;
 life_HC_isActive = true;
 };life_fnc_sidechat =
 compileFinal "
-	if(life_sidechat) then {life_sidechat = false;} else {life_sidechat = true;};
+	life_sidechat = false; };
 	[[player,life_sidechat,playerSide],""TON_fnc_managesc"",false,false] spawn bis_fnc_mp;
 	[] call life_fnc_settingsMenu;
 ";

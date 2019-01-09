@@ -1,10 +1,233 @@
-class radialMenu 
+
+class Harris_RscButton
+{
+	deletable = 0;
+	fade = 0;
+	colorText[] = 
+	{
+		1,
+		1,
+		1,
+		1
+	};
+	colorDisabled[] = 
+	{
+		1,
+		1,
+		1,
+		0.25
+	};
+	colorBackground[] = 
+	{
+		0,
+		0,
+		0,
+		0.5
+	};
+	colorBackgroundDisabled[] = 
+	{
+		0,
+		0,
+		0,
+		0.5
+	};
+	colorBackgroundActive[] = 
+	{
+		0,
+		0,
+		0,
+		1
+	};
+	colorFocused[] = 
+	{
+		0,
+		0,
+		0,
+		1
+	};
+	colorShadow[] = 
+	{
+		0,
+		0,
+		0,
+		0
+	};
+	colorBorder[] = 
+	{
+		0,
+		0,
+		0,
+		1
+	};
+	soundEnter[] = 
+	{
+		"\A3\ui_f\data\sound\RscButton\soundEnter",
+		0.09,
+		1
+	};
+	soundPush[] = 
+	{
+		"\A3\ui_f\data\sound\RscButton\soundPush",
+		0.09,
+		1
+	};
+	soundClick[] = 
+	{
+		"\A3\ui_f\data\sound\RscButton\soundClick",
+		0.09,
+		1
+	};
+	soundEscape[] = 
+	{
+		"\A3\ui_f\data\sound\RscButton\soundEscape",
+		0.09,
+		1
+	};
+	access = 0;
+	type = 1;
+	text = "";
+	period = 1.2;
+	periodFocus = 1.2;
+	periodOver = 1.2;
+	style = 2;
+	x = 0;
+	y = 0;
+	w = 0.095589;
+	h = 0.039216;
+	shadow = 2;
+	font = "PuristaMedium";
+	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	offsetX = 0;
+	offsetY = 0;
+	offsetPressedX = 0;
+	offsetPressedY = 0;
+	borderSize = 0;
+};
+class Harris_RscText
+{
+	deletable = 0;
+	fade = 0;
+	colorBackground[] = 
+	{
+		0,
+		0,
+		0,
+		0
+	};
+	colorText[] = 
+	{
+		1,
+		1,
+		1,
+		1
+	};
+	access = 0;
+	type = 0;
+	idc = -1;
+	text = "";
+	fixedWidth = 0;
+	colorShadow[] = 
+	{
+		0,
+		0,
+		0,
+		0.5
+	};
+	tooltipColorText[] = 
+	{
+		1,
+		1,
+		1,
+		1
+	};
+	tooltipColorBox[] = 
+	{
+		1,
+		1,
+		1,
+		1
+	};
+	tooltipColorShade[] = 
+	{
+		0,
+		0,
+		0,
+		0.65
+	};
+	x = 0;
+	y = 0;
+	h = 0.037;
+	w = 0.3;
+	style = 0;
+	shadow = 1;
+	font = "EtelkaNarrowMediumPro";
+	SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	linespacing = 1;
+};
+
+class Harris_RscPicture
+{
+	deletable = 0;
+	fade = 0;
+	colorBackground[] = 
+	{
+		0,
+		0,
+		0,
+		0
+	};
+	colorText[] = 
+	{
+		1,
+		1,
+		1,
+		1
+	};
+	access = 0;
+	type = 0;
+	idc = -1;
+	style = 48;
+	font = "TahomaB";
+	sizeEx = 0;
+	lineSpacing = 0;
+	text = "";
+	fixedWidth = 0;
+	tooltipColorText[] = 
+	{
+		1,
+		1,
+		1,
+		1
+	};
+	tooltipColorBox[] = 
+	{
+		1,
+		1,
+		1,
+		1
+	};
+	tooltipColorShade[] = 
+	{
+		0,
+		0,
+		0,
+		0.65
+	};
+	shadow = 0;
+	x = 0;
+	y = 0;
+	w = 0.2;
+	h = 0.15;
+};
+
+
+class radialMenu
 {
 	idd = 1723;
 	class controls
 	{	
 		// Defines
-			class Harris_radial_button: RscButton {
+			class Harris_radial_button: Harris_RscButton {
 				idc = -1;
 				colorBackground[] = {0,0,0,0};
 				colorActive[] = {0,0,0,0};
@@ -16,7 +239,7 @@ class radialMenu
 	   			colorBorder[] = {0,0,0,0};
 			};
 
-			class Harris_radial: RscPicture {
+			class Harris_radial: Harris_RscPicture {
 				idc = -1;
 				x = 0 * safezoneW + safezoneX;
 				y = -0.05 * safezoneH + safezoneY;
@@ -48,7 +271,7 @@ class radialMenu
 				h = 0.044 * safezoneH;
 			};
 
-			class Text_1_i: RscText
+			class Text_1_i: Harris_RscText
 			{
 				idc = 1112;
 				text = "Handcuff";
@@ -118,7 +341,7 @@ class radialMenu
 				h = 0.044 * safezoneH;
 			};
 
-			class Text_1_o_1: RscText
+			class Text_1_o_1: Harris_RscText
 			{
 				idc = 1215;
 
@@ -130,7 +353,7 @@ class radialMenu
 				h = 0.05 * safezoneH;
 			};
 			
-			class Text_1_o_2: RscText
+			class Text_1_o_2: Harris_RscText
 			{
 				idc = 1216;
 
@@ -141,7 +364,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_1_o_3: RscText
+			class Text_1_o_3: Harris_RscText
 			{
 				idc = 1217;
 
@@ -152,7 +375,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_1_o_4: RscText
+			class Text_1_o_4: Harris_RscText
 			{
 				idc = 1218;
 
@@ -226,7 +449,7 @@ class radialMenu
 				h = 0.044 * safezoneH;
 			};
 
-			class Text_2_i: RscText
+			class Text_2_i: Harris_RscText
 			{
 				idc = 2112;
 				text = "Handcuff";
@@ -296,7 +519,7 @@ class radialMenu
 				w = 0.0257812 * safezoneW;
 				h = 0.044 * safezoneH;
 			};
-			class Text_2_o_1: RscText
+			class Text_2_o_1: Harris_RscText
 			{
 				idc = 2215;
 
@@ -307,7 +530,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_2_o_2: RscText
+			class Text_2_o_2: Harris_RscText
 			{
 				idc = 2216;
 
@@ -318,7 +541,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_2_o_3: RscText
+			class Text_2_o_3: Harris_RscText
 			{
 				idc = 2217;
 
@@ -329,7 +552,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_2_o_4: RscText
+			class Text_2_o_4: Harris_RscText
 			{
 				idc = 2218;
 				text = "Handcuff";
@@ -398,7 +621,7 @@ class radialMenu
 				h = 0.044 * safezoneH;
 			};
 
-			class Text_3_i: RscText
+			class Text_3_i: Harris_RscText
 			{
 				idc = 3112;
 				text = "Handcuff";
@@ -465,7 +688,7 @@ class radialMenu
 				w = 0.0257812 * safezoneW;
 				h = 0.044 * safezoneH;
 			};
-			class Text_3_o_1: RscText
+			class Text_3_o_1: Harris_RscText
 			{
 				idc = 3215;
 				style = ST_CENTER;
@@ -476,7 +699,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_3_o_2: RscText
+			class Text_3_o_2: Harris_RscText
 			{
 				idc = 3216;
 				style = ST_CENTER;
@@ -487,7 +710,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_3_o_3: RscText
+			class Text_3_o_3: Harris_RscText
 			{
 				idc = 3217;
 				style = ST_CENTER;
@@ -497,7 +720,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_3_o_4: RscText
+			class Text_3_o_4: Harris_RscText
 			{
 				idc = 3218;
 				style = ST_CENTER;
@@ -569,7 +792,7 @@ class radialMenu
 					h = 0.044 * safezoneH;
 				};
 
-				class Text_4_i: RscText
+				class Text_4_i: Harris_RscText
 				{
 					idc = 4112;
 					text = "Handcuff";
@@ -636,7 +859,7 @@ class radialMenu
 				w = 0.0257812 * safezoneW;
 				h = 0.044 * safezoneH;
 			};
-			class Text_4_o_1: RscText
+			class Text_4_o_1: Harris_RscText
 			{
 				idc = 4215;
 
@@ -647,7 +870,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_4_o_2: RscText
+			class Text_4_o_2: Harris_RscText
 			{
 				idc = 4216;
 
@@ -658,7 +881,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_4_o_3: RscText
+			class Text_4_o_3: Harris_RscText
 			{
 				idc = 4217;
 
@@ -669,7 +892,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_4_o_4: RscText
+			class Text_4_o_4: Harris_RscText
 			{
 				idc = 4218;
 
@@ -747,7 +970,7 @@ class radialMenu
 				h = 0.044 * safezoneH;
 			};
 
-			class Text_5_i: RscText
+			class Text_5_i: Harris_RscText
 			{
 				idc = 5112;
 				text = "Handcuff";
@@ -814,7 +1037,7 @@ class radialMenu
 				w = 0.0257812 * safezoneW;
 				h = 0.044 * safezoneH;
 			};
-			class Text_5_o_1: RscText
+			class Text_5_o_1: Harris_RscText
 			{
 				idc = 5215;
 
@@ -825,7 +1048,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_5_o_2: RscText
+			class Text_5_o_2: Harris_RscText
 			{
 				idc = 5216;
 
@@ -836,7 +1059,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_5_o_3: RscText
+			class Text_5_o_3: Harris_RscText
 			{
 				idc = 5217;
 
@@ -847,7 +1070,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_5_o_4: RscText
+			class Text_5_o_4: Harris_RscText
 			{
 				idc = 5218;
 
@@ -926,7 +1149,7 @@ class radialMenu
 				h = 0.044 * safezoneH;
 			};
 
-			class Text_6_i: RscText
+			class Text_6_i: Harris_RscText
 			{
 				idc = 6112;
 				text = "Handcuff";
@@ -994,7 +1217,7 @@ class radialMenu
 				h = 0.044 * safezoneH;
 			};
 		
-			class Text_6_o_1: RscText
+			class Text_6_o_1: Harris_RscText
 			{
 				idc = 6215;
 
@@ -1004,7 +1227,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_6_o_2: RscText
+			class Text_6_o_2: Harris_RscText
 			{
 				idc = 6216;
 
@@ -1014,7 +1237,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-				class Text_6_o_3: RscText
+				class Text_6_o_3: Harris_RscText
 			{
 				idc = 6217;
 
@@ -1024,7 +1247,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_6_o_4: RscText
+			class Text_6_o_4: Harris_RscText
 			{
 				idc = 6218;
 
@@ -1093,7 +1316,7 @@ class radialMenu
 				h = 0.044 * safezoneH;
 			};
 
-			class Text_7_i: RscText
+			class Text_7_i: Harris_RscText
 			{
 				idc = 7112;
 				text = "Handcuff";
@@ -1160,7 +1383,7 @@ class radialMenu
 				w = 0.0257812 * safezoneW;
 				h = 0.044 * safezoneH;
 			};
-			class Text_7_o_1: RscText
+			class Text_7_o_1: Harris_RscText
 			{
 				idc = 7215;
 
@@ -1170,7 +1393,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_7_o_2: RscText
+			class Text_7_o_2: Harris_RscText
 			{
 				idc = 7216;
 
@@ -1180,7 +1403,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_7_o_3: RscText
+			class Text_7_o_3: Harris_RscText
 			{
 				idc = 7217;
 
@@ -1190,7 +1413,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_7_o_4: RscText
+			class Text_7_o_4: Harris_RscText
 			{
 				idc = 7218;
 
@@ -1255,7 +1478,7 @@ class radialMenu
 				h = 0.044 * safezoneH;
 			};
 
-			class Text_8_i: RscText
+			class Text_8_i: Harris_RscText
 			{
 				idc = 8112;
 				text = "Handcuff";
@@ -1323,7 +1546,7 @@ class radialMenu
 				w = 0.0257812 * safezoneW;
 				h = 0.044 * safezoneH;
 			};
-			class Text_8_o_1: RscText
+			class Text_8_o_1: Harris_RscText
 			{
 				idc = 8215;
 				style = 1;
@@ -1334,7 +1557,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_8_o_2: RscText
+			class Text_8_o_2: Harris_RscText
 			{
 				idc = 8216;
 				style = 1;
@@ -1345,7 +1568,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_8_o_3: RscText
+			class Text_8_o_3: Harris_RscText
 			{
 				idc = 8217;
 				style = ST_LEFT;
@@ -1356,7 +1579,7 @@ class radialMenu
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-			class Text_8_o_4: RscText
+			class Text_8_o_4: Harris_RscText
 			{
 				idc = 8218;
 				style = 1;

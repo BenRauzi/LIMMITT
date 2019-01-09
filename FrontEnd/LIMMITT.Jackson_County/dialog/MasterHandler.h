@@ -38,3 +38,4 @@
 #include "craftingMenu.hpp"
 #include "taxi.hpp"
 #include "a3ltagmenu.hpp"
+#include "interactionMenu.hpp"

@@ -50,11 +50,6 @@ life_coplevel = 0;
 __CONST__(JxMxE_PublishVehicle,"No");
 
 
-
-life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-
 serv_sv_use = [];
 
 fed_bank setVariable["safe",(count playableUnits),true];

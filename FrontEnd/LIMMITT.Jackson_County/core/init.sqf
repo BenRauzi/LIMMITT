@@ -139,7 +139,7 @@ player addRating 99999999;
 diag_log "------------------------------------------------------------------------------------------------------";
 diag_log format["                End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "------------------------------------------------------------------------------------------------------";
-life_sidechat = true;
+life_sidechat = false;
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn bis_fnc_mp;
 0 cutText ["","BLACK IN"];
 [] call life_fnc_hudSetup;

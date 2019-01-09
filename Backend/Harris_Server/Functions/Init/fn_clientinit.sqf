@@ -27,7 +27,7 @@ LIMMITT_clientInit ={
 		missionNamespace setVariable ["firstLogin", nil, true];
 	};
 
-	HHarris_mineObjects = ["JD_OreCoal","JD_OreDiamond","JD_OreGold","JD_OreIron"]; 
+	Harris_mineObjects = ["JD_OreCoal","JD_OreDiamond","JD_OreGold","JD_OreIron"]; 
 
 	Harris_oreMined = 0;
 
