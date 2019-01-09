@@ -25,7 +25,7 @@ Harris_openInteraction = {
 	_innerText = [1112,2112,3112,4112,5112,6112,7112,8112];
 	_innerButtons = [1113,2113,3113,4113,5113,6113,7113,8113];
 
-	
+	Harris_currentCursorObject = cursorObject;
 
 	createDialog 'radialMenu';
 
