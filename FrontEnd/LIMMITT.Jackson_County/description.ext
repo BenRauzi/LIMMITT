@@ -35,7 +35,6 @@ corpseRemovalMaxTime = 800;
 
 #include "craftingConfig.hpp"
 #include "paintConfig.hpp"
-#include "infiSTAR_AdminMenu.hpp"
 #include "dialog\MasterHandler.h"
 #include "dialog\slot_machine.hpp"
 #include "dialog\pickup.hpp"
