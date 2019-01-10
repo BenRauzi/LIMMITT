@@ -934,7 +934,7 @@ class CfgWeapons
 		class ItemInfo
 		{
 			allowedSlots[] = {701,801,901};
-			mass = 15;
+			mass = 70;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
@@ -950,7 +950,7 @@ class CfgWeapons
 		class ItemInfo
 		{
 			allowedSlots[] = {701,801,901};
-			mass = 5;
+			mass = 70;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
@@ -967,7 +967,7 @@ class CfgWeapons
 		class ItemInfo
 		{
 			allowedSlots[] = {701,801,901};
-			mass = 5;
+			mass = 70;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
@@ -984,7 +984,7 @@ class CfgWeapons
 		class ItemInfo
 		{
 			allowedSlots[] = {701,801,901};
-			mass = 9;
+			mass = 70;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
@@ -1017,7 +1017,7 @@ class CfgWeapons
 		class ItemInfo
 		{
 			allowedSlots[] = {701,801,901};
-			mass = 7;
+			mass = 100;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";

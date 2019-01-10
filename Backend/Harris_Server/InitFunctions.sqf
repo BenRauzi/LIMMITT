@@ -61,6 +61,14 @@ Crafting_Functions =
   ["fn_useItemPhysical", "Harris_useItemPhysical"]
 ];
 
+FurnitureDir = "\Harris_Server\Functions\Furniture\";
+Furniture_Functions = 
+[
+  ["fn_createFurniture", "Harris_createFurniture"],
+  ["fn_dropFurniture", "Harris_dropFurniture"],
+  ["fn_pickUpFurniture", "Harris_pickUpFurniture"]
+];
+
 
 functionArrays = 
 "[
@@ -69,7 +77,9 @@ functionArrays =
   ['TrafficLights_Functions','TrafficLightsDir'],
   ['Interaction_Functions','InteractionDir'],
   ['Mining_Functions','MiningDir'],
-  ['Notifications_Functions','NotificationsDir']
+  ['Notifications_Functions','NotificationsDir'],
+  ['Crafting_Functions','CraftingDir'],
+  ['Furniture_Functions','FurnitureDir']
 ]";
 
 functionArrays2 = call compile functionArrays;

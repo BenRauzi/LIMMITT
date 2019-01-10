@@ -2,6 +2,7 @@
 	Author: Ben Harris
 	Description: Uses Item in Inventory & Config
 */
+
 Harris_useItemPhysical = {
 
 	_value = lbText [_this select 0, _this select 1];
@@ -18,7 +19,7 @@ Harris_useItemPhysical = {
 		};
 		case "Workbench":
 		{
-			["A3L_Workbench"] spawn Harris_spawnFurniture;
+			["A3L_Workbench"] spawn Harris_createFurniture;
 		};
 	};
 };

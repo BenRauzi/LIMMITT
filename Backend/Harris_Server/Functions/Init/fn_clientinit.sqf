@@ -1,9 +1,9 @@
 /*
-	Author: Nicholas Jo'Foski
-	Description: Server Init function
+	Author: Ben Harris
+	Description: Client Init function
 */
 
-LIMMITT_clientInit ={
+LIMMITT_clientInit = {
 	outerImage = [1210,2210,3210,4210,5210,6210,7210,8210];
 	outerIcon1 = [1211,2211,3211,4211,5211,6211,7211,8211];
 	outerIcon2 = [1212,2212,3212,4212,5212,6212,7212,8212];
@@ -19,13 +19,6 @@ LIMMITT_clientInit ={
 	outerButton2 = [1220,2220,3220,4220,5220,6220,7220,8220];
 	outerButton3 = [1221,2221,3221,4221,5221,6221,7221,8221];
 	outerButton4 = [1222,2222,3222,4222,5222,6222,7222,8222];
-
-	waitUntil {!(isNull (findDisplay 46))};
-	if !(isNil {missionNamespace getVariable "firstLogin"}) then {
-		[] remoteExecCall ["Foski_manageTrafficLights",2];
-		[] remoteExec ["Harris_initOreLoop", 2];
-		missionNamespace setVariable ["firstLogin", nil, true];
-	};
 
 	Harris_mineObjects = ["JD_OreCoal","JD_OreDiamond","JD_OreGold","JD_OreIron"]; 
 
@@ -129,44 +122,51 @@ LIMMITT_clientInit ={
 		["10Rnd 22LR MK2","RH_10Rnd_22LR_mk2", "bp_mk2", [["Harris_steelIngot",2, "Steel Ingot"]], "Pistols", 0.1, true],
 
 		["Heckler & Koch USP Match","RH_uspm", "", [["Harris_steelIngot",7, "Steel Ingot"]], "Pistols", 0.4, false],
-		["16Rnd 40cal USP","RH_16Rnd_40cal_usp", "", [["Harris_steelIngot",3, "Steel Ingot"]], "Pistols", 0.1, true],
+		["16Rnd 40cal USP","RH_16Rnd_40cal_usp", "", [["Harris_steelIngot",3, "Steel Ingot"]], "Pistols", 0.1, true]
 
 
 		//["C4 Explosive","RR_c4", "", [["RR_RDX",4, "RDX Compound"],["Harris_steelIngot",6, "Steel Ingot"]], "Items", 2, false],
 		//["Lockpicks","RR_lockpicks", "", [["RR_IronIngot",4, "Iron Ingot"]], "Items", 0.5, false]
 
-		];
+	];
 
-		Harris_smeltAbleItems =   
-		[
-			["Refined Coal","Harris_coal", "", [["Harris_CoalOre",2, "Coal Ore"]], "Refine", 0.1, true],
-			["Iron Ingot","Harris_ironIngot", "", [["Harris_ironOre",2, "Iron Ore"]], "Refine", 0.1, true],
-			["Steel Ingot","Harris_ironIngot", "", [["Harris_ironOre",2, "Iron Ore"],["Harris_coalOre",4, "Coal Ore"]], "Refine", 0.2, true],
-			["Gold Bar","Harris_goldIngot", "", [["Harris_goldOre",2, "Gold Ore"]], "Refine", 0.3, true]
-		]; // Add Timber from Logs and Diamonds
-		Harris_smeltTypes = ["Refine"];
-		Harris_craftTypes = ["Rifles", "Pistols", "Items"]; //??
+	Harris_smeltAbleItems =   
+	[
+		["Refined Coal","Harris_coal", "", [["Harris_CoalOre",2, "Coal Ore"]], "Refine", 0.1, true],
+		["Iron Ingot","Harris_ironIngot", "", [["Harris_ironOre",2, "Iron Ore"]], "Refine", 0.1, true],
+		["Steel Ingot","Harris_ironIngot", "", [["Harris_ironOre",2, "Iron Ore"],["Harris_coalOre",4, "Coal Ore"]], "Refine", 0.2, true],
+		["Gold Bar","Harris_goldIngot", "", [["Harris_goldOre",2, "Gold Ore"]], "Refine", 0.3, true]
+	]; // Add Timber from Logs and Diamonds
+	Harris_smeltTypes = ["Refine"];
+	Harris_craftTypes = ["Rifles", "Pistols", "Items"]; //??
 
-		Harris_bluePrints = [
-			["bp_uzi", "Uzi"], 
-			["bp_ak", "Kalashnikov Rifle"], 
-			["bp_vz61", "Scorpian Pistol"], 
-			["bp_rpk", "RPK"], 
-			["bp_mk2", "MK2"], 
-			["bp_m21", "M21 Rifle"], 
-			["bp_rpg7", "Rocket-Propelled-Grenade"], 
-			["bp_fal", "FN FAL"], 
-			["bp_pyth", "Python"],
-			["bp_deag", "Desert Eagle"], 
-			["bp_57", ".57"], 
-			["bp_mp5k", "MPK5"]
-		];
+	Harris_bluePrints = [
+		["bp_uzi", "Uzi"], 
+		["bp_ak", "Kalashnikov Rifle"], 
+		["bp_vz61", "Scorpian Pistol"], 
+		["bp_rpk", "RPK"], 
+		["bp_mk2", "MK2"], 
+		["bp_m21", "M21 Rifle"], 
+		["bp_rpg7", "Rocket-Propelled-Grenade"], 
+		["bp_fal", "FN FAL"], 
+		["bp_pyth", "Python"],
+		["bp_deag", "Desert Eagle"], 
+		["bp_57", ".57"], 
+		["bp_mp5k", "MPK5"]
+	];
 
-		Harris_inProcessing = false;
+	Harris_inProcessing = false;
 
-		Harris_craftSchedule = [];
+	Harris_craftSchedule = [];
 
-		player setVariable ["bluePrints", profileNamespace getVariable ['blueprints', []]];
+	player setVariable ["bluePrints", profileNamespace getVariable ['blueprints', []]];
+
+	waitUntil {!(isNull (findDisplay 46))};
+	if !(isNil {missionNamespace getVariable "firstLogin"}) then {
+		[] remoteExecCall ["Foski_manageTrafficLights",2];
+		[] remoteExec ["Harris_initOreLoop", 2];
+		missionNamespace setVariable ["firstLogin", nil, true];
+	};
 
 };
 

@@ -96,7 +96,7 @@ class cfgInteractions
 		text = "Police Handle";
 		class Unrestrain 
 		{
-			condition = "[(Harris_currentCursorObject getVariable 'restrained'), isPlayer Harris_currentCursorObject]";
+			condition = "[(Harris_currentCursorObject getVariable ['restrained', false]), isPlayer Harris_currentCursorObject]";
 			action = "[Harris_currentCursorObject] call life_fnc_unrestrain;";
 			icon = "002_Tag.paa";
 			text = "Unflip";
@@ -110,7 +110,7 @@ class cfgInteractions
 		};
 		class Escort 
 		{
-			condition = "[!(Harris_currentCursorObject getVariable['Escorting',false], isPlayer Harris_currentCursorObject, (Harris_currentCursorObject getVariable 'restrained')]";
+			condition = "[!(Harris_currentCursorObject getVariable['Escorting',false], isPlayer Harris_currentCursorObject, (Harris_currentCursorObject getVariable ['restrained', false])]";
 			action = "[Harris_currentCursorObject] call life_fnc_escortAction;";
 			icon = "002_Tag.paa";
 			text = "EScort";
@@ -124,14 +124,14 @@ class cfgInteractions
 		};
 		class PatDown
 		{
-			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable 'restrained')]";
+			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable ['restrained', false])]";
 			action = "[Harris_currentCursorObject] call life_fnc_putInCar;";
 			icon = "002_Tag.paa";
 			text = "Pat Down";
 		};
 		class Strip
 		{
-			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable 'restrained')]";
+			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable ['restrained', false])]";
 			action = "[Harris_currentCursorObject] call fnc_stripSearch;";
 			icon = "002_Tag.paa";
 			text = "Strip Search";
@@ -151,7 +151,7 @@ class cfgInteractions
 		};
 		class revokeLicenses 
 		{
-			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable 'restrained')]";
+			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable ['restrained',false])]";
 			action = "[[player],""life_fnc_licenseCheck"",life_pInact_curTarget,FALSE] spawn bis_fnc_mp";
 			icon = "002_Tag.paa";
 			text = "Revoke";
@@ -173,7 +173,7 @@ class cfgInteractions
 
 		class Arrest
 		{
-			condition = "[(Harris_currentCursorObject getVariable 'restrained'), isPlayer Harris_currentCursorObject], (player distance getMarketPos 'Test' < 50)";
+			condition = "[(Harris_currentCursorObject getVariable ['restrained', false]), isPlayer Harris_currentCursorObject], (player distance getMarketPos 'Test' < 50)";
 			action = "[Harris_currentCursorObject] call fnc_arrestmenu;";
 			icon = "002_Tag.paa";
 			text = "Arrest";

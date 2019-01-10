@@ -153,6 +153,32 @@ switch (_code) do
 		_handled = true;
 	};
 
+
+	case 201: // Page Up
+	{
+		if (!isNil {player getVariable "carryingObject"}) then {
+			_obj = player getVariable "carryingObject";
+
+			if ((((getPosatl _obj) select 2) - ((getPosATL player) select 2)) > 5) exitWith {};
+			detach _obj;
+			_obj setPosAtl [(getPosATL _obj) select 0,(getPosATL _obj) select 1 ,((getPosATL _obj) select 2) + 0.025];
+			[_obj] spawn Harris_pickupFurniture;
+			_handled = true;
+		};
+	};
+
+	case 209: // Page Down
+	{
+		if (!isNil {player getVariable "carryingObject"}) then {
+			_obj = player getVariable "carryingObject";
+
+			detach _obj;
+			_obj setPosAtl [(getPosATL _obj) select 0,(getPosATL _obj) select 1 ,((getPosATL _obj) select 2) - 0.025];
+			[_obj] spawn Harris_pickupFurniture;
+			_handled = true;
+		};
+	};
+
 	//Shift+P = Faded Sound
 	case 25:
 	{

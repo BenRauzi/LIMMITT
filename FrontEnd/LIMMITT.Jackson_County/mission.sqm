@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8789.1855,248.36113,6609.8779};
-		dir[]={-0.600425,-0.76578063,0.23051667};
-		up[]={-0.71489638,0.64309961,0.27446532};
-		aside[]={0.35842744,-2.3600296e-007,0.93359303};
+		pos[]={8651.2412,26.32127,6703.3955};
+		dir[]={-0.70446312,-0.25846833,-0.66105551};
+		up[]={-0.18850543,0.96600258,-0.17689028};
+		aside[]={-0.68430459,8.076895e-007,0.72923481};
 	};
 };
 binarizationWanted=0;
@@ -3962,7 +3962,7 @@ class Mission
 			};
 			id=3388;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.30000305;
+			atlOffset=0.28424835;
 		};
 		class Item304
 		{
@@ -4553,7 +4553,6 @@ class Mission
 			};
 			id=3422;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.00026416779;
 		};
 		class Item336
 		{
@@ -9436,12 +9435,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4887.5396,104.37911,3053.2012};
-				angles[]={0.06889157,0,6.1578465};
+				position[]={4887.54,104.37909,3053.2009};
+				angles[]={0.068888143,0,6.1578531};
 			};
 			init="tf_no_auto_long_range_radio = true";
 			id=3815;
 			type="tfar_ModuleTaskForceRadioEnforceUsage";
+			atlOffset=-7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9459,7 +9459,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="EVO09u128123";
+							value="In-Game";
 						};
 					};
 				};
@@ -9497,7 +9497,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="TaskForceRadio";
+							value="In-Game";
 						};
 					};
 				};
@@ -9995,7 +9995,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3314.6279,109.87692,7678.835};
+				position[]={8630.6387,19.942909,6682.4399};
 			};
 			side="Empty";
 			class Attributes
@@ -10005,7 +10005,7 @@ class Mission
 			};
 			id=4145;
 			type="Land_InvisibleBarrier_F";
-			atlOffset=19.18499;
+			atlOffset=9.2956581;
 		};
 		class Item499
 		{
@@ -11316,7 +11316,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3232.4136,104.94099,7638.8481};
+				position[]={8602.7236,12.459873,6658.731};
 			};
 			side="Empty";
 			class Attributes
@@ -11326,7 +11326,7 @@ class Mission
 			};
 			id=4142;
 			type="Land_InvisibleBarrier_F";
-			atlOffset=8.9509888;
+			atlOffset=1.812623;
 		};
 		class Item582
 		{

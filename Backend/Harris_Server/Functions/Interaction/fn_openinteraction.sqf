@@ -48,6 +48,8 @@ Harris_openInteraction = {
 	_processing = [];
 	countT = 0;
 	{
+		//systemChat (getText (_x >> "text"));
+		//diag_log str (getText (_x >> "text"));
 		_conditions = call compile (getText (_x >> "condition"));
 		if !(_count > 7) then {
 
