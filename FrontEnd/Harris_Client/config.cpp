@@ -1010,7 +1010,7 @@ class CfgWeapons
 		picture = "\Harris_Client\Crafting\ironIngot.paa";
 		descriptionShort = "Gold Ingot";
 	};
-	class Workbench: ToolKit
+	class Harris_Workbench: ToolKit
 	{
 		displayName = "Workbench";
 		count = 1;

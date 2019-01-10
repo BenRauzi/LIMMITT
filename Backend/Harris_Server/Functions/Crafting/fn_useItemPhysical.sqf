@@ -16,5 +16,9 @@ Harris_useItemPhysical = {
 		{
 			[] spawn Harris_addBluePrint;
 		};
+		case "Workbench":
+		{
+			["A3L_Workbench"] spawn Harris_spawnFurniture;
+		};
 	};
 };
