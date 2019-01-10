@@ -1010,4 +1010,20 @@ class CfgWeapons
 		picture = "\Harris_Client\Crafting\ironIngot.paa";
 		descriptionShort = "Gold Ingot";
 	};
+	class Workbench: ToolKit
+	{
+		displayName = "Workbench";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 7;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\A3L_WorkBench\workbench.p3d";
+		picture = "\Harris_Client\Crafting\Workbench.paa";
+		descriptionShort = "Workbench";
+	};
 };

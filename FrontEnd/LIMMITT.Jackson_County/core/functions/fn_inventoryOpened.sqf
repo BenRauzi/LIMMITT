@@ -12,6 +12,16 @@ _container = _this select 1;
 
 _vehicle = vehicle player;
 
+[] spawn
+{
+	waitUntil {!isNull (findDisplay 602)};
+
+	((findDisplay 602) displayCtrl 638) ctrlSetEventHandler ["LBDblClick", "[638 ,_this select 1] call Harris_useItemPhysical;"];  
+	((findDisplay 602) displayCtrl 633) ctrlSetEventHandler ["LBDblClick", "[633 ,_this select 1] call Harris_useItemPhysical;"];  
+	((findDisplay 602) displayCtrl 640) ctrlSetEventHandler ["LBDblClick", "[640 ,_this select 1] call Harris_useItemPhysical;"];  
+	((findDisplay 602) displayCtrl 619) ctrlSetEventHandler ["LBDblClick", "[619 ,_this select 1] call Harris_useItemPhysical;"];
+};
+	
 if (vehicle player != player) then {
 		[] spawn {
 		waitUntil {!isNull (findDisplay 602)};
