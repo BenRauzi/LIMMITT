@@ -927,4 +927,87 @@ class CfgWeapons
 		picture = "\Harris_Client\Data\ironOre.paa";
 		descriptionShort = "Gold Ore";
 	};
+	class Harris_woodLog: ToolKit
+	{
+		displayName = "Wooden Logs";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 15;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\Harris_Client\Crafting\Log.p3d"; // To Update
+		picture = "\Harris_Client\Crafting\Wood.paa";
+		descriptionShort = "Wooden Logs";
+	};
+	class Harris_ironIngot: ToolKit
+	{
+		displayName = "Iron Ingot";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 5;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\A3L_Bars\silver_bar.p3d";
+		picture = "\Harris_Client\Crafting\ironIngot.paa";
+		descriptionShort = "Iron Ingot";
+	};
+
+	class Harris_coal: ToolKit
+	{
+		displayName = "Piece of Coal";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 5;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\a3l_boxes\box_small.p3d";
+		picture = "\Harris_Client\Crafting\coal.paa";
+		descriptionShort = "Piece of refined Coal";
+	};
+
+	class Harris_steelIngot: ToolKit
+	{
+		displayName = "Steel Ingot";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 9;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\A3L_Bars\steel_bar.p3d";
+		picture = "\Harris_Client\Crafting\ironIngot.paa";
+		descriptionShort = "Steel Ingot";
+	};
+
+	class Harris_goldIngot: ToolKit
+	{
+		displayName = "Gold Ingot";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 7;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\A3L_Bars\steel_bar.p3d";
+		picture = "\Harris_Client\Crafting\ironIngot.paa";
+		descriptionShort = "Gold Ingot";
+	};
 };

@@ -49,6 +49,18 @@ Notifications_Functions =
   ["fn_Notifications", "Harris_Notifications"]
 ];
 
+CraftingDir = "\Harris_Server\Functions\Crafting\";
+Crafting_Functions = 
+[
+  ["fn_addBluePrint", "Harris_addBluePrint"],
+  ["fn_craftItem", "Harris_craftItem"],
+  ["fn_onCraftLbChanged", "Harris_onCraftLbChanged"],
+  ["fn_onCraftSelectionLbChanged", "Harris_onCraftSelectionLbChanged"],
+  ["fn_openCraftingMenu", "Harris_openCraftingMenu"],
+  ["fn_openCraftTimer", "Harris_openCraftTimer"],
+  ["fn_useItemPhysical", "Harris_useItemPhysical"]
+];
+
 
 functionArrays = 
 "[
