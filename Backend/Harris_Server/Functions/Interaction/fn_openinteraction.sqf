@@ -51,11 +51,12 @@ Harris_openInteraction = {
 	{
 		//systemChat (getText (_x >> "text"));
 		//diag_log str (getText (_x >> "text"));
-		_conditions = call compile (getText (_x >> "condition"));
+		_conditions = (getText (_x >> "condition"));
+		
 		if !(_count > 7) then {
 
 			if (isNil "_conditions") then {
-				for "_i" from 3 to ((count _x) - 3) do {
+				for "_i" from 3 to (count _x) do {
 					if (countT == 0) then {
 						_condition = call compile (getText (_x select _i >> "condition"));
 						if !(false in _condition) then {
