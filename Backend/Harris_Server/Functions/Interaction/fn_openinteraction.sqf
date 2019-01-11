@@ -56,7 +56,7 @@ Harris_openInteraction = {
 		if !(_count > 7) then {
 
 			if (isNil "_conditions") then {
-				for "_i" from 3 to (count _x) do {
+				for "_i" from 3 to (count _x - 1) do {
 					if (countT == 0) then {
 						_condition = call compile (getText (_x select _i >> "condition"));
 						if !(false in _condition) then {
