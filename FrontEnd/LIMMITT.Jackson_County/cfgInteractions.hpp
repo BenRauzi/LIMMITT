@@ -87,11 +87,18 @@ class cfgInteractions
 		action = "";
 		icon = "icon_handcuffs.paa";
 		text = "Police Handle";
+		class Restrain 
+		{
+			condition = "[!(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5]";
+			action = "[Harris_currentCursorObject] call Foski_restrainPlayer;";
+			icon = "icon_handcuffs.paa";
+			text = "Unflip";
+		};
 		class Unrestrain 
 		{
-			condition = "[(Harris_currentCursorObject getVariable ['restrained', false]), isPlayer Harris_currentCursorObject]";
-			action = "[Harris_currentCursorObject] call life_fnc_unrestrain;";
-			icon = "002_Tag.paa";
+			condition = "[(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5]";
+			action = "[Harris_currentCursorObject] call Foski_unrestrainPlayer;";
+			icon = "icon_handcuffs.paa";
 			text = "Unflip";
 		};
 		class Unescort 
