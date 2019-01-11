@@ -4,6 +4,17 @@
 */
 
 LIMMITT_clientInit = {
+	player addEventHandler ["GetInMan", {
+	    params ["_vehicle", "_role", "_unit", "_turret"];
+
+	    if (_role == "driver" && player getVariable ["Foski_Restrained", false]) then {
+	        if (vehicle player isKindOf     'Air') then {
+	            player action["GetOut",vehicle player];
+	        } else {
+	                player action["eject",vehicle player];
+	        };
+	    };
+	}];
 	player setVariable ["Foski_Restrained",false,false]; // Restrain Variable
 
 	outerImage = [1210,2210,3210,4210,5210,6210,7210,8210];

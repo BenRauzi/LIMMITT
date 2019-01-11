@@ -29,8 +29,6 @@ Foski_playerRestrained ={
 			// Block Certain Actions
 			player playAction ("Foski_Cuff_" + _pos); // Constantly loop animation to stop it from being overidden
 			player setVariable ["tf_unable_to_use_radio", true, true]; // Disable the use of a radio
-			if (!isNull findDisplay 602) then {closeDialog 602;}; // Disable Inventory
-			if (vehicle player != player && driver (vehicle player) == player) then {player action["eject",vehicle player];}; // Eject player from vehicle if in the drivers seat
 			// Block any type of weapon switching | V
 			if !(currentWeapon player == "" || currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then { // Changed to '! isKindOf "Pistol"' to stop bino's coming out as well
 				Holstlife_curWep_h = currentWeapon player;

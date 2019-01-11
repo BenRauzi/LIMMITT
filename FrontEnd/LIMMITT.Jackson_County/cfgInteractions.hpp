@@ -6,13 +6,6 @@ class cfgInteractions
 		action = "[] call fnc_opentablet;";
 		icon = "002_Tag.paa";
 		text = "Open Phone";
-		class OpenPhone
-		{
-			condition = "[true]";
-			action = "[] call fnc_opentablet;";
-			icon = "002_Tag.paa";
-			text = "Test";
-		};
 	};
 	class PoliceVehicle
 	{
@@ -103,14 +96,14 @@ class cfgInteractions
 		};
 		class Unescort 
 		{
-			condition = "[(Harris_currentCursorObject getVariable['Escorting',false], isPlayer Harris_currentCursorObject]";
+			condition = "[(Harris_currentCursorObject getVariable['Escorting',false]), isPlayer Harris_currentCursorObject]";
 			action = "[Harris_currentCursorObject] call life_fnc_stopEscorting;";
 			icon = "002_Tag.paa";
 			text = "Unescort";
 		};
 		class Escort 
 		{
-			condition = "[!(Harris_currentCursorObject getVariable['Escorting',false], isPlayer Harris_currentCursorObject, (Harris_currentCursorObject getVariable ['restrained', false])]";
+			condition = "[!(Harris_currentCursorObject getVariable['Escorting',false]), isPlayer Harris_currentCursorObject, (Harris_currentCursorObject getVariable ['restrained', false])]";
 			action = "[Harris_currentCursorObject] call life_fnc_escortAction;";
 			icon = "002_Tag.paa";
 			text = "EScort";
@@ -179,4 +172,34 @@ class cfgInteractions
 			text = "Arrest";
 		};
 	};
+
+	class dropFurniture
+	{
+		condition = "[!isNil {player getVariable 'carryingObject'}]";
+		action = "[] call Harris_dropFurniture";
+		icon = "033-download.paa";
+		text = "Pickup";
+	};
+	class pickUpFurniture
+	{
+		condition = "[typeOf Harris_currentCursorObject == 'A3L_WorkBench', isNil {player getVariable 'carryingObject'}]";
+		action = "";
+		icon = "044-upload-button.paa";
+		text = "Drop";
+	};
+	class pickUpWorkBench
+	{
+		condition = "[!isNil {player getVariable 'carryingObject'}]";
+		action = "[] call Harris_removeFurniture";
+		icon = "031-shopping-cart-1.paa";
+		text = "Pickup";
+	};
+	class openCrafting
+	{
+		condition = "[typeOf Harris_currentCursorObject == 'A3L_WorkBench', isNil {player getVariable 'carryingObject'}]";
+		action = "[] call Harris_openCraftingMenu";
+		icon = "0034-cogwheel.paa";
+		text = "Craft";
+	};
 };
+

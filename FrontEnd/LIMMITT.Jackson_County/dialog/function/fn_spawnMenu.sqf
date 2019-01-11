@@ -54,7 +54,7 @@
 		life_shop_cam cameraEffect ["Internal", "Back"]; 
 		life_shop_cam camSetTarget (getPos camera2); 
 		life_shop_cam camSetPos (getPos camera3); 
-		life_shop_cam camSetFOV 1.5; 
+		life_shop_cam camSetFOV 1; 
 		life_shop_cam camSetFocus [0, 15]; 
 		life_shop_cam camCommit 0;
 		 
