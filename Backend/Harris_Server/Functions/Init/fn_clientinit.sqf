@@ -4,6 +4,8 @@
 */
 
 LIMMITT_clientInit = {
+	player setVariable ["Foski_Restrained",false,false]; // Restrain Variable
+
 	outerImage = [1210,2210,3210,4210,5210,6210,7210,8210];
 	outerIcon1 = [1211,2211,3211,4211,5211,6211,7211,8211];
 	outerIcon2 = [1212,2212,3212,4212,5212,6212,7212,8212];

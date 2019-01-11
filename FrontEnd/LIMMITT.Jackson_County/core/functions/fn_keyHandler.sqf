@@ -348,15 +348,17 @@ switch (_code) do
 	//Holster / recall weapon.
 	case 35:
 	{
-		if(_shift && !_ctrlKey && currentWeapon player != "") then {
-			life_curWep_h = currentWeapon player;
-			player action ["SwitchWeapon", player, player, 100];
-			player switchcamera cameraView;
-		};
-		
-		if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {(life_curWep_h != "")}) then {
-			if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
-				player selectWeapon life_curWep_h;
+		if !(player getVariable "Foski_Restrained") then {
+			if(_shift && !_ctrlKey && currentWeapon player != "") then {
+				life_curWep_h = currentWeapon player;
+				player action ["SwitchWeapon", player, player, 100];
+				player switchcamera cameraView;
+			};
+			
+			if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {(life_curWep_h != "")}) then {
+				if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
+					player selectWeapon life_curWep_h;
+				};
 			};
 		};
 
