@@ -470,6 +470,11 @@ switch (_code) do
 			//[] call life_fnc_restrainAction;
 			[cursorObject] call Foski_restrainPlayer;
 		};
+		if(_ctrl && playerSide == west && !isNull cursorTarget && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "restrained")) then
+		{
+			//[] call life_fnc_restrainAction;
+			[cursorObject] call Foski_unRestrainPlayer;
+		};
 	};
 	
 	//Knockout
