@@ -547,6 +547,7 @@ switch (_code) do
 	case 21:
 	{	
 		_stop = false;
+		if (player getVariable "Foski_Restrained") exitWith {_stop = true; _handled = true;}; // if player restrained - NJF
 		if( asdih_inv_mobilephone < 1 && !_alt && !_ctrlKey ) then {
 			titleText["You have no phone. (CTRL+Y to open food menu // ALT+Y to open key menu // ALT+8 to sync player data).","PLAIN"];
 			_stop = true;
