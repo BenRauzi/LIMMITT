@@ -38,8 +38,8 @@ if(!isNull _source) then {
 		};
 		
 
-		if(_projectile in ["DDOPP_B_Taser"] && _curWep in ["DDOPP_X26"]) then {
-			if(side _source == west && playerSide != west) then {
+		if(_projectile in ["Taser_Caseless"] && _curWep in ["JD_Taser"]) then {
+			if(side _source == west) then {
 				private["_distance","_isVehicle","_isQuad"];
                 _distance = if(_projectile == "B_556x45_dual") then {100} else {35};
                 _isVehicle = if(vehicle player != player) then {true} else {false};
@@ -56,11 +56,6 @@ if(!isNull _source) then {
                         };
                     };
                 };
-            };
-            
-            //Temp fix for super tasers on cops.
-            if(playerSide == west && side _source == west) then {
-                _damage = false;
             };
         };
 	};
