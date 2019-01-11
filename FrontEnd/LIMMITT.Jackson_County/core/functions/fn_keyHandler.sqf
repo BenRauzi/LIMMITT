@@ -466,11 +466,11 @@ switch (_code) do
 		if (playerSide == west && !isNull cursorObject && !life_paintball && (isPlayer cursorObject) && alive cursorObject && player distance cursorObject < 3.5 && !(cursorObject getVariable "Escorting")) then
 		{
 			//[] call life_fnc_restrainAction;
-			if ((_shift) && (cursorObject getVariable ["restrained", false])) then {
+			if ((_shift) && (cursorObject getVariable ["Foski_Restrained", false])) then {
 				[cursorObject] call Foski_restrainPlayer;
 				_handled = true;
 			};
-			if ((_ctrlKey) && (cursorObject getVariable ["restrained", true])) then {
+			if ((_ctrlKey) && (cursorObject getVariable ["Foski_Restrained", false])) then {
 				[cursorObject] call Foski_unRestrainPlayer;
 				_handled = true;
 			};
