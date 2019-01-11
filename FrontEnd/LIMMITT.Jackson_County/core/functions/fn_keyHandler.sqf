@@ -464,6 +464,7 @@ switch (_code) do
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
+		if(_ctrl) then {_handled = true;};
 
 		if(_shift && playerSide == west && !isNull cursorTarget && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained")) then
 		{
