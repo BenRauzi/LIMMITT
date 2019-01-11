@@ -4,7 +4,7 @@
 */
 
 Harris_dropFurniture = {
-	_furniture = player getVariable ["carryingObject",[]];
+	_furniture = player getVariable ["carryingObject",objNull;
 
 	detach _furniture;
 
