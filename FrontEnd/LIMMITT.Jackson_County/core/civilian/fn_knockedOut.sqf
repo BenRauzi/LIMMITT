@@ -13,23 +13,27 @@ if(_target != player) exitWith {};
 if(_who == "") exitWith {};
 
 titleText[format[localize "STR_Civ_KnockedOut",_who],"PLAIN"];
-[] call KK_fnc_forceRagdoll;
+
+player setVariable["robbed",FALSE,TRUE];
+
+[] spawn {
+	player setVariable ["tf_unable_to_use_radio", true];
+	player setVariable ["tf_voiceVolume", 0, true];
+	[] call KK_fnc_forceRagdoll;
+	sleep 7;
+	player setVariable ["tf_unable_to_use_radio", false];
+	player setVariable ["tf_voiceVolume", 1, true];
+};
+
 //player playMoveNow "Incapacitated";
 //_obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player);
 //_obj setPosATL (getPosATL player);
 //player attachTo [_obj,[0,0,0]];
 [] call life_fnc_stage3pain;
 
-[] spawn {
-	player setVariable ["tf_unable_to_use_radio", true];
-	player setVariable ["tf_voiceVolume", 0, true];
-	sleep 5;
-	player setVariable ["tf_unable_to_use_radio", false];
-	player setVariable ["tf_voiceVolume", 1, true];
-};
+
 
 //if(!(player getVariable["restrained",false]) && !(player getVariable["tied",false])) then {
 //	player playMoveNow "amovppnemstpsraswrfldnon";
 //};
 
-player setVariable["robbed",FALSE,TRUE];

@@ -191,7 +191,7 @@ LIMMITT_clientInit = {
 		godMode = false;
 		player allowDamage true;
 	};
-	"
+	";
 
 	waitUntil {!(isNull (findDisplay 46))};
 	if !(isNil {missionNamespace getVariable "firstLogin"}) then {
