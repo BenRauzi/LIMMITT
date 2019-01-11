@@ -7,9 +7,9 @@ while {true} do {
                 _ServerName = call TFAR_fnc_getTeamSpeakServerName;
                 _isTeamSpeakPluginEnabled = call TFAR_fnc_isTeamSpeakPluginEnabled;
 
-                if !(_ChannelName isEqualTo "TaskForceRadio") then {
+                if !(_ChannelName isEqualTo "In-game") then {
                     if !(__GETC__(life_adminlevel) >= 3) then {
-                        cutText["Wrong Channel/Server/TFR Plugin Disabled. Ensure you are on the correct TS: 142.44.143.29","BLACK IN"];
+                        cutText["Wrong Channel/Server/TFR Plugin Disabled. Ensure you are on the correct TS: ts.limmitt-network.co.uk","BLACK IN"];
                     };
                 } else {
                     cutText ["","PLAIN"];
