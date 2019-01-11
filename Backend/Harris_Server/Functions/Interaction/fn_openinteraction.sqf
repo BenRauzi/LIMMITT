@@ -21,6 +21,7 @@
 
 
 Harris_openInteraction = {
+	if (player getVariable "Foski_Restrained") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
 	_innerIcons = [1111,2111,3111,4111,5111,6111,7111,8111];
 	_innerText = [1112,2112,3112,4112,5112,6112,7112,8112];
 	_innerButtons = [1113,2113,3113,4113,5113,6113,7113,8113];
