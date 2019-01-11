@@ -463,14 +463,14 @@ switch (_code) do
 	//Restraining (Shift + R)
 	case 19:
 	{
-		if (playerSide == west && !isNull cursorObject && !life_paintball && (isPlayer cursorObject) && alive cursorObject && player distance cursorObject < 3.5 && !(cursorObject getVariable "Escorting") && (cursorObject getVariable ["restrained", false])) then
+		if (playerSide == west && !isNull cursorObject && !life_paintball && (isPlayer cursorObject) && alive cursorObject && player distance cursorObject < 3.5 && !(cursorObject getVariable "Escorting")) then
 		{
 			//[] call life_fnc_restrainAction;
-			if (_shift) then {
+			if ((_shift) && (cursorObject getVariable ["restrained", false])) then {
 				[cursorObject] call Foski_restrainPlayer;
 				_handled = true;
 			};
-			if (_ctrlKey) then {
+			if ((_ctrlKey) && (cursorObject getVariable ["restrained", true])) then {
 				[cursorObject] call Foski_unRestrainPlayer;
 				_handled = true;
 			};
