@@ -19,9 +19,8 @@
 	outerButton4 = [1222,2222,3222,4222,5222,6222,7222,8222];
 */
 
-
 Harris_openInteraction = {
-	if (player getVariable "Foski_Restrained") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
+	if (player getVariable ["Foski_Restrained", false]) exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
 	_innerIcons = [1111,2111,3111,4111,5111,6111,7111,8111];
 	_innerText = [1112,2112,3112,4112,5112,6112,7112,8112];
 	_innerButtons = [1113,2113,3113,4113,5113,6113,7113,8113];
@@ -47,27 +46,32 @@ Harris_openInteraction = {
 
 	_count = 0;
 	_processing = [];
-	countT = 0;
 	{
+		countT = 0;
 		//systemChat (getText (_x >> "text"));
 		//diag_log str (getText (_x >> "text"));
 		_conditions = (getText (_x >> "condition"));
 
 		if !(_count > 7) then {
 
-			if (isNil "_conditions") then {
+			if (isNil "_conditions" || _conditions == "") then {
 				for "_i" from 3 to (count _x - 1) do {
 					if (countT == 0) then {
 						_condition = call compile (getText (_x select _i >> "condition"));
+						//diag_log _condition;
 						if !(false in _condition) then {
 							countT = countT + 1;
 						};
 					};
 				};
+				_conditions	= [];
+			} else {
+				_conditions = call compile _conditions;
 			};
 		
-			_conditions = call compile _conditions;
-			if (!(false in _conditions) || countT > 0) then {
+			//diag_log str _conditions;
+			//systemChat str _conditions;
+			if (countT > 0 || (!(false in _conditions) && !(_conditions isEqualTo []))) then {
 				Harris_currentActions pushBack (getText (_x >> "action"));
 
 				ctrlSetText [(_innerIcons select _count), format ["\Harris_Client\radial\icons\%1", getText (_x >> "icon")]];
@@ -78,7 +82,7 @@ Harris_openInteraction = {
 
 				ctrlShow [(_innerButtons select _count), true];
 
-				if (count ("true" configClasses (missionConfigFile >> "CfgInteractions") select _forEachIndex) > 4) then {
+				if (count ("true" configClasses (missionConfigFile >> "CfgInteractions") select _forEachIndex) > 3) then {
 					Harris_currentMenus pushBack (_count + 1);
 					Harris_menus pushBack [_count + 1, _x];
 				};

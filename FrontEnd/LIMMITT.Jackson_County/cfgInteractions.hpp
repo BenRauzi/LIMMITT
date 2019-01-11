@@ -1,11 +1,26 @@
 class cfgInteractions
 {
+	/*
 	class OpenPhone
 	{
-		condition = "[alive player, !(player getVariable 'restrained'), (player distance Harris_currentCursorObject > 3)]";
+		condition = "[alive player, !(player getVariable ['restrained',false]), (player distance Harris_currentCursorObject > 3)]";
 		action = "[] call fnc_opentablet;";
 		icon = "002_Tag.paa";
 		text = "Open Phone";
+	};
+	*/
+	class OpenPhone2
+	{
+		action = "[] call fnc_opentablet;";
+		icon = "002_Tag.paa";
+		text = "Test";
+		class OpenPhone3
+		{
+			condition="[true]";
+			action = "[] call fnc_opentablet;";
+			icon = "002_Tag.paa";
+			text = "Test";
+		};
 	};
 	class PoliceVehicle
 	{
@@ -14,28 +29,28 @@ class cfgInteractions
 		text = "Police";
 		class Registration
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west)]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), !isNull Harris_currentCursorObject]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_searchVehAction;";
 			icon = "002_Tag.paa";
 			text = "Registration";
 		};
 		class Search
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west)]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), !isNull Harris_currentCursorObject]";
 			action = "[Harris_currentCursorObject] spawn fnc_searchVehicle;";
 			icon = "002_Tag.paa";
 			text = "Search Vehicle";
 		};
 		class Pullout
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west),count crew cursorObject > 0]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), !isNull Harris_currentCursorObject,count crew cursorObject > 0]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_pulloutAction;";
 			icon = "002_Tag.paa";
 			text = "Pullout";
 		};
 		class Impound
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west)]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), !isNull Harris_currentCursorObject]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_impoundAction;";
 			icon = "002_Tag.paa";
 			text = "Impound";
@@ -189,7 +204,7 @@ class cfgInteractions
 	};
 	class pickUpFurniture
 	{
-		condition = "[typeOf Harris_currentCursorObject == 'A3L_WorkBench', isNil {player getVariable 'carryingObject'}]";
+		condition = "[typeOf Harris_currentCursorObject == 'A3L_WorkBench', isNil {player getVariable 'carryingObject'}, player distance Harris_currentCursorObject	 < 5]";
 		action = "";
 		icon = "044-upload-button.paa";
 		text = "Drop";
