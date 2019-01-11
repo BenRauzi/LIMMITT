@@ -28,7 +28,7 @@ class cfgInteractions
 		};
 		class Pullout
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west)]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west),count crew cursorObject > 0]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_pulloutAction;";
 			icon = "002_Tag.paa";
 			text = "Pullout";
@@ -50,7 +50,7 @@ class cfgInteractions
 	};
 	class Pullout
 	{
-		condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), Harris_currentCursorObject in life_vehicles]";
+		condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), Harris_currentCursorObject in life_vehicles, count crew cursorObject > 0, playerside != west]";
 		action = "[Harris_currentCursorObject] spawn life_fnc_pulloutAction;";
 		icon = "002_Tag.paa";
 		text = "Pullout";
