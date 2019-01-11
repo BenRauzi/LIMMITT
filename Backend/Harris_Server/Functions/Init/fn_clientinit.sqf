@@ -193,6 +193,15 @@ LIMMITT_clientInit = {
 	};
 	";
 
+	Foski_SurrenderSyncMP ={
+		params ["_unit","_anim"]; 
+		_unit playAction _anim;
+
+		if (_unit == player) then {
+			player playAction _anim;
+		};
+	};
+
 	waitUntil {!(isNull (findDisplay 46))};
 	if !(isNil {missionNamespace getVariable "firstLogin"}) then {
 		[] remoteExecCall ["Foski_manageTrafficLights",2];

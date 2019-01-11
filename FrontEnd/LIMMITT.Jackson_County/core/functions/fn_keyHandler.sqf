@@ -581,8 +581,31 @@ switch (_code) do
 	};
 
 
-	//6 - Surrender
-	case 7:
+	// Nicholas Jo'Foski' Surrender (Shift + E)
+	case 18:
+	{
+		if(_shift) then {_handled = true;};
+
+		if (_shift) then
+		{
+			if (vehicle player == player && !(player getVariable ["Foski_Restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed && !life_paintball) then
+			{
+				if (player getVariable ["surrender", false]) then {
+				    player setVariable ["surrender", false, true];
+					if (vehicle player != player) then { 
+				    	[player,"Foski_StopSurrendering"] remoteExecCall ["Foski_SurrenderSyncMP", 0]; 
+				    } else {player playAction "Foski_StopSurrendering";};
+				} else {
+					player setVariable ["surrender", true, true];
+					if (vehicle player != player) then { 
+					    [player,"Foski_Surrender"] remoteExecCall ["Foski_SurrenderSyncMP", 0]; 
+					} else {player playAction "Foski_Surrender"};
+				};
+			};
+		};
+	};
+	// Default Tonic Surrender
+	/*case 7:
 	{
 		if(_shift) then {_handled = true;};
 
@@ -607,7 +630,7 @@ switch (_code) do
 				_handled = true;
 			};
 	    };
-	};
+	};*/
 
 	//7 - Mine 
 	case 8:
