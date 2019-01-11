@@ -75,7 +75,7 @@ Police_Functions =
   ["fn_playerRestrained", "Foski_playerRestrained"],
   ["fn_playerUnRestrained", "Foski_playerUnRestrained"],
   ["fn_restrainPlayer", "Foski_restrainPlayer"],
-  ["fn_unRestrainPlayer", "Foski_unRestrainPlayer"],
+  ["fn_unRestrainPlayer", "Foski_unRestrainPlayer"]
 ];
 
 
