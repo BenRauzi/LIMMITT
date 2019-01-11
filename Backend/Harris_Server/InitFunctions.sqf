@@ -66,7 +66,8 @@ Furniture_Functions =
 [
   ["fn_createFurniture", "Harris_createFurniture"],
   ["fn_dropFurniture", "Harris_dropFurniture"],
-  ["fn_pickUpFurniture", "Harris_pickUpFurniture"]
+  ["fn_pickUpFurniture", "Harris_pickUpFurniture"],
+  ["fn_removeFurniture", "Harris_removeFurniture"]
 ];
 
 PoliceDir = "\Harris_Server\Functions\Police\";

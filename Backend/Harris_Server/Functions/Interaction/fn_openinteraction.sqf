@@ -52,7 +52,7 @@ Harris_openInteraction = {
 		//systemChat (getText (_x >> "text"));
 		//diag_log str (getText (_x >> "text"));
 		_conditions = (getText (_x >> "condition"));
-		
+
 		if !(_count > 7) then {
 
 			if (isNil "_conditions") then {
@@ -66,7 +66,7 @@ Harris_openInteraction = {
 				};
 			};
 		
-		
+			_conditions = call compile _conditions;
 			if (!(false in _conditions) || countT > 0) then {
 				Harris_currentActions pushBack (getText (_x >> "action"));
 
