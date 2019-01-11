@@ -69,6 +69,15 @@ Furniture_Functions =
   ["fn_pickUpFurniture", "Harris_pickUpFurniture"]
 ];
 
+PoliceDir = "\Harris_Server\Functions\Police\";
+Police_Functions = 
+[
+  ["fn_playerRestrained", "Foski_playerRestrained"],
+  ["fn_playerUnRestrained", "Foski_playerUnRestrained"],
+  ["fn_restrainPlayer", "Foski_restrainPlayer"],
+  ["fn_unRestrainPlayer", "Foski_unRestrainPlayer"],
+];
+
 
 functionArrays = 
 "[
@@ -79,7 +88,8 @@ functionArrays =
   ['Mining_Functions','MiningDir'],
   ['Notifications_Functions','NotificationsDir'],
   ['Crafting_Functions','CraftingDir'],
-  ['Furniture_Functions','FurnitureDir']
+  ['Furniture_Functions','FurnitureDir'],
+  ['Police_Functions','PoliceDir']
 ]";
 
 functionArrays2 = call compile functionArrays;

@@ -1,6 +1,6 @@
 /*
 	Author: Nicholas Jo'Foski
-	Description: Unrestrains and the player
+	Description: Unrestrains the player
 */
 
 Foski_playerUnRestrained ={
