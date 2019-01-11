@@ -40,7 +40,6 @@ Foski_playerRestrained ={
 			};
 			if (currentVisionMode player == 1) then {player action ["nvGogglesOff", player];}; // Check if the player has enabled night vision, if so disable it
 
-
 			sleep 0.1;
 		};
 	};
