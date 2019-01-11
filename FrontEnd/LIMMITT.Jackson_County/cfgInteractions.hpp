@@ -185,7 +185,7 @@ class cfgInteractions
 		condition = "[!isNil {player getVariable 'carryingObject'}]";
 		action = "[] call Harris_dropFurniture";
 		icon = "033-download.paa";
-		text = "Pickup";
+		text = "Drop";
 	};
 	class pickUpFurniture
 	{
