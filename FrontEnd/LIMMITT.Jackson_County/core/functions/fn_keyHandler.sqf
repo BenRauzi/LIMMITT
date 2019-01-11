@@ -426,6 +426,7 @@ switch (_code) do
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
+		if (player getVariable "Foski_Restrained") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
 		if(!life_action_inUse) then {
 			[] spawn 
 			{

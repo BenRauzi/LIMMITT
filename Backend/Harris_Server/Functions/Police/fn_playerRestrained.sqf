@@ -12,7 +12,6 @@ Foski_playerRestrained ={
 		if (isNil {player getVariable "Foski_Restrained"}) then {player setVariable ["Foski_Restrained", false, true];};
 		if !(player getVariable "Foski_Restrained") then {
 			player setVariable ["Foski_Restrained", true, true];
-			player getVariable["restrained", true, true];
 			if !(currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then {
 				Holstlife_curWep_h = currentWeapon player;
 				player action ["SwitchWeapon", player, player, 100];
@@ -26,7 +25,7 @@ Foski_playerRestrained ={
 
 		// Manage the restrained player
 		while {true} do {
-			if !(player getVariable "Foski_Restrained") exitWith {player getVariable["restrained", false, true]; player setVariable ["tf_unable_to_use_radio", false, true];};
+			if !(player getVariable "Foski_Restrained") exitWith {player setVariable ["tf_unable_to_use_radio", false, true];};
 			// Block Certain Actions
 			player playAction ("Foski_Cuff_" + _pos); // Constantly loop animation to stop it from being overidden
 			player setVariable ["tf_unable_to_use_radio", true, true]; // Disable the use of a radio
