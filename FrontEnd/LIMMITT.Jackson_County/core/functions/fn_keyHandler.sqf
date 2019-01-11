@@ -588,7 +588,7 @@ switch (_code) do
 
 		if (_shift) then
 		{
-			if (vehicle player == player && !(player getVariable ["Foski_Restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed && !life_paintball) then
+			if (!(player getVariable ["Foski_Restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed && !life_paintball) then
 			{
 				if (player getVariable ["surrender", false]) then {
 				    player setVariable ["surrender", false, true];
