@@ -736,6 +736,24 @@ class Harris_twitterType
 class CfgSounds
 {
 	sounds[] = {};
+	class JDSiren1
+	{
+		name = "Wail";
+		sound[] = {"JD_CVPI\Sirens\siren1.wav",5,1};
+		titles[] = {};
+	};
+	class JDSiren2
+	{
+		name = "Wail2";
+		sound[] = {"JD_CVPI\Sirens\siren2.wav",5,1};
+		titles[] = {};
+	};
+	class JDSiren3
+	{
+		name = "Wail3";
+		sound[] = {"JD_CVPI\Sirens\siren3.wav",5,1};
+		titles[] = {};
+	};
 	class start
 	{
 		name = "start";
@@ -1248,6 +1266,42 @@ class Harris_Refine
 			w = 0.299 * safezoneW;
 			h = 0.02 * safezoneH;
 			sizeEx = 0.03;
+		};
+	};
+};
+
+class Harris_setName
+{
+	idd = 1233;
+	movingEnabled = false;
+
+	class controls
+	{
+		class ToSet: RscEdit
+		{
+			idc = 1400;
+			x = 0.412344 * safezoneW + safezoneX;
+			y = 0.467 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.035 * safezoneH;
+		};
+		class Set: RscButton
+		{
+			idc = 1600;
+			x = 0.515469 * safezoneW + safezoneX;
+			y = 0.467 * safezoneH + safezoneY;
+			w = 0.05 * safezoneW;
+			h = 0.035 * safezoneH;
+			action = "[] call Harris_setName; closeDialog 0";
+		};
+		class Current_Name: RscText
+		{
+			idc = 1000;
+			text = "Current Name:"; //--- ToDo: Localize;
+			x = 0.412344 * safezoneW + safezoneX;
+			y = 0.434 * safezoneH + safezoneY;
+			w = 0.15 * safezoneW;
+			h = 0.03 * safezoneH;
 		};
 	};
 };

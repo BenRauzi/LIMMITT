@@ -76,13 +76,19 @@ Police_Functions =
   ["fn_playerRestrained", "Foski_playerRestrained"],
   ["fn_playerUnRestrained", "Foski_playerUnRestrained"],
   ["fn_restrainPlayer", "Foski_restrainPlayer"],
-  ["fn_unRestrainPlayer", "Foski_unRestrainPlayer"]
+  ["fn_unRestrainPlayer", "Foski_unRestrainPlayer"],
+  ["fn_code1", "Harris_code1"],
+  ["fn_code2", "Harris_code2"],
+  ["fn_code3", "Harris_code3"]
 ];
 
 MiscDir = "\Harris_Server\Functions\Misc\";
 Misc_Functions = 
 [
-  ["fn_inventoryOpened", "Harris_inventoryOpened"]
+  ["fn_inventoryOpened", "Harris_inventoryOpened"],
+  ["fn_openSetName", "Harris_openSetName"],
+  ["fn_setName", "Harris_setName"],
+  ["fn_playerTags", "Harris_playerTags"]
 ];
 
 

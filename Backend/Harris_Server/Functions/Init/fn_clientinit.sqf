@@ -4,18 +4,43 @@
 */
 
 LIMMITT_clientInit = {
+
+	Harris_d3sPD = ["d3s_charger_15_CPP"];
+
 	player addEventHandler ["GetInMan", {
 	    params ["_vehicle", "_role", "_unit", "_turret"];
 
 	    if (_role == "driver" && player getVariable ["Foski_Restrained", false]) then {
-	        if (vehicle player isKindOf     'Air') then {
+	        if (vehicle player isKindOf 'Air') then {
 	            player action["GetOut",vehicle player];
 	        } else {
-	                player action["eject",vehicle player];
+                player action["eject",vehicle player];
 	        };
 	    };
+
+	    if (typeOf vehicle player in Harris_d3sPD) then {
+	    	sirenAction1 = player addAction ["<t color='#FFFFFF'>Code 1</t>", {[] call Harris_code1}];
+	   		sirenAction2 = player addAction ["<t color='#2e7bf7'>Code 2</t>", {[] call Harris_code2}];
+	    	sirenAction3 = player addAction ["<t color='#ff0000'>Code 3</t>", {[] call Harris_code3}];	
+	    };
 	}];
-	player setVariable ["Foski_Restrained",false,false]; // Restrain Variable
+
+	player addEventHandler ["GetOutMan", {
+		if !(isNil "sirenAction1") then {
+			player removeAction sirenAction1;
+			sirenAction1 = nil;
+		};
+		if !(isNil "sirenAction2") then {
+			player removeAction sirenAction2;
+			sirenAction2 = nil;
+		};
+		if !(isNil "sirenAction3") then {
+			player removeAction sirenAction3;
+			sirenAction3 = nil;
+		};
+	}];
+
+	player setVariable ["Foski_Restrained",false,true]; // Restrain Variable
 
 	outerImage = [1210,2210,3210,4210,5210,6210,7210,8210];
 	outerIcon1 = [1211,2211,3211,4211,5211,6211,7211,8211];
@@ -211,5 +236,6 @@ LIMMITT_clientInit = {
 
 	player addEventHandler ["InventoryOpened", {_this call Harris_inventoryOpened}];
 
+	[] call Harris_playerTags;
 };
 

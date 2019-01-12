@@ -252,47 +252,6 @@ switch (_code) do
 	};
 	
 
-			// Key Press 1
-			case 2: {
-			if (_shift && ((call life_adminlevel) >= 3)) then {
-				[player] call atHeal;
-			};
-			};
-			// Key Press 2
-			case 3: {
-			if (_shift && ((call life_adminlevel) >= 3)) then {
-				_veh = (vehicle player);
-				_dir = getDir _veh;
-				_dist = 5;
-
-				_pos = getPos _veh;
-				_pos = [(_pos select 0)+_dist*sin(_dir), (_pos select 1)+_dist*cos(_dir), (_pos select 2)];
-				_veh setPos _pos;
-			};};
-			// Key Press 3
-			case 4: {
-			if (_shift && ((call life_adminlevel) >= 3)) then {
-			
-				_obj = vehicle player;
-				_vel = velocity _obj;
-				_obj setVelocity [(_vel select 0),(_vel select 1),10];
-			};};
-			// Key Press 4
-			case 5: {
-			if (_shift && ((call life_adminlevel) >= 3)) then {
-			};};
-			// Key Press 5
-			case 6: {
-			if (_shift && ((call life_adminlevel) >= 3)) then {
-				deleteVehicle cursorTarget;
-				systemChat format['Deleted %1', (typeOf cursorTarget)];
-			};};
-			// Key Press 6
-			case 7: {
-			if (_shift && ((call life_adminlevel) >= 3)) then {
-				cursorTarget setDamage 1;
-				systemChat format['Destroyed %1', (typeOf cursorTarget)];
-			};};
 	//code 1 key shift+1
 	/*
 	case 2:
