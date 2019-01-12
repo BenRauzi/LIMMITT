@@ -85,6 +85,19 @@ switch (_code) do
 			_handled = true;
 		};
 	};
+	case 203:
+	{
+		if ((player getVariable ["surrender", false]) && vehicle player != player) then {
+			_handled = true;
+		};
+	};
+
+	case 205:
+	{
+		if ((player getVariable ["surrender", false]) && vehicle player != player) then {
+			_handled = true;
+		};
+	};
 /*
 	case 15:
 	{
@@ -111,15 +124,6 @@ switch (_code) do
 			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call bis_fnc_mp; //Global execution 
 			_handled = true;
 		};
-	};
-
-	case 63:
-	{
-		if (__GETC__(life_adminlevel) >= 3) then {
-			[] call showatMenu;
-		};
-		
-		_handled = true;
 	};
 
 	case 60:
