@@ -20,6 +20,7 @@ Harris_useItemPhysical = {
 		case "Workbench":
 		{
 			["A3L_Workbench"] spawn Harris_createFurniture;
+			player removeItem "Harris_workBench";
 		};
 	};
 };
