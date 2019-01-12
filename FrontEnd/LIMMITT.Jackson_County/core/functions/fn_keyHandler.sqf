@@ -72,6 +72,19 @@ switch (_code) do
 		};
 	};
 
+	case 32:
+	{
+		if ((player getVariable ["surrender", false]) && vehicle player != player) then {
+			_handled = true;
+		};
+	};
+
+	case 30:
+	{
+		if ((player getVariable ["surrender", false]) && vehicle player != player) then {
+			_handled = true;
+		};
+	};
 /*
 	case 15:
 	{

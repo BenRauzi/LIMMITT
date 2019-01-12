@@ -13,7 +13,6 @@ Harris_onCraftSelectionLbChanged = {
 	} else {
 		craftAbleItems = Harris_smeltAbleItems;
 	};
-	craftType = nil;
 	_bluePrints = player getVariable "bluePrints";
 	{
 		_bluePrint = _x select 2;

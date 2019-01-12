@@ -8,6 +8,7 @@ Harris_removeFurniture = {
 	
 	_object = player getVariable ['carryingObject', objNull];
 
+	_item = "";
 	switch (typeOf _object) do
 	{
 		case "A3L_WorkBench":
@@ -19,6 +20,7 @@ Harris_removeFurniture = {
 	deleteVehicle _object;
 	player setVariable ['carryingObject', nil];
 
+	test = _item;
 	if (player canAdd _item) then {
 		player addItem _item;
 	} else {

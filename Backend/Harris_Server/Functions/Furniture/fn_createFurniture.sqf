@@ -5,7 +5,7 @@
 
 
 Harris_createFurniture = {
-	params["_type"];
+	params["_type", "_remove"];
 	_pos = position player;
 	_furniture = _type createVehicle _pos;
 	_furniture attachTo [player, [0,1,0]];
@@ -14,6 +14,10 @@ Harris_createFurniture = {
 
 	player setVariable ["carryingObject", _furniture, true];
 
+	if (!isNil "_remove") then {
+		player removeItem _remove;
+	};
+	
 	if (isPlayer player) then {
 		_msg = "<t align = 'center' shadow = '1' size='1.3' font='PuristaBold'>LIMMITT Network<br />Furniture System</t> <br /><br /><t align = 'center' shadow = '1' size='1' font='PuristaBold'>Basic Controls</t> <br /><br /><t align = 'center' shadow = '1' size='1' color='#00f428' font='PuristaBold'>Page UP -> Raise</t> <br /><br /><t align = 'center' shadow = '1' size='1' color='#D00000' font='PuristaBold'>Page DOWN -> Lower</t>";
 

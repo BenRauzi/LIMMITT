@@ -3,7 +3,6 @@
 	Description: Inventory Opened Fixed
 */
 Harris_inventoryOpened = {
-	
 	disableSerialization;
 	private["_container","_unit"];
 	_unit = _this select 0;
@@ -60,16 +59,16 @@ Harris_inventoryOpened = {
 		};
 	};
 
-	if !(_handle) then {
-		[] spawn
-		{
-			waitUntil {!isNull (findDisplay 602)};
+	if !(_handle) exitWith {
+			[] spawn
+			{
+				waitUntil {!isNull (findDisplay 602)};
 
-			((findDisplay 602) displayCtrl 638) ctrlSetEventHandler ["LBDblClick", "[638 ,_this select 1] call Harris_useItemPhysical;"];  
-			((findDisplay 602) displayCtrl 633) ctrlSetEventHandler ["LBDblClick", "[633 ,_this select 1] call Harris_useItemPhysical;"];  
-			((findDisplay 602) displayCtrl 640) ctrlSetEventHandler ["LBDblClick", "[640 ,_this select 1] call Harris_useItemPhysical;"];  
-			((findDisplay 602) displayCtrl 619) ctrlSetEventHandler ["LBDblClick", "[619 ,_this select 1] call Harris_useItemPhysical;"];
-		};
+				((findDisplay 602) displayCtrl 638) ctrlSetEventHandler ["LBDblClick", "[638 ,_this select 1] call Harris_useItemPhysical;"];  
+				((findDisplay 602) displayCtrl 633) ctrlSetEventHandler ["LBDblClick", "[633 ,_this select 1] call Harris_useItemPhysical;"];  
+				((findDisplay 602) displayCtrl 640) ctrlSetEventHandler ["LBDblClick", "[640 ,_this select 1] call Harris_useItemPhysical;"];  
+				((findDisplay 602) displayCtrl 619) ctrlSetEventHandler ["LBDblClick", "[619 ,_this select 1] call Harris_useItemPhysical;"];
+			};
 
 
 		if (vehicle player != player) then {
@@ -89,7 +88,7 @@ Harris_inventoryOpened = {
 				_vest ctrlCommit 0;
 				};
 		};
-	};
 
-	_handle;	
+		false;
+	};
 };
