@@ -1,21 +1,25 @@
 /*
 	Author: Ben Harris
-	Description: Gathers the Weed
+	Description: Gather Weed
 */
 
-Harris_gatherWeed = {
+Harris_carryingPot = false;
+Harris_growTime = 1;
+
+
+Harris_fnc_gatherWeed = {
 	params["_ct"];
 
 	if (isNil {_ct getVariable "growingPlant"}) exitWith {};
 	_ammount = round (random 3);
 
-	for "_i" from 1 to _ammount do {
-		player addItem "Harris_weedBag";
-	};
+	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
+	["Success","You Gathered the Weed", "Success"] call Harris_Notifications;
 
 	deleteVehicle (_ct getVariable "growingPlant");
-	["Success", "You have gathered the dank weed", true] spawn Harris_Notifications;	
 
 	_ct setVariable ["growingPlant", nil, false];
 	_ct setVariable ["weedReady",nil,true];
+
 };
+

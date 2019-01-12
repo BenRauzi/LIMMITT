@@ -1,9 +1,8 @@
 /*
 	Author: Ben Harris
-	Description: Grows the Weed
+	Description: Grow Weed
 */
-
-Harris_growWeed = {
+Harris_fnc_growWeed = {
 	params["_plant", "_ct"];
 
 	_plantStages = 8;
@@ -20,4 +19,8 @@ Harris_growWeed = {
 
 	_plant setVariable ["grownWeed", true, true];
 	_ct setVariable ["weedReady",true,true];
+
+	_ct addAction ["Harvest Weed", "[_this select 0] call Harris_fnc_gatherWeed"];
+
+
 };

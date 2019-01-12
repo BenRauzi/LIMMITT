@@ -15,6 +15,10 @@ Harris_removeFurniture = {
 		{
 			_item = "Harris_workBench";
 		};
+		case "JDPot":
+		{
+			_item = "Harris_Pot";
+		};
 	};
 
 	deleteVehicle _object;

@@ -237,5 +237,7 @@ LIMMITT_clientInit = {
 	player addEventHandler ["InventoryOpened", {_this call Harris_inventoryOpened}];
 
 	[] call Harris_playerTags;
+
+	Harris_Furniture = ["A3L_WorkBench", "JD_Pot"];
 };
 

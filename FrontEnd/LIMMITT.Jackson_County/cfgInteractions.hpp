@@ -203,12 +203,12 @@ class cfgInteractions
 	};
 	class pickUpFurniture
 	{
-		condition = "[typeOf Harris_currentCursorObject == 'A3L_WorkBench', isNil {player getVariable 'carryingObject'}, player distance Harris_currentCursorObject	 < 5]";
+		condition = "[typeOf Harris_currentCursorObject in Harris_Furniture, isNil {player getVariable 'carryingObject'}, player distance Harris_currentCursorObject	 < 5]";
 		action = "[Harris_currentCursorObject] spawn Harris_pickUpFurniture";
 		icon = "033-upload.paa";
 		text = "Pickup";
 	};
-	class pickUpWorkBench
+	class pickUpFurniture
 	{
 		condition = "[!isNil {player getVariable 'carryingObject'}]";
 		action = "[] call Harris_removeFurniture";
