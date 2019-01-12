@@ -406,7 +406,7 @@ class rscTitles
 				idc = 62362;
 				text = "%HUD NOT LOADED%";
 				x = "0.752656 * safezoneW + safezoneX";
-				y = "0.94 * safezoneH + safezoneY";
+				y = "0.9444 * safezoneH + safezoneY";
 				w = "0.2475 * safezoneW";
 				h = "0.033 * safezoneH";
 				sizeEx = "0.9 * GUI_GRID_H";
