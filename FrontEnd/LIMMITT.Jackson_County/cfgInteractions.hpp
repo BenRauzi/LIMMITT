@@ -1,26 +1,11 @@
 class cfgInteractions
 {
-	/*
 	class OpenPhone
 	{
 		condition = "[alive player, !(player getVariable ['restrained',false]), (player distance Harris_currentCursorObject > 3)]";
 		action = "[] call fnc_opentablet;";
 		icon = "002_Tag.paa";
 		text = "Open Phone";
-	};
-	*/
-	class OpenPhone2
-	{
-		action = "[] call fnc_opentablet;";
-		icon = "002_Tag.paa";
-		text = "Test";
-		class OpenPhone3
-		{
-			condition="[true]";
-			action = "[] call fnc_opentablet;";
-			icon = "002_Tag.paa";
-			text = "Test";
-		};
 	};
 	class PoliceVehicle
 	{
@@ -89,12 +74,26 @@ class cfgInteractions
 			icon = "002_Tag.paa";
 			text = "Push Boat";
 		};
+		class pushCar 
+		{
+			condition = "[(Harris_currentCursorObject isKindOf 'Land')]";
+			action = "[] spawn life_fnc_pushObject;";
+			icon = "002_Tag.paa";
+			text = "Push";
+		};
 		class unFlip
 		{
 			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air')]";
 			action = "Harris_currentCursorObject setPos [getPos Harris_currentCursorObject select 0, getPos Harris_currentCursorObject select 1, (getPos Harris_currentCursorObject select 2)+0.5];";
 			icon = "002_Tag.paa";
 			text = "Unflip";
+		};
+		class repairVehicle
+		{
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), player distance Harris_currentCursorObject < 10, damage Harris_currentCursorObject > 0]";
+			action = "[Harris_currentCursorObject] spawn life_fnc_repairTruck;";
+			icon = "023-car-repair.paaa";
+			text = "Repair";
 		};
 	};
 	class PoliceAction
@@ -188,7 +187,7 @@ class cfgInteractions
 
 		class Arrest
 		{
-			condition = "[(Harris_currentCursorObject getVariable ['restrained', false]), isPlayer Harris_currentCursorObject], (player distance getMarketPos 'Test' < 50)";
+			condition = "[(Harris_currentCursorObject getVariable ['restrained', false]), isPlayer Harris_currentCursorObject, (player distance getMarkerPos 'A3L_jailMarker' < 50)]";
 			action = "[Harris_currentCursorObject] call fnc_arrestmenu;";
 			icon = "002_Tag.paa";
 			text = "Arrest";
@@ -198,16 +197,16 @@ class cfgInteractions
 	class dropFurniture
 	{
 		condition = "[!isNil {player getVariable 'carryingObject'}]";
-		action = "[] call Harris_dropFurniture";
+		action = "[] spawn Harris_dropFurniture";
 		icon = "033-download.paa";
 		text = "Drop";
 	};
 	class pickUpFurniture
 	{
 		condition = "[typeOf Harris_currentCursorObject == 'A3L_WorkBench', isNil {player getVariable 'carryingObject'}, player distance Harris_currentCursorObject	 < 5]";
-		action = "";
-		icon = "044-upload-button.paa";
-		text = "Drop";
+		action = "[Harris_currentCursorObject] spawn Harris_pickUpFurniture";
+		icon = "033-upload.paa";
+		text = "Pickup";
 	};
 	class pickUpWorkBench
 	{
@@ -220,7 +219,7 @@ class cfgInteractions
 	{
 		condition = "[typeOf Harris_currentCursorObject == 'A3L_WorkBench', isNil {player getVariable 'carryingObject'}]";
 		action = "[] call Harris_openCraftingMenu";
-		icon = "0034-cogwheel.paa";
+		icon = "034-cogwheel.paa";
 		text = "Craft";
 	};
 };

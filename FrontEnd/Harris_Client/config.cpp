@@ -271,6 +271,49 @@ class Harris_RscPicture
 #include "defines.hpp"
 class rscTitles
 {
+	class Harris_Progress
+	{
+		name = "Harris_Progress";
+		idd = 23515;
+		fadein=0;
+		duration = 99999999999;
+		fadeout=0;
+		movingEnable = 0;
+		onLoad="uiNamespace setVariable ['Harris_Progress',_this select 0]";
+		objects[]={};
+
+		class controlsBackground 
+		{
+			class Progress_B: RscProgress
+			{
+				idc = 1400;
+				x = 0.0101562 * safezoneW + safezoneX;
+				y = 0.152 * safezoneH + safezoneY;
+				w = 0.2 * safezoneW;
+				h = 0.035 * safezoneH;
+
+			};
+			class Text_Progress: RscText
+			{
+				idc = 1000;
+				font = "Metropolis";
+				text = "Text"; //--- ToDo: Localize;
+				x = 0.0101562 * safezoneW + safezoneX;
+				y = 0.152 * safezoneH + safezoneY;
+				w = 0.2 * safezoneW;
+				h = 0.035 * safezoneH;
+				sizeEx = 0.035;
+			};
+			class Frame: RscFrame
+			{
+				idc = 1023;
+				x = 0.0101562 * safezoneW + safezoneX;
+				y = 0.152 * safezoneH + safezoneY;
+				w = 0.2 * safezoneW;
+				h = 0.035 * safezoneH;
+			};
+		};
+	};
 	class Harris_Notifications1
 	{
 		name = "Harris_Notifications1";
@@ -643,11 +686,11 @@ class rscTitles
 			{
 				idc = 1000;
 				text = "LIMMITT Twitter Feed"; //--- ToDo: Localize;
-				x = 0.0 * safezoneW + safezoneX;
-				y = 0.61 * safezoneH + safezoneY;
-				w = 0.15 * safezoneW;
-				h = 0.05 * safezoneH;
-				sizeEx = 0.05;
+				x = 0.001 * safezoneW + safezoneX;
+				y = 0.595 * safezoneH + safezoneY;
+				w = 0.25 * safezoneW;
+				h = 0.07 * safezoneH;
+				sizeEx = 0.055;
 			};
 			class Text1: RscStructuredText
 			{
@@ -673,10 +716,10 @@ class Harris_twitterType
 			idc = 1000;
 			text = "LIMMITT Twitter Feed"; //--- ToDo: Localize;
 			x = 0.0 * safezoneW + safezoneX;
-			y = 0.61 * safezoneH + safezoneY;
-			w = 0.15 * safezoneW;
-			h = 0.05 * safezoneH;
-			sizeEx = 0.05;
+			y = 0.595 * safezoneH + safezoneY;
+			w = 0.25 * safezoneW;
+			h = 0.07 * safezoneH;
+			sizeEx = 0.055;
 		};
 		class twitter_type: RscEdit
 		{
@@ -1025,5 +1068,186 @@ class CfgWeapons
 		model = "\A3L_WorkBench\workbench.p3d";
 		picture = "\Harris_Client\Crafting\Workbench.paa";
 		descriptionShort = "Workbench";
+	};
+};
+
+
+class Harris_Crafting
+{
+	idd = 8376;
+	movingEnabled = false;
+
+	class controls
+	{
+		class craftingMenu_P: RscPicture
+		{
+			idc = 1200;
+			text = "\Harris_Client\Crafting\craftingmenu.paa";
+			x = 0.331614 * safezoneW + safezoneX;
+			y = 0.181333 * safezoneH + safezoneY;
+			w = 0.335156 * safezoneW;
+			h = 0.627 * safezoneH;
+			colorText[] = {1,1,1,1};
+		};
+		class Craft_B: RscButton
+		{
+			font = "Metropolis";
+			idc = 1600;
+
+			x = 0.34625 * safezoneW + safezoneX;
+			y = 0.74663 * safezoneH + safezoneY;
+			w = 0.3 * safezoneW;
+			h = 0.035 * safezoneH;
+			colorBackground[] = {0,0,0,0};
+			colorActive[] = {0,0,0,0};
+			colorBackgroundActive[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0,0,0,0};
+  			colorShadow[] = {0,0,0,0};
+   			colorBorder[] = {0,0,0,0};
+   			action = "[] spawn Harris_craftItem";
+		};
+		class Craft_lb: RscListbox
+		{
+			onLbSelChanged = "[] call Harris_onCraftLbChanged";
+			font = "Metropolis";
+			idc = 1500;
+
+			x = 0.348958 * safezoneW + safezoneX;
+			y = 0.272222 * safezoneH + safezoneY;
+			w = 0.143 * safezoneW;
+			h = 0.455 * safezoneH;
+			colorBackground[] = {0,0,0,0};
+			colorActive[] = {0,0,0,0};
+			colorBackgroundActive[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0,0,0,0};
+  			colorShadow[] = {0,0,0,0};
+   			colorBorder[] = {0,0,0,0};
+   			colorText[] = {1,1,1,1};
+   			sizeEx = 0.03;
+		};
+		class Materials_Lb: RscListbox
+		{
+			font = "Metropolis";
+			idc = 1501;
+
+			x = 0.505208 * safezoneW + safezoneX;
+			y = 0.273148 * safezoneH + safezoneY;
+			w = 0.143 * safezoneW;
+			h = 0.455 * safezoneH;
+			colorBackground[] = {0,0,0,0};
+			colorActive[] = {0,0,0,0};
+			colorBackgroundActive[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0,0,0,0};
+  			colorShadow[] = {0,0,0,0};
+   			colorBorder[] = {0,0,0,0};
+   			colorText[] = {1,1,1,1};
+   			sizeEx = 0.03;
+		};
+		class dropDown_lb: RscCombo
+		{
+			idc = 2100;
+			onLbSelChanged = "[] call Harris_onCraftSelectionLbChanged";
+			x = 0.349479 * safezoneW + safezoneX;
+			y = 0.212037 * safezoneH + safezoneY;
+			w = 0.299 * safezoneW;
+			h = 0.02 * safezoneH;
+			sizeEx = 0.03;
+		};
+	};
+};
+
+class Harris_Refine
+{
+	idd = 8377;
+	movingEnabled = false;
+
+	class controls
+	{
+		class craftingMenu_P: RscPicture
+		{
+			idc = 1200;
+			text = "\Harris_Client\Crafting\refinemenu.paa";
+			x = 0.331614 * safezoneW + safezoneX;
+			y = 0.181333 * safezoneH + safezoneY;
+			w = 0.335156 * safezoneW;
+			h = 0.627 * safezoneH;
+			colorText[] = {1,1,1,1};
+		};
+		class Craft_B: RscButton
+		{
+			font = "Metropolis";
+			idc = 1600;
+
+			x = 0.34625 * safezoneW + safezoneX;
+			y = 0.74663 * safezoneH + safezoneY;
+			w = 0.3 * safezoneW;
+			h = 0.035 * safezoneH;
+			colorBackground[] = {0,0,0,0};
+			colorActive[] = {0,0,0,0};
+			colorBackgroundActive[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0,0,0,0};
+  			colorShadow[] = {0,0,0,0};
+   			colorBorder[] = {0,0,0,0};
+   			action = "[] spawn Harris_craftItem";
+		};
+		class Craft_lb: RscListbox
+		{
+			onLbSelChanged = "[] call Harris_onCraftLbChanged";
+			font = "Metropolis";
+			idc = 1500;
+
+			x = 0.348958 * safezoneW + safezoneX;
+			y = 0.272222 * safezoneH + safezoneY;
+			w = 0.143 * safezoneW;
+			h = 0.455 * safezoneH;
+			colorBackground[] = {0,0,0,0};
+			colorActive[] = {0,0,0,0};
+			colorBackgroundActive[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0,0,0,0};
+  			colorShadow[] = {0,0,0,0};
+   			colorBorder[] = {0,0,0,0};
+   			colorText[] = {1,1,1,1};
+   			sizeEx = 0.03;
+		};
+		class Materials_Lb: RscListbox
+		{
+			font = "Metropolis";
+			idc = 1501;
+
+			x = 0.505208 * safezoneW + safezoneX;
+			y = 0.273148 * safezoneH + safezoneY;
+			w = 0.143 * safezoneW;
+			h = 0.455 * safezoneH;
+			colorBackground[] = {0,0,0,0};
+			colorActive[] = {0,0,0,0};
+			colorBackgroundActive[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0,0,0,0};
+  			colorShadow[] = {0,0,0,0};
+   			colorBorder[] = {0,0,0,0};
+   			colorText[] = {1,1,1,1};
+   			sizeEx = 0.03;
+		};
+		class dropDown_lb: RscCombo
+		{
+			idc = 2100;
+			onLbSelChanged = "[] call Harris_onCraftSelectionLbChanged";
+			x = 0.349479 * safezoneW + safezoneX;
+			y = 0.212037 * safezoneH + safezoneY;
+			w = 0.299 * safezoneW;
+			h = 0.02 * safezoneH;
+			sizeEx = 0.03;
+		};
 	};
 };

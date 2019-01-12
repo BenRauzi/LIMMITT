@@ -209,5 +209,7 @@ LIMMITT_clientInit = {
 		missionNamespace setVariable ["firstLogin", nil, true];
 	};
 
+	player addEventHandler ["InventoryOpened", {_this call Harris_inventoryOpened}];
+
 };
 

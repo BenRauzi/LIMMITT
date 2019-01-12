@@ -18,6 +18,7 @@ Harris_removeFurniture = {
 	};
 
 	deleteVehicle _object;
+	player setVariable ['carryingObject', nil];
 
 	if (player canAdd _item) then {
 		player addItem _item;

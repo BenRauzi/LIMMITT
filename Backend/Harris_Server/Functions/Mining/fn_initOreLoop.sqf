@@ -8,7 +8,7 @@ Harris_initOreLoop = {
 	while {true} do
 	{
 		waitUntil {count allPlayers > 0};
-		[] remoteExecCall ["Harris_oreSpawn", selectRandom allPlayers];
+		[] remoteExecCall ["Harris_oreSpawn", allPlayers select 0];
 		sleep 300;
 	};	
 };

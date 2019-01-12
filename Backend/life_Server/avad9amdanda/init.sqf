@@ -6,13 +6,10 @@ amd92mamd9am02m = [];
 
 am2d9m9a2dm = [
 	"\fn_sendFunctions.sqf",
-	"\Mining\Server\fn_spawnRocks.sqf",
-	"\CustomColors\Server\fn_retrieveCustom.sqf"
 ];
 
 a9a2md9am2d9a2md9am2d = [	
 	"\fn_clientvars.sqf",
-	"\CustomColors\Client\fn_clientNametags.sqf",
 	"\Cartel\Client\fn_client.sqf",
 	"\Police\Client\fn_stripSearch.sqf",
 	"\Police\Client\fn_searchVehicle.sqf"

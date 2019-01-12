@@ -396,7 +396,6 @@ class Life_Client_Core
 		class receiveItem {};
 		class giveDiff {};
 		class receiveMoney {};
-		class playerTags {};
 		class clearVehicleAmmo {};
 		class pullOutVeh {};
 		class nearUnits {};
@@ -412,7 +411,6 @@ class Life_Client_Core
 		class revealObjects {};
 		class nearestDoor {};
 		class inventoryClosed {};
-		class inventoryOpened {};
 		class isUIDActive {};
 		class saveGear {};
 		class loadGear {};

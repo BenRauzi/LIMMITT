@@ -79,6 +79,12 @@ Police_Functions =
   ["fn_unRestrainPlayer", "Foski_unRestrainPlayer"]
 ];
 
+MiscDir = "\Harris_Server\Functions\Misc\";
+Misc_Functions = 
+[
+  ["fn_inventoryOpened", "Harris_inventoryOpened"]
+];
+
 
 functionArrays = 
 "[
@@ -90,7 +96,8 @@ functionArrays =
   ['Notifications_Functions','NotificationsDir'],
   ['Crafting_Functions','CraftingDir'],
   ['Furniture_Functions','FurnitureDir'],
-  ['Police_Functions','PoliceDir']
+  ['Police_Functions','PoliceDir'],
+  ['Misc_Functions','MiscDir']
 ]";
 
 functionArrays2 = call compile functionArrays;

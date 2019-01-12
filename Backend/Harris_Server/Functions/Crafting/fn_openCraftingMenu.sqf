@@ -16,7 +16,7 @@ Harris_openCraftingMenu = {
 		craftType = 1;
 	};
 
-	_bluePrints = player getVariable "bluePrints";
+	_bluePrints = player getVariable ["bluePrints",[]];
 
 	{
 		_index = lbAdd [2100, _x];

@@ -144,7 +144,6 @@ life_sidechat = false;
 0 cutText ["","BLACK IN"];
 [] call life_fnc_hudSetup;
 [] call life_fnc_hudUpdate;
-LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
 LIFE_ID_RevealObjects = ["LIFE_RevealObjects","onEachFrame","life_fnc_revealObjects"] call BIS_fnc_addStackedEventHandler;
 [] call life_fnc_settingsInit;
 player setVariable["steam64ID",getPlayerUID player];

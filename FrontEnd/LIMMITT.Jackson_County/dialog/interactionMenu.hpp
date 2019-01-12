@@ -267,8 +267,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.484531 * safezoneW + safezoneX;
 				y = 0.352 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 
 			class Text_1_i: Harris_RscText
@@ -307,8 +307,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.422656 * safezoneW + safezoneX;
 				y = 0.297 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_1_o_2: RscPicture
 			{
@@ -317,8 +317,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.467 * safezoneW + safezoneX;
 				y = 0.271 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_1_o_3: RscPicture
 			{
@@ -327,8 +327,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.515312 * safezoneW + safezoneX;
 				y = 0.271 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_1_o_4: RscPicture
 			{
@@ -337,8 +337,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.551562 * safezoneW + safezoneX;
 				y = 0.297 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 
 			class Text_1_o_1: Harris_RscText
@@ -346,8 +346,8 @@ class radialMenu
 				idc = 1215;
 
 				text = "Handcuff";
-				style = ST_CENTRE;
-				x = 0.414656 * safezoneW + safezoneX;
+				style = ST_CENTER;
+				x =   0.406562  * safezoneW + safezoneX;
 				y = 0.305 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -358,7 +358,7 @@ class radialMenu
 				idc = 1216;
 
 				text = "Handcuff";
-				style = ST_CENTRE;
+				style = ST_CENTER;
 				x = 0.450906 * safezoneW + safezoneX;
 				y = 0.279 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
@@ -370,7 +370,7 @@ class radialMenu
 
 				text = "Handcuff";
 				style = ST_CENTER;
-				x = 0.50 * safezoneW + safezoneX;
+				x = 0.499218  * safezoneW + safezoneX;
 				y = 0.279 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -381,7 +381,7 @@ class radialMenu
 
 				text = "Handcuff";
 				style = ST_CENTER;
-				x = 0.538562 * safezoneW + safezoneX;
+				x =  0.535468 * safezoneW + safezoneX;
 				y = 0.305 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -445,8 +445,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.530937 * safezoneW + safezoneX;
 				y = 0.385 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 
 			class Text_2_i: Harris_RscText
@@ -486,8 +486,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.51 * safezoneW + safezoneX;
 				y = 0.274 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_2_o_2: RscPicture
 			{
@@ -496,8 +496,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.554687 * safezoneW + safezoneX;
 				y = 0.29974 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_2_o_3: RscPicture
 			{
@@ -506,8 +506,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.5825 * safezoneW + safezoneX;
 				y = 0.355593 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_2_o_4: RscPicture
 			{
@@ -516,8 +516,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.59849 * safezoneW + safezoneX;
 				y = 0.423444 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Text_2_o_1: Harris_RscText
 			{
@@ -525,7 +525,7 @@ class radialMenu
 
 				text = "Handcuff";
 				style = ST_CENTER;
-				x = 0.498156 * safezoneW + safezoneX;
+				x =  0.493906  * safezoneW + safezoneX;
 				y = 0.285 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -536,7 +536,7 @@ class radialMenu
 
 				text = "Handcuff";
 				style = ST_CENTER;
-				x = 0.54 * safezoneW + safezoneX;
+				x = 0.538593 * safezoneW + safezoneX;
 				y = 0.30674 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -547,7 +547,7 @@ class radialMenu
 
 				text = "Handcuff";
 				style = ST_CENTER;
-				x = 0.5745 * safezoneW + safezoneX;
+				x = 0.566406  * safezoneW + safezoneX;
 				y = 0.363593 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -557,7 +557,7 @@ class radialMenu
 				idc = 2218;
 				text = "Handcuff";
 				style = ST_CENTER;
-				x = 0.59049 * safezoneW + safezoneX;
+				x =  0.582396  * safezoneW + safezoneX;
 				y = 0.431444 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -617,8 +617,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.554 * safezoneW + safezoneX;
 				y = 0.473 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 
 			class Text_3_i: Harris_RscText
@@ -626,7 +626,7 @@ class radialMenu
 				idc = 3112;
 				text = "Handcuff";
 				style = ST_CENTER;
-				x = 0.54 * safezoneW + safezoneX;
+				x =  0.537906  * safezoneW + safezoneX;
 				y = 0.481 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -655,8 +655,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.591824 * safezoneW + safezoneX;
 				y = 0.377704 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_3_o_2: RscPicture
 			{
@@ -665,8 +665,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.603728 * safezoneW + safezoneX;
 				y = 0.445 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_3_o_3: RscPicture
 			{
@@ -675,8 +675,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.600521 * safezoneW + safezoneX;
 				y = 0.50889 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_3_o_4: RscPicture
 			{
@@ -685,8 +685,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.58802 * safezoneW + safezoneX;
 				y = 0.571851 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Text_3_o_1: Harris_RscText
 			{
@@ -694,7 +694,7 @@ class radialMenu
 				style = ST_CENTER;
 
 				text = "Handcuff";
-				x = 0.58 * safezoneW + safezoneX;
+				x = 0.575730 * safezoneW + safezoneX;
 				y = 0.385704 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -705,7 +705,7 @@ class radialMenu
 				style = ST_CENTER;
 
 				text = "Handcuff";
-				x = 0.589728 * safezoneW + safezoneX;
+				x =  0.587634 * safezoneW + safezoneX;
 				y = 0.452075 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -715,7 +715,7 @@ class radialMenu
 				idc = 3217;
 				style = ST_CENTER;
 				text = "Handcuff";
-				x = 0.584521 * safezoneW + safezoneX;
+				x =  0.584427 * safezoneW + safezoneX;
 				y = 0.51689 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -726,7 +726,7 @@ class radialMenu
 				style = ST_CENTER;
 
 				text = "Handcuff";
-				x = 0.57202 * safezoneW + safezoneX;
+				x = 0.571926 * safezoneW + safezoneX;
 				y = 0.579851 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -788,19 +788,19 @@ class radialMenu
 					text = "\Harris_Client\radial\icons\002_Tag.paa";
 					x = 0.537 * safezoneW + safezoneX;
 					y = 0.55 * safezoneH + safezoneY;
-					w = 0.0257812 * safezoneW;
-					h = 0.044 * safezoneH;
+					w = 0.02475 * safezoneW;
+					h = 0.0418 * safezoneH;
 				};
 
 				class Text_4_i: Harris_RscText
 				{
 					idc = 4112;
 					text = "Handcuff";
-					x = 0.52 * safezoneW + safezoneX;
+					x = 0.52  * safezoneW + safezoneX;
 					y = 0.558 * safezoneH + safezoneY;
 					w = 0.05 * safezoneW;
 					h = 0.05 * safezoneH;
-					style = ST_RIGHT;
+					style = ST_CENTER;
 				};
 
 				class Button_4_i: Harris_radial_button
@@ -824,10 +824,10 @@ class radialMenu
 				idc = 4211;
 
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
-				x = 0.599 * safezoneW + safezoneX;
+				x = 0.598906 * safezoneW + safezoneX;
 				y = 0.52337 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_4_o_2: RscPicture
 			{
@@ -836,8 +836,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.58 * safezoneW + safezoneX;
 				y = 0.587593 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_4_o_3: RscPicture
 			{
@@ -846,8 +846,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.543436 * safezoneW + safezoneX;
 				y = 0.646852 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_4_o_4: RscPicture
 			{
@@ -856,8 +856,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.505832 * safezoneW + safezoneX;
 				y = 0.673667 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Text_4_o_1: Harris_RscText
 			{
@@ -865,7 +865,7 @@ class radialMenu
 
 				text = "Handcuff";
 				stlye = ST_CENTER;
-				x = 0.585 * safezoneW + safezoneX;
+				x =  0.596 * safezoneW + safezoneX;
 				y = 0.53137 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -876,7 +876,7 @@ class radialMenu
 
 				text = "Handcuff";
 				stlye = ST_CENTER;
-				x = 0.565 * safezoneW + safezoneX;
+				x = 0.577094 * safezoneW + safezoneX;
 				y = 0.595593 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -887,7 +887,7 @@ class radialMenu
 
 				text = "Handcuff";
 				stlye = ST_CENTER;
-				x = 0.532 * safezoneW + safezoneX;
+				x =  0.54053 * safezoneW + safezoneX;
 				y = 0.654852 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -898,7 +898,7 @@ class radialMenu
 
 				text = "Handcuff";
 				stlye = ST_CENTER;
-				x = 0.495 * safezoneW + safezoneX;
+				x = 0.502926 * safezoneW + safezoneX;
 				y = 0.681667 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -965,17 +965,17 @@ class radialMenu
 				idc = 5111;
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.484531 * safezoneW + safezoneX;
-				y = 0.583 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				y = 0.591 * safezoneH + safezoneY;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 
 			class Text_5_i: Harris_RscText
 			{
 				idc = 5112;
 				text = "Handcuff";
-				x = 0.476531 * safezoneW + safezoneX;
-				y = 0.591 * safezoneH + safezoneY;
+				x = 0.473437 * safezoneW + safezoneX;
+				y = 0.6 * safezoneH + safezoneY;
 				w = 0.04 * safezoneW;
 				h = 0.05 * safezoneH;
 				style = ST_CENTER;
@@ -1004,8 +1004,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.546406 * safezoneW + safezoneX;
 				y = 0.649 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_5_o_2: RscPicture
 			{
@@ -1014,8 +1014,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.51 * safezoneW + safezoneX;
 				y = 0.676556 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_5_o_3: RscPicture
 			{
@@ -1024,8 +1024,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.465 * safezoneW + safezoneX;
 				y = 0.676555 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_5_o_4: RscPicture
 			{
@@ -1034,8 +1034,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.422187 * safezoneW + safezoneX;
 				y = 0.649148 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Text_5_o_1: Harris_RscText
 			{
@@ -1043,7 +1043,7 @@ class radialMenu
 
 				text = "Handcuff";
 				stlye = ST_CENTER;
-				x = 0.534 * safezoneW + safezoneX;
+				x = 0.5435 * safezoneW + safezoneX;
 				y = 0.657 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1054,7 +1054,7 @@ class radialMenu
 
 				text = "Handcuff";
 				stlye = ST_CENTER;
-				x = 0.5 * safezoneW + safezoneX;
+				x = 0.507094 * safezoneW + safezoneX;
 				y = 0.684556 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1065,7 +1065,7 @@ class radialMenu
 
 				text = "Handcuff";
 				stlye = ST_CENTER;
-				x = 0.454229 * safezoneW + safezoneX;
+				x = 0.462094 * safezoneW + safezoneX;
 				y = 0.684555 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1076,7 +1076,7 @@ class radialMenu
 
 				text = "Handcuff";
 				stlye = ST_CENTER;
-				x = 0.414187 * safezoneW + safezoneX;
+				x =  0.419281 * safezoneW + safezoneX;
 				y = 0.655148 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1110,7 +1110,7 @@ class radialMenu
 				idc = 5221;
 
 				x = 0.454167 * safezoneW + safezoneX;
-				y = 0.677778 * safezoneH + safezoneY;
+				y = 0.677852 * safezoneH + safezoneY;
 				w = 0.0360937 * safezoneW;
 				h = 0.066 * safezoneH;
 				colorBackground[] = {0,0,0,0};
@@ -1145,17 +1145,17 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.438125 * safezoneW + safezoneX;
 				y = 0.55 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 
 			class Text_6_i: Harris_RscText
 			{
 				idc = 6112;
 				text = "Handcuff";
-				x = 0.430969 * safezoneW + safezoneX;
+				x =  0.421219 * safezoneW + safezoneX;
 				y = 0.558 * safezoneH + safezoneY;
-				w = 0.04 * safezoneW;
+				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 				style = ST_CENTER;
 			};
@@ -1183,8 +1183,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.371354 * safezoneW + safezoneX;
 				y = 0.522777 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_6_o_2: RscPicture
 			{
@@ -1193,8 +1193,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.386093 * safezoneW + safezoneX;
 				y = 0.584037 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_6_o_3: RscPicture
 			{
@@ -1203,8 +1203,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.419166 * safezoneW + safezoneX;
 				y = 0.637074 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_6_o_4: RscPicture
 			{
@@ -1213,8 +1213,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.45625 * safezoneW + safezoneX;
 				y = 0.675555 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 		
 			class Text_6_o_1: Harris_RscText
@@ -1222,7 +1222,7 @@ class radialMenu
 				idc = 6215;
 
 				text = "Handcuff";
-				x = 0.36 * safezoneW + safezoneX;
+				x =  0.368448 * safezoneW + safezoneX;
 				y = 0.528519 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1232,17 +1232,17 @@ class radialMenu
 				idc = 6216;
 
 				text = "Handcuff";
-				x = 0.38 * safezoneW + safezoneX;
+				x =  0.38318 * safezoneW + safezoneX;
 				y = 0.591482 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
 			};
-				class Text_6_o_3: Harris_RscText
+			class Text_6_o_3: Harris_RscText
 			{
 				idc = 6217;
 
 				text = "Handcuff";
-				x = 0.405 * safezoneW + safezoneX;
+				x = 0.41626 * safezoneW + safezoneX;
 				y = 0.643334 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1252,7 +1252,7 @@ class radialMenu
 				idc = 6218;
 
 				text = "Handcuff";
-				x = 0.444 * safezoneW + safezoneX;
+				x = 0.453344 * safezoneW + safezoneX;
 				y = 0.681296 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1312,8 +1312,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.418344 * safezoneW + safezoneX;
 				y = 0.473 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 
 			class Text_7_i: Harris_RscText
@@ -1321,7 +1321,7 @@ class radialMenu
 				idc = 7112;
 				text = "Handcuff";
 				style = ST_CENTER;
-				x = 0.405 * safezoneW + safezoneX;
+				x = 0.402250 * safezoneW + safezoneX;
 				y = 0.481 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1350,8 +1350,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.384531 * safezoneW + safezoneX;
 				y = 0.368444 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_7_o_2: RscPicture
 			{
@@ -1360,8 +1360,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.370313 * safezoneW + safezoneX;
 				y = 0.426481 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_7_o_3: RscPicture
 			{
@@ -1370,8 +1370,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.368541 * safezoneW + safezoneX;
 				y = 0.487815 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_7_o_4: RscPicture
 			{
@@ -1380,15 +1380,15 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.378853 * safezoneW + safezoneX;
 				y = 0.554629 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Text_7_o_1: Harris_RscText
 			{
 				idc = 7215;
 
 				text = "Handcuff";
-				x = 0.369 * safezoneW + safezoneX;
+				x =  0.381625 * safezoneW + safezoneX;
 				y = 0.375742 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1398,7 +1398,7 @@ class radialMenu
 				idc = 7216;
 
 				text = "Handcuff";
-				x = 0.357 * safezoneW + safezoneX;
+				x =  0.367407 * safezoneW + safezoneX;
 				y = 0.437779 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1408,7 +1408,7 @@ class radialMenu
 				idc = 7217;
 
 				text = "Handcuff";
-				x = 0.357 * safezoneW + safezoneX;
+				x = 0.365635 * safezoneW + safezoneX;
 				y = 0.497037 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1418,7 +1418,7 @@ class radialMenu
 				idc = 7218;
 
 				text = "Handcuff";
-				x = 0.37 * safezoneW + safezoneX;
+				x =  0.375947 * safezoneW + safezoneX;
 				y = 0.562778 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1474,8 +1474,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.438125 * safezoneW + safezoneX;
 				y = 0.385 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 
 			class Text_8_i: Harris_RscText
@@ -1483,7 +1483,7 @@ class radialMenu
 				idc = 8112;
 				text = "Handcuff";
 				style = ST_CENTER;
-				x = 0.423 * safezoneW + safezoneX;
+				x =  0.422031 * safezoneW + safezoneX;
 				y = 0.393 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1513,8 +1513,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.467187 * safezoneW + safezoneX;
 				y = 0.266296 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_8_o_2: RscPicture
 			{
@@ -1523,8 +1523,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.424479 * safezoneW + safezoneX;
 				y = 0.291297 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_8_o_3: RscPicture
 			{
@@ -1533,8 +1533,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.390104 * safezoneW + safezoneX;
 				y = 0.345926 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Icon_8_o_4: RscPicture
 			{
@@ -1543,8 +1543,8 @@ class radialMenu
 				text = "\Harris_Client\radial\icons\002_Tag.paa";
 				x = 0.371874 * safezoneW + safezoneX;
 				y = 0.418147 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				w = 0.02475 * safezoneW;
+				h = 0.0418 * safezoneH;
 			};
 			class Text_8_o_1: Harris_RscText
 			{
@@ -1552,7 +1552,7 @@ class radialMenu
 				style = 1;
 
 				text = "Handcuff";
-				x = 0.45 * safezoneW + safezoneX;
+				x =  0.434281 * safezoneW + safezoneX;
 				y = 0.273889 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1563,7 +1563,7 @@ class radialMenu
 				style = 1;
 
 				text = "Handcuff";
-				x = 0.41 * safezoneW + safezoneX;
+				x =  0.391573 * safezoneW + safezoneX;
 				y = 0.299814 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1571,10 +1571,10 @@ class radialMenu
 			class Text_8_o_3: Harris_RscText
 			{
 				idc = 8217;
-				style = ST_LEFT;
+				style = ST_CENTER;
 
 				text = "Handcuff";
-				x = 0.376 * safezoneW + safezoneX;
+				x =  0.373 * safezoneW + safezoneX;
 				y = 0.354445 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;
@@ -1585,7 +1585,7 @@ class radialMenu
 				style = 1;
 
 				text = "Handcuff";
-				x = 0.359 * safezoneW + safezoneX;
+				x = 0.338968 * safezoneW + safezoneX;
 				y = 0.424814 * safezoneH + safezoneY;
 				w = 0.05 * safezoneW;
 				h = 0.05 * safezoneH;

@@ -55,7 +55,7 @@ if(!alive _curTarget && playerSide != independent && !dialog && _curTarget isKin
 			if( asdih_inv_medkit > 0 ) then { 
 				[_curTarget] call life_fnc_CPRPlayer;
 			} else {
-				hint "You have no medkit to perform CPR.";
+				["Medkit Required","You have no medkit for CPR","Failure"] spawn Harris_Notifications;
 			};
 		};
 };
@@ -168,7 +168,6 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 						
 						if (side player == civilian) then {
 								["You got a shank!",30,"blue"] call A3L_Fnc_Msg;
-								hint "Press CTRL + G to knock someone out / Press CTRL + T to cut someone down.";
 								_curTarget setVariable ["pickup",false,true];
 								_curTarget attachto [player, [0.005,-.002,-0.02], "RightHandMiddle1"];
 								_curTarget setVectorDirAndUp [[-0.01,0.01,0],[-0.01,0.01,0]];

@@ -7,7 +7,6 @@ player addEventHandler["Respawn", {_this call life_fnc_onPlayerRespawn}];
 player addEventHandler["Take",{_this spawn life_fnc_onTakeItem}];
 player addEventHandler["Fired",{_this call life_fnc_onFired}];
 player addEventHandler["InventoryClosed", {_this spawn life_fnc_inventoryClosed}];
-player addEventHandler["InventoryOpened", {_this spawn life_fnc_inventoryOpened}];
 player addEventHandler ["FiredNear", {_this call life_fnc_antiCombatRevive}];
 "bis_fnc_mp_packet" addPublicVariableEventHandler {[_this select 0,_this select 1] call bis_fnc_mpexec;};
 

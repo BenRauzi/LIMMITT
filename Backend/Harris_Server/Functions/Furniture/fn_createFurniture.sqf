@@ -15,7 +15,7 @@ Harris_createFurniture = {
 	player setVariable ["carryingObject", _furniture, true];
 
 	if (isPlayer player) then {
-		_msg = "<img width='300px'image='\Harris_Client\misc\logo.paa'/><br/><t align = 'center' shadow = '1' size='1.3' font='PuristaBold'>LIMMITT Network<br />Furniture System</t> <br /><br /><t align = 'center' shadow = '1' size='1' font='PuristaBold'>Basic Controls</t> <br /><br /><t align = 'center' shadow = '1' size='1' color='#00f428' font='PuristaBold'>Page UP -> Raise</t> <br /><br /><t align = 'center' shadow = '1' size='1' color='#D00000' font='PuristaBold'>Page DOWN -> Lower</t>";
+		_msg = "<t align = 'center' shadow = '1' size='1.3' font='PuristaBold'>LIMMITT Network<br />Furniture System</t> <br /><br /><t align = 'center' shadow = '1' size='1' font='PuristaBold'>Basic Controls</t> <br /><br /><t align = 'center' shadow = '1' size='1' color='#00f428' font='PuristaBold'>Page UP -> Raise</t> <br /><br /><t align = 'center' shadow = '1' size='1' color='#D00000' font='PuristaBold'>Page DOWN -> Lower</t>";
 
 		hintSilent parseText (_msg);
 
