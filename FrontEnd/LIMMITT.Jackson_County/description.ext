@@ -46,7 +46,6 @@ class RscTitles
 	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
 	#include "dialog\statusBar.hpp"
-	#include "dialog\hud_nameTags.h"
 	#include "dialog\a3lmsgsys.hpp"
 	#include "dialog\a3ljailhud.hpp"
 	#include "dialog\pager.hpp"
