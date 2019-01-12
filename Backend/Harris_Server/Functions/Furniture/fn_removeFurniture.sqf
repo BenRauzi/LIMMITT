@@ -6,12 +6,11 @@
 
 Harris_removeFurniture = {
 	
-	_object = player getVariable 'carryingObject';
-
+	_object = player getVariable ['carryingObject', objNull];
 
 	switch (typeOf _object) do
 	{
-		case "A3L_Workbench":
+		case "A3L_WorkBench":
 		{
 			_item = "Harris_workBench";
 		};
