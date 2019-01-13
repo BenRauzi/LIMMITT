@@ -17,7 +17,7 @@ _amount = parseNumber(_amount);
 if(_diff <= 0) exitWith { ["Error",localize "STR_NOTF_NoSpace", "Failure"] call Harris_Notifications;};
 _amount = _diff;
 _hideout = (nearestObjects[getPosATL player,["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"],25]) select 0;
-if((_price * _amount) > LIMMITTCASH && {!isNil "_hideout" && {!isNil {grpPlayer getVariable "gang_bank"}} && {(grpPlayer getVariable "gang_bank") <= _price * _amount}}) exitWith {["Error",localize "STR_NOTF_NotEnoughMoney", "Failure"] call Harris_Notifications;}};
+if((_price * _amount) > LIMMITTCASH && {!isNil "_hideout" && {!isNil {grpPlayer getVariable "gang_bank"}} && {(grpPlayer getVariable "gang_bank") <= _price * _amount}}) exitWith {["Error",localize "STR_NOTF_NotEnoughMoney", "Failure"] call Harris_Notifications;};
 
 _name = [([_type,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 
