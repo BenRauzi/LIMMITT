@@ -11,6 +11,8 @@ Foski_playerRestrained ={
 		if !(_pos in ["front","back"]) then {_pos = "back"};
 		if (isNil {player getVariable "Foski_Restrained"}) then {player setVariable ["Foski_Restrained", false, true];};
 		if !(player getVariable "Foski_Restrained") then {
+			if (player getVariable "Foski_Surrender") then {[] call Foski_playerSurrender};
+			sleep 0.1;
 			player setVariable ["Foski_Restrained", true, true];
 			player setVariable["restrained", true, true];
 			if !(currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then {

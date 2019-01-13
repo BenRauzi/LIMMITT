@@ -7,7 +7,7 @@ Foski_playerSurrender ={
 	[] spawn {
 		if (isNil {player getVariable "Foski_Surrender"}) then {player setVariable ["Foski_Surrender", false, true];};
 		if (!(player getVariable ["Foski_Restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed && !life_paintball) then {
-			if !(currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then {
+			if (vehicle player == player && !(currentWeapon player == "" || currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"])) then {
 				Holstlife_curWep_h = currentWeapon player;
 				player action ["SwitchWeapon", player, player, 100];
 				player switchcamera cameraView;
@@ -33,7 +33,7 @@ Foski_playerSurrender ={
 			};
 		};
 
-		// Manage the restrained player 
+		// Manage the surrendered player 
 		while {true} do {
 			if !(player getVariable "Foski_Surrender") exitWith {player setVariable ["tf_unable_to_use_radio", false, true]; player setVariable["surrender", false, true]; player setVariable ["Harris_TwitterEnabled", true, true]; player setVariable ["Harris_InteractionEnabled", true, true];};
 			// Block Certain Actions
@@ -44,7 +44,7 @@ Foski_playerSurrender ={
 			player setVariable ["Harris_TwitterEnabled", false, true]; // Disable typing in twitter
 			player setVariable ["Harris_InteractionEnabled", false, true]; // Disable the interaction menu
 			// Block any type of weapon switching | V
-			if !(currentWeapon player == "" || currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then { // Changed to '! isKindOf "Pistol"' to stop bino's coming out as well
+			if (vehicle player == player && !(currentWeapon player == "" || currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"])) then { // Changed to '! isKindOf "Pistol"' to stop bino's coming out as well
 				Holstlife_curWep_h = currentWeapon player;
 				player action ["SwitchWeapon", player, player, 100];
 				player switchcamera cameraView;
