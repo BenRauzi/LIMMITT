@@ -324,7 +324,7 @@ switch (_code) do
 	//Holster / recall weapon.
 	case 35:
 	{
-		if !(player getVariable "Foski_Restrained") then {
+		if !(player getVariable "Foski_Restrained" || player getVariable "Foski_Surrender") then {
 			if(_shift && !_ctrlKey && currentWeapon player != "") then {
 				life_curWep_h = currentWeapon player;
 				player action ["SwitchWeapon", player, player, 100];
@@ -402,7 +402,7 @@ switch (_code) do
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
-		if (player getVariable "Foski_Restrained") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
+		if (player getVariable "Foski_Restrained" || player getVariable "Foski_Surrender") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
 		if(!life_action_inUse) then {
 			[] spawn 
 			{
@@ -529,7 +529,7 @@ switch (_code) do
 	case 21:
 	{	
 		_stop = false;
-		if (player getVariable "Foski_Restrained") exitWith {_stop = true; _handled = true;}; // if player restrained - NJF
+		if (player getVariable "Foski_Restrained" || player getVariable "Foski_Surrender") exitWith {_stop = true; _handled = true;}; // if player restrained - NJF
 		if( asdih_inv_mobilephone < 1 && !_alt && !_ctrlKey ) then {
 			titleText["You have no phone. (CTRL+Y to open food menu // ALT+Y to open key menu // ALT+8 to sync player data).","PLAIN"];
 			_stop = true;
@@ -564,20 +564,7 @@ switch (_code) do
 
 		if (_shift) then
 		{
-			if (!(player getVariable ["Foski_Restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed && !life_paintball) then
-			{
-				if (player getVariable ["surrender", false]) then {
-				    player setVariable ["surrender", false, true];
-					if (vehicle player != player) then { 
-				    	[player,"Foski_StopSurrendering"] remoteExecCall ["Foski_SurrenderSyncMP", 0]; 
-				    } else {player playAction "Foski_StopSurrendering";};
-				} else {
-					player setVariable ["surrender", true, true];
-					if (vehicle player != player) then { 
-					    [player,"Foski_Surrender"] remoteExecCall ["Foski_SurrenderSyncMP", 0]; 
-					} else {player playAction "Foski_Surrender"};
-				};
-			};
+			[] call Foski_playerSurrender;
 		};
 	};
 	// Default Tonic Surrender

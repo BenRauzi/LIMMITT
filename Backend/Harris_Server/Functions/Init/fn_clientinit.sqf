@@ -40,7 +40,11 @@ LIMMITT_clientInit = {
 		};
 	}];
 
+	player setVariable ["Harris_TwitterEnabled",true,true]; // Able to use twitter variable
+	player setVariable ["Harris_InteractionEnabled",true,true]; // Able to use the interaction menu variable
 	player setVariable ["Foski_Restrained",false,true]; // Restrain Variable
+	player setVariable ["Foski_Surrender", false, true]; // Surrender Variable
+
 
 	outerImage = [1210,2210,3210,4210,5210,6210,7210,8210];
 	outerIcon1 = [1211,2211,3211,4211,5211,6211,7211,8211];

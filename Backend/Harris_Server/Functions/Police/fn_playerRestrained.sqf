@@ -26,10 +26,12 @@ Foski_playerRestrained ={
 
 		// Manage the restrained player
 		while {true} do {
-			if !(player getVariable "Foski_Restrained") exitWith {player setVariable ["tf_unable_to_use_radio", false, true]; player setVariable["restrained", false, true];};
+			if !(player getVariable "Foski_Restrained") exitWith {player setVariable ["tf_unable_to_use_radio", false, true]; player setVariable["restrained", false, true]; player setVariable ["Harris_TwitterEnabled", true, true]; player setVariable ["Harris_InteractionEnabled", true, true];};
 			// Block Certain Actions
 			player playAction ("Foski_Cuff_" + _pos); // Constantly loop animation to stop it from being overidden
 			player setVariable ["tf_unable_to_use_radio", true, true]; // Disable the use of a radio
+			player setVariable ["Harris_TwitterEnabled", false, true]; // Disable typing in twitter
+			player setVariable ["Harris_InteractionEnabled", false, true]; // Disable interaction menu
 			// Block any type of weapon switching | V
 			if !(currentWeapon player == "" || currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then { // Changed to '! isKindOf "Pistol"' to stop bino's coming out as well
 				Holstlife_curWep_h = currentWeapon player;

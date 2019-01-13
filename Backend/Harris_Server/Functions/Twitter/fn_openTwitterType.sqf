@@ -12,7 +12,7 @@
 
 
 Harris_openTwitterType = {
-	if (player getVariable "Foski_Restrained") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
+	if !(player getVariable "Harris_TwitterEnabled") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
 	createDialog "Harris_twitterType";	
 	_listBox = ((findDisplay 5002) displayCtrl 1400);
 
