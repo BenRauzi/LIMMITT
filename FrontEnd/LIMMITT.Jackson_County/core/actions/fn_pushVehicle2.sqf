@@ -3,7 +3,7 @@
 
 */
 
-if (pushCooldown) exitWith {hint "Please don't spam push!"};
+if (pushCooldown) exitWith { ["Warning!!!","Please don't spam push!", "Warning"] call Harris_Notifications;};
 
 pushCooldown = true;
 

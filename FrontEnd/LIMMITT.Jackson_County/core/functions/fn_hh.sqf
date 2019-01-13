@@ -5,7 +5,7 @@
 
 if (life_koil_hh == 1) exitwith {};
 
-hint "You feel very strange.";
+["Info", "You feel very strange.", "Info"] call Harris_Notifications;
 
 life_koil_hh = 1;
 uiSleep 1;
@@ -107,4 +107,6 @@ while { life_koil_hh == 1 } do {
 uiSleep 1;
 
 life_koil_hh = 2;
-hint "You are starting to feel normal again.";
+
+
+["Info", "You are starting to feel normal again.", "Info"] call Harris_Notifications;

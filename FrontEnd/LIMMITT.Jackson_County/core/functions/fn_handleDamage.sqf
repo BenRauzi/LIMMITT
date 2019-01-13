@@ -38,26 +38,11 @@ if(!isNull _source) then {
 		};
 		
 
-		if(_projectile in ["Taser_Caseless"] && _curWep in ["JD_Taser"]) then {
-			if(side _source == west) then {
-				private["_distance","_isVehicle","_isQuad"];
-                _distance = if(_projectile == "B_556x45_dual") then {100} else {35};
-                _isVehicle = if(vehicle player != player) then {true} else {false};
-                _isQuad = if(_isVehicle) then {if(typeOf (vehicle player) == "B_Quadbike_01_F") then {true} else {false}} else {false};
-                
-                _damage = false;
-                if(_unit distance _source < _distance) then {
-                    if(!life_istazed && !(_unit getVariable["restrained",false])) then {
-                        if(_isVehicle && _isQuad) then {
-                            player action ["Eject",vehicle player];
-                            [_unit,_source] spawn life_fnc_tazed;
-                        } else {
-                            [_unit,_source] spawn life_fnc_tazed;
-                        };
-                    };
-                };
-            };
-        };
+		if (_curWep == "JD_Taser" || _curWep == "JD_Taser") exitWith {
+			[] spawn Harris_tazed;
+			_damage = 0;
+			_damage;
+		};
 	};
 };
 

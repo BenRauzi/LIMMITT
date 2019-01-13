@@ -62,7 +62,7 @@ if(drug_fuck == 2) then {
 
 
 
-hint localize "Searching Completed... all illegal items removed.";
+["Completed", "Searching Completed... all illegal items removed.", "Success"] call Harris_Notifications;
 [5] call SOCK_fnc_updatePartial;
 
 };

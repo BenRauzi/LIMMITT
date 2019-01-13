@@ -14,7 +14,7 @@ _medic = [_this,0,"Unknown Medic",[""]] call BIS_fnc_param;
 life_corpse setVariable["realname",nil,true]; //Should correct the double name sinking into the ground.
 [[life_corpse],"life_fnc_corpse",nil,FALSE] spawn bis_fnc_mp;
 _dir = getDir life_corpse;
-hint format[localize "STR_Medic_RevivePay",_medic,[(call life_revive_fee)] call life_fnc_numberText];
+["Revived", format[localize "STR_Medic_RevivePay",_medic,[(call life_revive_fee)] call life_fnc_numberText], "Info"] call Harris_Notifications;
 
 
 

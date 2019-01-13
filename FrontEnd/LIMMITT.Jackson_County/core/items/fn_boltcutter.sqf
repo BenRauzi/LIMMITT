@@ -7,7 +7,7 @@
 private["_building","_door","_doors","_cpRate","_title","_progressBar","_titleText","_cp","_ui"];
 _building = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _building) exitWith {};
-if(!(_building isKindOf "House_F")) exitWith {hint "You are not looking at a house door."};
+if(!(_building isKindOf "House_F")) exitWith {["Error", "You are not looking at a house door.", "Failure"] call Harris_Notifications;};
 if(isNil "life_boltcutter_uses") then {life_boltcutter_uses = 0;};
 if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building) then {
 	[[[1,2],localize "STR_ISTR_Bolt_AlertFed"],"life_fnc_broadcast",true,false] spawn bis_fnc_mp;
@@ -28,8 +28,8 @@ for "_i" from 1 to _doors do {
 	_worldSpace = _building modelToWorld _selPos;
 		if(player distance _worldSpace < 5) exitWith {_door = _i;};
 };
-if(_door == 0) exitWith {hint localize "STR_Cop_NotaDoor"}; //Not near a door to be broken into.
-if((_building getVariable[format["bis_disabled_Door_%1",_door],0]) == 0) exitWith {hint localize "STR_House_Raid_DoorUnlocked"};
+if(_door == 0) exitWith {["Error", localize "STR_Cop_NotaDoor", "Failure"] call Harris_Notifications;}; //Not near a door to be broken into.
+if((_building getVariable[format["bis_disabled_Door_%1",_door],0]) == 0) exitWith {["Success", localize "STR_House_Raid_DoorUnlocked", "Success"] call Harris_Notifications;};
 life_action_inUse = true;
 
 //Setup the progress bar

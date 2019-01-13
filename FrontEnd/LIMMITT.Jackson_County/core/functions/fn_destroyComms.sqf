@@ -30,4 +30,4 @@ cursorTarget removeItem "tf_microdagr";
 
 waitUntil{animationState player != "amovpknlmstpsnonwnondnon_amovpknlmstpsraswlnrdnon";};
 
-hint "Communication & Map Destroyed.";
+["Success", "Communication & Map Destroyed.", "Success"] call Harris_Notifications;

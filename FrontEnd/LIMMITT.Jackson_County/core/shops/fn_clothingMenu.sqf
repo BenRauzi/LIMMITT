@@ -11,12 +11,12 @@ createDialog "Life_Clothing";
 disableSerialization;
 
 //Cop / Civ Pre Check
-if((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian) exitWith {hint localize "STR_Shop_NotaCiv"; closeDialog 0;};
-if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
-if((_this select 3) in ["cop","detective","trooper","command_cop"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
-if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};
-if((_this select 3) in ["lsmo"] && !license_civ_lsmo) exitWith { hint localize "STR_Shop_NotaLSMO"; closeDialog 0;};
-if((_this select 3) == "ems" && playerSide != independent) exitWith {hint "You are not a EMS!"; closeDialog 0;};
+if((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian) exitWith {["Error", localize "STR_Shop_NotaCiv",  "Failure"] call Harris_Notifications; closeDialog 0;};
+if((_this select 3) == "reb" && !license_civ_rebel) exitWith {["Error", localize "STR_Shop_NotaReb",  "Failure"] call Harris_Notifications; closeDialog 0;};
+if((_this select 3) in ["cop","detective","trooper","command_cop"] && playerSide != west) exitWith {["Error", localize "STR_Shop_NotaCop",  "Failure"] call Harris_Notifications; closeDialog 0;};
+if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { ["Error", localize "STR_Shop_NotaDive",  "Failure"] call Harris_Notifications; closeDialog 0;};
+if((_this select 3) in ["lsmo"] && !license_civ_lsmo) exitWith { ["Error", localize "STR_Shop_NotaLSMO",  "Failure"] call Harris_Notifications;  closeDialog 0;};
+if((_this select 3) == "ems" && playerSide != independent) exitWith {["Error", localize "You are not a FD Operator!",  "Failure"] call Harris_Notifications;  closeDialog 0;};
 
 life_clothing_store = _this select 3;
 

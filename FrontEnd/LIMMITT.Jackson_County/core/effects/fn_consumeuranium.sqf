@@ -6,7 +6,7 @@
 */
 
 closeDialog 0;
-hint "You have consumed deadly uranium. Your life is coming to an end.";
+["Warning",  "You have consumed deadly uranium. Your life is coming to an end.",  "Warning"] call Harris_Notifications; 
 player say2d "radioactive";
 player enableFatigue true;
 player setFatigue 1;

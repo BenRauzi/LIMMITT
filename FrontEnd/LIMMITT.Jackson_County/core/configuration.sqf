@@ -20,7 +20,6 @@ life_net_dropped = false;
 notesArray = [];
 life_hit_explosive = false;
 gm_loadOut = "";
-gm_copRequested = 0;
 life_siren_active = false;
 life_clothing_filter = 0;
 gm_playerWeapon = "";

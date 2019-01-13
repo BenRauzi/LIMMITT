@@ -12,4 +12,5 @@ if((MB_NLRTime + 900) >= time) exitWith {
 //Warn the player to leave if within circle
 if(((getPos player) distance (getMarkerPos "nlr")) < 200) then {
 	hint "Warning! You recently died here! Leave the area!";
+	
 };

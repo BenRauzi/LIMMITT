@@ -45,7 +45,7 @@ switch (_state) do
 			license_civ_air = false;
 			license_civ_truck = false;
 			license_civ_boat = false;
-			hint localize "STR_Civ_LicenseRemove_1";
+			["Success", localize "STR_Civ_LicenseRemove_1", "Success"] call Harris_Notifications;
 		};
 	};
 	
@@ -54,7 +54,7 @@ switch (_state) do
 	{
 		if(license_civ_gun) then {
 			license_civ_gun = false;
-			hint localize "STR_Civ_LicenseRemove_2";
+			["Success", localize "STR_Civ_LicenseRemove_2", "Success"] call Harris_Notifications;
 		};
 	};
 	
@@ -65,37 +65,37 @@ switch (_state) do
 	{
 		license_civ_driver = false;
 		player setVariable ["LicenseDriver", false, true];
-		hint localize "STR_Civ_RevokeLicense_Driver";
+		["Success", localize "STR_Civ_RevokeLicense_Driver", "Success"] call Harris_Notifications;
 	};
 	// Truck License
 	case 11:
 	{
 		license_civ_truck = false;
-		hint localize "STR_Civ_RevokeLicense_Truck";
+		["Success", localize "STR_Civ_RevokeLicense_Truck", "Success"] call Harris_Notifications;
 	};
 	// Pilot License
 	case 12:
 	{
 		license_civ_air = false;
-		hint localize "STR_Civ_RevokeLicense_Pilot";
+		["Success", localize "STR_Civ_RevokeLicense_Pilot", "Success"] call Harris_Notifications;
 	};
 	// Boating License
 	case 13:
 	{
 		license_civ_boat = false;
-		hint localize "STR_Civ_RevokeLicense_Boating";
+		["Success", localize "STR_Civ_RevokeLicense_Boating", "Success"] call Harris_Notifications;
 	};
 	// Diving License
 	case 14:
 	{
 		license_civ_dive = false;
-		hint localize "STR_Civ_RevokeLicense_Diving";
+		["Success", localize "STR_Civ_RevokeLicense_Diving", "Success"] call Harris_Notifications;
 	};
 	// Taxi License
 	case 15:
 	{
 		license_civ_taxi = false;
-		hint localize "STR_Civ_RevokeLicense_Taxi";
+		["Success", localize "STR_Civ_RevokeLicense_Taxi", "Success"] call Harris_Notifications;
 	};
 	// All Motor Vehicle
 	case 16:
@@ -108,12 +108,12 @@ switch (_state) do
 		license_civ_air = false;
 		license_civ_dive = false;
 		license_civ_taxi = false;
-		hint localize "STR_Civ_RevokeLicense_AllMotor";
+		["Success", localize "STR_Civ_RevokeLicense_AllMotor", "Success"] call Harris_Notifications;
 	};
 	// Firearms License
 	case 17:
 	{
 		license_civ_gun = false;
-		hint localize "STR_Civ_RevokeLicense_Firearm";
+		["Success", localize "STR_Civ_RevokeLicense_Firearm", "Success"] call Harris_Notifications;
 	};
 };

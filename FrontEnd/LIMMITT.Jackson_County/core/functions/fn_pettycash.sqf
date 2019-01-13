@@ -7,6 +7,6 @@ if ((_this select 3) getVariable "robbed") exitwith {["This stash of cash was re
 (_this select 3) setVariable ["robbed",true,true];
 _funds = 5000 + round(random 35000); 
 
-hint format ["You picked up %1 in petty cash..",_funds];
+["Picked Up", format ["You picked up %1 in petty cash..",_funds], "Success"] call Harris_Notifications;
 
 LIMMITTCASH = LIMMITTCASH + _funds;

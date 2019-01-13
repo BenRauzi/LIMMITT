@@ -79,7 +79,9 @@ Police_Functions =
   ["fn_unRestrainPlayer", "Foski_unRestrainPlayer"],
   ["fn_code1", "Harris_code1"],
   ["fn_code2", "Harris_code2"],
-  ["fn_code3", "Harris_code3"]
+  ["fn_code3", "Harris_code3"],
+  ["fn_tazed", "Harris_tazed"]
+
 ];
 
 MiscDir = "\Harris_Server\Functions\Misc\";
@@ -90,6 +92,16 @@ Misc_Functions =
   ["fn_setName", "Harris_setName"],
   ["fn_playerTags", "Harris_playerTags"],
   ["fn_playerSurrender", "Foski_playerSurrender"]
+];
+
+CitationsDir = "\Harris_Server\Functions\Citations\";
+Citations_Functions = 
+[
+  ["fn_openGiveTicket", "Harris_openGiveTicket"],
+  ["fn_payTicket", "Harris_payTicket"],
+  ["fn_receiveTicket", "Harris_receiveTicket"],
+  ["fn_refuseTicket", "Harris_refuseTicket"],
+  ["fn_sendTicket", "Harris_sendTicket"]
 ];
 
 

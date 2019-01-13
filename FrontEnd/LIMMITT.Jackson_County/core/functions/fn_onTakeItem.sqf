@@ -17,7 +17,7 @@ _personNearby = false;
 if(isNull _unit OR _item == "") exitWith {}; //Bad thingies?
 
 
-if (_container isKindOf "Man" && !alive _container) exitWith {hint "No yoinking from bodies."; [_item,false,false,false,false] call life_fnc_handleItem;};
+if (_container isKindOf "Man" && !alive _container) exitWith { ["OI!",  "No yoinking from bodies.", "Warning"] call Harris_Notifications; [_item,false,false,false,false] call life_fnc_handleItem;};
 
 _isBackpack = getNumber(configFile >> "CfgVehicles" >> _item >> "isBackpack");
 

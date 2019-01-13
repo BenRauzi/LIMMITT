@@ -17,7 +17,7 @@ player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
 
 titleText[localize "STR_Jail_Warn","PLAIN"];
-hint localize "STR_Jail_LicenseNOTF";
+["General",  localize "STR_Jail_LicenseNOTF", "General"] call Harris_Notifications;
 player setPos (getMarkerPos "jail_marker");
 
 if (uniform player == "A3L_Prisoner_Outfit") then 

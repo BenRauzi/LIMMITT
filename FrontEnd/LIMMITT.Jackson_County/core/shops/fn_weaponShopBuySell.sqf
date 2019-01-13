@@ -8,7 +8,7 @@
 */
 disableSerialization;
 private["_price","_item","_itemInfo","_bad"];
-if((lbCurSel 38403) == -1) exitWith {hint localize "STR_Shop_Weapon_NoSelect"};
+if((lbCurSel 38403) == -1) exitWith { ["Error", localize "STR_Shop_Weapon_NoSelect", "Failure"] call Harris_Notifications;};
 _price = lbValue[38403,(lbCurSel 38403)]; if(isNil "_price") then {_price = 0;};
 _item = lbData[38403,(lbCurSel 38403)];
 _itemInfo = [_item] call life_fnc_fetchCfgDetails;
@@ -54,13 +54,13 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 			[_item,true] spawn life_fnc_handleItem;
 			[[1,grpPlayer],"TON_fnc_updateGang",false,false] spawn bis_fnc_mp;
 		} else {
-			if(_price >  LIMMITTCASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
+			if(_price >  LIMMITTCASH) exitWith { ["Error", localize "STR_NOTF_NotEnoughMoney", "Failure"] call Harris_Notifications;};
 			hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
 			__SUB__( LIMMITTCASH,_price);
 			[_item,true] spawn life_fnc_handleItem;
 		};
 	} else {
-		if(_price >  LIMMITTCASH) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
+		if(_price >  LIMMITTCASH) exitWith { ["Error", localize "STR_NOTF_NotEnoughMoney", "Failure"] call Harris_Notifications;};
 		hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
 		 LIMMITTCASH =  LIMMITTCASH - _price;
 		[_item,true] spawn life_fnc_handleItem;

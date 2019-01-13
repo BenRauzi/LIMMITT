@@ -8,11 +8,15 @@ _count = 50;
 _unit = player;
 _myposy = getPos player;
 
-hint "This run will begin in 5 seconds, get in position - your direction will be automatically adjusted after each round. You can move roughly 5 metres.";
+
+["Start", "This run will begin in 5 seconds, get in position - your direction will be automatically adjusted after each round. You can move roughly 5 metres.", "General"] call Harris_Notifications;
 
 uiSleep 3;
 
-hint "Enabling Virtual Glasses to spawn targets.";
+hint "";
+
+
+["Info", "Enabling Virtual Glasses to spawn targets.", "Info"] call Harris_Notifications;
 
 "chromAberration" ppEffectEnable true;
 "chromAberration" ppEffectAdjust [0.02,0.02,true];

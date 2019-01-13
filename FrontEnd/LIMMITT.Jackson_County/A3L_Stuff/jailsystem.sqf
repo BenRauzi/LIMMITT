@@ -51,7 +51,7 @@ fnc_sendtojail = {
 	A3L_Fnc_OldUniform = Uniform player;
 	player addUniform "Inmate_Uni1";
 
-	hint localize "STR_Jail_LicenseNOTF";
+	["Info",localize "STR_Jail_LicenseNOTF", "Info"] call Harris_Notifications;
 	[1] call life_fnc_removeLicenses;
 
 

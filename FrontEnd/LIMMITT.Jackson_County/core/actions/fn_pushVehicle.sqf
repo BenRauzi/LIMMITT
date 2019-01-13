@@ -8,7 +8,7 @@ _caller = player;
 _posCaller = getPos _caller;
 _dir = getDir _caller;
 
-if (pushCooldown) exitWith {hint "Please don't spam push!"};
+if (pushCooldown) exitWith {["Warning!!!","Please don't spam push!", "Warning"] call Harris_Notifications;};
 
 if(isNull _target) exitWith {};
 if(_caller distance _target > 5) exitWith {};

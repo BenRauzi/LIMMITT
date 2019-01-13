@@ -56,7 +56,7 @@ camDestroy life_deathCamera;
 
 //Bad boy
 if(life_is_arrested) exitWith {
-	hint localize "STR_Jail_Suicide";
+	["Suicide", localize "STR_Jail_Suicide", "Warning"] call Harris_Notifications;
 	[false,false,life_arrestMinutes,life_arrestReason] call fnc_jailsetup;
 	[] call SOCK_fnc_updateRequest;
 };

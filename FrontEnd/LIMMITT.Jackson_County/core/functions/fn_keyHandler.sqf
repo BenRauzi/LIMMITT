@@ -634,7 +634,7 @@ switch (_code) do
 			if(_veh isKindOf "House_F" && playerSide == civilian) then {
 				if(_veh in life_vehicles && player distance _veh < 8) then {
 					_door = [_veh] call life_fnc_nearestDoor;
-					if(_door == 0) exitWith {hint localize "STR_House_Door_NotNear"};
+					if(_door == 0) exitWith { ["Error",  localize "STR_House_Door_NotNear", "Failure"] call Harris_Notifications;};
 					_locked = _veh getVariable [format["bis_disabled_Door_%1",_door],0];
 					if(_locked == 0) then {
 						_veh setVariable[format["bis_disabled_Door_%1",_door],1,true];

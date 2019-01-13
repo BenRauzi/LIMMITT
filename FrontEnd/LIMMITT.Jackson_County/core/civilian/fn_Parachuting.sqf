@@ -2,7 +2,7 @@
 
 private ["_num","_color","_backpackName","_backpackItems","_x"];
 
-if(playerSide in [west,independent]) then {hint"You shouldn't be doing this while working, but go have some fun!";}; 
+if(playerSide in [west,independent]) then {["Get back to work!", "You shouldn't be doing this while working, but go have some fun!", "Warning"] call Harris_Notifications;}; 
 titleCut ["", "BLACK FADED", 999];
 
 life_action_inUse = true;
@@ -19,7 +19,7 @@ uiSleep 2;
 
 titlecut [" ","BLACK IN",3]; 
 player say2d "skydive";
-cutText ["You are now skydiving, have fun!","PLAIN",2];
+["Finished!", "You are now skydiving, have fun!", "Success"] call Harris_Notifications;
 
 waitUntil {(vehicle player != player)};	
 	
@@ -38,7 +38,7 @@ waitUntil {(vehicle player != player)};
 waitUntil {isTouchingGround player};
 	uiSleep 1;
 	player allowDamage true;
-	cutText ["Thanks for choosing EVOParachutingLTD as your parachuting company.","PLAIN",2];
+	["Finished!", "We hope you enjoyed your time", "Success"] call Harris_Notifications;
 	
 	removeBackpack player;
 	uiSleep 1;

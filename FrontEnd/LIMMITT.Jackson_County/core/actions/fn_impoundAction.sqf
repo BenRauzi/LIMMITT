@@ -42,7 +42,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	};
 	5 cutText ["","PLAIN"];
 	
-	if(player distance _vehicle > 10) exitWith {hint localize "STR_NOTF_ImpoundingCancelled"; life_action_inUse = false;};
+	if(player distance _vehicle > 10) exitWith { ["Info", localize "STR_NOTF_ImpoundingCancelled", "Info"] call Harris_Notifications; life_action_inUse = false;};
 	if(!alive player) exitWith {life_action_inUse = false;};
 	//_time = _vehicle getVariable "time";
 	//if(isNil {_time}) exitWith {deleteVehicle _vehicle; hint "This vehicle was hacked in"};
@@ -61,7 +61,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 		life_impound_inuse = true;
 		[[_vehicle,true,player],"TON_fnc_vehicleStore",false,false] spawn bis_fnc_mp;
 		waitUntil {!life_impound_inuse};
-		hint format[localize "STR_NOTF_Impounded",_type,_price];
+		 ["Success", format[localize "STR_NOTF_Impounded",_type,_price], "Success"] call Harris_Notifications;
 //		[[0,format[localize "STR_NOTF_HasImpounded",profileName,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn bis_fnc_mp;
 		gm_memecash = gm_memecash + _price;
 

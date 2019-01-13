@@ -7,7 +7,7 @@
 */
 _target = _this select 0;
 
-hint "Repairing ground object!";
+["General", "Repairing ground object!", "General"] call Harris_Notifications;
 
 life_action_inUse = true; //Lockout the controls.
 

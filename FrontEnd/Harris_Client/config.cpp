@@ -333,6 +333,15 @@ class rscTitles
 				w = 0.17 * safezoneW;
 				h = 0.06 * safezoneH;
 			};
+			class Icon_1: RscPicture
+			{
+				idc = 1200;
+				text = "Harris_Client\Notifications\bell.paa";
+				x = 0.833333 * safezoneW + safezoneX;
+				y = 0.102185 * safezoneH + safezoneY;
+				w = 0.015 * safezoneW;
+				h = 0.025 * safezoneH;
+			};
 			class Title_1: Harris_RscText
 			{
 				idc = 1001;
@@ -344,15 +353,15 @@ class rscTitles
 				h = 0.02 * safezoneH;
 				sizeEx = 0.035;
 			};
-			class Text_1: Harris_RscText
+			class Text_1: RscStructuredText
 			{
 				idc = 1002;
-				text = "Text"; //--- ToDo: Localize;
+				text = "<t size='0.75' align='left' font='PuristaMedium' color='#FFFFFF'>You must have $1000 in your bank in order to make this purchase"; //--- ToDo: Localize;
 				font = "Metropolis";
 				x = 0.851 * safezoneW + safezoneX;
-				y = 0.115 * safezoneH + safezoneY;
-				w = 0.2 * safezoneW;
-				h = 0.02 * safezoneH;
+				y = 0.105 * safezoneH + safezoneY;
+				w = 0.15 * safezoneW;
+				h = 0.03 * safezoneH;
 				sizeEx = 0.033;
 			};
 
@@ -511,6 +520,15 @@ class rscTitles
 				w = 0.17 * safezoneW;
 				h = 0.06 * safezoneH;
 			};
+			class Icon_2: RscPicture
+			{
+				idc = 2200;
+				text = "\Harris_Client\Notifications\bell.paa";
+				x = 0.833333 * safezoneW + safezoneX;
+				y = 0.168185 * safezoneH + safezoneY;
+				w = 0.015 * safezoneW;
+				h = 0.025 * safezoneH;
+			};
 			class Title_2: Harris_RscText
 			{
 				idc = 2001;
@@ -522,15 +540,15 @@ class rscTitles
 				h = 0.02 * safezoneH;
 				sizeEx = 0.035;
 			};
-			class Text_2: Harris_RscText
+			class Text_2: RscStructuredText
 			{
 				idc = 2002;
-				text = "Text"; //--- ToDo: Localize;
+				text = "<t size='0.75' align='left' font='PuristaMedium' color='#FFFFFF'>You must have $1000 in your bank in order to make this purchase"; //--- ToDo: Localize;
 				font = "Metropolis";
 				x = 0.851 * safezoneW + safezoneX;
-				y = 0.181 * safezoneH + safezoneY;
-				w = 0.2 * safezoneW;
-				h = 0.02 * safezoneH;
+				y = 0.171 * safezoneH + safezoneY;
+				w = 0.15 * safezoneW;
+				h = 0.03 * safezoneH;
 				sizeEx = 0.033;
 			};
 		};
@@ -556,6 +574,15 @@ class rscTitles
 				w = 0.17 * safezoneW;
 				h = 0.06 * safezoneH;
 			};
+			class Icon_3: RscPicture
+			{
+				idc = 3200;
+				text = "\Harris_Client\Notifications\bell.paa";
+				x = 0.833333 * safezoneW + safezoneX;
+				y = 0.234185 * safezoneH + safezoneY;
+				w = 0.015 * safezoneW;
+				h = 0.025 * safezoneH;
+			};
 			class Title_3: Harris_RscText
 			{
 				idc = 3001;
@@ -567,15 +594,15 @@ class rscTitles
 				h = 0.02 * safezoneH;
 				sizeEx = 0.035;
 			};
-			class Text_3: Harris_RscText
+			class Text_3: RscStructuredText
 			{
 				idc = 3002;
-				text = "Text"; //--- ToDo: Localize;
+				text = "<t size='0.75' align='left' font='PuristaMedium' color='#FFFFFF'>You must have $1000 in your bank in order to make this purchase"; //--- ToDo: Localize;
 				font = "Metropolis";
 				x = 0.851 * safezoneW + safezoneX;
-				y = 0.247 * safezoneH + safezoneY;
-				w = 0.2 * safezoneW;
-				h = 0.02 * safezoneH;
+				y = 0.237 * safezoneH + safezoneY;
+				w = 0.15 * safezoneW;
+				h = 0.03 * safezoneH;
 				sizeEx = 0.033;
 			};
 
@@ -602,6 +629,16 @@ class rscTitles
 				w = 0.17 * safezoneW;
 				h = 0.06 * safezoneH;
 			};
+			class Icon_4: RscPicture
+			{
+				idc = 4200;
+				text = "\Harris_Client\Notifications\bell.paa";
+				x = 0.833333 * safezoneW + safezoneX;
+				y = 0.300185 * safezoneH + safezoneY;
+				w = 0.015 * safezoneW;
+				h = 0.025 * safezoneH;
+			};
+
 			class Title_4: Harris_RscText
 			{
 				idc = 4001;
@@ -613,15 +650,15 @@ class rscTitles
 				h = 0.02 * safezoneH;
 				sizeEx = 0.035;
 			};
-			class Text_4: Harris_RscText
+			class Text_4: RscStructuredText
 			{
 				idc = 4002;
-				text = "Text"; //--- ToDo: Localize;
+				text = "<t size='0.75' align='left' font='PuristaMedium' color='#FFFFFF'>You must have $1000 in your bank in order to make this purchase"; //--- ToDo: Localize;
 				font = "Metropolis";
 				x = 0.851 * safezoneW + safezoneX;
-				y = 0.313 * safezoneH + safezoneY;
-				w = 0.2 * safezoneW;
-				h = 0.02 * safezoneH;
+				y = 0.303 * safezoneH + safezoneY;
+				w = 0.15 * safezoneW;
+				h = 0.03 * safezoneH;
 				sizeEx = 0.033;
 			};
 		};
@@ -647,6 +684,16 @@ class rscTitles
 				w = 0.17 * safezoneW;
 				h = 0.06 * safezoneH;
 			};
+			class Icon_5: RscPicture
+			{
+				idc = 5200;
+				text = "\Harris_Client\Notifications\bell.paa";
+				x = 0.833333 * safezoneW + safezoneX;
+				y = 0.366185 * safezoneH + safezoneY;
+				w = 0.015 * safezoneW;
+				h = 0.025 * safezoneH;
+			};
+
 			class Title_5: Harris_RscText
 			{
 				idc = 5001;
@@ -658,15 +705,15 @@ class rscTitles
 				h = 0.02 * safezoneH;
 				sizeEx = 0.035;
 			};
-			class Text_5: Harris_RscText
+			class Text_5: RscStructuredText
 			{
 				idc = 5002;
-				text = "Text"; //--- ToDo: Localize;
+				text = "<t size='0.75' align='left' font='PuristaMedium' color='#FFFFFF'>You must have $1000 in your bank in order to make this purchase</t>"; //--- ToDo: Localize;
 				font = "Metropolis";
 				x = 0.851 * safezoneW + safezoneX;
-				y = 0.379 * safezoneH + safezoneY;
-				w = 0.2 * safezoneW;
-				h = 0.02 * safezoneH;
+				y = 0.369 * safezoneH + safezoneY;
+				w = 0.15 * safezoneW;
+				h = 0.03 * safezoneH;
 				sizeEx = 0.033;
 			};
 		};
@@ -1305,3 +1352,403 @@ class Harris_setName
 		};
 	};
 };
+
+
+
+class Harris_getCitation
+{
+	idd = 5064;
+	movingEnabled = false;
+
+	class controls
+	{
+		class Background_P: RscPicture
+		{
+			idc = 1200;
+			text = "\Harris_client\Police\receiveCitation";
+			x = 0.309219 * safezoneW + safezoneX;
+			y = 0.192 * safezoneH + safezoneY;
+			w = 0.35 * safezoneW;
+			h = 0.6 * safezoneH;
+		};
+		class First_T: RscText
+		{
+			idc = 1000;
+			font = "PuristaLight";
+			text = "Ben"; //--- ToDo: Localize;
+			x = 0.381406 * safezoneW + safezoneX;
+			y = 0.269 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class Last_T: RscText
+		{
+			idc = 1001;
+			font = "PuristaLight";
+			text = "Harris"; //--- ToDo: Localize;
+			x = 0.381406 * safezoneW + safezoneX;
+			y = 0.313 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class Middle_T: RscText
+		{
+			idc = 1002;
+			font = "PuristaLight";
+			text = "I."; //--- ToDo: Localize;
+			x = 0.53125 * safezoneW + safezoneX;
+			y = 0.267593 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class DOB_T: RscText
+		{
+			idc = 1003;
+			font = "PuristaLight";
+			text = "26/04/1999"; //--- ToDo: Localize;
+			x = 0.530937 * safezoneW + safezoneX;
+			y = 0.313 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class License_T: RscText
+		{
+			idc = 1004;
+			font = "PuristaLight";
+			text = "Yes"; //--- ToDo: Localize;
+			x = 0.530937 * safezoneW + safezoneX;
+			y = 0.357 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class country_T: RscText
+		{
+			idc = 1005;
+			font = "PuristaLight";
+			text = "Lakeside Isles"; //--- ToDo: Localize;
+			x = 0.381406 * safezoneW + safezoneX;
+			y = 0.357 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class violation_E: RscText
+		{
+			idc = 1400;
+			font = "PuristaLight";
+			x = 0.383854 * safezoneW + safezoneX;
+			y = 0.430556 * safezoneH + safezoneY;
+			w = 0.21 * safezoneW;
+			h = 0.027 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class courtAppearance_LB: RscText
+		{
+			idc = 2100;
+			font = "PuristaLight";
+			x = 0.384478 * safezoneW + safezoneX;
+			y = 0.479852 * safezoneH + safezoneY;
+			w = 0.13 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class citationCost: RscText
+		{
+			idc = 1401;
+			font = "PuristaLight";
+			x = 0.525781 * safezoneW + safezoneX;
+			y = 0.478 * safezoneH + safezoneY;
+			w = 0.05 * safezoneW;
+			h = 0.027 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class submittingOfficer_T: RscText
+		{
+			idc = 1006;
+			font = "PuristaLight";
+			text = "Ben Harris"; //--- ToDo: Localize;
+			x = 0.383334 * safezoneW + safezoneX;
+			y = 0.548148 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class badge_T: RscText
+		{
+			idc = 1402;
+			font = "PuristaLight";
+			x = 0.513542 * safezoneW + safezoneX;
+			y = 0.548148 * safezoneH + safezoneY;
+			w = 0.08 * safezoneW;
+			h = 0.027 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class Signature_T: RscEdit
+		{
+			idc = 1403;
+			font = "Palace";
+			style = ST_NO_RECT;
+			x = 0.390104 * safezoneW + safezoneX;
+			y = 0.697223 * safezoneH + safezoneY;
+			w = 0.2 * safezoneW;
+			h = 0.035 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class Accept_B: RscButton
+		{
+			idc = 1600;
+			x = 0.517552 * safezoneW + safezoneX;
+			y = 0.753 * safezoneH + safezoneY;
+			w = 0.075 * safezoneW;
+			h = 0.03 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorBackground[] = {0,0,0,0};
+			colorActive[] = {0,0,0,0};
+			colorBackgroundActive[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0,0,0,0};
+  			colorShadow[] = {0,0,0,0};
+   			colorBorder[] = {0,0,0,0};
+			action = "[] call Harris_payTicket;";
+		};
+		class refuse_B: RscButton
+		{
+			idc = 1600;
+			action = "[] call Harris_refuseTicket; closeDialog 0";
+
+			x = 0.386562 * safezoneW + safezoneX;
+			y = 0.753 * safezoneH + safezoneY;
+			w = 0.075 * safezoneW;
+			h = 0.0300001 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorBackground[] = {0,0,0,0};
+			colorActive[] = {0,0,0,0};
+			colorBackgroundActive[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0,0,0,0};
+  			colorShadow[] = {0,0,0,0};
+   			colorBorder[] = {0,0,0,0};
+		};
+	};
+};
+
+
+class Harris_giveCitation
+{
+	idd = 5063;
+	movingEnabled = false;
+
+	class controls
+	{
+		class Background_P: RscPicture
+		{
+			idc = 1200;
+			text = "\Harris_Client\Police\giveCitation";
+			x = 0.309219 * safezoneW + safezoneX;
+			y = 0.192 * safezoneH + safezoneY;
+			w = 0.35 * safezoneW;
+			h = 0.6 * safezoneH;
+		};
+		class First_T: RscText
+		{
+			idc = 1000;
+			font = "PuristaLight";
+			text = "Ben"; //--- ToDo: Localize;
+			x = 0.381406 * safezoneW + safezoneX;
+			y = 0.269 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class Last_T: RscText
+		{
+			idc = 1001;
+			font = "PuristaLight";
+			text = "Harris"; //--- ToDo: Localize;
+			x = 0.381406 * safezoneW + safezoneX;
+			y = 0.313 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class Middle_T: RscText
+		{
+			idc = 1002;
+			font = "PuristaLight";
+			text = "I."; //--- ToDo: Localize;
+			x = 0.53125 * safezoneW + safezoneX;
+			y = 0.267593 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class DOB_T: RscText
+		{
+			idc = 1003;
+			font = "PuristaLight";
+			text = "26/04/1999"; //--- ToDo: Localize;
+			x = 0.530937 * safezoneW + safezoneX;
+			y = 0.313 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class License_T: RscText
+		{
+			idc = 1004;
+			font = "PuristaLight";
+			text = "Yes"; //--- ToDo: Localize;
+			x = 0.530937 * safezoneW + safezoneX;
+			y = 0.357 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class country_T: RscText
+		{
+			idc = 1005;
+			font = "PuristaLight";
+			text = "Lakeside Isles"; //--- ToDo: Localize;
+			x = 0.381406 * safezoneW + safezoneX;
+			y = 0.357 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class violation_E: RscEdit
+		{
+			idc = 1400;
+			style = ST_NO_RECT;
+			font = "PuristaLight";
+			x = 0.383854 * safezoneW + safezoneX;
+			y = 0.430556 * safezoneH + safezoneY;
+			w = 0.21 * safezoneW;
+			h = 0.027 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class courtAppearance_LB: RscCombo
+		{
+			idc = 2100;
+			font = "PuristaLight";
+			x = 0.384478 * safezoneW + safezoneX;
+			y = 0.479852 * safezoneH + safezoneY;
+			w = 0.13 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class citationCost: RscEdit
+		{
+			idc = 1401;
+			style = ST_NO_RECT;
+			font = "PuristaLight";
+			x = 0.525781 * safezoneW + safezoneX;
+			y = 0.478 * safezoneH + safezoneY;
+			w = 0.05 * safezoneW;
+			h = 0.027 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class submittingOfficer_T: RscText
+		{
+			idc = 1006;
+			font = "PuristaLight";
+			text = "Ben Harris"; //--- ToDo: Localize;
+			x = 0.383334 * safezoneW + safezoneX;
+			y = 0.548148 * safezoneH + safezoneY;
+			w = 0.1 * safezoneW;
+			h = 0.025 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class badge_T: RscEdit
+		{
+			idc = 1402;
+			style = ST_NO_RECT;
+			font = "PuristaLight";
+			x = 0.513542 * safezoneW + safezoneX;
+			y = 0.548148 * safezoneH + safezoneY;
+			w = 0.08 * safezoneW;
+			h = 0.027 * safezoneH;
+			colorText[] = {-1,-1,-1,1};
+			colorShadow[] = {0,0,0,0};
+		};
+		class Issue_B: RscButton
+		{
+			idc = 1600;
+			x = 0.517552 * safezoneW + safezoneX;
+			y = 0.753 * safezoneH + safezoneY;
+			w = 0.075 * safezoneW;
+			h = 0.03 * safezoneH;
+			action = "[] call Harris_sendTicket; closeDialog 0;";
+			colorText[] = {-1,-1,-1,1};
+			colorBackground[] = {0,0,0,0};
+			colorActive[] = {0,0,0,0};
+			colorBackgroundActive[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0,0,0,0};
+  			colorShadow[] = {0,0,0,0};
+   			colorBorder[] = {0,0,0,0};
+		};
+	};
+};
+
+class Harris_whiteList
+{
+	name = "Harris_whiteList";
+	idd = 123312;
+	fadein=0;
+	fadeout=0;
+	movingEnable = 0;
+	objects[]={};
+
+	class controlsBackground 
+	{
+		class Whitelist_Combo: RscCombo
+		{
+			idc = 2100;
+			x = 0.427812 * safezoneW + safezoneX;
+			y = 0.39 * safezoneH + safezoneY;
+			w = 0.07 * safezoneW;
+			h = 0.03 * safezoneH;
+		};
+		class Whitelist_B: RscButton
+		{
+			idc = 1600;
+			text = "Whitelist"; //--- ToDo: Localize;
+			x = 0.5 * safezoneW + safezoneX;
+			y = 0.39 * safezoneH + safezoneY;
+			w = 0.07 * safezoneW;
+			h = 0.03 * safezoneH;
+			action = "[] call Harris_fnc_whitelist; closeDialog 0";
+		};
+	};
+};
+

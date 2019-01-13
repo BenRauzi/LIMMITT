@@ -15,7 +15,7 @@ _nearVehicles = nearestObjects [getMarkerPos life_chopShop,["Car","Motorbike","M
 _vehicle = _nearVehicles select _vehicle;
 if(isNull _vehicle) exitWith {};
 
-hint localize "STR_Shop_ChopShopSelling";
+["Selling", localize "STR_Shop_ChopShopSelling",  "Success"] call Harris_Notifications;
 life_action_inUse = true;
 _price2 = LIMMITTCASH + _price;
 [[player,_vehicle,_price,_price2],"TON_fnc_chopShopSell",false,false] spawn bis_fnc_mp;

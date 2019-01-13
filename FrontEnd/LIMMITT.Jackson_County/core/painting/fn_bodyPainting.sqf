@@ -1,7 +1,7 @@
 _assigned = assignedVehicle player;
 
-if (_assigned isEqualTo objNull) exitWith {hint "Your last vehicle does not exist?"};
-if !(_assigned in life_vehicles) exitWith {hint "You don't have keys to your last vehicle!"};
+if (_assigned isEqualTo objNull) exitWith {["Error", "Your last vehicle does not exist?", "Failure"] call Harris_Notifications;};
+if !(_assigned in life_vehicles) exitWith {["Error", "You don't have keys to your last vehicle!", "Failure"] call Harris_Notifications;};
 
 _className = typeOf _assigned;
 

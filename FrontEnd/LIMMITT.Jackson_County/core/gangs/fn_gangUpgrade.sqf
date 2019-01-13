@@ -30,5 +30,5 @@ if(_action) then {
 	hint parseText format[localize "STR_GNOTF_UpgradeSuccess",_maxMembers,_slotUpgrade,[_upgradePrice] call life_fnc_numberText];
 	[[2,grpPlayer],"TON_fnc_updateGang",false,false] spawn bis_fnc_mp;
 } else {
-	hint localize "STR_GNOTF_UpgradeCancel";
+	["General", localize "STR_GNOTF_UpgradeCancel", "General"] call Harris_Notifications;
 };

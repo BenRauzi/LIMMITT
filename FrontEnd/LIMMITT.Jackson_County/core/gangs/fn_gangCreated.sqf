@@ -15,4 +15,4 @@ if(gm_memecash < (__GETC__(life_gangPrice))) exitWith {
 
 __SUB__(gm_memecash,(__GETC__(life_gangPrice)));
 
-hint format[localize "STR_GNOTF_CreateSuccess",(group player) getVariable "gang_name",[(__GETC__(life_gangPrice))] call life_fnc_numberText];
+["Success", format[localize "STR_GNOTF_CreateSuccess",(group player) getVariable "gang_name",[(__GETC__(life_gangPrice))] call life_fnc_numberText], "Success"] call Harris_Notifications;

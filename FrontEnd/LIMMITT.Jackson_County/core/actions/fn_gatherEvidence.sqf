@@ -48,14 +48,12 @@ while {true} do
 };
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
-if(_target getVariable ["EVIDO",ObjNull] != player) exitWith { hint "Someone is already gathering this evidence.."; };
-if(_bad == 1) exitWith { hint "You moved to far from the evidence"; };
+if(_target getVariable ["EVIDO",ObjNull] != player) exitWith { ["Error", "Someone is already gathering this evidence..", "Failure"] call Harris_Notifications;};
+if(_bad == 1) exitWith { ["Error", "You moved to far from the evidence", "Failure"] call Harris_Notifications; };
 
 
 
-
-
-hint format["You have collected evidence, adding %1 to the wanted list for a %2 crime.", name _suspect, _crime];
+["Evidence Collected",format["You have collected evidence, adding %1 to the wanted list for a %2 crime.", name _suspect, _crime, "Info"] call Harris_Notifications;
 
 if(_crime == "187") then {
 	[[getPlayerUID _suspect,_suspect getVariable["realname",name _suspect],"187"],"life_fnc_wantedAdd",false,false] call bis_fnc_mp;
