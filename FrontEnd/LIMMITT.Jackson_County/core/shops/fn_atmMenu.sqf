@@ -10,7 +10,7 @@ private["_display","_text","_units","_type"];
 
 if(!life_use_atm) exitWith
 {
-	hint localize "STR_Shop_ATMRobbed";
+	["Robbery",(localize "STR_Shop_ATMRobbed"), "Info"] call Harris_Notifications;
 };
 
 if(!dialog) then

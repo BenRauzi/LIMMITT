@@ -36,7 +36,7 @@
 				uiSleep 0.1;
 			};
 			
-			hint "deleted";
+			["Deleted","This item was deleted", "Info"] call Harris_Notifications;
 			detach _veh;
 			_veh setVariable ["pickup",true,true];
 			player removeAction _id;

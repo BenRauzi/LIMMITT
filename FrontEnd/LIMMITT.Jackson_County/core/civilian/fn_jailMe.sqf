@@ -57,6 +57,7 @@ switch (true) do
 		life_is_arrested = false;
 		life_bail_paid = false;
 		hint localize "STR_Jail_Paid";
+		["Paid",  localize "STR_Jail_Paid", "Info"] call Harris_Notifications;
 		serv_wanted_remove = [player];
 		player setPos (getMarkerPos "jail_release");
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn bis_fnc_mp;

@@ -173,7 +173,7 @@ class cfgInteractions
 		class Ticket
 		{
 			condition = "[isPlayer Harris_currentCursorObject]";
-			action = "[Harris_currentCursorObject] call life_fnc_ticketAction";
+			action = "[Harris_currentCursorObject] call Harris_openGiveTicket";
 			icon = "017-receipt.paa";
 			text = "Revoke";
 		};

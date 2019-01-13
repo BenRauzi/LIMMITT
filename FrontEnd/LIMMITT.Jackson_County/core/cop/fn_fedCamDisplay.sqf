@@ -7,7 +7,7 @@
 _laptop = _this select 0;
 _mode = _this select 3;
 
-if(!isPiPEnabled) exitWith {hint localize "STR_Cop_EnablePiP";};
+if(!isPiPEnabled) exitWith {["Error", localize "STR_Cop_EnablePiP", "Failure"] call Harris_Notifications;};
 if(isNil "life_fed_scam") then {
 	life_fed_scam = "camera" camCreate [0,0,0];
 	life_fed_scam camSetFov 0.5;

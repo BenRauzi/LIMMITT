@@ -10,7 +10,7 @@ _betamt = [_this,0,1,[0]] call BIS_fnc_param;
 disableSerialization;
 _display = findDisplay 5980;
 
-if(LIMMITTCASH < _betamt) exitWith {hint format["You don't have enough money to play (%1$)",_betamt];};
+if(LIMMITTCASH < _betamt) exitWith { ["Error", format["You don't have enough money to play (%1$)",_betamt], "Failure"] call Harris_Notifications;};
 LIMMITTCASH = LIMMITTCASH - _betamt;
 
 

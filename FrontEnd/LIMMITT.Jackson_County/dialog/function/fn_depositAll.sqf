@@ -17,6 +17,6 @@ if(_value > LIMMITTCASH) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 LIMMITTCASH = LIMMITTCASH - _value;
 gm_memecash = gm_memecash + _value;
 
-hint "You have deposited everything in your wallet into the ATM!";
+["Success", "You have deposited everything in your wallet into the ATM!", "Success"] call Harris_Notifications;
 [] call life_fnc_atmMenu;
 [6] call SOCK_fnc_updatePartial;

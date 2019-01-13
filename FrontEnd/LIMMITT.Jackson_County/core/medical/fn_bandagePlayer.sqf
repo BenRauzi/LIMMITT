@@ -19,7 +19,7 @@ if(isPlayer cursorTarget) then {
 }
 else {
 	_blah = "Target moved, procedure failed.";
-	hint format["%1", _blah];
+	["Error",format["%1", _blah], "Failure"] call Harris_Notifications;
 };
 
 

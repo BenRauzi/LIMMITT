@@ -22,10 +22,10 @@ if(_revivable) exitWith {
 };
 
 
-if (life_combatTime > time) exitWith {hint "You cannot revive in combat!"};
+if (life_combatTime > time) exitWith {["Error", "You cannot revive in combat!", "Failure"] call Harris_Notifications;};
 
 
-if(_target getVariable ["CPR",ObjNull] == player) exitWith {hint "Someone is already performing CPR..";};
+if(_target getVariable ["CPR",ObjNull] == player) exitWith { ["Don't worry", "Someone is already performing CPR..", "Info"] call Harris_Notifications;};
 if(player distance _target > 5) exitWith {}; //Not close enough.
 
 //Fetch their name so we can shout it.
@@ -85,7 +85,7 @@ _target setVariable["CPR",NIL,TRUE];
 
 
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
-if(_target getVariable["Revive",FALSE]) exitWith {hint localize "STR_Medic_RevivedRespawned"};
+if(_target getVariable["Revive",FALSE]) exitWith {["Respawned", localize "STR_Medic_RevivedRespawned", "Info"] call Harris_Notifications;};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
 if(!isNil "_badDistance") exitWith {titleText[localize "STR_Medic_TooFar","PLAIN"]; life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};

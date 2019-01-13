@@ -6,7 +6,7 @@
 	Master handling for picking up an item.
 */
 private["_obj","_itemInfo","_itemName","_illegal","_diff"];
-if((time - life_action_delay) < 1) exitWith {hint "You can't rapidly use action keys!"};
+if((time - life_action_delay) < 1) exitWith { ["Error", "You can't rapidly use action keys!", "Warning"] call Harris_Notifications;};
 _obj = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _obj OR isPlayer _obj) exitWith {};
 if((_obj getVariable["PickedUp",false])) exitWith {deleteVehicle _obj;}; //Object was already picked up.
@@ -24,7 +24,7 @@ if(playerSide == west && _illegal != -1) exitWith
 };
 life_action_delay = time;
 _diff = [_itemInfo select 0,_itemInfo select 1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-if(_diff <= 0) exitWith {hint localize "STR_NOTF_InvFull"};
+if(_diff <= 0) exitWith { ["Error", localize "STR_NOTF_InvFull", "Warning"] call Harris_Notifications;};
 _obj setVariable["PickedUp",TRUE,TRUE];
 if(_diff != _itemInfo select 1) then
 {

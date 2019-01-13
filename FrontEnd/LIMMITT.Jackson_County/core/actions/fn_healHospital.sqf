@@ -6,7 +6,7 @@
 	Description:
 	NPC healing at hospitals.
 */
-if(LIMMITTCASH < 10) exitWith {hint format[localize "STR_NOTF_HS_NoCash",1000];};
+if(LIMMITTCASH < 10) exitWith {["No Cash", format[localize "STR_NOTF_HS_NoCash",1000], "General"] call Harris_Notifications;};
 titleText[localize "STR_NOTF_HS_Healing","PLAIN"];
 uiSleep 8;
 if(player distance (_this select 0) > 5) exitWith {titleText[localize "STR_NOTF_HS_ToFar","PLAIN"]};

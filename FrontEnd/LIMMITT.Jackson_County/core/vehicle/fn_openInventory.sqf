@@ -10,17 +10,17 @@ if(dialog) exitWith {};
 _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 if(isNull _vehicle OR !(_vehicle isKindOf "Motorcycle" OR _vehicle isKindOf "Car" OR _vehicle isKindOf "Air" OR _vehicle isKindOf "Ship" OR _vehicle isKindOf "House_F")) exitWith {}; //Either a null or invalid vehicle type.
 
-hint "Opening trunk storage, please wait!";
+["Opening...",  "Opening trunk storage, please wait!", "General"] call Harris_Notifications;
 
 _sleepTime = random [3,5,10];
 
 uiSleep _sleepTime;
 
-hint "Trunk Opened!";
+["Success", "Trunk Opened!", "Success"] call Harris_Notifications;
 
-if((_vehicle getVariable ["trunk_in_use",false])) exitWith {hint localize "STR_MISC_VehInvUse"};
+if((_vehicle getVariable ["trunk_in_use",false])) exitWith {["Error",  localize "STR_MISC_VehInvUse", "Failure"] call Harris_Notifications;};
 _vehicle setVariable["trunk_in_use",true,true];
-if(!createDialog "TrunkMenu") exitWith {hint localize "STR_MISC_DialogError";}; //Couldn't create the menu?
+if(!createDialog "TrunkMenu") exitWith {["Error",  localize "STR_MISC_DialogError", "Failure"] call Harris_Notifications;}; //Couldn't create the menu?
 disableSerialization;
 
 if(_vehicle isKindOf "House_F") then {
@@ -38,7 +38,7 @@ if(_vehicle isKindOf "House_F") then {
 	_veh_data = [_vehicle] call life_fnc_vehicleWeight;
 };
 
-if(_vehicle isKindOf "House_F" && {count (_vehicle getVariable ["containers",[]]) == 0}) exitWith {hint localize "STR_MISC_NoStorageWarn"; closeDialog 0; _vehicle setVariable["trunk_in_use",false,true];};
+if(_vehicle isKindOf "House_F" && {count (_vehicle getVariable ["containers",[]]) == 0}) exitWith {["Error",  localize "STR_MISC_NoStorageWarn", "Failure"] call Harris_Notifications; closeDialog 0; _vehicle setVariable["trunk_in_use",false,true];};
 if(_veh_data select 0 == -1 && {!(_vehicle isKindOf "House_F")}) exitWith {closeDialog 0; _vehicle setVariable["trunk_in_use",false,true]; hint localize "STR_MISC_NoStorageVeh";};
 
 ctrlSetText[3504,format[(localize "STR_MISC_Weight")+ " %1/%2",_veh_data select 1,_veh_data select 0]];

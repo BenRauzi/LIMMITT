@@ -13,7 +13,7 @@ if(isNull _curTarget) exitWith {}; //Bad type
 _distance = ((boundingBox _curTarget select 1) select 0) + 2;
 if(player distance _curTarget > _distance) exitWith {}; //Too far
 _isVehicle = if((_curTarget isKindOf "LandVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};
-if(_isVehicle && _curTarget in life_vehicles) exitWith {hint localize "STR_ISTR_Lock_AlreadyHave"};
+if(_isVehicle && _curTarget in life_vehicles) exitWith { ["Error",  localize "STR_ISTR_Lock_AlreadyHave", "Failure"] call Harris_Notifications;};
 
 //More error checks
 if(!_isVehicle && !isPlayer _curTarget) exitWith {};

@@ -12,10 +12,12 @@ if(isnull _civ) exitWith {};
 if(_intox > 0.08) then 
 {
 	hint format["%1's Intox Level: %2\nThis person is over the legal limit to drive!",name _civ,_intox];
+
+	 ["Warning", format["%1's Intox Level: %2\nThis person is over the legal limit to drive!",name _civ,_intox], "Warning"] call Harris_Notifications;
 } 
 else 
 {
-	hint format["%1's Intox Level: %2",name _civ,_intox];
+	["Info",  format["%1's Intox Level: %2",name _civ,_intox], "Info"] call Harris_Notifications;
 };
 
 if (_intox > 0.20) then 

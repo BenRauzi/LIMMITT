@@ -11,9 +11,9 @@ _uid = getPlayerUID player;
 
 if(isNull _house) exitWith {};
 if(!(_house isKindOf "House_F")) exitWith {};
-if((_house getVariable["house_owned",false])) exitWith {hint "This house is already owned even though you shouldn't be seeing this hint..."};
-if(!isNil {(_house getVariable "house_sold")}) exitWith {hint localize "STR_House_Sell_Process"};
-if(!license_civ_home) exitWith {hint localize "STR_House_License"};
+if((_house getVariable["house_owned",false])) exitWith {["Error", "This house is already owned even though you shouldn't be seeing this hint...",  "Failure"] call Harris_Notifications;};
+if(!isNil {(_house getVariable "house_sold")}) exitWith {["Notification", localize "STR_House_Sell_Process",  "General"] call Harris_Notifications;};
+if(!license_civ_home) exitWith {["No License", localize "STR_House_License",  "Failure"] call Harris_Notifications;};
 
 //if(count life_houses >= (__GETC__(life_houseLimit))) exitWith {hint format[localize "STR_House_Max_House",__GETC__(life_houseLimit)]};
 closeDialog 0;
@@ -23,7 +23,7 @@ if(count _houseCfg == 0) exitWith {};
 
 _cost = (_houseCfg select 0);
 _costs = _cost / 1000000;
-if(gm_memecash < _cost) exitWith { hint format ["You need (%1 Million Dollars) to buy this.", _costs]; };
+if(gm_memecash < _cost) exitWith { ["Cost", format ["You need (%1 Million Dollars) to buy this.", _costs],  "Info"] call Harris_Notifications;};
 
 
 

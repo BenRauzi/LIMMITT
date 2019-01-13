@@ -6,7 +6,7 @@
 	32 hours later...
 */
 private["_grp","_grpMembers"];
-if(steamid == (grpPlayer getVariable "gang_owner")) exitWith {hint localize "STR_GNOTF_LeaderLeave"};
+if(steamid == (grpPlayer getVariable "gang_owner")) exitWith {["Error", localize "STR_GNOTF_LeaderLeave", "Failure"] call Harris_Notifications;};
 
 _grp = grpPlayer;
 _grpMembers = grpPlayer getVariable "gang_members";

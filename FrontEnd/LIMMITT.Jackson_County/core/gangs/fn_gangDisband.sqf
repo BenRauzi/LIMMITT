@@ -16,8 +16,9 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	hint localize "STR_GNOTF_DisbandGangPro";
+	["Gang Removed", localize "STR_GNOTF_DisbandGangPro", "Success"] call Harris_Notifications;
 	[[grpPlayer],"TON_fnc_removeGang",false,false] spawn bis_fnc_mp;
 } else {
 	hint localize "STR_GNOTF_DisbandGangCanc";
+	["Gang Disbanded", localize "STR_GNOTF_DisbandGangCanc", "Success"] call Harris_Notifications;
 };

@@ -16,8 +16,8 @@ if(isPlayer player) then {
 	player setVariable ["bleedingon",1,true]; 
 }
 else {
-	_blah = "Target moved, procedure failed.";
-	hint format["%1", _blah];
+	["Error","Target moved, procedure failed.", "Failure"] call Harris_Notifications;
+
 };
 
 

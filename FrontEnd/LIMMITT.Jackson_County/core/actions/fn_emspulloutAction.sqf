@@ -6,7 +6,7 @@
 private["_crew"];
 _myposy = getPos player;
 
-hint format["This will take atleast 10 seconds.", format["%1",_dam]];
+["Info", "This will take atleast 10 seconds.", "Info"] call Harris_Notifications;
 
 _crew = crew cursorTarget;
 
@@ -21,7 +21,7 @@ while {_okbrah < 10} do {
 	};
 	_they = getPos cursorTarget;
 	if( _they distance _myposy > 3 ) exitwith {
-		hint format["Vehicle Moved to Far.", format["%1",_dam]];
+		["Error", "Vehicle Moved to Far", "Failure"] call Harris_Notifications;
 	};
 };
 

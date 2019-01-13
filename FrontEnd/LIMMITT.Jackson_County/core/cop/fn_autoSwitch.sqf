@@ -13,7 +13,7 @@ if (currentWeapon player isEqualTo "JD_Taser") exitWith {
    player addWeapon "RH_g19";
    player addItemToBackpack "JD_Taser";
  } else { 
-  hint "Could not find Glock 17"; 
+  ["Error","Could not find Glock 17", "Failure"] call Harris_Notifications;
  }; 
 }; 
  
@@ -28,6 +28,6 @@ if (currentWeapon player isEqualTo "RH_g19") exitWith {
    player addWeapon "JD_Taser";
    player addItemToBackpack "RH_g19";
  } else { 
-  hint "Could not find Taser"; 
+  ["Error","Could not find Taser", "Failure"] call Harris_Notifications;
  }; 
 };

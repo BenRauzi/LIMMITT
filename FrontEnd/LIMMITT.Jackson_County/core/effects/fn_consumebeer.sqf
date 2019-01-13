@@ -6,6 +6,7 @@
 */
 closeDialog 0;
 hint "You crack open a bottle of Cobra beer. Delicious!";
+["Info",  "You crack open a bottle of Cobra beer. Delicious!",  "Info"] call Harris_Notifications; 
 player say2d "openbottle";
 player enableFatigue true;
 player setFatigue 1;
@@ -24,7 +25,7 @@ uiSleep 6;
 player setFatigue 0;
 player enableFatigue false;
 closeDialog 0;
-hint "You've recovered from the beer and now feel normal again, although you could do with a drink of water and a bite to eat.";
+["Info",  "You've recovered from the beer and now feel normal again, although you could do with a drink of water and a bite to eat.",  "Info"] call Harris_Notifications; 
 life_thirst =  50;
 life_hunger =  50;
 [] call life_fnc_hudUpdate;

@@ -15,7 +15,7 @@ if(!life_is_arrested) then {
 	if(life_hunger < 2) exitWith {
 
 		player setDamage 1;
-		hint localize "STR_NOTF_EatMSG_Death";
+		["Dead", localize "STR_NOTF_EatMSG_Death", "Warning"] call Harris_Notifications;
 	};
 };
 
@@ -23,11 +23,14 @@ if(!life_is_arrested) then {
 switch(life_hunger) do {
 	case 30: {
 		hint localize "STR_NOTF_EatMSG_1";
+		["Hungry", localize "STR_NOTF_EatMSG_1", "Warning"] call Harris_Notifications;
 	};
 	case 20: {
-		hint localize "STR_NOTF_EatMSG_2";
+		["Very Hungry", localize "STR_NOTF_EatMSG_2", "Warning"] call Harris_Notifications;
 	};
 	case 10: {
-		hint localize "STR_NOTF_EatMSG_3";player setFatigue 1;
+		["Extremely Hungry", localize "STR_NOTF_EatMSG_3", "Warning"] call Harris_Notifications;
+		player setFatigue 1;
+
 	};
 };

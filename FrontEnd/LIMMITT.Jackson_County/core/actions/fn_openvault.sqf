@@ -5,10 +5,10 @@ cgbankvault is the variable name
 */
 
 if (cgbankvault animationPhase "d_o_Anim" == 0 && cgbankvault animationPhase "d_l_Anim" == 1) then {
-	hint "Vault Opening Starting.";
+	["General",  "Vault Opening Starting.", "General"] call Harris_Notifications;
 	uiSleep 5;
-	hint "Vault Opened Engaged.";
+	["Success",  "Vault Opened.", "Success"] call Harris_Notifications;
 	cgbankvault animate ["d_o_Anim",1];
 } else {
-	hint "The vault appears to be locked/open already..";	
+	["Error",  "The vault appears to be locked/open already..", "Failure"] call Harris_Notifications;
 };

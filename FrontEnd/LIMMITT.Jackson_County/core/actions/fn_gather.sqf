@@ -16,7 +16,7 @@ _zone = "";
 } foreach _resourceZones;
 
 if(_zone == "") exitWith {
-	hint localize "STR_NOTF_notNearResource";
+	["Error", localize "STR_NOTF_notNearResource", "Failure"] call Harris_Notifications;
 	life_action_inUse = false;
 };
 
@@ -39,7 +39,7 @@ switch(true) do {
 
 
 //gather check??
-if(vehicle player != player) exitWith {hint localize "STR_NOTF_GatherVeh";};
+if(vehicle player != player) exitWith {["Error", localize "STR_NOTF_GatherVeh", "Failure"] call Harris_Notifications;};
 
 life_action_inUse = true;
 

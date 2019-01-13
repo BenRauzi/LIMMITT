@@ -11,10 +11,10 @@ disableSerialization;
 _dialog = findDisplay 2700;
 _list = _dialog displayCtrl 2701;
 _sel = lbCurSel _list;
-if(_sel == -1) exitWith {hint "No Data Selected";};
+if(_sel == -1) exitWith {["Error",  "No Data Selected", "Failure"] call Harris_Notifications;};
 _index = (parseNumber(_list lbData _sel));
 _vehicle = life_vehicles select _index;
-if(_vehicle isKindOf "House_F") exitWith {hint "You can't remove the keys to your house!"};
+if(_vehicle isKindOf "House_F") exitWith {["Error",  "You can't remove the keys to your house!", "Failure"] call Harris_Notifications;};
 _owners = _vehicle getVariable "vehicle_info_owners";
 
 _index2 = [(getPlayerUID player),_owners] call fnc_index;

@@ -12,8 +12,8 @@ _nearVehicles = nearestObjects [getMarkerPos (_this select 3),["Car","Truck"],25
 
 life_chopShop = (_this select 3);
 //Error check
-if(count _nearVehicles == 0) exitWith {titleText[localize "STR_Shop_NoVehNear","PLAIN"];};
-if(!(createDialog "Chop_Shop")) exitWith {hint localize "STR_Shop_ChopShopError"};
+if(count _nearVehicles == 0) exitWith {["Error", localize "STR_Shop_NoVehNear",  "Error"] call Harris_Notifications;};
+if(!(createDialog "Chop_Shop")) exitWith {["Error", localize "STR_Shop_ChopShopError",  "Error"] call Harris_Notifications;};
 
 _control = ((findDisplay 39400) displayCtrl 39402);
 {

@@ -17,7 +17,7 @@ if(typeName _type == typeName []) then
 		switch((_type select _i)) do
 		{
 			case 0: {systemChat _message};
-			case 1: {hint format["%1", _message]};
+			case 1: {["General Notification", format["%1", _message], "General"] call Harris_Notifications;};
 			case 2: {titleText[format["%1",_message],"PLAIN"];};
 		};
 	};
@@ -27,7 +27,7 @@ if(typeName _type == typeName []) then
 	switch (_type) do
 	{
 		case 0: {systemChat _message};
-		case 1: {hint format["%1", _message]};
+		case 1: {["General Notification", format["%1", _message], "General"] call Harris_Notifications;};
 		case 2: {titleText[format["%1",_message],"PLAIN"];};
 	};
 };

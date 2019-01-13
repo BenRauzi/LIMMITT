@@ -8,10 +8,10 @@
 private["_unit","_unitID","_members"];
 disableSerialization;
 
-if((lbCurSel 2621) == -1) exitWith {hint localize "STR_GNOTF_SelectKick"};
+if((lbCurSel 2621) == -1) exitWith {["Error", localize "STR_GNOTF_SelectKick", "Failure"] call Harris_Notifications;};
 _unit = call compile format["%1",getSelData(2621)];
 if(isNull _unit) exitWith {}; //Bad unit?
-if(_unit == player) exitWith {hint localize "STR_GNOTF_KickSelf"};
+if(_unit == player) exitWith {["Error", localize "STR_GNOTF_KickSelf", "Failure"] call Harris_Notifications;};
 
 _unitID = getPlayerUID _unit;
 _members = grpPlayer getVariable "gang_members";
