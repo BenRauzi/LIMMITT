@@ -46,7 +46,7 @@ _handgun = handgunWeapon player;
 if(_cop == player) then {};
 if(isNull player) exitWith {};
 if(isNull _cop OR !(player getVariable["restrained",FALSE])) exitWith {};
-if !((_handgun) in _legal) exitWith { removeAllWeapons player; {player removeMagazine _x} foreach (magazines player); hint "All illegal weapons have been seized"; };
+if !((_handgun) in _legal) exitWith { removeAllWeapons player; {player removeMagazine _x} foreach (magazines player); ["Seized", "All illegal weapons have been seized", "Warning"] call Harris_Notifications;};
 if((license_civ_gun) && (_handgun) in _legal) then {
 	switch(true) do 
 	{
@@ -57,7 +57,7 @@ if((license_civ_gun) && (_handgun) in _legal) then {
 			{
 				player addMagazine _x;
 			} foreach _magWeapFinal;  
-			hint "Your pistol has been holstered to your backpack.";
+			["Info", "Your pistol has been holstered to your backpack.", "Info"] call Harris_Notifications;
 		};
 		case (player canAddItemToVest _handgun):
 		{
@@ -66,7 +66,7 @@ if((license_civ_gun) && (_handgun) in _legal) then {
 			{
 				player addMagazine _x;
 			} foreach _magWeapFinal;  
-			hint "Your pistol has been holstered to your vest.";
+			["Info", "Your pistol has been holstered to your vest.", "Info"] call Harris_Notifications;
 		};
 		case (player canAddItemToUniform _handgun):
 		{
@@ -75,17 +75,17 @@ if((license_civ_gun) && (_handgun) in _legal) then {
 			{
 				player addMagazine _x;
 			} foreach _magWeapFinal;  
-			hint "Your pistol has been holstered to your uniform.";
+			["Info", "Your pistol has been holstered to your uniform.", "Info"] call Harris_Notifications;
 		};
 		default
 		{
 			removeAllWeapons player;
-			hint "Your pistol has been seized";
+			["Info", "Your pistol has been seized", "Info"] call Harris_Notifications;
 		};
 	};
 } else {
 	removeAllWeapons player;
-	hint "You have no firearms license, your weapon has been removed";
+	["Info", "You have no firearms license, your weapon has been removed", "Warning"] call Harris_Notifications;
 };
 
 life_action_inUse = false;

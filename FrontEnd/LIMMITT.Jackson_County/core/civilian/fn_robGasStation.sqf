@@ -16,20 +16,20 @@ time - 120 = 330
 if (gm_robbing) exitWith {};
 
 _job = player getVariable ["GM_Job", "Unemployed"];
-if !(_job isEqualTo "Unemployed") exitWith {hint "You may not rob a store while employed at a company. Please press F8 to quit your job!"};
-if (_robbed) exitWith {hint "This was robbed too recently or is being robbed."};
+if !(_job isEqualTo "Unemployed") exitWith { ["Error","You may not rob a store while employed at a company. Please press F8 to quit your job!" , "Failure"] call Harris_Notifications;};
+if (_robbed) exitWith {["Error","This was robbed too recently or is being robbed." , "Failure"] call Harris_Notifications;};
 
-if(side _robber != civilian) exitWith { hint "You can not rob this Gas Station!" };
-if(_robber distance _shop > 5) exitWith { hint "You need to be within 5m of the cashier to rob him!" };
+if(side _robber != civilian) exitWith { ["Error","You can not rob this Gas Station!" , "Failure"] call Harris_Notifications;};
+if(_robber distance _shop > 5) exitWith {["Error","You need to be within 5m of the cashier to rob him!" , "Info"] call Harris_Notifications; };
 
-if (_rip) exitWith { hint "Robbery already in progress!" };
-if (vehicle player != _robber) exitWith { hint "Get out of your vehicle!" };
+if (_rip) exitWith {  ["Error","Robbery already in progress -  Get out of there!" , "Warning"] call Harris_Notifications;};
+if (vehicle player != _robber) exitWith {  ["Error","Get out of your vehicle!" , "Failure"] call Harris_Notifications;};
 
 if !(alive _robber) exitWith {};
-if (currentWeapon _robber == "" || currentWeapon _robber == "Binocular") exitWith { hint "HaHa, you do not threaten me! Get out of here you hobo!" };
+if (currentWeapon _robber == "" || currentWeapon _robber == "Binocular") exitWith {  ["LOL",'"HaHa, you do not threaten me! Get out of here you hobo!"', "Info"] call Harris_Notifications;};
 
 _cops = (west countSide playableUnits);
-if (_cops < 4) exitWith {hint "Atleast 4 police must be online for you to rob this store!"};
+if (_cops < 4) exitWith { ["Error","Atleast 4 police must be online for you to rob this store!", "Info"] call Harris_Notifications;};
 
 
 _rip = true;
@@ -72,7 +72,7 @@ if(_rip) then
 		if!(alive _robber) exitWith {};
 	};
 if!(alive _robber) exitWith { _rip = false; gm_robbing = false;};
-if(_robber distance _shop > 10.5) exitWith { gm_robbing = false; hint "You need to stay within 10m to Rob registry! - Now the registry is locked."; 5 cutText ["","PLAIN"]; _rip = false; [[0,format["911: %1 Offender has fled the scene!",_shopName]],"life_fnc_broadcast",west,false] spawn bis_fnc_mp;	
+if(_robber distance _shop > 10.5) exitWith { gm_robbing = false; ["Error","You need to stay within 10m to Rob register! - Now the register is locked.", "Info"] call Harris_Notifications; 5 cutText ["","PLAIN"]; _rip = false; [[0,format["911: %1 Offender has fled the scene!",_shopName]],"life_fnc_broadcast",west,false] spawn bis_fnc_mp;	
 [[0,format["Lakeside 7 News: %1 Offender has fled the scene!",_shopName]],"life_fnc_broadcast",civilian,false] spawn bis_fnc_mp;	};
 5 cutText ["","PLAIN"];
 
