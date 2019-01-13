@@ -655,8 +655,8 @@ switch (_code) do
 						} else {
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn bis_fnc_mp;
 						};
-						systemChat localize "STR_MISC_VehUnlock";
-						player say2D "lock";
+						["Success",localize "STR_MISC_VehUnlock","Success"] call Harris_Notifications;
+						_veh say3D "lock"; // testing this
 						[[player,"CarUnlocked"],"A3L_Fnc_NearestSound",false,false,false] call BIS_fnc_MP;
 					} else {
 						if(local _veh) then {
@@ -664,8 +664,8 @@ switch (_code) do
 						} else {
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn bis_fnc_mp;
 						};	
-						systemChat localize "STR_MISC_VehLock";
-						player say2D "lock";
+						["Success",localize "STR_MISC_VehLock","Success"] call Harris_Notifications;
+						_veh say3D "lock"; // testing
 						[[player,"CarLocked"],"A3L_Fnc_NearestSound",false,false,false] call BIS_fnc_MP;
 					};
 				};
