@@ -11,7 +11,7 @@ Harris_inventoryOpened = {
 	_vehicle = vehicle player;
 	_handle = false;
 
-	if (player getVariable ["Foski_Restrained", false]) exitWith {
+	if (player getVariable ["Foski_Restrained", false] || player getVariable ["Foski_Surrender", false]) exitWith {
 		_handle = true;
 		_handle;
 	};
