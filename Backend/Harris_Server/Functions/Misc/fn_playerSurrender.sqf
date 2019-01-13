@@ -33,7 +33,7 @@ Foski_playerSurrender ={
 			};
 		};
 
-		// Manage the restrained player 
+		// Manage the surrendered player 
 		while {true} do {
 			if !(player getVariable "Foski_Surrender") exitWith {player setVariable ["tf_unable_to_use_radio", false, true]; player setVariable["surrender", false, true]; player setVariable ["Harris_TwitterEnabled", true, true]; player setVariable ["Harris_InteractionEnabled", true, true];};
 			// Block Certain Actions
