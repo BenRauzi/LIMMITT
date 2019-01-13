@@ -7,12 +7,14 @@ Foski_playerSurrender ={
 	[] spawn {
 		if (isNil {player getVariable "Foski_Surrender"}) then {player setVariable ["Foski_Surrender", false, true];};
 		if (!(player getVariable ["Foski_Restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed && !life_paintball) then {
-			if !(currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then {
-				Holstlife_curWep_h = currentWeapon player;
-				player action ["SwitchWeapon", player, player, 100];
-				player switchcamera cameraView;
-				[[player,"AmovPercMstpSnonWnonDnon"],"life_fnc_animSync",true,false] spawn bis_fnc_mp;
-				player switchMove "AmovPercMstpSnonWnonDnon";
+			if (vehicle player == player) then {
+				if !(currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then {
+					Holstlife_curWep_h = currentWeapon player;
+					player action ["SwitchWeapon", player, player, 100];
+					player switchcamera cameraView;
+					[[player,"AmovPercMstpSnonWnonDnon"],"life_fnc_animSync",true,false] spawn bis_fnc_mp;
+					player switchMove "AmovPercMstpSnonWnonDnon";
+				};
 			};
 			if (player getVariable ["Foski_Surrender", false]) then {
 				player setVariable ["Foski_Surrender", false, true];
@@ -44,12 +46,14 @@ Foski_playerSurrender ={
 			player setVariable ["Harris_TwitterEnabled", false, true]; // Disable typing in twitter
 			player setVariable ["Harris_InteractionEnabled", false, true]; // Disable the interaction menu
 			// Block any type of weapon switching | V
-			if !(currentWeapon player == "" || currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then { // Changed to '! isKindOf "Pistol"' to stop bino's coming out as well
-				Holstlife_curWep_h = currentWeapon player;
-				player action ["SwitchWeapon", player, player, 100];
-				player switchcamera cameraView;
-				[[player,"AmovPercMstpSnonWnonDnon"],"life_fnc_animSync",true,false] spawn bis_fnc_mp;
-				player switchMove "AmovPercMstpSnonWnonDnon";
+			if (vehicle player == player) then {
+				if !(currentWeapon player == "" || currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then { // Changed to '! isKindOf "Pistol"' to stop bino's coming out as well
+					Holstlife_curWep_h = currentWeapon player;
+					player action ["SwitchWeapon", player, player, 100];
+					player switchcamera cameraView;
+					[[player,"AmovPercMstpSnonWnonDnon"],"life_fnc_animSync",true,false] spawn bis_fnc_mp;
+					player switchMove "AmovPercMstpSnonWnonDnon";
+				};
 			};
 			if (currentVisionMode player == 1) then {player action ["nvGogglesOff", player];}; // Check if the player has enabled night vision, if so disable it
 			sleep 0.1;
