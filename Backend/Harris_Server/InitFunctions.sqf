@@ -91,7 +91,8 @@ Misc_Functions =
   ["fn_openSetName", "Harris_openSetName"],
   ["fn_setName", "Harris_setName"],
   ["fn_playerTags", "Harris_playerTags"],
-  ["fn_playerSurrender", "Foski_playerSurrender"]
+  ["fn_playerSurrender", "Foski_playerSurrender"],
+  ["fn_dropHandgun", "Foski_dropHandgun"]
 ];
 
 CitationsDir = "\Harris_Server\Functions\Citations\";

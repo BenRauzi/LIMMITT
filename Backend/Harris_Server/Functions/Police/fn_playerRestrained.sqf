@@ -23,6 +23,7 @@ Foski_playerRestrained ={
 				player switchMove "AmovPercMstpSnonWnonDnon";
 			};
 			player playAction ("Foski_Cuff_" + _pos);
+			["Foski_Restrained"] call Foski_dropHandgun;
 			player setVariable ["Foski_RestrainedPos",_pos,true];
 		};
 

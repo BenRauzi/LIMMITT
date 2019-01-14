@@ -27,6 +27,7 @@ Foski_playerSurrender ={
 				player setVariable ["surrender", true, true];
 				player setVariable ["tf_unable_to_use_radio", true, true];
 				player setVariable ["Harris_TwitterEnabled", false, true];
+				["Foski_Surrender"] call Foski_dropHandgun;
 				if (vehicle player != player) then { 
 				    [player,"Foski_Surrender"] remoteExecCall ["Foski_SurrenderSyncMP", 0]; 
 				} else {player playAction "Foski_Surrender"};
