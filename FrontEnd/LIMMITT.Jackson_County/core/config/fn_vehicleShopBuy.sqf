@@ -126,7 +126,6 @@ if(_className == "A3L_M3") then {
 	};
 };
 		
-		
 _vehicle allowDamage true;
 
 //life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
