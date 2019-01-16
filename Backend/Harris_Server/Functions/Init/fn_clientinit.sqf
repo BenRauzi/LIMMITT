@@ -243,5 +243,25 @@ LIMMITT_clientInit = {
 	[] call Harris_playerTags;
 
 	Harris_Furniture = ["A3L_WorkBench", "JD_Pot"];
+
+	Harris_prices = 
+	[
+		["Harris_ironIngot", 5000],
+		["Harris_goldIngot", 5000]
+	];
+
+	Harris_Shops = 
+	[
+		[
+			"Weed_Dealer",
+			"Weed Dealer",
+			["Iron", "Harris_ironIngot"],
+			["Iron2", "Harris_goldIngot"]
+		]
+	];
+
+	LIMMITTCASH = 0;
+	Harris_coolDown = false;
+
 };
 
