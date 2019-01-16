@@ -223,6 +223,14 @@ class cfgInteractions
 		text = "Craft";
 	};
 
+	class openRefiner
+	{
+		condition = "[(player distance (getMarkerPos 'Min_1') < 20 || player distance (getMarkerPos 'Min_2') < 20)]";
+		action = "[2] call Harris_openCraftingMenu";
+		icon = "014_wrench.paa";
+		text = "Refinery";
+	};
+
 	class setName
 	{
 		condition = "[isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 5]";
