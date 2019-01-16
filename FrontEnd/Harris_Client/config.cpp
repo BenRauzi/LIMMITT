@@ -1753,3 +1753,90 @@ class Harris_whiteList
 	};
 };
 
+
+class sell_shop
+{
+	idd = 123123;
+	movingEnabled = false;
+	enableSimulation = true;
+	class controlsBackground
+	{
+		
+
+		class RscTitleBackground : RscText
+		{
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+			idc = -1;
+			x = 0.1; y = 0.2;
+			w = 0.32; h = (1 / 25);
+		};
+		
+		class Mainbackground : RscText
+		{
+			colorBackground[] = {0,0,0,0.7};
+			idc = -1;
+			x = 0.1; y = 0.2 + (11 / 250);
+			w = 0.32; h = 0.6 - (22 / 250);
+		};
+		
+		class itemInfo : RscStructuredText
+		{
+			idc = 38404;
+			text = "";
+			sizeEx = 0.035;
+			x = 0.11; y = 0.68;
+			w = 0.2; h = 0.2;
+		};
+		
+		class FilterList : RscCombo
+		{
+			idc = 38402;
+			onLBSelChanged = "";
+			x = 0.11; y = 0.64;
+			w = 0.3; h = 0.035;
+		};
+		class Title : RscText
+		{
+			colorBackground[] = {0,0,0,0};
+			idc = 38401;
+			text = "";
+			x = 0.1; y = 0.1425;
+			w = 0.32; h = 0.1;
+		};
+	};
+	
+	class controls
+	{
+		class itemList : RscListBox
+		{
+			idc = 38403;
+			onLBSelChanged = "[] call Harris_onLbSelChanged";
+			sizeEx = 0.035;
+			x = 0.11; y = 0.25;
+			w = 0.3; h = 0.38;
+		};
+		
+		class ButtonSell : RscButtonMenu
+		{
+			idc = 38405;
+			text = "Sell";
+			onButtonClick = "[] call Harris_sellItem;";
+			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.8 - (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+		
+		class ButtonClose : RscButtonMenu 
+		{
+			idc = -1;
+			text = "Cancel";
+			onButtonClick = "closeDialog 0;";
+			x = 0.1;
+			y = 0.8 - (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
+	};
+};
+

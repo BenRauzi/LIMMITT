@@ -230,5 +230,13 @@ class cfgInteractions
 		icon = "002_Tag.paa";
 		text = "Set Name";
 	};
+
+	class sellShop
+	{
+		condition = "[!isNil {Harris_currentCursorObject getVariable 'Harris_Shop'}, player distance Harris_currentCursorObject < 5]";
+		action = "[Harris_currentCursorObject] call Harris_openShop";
+		icon = "031-shopping-cart-1.paa";
+		text = "Open Shop";
+	};
 };
 
