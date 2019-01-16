@@ -18,41 +18,28 @@ switch (_filter) do
 {
 	case 0:
 	{
-		_ret set[count _ret,["A3LRideAlongJumper","Ride Along",0]];
-		_ret set[count _ret,["cadet_uni","Recruit",0]];
-		_ret set[count _ret,["A3L_PDOFC","Patrol OFC Uniform",0]];
-		_ret set[count _ret,["A3L_PDCPL","Patrol CPL Uniform",0]];
-		_ret set[count _ret,["A3L_PDSGT","Patrol SGT Uniform",0]];
-		_ret set[count _ret,["A3L_PDLT","Patrol LT Uniform",0]];
-		_ret set[count _ret,["A3L_PDCPT","Patrol CPT Uniform",0]];
-		_ret set[count _ret,["A3L_COFC","DOC OFC Uniform",0]];
-		_ret set[count _ret,["A3L_CCPL","DOC CPL Uniform",0]];
-		_ret set[count _ret,["A3L_CSGT","DOC SGT Uniform",0]];
-		_ret set[count _ret,["A3L_CLT","DOC LT Uniform",0]];
-		_ret set[count _ret,["A3L_CCPT","DOC CPT Uniform",0]];
-		_ret set[count _ret,["A3L_DAI","IA Patrol",0]];
-		_ret set[count _ret,["DAI_Polo","IA Polo",0]];
-        _ret set[count _ret,["A3L_SWAT","SWAT Blue",0]];
-		_ret set[count _ret,["TCG_SWAT","SWAT Black",0]];
-		_ret set[count _ret,["TCG_PDAV","Pilot",0]];
-		_ret set[count _ret,["vip_clothes","CID Clothing",0]];
-		_ret set[count _ret,["U_007_US_Police_officer","Parade",0]];
-		_ret set[count _ret,["herpFTO1","FTO Uniform",0]];
+		_ret set[count _ret,["JD_Cadet","Cadet Uniform",0]];
+		_ret set[count _ret,["JD_DOC_Plain","DOC Uniform",0]];
+		_ret set[count _ret,["JD_Deputy","Deputy Uniform",0]];
+		_ret set[count _ret,["JD_Corporal","Corporal Uniform",0]];
+		_ret set[count _ret,["JD_Sergeant","Sergeant Uniform",0]];
+		_ret set[count _ret,["JD_FTO","FTO Uniform",0]];
+		_ret set[count _ret,["JD_Lieutenant","Lieutenant Uniform",0]];
+		_ret set[count _ret,["JD_Captain","Capain Uniform",0]];
+		_ret set[count _ret,["JD_1star","Major Uniform",0]];
+		_ret set[count _ret,["JD_3star","Undersheriff Uniform",0]];
+		_ret set[count _ret,["JD_4star","Sheriff Uniform",0]];
 	};
 	
 	case 1:
 	{
-		_ret set[count _ret,["max_police_Hat","Patrol Hat 1",0]];
-		_ret set[count _ret,["Campaign_Hat_Dark","Black Campaign Hat",0]];
-		_ret set[count _ret,["Campaign_Hat_Tan","Corrections Hat",0]];
-		_ret set[count _ret,["TRYK_H_PASGT_BLK","Code Red DOC",0]];
-		_ret set[count _ret,["TCG_swathelmet","SWAT Helmet",0]];
-		_ret set[count _ret,["H_Cap_police","SWAT Cap",0]];
-		_ret set[count _ret,["H_PilotHelmetHeli_B","Pilot Helmet",0]];
-		_ret set[count _ret,["H_Beret_blk","Lieutenant Beret",0]];
-		_ret set[count _ret,["TRYK_H_ghillie_over_green","Ghillie",0]];
-		_ret set[count _ret,["d3s_CAP_beanie3","CID Beanie",0]];
-		_ret set[count _ret,["CG_sert_H3","Task Force Helmet",0]];
+		_ret set[count _ret,["JD_SheriffHat_Green","Green Sheriff Hat",0]];
+		_ret set[count _ret,["JD_SheriffHat_Blue","Blue Sheriff Hat",0]];
+		_ret set[count _ret,["JD_SheriffHat_Tan","Tan Sheriff Hat",0]];
+		_ret set[count _ret,["JD_BlackCap","Black Cap",0]];
+		_ret set[count _ret,["JD_SherrifCap","Sheriff Helmet",0]];
+		_ret set[count _ret,["JD_SertHat","SERT Hat",0]];
+		_ret set[count _ret,["JD_SertHatB","SERT HAT2",0]];
 		
 		
 	};
@@ -82,22 +69,14 @@ switch (_filter) do
 	case 3:
 	{
 		_ret set[count _ret,["A3L_RideAlongVest","Ride Along",0]];
-		_ret set[count _ret,["cl3_police_vest_yellow","Recruit",0]];
-		_ret set[count _ret,["A3L_policevest2","LS Patrol Vest (W)",0]];
-		_ret set[count _ret,["A3L_policevest1","LS Patrol Vest (Y)",0]];
-		_ret set[count _ret,["V_TacVest_blk_POLICE","LS LT/CPT Vest",0]];
-		_ret set[count _ret,["A3L_deptjvest1","CO Vest",0]];
-		_ret set[count _ret,["CRT_VEST_BLACK","CO Code Red Vest",0]];
-		_ret set[count _ret,["IA_VEST_WHITE","IA (W)",0]];
-		_ret set[count _ret,["IA_VEST_BLACK","IA (High Threat)",0]];
-		_ret set[count _ret,["TCG_swatvest1","SWAT Vest",0]];
-		_ret set[count _ret,["TCG_swatvest2","SWAT Cpl",0]];
-		_ret set[count _ret,["TCG_swatvest3","SWAT Sgt",0]];
-		_ret set[count _ret,["SWATvest1","SWAT LT/CPT",0]];
-		_ret set[count _ret,["DTU_Vest2","CID Vest",0]];
-		_ret set[count _ret,["HighThreatVestPolice1","Code Red Vest",0]];
-		_ret set[count _ret,["TRYK_V_ArmorVest_Delta","Task Force Vest",0]];
-		_ret set[count _ret,["PD_DUTY_VEST","Detective Vest",0]];
+		_ret set[count _ret,["JD_Belt1","Duty Belt",0]];
+		_ret set[count _ret,["JD_Belt3","Belt 2",0]];
+		_ret set[count _ret,["JD_Vest1","Patrol Vest",0]];
+		_ret set[count _ret,["JD_Vest2","DOC Vest",0]];
+		_ret set[count _ret,["JD_Vest3","SERT Vest",0]];
+		_ret set[count _ret,["JD_Vest4","Detective Vest",0]];
+		_ret set[count _ret,["JD_Vest7","Traffic Vest",0]];
+		_ret set[count _ret,["JD_Vest10","Sheriff Traffic Vest",0]];
 	};
 	
 	case 4:

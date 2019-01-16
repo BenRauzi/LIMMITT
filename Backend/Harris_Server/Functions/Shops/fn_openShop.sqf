@@ -2,6 +2,7 @@
 	Author: Ben Harris
 	Description: Opens Selling Shop
 */
+
 Harris_openShop = {
 	params["_ct"];
 
