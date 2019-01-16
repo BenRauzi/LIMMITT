@@ -266,8 +266,6 @@ switch (_filter) do
             ["TRYK_H_wig","Real Hair Wig",0],
             ["TRYK_H_woolhat","Slick Beanie",0],
 
-//koil added
-
 
 			["A3L_Legoman","Lego Helmet",0],
 			["A3L_soa_helmet","Biker Helmet",0],	
@@ -301,28 +299,6 @@ switch (_filter) do
 	case 2:
 	{
 		[
-			//beards
-			["SFG_Tac_smallBeardB",nil,0],
-			["SFG_Tac_smallBeardD",nil,0],
-			["SFG_Tac_smallBeardG",nil,0],
-			["SFG_Tac_smallBeardO",nil,0],
-			["SFG_Tac_BeardB",nil,0],
-			["SFG_Tac_BeardD",nil,0],
-			["SFG_Tac_BeardG",nil,0],
-			["SFG_Tac_BeardO",nil,0],
-			["SFG_Tac_chinlessbB",nil,0],
-			["SFG_Tac_chinlessbD",nil,0],
-			["SFG_Tac_chinlessbG",nil,0],
-			["SFG_Tac_chinlessbO",nil,0],
-			["SFG_Tac_moustacheB",nil,0],
-			["SFG_Tac_moustacheD",nil,0],
-			["SFG_Tac_moustacheG",nil,0],
-			["SFG_Tac_moustacheO",nil,0],
-			["SFG_Tac_ChopsB",nil,0],
-			["SFG_Tac_ChopsD",nil,0],
-			["SFG_Tac_ChopsG",nil,0],
-			["SFG_Tac_ChopsO",nil,0],
-			//bears end
 			["G_Shades_Black",nil,0],
 			["G_Shades_Blue",nil,0],
 			["G_Sport_Blackred",nil,0],
