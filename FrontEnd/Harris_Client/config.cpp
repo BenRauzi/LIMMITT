@@ -808,6 +808,12 @@ class CfgSounds
 		sound[] = {"\Harris_Client\sounds\start.ogg", 1, 1};
 		titles[] = {};
 	};
+	class buyCar
+	{
+		name = "start";
+		sound[] = {"\Harris_Client\sounds\buyCar.ogg", 1, 1};
+		titles[] = {};
+	};
 	class endbeep
 	{
 		name = "endbeep";

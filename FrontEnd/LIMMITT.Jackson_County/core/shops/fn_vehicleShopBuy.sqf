@@ -129,4 +129,5 @@ closeDialog 0; //Exit the menu.
 true;
 
 uiSleep 10;
+playSound "buyCar";
 deleteVehicle _vh;
