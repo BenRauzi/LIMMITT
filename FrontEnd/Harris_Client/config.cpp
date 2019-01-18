@@ -1141,6 +1141,129 @@ class CfgWeapons
 		picture = "\Harris_Client\Crafting\Workbench.paa";
 		descriptionShort = "Workbench";
 	};
+	class Harris_Pot : Toolkit {
+		displayName = "Plant Pot";
+		descriptionShort = "A Pot used to Grow Some Legal Plants, and some illegal ones";
+		picture = "";
+		model = "\JD_Client\Objects\pot.p3d";
+		class ItemInfo
+		{
+			allowedSlots[] = {701, 801, 901};
+			mass = 25;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+	};
+	class Harris_c4 : Toolkit {
+		displayName = "C4 Explosive";
+		descriptionShort = "Used to blow shit up!";
+		picture = "\cl3_objects\cl3_objects_pack\icons\processed\c4.paa";
+		model = "\cl3_objects\cl3_objects_pack\cl_composition4.p3d";
+		class ItemInfo
+		{
+			allowedSlots[] = {701, 801, 901};
+			mass = 20;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+	};
+	class Harris_blueprintnotes : Toolkit {
+		displayName = "Crafting Notes";
+		descriptionShort = "A notepad containing notes used for crafting";
+		picture = "\cg_Items\custom\tuna_ca.paa";
+		model = "Harris_Client\Crafting\Blueprints.p3d";
+		class ItemInfo
+		{
+			allowedSlots[] = {701, 801, 901};
+			mass = 6;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+	};
+	class Harris_weedBag: ToolKit
+	{
+		displayName = "Bag of Weed";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 4;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\a3l_drugs\weed_bag.p3d";
+		picture = "\a3l_drugs\weedbag_icon.paa";
+		descriptionShort = "Bag of Weed";
+	};
+
+	class Harris_weedSeeds: ToolKit
+	{
+		displayName = "Weed Seeds";
+		count = 1;
+		class ItemInfo
+		{
+			mass = 2;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\cl3_objects\cl3_objects_pack\cl_hemp_seeds.p3d";
+		picture = "\Harris_Client\Crafting\Weed.paa";
+		descriptionShort = "Weed Seeds";
+	};
+	class Harris_Toolbox: ToolKit
+	{
+		displayName = "Toolbox";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 20;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
+		picture = "\Harris_Client\Crafting\Toolbox.paa";
+		descriptionShort = "Can be used a repairkit to fix vehicles";
+	};
+	class Harris_handcuff: ToolKit
+	{
+		displayName = "Handcuffs";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 6;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\cl3_objects\cl3_objects_pack\cl_handcuffs.p3d";
+		picture = "\cl3_objects\cl3_objects_pack\icons\cl_handcuffs_icon.paa";
+		descriptionShort = "A pair of handcuffs used to restrain people's hands";
+	};
+	class Harris_cuffkeys: ToolKit
+	{
+		displayName = "Cuff Keys";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 2;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\MM_objects\keys.p3d";
+		picture = "\MM_objects\images\keychain.paa";
+		descriptionShort = "A pair of keys used to unlock leg shackles or Handcuffs";
+	};
+
 };
 
 
