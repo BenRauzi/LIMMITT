@@ -1266,6 +1266,18 @@ class CfgWeapons
 
 };
 
+class cfgFunctions
+{
+	class LIMMITT_Functions
+	{
+		tag = "LIMMITT";
+		class LIMMITT_Network
+		{
+			file = "\Harris_Client\Misc";
+			class openBook {preInit = 1;};
+		};
+	};
+};
 
 class Harris_Crafting
 {
