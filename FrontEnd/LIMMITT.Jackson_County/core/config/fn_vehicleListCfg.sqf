@@ -237,7 +237,7 @@ switch (_shop) do
 			["A3L_EscortTaxi",15000],
 			["A3L_EscortBlack",15000],
 			["A3L_EscortBlue",15000],
-			["A3L_EscortWhite",15000],
+			["A3L_EscortWhite",15000]
 		];
 	};
 	case "civ_motorbike":

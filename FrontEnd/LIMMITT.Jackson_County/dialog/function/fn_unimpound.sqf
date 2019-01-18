@@ -8,14 +8,14 @@
 */
 private["_vehicle","_vid","_pid","_unit","_price"];
 disableSerialization;
-if(lbCurSel 2802 == -1) exitWith {hint localize "STR_Global_NoSelection"};
+if(lbCurSel 2802 == -1) exitWith {["Error",localize "STR_Global_NoSelection","Failure"] spawn Harris_Notifications;};
 _vehicle = lbData[2802,(lbCurSel 2802)];
 _vehicle = (call compile format["%1",_vehicle]) select 0;
 _vid = lbValue[2802,(lbCurSel 2802)];
 _pid = getPlayerUID player;
 _unit = player;
 
-if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
+if(isNil "_vehicle") exitWith { ["Error",localize "STR_Garage_Selection_Error","Failure"] spawn Harris_Notifications;};
 
 _price = [_vehicle,__GETC__(life_garage_prices)] call fnc_index;
 if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_prices) select _price) select 1;};
@@ -31,6 +31,6 @@ if(typeName life_garage_sp == "ARRAY") then {
 	};
 };
 
-hint localize "STR_Garage_SpawningVeh";
+["Success",localize "STR_Garage_SpawningVeh","Success"] spawn Harris_Notifications;
 
 gm_memecash = gm_memecash - _price;

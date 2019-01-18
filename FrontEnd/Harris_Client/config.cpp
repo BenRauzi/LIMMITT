@@ -16,31 +16,31 @@ class CfgFontFamilies
 {
 	class Metropolis
 	{
-		fonts[] = {"\Harris_Client\fonts\MetropolisReg\Metropolis04","\Harris_Client\fonts\MetropolisReg\Metropolis05","\Harris_Client\fonts\MetropolisReg\Metropolis06","\Harris_Client\fonts\MetropolisReg\Metropolis07","\Harris_Client\fonts\MetropolisReg\Metropolis08","\Harris_Client\fonts\MetropolisReg\Metropolis09","\Harris_Client\fonts\MetropolisReg\Metropolis10","\Harris_Client\fonts\MetropolisReg\Metropolis11","\Harris_Client\fonts\MetropolisReg\Metropolis12","\Harris_Client\fonts\MetropolisReg\Metropolis13","\Harris_Client\fonts\MetropolisReg\Metropolis14","\Harris_Client\fonts\MetropolisReg\Metropolis15","\Harris_Client\fonts\MetropolisReg\Metropolis16","\Harris_Client\fonts\MetropolisReg\Metropolis17","\Harris_Client\fonts\MetropolisReg\Metropolis18","\Harris_Client\fonts\MetropolisReg\Metropolis19","\Harris_Client\fonts\MetropolisReg\Metropolis20","\Harris_Client\fonts\MetropolisReg\Metropolis21","\Harris_Client\fonts\MetropolisReg\Metropolis22","\Harris_Client\fonts\MetropolisReg\Metropolis23","\Harris_Client\fonts\MetropolisReg\Metropolis24","\Harris_Client\fonts\MetropolisReg\Metropolis25","\Harris_Client\fonts\MetropolisReg\Metropolis26","\Harris_Client\fonts\MetropolisReg\Metropolis27","\Harris_Client\fonts\MetropolisReg\Metropolis28","\Harris_Client\fonts\MetropolisReg\Metropolis29","\Harris_Client\fonts\MetropolisReg\Metropolis30","\Harris_Client\fonts\MetropolisReg\Metropolis31","\Harris_Client\fonts\MetropolisReg\Metropolis32","\Harris_Client\fonts\MetropolisReg\Metropolis33","\Harris_Client\fonts\MetropolisReg\Metropolis34","\Harris_Client\fonts\MetropolisReg\Metropolis35","\Harris_Client\fonts\MetropolisReg\Metropolis36","\Harris_Client\fonts\MetropolisReg\Metropolis37","\Harris_Client\fonts\MetropolisReg\Metropolis38","\Harris_Client\fonts\MetropolisReg\Metropolis39","\Harris_Client\fonts\MetropolisReg\Metropolis40","\Harris_Client\fonts\MetropolisReg\Metropolis41","\Harris_Client\fonts\MetropolisReg\Metropolis42","\Harris_Client\fonts\MetropolisReg\Metropolis43","\Harris_Client\fonts\MetropolisReg\Metropolis44","\Harris_Client\fonts\MetropolisReg\Metropolis45"};
+		fonts[] = {"Harris_Client\fonts\MetropolisReg\Metropolis04","Harris_Client\fonts\MetropolisReg\Metropolis05","Harris_Client\fonts\MetropolisReg\Metropolis06","Harris_Client\fonts\MetropolisReg\Metropolis07","Harris_Client\fonts\MetropolisReg\Metropolis08","Harris_Client\fonts\MetropolisReg\Metropolis09","Harris_Client\fonts\MetropolisReg\Metropolis10","Harris_Client\fonts\MetropolisReg\Metropolis11","Harris_Client\fonts\MetropolisReg\Metropolis12","Harris_Client\fonts\MetropolisReg\Metropolis13","Harris_Client\fonts\MetropolisReg\Metropolis14","Harris_Client\fonts\MetropolisReg\Metropolis15","Harris_Client\fonts\MetropolisReg\Metropolis16","Harris_Client\fonts\MetropolisReg\Metropolis17","Harris_Client\fonts\MetropolisReg\Metropolis18","Harris_Client\fonts\MetropolisReg\Metropolis19","Harris_Client\fonts\MetropolisReg\Metropolis20","Harris_Client\fonts\MetropolisReg\Metropolis21","Harris_Client\fonts\MetropolisReg\Metropolis22","Harris_Client\fonts\MetropolisReg\Metropolis23","Harris_Client\fonts\MetropolisReg\Metropolis24","Harris_Client\fonts\MetropolisReg\Metropolis25","Harris_Client\fonts\MetropolisReg\Metropolis26","Harris_Client\fonts\MetropolisReg\Metropolis27","Harris_Client\fonts\MetropolisReg\Metropolis28","Harris_Client\fonts\MetropolisReg\Metropolis29","Harris_Client\fonts\MetropolisReg\Metropolis30","Harris_Client\fonts\MetropolisReg\Metropolis31","Harris_Client\fonts\MetropolisReg\Metropolis32","Harris_Client\fonts\MetropolisReg\Metropolis33","Harris_Client\fonts\MetropolisReg\Metropolis34","Harris_Client\fonts\MetropolisReg\Metropolis35","Harris_Client\fonts\MetropolisReg\Metropolis36","Harris_Client\fonts\MetropolisReg\Metropolis37","Harris_Client\fonts\MetropolisReg\Metropolis38","Harris_Client\fonts\MetropolisReg\Metropolis39","Harris_Client\fonts\MetropolisReg\Metropolis40","Harris_Client\fonts\MetropolisReg\Metropolis41","Harris_Client\fonts\MetropolisReg\Metropolis42","Harris_Client\fonts\MetropolisReg\Metropolis43","Harris_Client\fonts\MetropolisReg\Metropolis44","Harris_Client\fonts\MetropolisReg\Metropolis45"};
 		spaceWidth = 0.7;
 		spacing = 0.13;
 	};
 	class Lemon
 	{
-		fonts[] = {"\Harris_Client\fonts\Lemon\Milk04","\Harris_Client\fonts\Lemon\Milk05","\Harris_Client\fonts\Lemon\Milk06","\Harris_Client\fonts\Lemon\Milk07","\Harris_Client\fonts\Lemon\Milk08","\Harris_Client\fonts\Lemon\Milk09","\Harris_Client\fonts\Lemon\Milk10","\Harris_Client\fonts\Lemon\Milk11","\Harris_Client\fonts\Lemon\Milk12","\Harris_Client\fonts\Lemon\Milk13","\Harris_Client\fonts\Lemon\Milk14","\Harris_Client\fonts\Lemon\Milk15","\Harris_Client\fonts\Lemon\Milk16","\Harris_Client\fonts\Lemon\Milk17","\Harris_Client\fonts\Lemon\Milk18","\Harris_Client\fonts\Lemon\Milk19","\Harris_Client\fonts\Lemon\Milk20","\Harris_Client\fonts\Lemon\Milk21","\Harris_Client\fonts\Lemon\Milk22","\Harris_Client\fonts\Lemon\Milk23","\Harris_Client\fonts\Lemon\Milk24","\Harris_Client\fonts\Lemon\Milk25","\Harris_Client\fonts\Lemon\Milk26","\Harris_Client\fonts\Lemon\Milk27","\Harris_Client\fonts\Lemon\Milk28","\Harris_Client\fonts\Lemon\Milk29","\Harris_Client\fonts\Lemon\Milk30","\Harris_Client\fonts\Lemon\Milk31","\Harris_Client\fonts\Lemon\Milk32","\Harris_Client\fonts\Lemon\Milk33","\Harris_Client\fonts\Lemon\Milk34","\Harris_Client\fonts\Lemon\Milk35","\Harris_Client\fonts\Lemon\Milk36","\Harris_Client\fonts\Lemon\Milk37","\Harris_Client\fonts\Lemon\Milk38","\Harris_Client\fonts\Lemon\Milk39","\Harris_Client\fonts\Lemon\Milk40","\Harris_Client\fonts\Lemon\Milk41","\Harris_Client\fonts\Lemon\Milk42","\Harris_Client\fonts\Lemon\Milk43","\Harris_Client\fonts\Lemon\Milk44","\Harris_Client\fonts\Lemon\Milk45"};
+		fonts[] = {"Harris_Client\fonts\Lemon\Milk04","Harris_Client\fonts\Lemon\Milk05","Harris_Client\fonts\Lemon\Milk06","Harris_Client\fonts\Lemon\Milk07","Harris_Client\fonts\Lemon\Milk08","Harris_Client\fonts\Lemon\Milk09","Harris_Client\fonts\Lemon\Milk10","Harris_Client\fonts\Lemon\Milk11","Harris_Client\fonts\Lemon\Milk12","Harris_Client\fonts\Lemon\Milk13","Harris_Client\fonts\Lemon\Milk14","Harris_Client\fonts\Lemon\Milk15","Harris_Client\fonts\Lemon\Milk16","Harris_Client\fonts\Lemon\Milk17","Harris_Client\fonts\Lemon\Milk18","Harris_Client\fonts\Lemon\Milk19","Harris_Client\fonts\Lemon\Milk20","Harris_Client\fonts\Lemon\Milk21","Harris_Client\fonts\Lemon\Milk22","Harris_Client\fonts\Lemon\Milk23","Harris_Client\fonts\Lemon\Milk24","Harris_Client\fonts\Lemon\Milk25","Harris_Client\fonts\Lemon\Milk26","Harris_Client\fonts\Lemon\Milk27","Harris_Client\fonts\Lemon\Milk28","Harris_Client\fonts\Lemon\Milk29","Harris_Client\fonts\Lemon\Milk30","Harris_Client\fonts\Lemon\Milk31","Harris_Client\fonts\Lemon\Milk32","Harris_Client\fonts\Lemon\Milk33","Harris_Client\fonts\Lemon\Milk34","Harris_Client\fonts\Lemon\Milk35","Harris_Client\fonts\Lemon\Milk36","Harris_Client\fonts\Lemon\Milk37","Harris_Client\fonts\Lemon\Milk38","Harris_Client\fonts\Lemon\Milk39","Harris_Client\fonts\Lemon\Milk40","Harris_Client\fonts\Lemon\Milk41","Harris_Client\fonts\Lemon\Milk42","Harris_Client\fonts\Lemon\Milk43","Harris_Client\fonts\Lemon\Milk44","Harris_Client\fonts\Lemon\Milk45"};
 		spaceWidth = 0.7;
 		spacing = 0.13;
 	};
 	class Georgia
 	{
-		fonts[] = {"\Harris_Client\fonts\Georgia\Georgia04","\Harris_Client\fonts\Georgia\Georgia05","\Harris_Client\fonts\Georgia\Georgia06","\Harris_Client\fonts\Georgia\Georgia07","\Harris_Client\fonts\Georgia\Georgia08","\Harris_Client\fonts\Georgia\Georgia09","\Harris_Client\fonts\Georgia\Georgia10","\Harris_Client\fonts\Georgia\Georgia11","\Harris_Client\fonts\Georgia\Georgia12","\Harris_Client\fonts\Georgia\Georgia13","\Harris_Client\fonts\Georgia\Georgia14","\Harris_Client\fonts\Georgia\Georgia15","\Harris_Client\fonts\Georgia\Georgia16","\Harris_Client\fonts\Georgia\Georgia17","\Harris_Client\fonts\Georgia\Georgia18","\Harris_Client\fonts\Georgia\Georgia19","\Harris_Client\fonts\Georgia\Georgia20","\Harris_Client\fonts\Georgia\Georgia21","\Harris_Client\fonts\Georgia\Georgia22","\Harris_Client\fonts\Georgia\Georgia23","\Harris_Client\fonts\Georgia\Georgia24","\Harris_Client\fonts\Georgia\Georgia25","\Harris_Client\fonts\Georgia\Georgia26","\Harris_Client\fonts\Georgia\Georgia27","\Harris_Client\fonts\Georgia\Georgia28","\Harris_Client\fonts\Georgia\Georgia29","\Harris_Client\fonts\Georgia\Georgia30","\Harris_Client\fonts\Georgia\Georgia31","\Harris_Client\fonts\Georgia\Georgia32","\Harris_Client\fonts\Georgia\Georgia33","\Harris_Client\fonts\Georgia\Georgia34","\Harris_Client\fonts\Georgia\Georgia35","\Harris_Client\fonts\Georgia\Georgia36","\Harris_Client\fonts\Georgia\Georgia37","\Harris_Client\fonts\Georgia\Georgia38","\Harris_Client\fonts\Georgia\Georgia39","\Harris_Client\fonts\Georgia\Georgia40","\Harris_Client\fonts\Georgia\Georgia41","\Harris_Client\fonts\Georgia\Georgia42","\Harris_Client\fonts\Georgia\Georgia43","\Harris_Client\fonts\Georgia\Georgia44","\Harris_Client\fonts\Georgia\Georgia45"};
+		fonts[] = {"Harris_Client\fonts\Georgia\Georgia04","Harris_Client\fonts\Georgia\Georgia05","Harris_Client\fonts\Georgia\Georgia06","Harris_Client\fonts\Georgia\Georgia07","Harris_Client\fonts\Georgia\Georgia08","Harris_Client\fonts\Georgia\Georgia09","Harris_Client\fonts\Georgia\Georgia10","Harris_Client\fonts\Georgia\Georgia11","Harris_Client\fonts\Georgia\Georgia12","Harris_Client\fonts\Georgia\Georgia13","Harris_Client\fonts\Georgia\Georgia14","Harris_Client\fonts\Georgia\Georgia15","Harris_Client\fonts\Georgia\Georgia16","Harris_Client\fonts\Georgia\Georgia17","Harris_Client\fonts\Georgia\Georgia18","Harris_Client\fonts\Georgia\Georgia19","Harris_Client\fonts\Georgia\Georgia20","Harris_Client\fonts\Georgia\Georgia21","Harris_Client\fonts\Georgia\Georgia22","Harris_Client\fonts\Georgia\Georgia23","Harris_Client\fonts\Georgia\Georgia24","Harris_Client\fonts\Georgia\Georgia25","Harris_Client\fonts\Georgia\Georgia26","Harris_Client\fonts\Georgia\Georgia27","Harris_Client\fonts\Georgia\Georgia28","Harris_Client\fonts\Georgia\Georgia29","Harris_Client\fonts\Georgia\Georgia30","Harris_Client\fonts\Georgia\Georgia31","Harris_Client\fonts\Georgia\Georgia32","Harris_Client\fonts\Georgia\Georgia33","Harris_Client\fonts\Georgia\Georgia34","Harris_Client\fonts\Georgia\Georgia35","Harris_Client\fonts\Georgia\Georgia36","Harris_Client\fonts\Georgia\Georgia37","Harris_Client\fonts\Georgia\Georgia38","Harris_Client\fonts\Georgia\Georgia39","Harris_Client\fonts\Georgia\Georgia40","Harris_Client\fonts\Georgia\Georgia41","Harris_Client\fonts\Georgia\Georgia42","Harris_Client\fonts\Georgia\Georgia43","Harris_Client\fonts\Georgia\Georgia44","Harris_Client\fonts\Georgia\Georgia45"};
 		spaceWidth = 0.7;
 		spacing = 0.13;
 	};
 	class Garamond
 	{
-		fonts[] = {"\Harris_Client\fonts\Garamond\EBGaramond10","\Harris_Client\fonts\Garamond\EBGaramond10","\Harris_Client\fonts\Garamond\EBGaramond10","\Harris_Client\fonts\Garamond\EBGaramond10","\Harris_Client\fonts\Garamond\EBGaramond10","\Harris_Client\fonts\Garamond\EBGaramond11","\Harris_Client\fonts\Garamond\EBGaramond12","\Harris_Client\fonts\Garamond\EBGaramond13","\Harris_Client\fonts\Garamond\EBGaramond14","\Harris_Client\fonts\Garamond\EBGaramond15","\Harris_Client\fonts\Garamond\EBGaramond16","\Harris_Client\fonts\Garamond\EBGaramond17","\Harris_Client\fonts\Garamond\EBGaramond18","\Harris_Client\fonts\Garamond\EBGaramond19","\Harris_Client\fonts\Garamond\EBGaramond20","\Harris_Client\fonts\Garamond\EBGaramond21","\Harris_Client\fonts\Garamond\EBGaramond22","\Harris_Client\fonts\Garamond\EBGaramond23","\Harris_Client\fonts\Garamond\EBGaramond24","\Harris_Client\fonts\Garamond\EBGaramond25","\Harris_Client\fonts\Garamond\EBGaramond26","\Harris_Client\fonts\Garamond\EBGaramond27","\Harris_Client\fonts\Garamond\EBGaramond28","\Harris_Client\fonts\Garamond\EBGaramond29","\Harris_Client\fonts\Garamond\EBGaramond30","\Harris_Client\fonts\Garamond\EBGaramond31","\Harris_Client\fonts\Garamond\EBGaramond34","\Harris_Client\fonts\Garamond\EBGaramond35","\Harris_Client\fonts\Garamond\EBGaramond37","\Harris_Client\fonts\Garamond\EBGaramond46"};
+		fonts[] = {"Harris_Client\fonts\Garamond\EBGaramond10","Harris_Client\fonts\Garamond\EBGaramond10","Harris_Client\fonts\Garamond\EBGaramond10","Harris_Client\fonts\Garamond\EBGaramond10","Harris_Client\fonts\Garamond\EBGaramond10","Harris_Client\fonts\Garamond\EBGaramond11","Harris_Client\fonts\Garamond\EBGaramond12","Harris_Client\fonts\Garamond\EBGaramond13","Harris_Client\fonts\Garamond\EBGaramond14","Harris_Client\fonts\Garamond\EBGaramond15","Harris_Client\fonts\Garamond\EBGaramond16","Harris_Client\fonts\Garamond\EBGaramond17","Harris_Client\fonts\Garamond\EBGaramond18","Harris_Client\fonts\Garamond\EBGaramond19","Harris_Client\fonts\Garamond\EBGaramond20","Harris_Client\fonts\Garamond\EBGaramond21","Harris_Client\fonts\Garamond\EBGaramond22","Harris_Client\fonts\Garamond\EBGaramond23","Harris_Client\fonts\Garamond\EBGaramond24","Harris_Client\fonts\Garamond\EBGaramond25","Harris_Client\fonts\Garamond\EBGaramond26","Harris_Client\fonts\Garamond\EBGaramond27","Harris_Client\fonts\Garamond\EBGaramond28","Harris_Client\fonts\Garamond\EBGaramond29","Harris_Client\fonts\Garamond\EBGaramond30","Harris_Client\fonts\Garamond\EBGaramond31","Harris_Client\fonts\Garamond\EBGaramond34","Harris_Client\fonts\Garamond\EBGaramond35","Harris_Client\fonts\Garamond\EBGaramond37","Harris_Client\fonts\Garamond\EBGaramond46"};
 		spaceWidth = 0.7;
 		spacing = 0.13;
 	};
 	class Palace
 	{
-		fonts[] = {"\Harris_Client\fonts\PalaceScript\PalaceScriptMT10","\Harris_Client\fonts\PalaceScript\PalaceScriptMT10","\Harris_Client\fonts\PalaceScript\PalaceScriptMT10","\Harris_Client\fonts\PalaceScript\PalaceScriptMT10","\Harris_Client\fonts\PalaceScript\PalaceScriptMT10","\Harris_Client\fonts\PalaceScript\PalaceScriptMT11","\Harris_Client\fonts\PalaceScript\PalaceScriptMT12","\Harris_Client\fonts\PalaceScript\PalaceScriptMT13","\Harris_Client\fonts\PalaceScript\PalaceScriptMT14","\Harris_Client\fonts\PalaceScript\PalaceScriptMT15","\Harris_Client\fonts\PalaceScript\PalaceScriptMT16","\Harris_Client\fonts\PalaceScript\PalaceScriptMT17","\Harris_Client\fonts\PalaceScript\PalaceScriptMT18","\Harris_Client\fonts\PalaceScript\PalaceScriptMT19","\Harris_Client\fonts\PalaceScript\PalaceScriptMT20","\Harris_Client\fonts\PalaceScript\PalaceScriptMT21","\Harris_Client\fonts\PalaceScript\PalaceScriptMT22","\Harris_Client\fonts\PalaceScript\PalaceScriptMT23","\Harris_Client\fonts\PalaceScript\PalaceScriptMT24","\Harris_Client\fonts\PalaceScript\PalaceScriptMT25","\Harris_Client\fonts\PalaceScript\PalaceScriptMT26","\Harris_Client\fonts\PalaceScript\PalaceScriptMT27","\Harris_Client\fonts\PalaceScript\PalaceScriptMT28","\Harris_Client\fonts\PalaceScript\PalaceScriptMT29","\Harris_Client\fonts\PalaceScript\PalaceScriptMT30","\Harris_Client\fonts\PalaceScript\PalaceScriptMT31","\Harris_Client\fonts\PalaceScript\PalaceScriptMT34","\Harris_Client\fonts\PalaceScript\PalaceScriptMT35","\Harris_Client\fonts\PalaceScript\PalaceScriptMT37","\Harris_Client\fonts\PalaceScript\PalaceScriptMT46"};
+		fonts[] = {"Harris_Client\fonts\PalaceScript\PalaceScriptMT10","Harris_Client\fonts\PalaceScript\PalaceScriptMT10","Harris_Client\fonts\PalaceScript\PalaceScriptMT10","Harris_Client\fonts\PalaceScript\PalaceScriptMT10","Harris_Client\fonts\PalaceScript\PalaceScriptMT10","Harris_Client\fonts\PalaceScript\PalaceScriptMT11","Harris_Client\fonts\PalaceScript\PalaceScriptMT12","Harris_Client\fonts\PalaceScript\PalaceScriptMT13","Harris_Client\fonts\PalaceScript\PalaceScriptMT14","Harris_Client\fonts\PalaceScript\PalaceScriptMT15","Harris_Client\fonts\PalaceScript\PalaceScriptMT16","Harris_Client\fonts\PalaceScript\PalaceScriptMT17","Harris_Client\fonts\PalaceScript\PalaceScriptMT18","Harris_Client\fonts\PalaceScript\PalaceScriptMT19","Harris_Client\fonts\PalaceScript\PalaceScriptMT20","Harris_Client\fonts\PalaceScript\PalaceScriptMT21","Harris_Client\fonts\PalaceScript\PalaceScriptMT22","Harris_Client\fonts\PalaceScript\PalaceScriptMT23","Harris_Client\fonts\PalaceScript\PalaceScriptMT24","Harris_Client\fonts\PalaceScript\PalaceScriptMT25","Harris_Client\fonts\PalaceScript\PalaceScriptMT26","Harris_Client\fonts\PalaceScript\PalaceScriptMT27","Harris_Client\fonts\PalaceScript\PalaceScriptMT28","Harris_Client\fonts\PalaceScript\PalaceScriptMT29","Harris_Client\fonts\PalaceScript\PalaceScriptMT30","Harris_Client\fonts\PalaceScript\PalaceScriptMT31","Harris_Client\fonts\PalaceScript\PalaceScriptMT34","Harris_Client\fonts\PalaceScript\PalaceScriptMT35","Harris_Client\fonts\PalaceScript\PalaceScriptMT37","Harris_Client\fonts\PalaceScript\PalaceScriptMT46"};
 		spaceWidth = 0.1;
 		spacing = 0.1;
 	};
@@ -381,7 +381,7 @@ class rscTitles
 			class betahudpic: RscPicture
 			{
 				idc = 51251;
-				text = "\Harris_Client\Misc\logo.paa";
+				text = "Harris_Client\Misc\logo.paa";
 				x = "0.005 * safezoneW + safezoneX";
 				y = "0.00500001 * safezoneH + safezoneY";
 				w = "0.16 * safezoneW";
@@ -515,7 +515,7 @@ class rscTitles
 			class Image_2: RscPicture
 			{
 				idc = 2500;
-				text = "\Harris_Client\Notifications\NotifsRed.paa";
+				text = "Harris_Client\Notifications\NotifsRed.paa";
 				x = 0.83 * safezoneW + safezoneX;
 				y = 0.148 * safezoneH + safezoneY;
 				w = 0.17 * safezoneW;
@@ -524,7 +524,7 @@ class rscTitles
 			class Icon_2: RscPicture
 			{
 				idc = 2200;
-				text = "\Harris_Client\Notifications\bell.paa";
+				text = "Harris_Client\Notifications\bell.paa";
 				x = 0.833333 * safezoneW + safezoneX;
 				y = 0.168185 * safezoneH + safezoneY;
 				w = 0.015 * safezoneW;
@@ -569,7 +569,7 @@ class rscTitles
 			class Image_3: RscPicture
 			{
 				idc = 3500;
-				text = "\Harris_Client\Notifications\NotifsRed.paa";
+				text = "Harris_Client\Notifications\NotifsRed.paa";
 				x = 0.83 * safezoneW + safezoneX;
 				y = 0.214 * safezoneH + safezoneY;
 				w = 0.17 * safezoneW;
@@ -578,7 +578,7 @@ class rscTitles
 			class Icon_3: RscPicture
 			{
 				idc = 3200;
-				text = "\Harris_Client\Notifications\bell.paa";
+				text = "Harris_Client\Notifications\bell.paa";
 				x = 0.833333 * safezoneW + safezoneX;
 				y = 0.234185 * safezoneH + safezoneY;
 				w = 0.015 * safezoneW;
@@ -624,7 +624,7 @@ class rscTitles
 			class Iamge_4: RscPicture
 			{
 				idc = 4500;
-				text = "\Harris_Client\Notifications\NotifsRed.paa";
+				text = "Harris_Client\Notifications\NotifsRed.paa";
 				x = 0.83 * safezoneW + safezoneX;
 				y = 0.28 * safezoneH + safezoneY;
 				w = 0.17 * safezoneW;
@@ -633,7 +633,7 @@ class rscTitles
 			class Icon_4: RscPicture
 			{
 				idc = 4200;
-				text = "\Harris_Client\Notifications\bell.paa";
+				text = "Harris_Client\Notifications\bell.paa";
 				x = 0.833333 * safezoneW + safezoneX;
 				y = 0.300185 * safezoneH + safezoneY;
 				w = 0.015 * safezoneW;
@@ -679,7 +679,7 @@ class rscTitles
 			class Image_5: RscPicture
 			{
 				idc = 5500;
-				text = "\Harris_Client\Notifications\NotifsRed.paa";
+				text = "Harris_Client\Notifications\NotifsRed.paa";
 				x = 0.83 * safezoneW + safezoneX;
 				y = 0.346 * safezoneH + safezoneY;
 				w = 0.17 * safezoneW;
@@ -688,7 +688,7 @@ class rscTitles
 			class Icon_5: RscPicture
 			{
 				idc = 5200;
-				text = "\Harris_Client\Notifications\bell.paa";
+				text = "Harris_Client\Notifications\bell.paa";
 				x = 0.833333 * safezoneW + safezoneX;
 				y = 0.366185 * safezoneH + safezoneY;
 				w = 0.015 * safezoneW;
@@ -730,11 +730,11 @@ class rscTitles
 		class controls
 		{
 				
-			class Title: Harris_RscText
+			class Title: RscText
 			{
 				idc = 1000;
 				text = "LIMMITT Twitter Feed"; //--- ToDo: Localize;
-				x = 0.001 * safezoneW + safezoneX;
+				x = 0.0 * safezoneW + safezoneX;
 				y = 0.595 * safezoneH + safezoneY;
 				w = 0.25 * safezoneW;
 				h = 0.07 * safezoneH;
@@ -759,7 +759,7 @@ class Harris_twitterType
 	movingEnable = false;
 	class controls
 	{
-		class Title: Harris_RscText
+		class Title: RscText
 		{
 			idc = 1000;
 			text = "LIMMITT Twitter Feed"; //--- ToDo: Localize;
@@ -784,194 +784,98 @@ class Harris_twitterType
 class CfgSounds
 {
 	sounds[] = {};
-	class JDSiren1
-	{
-		name = "Wail";
-		sound[] = {"JD_CVPI\Sirens\siren1.wav",5,1};
-		titles[] = {};
-	};
-	class JDSiren2
-	{
-		name = "Wail2";
-		sound[] = {"JD_CVPI\Sirens\siren2.wav",5,1};
-		titles[] = {};
-	};
-	class JDSiren3
-	{
-		name = "Wail3";
-		sound[] = {"JD_CVPI\Sirens\siren3.wav",5,1};
-		titles[] = {};
-	};
-	class start
-	{
-		name = "start";
-		sound[] = {"\Harris_Client\sounds\start.ogg", 1, 1};
-		titles[] = {};
-	};
 	class buyCar
 	{
 		name = "buyCar";
-		sound[] = {"\Harris_Client\sounds\buyCar.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\buyCar.ogg", 1, 1};
 		titles[] = {};
 	};
 	class endbeep
 	{
 		name = "endbeep";
-		sound[] = {"\Harris_Client\sounds\endbeep.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\endbeep.ogg", 1, 1};
 		titles[] = {};
 	};
 	class radioactive
 	{
 		name = "radioactive";
-		sound[] = {"\Harris_Client\sounds\new\radioactive.ogg", 1, 1};
-		titles[] = {};
-	};
-	class skydive
-	{
-		name = "skydive";
-		sound[] = {"\Harris_Client\sounds\new\skydive.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\new\radioactive.ogg", 1, 1};
 		titles[] = {};
 	};
 	class intro
 	{
 		name = "intro";
-		sound[] = {"\Harris_Client\sounds\intro.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\intro.ogg", 1, 1};
 		titles[] = {};
 	};
 	class lock
 	{
 		name = "lock";
-		sound[] = {"\Harris_Client\sounds\new\lock.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\new\lock.ogg", 1, 1};
 		titles[] = {};
 	};
 	class cough
 	{
 		name = "cough";
-		sound[] = {"\Harris_Client\sounds\new\cough.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\new\cough.ogg", 1, 1};
 		titles[] = {};
 	};
 	class weed
 	{
 		name = "weed";
-		sound[] = {"\Harris_Client\sounds\new\weed.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\new\weed.ogg", 1, 1};
 		titles[] = {};
 	};
 	class mine
 	{
 		name = "mine";
-		sound[] = {"\Harris_Client\sounds\new\mine.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\new\mine.ogg", 1, 1};
 		titles[] = {};
 	};
 	class openbottle
 	{
 		name = "openbottle";
-		sound[] = {"\Harris_Client\sounds\new\openbottle.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\new\openbottle.ogg", 1, 1};
 		titles[] = {};
 	};
 	class wedding
 	{
 		name = "wedding";
-		sound[] = {"\Harris_Client\sounds\new\wedding.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\new\wedding.ogg", 1, 1};
 		titles[] = {};
 	};
 	class SirenLong
 	{
 		name = "SirenLong";
-		sound[] = {"\Harris_Client\sounds\Siren_Long.ogg", 1, 1};
-		titles[] = {};
-	};
-	class spray
-	{
-		name = "spray";
-		sound[] = {"\Harris_Client\sounds\spray.ogg", 1, 1};
-		titles[] = {};
-	};
-	class jackpot1
-	{
-		name = "jackpot1";
-		sound[] = {"\Harris_Client\sounds\jackpot1.ogg", 1, 1};
-		titles[] = {};
-	};
-	class jackpot2
-	{
-		name = "jackpot2";
-		sound[] = {"\Harris_Client\sounds\jackpot2.ogg", 1, 1};
-		titles[] = {};
-	};
-	class spin
-	{
-		name = "spin";
-		sound[] = {"\Harris_Client\sounds\spin.ogg", 1, 1};
-		titles[] = {};
-	};
-	class ciggy
-	{
-		name = "ciggy";
-		sound[] = {"\Harris_Client\sounds\ciggy.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart1
-	{
-		name = "fart1";
-		sound[] = {"\Harris_Client\sounds\fart1.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart2
-	{
-		name = "fart2";
-		sound[] = {"\Harris_Client\sounds\fart2.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart3
-	{
-		name = "fart3";
-		sound[] = {"\Harris_Client\sounds\fart3.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart4
-	{
-		name = "fart4";
-		sound[] = {"\Harris_Client\sounds\fart4.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart5
-	{
-		name = "fart5";
-		sound[] = {"\Harris_Client\sounds\fart5.ogg", 1, 1};
-		titles[] = {};
-	};
-	class fart6
-	{
-		name = "fart6";
-		sound[] = {"\Harris_Client\sounds\fart6.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\Siren_Long.ogg", 1, 1};
 		titles[] = {};
 	};
 
 	class punch1
 	{
 		name = "punch1";
-		sound[] = {"\Harris_Client\sounds\punch1.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\punch1.ogg", 1, 1};
 		titles[] = {};
 	};
 
 	class punch2
 	{
 		name = "punch2";
-		sound[] = {"\Harris_Client\sounds\punch2.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\punch2.ogg", 1, 1};
 		titles[] = {};
 	};
 
 	class punch3
 	{
 		name = "punch3";
-		sound[] = {"\Harris_Client\sounds\punch3.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\punch3.ogg", 1, 1};
 		titles[] = {};
 	};
 
 	class punch4
 	{
 		name = "punch4";
-		sound[] = {"\Harris_Client\sounds\punch4.ogg", 1, 1};
+		sound[] = {"Harris_Client\sounds\punch4.ogg", 1, 1};
 		titles[] = {};
 	};
 };
@@ -991,7 +895,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_rocks\bits_small_rock - Coal.p3d";
-		picture = "\Harris_Client\Data\coalUnrefined.paa";
+		picture = "Harris_Client\Data\coalUnrefined.paa";
 		descriptionShort = "Unrefined Coal";
 	};
 	class Harris_diamondOre: ToolKit
@@ -1007,7 +911,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_rocks\bits_small_rock.p3d";
-		picture = "\Harris_Client\Data\ironOre.paa";
+		picture = "Harris_Client\Data\ironOre.paa";
 		descriptionShort = "Diamond Ore";
 	};
 	class Harris_ironOre: ToolKit
@@ -1023,7 +927,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_rocks\bits_small_rock - Iron.p3d";
-		picture = "\Harris_Client\Data\ironOre.paa";
+		picture = "Harris_Client\Data\ironOre.paa";
 		descriptionShort = "Iron Ore";
 	};
 	class Harris_goldOre: ToolKit
@@ -1039,7 +943,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_rocks\bits_small_rock - Gold.p3d";
-		picture = "\Harris_Client\Data\ironOre.paa";
+		picture = "Harris_Client\Data\ironOre.paa";
 		descriptionShort = "Gold Ore";
 	};
 	class Harris_woodLog: ToolKit
@@ -1054,8 +958,8 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\Harris_Client\Crafting\Log.p3d"; // To Update
-		picture = "\Harris_Client\Crafting\Wood.paa";
+		model = "Harris_Client\Crafting\Log.p3d"; // To Update
+		picture = "Harris_Client\Crafting\Wood.paa";
 		descriptionShort = "Wooden Logs";
 	};
 	class Harris_ironIngot: ToolKit
@@ -1071,7 +975,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\A3L_Bars\silver_bar.p3d";
-		picture = "\Harris_Client\Crafting\ironIngot.paa";
+		picture = "Harris_Client\Crafting\ironIngot.paa";
 		descriptionShort = "Iron Ingot";
 	};
 
@@ -1088,7 +992,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_boxes\box_small.p3d";
-		picture = "\Harris_Client\Crafting\coal.paa";
+		picture = "Harris_Client\Crafting\coal.paa";
 		descriptionShort = "Piece of refined Coal";
 	};
 
@@ -1105,7 +1009,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\A3L_Bars\steel_bar.p3d";
-		picture = "\Harris_Client\Crafting\ironIngot.paa";
+		picture = "Harris_Client\Crafting\ironIngot.paa";
 		descriptionShort = "Steel Ingot";
 	};
 
@@ -1122,7 +1026,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\A3L_Bars\steel_bar.p3d";
-		picture = "\Harris_Client\Crafting\ironIngot.paa";
+		picture = "Harris_Client\Crafting\ironIngot.paa";
 		descriptionShort = "Gold Ingot";
 	};
 	class Harris_Workbench: ToolKit
@@ -1138,13 +1042,13 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\A3L_WorkBench\workbench.p3d";
-		picture = "\Harris_Client\Crafting\Workbench.paa";
+		picture = "Harris_Client\Crafting\Workbench.paa";
 		descriptionShort = "Workbench";
 	};
 	class Harris_Pot : Toolkit {
 		displayName = "Plant Pot";
 		descriptionShort = "A Pot used to Grow Some Legal Plants, and some illegal ones";
-		picture = "\Harris_Client\Crafting\pot.paa";
+		picture = "Harris_Client\Crafting\pot.paa";
 		model = "\JD_Client\Objects\pot.p3d";
 		class ItemInfo
 		{
@@ -1158,8 +1062,8 @@ class CfgWeapons
 	class Harris_c4 : Toolkit {
 		displayName = "C4 Explosive";
 		descriptionShort = "Used to blow shit up!";
-		picture = "\cl3_objects\cl3_objects_pack\icons\processed\c4.paa";
-		model = "\cl3_objects\cl3_objects_pack\cl_composition4.p3d";
+		picture = "cl3_objects\cl3_objects_pack\icons\processed\c4.paa";
+		model = "cl3_objects\cl3_objects_pack\cl_composition4.p3d";
 		class ItemInfo
 		{
 			allowedSlots[] = {701, 801, 901};
@@ -1173,7 +1077,7 @@ class CfgWeapons
 		displayName = "Crafting Notes";
 		descriptionShort = "A notepad containing notes used for crafting";
 		picture = "\cg_Items\custom\tuna_ca.paa";
-		model = "\Harris_Client\Crafting\Blueprints.p3d";
+		model = "Harris_Client\Crafting\Blueprint.p3d";
 		class ItemInfo
 		{
 			allowedSlots[] = {701, 801, 901};
@@ -1211,8 +1115,8 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\cl3_objects\cl3_objects_pack\cl_hemp_seeds.p3d";
-		picture = "\Harris_Client\Crafting\seeds.paa";
+		model = "cl3_objects\cl3_objects_pack\cl_hemp_seeds.p3d";
+		picture = "Harris_Client\Crafting\seeds.paa";
 		descriptionShort = "Weed Seeds";
 	};
 	class Harris_Toolbox: ToolKit
@@ -1227,8 +1131,8 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
-		picture = "\Harris_Client\Crafting\Toolbox.paa";
+		model = "cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
+		picture = "Harris_Client\Crafting\Toolbox.paa";
 		descriptionShort = "Can be used a repairkit to fix vehicles";
 	};
 	class Harris_handcuff: ToolKit
@@ -1243,8 +1147,8 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\cl3_objects\cl3_objects_pack\cl_handcuffs.p3d";
-		picture = "\cl3_objects\cl3_objects_pack\icons\cl_handcuffs_icon.paa";
+		model = "cl3_objects\cl3_objects_pack\cl_handcuffs.p3d";
+		picture = "cl3_objects\cl3_objects_pack\icons\cl_handcuffs_icon.paa";
 		descriptionShort = "A pair of handcuffs used to restrain people's hands";
 	};
 	class Harris_cuffkeys: ToolKit
@@ -1276,7 +1180,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_boxes\box_small.p3d";
-		picture = "\Harris_Client\Crafting\burlap.paa";
+		picture = "Harris_Client\Crafting\burlap.paa";
 		descriptionShort = "Burlap";
 	};
 	class Harris_rope: ToolKit
@@ -1292,13 +1196,13 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_boxes\box_small.p3d";
-		picture = "\Harris_Client\Crafting\Rope.paa";
+		picture = "Harris_Client\Crafting\Rope.paa";
 		descriptionShort = "Rope";
 	};
 	class Harris_RDX : Toolkit {
 		displayName = "RDX Compound";
 		descriptionShort = "A modern compound used for controlled detonations.";
-		picture = "\Harris_Client\Crafting\RDX.paa";
+		picture = "Harris_Client\Crafting\RDX.paa";
 		model = "\a3l_boxes\box_small.p3d";
 		class ItemInfo
 		{
@@ -1312,7 +1216,7 @@ class CfgWeapons
 	class Harris_keyCard : Toolkit {
 		displayName = "Police KeyCard";
 		descriptionShort = "This is used to gain police access to secure facilities.";
-		picture = "\Harris_Client\radial\icons\002_Tag.paa";
+		picture = "Harris_Client\radial\icons\002_Tag.paa";
 		model = "\MM_objects\keys.p3d";
 		class ItemInfo
 		{
@@ -1333,7 +1237,7 @@ class cfgFunctions
 		tag = "LIMMITT";
 		class LIMMITT_Network
 		{
-			file = "\Harris_Client\Misc";
+			file = "Harris_Client\Misc";
 			class openBook {preInit = 1;};
 		};
 	};
@@ -1349,7 +1253,7 @@ class Harris_Crafting
 		class craftingMenu_P: RscPicture
 		{
 			idc = 1200;
-			text = "\Harris_Client\Crafting\craftingmenu.paa";
+			text = "Harris_Client\Crafting\craftingmenu.paa";
 			x = 0.331614 * safezoneW + safezoneX;
 			y = 0.181333 * safezoneH + safezoneY;
 			w = 0.335156 * safezoneW;
@@ -1439,7 +1343,7 @@ class Harris_Refine
 		class craftingMenu_P: RscPicture
 		{
 			idc = 1200;
-			text = "\Harris_Client\Crafting\refinemenu.paa";
+			text = "Harris_Client\Crafting\refinemenu.paa";
 			x = 0.331614 * safezoneW + safezoneX;
 			y = 0.181333 * safezoneH + safezoneY;
 			w = 0.335156 * safezoneW;
@@ -1567,7 +1471,7 @@ class Harris_getCitation
 		class Background_P: RscPicture
 		{
 			idc = 1200;
-			text = "\Harris_client\Police\receiveCitation";
+			text = "Harris_client\Police\receiveCitation";
 			x = 0.309219 * safezoneW + safezoneX;
 			y = 0.192 * safezoneH + safezoneY;
 			w = 0.35 * safezoneW;
@@ -1764,7 +1668,7 @@ class Harris_giveCitation
 		class Background_P: RscPicture
 		{
 			idc = 1200;
-			text = "\Harris_Client\Police\giveCitation";
+			text = "Harris_Client\Police\giveCitation";
 			x = 0.309219 * safezoneW + safezoneX;
 			y = 0.192 * safezoneH + safezoneY;
 			w = 0.35 * safezoneW;
@@ -2040,4 +1944,3 @@ class sell_shop
 		};
 	};
 };
-

@@ -35,7 +35,7 @@ class cfgInteractions
 		};
 		class Impound
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), !isNull Harris_currentCursorObject]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), !isNull Harris_currentCursorObject, !(Harris_currentCursorObject isKindOf 'Man')]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_impoundAction;";
 			icon = "029-license-plate.paa";
 			text = "Impound";
@@ -43,10 +43,24 @@ class cfgInteractions
 	};
 	class ImpoundEMS
 	{
-		condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == independent)]";
+		condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == independent), !(Harris_currentCursorObject isKindOf 'Man')]";
 		action = "[Harris_currentCursorObject] spawn life_fnc_impoundAction;";
-		icon = "0029-license-plate.paa";
+		icon = "029-license-plate.paa";
 		text = "Impound";
+	};
+	class revivePlayer
+	{
+		condition = "[isPlayer Harris_currentCursorObject, (playerSide == independent), !alive Harris_currentCursorObject]";
+		action = "[Harris_currentCursorObject] call life_fnc_revivePlayer;";
+		icon = "010_cpr.paa";
+		text = "Revive";
+	};
+	class healPlayer
+	{
+		condition = "[isPlayer Harris_currentCursorObject, (playerSide == independent), damage Harris_currentCursorObject < 1, damage Harris_currentCursorObject > 0]";
+		action = "[0,Harris_currentCursorObject] spawn life_fnc_healPerson";
+		icon = "020-hand.paa";
+		text = "Heal Player";
 	};
 	class Pullout
 	{
@@ -76,21 +90,21 @@ class cfgInteractions
 		};
 		class pushCar 
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land')]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land'),!( cursorObject isKindOf'Man')]";
 			action = "[] spawn life_fnc_pushObject;";
 			icon = "020-hand.paa";
 			text = "Push";
 		};
 		class unFlip
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air')]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air'),!( cursorObject isKindOf'Man')]";
 			action = "Harris_currentCursorObject setPos [getPos Harris_currentCursorObject select 0, getPos Harris_currentCursorObject select 1, (getPos Harris_currentCursorObject select 2)+0.5];";
 			icon = "033-upload.paa";
 			text = "Unflip";
 		};
 		class repairVehicle
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), player distance Harris_currentCursorObject < 10, damage Harris_currentCursorObject > 0]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), player distance Harris_currentCursorObject < 10, damage Harris_currentCursorObject > 0, !isPlayer Harris_currentCursorObject]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_repairTruck;";
 			icon = "023-car-repair.paaa";
 			text = "Repair";
@@ -103,49 +117,49 @@ class cfgInteractions
 		text = "Police Handle";
 		class Restrain 
 		{
-			condition = "[!(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5]";
+			condition = "[!(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
 			action = "[Harris_currentCursorObject] call Foski_restrainPlayer;";
 			icon = "icon_handcuffs.paa";
-			text = "Unflip";
+			text = "Restrain";
 		};
 		class Unrestrain 
 		{
-			condition = "[(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5]";
+			condition = "[(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
 			action = "[Harris_currentCursorObject] call Foski_unrestrainPlayer;";
 			icon = "icon_handcuffs.paa";
-			text = "Unflip";
+			text = "Unrestrain";
 		};
 		class Unescort 
 		{
-			condition = "[(Harris_currentCursorObject getVariable['Escorting',false]), isPlayer Harris_currentCursorObject]";
+			condition = "[(Harris_currentCursorObject getVariable['Escorting',false]), isPlayer Harris_currentCursorObject, playerside == west]";
 			action = "[Harris_currentCursorObject] call life_fnc_stopEscorting;";
 			icon = "002_Tag.paa";
 			text = "Unescort";
 		};
 		class Escort 
 		{
-			condition = "[!(Harris_currentCursorObject getVariable['Escorting',false]), isPlayer Harris_currentCursorObject, (Harris_currentCursorObject getVariable ['restrained', false])]";
+			condition = "[!(Harris_currentCursorObject getVariable['Escorting',false]), isPlayer Harris_currentCursorObject, (Harris_currentCursorObject getVariable ['restrained', false]), playerside == west]";
 			action = "[Harris_currentCursorObject] call life_fnc_escortAction;";
 			icon = "006_DragChild.paa";
 			text = "EScort";
 		};
 		class PutInCar
 		{
-			condition = "[isPlayer Harris_currentCursorObject, (Harris_currentCursorObject distance nearestObject [Harris_currentCursorObject, 'Car'] < 5 || Harris_currentCursorObject distance nearestObject [Harris_currentCursorObject, 'Air'] < 5)]";
+			condition = "[isPlayer Harris_currentCursorObject, (Harris_currentCursorObject distance nearestObject [Harris_currentCursorObject, 'Car'] < 5 || Harris_currentCursorObject distance nearestObject [Harris_currentCursorObject, 'Air'] < 5), playerside == west, vehicle Harris_currentCursorObject == Harris_currentCursorObject]";
 			action = "[Harris_currentCursorObject] call life_fnc_putInCar;";
 			icon = "033-download.paa";
 			text = "Put In Vehicle";
 		};
 		class PatDown
 		{
-			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable ['restrained', false])]";
+			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable ['restrained', false]), playerside == west]";
 			action = "[Harris_currentCursorObject] call life_fnc_putInCar;";
 			icon = "020-hand.paa";
 			text = "Pat Down";
 		};
 		class Strip
 		{
-			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable ['restrained', false])]";
+			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable ['restrained', false]),playerside == west]";
 			action = "[Harris_currentCursorObject] call fnc_stripSearch;";
 			icon = "020-hand.paa";
 			text = "Strip Search";
@@ -158,28 +172,28 @@ class cfgInteractions
 		text = "Legal";
 		class checkLicenses 
 		{
-			condition = "[isPlayer Harris_currentCursorObject]";
+			condition = "[isPlayer Harris_currentCursorObject, playerside == west]";
 			action = "[[player],""life_fnc_licenseCheck"",life_pInact_curTarget,FALSE] spawn bis_fnc_mp";
 			icon = "018-id-card.paa";
 			text = "Licenses";
 		};
 		class revokeLicenses 
 		{
-			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable ['restrained',false])]";
+			condition = "[isPlayer Harris_currentCursorObject,(Harris_currentCursorObject getVariable ['restrained',false]),playerside == west]";
 			action = "[[player],""life_fnc_licenseCheck"",life_pInact_curTarget,FALSE] spawn bis_fnc_mp";
 			icon = "018-id-card.paa";
 			text = "Revoke";
 		};
 		class Ticket
 		{
-			condition = "[isPlayer Harris_currentCursorObject]";
+			condition = "[isPlayer Harris_currentCursorObject,playerside == west]";
 			action = "[Harris_currentCursorObject] call Harris_openGiveTicket";
 			icon = "017-receipt.paa";
 			text = "Revoke";
 		};
 		class testIntox
 		{
-			condition = "[isPlayer Harris_currentCursorObject]";
+			condition = "[isPlayer Harris_currentCursorObject,playerside == west]";
 			action = "[Harris_currentCursorObject] call life_fnc_testIntox";
 			icon = "028-antibiotic.paa";
 			text = "Text Intox";
@@ -187,7 +201,7 @@ class cfgInteractions
 
 		class Arrest
 		{
-			condition = "[(Harris_currentCursorObject getVariable ['restrained', false]), isPlayer Harris_currentCursorObject, (player distance getMarkerPos 'A3L_jailMarker' < 50)]";
+			condition = "[(Harris_currentCursorObject getVariable ['restrained', false]), isPlayer Harris_currentCursorObject, (player distance getMarkerPos 'A3L_jailMarker' < 50),playerside == west]";
 			action = "[Harris_currentCursorObject] call fnc_arrestmenu;";
 			icon = "014_wanted.paa";
 			text = "Arrest";
@@ -318,28 +332,28 @@ class cfgInteractions
 		text = "House Actions";
 		class houseGarage 
 		{
-			condition = "[(typeOf Harris_currentCursorObject) in ['Land_i_Garage_V1_F,'Land_i_Garage_V2_F'], player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles)]";
+			condition = "[(typeOf Harris_currentCursorObject) in ['Land_i_Garage_V1_F','Land_i_Garage_V2_F'], player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles)]";
 			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_vehicleGarage";
 			icon = "024-garage.paa";
 			text = "Garage";
 		};
 		class storeVehicle 
 		{
-			condition = "[(typeOf Harris_currentCursorObject) in ['Land_i_Garage_V1_F,'Land_i_Garage_V2_F'], player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles)]";
+			condition = "[(typeOf Harris_currentCursorObject) in ['Land_i_Garage_V1_F','Land_i_Garage_V2_F'], player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles)]";
 			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_vehicleGarage";
 			icon = "022-parking.paa";
 			text = "Store Vehicle";
 		};
 		class unLockStorage 
 		{
-			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles), (Harris_currentCursorObject getVariable ['locked',false])]";
+			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles), (Harris_currentCursorObject getVariable ['locked',false]), Harris_currentCursorObject isKindOf 'House_F']";
 			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_sellHouse";
 			icon = "031-key-silhouette-security-tool-interface-symbol-of-password.paa";
 			text = "Unlock Storage";
 		};
 		class lockStorage 
 		{
-			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles), !(Harris_currentCursorObject getVariable ['locked',false])]";
+			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles), !(Harris_currentCursorObject getVariable ['locked',false]),Harris_currentCursorObject isKindOf 'House_F']";
 			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_sellHouse";
 			icon = "031-key-silhouette-security-tool-interface-symbol-of-password.paa";
 			text = "Lock Storage";
@@ -356,7 +370,7 @@ class cfgInteractions
 	class plantWeed
 	{
 		condition = "[typeOf Harris_currentCursorObject isEqualTo 'JD_Pot', player distance Harris_currentCursorObject < 5, (isNil {Harris_currentCursorObject getVariable 'growingPlant'}),'Harris_weedSeeds' in (items player)]";
-		action = "[Harris_currentCursorObject] spawn HRP_fnc_plantWeed";
+		action = "[Harris_currentCursorObject] spawn Harris_plantWeed";
 		icon = "020-hand.paa";
 		text = "Plant Weed";
 	};
@@ -364,9 +378,17 @@ class cfgInteractions
 	class harvestWeed
 	{
 		condition = "[!(isNil {Harris_currentCursorObject getVariable 'weedReady'}), player distance Harris_currentCursorObject < 5]";
-		action = "[Harris_currentCursorObject] spawn HRP_fnc_gatherWeed";
+		action = "[Harris_currentCursorObject] spawn Harris_gatherWeed";
 		icon = "020-hand.paa";
 		text = "Gather";
+	};
+
+	class openShopS
+	{
+		condition = "[!(isNil {Harris_currentCursorObject getVariable 'Harris_Shop'}), player distance Harris_currentCursorObject < 5]";
+		action = "[Harris_currentCursorObject] spawn Harris_openShop";
+		icon = "001_Shop.paa";
+		text = "Oepn Shop";
 	};
 
 };

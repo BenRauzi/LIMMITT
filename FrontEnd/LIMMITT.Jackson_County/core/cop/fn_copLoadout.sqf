@@ -27,6 +27,10 @@ player assignItem "tf_microdagr";
 player addItem "ItemGPS";
 player assignItem "ItemGPS";
 
+player addWeapon "JD_Taser";
+player addMagazine "Taser_mag";
+
+
 [] call life_fnc_saveGear;
 
 asdih_inv_mobilephone = asdih_inv_mobilephone + 1;

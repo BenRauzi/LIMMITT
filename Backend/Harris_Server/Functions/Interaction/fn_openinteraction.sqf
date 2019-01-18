@@ -49,7 +49,7 @@ Harris_openInteraction = {
 	{
 		countT = 0;
 		// (getText (_x >> "text"));
-		//diag_log str (getText (_x >> "text"));
+		//systemChat str (getText (_x >> "text"));
 		_conditions = (getText (_x >> "condition"));
 
 		if !(_count > 7) then {
@@ -70,7 +70,7 @@ Harris_openInteraction = {
 			};
 		
 			//diag_log str _conditions;
-			//systemChat str _conditions;
+		//	systemChat str _conditions;
 			if (countT > 0 || (!(false in _conditions) && !(_conditions isEqualTo []))) then {
 				Harris_currentActions pushBack (getText (_x >> "action"));
 

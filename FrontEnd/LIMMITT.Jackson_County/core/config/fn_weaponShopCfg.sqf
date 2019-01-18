@@ -67,7 +67,6 @@ switch(_shop) do
                                                 ["Medikit",nil,250],
                                                 ["ToolKit",nil,250],
                                                 ["CG_BATON","Police Baton",100],
-                                                ["Radar_Gun",nil,100],
                                                 ["Binocular",nil,2000],
                                                 ["ItemGPS",nil,50],
                                                 ["ItemMap",nil,50],
@@ -109,8 +108,8 @@ switch(_shop) do
                                 ["Recuit Shop",
                                         [
                                             //Taser
-                                            ["DDOPP_X26",nil,500],
-                                            ["DDOPP_1Rnd_X26",nil,100],
+                                            ["JD_Taser",nil,500],
+                                            ["Taser_mag",nil,100],
                                             //sidearm
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100]
@@ -130,8 +129,8 @@ switch(_shop) do
                                 ["Officer Shop",
                                         [
                                             //Taser
-                                            ["DDOPP_X26",nil,500],
-                                            ["DDOPP_1Rnd_X26",nil,100],
+                                            ["JD_Taser",nil,500],
+                                            ["Taser_mag",nil,100],
                                             //Sidearm
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100],
@@ -157,8 +156,8 @@ switch(_shop) do
                                 ["Corporal Shop",
                                         [
                                             //Taser
-                                            ["DDOPP_X26",nil,500],
-                                            ["DDOPP_1Rnd_X26",nil,100],
+                                            ["JD_Taser",nil,500],
+                                            ["Taser_mag",nil,100],
                                             //Sidearm
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100],
@@ -187,8 +186,8 @@ switch(_shop) do
                                 ["Sergeant Shop",
                                         [
                                             //Taser
-                                            ["DDOPP_X26",nil,500],
-                                            ["DDOPP_1Rnd_X26",nil,100],
+                                            ["JD_Taser",nil,500],
+                                            ["Taser_mag",nil,100],
                                             //Sidearm
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100],
@@ -221,8 +220,8 @@ switch(_shop) do
                                 ["SWAT Armoury",
                                         [
                                             //Taser
-                                            ["DDOPP_X26",nil,500],
-                                            ["DDOPP_1Rnd_X26",nil,100],
+                                            ["JD_Taser",nil,500],
+                                            ["Taser_mag",nil,100],
                                             //MK16
                                             ["CUP_arifle_Mk16_STD_FG_black",nil,3000],
                                             ["CUP_30Rnd_556x45_Stanag",nil,100],
@@ -314,18 +313,14 @@ switch(_shop) do
                                 ["Lieutenant Shop",
                                         [
                                             //Taser
-                                            ["DDOPP_X26",nil,500],
-                                            ["DDOPP_1Rnd_X26",nil,100],
+                                            ["JD_Taser",nil,500],
+                                            ["Taser_mag",nil,100],
                                             //Sidearm
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100],
                                             //Primary
-                                            ["hlc_smg_mp5a4",nil,1500],
-                                            ["hlc_30Rnd_9x19_B_MP5",nil,100],
                                             ["RH_M16A4",nil,2000],
                                             ["30Rnd_556x45_Stanag",nil,200],
-                                            ["hlc_rifle_M4",nil,2500],
-                                            ["hlc_30rnd_556x45_EPR",nil,300],
                                             ["RH_PDW",nil,2500],
                                             ["RH_30Rnd_6x35_mag",nil,300],
                                             //Accessories
@@ -349,22 +344,16 @@ switch(_shop) do
                                 ["Captain Shop",
                                         [
                                             //Taser
-                                            ["DDOPP_X26",nil,500],
-                                            ["DDOPP_1Rnd_X26",nil,100],
+                                            ["JD_Taser",nil,500],
+                                            ["Taser_mag",nil,100],
                                             //Sidearms
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100],
                                             //Primary
-                                            ["hlc_smg_mp5a4",nil,1500],
-                                            ["hlc_30Rnd_9x19_B_MP5",nil,100],
                                             ["RH_M16A4",nil,2000],
                                             ["30Rnd_556x45_Stanag",nil,200],
-                                            ["hlc_rifle_M4",nil,2500],
-                                            ["hlc_30rnd_556x45_EPR",nil,300],
                                             ["RH_PDW",nil,2500],
                                             ["RH_30Rnd_6x35_mag",nil,300],
-                                            ["FHQ_arifle_ACR_blk",nil,3000],
-                                            ["FHQ_rem_30Rnd_680x43_ACR",nil,500],
                                             ["hlc_rifle_samr2",nil,3000],
                                             ["30Rnd_556x45_Stanag",nil,500],
                                             //Accessories
@@ -395,24 +384,14 @@ switch(_shop) do
                                             ["RH_30Rnd_6x35_mag",nil,500],
                                             ["arifle_mas_m4",nil,3000],
                                             ["30Rnd_mas_556x45_Stanag",nil,500],
-                                            ["hgun_mas_mp7_F",nil,3000],
-                                            ["40Rnd_mas_46x30_Mag",nil,500],
-                                            ["hlc_rifle_awmagnum_BL",nil,3000],
-                                            ["hlc_5rnd_300WM_AP_AWM",nil,500],
-                                            ["AG_MP9",nil,3000],
-                                            ["30Rnd_45ACP_Mag_SMG_01",nil,500],
+                                           
                                             ["RH_PDW",nil,3000],
                                             ["RH_30Rnd_6x35_mag",nil,500],
                                             ["FHQ_arifle_ACR_blk",nil,3000],
                                             ["FHQ_rem_30Rnd_680x43_ACR",nil,500],
                                             ["CUP_arifle_L85A2_G",nil,3000],
                                             ["CUP_30Rnd_556x45_Stanag",nil,500],
-                                            ["hlc_rifle_bcmjack",nil,3000],
-                                            ["30Rnd_556x45_Stanag",nil,500],
-                                            ["hlc_rifle_honeybadger",nil,3000],
-                                            ["29rnd_300BLK_STANAG",nil,500],
-                                            ["hlc_rifle_samr2",nil,3000],
-                                            ["30Rnd_556x45_Stanag",nil,500],
+                                
                                             //Sidearm
                                             ["RH_Deaglem",nil,1500],
                                             ["RH_7Rnd_50_AE",nil,500],
@@ -529,30 +508,12 @@ switch(_shop) do
                                         //AK Gold
                                         ["CUP_arifle_AKS_Gold",nil,400000],
                                         ["hlc_30Rnd_545x39_B_AK",nil,7500],
-                                        //AK74U
-                                        ["hlc_rifle_aks74u",nil,140000],
-                                        ["hlc_30Rnd_545x39_B_AK",nil,1000],
-                                        //AK12
-                                        ["hlc_rifle_ak12",nil,140000],
-                                        ["hlc_30Rnd_545x39_B_AK",nil,1000],
-                                        //AKS74
-                                        ["hlc_rifle_aks74",nil,140000],
-                                        ["hlc_30Rnd_545x39_B_AK",nil,1000],
                                         //AK74
                                         ["hlc_rifle_ak74",nil,140000],
                                         ["hlc_30Rnd_545x39_B_AK",nil,1000],
                                         //PDW
                                         ["RH_PDW",nil,85000],
                                         ["RH_30Rnd_6x35_mag",nil,1000],
-                                        //M4
-                                        ["hlc_rifle_M4",nil,160000],
-                                        ["hlc_30rnd_556x45_EPR",nil,1250],  
-                                        //MP5K
-                                        ["hlc_smg_mp5k_PDW",nil,70000],
-                                        ["hlc_30Rnd_9x19_B_MP5",nil,1000],
-                                        //MP5A3
-                                        ["hlc_smg_mp5a3",nil,70000],
-                                        ["hlc_30Rnd_9x19_B_MP5",nil,1000],
                                         //M16A4
                                         ["RH_M16A4",nil,120000],
                                         ["30Rnd_556x45_Stanag",nil,1000],
@@ -660,6 +621,8 @@ switch(_shop) do
                                 //["jackhammerfuel","Jack Hammer Fuel",500],
                                 ["ItemMap",nil,50],
                                 ["tf_anprc152",nil,1000],
+                                ["a3l_pickaxe",nil,1000],
+                                ["pickaxe_swing",nil,10],
                                 ["Binocular",nil,2000],
                                 ["tf_microdagr",nil,150],
                                 ["ToolKit",nil,250],
@@ -677,6 +640,7 @@ switch(_shop) do
                                 ["Harris_RDX",nil,2000],
                                 ["Harris_Burlap",nil,3000],
                                 ["Harris_Rope",nil,3000],
+                                 ["Harris_weedSeeds",nil,1000],
                                 //["A3L_ChainSaw","Chainsaw(Primary Slot)",25000],
                                 //["A3L_Shovel","Shovel(Primary Slot)",5000],
                                 //["A3L_Hammer","Hammer(Secondary Slot)",2500],

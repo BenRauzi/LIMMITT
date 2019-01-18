@@ -113,18 +113,6 @@ switch (_code) do
 		};
 	};
 */
-	
-	//Space key for Jumping
-	case 57:
-	{
-		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
-		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
-			jumpActionTime = time; //Update the time.
-			[player,true] spawn life_fnc_jumpFnc; //Local execution
-			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call bis_fnc_mp; //Global execution 
-			_handled = true;
-		};
-	};
 
 	case 60:
 	{
@@ -240,6 +228,19 @@ switch (_code) do
 		[] spawn life_fnc_callBackup;
 		_handled = true;
 	};
+
+	//Space key for Jumping
+	case 57:
+	{
+		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
+		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
+			jumpActionTime = time; //Update the time.
+			[player,true] spawn life_fnc_jumpFnc; //Local execution
+			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call bis_fnc_mp; //Global execution 
+			_handled = true;
+		};
+	};
+
 
 	//Map Key
 	case _mapKey:
@@ -397,13 +398,9 @@ switch (_code) do
   	};
 
 
-
-
-	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
-	case _interactionKey:
-	{
-		if (player getVariable "Foski_Restrained" || player getVariable "Foski_Surrender") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
-		if(!life_action_inUse) then {
+  	case 11:
+  	{
+  		if(!life_action_inUse) then {
 			[] spawn 
 			{
 				private["_handle"];
@@ -411,6 +408,17 @@ switch (_code) do
 				waitUntil {scriptDone _handle};
 				life_action_inUse = false;
 			};
+		};
+  	};
+
+	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
+	case _interactionKey:
+	{
+
+		if (player getVariable "Foski_Restrained" || player getVariable "Foski_Surrender") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
+		if (alive player && !_alt && !_shift && !_ctrlKey && !(isNull (findDisplay 46))) then {
+				[]call Harris_openInteraction;
+				_handled = true;
 		};
 	};
 	
