@@ -117,7 +117,7 @@ Shops_Functions =
 CrimeDir = "\Harris_Server\Functions\Crime\";
 Crime_Functions = 
 [
-  ["fn_robBank", "Harris_robBank"],
+  ["fn_robBank", "HRP_fnc_robBank"],
   ["fn_checkBank", "Harris_checkBank"],
   ["fn_serverMsg", "Harris_serverMsg"]
 ];

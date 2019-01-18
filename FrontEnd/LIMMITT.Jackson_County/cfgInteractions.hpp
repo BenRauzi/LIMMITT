@@ -330,13 +330,6 @@ class cfgInteractions
 			icon = "022-parking.paa";
 			text = "Store Vehicle";
 		};
-		class sellHouse 
-		{
-			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles)]";
-			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_sellHouse";
-			icon = "049-symbol.paa";
-			text = "Sell House";
-		};
 		class unLockStorage 
 		{
 			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles), (Harris_currentCursorObject getVariable ['locked',false])]";
@@ -353,11 +346,28 @@ class cfgInteractions
 		};
 		class sellHouse 
 		{
-			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles)]";
+			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles), Harris_currentCursorObject isKindOf 'House_F']";
 			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_sellHouse";
 			icon = "046-for-sale-post.paa";
 			text = "Sell House";
 		};
 	};
+
+	class plantWeed
+	{
+		condition = "[typeOf Harris_currentCursorObject isEqualTo 'JD_Pot', player distance Harris_currentCursorObject < 5, (isNil {Harris_currentCursorObject getVariable 'growingPlant'}),'Harris_weedSeeds' in (items player)]";
+		action = "[Harris_currentCursorObject] spawn HRP_fnc_plantWeed";
+		icon = "020-hand.paa";
+		text = "Plant Weed";
+	};
+
+	class harvestWeed
+	{
+		condition = "[!(isNil {Harris_currentCursorObject getVariable 'weedReady'}), player distance Harris_currentCursorObject < 5]";
+		action = "[Harris_currentCursorObject] spawn HRP_fnc_gatherWeed";
+		icon = "020-hand.paa";
+		text = "Gather";
+	};
+
 };
 

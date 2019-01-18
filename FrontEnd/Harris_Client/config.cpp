@@ -1144,7 +1144,7 @@ class CfgWeapons
 	class Harris_Pot : Toolkit {
 		displayName = "Plant Pot";
 		descriptionShort = "A Pot used to Grow Some Legal Plants, and some illegal ones";
-		picture = "";
+		picture = "\Harris_Client\Crafting\pot.paa";
 		model = "\JD_Client\Objects\pot.p3d";
 		class ItemInfo
 		{
@@ -1173,7 +1173,7 @@ class CfgWeapons
 		displayName = "Crafting Notes";
 		descriptionShort = "A notepad containing notes used for crafting";
 		picture = "\cg_Items\custom\tuna_ca.paa";
-		model = "Harris_Client\Crafting\Blueprints.p3d";
+		model = "\Harris_Client\Crafting\Blueprints.p3d";
 		class ItemInfo
 		{
 			allowedSlots[] = {701, 801, 901};
@@ -1212,7 +1212,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\cl3_objects\cl3_objects_pack\cl_hemp_seeds.p3d";
-		picture = "\Harris_Client\Crafting\Weed.paa";
+		picture = "\Harris_Client\Crafting\seeds.paa";
 		descriptionShort = "Weed Seeds";
 	};
 	class Harris_Toolbox: ToolKit
@@ -1262,6 +1262,66 @@ class CfgWeapons
 		model = "\MM_objects\keys.p3d";
 		picture = "\MM_objects\images\keychain.paa";
 		descriptionShort = "A pair of keys used to unlock leg shackles or Handcuffs";
+	};
+	class Harris_burlap: ToolKit
+	{
+		displayName = "Burlap";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 2;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\a3l_boxes\box_small.p3d";
+		picture = "\Harris_Client\Crafting\burlap.paa";
+		descriptionShort = "Burlap";
+	};
+	class Harris_rope: ToolKit
+	{
+		displayName = "Rope";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 2;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\a3l_boxes\box_small.p3d";
+		picture = "\Harris_Client\Crafting\Rope.paa";
+		descriptionShort = "Rope";
+	};
+	class Harris_RDX : Toolkit {
+		displayName = "RDX Compound";
+		descriptionShort = "A modern compound used for controlled detonations.";
+		picture = "\Harris_Client\Crafting\RDX.paa";
+		model = "\a3l_boxes\box_small.p3d";
+		class ItemInfo
+		{
+			allowedSlots[] = {701, 801, 901};
+			mass = 4;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+	};
+	class Harris_keyCard : Toolkit {
+		displayName = "Police KeyCard";
+		descriptionShort = "This is used to gain police access to secure facilities.";
+		picture = "\Harris_Client\radial\icons\002_Tag.paa";
+		model = "\MM_objects\keys.p3d";
+		class ItemInfo
+		{
+			allowedSlots[] = {701, 801, 901};
+			mass = 4;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
 	};
 
 };

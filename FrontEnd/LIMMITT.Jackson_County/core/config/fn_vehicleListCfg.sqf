@@ -296,15 +296,8 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["kw_11rs3_sheriff",1000],
-			["kw_06Surburban_sheriff",1000],
 			["kw_09Tahoe_SHERIFF",1000],
-			["kw_15Charger_SHERIFF",3000],
-			["kw_12Charger_SHERIFF",4000],
-			["kw_06Victoria_SHERIFF",4000],
-			["kw_Explorer_14_SHERIFF",4000],
-			["kw_fordRaptor_2017_SHERIFF",5000],
-			["kw_Mercedes_GLE450_SHERIFF",5000]
+			["kw_15Charger_SHERIFF",3000]
 		];
 	};
 	case "cop_marshals":

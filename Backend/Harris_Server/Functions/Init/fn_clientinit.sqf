@@ -97,22 +97,13 @@ LIMMITT_clientInit = {
 
 	Harris_craftAbleItems =   
 	[
-		["AK-74 Assault Rifle","hlc_rifle_ak74_dirty", "", [["Harris_steelIngot",11, "Coal Ore"]], "Rifles", 1.5, false],
-		["30rnd 5.45x39 Subsonic Magazine","hlc_30Rnd_545x39_S_AK", "", [["Harris_steelIngot",2, "Coal Ore"]], "Rifles", 0.2, true],
+		["AK-74 Assault Rifle","CUP_arifle_AK47", "", [["Harris_steelIngot",11, "Steel Ingot"]], "Rifles", 1.5, false],
+		["30rnd 5.45x39 Subsonic Magazine","CUP_30Rnd_762x39_AK47_M", "", [["Harris_steelIngot",2, "Steel Ingot"]], "Rifles", 0.2, true],
 
-		["AK-47 Assault Rifle","hlc_rifle_ak47", "bp_ak", [["Harris_steelIngot",11, "Steel Ingot"],["RR_woodLog",3, "Wood"]], "Rifles", 1.7, false], 
-		["30rnd 7.62x39 Subsonic Magazine","hlc_30rnd_762x39_s_ak", "", [["Harris_steelIngot",2, "Steel Ingot"]], "Rifles", 0.2, true],
+		["M16A4","RH_M16A4", "", [["Harris_steelIngot",18, "Steel Ingot"]], "Rifles", 2.5, false], 
+		["30rnd 5.45x39 Stanag Magazine","30Rnd_556x45_Stanag", "", [["Harris_steelIngot",4, "Steel Ingot"]], "Rifles", 0.2, true], 
 
-		["RPK Machine Gun","hlc_rifle_rpk", "bp_rpk", [["Harris_steelIngot",18, "Steel Ingot"],["RR_woodLog",4, "Wood"]], "Rifles", 2.5, false], 
-		["45rnd 7.62x39 Magazine","hlc_45Rnd_762x39_m_rpk", "bp_rpk", [["Harris_steelIngot",4, "Steel Ingot"]], "Rifles", 0.2, true], 
-
-		["M21 Marksman Rifle","hlc_rifle_M21", "bp_m21", [["Harris_steelIngot",19, "Steel Ingot"],["RR_woodLog",2, "Wood"]], "Rifles", 2.7, false], 
-		["20rnd 7.62x51 Ball Magazine - M21","hlc_20Rnd_762x51_B_M14", "bp_m21", [["Harris_steelIngot",3, "Steel Ingot"]], "Rifles", 0.2, true], 
-
-		["FN FAL Rifle","hlc_rifle_LAR", "bp_fal", [["Harris_steelIngot",20, "Steel Ingot"],["RR_woodLog",3, "Wood"]], "Rifles", 2.6, false], 
-		["20rnd 7.62x51 Ball Magazine - FN FAL","hlc_20Rnd_762x51_B_fal", "bp_fal", [["Harris_steelIngot",3, "Steel Ingot"]], "Rifles", 0.2, true], 
-
-		["RPG-7","launch_RPG7_F", "bp_rpg7", [["Harris_steelIngot",30, "Steel Ingot"],["RR_woodLog",10, "Wood"]], "Rifles", 3.5, false],
+		["RPG-7","launch_RPG7_F", "bp_rpg7", [["Harris_steelIngot",30, "Steel Ingot"]], "Rifles", 3.5, false],
 		["RPG-7 HEAT Grenade","RPG7_F", "bp_rpg7", [["Harris_steelIngot",15, "Steel Ingot"]], "Rifles", 1, true],
 
 		["Beretta M9","RH_m9", "", [["Harris_steelIngot",4, "Steel Ingot"]], "Pistols", 0.3, false],
@@ -165,10 +156,15 @@ LIMMITT_clientInit = {
 		["10Rnd 22LR MK2","RH_10Rnd_22LR_mk2", "bp_mk2", [["Harris_steelIngot",2, "Steel Ingot"]], "Pistols", 0.1, true],
 
 		["Heckler & Koch USP Match","RH_uspm", "", [["Harris_steelIngot",7, "Steel Ingot"]], "Pistols", 0.4, false],
-		["16Rnd 40cal USP","RH_16Rnd_40cal_usp", "", [["Harris_steelIngot",3, "Steel Ingot"]], "Pistols", 0.1, true]
+		["16Rnd 40cal USP","RH_16Rnd_40cal_usp", "", [["Harris_steelIngot",3, "Steel Ingot"]], "Pistols", 0.1, true],
 
 
-		//["C4 Explosive","RR_c4", "", [["RR_RDX",4, "RDX Compound"],["Harris_steelIngot",6, "Steel Ingot"]], "Items", 2, false],
+		["C4 Explosive","Harris_c4", "", [["Harris_RDX",4, "RDX Compound"],["Harris_steelIngot",6, "Steel Ingot"]], "Items", 1, false],
+		["Ghilie Suit (Jungle)","U_O_T_FullGhillie_tna_F", "", [["Harris_burlap",4, "Burlap"],["Harris_rope",6, "Rope"]], "Items", 0.5, false],
+		["Ghilie Suit (Arid)","U_I_FullGhillie_ard", "", [["Harris_burlap",4, "Burlap"],["Harris_rope",6, "Rope"]], "Items", 0.5, false],
+		["Ghilie Suit (Lush)","U_I_FullGhillie_lsh", "", [["Harris_burlap",4, "Burlap"],["Harris_rope",6, "Rope"]], "Items", 0.5, false],
+		["Ghilie Suit (Semi-Arid)","U_I_FullGhillie_sard", "", [["Harris_burlap",4, "Burlap"],["Harris_rope",6, "Rope"]], "Items", 0.5, false]
+
 		//["Lockpicks","RR_lockpicks", "", [["RR_IronIngot",4, "Iron Ingot"]], "Items", 0.5, false]
 
 	];

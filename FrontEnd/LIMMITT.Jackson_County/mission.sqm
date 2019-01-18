@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=5849;
+		nextID=6369;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5271.3804,11.764626,2936.7986};
-		dir[]={0.8476705,-0.21071416,0.48690343};
-		up[]={0.18282455,0.97751868,0.1050157};
-		aside[]={0.49808678,1.1115044e-006,-0.86713791};
+		pos[]={8993.5635,201.6125,8396.6309};
+		dir[]={-0.26642519,-0.32538754,-0.90739256};
+		up[]={-0.09172371,0.9454987,-0.31239814};
+		aside[]={-0.9595964,3.7877762e-006,0.28175405};
 	};
 };
 binarizationWanted=0;
@@ -1473,6 +1473,7 @@ class Mission
 			colorName="ColorRed";
 			angle=357.14182;
 			id=136;
+			atlOffset=1.6026764;
 		};
 		class Item107
 		{
@@ -1526,6 +1527,7 @@ class Mission
 			colorName="ColorGreen";
 			angle=0.51827043;
 			id=142;
+			atlOffset=1.6146851;
 		};
 		class Item112
 		{
@@ -2385,7 +2387,7 @@ class Mission
 			position[]={5272.7769,8.6700001,2919.0859};
 			name="cop_car_3";
 			type="Empty";
-			angle=309.99997;
+			angle=309.99991;
 			id=319;
 			atlOffset=-0.055321693;
 		};
@@ -3834,7 +3836,7 @@ class Mission
 			};
 			id=3418;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.68966007;
+			atlOffset=0.68904972;
 		};
 		class Item274
 		{
@@ -3871,6 +3873,7 @@ class Mission
 			};
 			id=3422;
 			type="Land_InfoStand_V1_F";
+			atlOffset=-0.00026416779;
 		};
 		class Item276
 		{
@@ -4038,7 +4041,7 @@ class Mission
 			};
 			id=3435;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.052583694;
+			atlOffset=0.052986145;
 		};
 		class Item285
 		{
@@ -4120,7 +4123,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8350.8379,11.135365,6349.8311};
-				angles[]={-0,1.9586791,0};
+				angles[]={0,1.9586791,0};
 			};
 			side="Empty";
 			flags=4;
@@ -4149,7 +4152,7 @@ class Mission
 			};
 			id=3444;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.11549687;
+			atlOffset=-0.12214744;
 		};
 		class Item291
 		{
@@ -9273,7 +9276,7 @@ class Mission
 			};
 			id=4186;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.001999855;
+			atlOffset=-0.0019836426;
 		};
 		class Item436
 		{
@@ -9322,7 +9325,7 @@ class Mission
 			position[]={9607.3047,10.235,10104.742};
 			name="jail_marker4";
 			type="Empty";
-			angle=4.999999;
+			angle=4.9999981;
 			id=4420;
 			atlOffset=0.45395947;
 		};
@@ -9332,7 +9335,7 @@ class Mission
 			position[]={9605.0039,10.235,10117.506};
 			name="jail_marker3";
 			type="Empty";
-			angle=169.99997;
+			angle=169.99992;
 			id=4421;
 			atlOffset=0.45395947;
 		};
@@ -9365,7 +9368,7 @@ class Mission
 			text="cop_spawn_5";
 			type="Empty";
 			colorName="ColorRed";
-			angle=169.99997;
+			angle=169.99992;
 			id=4424;
 		};
 		class Item445
@@ -9374,7 +9377,7 @@ class Mission
 			position[]={9610.9697,10.235287,10118.529};
 			name="jail_marker";
 			type="Empty";
-			angle=169.99997;
+			angle=169.99992;
 			id=4425;
 		};
 		class Item446
@@ -9383,7 +9386,7 @@ class Mission
 			position[]={9608.1973,10.235,10118.077};
 			name="jail_marker2";
 			type="Empty";
-			angle=169.99997;
+			angle=169.99992;
 			id=4426;
 			atlOffset=0.45395947;
 		};
@@ -9393,7 +9396,7 @@ class Mission
 			position[]={9612.7402,10.235287,10105.58};
 			name="jail_marker4_1";
 			type="Empty";
-			angle=354.99997;
+			angle=354.99988;
 			id=4427;
 		};
 		class Item448
@@ -9402,7 +9405,7 @@ class Mission
 			position[]={9610.1035,10.235,10105.212};
 			name="jail_marker3_1";
 			type="Empty";
-			angle=355;
+			angle=354.99991;
 			id=4428;
 			atlOffset=0.45395947;
 		};
@@ -9517,7 +9520,7 @@ class Mission
 			name="cop_car_checkpoint1";
 			text="cop_car_checkpoint1";
 			type="Empty";
-			angle=169.99997;
+			angle=169.99992;
 			id=5148;
 			atlOffset=0.31495953;
 		};
@@ -10714,7 +10717,7 @@ class Mission
 			};
 			id=5846;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.59129333;
+			atlOffset=0.59130859;
 		};
 		class Item529
 		{

@@ -6,7 +6,7 @@
 	Harris_recentRobberyTime = 15;
 */
 
-Harris_robBank = {
+HRP_fnc_robBank = {
 	params["_bank"];
 
 	_count = (west countSide playableUnits);
