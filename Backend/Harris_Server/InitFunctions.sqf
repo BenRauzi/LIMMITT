@@ -114,6 +114,15 @@ Shops_Functions =
   ["fn_sellItem", "Harris_sellItem"]
 ];
 
+WeedDir = "\Harris_Server\Functions\Weed\";
+Weed_Functions = 
+[
+  ["fn_plantWeed", "Harris_plantWeed"],
+  ["fn_Harvest", "Harris_Harvest"],
+  ["fn_growWeed", "Harris_growWeed"],
+  ["fn_gatherWeed", "Harris_gatherWeed"]
+];
+
 CrimeDir = "\Harris_Server\Functions\Crime\";
 Crime_Functions = 
 [
@@ -136,7 +145,8 @@ functionArrays =
   ['Police_Functions','PoliceDir'],
   ['Misc_Functions','MiscDir'],
   ['Shops_Functions','ShopsDir'],
-  ['Crime_Functions','CrimeDir']
+  ['Crime_Functions','CrimeDir'],
+  ['Weed_Functions','WeedDir']
 ]";
 
 functionArrays2 = call compile functionArrays;

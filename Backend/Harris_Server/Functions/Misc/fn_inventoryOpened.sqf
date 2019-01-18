@@ -17,7 +17,7 @@ Harris_inventoryOpened = {
 	};
 
 	_isPack = getNumber(configFile >> "CfgVehicles" >> (typeOf _container) >> "isBackpack");
-	if(_isPack == 1) then {
+	if(_isPack == 1) exitWith {
 		["Error","You cannot loot backpacks","Failure"] spawn Harris_Notifications;
 		_handle = true;
 		_handle;
