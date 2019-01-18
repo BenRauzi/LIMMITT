@@ -27,12 +27,6 @@ switch (_side) do
 	
 	case civilian:
 	{
-		/*_return = [
-			["civ_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_2","Morrison Town","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
-		];*/
 		
 		//if have Strife license, only spawn here
 		if(license_civ_strife && playerSide == civilian) then {
