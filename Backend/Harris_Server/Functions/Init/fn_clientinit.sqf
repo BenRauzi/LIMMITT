@@ -5,7 +5,6 @@
 
 LIMMITT_clientInit = {
 
-	LIMMITT_Servers = ["LIMMITT Network Official Server | Custom ArmA 3 Life | ts.limmitt-network.co.uk"];
 	Harris_d3sPD = ["d3s_charger_15_CPP"];
 
 	player addEventHandler ["GetInMan", {
