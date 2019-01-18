@@ -20,7 +20,7 @@ Harris_pickUpFurniture = {
 	player setVariable ["carryingObject", _ct];
 
 	if (isPlayer player) then {
-		_msg = "<t align = 'center' shadow = '1' size='1.3' font='PuristaBold'>LIMMITT Network<br />Furniture Ssytem</t> <br /><br /><t align = 'center' shadow = '1' size='1' font='PuristaBold'>Basic Controls</t> <br /><br /><t align = 'center' shadow = '1' size='1' color='#00f428' font='PuristaBold'>Page UP -> Raise</t> <br /><br /><t align = 'center' shadow = '1' size='1' color='#D00000' font='PuristaBold'>Page DOWN -> Lower</t>";
+		_msg = "<t align = 'center' shadow = '1' size='1.3' font='PuristaBold'>LIMMITT Network<br />Furniture System</t> <br /><br /><t align = 'center' shadow = '1' size='1' font='PuristaBold'>Basic Controls</t> <br /><br /><t align = 'center' shadow = '1' size='1' color='#00f428' font='PuristaBold'>Page UP -> Raise</t> <br /><br /><t align = 'center' shadow = '1' size='1' color='#D00000' font='PuristaBold'>Page DOWN -> Lower</t>";
 
 		hintSilent parseText (_msg);
 

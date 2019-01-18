@@ -246,5 +246,48 @@ class cfgInteractions
 		icon = "031-shopping-cart-1.paa";
 		text = "Open Shop";
 	};
+
+	class policeHouse
+	{
+		action = "";
+		icon = "013_police-shield.paa";
+		text = "House Actions";
+		class raidHouse
+		{
+			condition = "[!isNil {_curTarget getVariable 'house_owner'}, player distance Harris_currentCursorObject < 5, playerside == west]";
+			action = "[Harris_currentCursorObject] call life_fnc_copHouseOwner;";
+			icon = "013_police-shield.paa";
+			text = "Raid House";
+		};
+		class houseOwner
+		{
+			condition = "[!isNil {_curTarget getVariable 'house_owner'}, player distance Harris_currentCursorObject < 5, playerside == west]";
+			action = "[Harris_currentCursorObject] call life_fnc_copHouseOwner;";
+			icon = "030-identity-card.paa";
+			text = "House Owner";
+		};
+		class breakHouse
+		{
+			condition = "[!isNil {_curTarget getVariable 'house_owner'}, player distance Harris_currentCursorObject < 5, playerside == west]";
+			action = "[Harris_currentCursorObject] call life_fnc_copBreakDoor;";
+			icon = "013_police-shield.paa";
+			text = "Break Down";
+		};
+		class searchHouse
+		{
+			condition = "[!isNil {_curTarget getVariable 'house_owner'}, player distance Harris_currentCursorObject < 5, playerside == west]";
+			action = "[Harris_currentCursorObject] call life_fnc_raidHouse;";
+			icon = "030-search.paa";
+			text = "Search House";
+		};
+	};
+
+	class lockHouse
+	{
+		condition = "[!isNil {_curTarget getVariable 'house_owner'}, player distance Harris_currentCursorObject < 5, playerside == west]";
+		action = "[Harris_currentCursorObject] call life_fnc_lockupHouse;";
+		icon = "031-key-silhouette-security-tool-interface-symbol-of-password.paa";
+		text = "Lock House";
+	};
 };
 

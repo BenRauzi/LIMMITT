@@ -236,6 +236,11 @@ LIMMITT_clientInit = {
 		[] remoteExecCall ["Foski_manageTrafficLights",2];
 		[] remoteExec ["Harris_initOreLoop", 2];
 		missionNamespace setVariable ["firstLogin", nil, true];
+
+		_bank = (nearestObjects [[8581.29,6624.8,0.00143909],["Land_CommonwealthBank"],100]) select 0;
+		_bank animate ["Vault_Door",0]; 
+		_bank setVariable ['vaultUnlocked', false, true];
+		missionNamespace setVariable ["inRobbery", false, true];
 	};
 
 	player addEventHandler ["InventoryOpened", {_this call Harris_inventoryOpened}];
@@ -246,8 +251,11 @@ LIMMITT_clientInit = {
 
 	Harris_prices = 
 	[
-		["Harris_ironIngot", 5000],
-		["Harris_goldIngot", 5000]
+		["Harris_coal", 2000]
+		["Harris_ironIngot", 3000],
+		["Harris_goldIngot", 5000],
+		["Harris_diamond", 10000],
+		["Harris_weedBag", 7000]
 	];
 
 	Harris_Shops = 
@@ -255,13 +263,15 @@ LIMMITT_clientInit = {
 		[
 			"Weed_Dealer",
 			"Weed Dealer",
-			["Iron", "Harris_ironIngot"],
-			["Iron2", "Harris_goldIngot"]
+			["Bag of Weed", "Harris_weedBag"]
 		]
 	];
 
 	LIMMITTCASH = 0;
 	Harris_coolDown = false;
+
+	Harris_bankRobberyTime = 5;
+	Harris_recentRobberyTime = 15;
 
 };
 

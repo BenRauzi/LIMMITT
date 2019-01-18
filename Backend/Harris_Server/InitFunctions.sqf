@@ -108,11 +108,20 @@ Citations_Functions =
 ShopsDir = "\Harris_Server\Functions\Shops\";
 Shops_Functions = 
 [
-  ["fn_onLbSelChanged", "Harris_openGiveTicket"],
-  ["fn_openShop", "Harris_payTicket"],
-  ["fn_refreshShop", "Harris_receiveTicket"],
-  ["fn_sellItem", "Harris_refuseTicket"]
+  ["fn_onLbSelChanged", "Harris_onLbSelChanged"],
+  ["fn_openShop", "Harris_openShop"],
+  ["fn_refreshShop", "Harris_refreshShop"],
+  ["fn_sellItem", "Harris_sellItem"]
 ];
+
+CrimeDir = "\Harris_Server\Functions\Crime\";
+Crime_Functions = 
+[
+  ["fn_robBank", "Harris_robBank"],
+  ["fn_checkBank", "Harris_checkBank"],
+  ["fn_serverMsg", "Harris_serverMsg"]
+];
+
 
 functionArrays = 
 "[
@@ -126,7 +135,8 @@ functionArrays =
   ['Furniture_Functions','FurnitureDir'],
   ['Police_Functions','PoliceDir'],
   ['Misc_Functions','MiscDir'],
-  ['Shops_Functions','ShopsDir']
+  ['Shops_Functions','ShopsDir'],
+  ['Crime_Functions','CrimeDir']
 ]";
 
 functionArrays2 = call compile functionArrays;

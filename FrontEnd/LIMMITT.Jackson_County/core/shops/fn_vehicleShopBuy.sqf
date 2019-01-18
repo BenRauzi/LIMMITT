@@ -125,9 +125,9 @@ _vh = createVehicle ["Sign_Arrow_Large_F", _sp ,[],0,"NONE"];
 _vh setPos _sp; 
 
 [0] call SOCK_fnc_updatePartial;
+playSound "buyCar";
 closeDialog 0; //Exit the menu.
 true;
 
 uiSleep 10;
-playSound "buyCar";
 deleteVehicle _vh;

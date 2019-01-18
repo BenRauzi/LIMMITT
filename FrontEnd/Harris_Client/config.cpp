@@ -810,7 +810,7 @@ class CfgSounds
 	};
 	class buyCar
 	{
-		name = "start";
+		name = "buyCar";
 		sound[] = {"\Harris_Client\sounds\buyCar.ogg", 1, 1};
 		titles[] = {};
 	};
