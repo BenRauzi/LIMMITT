@@ -20,14 +20,12 @@ switch (_side) do
 			["cop_spawn_1","Lakeside PD","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_2","Morrison Town PD","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
 			["cop_spawn_3","Los Diablos PD","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
-			["cop_spawn_4","Airbase","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
 			["cop_spawn_5","DOC Sub Station","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
 	};
 	
 	case civilian:
 	{
-		
 		//if have Strife license, only spawn here
 		if(license_civ_strife && playerSide == civilian) then {
 		_return = [
@@ -120,7 +118,6 @@ switch (_side) do
 	
 		if(license_civ_corleone && playerSide == civilian) then {
 		_return = [
-			["corleone_spawn","Corleone Base","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["civ_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["civ_spawn_2","Morrison Town","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -148,11 +145,8 @@ switch (_side) do
 	
 	case independent: {
 		_return = [
-			["medic_spawn_2","Lakeside Fire station","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_22","Lakeside Airport","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_hospital","Lakeside Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_3","Los Diablos Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_1","Morrison Station","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
 };
