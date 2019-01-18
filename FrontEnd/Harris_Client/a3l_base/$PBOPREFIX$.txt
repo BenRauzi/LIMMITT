@@ -1,5 +1,0 @@
-///<'a3l_base.pbo' properties via Mikero's dos tools, dll version 6.44>///
-prefix=A3L_Base
-//Pbo Type is: Arma Addon
-//Sha: '11653BD5E068DA1C728D523905C45ECF58A29DF6'
-//////</properties>//////

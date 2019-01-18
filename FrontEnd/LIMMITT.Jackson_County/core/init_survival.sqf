@@ -222,6 +222,14 @@
 				player forceWalk false;
 			};
 		};
+
+		if ("Harris_keyCard" in items player && player getVariable ['copLevel',0] == 0) then {
+			player setVariable ["copLevel",1,true];
+		} else {
+			if (player getVariable ['copLevel',0] == 1) then {
+				player setVariable ["copLevel",0,true];
+			};
+		};
 	};
 };
 

@@ -11,17 +11,13 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
-player addUniform "TCG_PDO";
+player addUniform "JD_Deputy";
 
 // Add shortrange radio
 player addItem "tf_anprc152"; 
 player assignItem "tf_anprc152";
 
-player addBackpack "B_Carryall_cbr";
-player addWeapon "DDOPP_X26";
-player addMagazine "DDOPP_1Rnd_X26";
-player addMagazine "DDOPP_1Rnd_X26";
-player addMagazine "DDOPP_1Rnd_X26";
+player addItem "Harris_keyCard";
 
 /* ITEMS */
 player addItem "ItemCompass";

@@ -359,5 +359,22 @@ class cfgInteractions
 			text = "Sell House";
 		};
 	};
+
+	class plantWeed
+	{
+		condition = "[typeOf Harris_currentCursorObject isEqualTo 'JD_Pot', player distance Harris_currentCursorObject < 5, (isNil {Harris_currentCursorObject getVariable 'growingPlant'}),'Harris_weedSeeds' in (items player)]";
+		action = "[Harris_currentCursorObject] spawn HRP_fnc_plantWeed";
+		icon = "020-hand.paa";
+		text = "Plant Weed";
+	};
+
+	class harvestWeed
+	{
+		condition = "[!(isNil {Harris_currentCursorObject getVariable 'weedReady'}), player distance Harris_currentCursorObject < 5]";
+		action = "[Harris_currentCursorObject] spawn HRP_fnc_gatherWeed";
+		icon = "020-hand.paa";
+		text = "Gather";
+	};
+
 };
 

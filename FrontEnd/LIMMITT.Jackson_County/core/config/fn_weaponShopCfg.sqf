@@ -62,6 +62,7 @@ switch(_shop) do
                         {
                                 ["Patrol Gear Shop",
                                         [
+                                                ["Harris_keyCard",nil,250],
                                                 ["FirstAidKit",nil,250],
                                                 ["Medikit",nil,250],
                                                 ["ToolKit",nil,250],
@@ -72,6 +73,7 @@ switch(_shop) do
                                                 ["ItemMap",nil,50],
                                                 ["pmc_earpiece",nil,250],
                                                 ["tf_anprc152",nil,50]
+                                                
                                         ]
                                 ];
                         };
@@ -670,6 +672,11 @@ switch(_shop) do
                                 ["Chemlight_yellow",nil,150],
                                 ["Chemlight_green",nil,150],
                                 ["Chemlight_blue",nil,150],
+                                ["Harris_workbench",nil,3000],
+                                ["Harris_pot",nil,3000],
+                                ["Harris_RDX",nil,2000],
+                                ["Harris_Burlap",nil,3000],
+                                ["Harris_Rope",nil,3000],
                                 //["A3L_ChainSaw","Chainsaw(Primary Slot)",25000],
                                 //["A3L_Shovel","Shovel(Primary Slot)",5000],
                                 //["A3L_Hammer","Hammer(Secondary Slot)",2500],
