@@ -388,7 +388,7 @@ class cfgInteractions
 		condition = "[!(isNil {Harris_currentCursorObject getVariable 'Harris_Shop'}), player distance Harris_currentCursorObject < 5]";
 		action = "[Harris_currentCursorObject] spawn Harris_openShop";
 		icon = "001_Shop.paa";
-		text = "Oepn Shop";
+		text = "Open Shop";
 	};
 
 };
