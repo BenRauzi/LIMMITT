@@ -21,7 +21,7 @@ Foski_dropHandgun ={
 				player removeAction (_this select 2);
 			}];
 			waitUntil {(!(player getVariable [_var, false])) || currentWeapon player == ""};
-			if (currentWeapon player != "") then {player removeAction _action;};
+			player removeAction _action;
 		};
 	};
 };
