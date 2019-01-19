@@ -120,7 +120,8 @@ Weed_Functions =
   ["fn_plantWeed", "Harris_plantWeed"],
   ["fn_Harvest", "Harris_Harvest"],
   ["fn_growWeed", "Harris_growWeed"],
-  ["fn_gatherWeed", "Harris_gatherWeed"]
+  ["fn_gatherWeed", "Harris_gatherWeed"],
+  ["fn_seizeWeed", "Harris_seizeWeed"]
 ];
 
 CrimeDir = "\Harris_Server\Functions\Crime\";
