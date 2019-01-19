@@ -48,13 +48,6 @@ _HHZones = ["HH_1"];
 	_zone setTriggerStatements["player in thislist","LIFE_Action_MDMA = player addAction['Gather MDMA',life_fnc_gatherMDMA,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_MDMA;"];
 } foreach _MDMAZones;
 
-//Create cocaine zones
-{
-	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
-	_zone setTriggerArea[3,3,0,false];
-	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Coke = player addAction['Gather Coco Plants',life_fnc_gatherCoke,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Coke;"];
-} foreach _cocaineZones;
 
 //Create meth zones
 {

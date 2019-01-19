@@ -420,6 +420,16 @@ switch (_code) do
 				[]call Harris_openInteraction;
 				_handled = true;
 		};
+
+		if(!life_action_inUse) then {
+			[] spawn 
+			{
+				private["_handle"];
+				_handle = [] spawn life_fnc_actionKeyHandler;
+				waitUntil {scriptDone _handle};
+				life_action_inUse = false;
+			};
+		};
 	};
 	
 	case 50:
