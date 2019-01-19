@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8203.1953,12.796622,6300.272};
-		dir[]={-0.69403803,-0.49132982,0.5262292};
-		up[]={-0.39152253,0.87096637,0.29685631};
-		aside[]={0.60418314,-1.8313585e-008,0.79685253};
+		pos[]={8567.2637,17.812349,6688.8677};
+		dir[]={-0.88854957,-0.23955509,0.39131305};
+		up[]={-0.21924464,0.97087628,0.096555114};
+		aside[]={0.40304872,2.773013e-007,0.91519684};
 	};
 };
 binarizationWanted=0;
@@ -249,25 +249,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -299,6 +280,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
 				};
 			};
 		};
@@ -1142,12 +1142,11 @@ class Mission
 		class Item74
 		{
 			dataType="Marker";
-			position[]={8555.8066,10.46,6671.7061};
+			position[]={8527.3936,10.45963,6671.4131};
 			name="car_g_lakeside1";
 			type="Empty";
-			angle=191.66696;
+			angle=99.999992;
 			id=98;
-			atlOffset=0.0018033981;
 		};
 		class Item75
 		{
@@ -1838,14 +1837,14 @@ class Mission
 		class Item141
 		{
 			dataType="Marker";
-			position[]={8542.082,10.460111,6667.5332};
+			position[]={8526.5879,10.459717,6668.5933};
 			name="civ_gar_1_8";
 			text="Garage";
 			type="A3L_Car_Icon";
 			colorName="ColorWhite";
 			angle=1.1551197;
 			id=177;
-			atlOffset=0.00079536438;
+			atlOffset=-1.0490417e-005;
 		};
 		class Item142
 		{
@@ -2291,12 +2290,12 @@ class Mission
 		class Item185
 		{
 			dataType="Marker";
-			position[]={8553.6406,10.46,6659.0874};
+			position[]={8526.2119,10.459,6665.9521};
 			name="car_g_1_1";
 			type="Empty";
-			angle=191.66696;
+			angle=99.999992;
 			id=301;
-			atlOffset=0.00011920929;
+			atlOffset=-0.00082588196;
 		};
 		class Item186
 		{
@@ -2701,8 +2700,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8549.4561,11.158975,6674.752};
-				angles[]={0,3.3151307,0};
+				position[]={8535.5898,11.157548,6678.2178};
+				angles[]={-0,3.3151307,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2713,7 +2712,6 @@ class Mission
 			};
 			id=779;
 			type="A3L_Savepoint";
-			atlOffset=0.0024433136;
 		};
 		class Item211
 		{
@@ -2739,8 +2737,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8547.2803,11.158975,6675.166};
-				angles[]={0,3.3151307,0};
+				position[]={8531.3506,11.158933,6655.7866};
+				angles[]={-0,0.17184202,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2751,7 +2749,7 @@ class Mission
 			};
 			id=790;
 			type="A3L_Savepoint";
-			atlOffset=0.0021800995;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item213
 		{
@@ -3264,7 +3262,7 @@ class Mission
 			};
 			id=3388;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.30000305;
+			atlOffset=0.28424835;
 		};
 		class Item241
 		{
@@ -3798,7 +3796,6 @@ class Mission
 			};
 			id=3422;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.00026416779;
 		};
 		class Item270
 		{
@@ -3966,7 +3963,7 @@ class Mission
 			};
 			id=3435;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.052986145;
+			atlOffset=0.052583694;
 		};
 		class Item279
 		{
@@ -9044,7 +9041,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8195.9082,11.134891,6286.0044};
-				angles[]={-0,3.787591,0};
+				angles[]={0,3.787591,0};
 			};
 			side="Empty";
 			class Attributes
@@ -9080,7 +9077,7 @@ class Mission
 			position[]={8206.5244,10.530903,6297.46};
 			name="merc_dealer1";
 			type="Empty";
-			angle=309.99997;
+			angle=309.99994;
 			id=4187;
 			atlOffset=9.5367432e-007;
 		};
@@ -9090,7 +9087,7 @@ class Mission
 			position[]={8201.0469,10.507,6301.7012};
 			name="merc_dealer1_1";
 			type="Empty";
-			angle=309.99997;
+			angle=309.99994;
 			id=4188;
 			atlOffset=-0.0047569275;
 		};

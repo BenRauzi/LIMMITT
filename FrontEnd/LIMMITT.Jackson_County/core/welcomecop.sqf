@@ -19,7 +19,7 @@ uiSleep 2; //Wait in seconds before the credits start after player is in-game
 _role1 = "Welcome to";
 _role1names = ["LIMMITT Network"];       //Add your texts here!
 _role2 = "You must be on TeamSpeak and have Task Force Radio enabled!";
-_role2names = ["ts3.evo-network.co.uk"];
+_role2names = ["ts.limmitt-network.co.uk"];
 _role3 = "OOC";
 _role3names = ["Please avoid going out of character"];
 _role4 = "Please abide by all server rules!";

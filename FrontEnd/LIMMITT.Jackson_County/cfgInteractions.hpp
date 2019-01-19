@@ -131,14 +131,14 @@ class cfgInteractions
 		};
 		class shackle 
 		{
-			condition = "[!isforceWalk Harris_currentCursorObject, isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
+			condition = "[!(isforcedWalk Harris_currentCursorObject), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
 			action = "Harris_currentCursorObject forceWalk true; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
 			icon = "015_handcuffs.paa";
-			text = "Restrain";
+			text = "Shackle";
 		};
 		class unShackle 
 		{
-			condition = "[isforceWalk Harris_currentCursorObject, isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
+			condition = "[isforcedWalk Harris_currentCursorObject, isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
 			action = "Harris_currentCursorObject forceWalk false; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
 			icon = "015_handcuffs.paa";
 			text = "unShackle";
@@ -331,14 +331,14 @@ class cfgInteractions
 		text = "For Sale";
 		class buyHouse 
 		{
-			condition = "[(!(Harris_currentCursorObject in life_vehicles) || isNil {Harris_currentCursorObject getVariable 'house_owner'}), player distance Harris_currentCursorObject < 5, Harris_currentCursorObject isKindOf 'House_F']";
+			condition = "[(!(Harris_currentCursorObject in life_vehicles) && isNil {Harris_currentCursorObject getVariable 'house_owner'}), player distance Harris_currentCursorObject < 10, Harris_currentCursorObject isKindOf 'House_F']";
 			action = "[Harris_currentCursorObject] spawn life_fnc_buyHouse;";
 			icon = "046-for-sale-post.paa";
 			text = "Buy House";
 		};
 		class priceHouse 
 		{
-			condition = "[(!(Harris_currentCursorObject in life_vehicles) || isNil {Harris_currentCursorObject getVariable 'house_owner'}), player distance Harris_currentCursorObject < 5,Harris_currentCursorObject isKindOf 'House_F']";
+			condition = "[(!(Harris_currentCursorObject in life_vehicles) && isNil {Harris_currentCursorObject getVariable 'house_owner'}), player distance Harris_currentCursorObject < 10,Harris_currentCursorObject isKindOf 'House_F']";
 			action = "[Harris_currentCursorObject] call life_fnc_housePrice;";
 			icon = "019-open-male-purse.paa";
 			text = "House Price";
@@ -349,38 +349,38 @@ class cfgInteractions
 	{
 		action = "";
 		icon = "048-home-with-locked-padlock.paa";
-		text = "House Actions";
+		text = "House";
 		class houseGarage 
 		{
-			condition = "[(typeOf Harris_currentCursorObject) in ['Land_i_Garage_V1_F','Land_i_Garage_V2_F'], player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles)]";
+			condition = "[(typeOf Harris_currentCursorObject) in ['Land_i_Garage_V1_F','Land_i_Garage_V2_F'], player distance Harris_currentCursorObject < 10, (Harris_currentCursorObject in life_vehicles)]";
 			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_vehicleGarage";
 			icon = "024-garage.paa";
 			text = "Garage";
 		};
 		class storeVehicle 
 		{
-			condition = "[(typeOf Harris_currentCursorObject) in ['Land_i_Garage_V1_F','Land_i_Garage_V2_F'], player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles)]";
-			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_vehicleGarage";
+			condition = "[(typeOf Harris_currentCursorObject) in ['Land_i_Garage_V1_F','Land_i_Garage_V2_F'], player distance Harris_currentCursorObject < 10, (Harris_currentCursorObject in life_vehicles)]";
+			action = "[Harris_currentCursorObject,player] spawn life_fnc_storeVehicle;";
 			icon = "022-parking.paa";
 			text = "Store Vehicle";
 		};
 		class unLockStorage 
 		{
-			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles), (Harris_currentCursorObject getVariable ['locked',false]), Harris_currentCursorObject isKindOf 'House_F']";
+			condition = "[player distance Harris_currentCursorObject < 10, (Harris_currentCursorObject in life_vehicles), (Harris_currentCursorObject getVariable ['locked',false]), Harris_currentCursorObject isKindOf 'House_F']";
 			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_sellHouse";
 			icon = "031-key-silhouette-security-tool-interface-symbol-of-password.paa";
-			text = "Unlock Storage";
+			text = "Unlock";
 		};
 		class lockStorage 
 		{
-			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles), !(Harris_currentCursorObject getVariable ['locked',false]),Harris_currentCursorObject isKindOf 'House_F']";
+			condition = "[player distance Harris_currentCursorObject < 10, (Harris_currentCursorObject in life_vehicles), !(Harris_currentCursorObject getVariable ['locked',false]),Harris_currentCursorObject isKindOf 'House_F']";
 			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_sellHouse";
 			icon = "031-key-silhouette-security-tool-interface-symbol-of-password.paa";
-			text = "Lock Storage";
+			text = "Lock";
 		};
 		class sellHouse 
 		{
-			condition = "[player distance Harris_currentCursorObject < 5, (Harris_currentCursorObject in life_vehicles), Harris_currentCursorObject isKindOf 'House_F']";
+			condition = "[player distance Harris_currentCursorObject < 10, (Harris_currentCursorObject in life_vehicles), Harris_currentCursorObject isKindOf 'House_F']";
 			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_sellHouse";
 			icon = "046-for-sale-post.paa";
 			text = "Sell House";

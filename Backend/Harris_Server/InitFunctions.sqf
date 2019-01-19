@@ -139,7 +139,7 @@ Citations_Functions =
   ["fn_payTicket", "Harris_payTicket"],
   ["fn_receiveTicket", "Harris_receiveTicket"],
   ["fn_refuseTicket", "Harris_playerTags"],
-  ["fn_sendTicket", "Foski_sendTicket"]
+  ["fn_sendTicket", "Harris_sendTicket"]
 ];
 
 

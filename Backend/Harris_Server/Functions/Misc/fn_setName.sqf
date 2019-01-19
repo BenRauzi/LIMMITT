@@ -3,5 +3,11 @@
 	Description: Sets player name
 */
 Harris_setName = {
-	profileNamespace setVariable [str (getPlayerUID Harris_toSetName), ctrlText 1400];
+	
+	if (ctrlText 1400 != "") then {
+		profileNamespace setVariable [str (getPlayerUID Harris_toSetName), ctrlText 1400];
+	} else {
+		profileNamespace setVariable [str (getPlayerUID Harris_toSetName), nil];
+	};
+	
 };

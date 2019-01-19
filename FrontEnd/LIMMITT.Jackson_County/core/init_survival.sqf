@@ -213,15 +213,6 @@
 	while {true} do
 	{
 		uiSleep 3;
-		if(life_carryWeight > life_maxWeight && !isForcedWalk player) then {
-			player forceWalk true;
-			player setFatigue 1;
-			hint localize "STR_NOTF_MaxWeight";
-		} else {
-			if(isForcedWalk player) then {
-				player forceWalk false;
-			};
-		};
 
 		if ("Harris_keyCard" in items player && player getVariable ['copLevel',0] == 0) then {
 			player setVariable ["copLevel",1,true];
