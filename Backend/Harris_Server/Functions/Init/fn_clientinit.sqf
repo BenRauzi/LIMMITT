@@ -251,7 +251,7 @@ LIMMITT_clientInit = {
 		["Harris_ironIngot", 3000],
 		["Harris_goldIngot", 5000],
 		["Harris_diamond", 10000],
-		["Harris_weedBag", 7000]
+		["Harris_weedBag", 3000]
 	];
 
 	Harris_Shops = 
@@ -278,7 +278,7 @@ LIMMITT_clientInit = {
 	LIMMITTCASH = 0;
 	Harris_coolDown = false;
 
-	Harris_bankRobberyTime = 5;
+	Harris_bankRobberyTime = 4;
 	Harris_recentRobberyTime = 15;
 
 	escorting = false;
