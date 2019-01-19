@@ -86,7 +86,7 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["cl3_police_tacticalbelt","Police Belt",0]
+			["JD_InvPack","Invisible Backpack",0]
 		];
 	};
 };
