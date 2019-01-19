@@ -416,7 +416,7 @@ switch (_code) do
 	{
 
 		if (player getVariable "Foski_Restrained" || player getVariable "Foski_Surrender") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
-		if (alive player && !_alt && !_shift && !_ctrlKey && !(isNull (findDisplay 46))) then {
+		if (alive player && !_alt && !_shift && !_ctrlKey && !(isNull (findDisplay 46)) && (isNull (findDisplay 1723))) then {
 				[]call Harris_openInteraction;
 				_handled = true;
 		};
@@ -566,7 +566,7 @@ switch (_code) do
 
 
 	// Nicholas Jo'Foski' Surrender (Shift + E)
-	case 18:
+	case 48:
 	{
 		if(_shift) then {_handled = true;};
 
