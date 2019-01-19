@@ -50,7 +50,7 @@ class cfgInteractions
 	};
 	class revivePlayer
 	{
-		condition = "[isPlayer Harris_currentCursorObject, (playerSide == independent), !alive Harris_currentCursorObject]";
+		condition = "[cursorObject isKindOf 'Man', (playerSide == independent), !alive Harris_currentCursorObject]";
 		action = "[Harris_currentCursorObject] call life_fnc_revivePlayer;";
 		icon = "010_cpr.paa";
 		text = "Revive";
@@ -131,15 +131,15 @@ class cfgInteractions
 		};
 		class Unescort 
 		{
-			condition = "[(Harris_currentCursorObject getVariable['Escorting',false]), isPlayer Harris_currentCursorObject, playerside == west]";
-			action = "[Harris_currentCursorObject] call life_fnc_stopEscorting;";
+			condition = "[count (attachedObjects player) > 0, (escorting), playerside == west]";
+			action = "[Harris_currentCursorObject] call life_fnc_stopEscorting; escorting = false;";
 			icon = "002_Tag.paa";
 			text = "Unescort";
 		};
 		class Escort 
 		{
 			condition = "[!(Harris_currentCursorObject getVariable['Escorting',false]), isPlayer Harris_currentCursorObject, (Harris_currentCursorObject getVariable ['restrained', false]), playerside == west]";
-			action = "[Harris_currentCursorObject] call life_fnc_escortAction;";
+			action = "[Harris_currentCursorObject] call life_fnc_escortAction; escorting = true;";
 			icon = "006_DragChild.paa";
 			text = "EScort";
 		};

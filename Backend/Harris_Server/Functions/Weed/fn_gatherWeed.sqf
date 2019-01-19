@@ -7,7 +7,7 @@ Harris_gatherWeed = {
 	params["_ct"];
 
 	if (isNil {_ct getVariable "growingPlant"}) exitWith {};
-	_ammount = round (random 5);
+	_ammount = round (random 3);
 
 	if (_ammount < 1) then {
 		_ammount = 1;

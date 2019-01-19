@@ -281,5 +281,7 @@ LIMMITT_clientInit = {
 	Harris_bankRobberyTime = 5;
 	Harris_recentRobberyTime = 15;
 
+	escorting = false;
+
 };
 
