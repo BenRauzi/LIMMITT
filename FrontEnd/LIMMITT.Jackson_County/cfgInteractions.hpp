@@ -118,14 +118,14 @@ class cfgInteractions
 		class Restrain 
 		{
 			condition = "[!(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
-			action = "[Harris_currentCursorObject] call Foski_restrainPlayer;";
+			action = "[Harris_currentCursorObject] call Foski_restrainPlayer; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
 			icon = "icon_handcuffs.paa";
 			text = "Restrain";
 		};
 		class Unrestrain 
 		{
 			condition = "[(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
-			action = "[Harris_currentCursorObject] call Foski_unrestrainPlayer;";
+			action = "[Harris_currentCursorObject] call Foski_unrestrainPlayer; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
 			icon = "icon_handcuffs.paa";
 			text = "Unrestrain";
 		};
