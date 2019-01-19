@@ -189,7 +189,7 @@ class cfgInteractions
 			condition = "[isPlayer Harris_currentCursorObject,playerside == west]";
 			action = "[Harris_currentCursorObject] call Harris_openGiveTicket";
 			icon = "017-receipt.paa";
-			text = "Revoke";
+			text = "Ticket";
 		};
 		class testIntox
 		{
