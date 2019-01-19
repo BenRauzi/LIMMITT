@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8702.1494,39.635544,6755.1963};
-		dir[]={0.54681879,-0.41025719,0.72984856};
-		up[]={0.24599183,0.91196883,0.32832929};
-		aside[]={0.80029911,-4.0978193e-008,-0.59960186};
+		pos[]={8203.1953,12.796622,6300.272};
+		dir[]={-0.69403803,-0.49132982,0.5262292};
+		up[]={-0.39152253,0.87096637,0.29685631};
+		aside[]={0.60418314,-1.8313585e-008,0.79685253};
 	};
 };
 binarizationWanted=0;
@@ -249,6 +249,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -280,25 +299,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
 				};
 			};
 		};
@@ -9043,11 +9043,10 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8206.6025,10.665576,6283.8027};
-				angles[]={0,2.5759699,0};
+				position[]={8195.9082,11.134891,6286.0044};
+				angles[]={-0,3.787591,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -9055,18 +9054,17 @@ class Mission
 			};
 			id=4185;
 			type="Land_CashDesk_F";
-			atlOffset=0.0060014725;
+			atlOffset=0.39250088;
 		};
 		class Item426
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8207.2549,11.241041,6282.7925};
-				angles[]={0,2.5909936,0};
+				position[]={8195.1914,11.710965,6285.0386};
+				angles[]={0,3.8026147,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -9074,38 +9072,38 @@ class Mission
 			};
 			id=4186;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.0019836426;
+			atlOffset=0.39321136;
 		};
 		class Item427
 		{
 			dataType="Marker";
-			position[]={8190.9751,10.696,6283.2939};
+			position[]={8206.5244,10.530903,6297.46};
 			name="merc_dealer1";
 			type="Empty";
-			angle=227.38698;
+			angle=309.99997;
 			id=4187;
-			atlOffset=0.031377792;
+			atlOffset=9.5367432e-007;
 		};
 		class Item428
 		{
 			dataType="Marker";
-			position[]={8179.502,10.716,6265.6001};
+			position[]={8201.0469,10.507,6301.7012};
 			name="merc_dealer1_1";
 			type="Empty";
-			angle=216.28299;
+			angle=309.99997;
 			id=4188;
-			atlOffset=0.0036745071;
+			atlOffset=-0.0047569275;
 		};
 		class Item429
 		{
 			dataType="Marker";
-			position[]={8189.4492,10.692739,6276.6528};
+			position[]={8195.3701,10.692739,6286.1094};
 			name="car1_1_2_5";
 			text="Mercedes-Benz Dealer";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorWhite";
 			id=4189;
-			atlOffset=-0.0073461533;
+			atlOffset=0.047725677;
 		};
 		class Item430
 		{

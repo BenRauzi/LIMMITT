@@ -12,11 +12,23 @@
 
 
 Harris_openTwitterType = {
-	if !(player getVariable "Harris_TwitterEnabled") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
+	if !(player getVariable ["Harris_TwitterEnabled",true]) exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
 	createDialog "Harris_twitterType";	
+
+	if !(isNull (uiNameSpace getVariable ["Harris_TwitterFeed",displayNull])) then {
+		ctrlShow [1000, false];
+	} else {
+		ctrlShow [1000, true];
+	};
+
 	_listBox = ((findDisplay 5002) displayCtrl 1400);
 
+	_count = (count Harris_TwitterMessages-1);
+	if (count Harris_TwitterMessages == 0) then {
+		_count = 0;
+	};
 
-	_listBox ctrlSetPosition [-0.705,0.82+0.04*(count Harris_TwitterMessages-1)];
+
+	_listBox ctrlSetPosition [-0.705,0.84+0.04*(count Harris_TwitterMessages-1)];
 	_listBox ctrlCommit 0;
 };

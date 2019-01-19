@@ -15,71 +15,63 @@ switch (_shop) do
 	case "dezzie_car":
 	{
 		_return = [
-			["IVORY_PRIUS",15000],
-			["A3L_FordKaBlue",20000],
-			["A3L_FordKaRed",20000],
-			["A3L_FordKaBlack",20000],
-			["A3L_FordKaWhite",20000],
-			["A3L_FordKaGrey",20000],
-			["DAR_FusionCiv",25000],
-			["DAR_FusionCivBlue",25000],
-			["IVORY_R8",175000],
-			["IVORY_R8SPYDER",175000],
-			["IVORY_REV",220000]
+			["IVORY_PRIUS",1000],
+			["A3L_FordKaBlue",15000],
+			["A3L_FordKaRed",15000],
+			["A3L_FordKaBlack",15000],
+			["A3L_FordKaWhite",15000],
+			["A3L_FordKaGrey",15000],
+			["DAR_FusionCiv",2000],
+			["DAR_FusionCivBlue",20000],
+			["IVORY_R8",150000],
+			["IVORY_R8SPYDER",150000],
+			["IVORY_REV",15000]
 
 		];
 	};
 	case "super_bikes":
 	{
 		_return = [
-			["kw_xr_silver",250000],
-			["kw_xr_flame",250000],
-			["kw_xr_camo_urban",250000],
-			["kw_xr_aqua",250000],
-			["kw_xr_camo",250000],
-			["kw_xr_white",250000],
-			["kw_xr_light_blue",250000],
-			["kw_xr_black",250000],
-			["kw_xr_baby_pink",250000]
+			["kw_xr_silver",100000],
+			["kw_xr_flame",100000],
+			["kw_xr_camo_urban",100000],
+			["kw_xr_aqua",100000],
+			["kw_xr_camo",100000],
+			["kw_xr_white",100000],
+			["kw_xr_light_blue",100000],
+			["kw_xr_black",100000],
+			["kw_xr_baby_pink",100000]
 		];
 	};
 	case "civ_lsmovehicle":
 	{
 		_return = [
-			["DAR_H1A",45000],
-			["DAR_TahoeCivBlack",30000],
-			["cg_audi_rs4_pol_white",30000],
-			["A3L_TaurusUC",30000],
-			["A3L_Camaro",30000],
-			["Nhz_audia8limo",45000],
-			["AM_Sexcalade_Custom",30000],
-			["A3L_EvoXBlack",30000]
+			["DAR_H1A",15000],
+			["DAR_TahoeCivBlack",15000],
+			["cg_audi_rs4_pol_white",15000],
+			["A3L_TaurusUC",15000],
+			["A3L_Camaro",15000],
+			["Nhz_audia8limo",15000],
+			["AM_Sexcalade_Custom",15000],
+			["A3L_EvoXBlack",15000]
 
 		];
 	};
 	case "car_montana":
 	{
 		_return = [
-			["critgamin_vangmcc_civ_noir",35000],
-			["DAR_H1A",35000],
-			["DAR_TahoeCivBlack",30000],
-			["B_Quadbike_01_F",3500],
-			["I_G_Van_01_fuel_F",80000],
-			["B_Heli_Light_01_F",425000],
-			["B_G_Van_01_transport_F",50000],
-			["B_G_Offroad_01_F",145000],
-			["A3L_SuburbanBlack",30000]
+			["A3L_SuburbanBlack",10000]
 			
 		];
 	};
 	case "kart_shop":
 	{
 		_return = [
-			["A3L_Karts",15000],
-			["C_Kart_01_Blu_F",15000],
-			["C_Kart_01_Fuel_F",15000],
-			["C_Kart_01_Red_F",15000],
-			["C_Kart_01_Vrana_F",15000]
+			["A3L_Karts",2000],
+			["C_Kart_01_Blu_F",2000],
+			["C_Kart_01_Fuel_F",2000],
+			["C_Kart_01_Red_F",2000],
+			["C_Kart_01_Vrana_F",2000]
 		];
 	};
 	case "med_shop":
@@ -114,9 +106,6 @@ switch (_shop) do
 	case "exo_car":
 	{
 		_return = [
-			["ADM_1969_charger",100000],
-			["DAR_challenger_civBlack",110000],
-			["Jonzie_Viper",115000],
 			["kw_db9_blue",125000],
 			["kw_db9_silver",130000],
 			["kw_db9_black",130000],
@@ -131,17 +120,12 @@ switch (_shop) do
 			["kw_corvette_c7_blue",100000],
 			["kw_corvette_c7_purple",100000],
 			["kw_corvette_c7_grey",100000]
-
 		];
 	};
 
 	case "chev_car":
 	{
 		_return = [
-			["DAR_TahoeCivSilver",135000],
-			["DAR_TahoeCivBlue",135000],
-			["DAR_TahoeCivRed",135000],
-			["DAR_TahoeCivBlack",135000],
 			["A3L_SuburbanWhite",195000],
 			["A3L_SuburbanBlue",195000],
 			["A3L_SuburbanRed",195000],

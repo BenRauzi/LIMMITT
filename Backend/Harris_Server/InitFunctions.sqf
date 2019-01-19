@@ -132,6 +132,16 @@ Crime_Functions =
   ["fn_serverMsg", "Harris_serverMsg"]
 ];
 
+CitationsDir = "\Harris_Server\Functions\Citations\";
+Citations_Functions = 
+[
+  ["fn_openGiveTicket", "Harris_openGiveTicket"],
+  ["fn_payTicket", "Harris_payTicket"],
+  ["fn_receiveTicket", "Harris_receiveTicket"],
+  ["fn_refuseTicket", "Harris_playerTags"],
+  ["fn_sendTicket", "Foski_sendTicket"]
+];
+
 
 functionArrays = 
 "[
@@ -147,7 +157,8 @@ functionArrays =
   ['Misc_Functions','MiscDir'],
   ['Shops_Functions','ShopsDir'],
   ['Crime_Functions','CrimeDir'],
-  ['Weed_Functions','WeedDir']
+  ['Weed_Functions','WeedDir'],
+  ['Citations_Functions','CitationsDir']
 ]";
 
 functionArrays2 = call compile functionArrays;

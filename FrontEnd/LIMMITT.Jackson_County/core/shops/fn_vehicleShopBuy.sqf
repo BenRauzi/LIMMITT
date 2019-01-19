@@ -37,7 +37,8 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 
 if(_spawnPoint == "") exitWith {hint localize "STR_Shop_Veh_Block";};
 LIMMITTCASH = LIMMITTCASH - _basePrice;
-hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
+
+["Success", format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText], "Success"] spawn Harris_Notifications;
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
