@@ -20,7 +20,7 @@ Foski_dropHandgun ={
 				_gunI addMagazinecargoGlobal [_mag,_ammo];
 				player removeAction (_this select 2);
 			}];
-			waitUntil {(!(player getVariable [_var, false]))};
+			waitUntil {(!(player getVariable [_var, false])) || currentWeapon player == ""};
 			if (currentWeapon player != "") then {player removeAction _action;};
 		};
 	};
