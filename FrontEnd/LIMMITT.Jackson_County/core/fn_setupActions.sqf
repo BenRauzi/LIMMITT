@@ -218,9 +218,7 @@ life_actions = life_actions + [player addAction["Pickup Item(s)",{createDialog "
 	};
 	case west:
 	{
-
-		life_actions = life_actions + [(player addAction["Police Computer",{call life_fnc_openComputer},cursorTarget,0,false,false,"",'vehicle player != player'])];
-		
+			
 		//gatherevidence
 		life_actions = life_actions + [player addAction["Gather Evidence",life_fnc_gatherEvidence,"",0,false,false,"",' !isNull cursorTarget && player distance cursorTarget < 2.5 && !dialog && typeOf cursorTarget == "cl_evidencebox"']];
 

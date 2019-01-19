@@ -132,14 +132,14 @@ class cfgInteractions
 		class shackle 
 		{
 			condition = "[!(isforcedWalk Harris_currentCursorObject), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
-			action = "Harris_currentCursorObject forceWalk true; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
+			action = "[] remoteExecCall ['Harris_shackle', Harris_currentCursorObject]; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
 			icon = "015_handcuffs.paa";
 			text = "Shackle";
 		};
 		class unShackle 
 		{
 			condition = "[isforcedWalk Harris_currentCursorObject, isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
-			action = "Harris_currentCursorObject forceWalk false; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
+			action = "[] remoteExecCall ['Harris_shackle', Harris_currentCursorObject]; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
 			icon = "015_handcuffs.paa";
 			text = "unShackle";
 		};

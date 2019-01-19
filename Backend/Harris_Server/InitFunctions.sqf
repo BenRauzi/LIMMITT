@@ -80,7 +80,8 @@ Police_Functions =
   ["fn_code1", "Harris_code1"],
   ["fn_code2", "Harris_code2"],
   ["fn_code3", "Harris_code3"],
-  ["fn_tazed", "Harris_tazed"]
+  ["fn_tazed", "Harris_tazed"],
+  ["fn_shackle", "Harris_shackle"]
 
 ];
 

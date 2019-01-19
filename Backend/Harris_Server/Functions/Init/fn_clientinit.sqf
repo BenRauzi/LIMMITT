@@ -283,5 +283,6 @@ LIMMITT_clientInit = {
 
 	escorting = false;
 
+	Harris_growTime = 10;
 };
 
