@@ -131,15 +131,15 @@ class cfgInteractions
 		};
 		class Unescort 
 		{
-			condition = "[count (attachedObjects player) > 0, (escorting), playerside == west]";
-			action = "[Harris_currentCursorObject] call life_fnc_stopEscorting; escorting = false;";
+			condition = "[count (attachedObjects player) > 0, !isNil 'escorting', playerside == west]";
+			action = "[escorting] call life_fnc_stopEscorting; escorting = nil;";
 			icon = "002_Tag.paa";
 			text = "Unescort";
 		};
 		class Escort 
 		{
 			condition = "[!(Harris_currentCursorObject getVariable['Escorting',false]), isPlayer Harris_currentCursorObject, (Harris_currentCursorObject getVariable ['restrained', false]), playerside == west]";
-			action = "[Harris_currentCursorObject] call life_fnc_escortAction; escorting = true;";
+			action = "[Harris_currentCursorObject] call life_fnc_escortAction; escorting = Harris_currentCursorObject;";
 			icon = "006_DragChild.paa";
 			text = "EScort";
 		};
@@ -373,6 +373,14 @@ class cfgInteractions
 		action = "[Harris_currentCursorObject] spawn Harris_plantWeed";
 		icon = "020-hand.paa";
 		text = "Plant Weed";
+	};
+
+	class sizeWeed
+	{
+		condition = "[typeOf Harris_currentCursorObject isEqualTo 'JD_Pot', player distance Harris_currentCursorObject < 5, !(isNil {Harris_currentCursorObject getVariable 'growingPlant'}), playerside == west]";
+		action = "[Harris_currentCursorObject] spawn Harris_seizeWeed";
+		icon = "033-upload.paa";
+		text = "Seize Weed";
 	};
 
 	class harvestWeed
