@@ -296,69 +296,43 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["kw_09Tahoe_SHERIFF",1000],
-			["kw_15Charger_SHERIFF",3000]
+			["JD_CVPI_Skin2",1000],
+			["JD_CVPI_U_Skin2",1000],
+			["JD_CVPI_White",1000],
+			["JD_CVPI_U_White",1000],
+			["JD_CVPI_Black",1000],
+			["JD_CVPI_U_Black",1000],
+			["JD_PoliceB_1",2000],
+			["kw_06Surburban_sheriff",4000],
+			["kw_09Tahoe_SHERIFF",4000],
+			["kw_15Charger_SHERIFF",4000],
+			["kw_Explorer_14_SHERIFF",4000],
+			["kw_fordRaptor_2017_SHERIFF",8000],
+			["kw_sentinal_swat",10000]
 		];
 	};
 	case "cop_marshals":
 	{
 		_return =
 		[
-			["d3s_crown_98_PD",1000],
-			["d3s_nemises_taurus_FPI_10",1000],
-			["d3s_vklasse_17_COP",1000],
-			["d3s_300_12_COP",3000],
-			["d3s_charger_15_CPP",4000],
-			["d3s_tahoe_PPV_2",4000],
-			["d3s_nemises_FPIU_13",4000],
-			["d3s_durango_18_DDPI",5000],
-			["d3s_cherokee_18_JPPV",5000],
-			["d3s_nemises_f90_18_PD",6000],
-			["d3s_escalade_16_cop",6000]
-
 		];
 	};
 	case "cop_doc":
 	{
 		_return =
 		[
-			["kw_11rs3_sheriff",1000],
-			["kw_06Surburban_sheriff",1000],
-			["kw_09Tahoe_SHERIFF",1000],
-			["kw_15Charger_SHERIFF",3000],
-			["kw_12Charger_SHERIFF",4000],
-			["kw_06Victoria_SHERIFF",4000],
-			["kw_Explorer_14_SHERIFF",4000],
-			["kw_fordRaptor_2017_SHERIFF",5000],
-			["kw_Mercedes_GLE450_SHERIFF",5000]
 		];
 	};
 	case "cop_swat":
 	{
 		_return =
 		[
-			["kw_sentinal_swat",5000]
-			
 		];
 	};
 	case "cop_caruc":
 	{
 		_return =
 		[
-			
-			["d3s_nemises_explorer_UNM_13",1000],
-			["d3s_tahoe_UNM",1000],
-			["d3s_nemises_taurus_UNM_10",1000],
-			["d3s_300_12_UNM",2000],
-			["d3s_cherokee_18_UNM",3000],
-			["d3s_charger_15_CPST",3000],
-			["d3s_amazing_f10_12_UNM",4000],
-			["d3s_vklasse_17_UNM",4000],
-			["d3s_f86_15_UNM",4000],
-			["d3s_nemises_explorer_UNM_13",4000],
-			["d3s_durango_18_UNM",5000],
-			["d3s_raptor_UNM_17",5000],		
-			["d3s_f86_15_UNM",6000]
 		];
     };
 	case "civ_air":

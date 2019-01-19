@@ -11,7 +11,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"LSPD Clothing Store"];
+ctrlSetText[3103,"JCSO Clothing Store"];
 
 _ret = [];
 switch (_filter) do
@@ -33,13 +33,13 @@ switch (_filter) do
 	
 	case 1:
 	{
-		_ret set[count _ret,["JD_SheriffHat_Green","Green Sheriff Hat",0]];
-		_ret set[count _ret,["JD_SheriffHat_Blue","Blue Sheriff Hat",0]];
-		_ret set[count _ret,["JD_SheriffHat_Tan","Tan Sheriff Hat",0]];
-		_ret set[count _ret,["JD_BlackCap","Black Cap",0]];
 		_ret set[count _ret,["JD_SherrifCap","Sheriff Helmet",0]];
-		_ret set[count _ret,["JD_SertHat","SERT Hat",0]];
-		_ret set[count _ret,["JD_SertHatB","SERT HAT2",0]];
+		_ret set[count _ret,["JD_SheriffHat_Green","Green Sheriff Hat",0]];
+		_ret set[count _ret,["JD_SheriffHat_Tan","Tan Sheriff Hat",0]];
+		_ret set[count _ret,["JD_CowboyHat_Brown ","Cowboy Sheriff Hat",0]];
+		_ret set[count _ret,["JD_BlackCap","Black Cap",0]];
+		_ret set[count _ret,["JD_SertHat","SERT Helmet Green",0]];
+		_ret set[count _ret,["JD_SertHatB","SERT Helmet Black",0]];
 		
 		
 	};
@@ -49,11 +49,13 @@ switch (_filter) do
 		_ret = 
 		[
 			["G_Aviator",nil,0],
+			["JD_Badge","Neck Badge",0],
+			["JD_Tie","Green Tie",0],
+			["JD_Mask","Gas Mask",0],
 			["G_Squares",nil,0],
 			["G_Lowprofile",nil,0],
 			["G_Combat",nil,0],
 			["G_Balaclava_blk",nil,0],
-			["Mask_M40","Riot Mask",0],
 			["TRYK_kio_balaclava_ESS",nil,0],
 			["G_Balaclava_combat",nil,0],
 			["G_Balaclava_lowprofile",nil,0],
@@ -68,14 +70,15 @@ switch (_filter) do
 	
 	case 3:
 	{
-		_ret set[count _ret,["A3L_RideAlongVest","Ride Along",0]];
 		_ret set[count _ret,["JD_Belt1","Duty Belt",0]];
-		_ret set[count _ret,["JD_Belt3","Belt 2",0]];
-		_ret set[count _ret,["JD_Vest1","Patrol Vest",0]];
-		_ret set[count _ret,["JD_Vest2","DOC Vest",0]];
-		_ret set[count _ret,["JD_Vest3","SERT Vest",0]];
-		_ret set[count _ret,["JD_Vest4","Detective Vest",0]];
-		_ret set[count _ret,["JD_Vest7","Traffic Vest",0]];
+		_ret set[count _ret,["JD_Belt2","Holster Belt",0]];
+		_ret set[count _ret,["JD_Belt3","Holster Badge",0]];
+		_ret set[count _ret,["JD_Belt4","Holster Arm",0]];
+		_ret set[count _ret,["JD_Vest2","Vest DOC",0]];
+		_ret set[count _ret,["JD_Vest1","Vest Patrol",0]];
+		_ret set[count _ret,["JD_Vest4","Vest Detective",0]];
+		_ret set[count _ret,["JD_Vest3","Vest SERT Green",0]];
+		_ret set[count _ret,["JD_Vest11","Vest SERT Black",0]];
 		_ret set[count _ret,["JD_Vest10","Sheriff Traffic Vest",0]];
 	};
 	
