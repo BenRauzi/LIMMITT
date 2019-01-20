@@ -27,7 +27,7 @@ case "coke": {150000};
 	case "marijuana": {75000}; //Marijuana processing license cost
 	case "medmarijuana": {75000}; //Medical Marijuana processing license cost
 	case "gang": {15000}; //Gang license cost
-	case "rebel": {250000}; //Rebel license cost
+	case "rebel": {75000}; //Rebel license cost
 	case "truck": {5000}; //Truck license cost
 	case "diamond": {30000};
 	case "salt": {15000};
@@ -37,7 +37,7 @@ case "coke": {150000};
 	case "copper": {12500};
 	case "cement": {12500};
 	case "mair": {12500};
-	case "home": {100000};
+	case "home": {50000};
 	
 	case "rifle": {32500};
 	case "forestry": {30000};
