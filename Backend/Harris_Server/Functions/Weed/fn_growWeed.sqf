@@ -2,22 +2,19 @@
 	Author: Ben Harris
 	Description: Grows the Weed
 */
-
+Harris_growTime = 5;
 Harris_growWeed = {
-	params["_plant", "_ct"];
+	params["_ct"];
 
 	_plantStages = 8;
 
 	_stageTime = (Harris_growTime * 60) / _plantStages;
-	_pos = (getPosAtl _plant) select 2;
 	for "_i" from 0 to _plantStages do {
-			detach _plant;
-			_pos = _pos + 0.1;
-			_plant setPosAtl [(getPosAtl _plant) select 0, (getPosAtl _plant) select 1, _pos + 0.1];
-			_plant attachTo [_ct];
+			if (_ct getVariable ["seized",false]) exitWith {_ct setVariable ["seized",nil,true];};
+			_ct animate [format["stage_%1", _i - 1],0];
+			_ct animate [format["stage_%1", _i],1];
 			sleep _stageTime;
 		};
 
-	_plant setVariable ["grownWeed", true, true];
 	_ct setVariable ["weedReady",true,true];
 };

@@ -16,6 +16,7 @@ switch(_shop) do
                                         [
                                             ["FirstAidKit",nil,250],
                                             ["Medikit",nil,250],
+                                            ["Harris_medkit",nil,1000],
                                             ["ToolKit",nil,250]
                                         ]
                                 ];
@@ -32,6 +33,7 @@ switch(_shop) do
                                         [
                                             ["A3L_Extinguisher",nil,500],
                                             ["30Rnd_test_mag","Fire Extinguisher Refill",50],
+                                            ["Harris_medkit",nil,1000],
                                             //["A3L_ChainSaw","Jaws of life (dont work)",500],
                                             //["chainsawfuel","Jaws of life fuel",50],
                                             ["A3L_Shovel",nil,500],
@@ -64,6 +66,7 @@ switch(_shop) do
                                         [
                                                 ["Harris_keyCard",nil,250],
                                                 ["FirstAidKit",nil,250],
+                                                ["Harris_medkit",nil,1000],
                                                 ["Medikit",nil,250],
                                                 ["ToolKit",nil,250],
                                                 ["CG_BATON","Police Baton",100],
@@ -505,24 +508,29 @@ switch(_shop) do
                         {
                                 ["Black Market Dealer",
                                     [
-                                        //AK Gold
-                                        ["CUP_arifle_AKS_Gold",nil,400000],
+                                        //M16A4
+                                        ["RH_M16A4",nil,60000],
+                                        ["30Rnd_556x45_Stanag",nil,1000],
+                                       
+                                        //SG553
+                                        ["SG553_CQB",nil,70000],
+                                        ["30Rnd_556x45_Stanag",nil,1000],
+                                         //AK Gold
+                                        ["CUP_arifle_AKS_Gold",nil,100000],
                                         ["hlc_30Rnd_545x39_B_AK",nil,7500],
                                         //AK74
-                                        ["hlc_rifle_ak74",nil,140000],
+                                        ["hlc_rifle_ak74",nil,100000],
                                         ["hlc_30Rnd_545x39_B_AK",nil,1000],
                                         //PDW
                                         ["RH_PDW",nil,85000],
                                         ["RH_30Rnd_6x35_mag",nil,1000],
-                                        //M16A4
-                                        ["RH_M16A4",nil,120000],
-                                        ["30Rnd_556x45_Stanag",nil,1000],
+                                        
+                                        
                                         //Sting
                                         ["SMG_02_F",nil,60000],
                                         ["30Rnd_9x21_Mag_SMG_02",nil,1000],
-                                        //SG553
-                                        ["SG553_CQB",nil,120000],
-                                        ["30Rnd_556x45_Stanag",nil,1000],
+                                       
+                                        
                                         //Accessories
                                         ["RH_eotech553",nil,1000],
                                         ["RH_t1",nil,1000],
@@ -620,6 +628,7 @@ switch(_shop) do
                                 //["A3L_JackHammer","Jack Hammer (Primary Slot)",10000],
                                 //["jackhammerfuel","Jack Hammer Fuel",500],
                                 ["ItemMap",nil,50],
+                                ["Harris_medkit",nil,1000],
                                 ["tf_anprc152",nil,1000],
                                 ["a3l_pickaxe",nil,1000],
                                 ["pickaxe_swing",nil,10],

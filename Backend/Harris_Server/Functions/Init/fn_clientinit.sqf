@@ -5,8 +5,8 @@
 
 LIMMITT_clientInit = {
 
+	/*
 	Harris_d3sPD = ["d3s_charger_15_CPP"];
-
 	player addEventHandler ["GetInMan", {
 	    params ["_vehicle", "_role", "_unit", "_turret"];
 
@@ -40,8 +40,10 @@ LIMMITT_clientInit = {
 		};
 	}];
 
-	player setVariable ["Harris_TwitterEnabled",true,true]; // Able to use twitter variable
-	player setVariable ["Harris_InteractionEnabled",true,true]; // Able to use the interaction menu variable
+	*/
+
+	player setVariable ["Harris_TwitterEnabled",true,false]; // Able to use twitter variable
+	player setVariable ["Harris_InteractionEnabled",true,false]; // Able to use the interaction menu variable
 	player setVariable ["Foski_Restrained",false,true]; // Restrain Variable
 	player setVariable ["Foski_Surrender", false, true]; // Surrender Variable
 
@@ -258,7 +260,7 @@ LIMMITT_clientInit = {
 
 	[] call Harris_playerTags;
 
-	Harris_Furniture = ["A3L_WorkBench", "JD_Pot"];
+	Harris_Furniture = ["A3L_WorkBench", "Foski_WeedPot"];
 
 	Harris_prices = 
 	[

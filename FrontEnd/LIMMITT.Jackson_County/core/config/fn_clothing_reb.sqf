@@ -19,17 +19,16 @@ switch (_filter) do
 	{
 		[
 
-			["U_PMC_CombatUniformLS_BSGPSB",nil,27500],
-			["U_PMC_CombatUniformLS_GSBPBB",nil,27500],
-			["U_PMC_CombatUniformRS_GSSPBB",nil,27500],
-			["A3LJumperCIDBlack",nil,27500],
-			["IRA_Soldier_Outfit_11",nil,35000],
-			["U_I_FullGhillie_lsh",nil,85000],
-			["U_O_OfficerUniform_ocamo",nil,47500],
-			["TRYK_U_B_ARO1_BLK_CombatUniform",nil,47500],
-			["TRYK_U_B_AOR2_BLK_R_CombatUniform",nil,47500],
-			["TRYK_U_B_Snowt",nil,55000],
-			["TRYK_U_B_PCUHsW3",nil,47500]
+			["U_PMC_CombatUniformLS_BSGPSB",nil,10000],
+			["U_PMC_CombatUniformLS_GSBPBB",nil,10000],
+			["U_PMC_CombatUniformRS_GSSPBB",nil,10000],
+			["A3LJumperCIDBlack",nil,10000],
+			["IRA_Soldier_Outfit_11",nil,15000],
+			["U_O_OfficerUniform_ocamo",nil,20000],
+			["TRYK_U_B_ARO1_BLK_CombatUniform",nil,20000],
+			["TRYK_U_B_AOR2_BLK_R_CombatUniform",nil,20000],
+			["TRYK_U_B_Snowt",nil,30000],
+			["TRYK_U_B_PCUHsW3",nil,20000]
 
 
 
@@ -49,11 +48,11 @@ switch (_filter) do
 			["jokermask","Joker Mask",25000],
 			["TRYK_Kio_Balaclava","Ghost Balaclava",15000],
 			["A3L_Halloween_JigSaw","JigSaw Mask",25000],
-			["kio_skl_msk","Black Skull Mask",50000],
-			["kio_skl_msk_grn","Green Skull Mask",50000],
-			["kio_skl_msk_red","Red Skull Mask",50000],
-			["H_HelmetB_light_black",nil,50000],
-			["H_HelmetSpecB_snakeskin",nil,50000]
+			["kio_skl_msk","Black Skull Mask",30000],
+			["kio_skl_msk_grn","Green Skull Mask",30000],
+			["kio_skl_msk_red","Red Skull Mask",30000],
+			["H_HelmetB_light_black",nil,30000],
+			["H_HelmetSpecB_snakeskin",nil,30000]
 		];
 	};
 	
@@ -89,9 +88,9 @@ switch (_filter) do
 			["V_BandollierB_khk",nil,15000],
 			["V_BandollierB_oli",nil,15000],
 			["REB_VEST_DIGI",nil,75000],
-			["TRYK_V_ArmorVest_Delta2",nil,50000],
-			["TRYK_V_ArmorVest_green",nil,50000],
-			["TRYK_V_PlateCarrier_wood",nil,50000],
+			["TRYK_V_ArmorVest_Delta2",nil,30000],
+			["TRYK_V_ArmorVest_green",nil,30000],
+			["TRYK_V_PlateCarrier_wood",nil,30000],
 			["V_HarnessO_brn",nil,7500],
 			["V_HarnessO_gry",nil,7500]
 		];

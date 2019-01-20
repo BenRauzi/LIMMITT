@@ -15,7 +15,7 @@ Harris_removeFurniture = {
 		{
 			_item = "Harris_workBench";
 		};
-		case "JD_Pot":
+		case "Foski_WeedPot":
 		{
 			_item = "Harris_Pot";
 
