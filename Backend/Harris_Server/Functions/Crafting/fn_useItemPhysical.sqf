@@ -11,7 +11,7 @@ Harris_useItemPhysical = {
 	{
 		case "Plant Pot":
 		{
-			["Foski_weedPot", "Harris_Pot"] spawn Harris_createFurniture;
+			["JG_Pot", "Harris_Pot"] spawn Harris_createFurniture;
 		};
 		case "Crafting Notes":
 		{
