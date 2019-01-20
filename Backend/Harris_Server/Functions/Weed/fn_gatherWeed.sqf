@@ -21,9 +21,11 @@ Harris_gatherWeed = {
 		};
 	};
 
-	["Success", "You have gathered the dank weed", "Success"] spawn Harris_Notifications;	
+	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
+	["Success","You Gathered the Weed", "Success"] call Harris_Notifications;
 
-	_ct animate ["stage_8",0];
+	deleteVehicle (_ct getVariable "growingPlant");
+
 	_ct setVariable ["growingPlant", nil, false];
 	_ct setVariable ["weedReady",nil,true];
 };

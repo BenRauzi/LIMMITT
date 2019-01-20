@@ -5,10 +5,8 @@
 Harris_seizeWeed = {
 	params["_ct"];
 
+	_plant = _ct getVariable ['growingPlant', objNull];
+	deleteVehicle _plant;	
 	_ct setVariable ['growingPlant', nil, true];
 	_ct setVariable ["seized",true,true];
-
-	for "_i" from 1 to 8 do {
-		_ct animate ["stage_%1", _i];
-	};
 };

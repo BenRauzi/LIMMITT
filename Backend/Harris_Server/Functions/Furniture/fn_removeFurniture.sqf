@@ -15,11 +15,11 @@ Harris_removeFurniture = {
 		{
 			_item = "Harris_workBench";
 		};
-		case "Foski_WeedPot":
+		case "JD_Pot":
 		{
 			_item = "Harris_Pot";
 
-			if !(isNil {_object getVariable 'growingPlant'}) then {
+			if !(isNil {_object getVariable ['growingPlant', objNull]}) then {
 				deleteVehicle (_object getVariable 'growingPlant');
 			};
 		};
