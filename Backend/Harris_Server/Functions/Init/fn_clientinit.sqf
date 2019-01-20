@@ -260,7 +260,7 @@ LIMMITT_clientInit = {
 
 	[] call Harris_playerTags;
 
-	Harris_Furniture = ["A3L_WorkBench", "Foski_WeedPot"];
+	Harris_Furniture = ["A3L_WorkBench", "JD_Pot"];
 
 	Harris_prices = 
 	[
