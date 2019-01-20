@@ -13,12 +13,10 @@ _fnc_scriptName = "Player Synchronization";
 private["_exit"];
 if(isNil "life_session_time") then {life_session_time = false;};
 if(life_session_time) exitWith {
-((uiNamespace getVariable "syncmenu") displayCtrl 98294) ctrlSettext _cannotsync; 
-hint "You cannot sync as you have recently done so!";
+["Error", "You cannot sync as you have recently done so!", "Failure"] spawn Harris_Notifications;
 };
 
 [] call SOCK_fnc_updateRequest;
-((uiNamespace getVariable "syncmenu") displayCtrl 98294) ctrlSettext _syncsucces; 
 //hint localize "STR_Session_SyncData";
 [] spawn
 {
@@ -27,4 +25,4 @@ hint "You cannot sync as you have recently done so!";
 	life_session_time = false;
 };
 
-hint "You have synced your data!";
+["Success", "You have synced your data!", "Success"] spawn Harris_Notifications;

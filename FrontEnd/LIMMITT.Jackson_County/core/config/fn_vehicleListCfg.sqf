@@ -78,18 +78,15 @@ switch (_shop) do
 	{
 		_return = [
 		
-			["evo_ems_CHARGER",500],
-			["evo_ems_TAURUS",500],
-			["evo_ems_TAHOE",500],
-			["GM_EXPLORER_EMS",500],
-			["GM_SAVANA_EMS",500],
-			["GM_VAN_EMS",500],
-			["GM_MUSTANG_EMS",500],
-			["GM_EXPLORER_EMSLT",500],
-			["GM_EXPLORER_EMSCPT",500],
-			["A3L_AmberLamps",500],
-			["cg_mercedes_sprinter_ems",500],
-			["GM_EXPLORER_FTO",500],
+			["KW_Taurus_10_TAC",500],
+			["KW_11RS3_EMS",500],
+			["KW_12M5_EMS",500],
+			["KW_06Suburban_FD",500],
+			["KW_15Charger_EMS",500],
+			["KW_12Charger_EMS",500],
+			["KW_06Victoria_FD",500],
+			["cg_merc_atego_firetruck_reg",500],
+			["kw_Ford_Raptor_2017_Sheriff ",500],
 			["JD_F350_Red",500]
 			
 		];

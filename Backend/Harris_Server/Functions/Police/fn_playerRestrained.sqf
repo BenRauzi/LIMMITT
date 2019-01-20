@@ -25,8 +25,9 @@ Foski_playerRestrained ={
 			player playAction ("Foski_Cuff_" + _pos);
 			["Foski_Restrained"] call Foski_dropHandgun;
 			player setVariable ["Foski_RestrainedPos",_pos,true];
-		};
 
+			player forceWalk true;
+		};
 		// Manage the restrained player
 		while {true} do {
 			if !(player getVariable "Foski_Restrained") exitWith {player setVariable ["tf_unable_to_use_radio", false, true]; player setVariable["restrained", false, true]; player setVariable ["Harris_TwitterEnabled", true, true]; player setVariable ["Harris_InteractionEnabled", true, true];};

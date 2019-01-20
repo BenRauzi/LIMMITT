@@ -1,11 +1,11 @@
 class cfgInteractions
 {
-	class OpenPhone
+	class SyncData
 	{
 		condition = "[alive player, !(player getVariable ['restrained',false]), (player distance Harris_currentCursorObject > 3)]";
-		action = "[] call fnc_opentablet;";
-		icon = "icon_smartphone.paa";
-		text = "Open Phone";
+		action = "[] spawn SOCK_fnc_syncData;";
+		icon = "032-cloud-sync.paa";
+		text = "Sync Data";
 	};
 	class PoliceVehicle
 	{
@@ -57,10 +57,17 @@ class cfgInteractions
 	};
 	class healPlayer
 	{
-		condition = "[isPlayer Harris_currentCursorObject, (playerSide == independent), damage Harris_currentCursorObject < 1, damage Harris_currentCursorObject > 0]";
+		condition = "[isPlayer Harris_currentCursorObject, (playerSide == independent || 'Harris_medKit' in items player), damage Harris_currentCursorObject < 1, damage Harris_currentCursorObject > 0]";
 		action = "[0,Harris_currentCursorObject] spawn life_fnc_healPerson";
 		icon = "020-hand.paa";
 		text = "Heal Player";
+	};
+	class healSelf
+	{
+		condition = "[damage Harris_currentCursorObject > 0, 'Harris_medKit' in items player]";
+		action = "[0,player] spawn life_fnc_healPerson";
+		icon = "020-hand.paa";
+		text = "Heal Self";
 	};
 	class Pullout
 	{
@@ -131,17 +138,17 @@ class cfgInteractions
 		};
 		class shackle 
 		{
-			condition = "[!(isforcedWalk Harris_currentCursorObject), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
+			condition = "[(animationState Harris_currentCursorObject != 'hubspectator_stand'), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
 			action = "[] remoteExecCall ['Harris_shackle', Harris_currentCursorObject]; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
 			icon = "015_handcuffs.paa";
 			text = "Shackle";
 		};
 		class unShackle 
 		{
-			condition = "[isforcedWalk Harris_currentCursorObject, isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
+			condition = "[(animationState Harris_currentCursorObject == 'hubspectator_stand'), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
 			action = "[] remoteExecCall ['Harris_shackle', Harris_currentCursorObject]; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
 			icon = "015_handcuffs.paa";
-			text = "unShackle";
+			text = "UnShackle";
 		};
 		class Unescort 
 		{

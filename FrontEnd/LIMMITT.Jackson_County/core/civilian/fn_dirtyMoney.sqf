@@ -1,5 +1,5 @@
 _cops = (west countSide playableUnits);
-if(_cops < 5) exitWith {["Insufficient Numbers", "You need atleast 8 cops online to sell dirty money...", "Info"] call Harris_Notifications;}; 
+if(_cops < 5) exitWith {["Insufficient Numbers", "You need atleast 5 cops online to sell dirty money...", "Info"] call Harris_Notifications;}; 
 
 _shop = dirtyMoneySign;
 _robber = player;
