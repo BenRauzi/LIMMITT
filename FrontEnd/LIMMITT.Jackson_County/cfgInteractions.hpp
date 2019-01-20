@@ -228,7 +228,7 @@ class cfgInteractions
 
 		class Arrest
 		{
-			condition = "[(Harris_currentCursorObject getVariable ['restrained', false]), isPlayer Harris_currentCursorObject, (player distance getMarkerPos 'A3L_jailMarker' < 50),playerside == west]";
+			condition = "[(Harris_currentCursorObject getVariable ['restrained', false]), isPlayer Harris_currentCursorObject, (player distance getMarkerPos 'Correctional_Facility_1' < 50),playerside == west]";
 			action = "[Harris_currentCursorObject] call fnc_arrestmenu;";
 			icon = "014_wanted.paa";
 			text = "Arrest";

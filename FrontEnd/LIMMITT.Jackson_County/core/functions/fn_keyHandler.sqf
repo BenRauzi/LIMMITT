@@ -74,27 +74,27 @@ switch (_code) do
 
 	case 32:
 	{
-		if ((player getVariable ["surrender", false]) && vehicle player != player) then {
+		if ((player getVariable ["surrender", false] || player getVariable ["Foski_RestrainedPos", "front"] == "back") && vehicle player != player) then {
 			_handled = true;
 		};
 	};
 
 	case 30:
 	{
-		if ((player getVariable ["surrender", false]) && vehicle player != player) then {
+		if ((player getVariable ["surrender", false] || player getVariable ["Foski_RestrainedPos", "front"] == "back") && vehicle player != player) then {
 			_handled = true;
 		};
 	};
 	case 203:
 	{
-		if ((player getVariable ["surrender", false]) && vehicle player != player) then {
+		if ((player getVariable ["surrender", false] || player getVariable ["Foski_RestrainedPos", "front"] == "back") && vehicle player != player) then {
 			_handled = true;
 		};
 	};
 
 	case 205:
 	{
-		if ((player getVariable ["surrender", false]) && vehicle player != player) then {
+		if ((player getVariable ["surrender", false] || player getVariable ["Foski_RestrainedPos", "front"] == "back") && vehicle player != player) then {
 			_handled = true;
 		};
 	};
@@ -575,7 +575,7 @@ switch (_code) do
 	};
 
 
-	// Nicholas Jo'Foski' Surrender (Shift + E)
+	// Nicholas Jo'Foski' Surrender (Shift + B)
 	case 48:
 	{
 		if(_shift) then {_handled = true;};

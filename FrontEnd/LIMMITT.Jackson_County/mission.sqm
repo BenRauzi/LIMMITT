@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3319.967,91.162308,7839.7544};
-		dir[]={-0.18102472,-0.35461861,-0.9173311};
-		up[]={-0.068656519,0.93500829,-0.34791282};
-		aside[]={-0.98108786,2.0954758e-009,0.19360609};
+		pos[]={8665.749,23.78776,7012.8237};
+		dir[]={-0.15442796,-0.40015659,0.90343779};
+		up[]={-0.067426644,0.91643834,0.39445764};
+		aside[]={0.98579556,-8.200841e-007,0.16850561};
 	};
 };
 binarizationWanted=0;
@@ -241,25 +241,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -291,6 +272,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
 				};
 			};
 		};
@@ -3788,7 +3788,6 @@ class Mission
 			};
 			id=3422;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.00026416779;
 		};
 		class Item270
 		{
@@ -3956,7 +3955,7 @@ class Mission
 			};
 			id=3435;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.052986145;
+			atlOffset=0.052583694;
 		};
 		class Item279
 		{
@@ -9138,13 +9137,14 @@ class Mission
 		class Item434
 		{
 			dataType="Marker";
-			position[]={9613.668,9.7810402,10074.096};
-			name="Correctional Facility_1";
-			text="Lakeside County Jail";
+			position[]={9614.248,9.7810059,10064.023};
+			name="Correctional_Facility_1";
+			text="Jackson County Jail";
 			type="A3L_Jail_Icon";
 			colorName="ColorBlue";
-			angle=356.5336;
+			angle=356.53397;
 			id=4423;
+			atlOffset=-3.4332275e-005;
 		};
 		class Item435
 		{
@@ -10689,7 +10689,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3319.6624,89.822769,7835.8237};
-				angles[]={-0,2.988168,0};
+				angles[]={0,2.988168,0};
 			};
 			side="Empty";
 			flags=4;
