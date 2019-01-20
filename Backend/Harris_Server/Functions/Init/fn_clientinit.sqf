@@ -172,7 +172,7 @@ LIMMITT_clientInit = {
 	[
 		["Refined Coal","Harris_coal", "", [["Harris_CoalOre",2, "Coal Ore"]], "Refine", 0.1, true],
 		["Iron Ingot","Harris_ironIngot", "", [["Harris_ironOre",2, "Iron Ore"]], "Refine", 0.1, true],
-		["Steel Ingot","Harris_ironIngot", "", [["Harris_ironOre",2, "Iron Ore"],["Harris_coalOre",4, "Coal Ore"]], "Refine", 0.2, true],
+		["Steel Ingot","Harris_steelIngot", "", [["Harris_ironOre",2, "Iron Ore"],["Harris_coalOre",4, "Coal Ore"]], "Refine", 0.2, true],
 		["Gold Bar","Harris_goldIngot", "", [["Harris_goldOre",2, "Gold Ore"]], "Refine", 0.3, true]
 	]; // Add Timber from Logs and Diamonds
 	Harris_smeltTypes = ["Refine"];
@@ -237,6 +237,21 @@ LIMMITT_clientInit = {
 		_bank animate ["Vault_Door",0]; 
 		_bank setVariable ['vaultUnlocked', false, true];
 		missionNamespace setVariable ["inRobbery", false, true];
+
+		{
+			_doors = getNumber(configFile >> "CfgVehicles" >> (typeOf _x) >> "numberOfDoors");
+
+			_housestoLock = ["Land_i_Garage_V1_F","Land_i_House_Big_01_V3_F","Land_i_House_Big_02_V3_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_02_V2_F","Land_i_Addon_02_V1_F","Land_i_House_Small_01_V1_F"];
+
+			if ((typeOf _x) in _housestoLock) then {
+				for "_i" from 1 to _doors do {
+					_x animate[format["door_%1_rot",_i],0];
+					_x setVariable[format["bis_disabled_Door_%1",_i],1,true];
+				};
+				_x setVariable["locked",true,true];
+			};
+		} forEach nearestObjects[[8642.21,7000.47,0.00143719], ["House_F"],5000];
+
 	};
 
 	player addEventHandler ["InventoryOpened", {_this call Harris_inventoryOpened}];
@@ -251,7 +266,7 @@ LIMMITT_clientInit = {
 		["Harris_ironIngot", 3000],
 		["Harris_goldIngot", 5000],
 		["Harris_diamond", 10000],
-		["Harris_weedBag", 3000]
+		["Harris_weedBag", 5000]
 	];
 
 	Harris_Shops = 

@@ -104,7 +104,7 @@ class cfgInteractions
 		};
 		class repairVehicle
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), player distance Harris_currentCursorObject < 10, damage Harris_currentCursorObject > 0, !isPlayer Harris_currentCursorObject, !(Harris_currentCursorObject isKindOf 'Man')]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), player distance Harris_currentCursorObject < 10, !isPlayer Harris_currentCursorObject, !(Harris_currentCursorObject isKindOf 'Man')]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_repairTruck;";
 			icon = "023-car-repair.paa";
 			text = "Repair";
@@ -167,7 +167,7 @@ class cfgInteractions
 	};
 	class searchPlayer 
 	{
-		action = ";";
+		action = "";
 		icon = "020-hand.paa";
 		text = "Search";
 		class PatDown

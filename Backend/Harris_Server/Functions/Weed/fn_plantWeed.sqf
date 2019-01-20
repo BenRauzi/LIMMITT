@@ -12,7 +12,7 @@ Harris_plantWeed = {
 	_plant = "JD_MJ" createVehicle getPosATL _ct;
 	_plant setPosAtl (getPosATL _ct);
 
-	_ct setVariable ["growingPlant", _plant, false];
+	_ct setVariable ["growingPlant", _plant, true];
 	_plant setVariable ["grownWeed", false, true];
 	_plant setVariable ["pot", _ct, true];
 

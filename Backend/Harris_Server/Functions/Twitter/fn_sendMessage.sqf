@@ -15,5 +15,5 @@ Harris_sendMessage = {
 	_text = ctrlText ((findDisplay 5002) displayCtrl 1400);
 	closeDialog 0;
 	if (count _text > 40 or count _text < 1) exitWith { ["Message Too Long", "This Message must be less than 40 characters", "Failure"] call Harris_Notifications; };
-	[name player, _text, colour] call Harris_addMessage;
+	[name player, _text, profileNamespace getVariable ['colour', nil]] call Harris_addMessage;
 };

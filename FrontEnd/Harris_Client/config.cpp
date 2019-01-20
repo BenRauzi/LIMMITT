@@ -1116,7 +1116,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "cl3_objects\cl3_objects_pack\cl_hemp_seeds.p3d";
-		picture = "Harris_Client\Crafting\seeds.paa";
+		picture = "\Harris_Client\Crafting\seeds.paa";
 		descriptionShort = "Weed Seeds";
 	};
 	class Harris_Toolbox: ToolKit
@@ -1132,8 +1132,24 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
-		picture = "Harris_Client\Crafting\Toolbox.paa";
+		picture = "\Harris_Client\Crafting\Toolbox.paa";
 		descriptionShort = "Can be used a repairkit to fix vehicles";
+	};
+	class Harris_medKit: ToolKit
+	{
+		displayName = "CPR Medkit";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 20;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
+		picture = "\Harris_Client\Crafting\Toolbox.paa";
+		descriptionShort = "CPR Medkit";
 	};
 	class Harris_handcuff: ToolKit
 	{
@@ -1148,7 +1164,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "cl3_objects\cl3_objects_pack\cl_handcuffs.p3d";
-		picture = "cl3_objects\cl3_objects_pack\icons\cl_handcuffs_icon.paa";
+		picture = "\cl3_objects\cl3_objects_pack\icons\cl_handcuffs_icon.paa";
 		descriptionShort = "A pair of handcuffs used to restrain people's hands";
 	};
 	class Harris_cuffkeys: ToolKit
@@ -1196,13 +1212,13 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_boxes\box_small.p3d";
-		picture = "Harris_Client\Crafting\Rope.paa";
+		picture = "\Harris_Client\Crafting\Rope.paa";
 		descriptionShort = "Rope";
 	};
 	class Harris_RDX : Toolkit {
 		displayName = "RDX Compound";
 		descriptionShort = "A modern compound used for controlled detonations.";
-		picture = "Harris_Client\Crafting\RDX.paa";
+		picture = "\Harris_Client\Crafting\RDX.paa";
 		model = "\a3l_boxes\box_small.p3d";
 		class ItemInfo
 		{

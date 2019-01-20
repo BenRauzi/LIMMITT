@@ -14,6 +14,10 @@ Harris_addMessage = {
 	disableSerialization;
 	params["_name","_message", "_colour"];
 
+	if (isNil "_colour") then {
+		_colour = "default";
+	};
+	
 	switch(_colour)do
 	{
 		case 'red':

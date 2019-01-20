@@ -15,7 +15,7 @@ Harris_removeFurniture = {
 		{
 			_item = "Harris_workBench";
 		};
-		case "JDPot":
+		case "JD_Pot":
 		{
 			_item = "Harris_Pot";
 
@@ -35,11 +35,4 @@ Harris_removeFurniture = {
 		_holder setPos (getpos Player);
 		_holder addItemCargoGlobal [_item, 1];
 	};
-};
-
-Harris_seizeWeed = {
-	params["_ct"];
-
-	_ct setVariable ['growingPlant', nil, true];
-	deleteVehicle (_ct getVariable 'growingPlant');
 };
