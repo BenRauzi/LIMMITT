@@ -6,6 +6,7 @@ Harris_sellItem = {
 	_item = lbData [38403, (lbCurSel 38403)];
 	if !(isNil "_item") then {
 
+		if (Harris_coolDown) exitWith {["Slow Down", "You cannot sell items that quickly", "Failure"] call Harris_Notifications; };
 		player removeItem _item;
 		_price = nil;
 		{
@@ -20,7 +21,7 @@ Harris_sellItem = {
 			[] call Harris_refreshShop;
 
 			[] spawn {
-				sleep 0.1;
+				sleep 0.01;
 				Harris_coolDown = false;
 			};
 		};

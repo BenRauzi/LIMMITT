@@ -16,7 +16,8 @@ Twitter_Functions =
   ["fn_addMessage", "Harris_addMessage"],
   ["fn_updateTwitter", "Harris_updateTwitter"],
   ["fn_openTwitterType", "Harris_openTwitterType"],
-  ["fn_sendMessage", "Harris_sendMessage"]
+  ["fn_sendMessage", "Harris_sendMessage"],
+  ["fn_setTwitterName", "Harris_setTwitterName"]
 ];
 
 TrafficLightsDir = "\Harris_Server\Functions\Traffic Lights\";
