@@ -396,7 +396,7 @@ class cfgInteractions
 
 	class plantWeed
 	{
-		condition = "[typeOf Harris_currentCursorObject isEqualTo 'Foski_WeedPot', player distance Harris_currentCursorObject < 5, (isNil {Harris_currentCursorObject getVariable 'growingPlant'}),'Harris_weedSeeds' in (items player)]";
+		condition = "[typeOf Harris_currentCursorObject isEqualTo 'JD_Pot', player distance Harris_currentCursorObject < 5, (isNil {Harris_currentCursorObject getVariable 'growingPlant'}),'Harris_weedSeeds' in (items player)]";
 		action = "[Harris_currentCursorObject] spawn Harris_plantWeed";
 		icon = "020-hand.paa";
 		text = "Plant Weed";
@@ -404,7 +404,7 @@ class cfgInteractions
 
 	class sizeWeed
 	{
-		condition = "[typeOf Harris_currentCursorObject isEqualTo 'Foski_WeedPot', player distance Harris_currentCursorObject < 5, !(isNil {Harris_currentCursorObject getVariable 'growingPlant'}), playerside == west]";
+		condition = "[typeOf Harris_currentCursorObject isEqualTo 'JD_Pot', player distance Harris_currentCursorObject < 5, !(isNil {Harris_currentCursorObject getVariable 'growingPlant'}), playerside == west]";
 		action = "[Harris_currentCursorObject] spawn Harris_seizeWeed";
 		icon = "033-upload.paa";
 		text = "Seize Weed";
