@@ -2,7 +2,6 @@
 	Author: Ben Harris
 	Description: Grows the Weed
 */
-Harris_growTime = 5;
 Harris_growWeed = {
 	params["_ct"];
 

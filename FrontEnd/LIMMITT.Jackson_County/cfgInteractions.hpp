@@ -64,7 +64,7 @@ class cfgInteractions
 	};
 	class healSelf
 	{
-		condition = "[damage Harris_currentCursorObject > 0, 'Harris_medKit' in items player]";
+		condition = "[damage player > 0, 'Harris_medKit' in items player]";
 		action = "[0,player] spawn life_fnc_healPerson";
 		icon = "020-hand.paa";
 		text = "Heal Self";
