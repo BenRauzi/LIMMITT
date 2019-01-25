@@ -40,6 +40,7 @@ Foski_playerRestrained ={
 			if !(currentWeapon player == "" || currentWeapon player isKindOf ["Pistol", configFile >> "CfgWeapons"]) then { // Changed to '! isKindOf "Pistol"' to stop bino's coming out as well
 				Holstlife_curWep_h = currentWeapon player;
 				player action ["SwitchWeapon", player, player, 100];
+				
 				player switchcamera cameraView;
 				[[player,"AmovPercMstpSnonWnonDnon"],"life_fnc_animSync",true,false] spawn bis_fnc_mp;
 				player switchMove "AmovPercMstpSnonWnonDnon";

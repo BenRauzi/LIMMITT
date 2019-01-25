@@ -11,5 +11,7 @@ Foski_playerUnRestrained ={
 		player playAction ("Foski_UnCuff_" + (player getVariable "Foski_RestrainedPos"));
 
 		player forceWalk false;;
+		player setVariable ["Foski_RestrainedPos",nil,true];
+
 	};
 };

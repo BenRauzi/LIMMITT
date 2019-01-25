@@ -50,7 +50,7 @@ class cfgInteractions
 	};
 	class revivePlayer
 	{
-		condition = "[cursorObject isKindOf 'Man', (playerSide == independent), !alive Harris_currentCursorObject]";
+		condition = "[cursorObject isKindOf 'Man', (playerSide == independent || Harris_medKit in 'items player'), !alive Harris_currentCursorObject]";
 		action = "[Harris_currentCursorObject] spawn life_fnc_revivePlayer;";
 		icon = "010_cpr.paa";
 		text = "Revive";
@@ -111,7 +111,7 @@ class cfgInteractions
 		};
 		class repairVehicle
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), player distance Harris_currentCursorObject < 10, !isPlayer Harris_currentCursorObject, !(Harris_currentCursorObject isKindOf 'Man')]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), player distance Harris_currentCursorObject < 10,!(Harris_currentCursorObject isKindOf 'Man')]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_repairTruck;";
 			icon = "023-car-repair.paa";
 			text = "Repair";
