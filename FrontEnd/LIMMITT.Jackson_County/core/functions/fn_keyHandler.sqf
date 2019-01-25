@@ -230,7 +230,7 @@ switch (_code) do
 	};
 
 	//Space key for Jumping
-	case 57:
+	/*case 57:
 	{
 		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
 		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
@@ -239,7 +239,7 @@ switch (_code) do
 			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call bis_fnc_mp; //Global execution 
 			_handled = true;
 		};
-	};
+	};*/
 
 
 	//Map Key
