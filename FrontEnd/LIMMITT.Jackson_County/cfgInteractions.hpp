@@ -50,7 +50,7 @@ class cfgInteractions
 	};
 	class revivePlayer
 	{
-		condition = "[cursorObject isKindOf 'Man', (playerSide == independent || Harris_medKit in 'items player'), !alive Harris_currentCursorObject]";
+		condition = "[cursorObject isKindOf 'Man', (playerSide == independent || 'Harris_medKit' in items player), !alive Harris_currentCursorObject]";
 		action = "[Harris_currentCursorObject] spawn life_fnc_revivePlayer;";
 		icon = "010_cpr.paa";
 		text = "Revive";
