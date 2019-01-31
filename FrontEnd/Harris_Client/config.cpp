@@ -44,6 +44,12 @@ class CfgFontFamilies
 		spaceWidth = 0.1;
 		spacing = 0.1;
 	};
+	class ProximaNovaRg
+	{
+		fonts[] = {"Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg10","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg10","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg10","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg10","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg10","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg11","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg12","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg13","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg14","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg15","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg16","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg17","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg18","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg19","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg20","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg21","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg22","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg23","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg24","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg25","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg26","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg27","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg28","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg29","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg30","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg31","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg34","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg35","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg37","Harris_Client\fonts\ProximaNovaRg\ProximaNovaRg46"};
+		spaceWidth = 0.2;
+		spacing = 0.1;
+	};
 };
 
 

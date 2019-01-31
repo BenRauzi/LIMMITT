@@ -52,14 +52,30 @@ switch(_shop) do
         };
 
 
-
+		case "civ_lsmo":
+        {
+                switch(true) do
+                {
+                        case (playerSide != civilian): {"You are not a civ!"};
+                        case (!license_civ_lsmo): {"You are not a LSMO security officer."};
+                        default
+                        {
+                                ["Lakeside Security Detail Store                                                                                                                                                                                                ",
+                                        [
+                                                ["RH_Deagleg",nil,40000],
+                                                ["RH_7Rnd_50_AE",nil,50]
+                                        ]
+                                ];
+                        };
+                };
+        };
 
 
         case "cop_basic":
         {
                 switch(true) do
                 {
-                        case (playerSide != west): {"You are not a cop!"};
+                        case (playerSide != west): {"You are not in the JCSO!"};
                         default
                         {
                                 ["Patrol Gear Shop",
@@ -81,34 +97,15 @@ switch(_shop) do
                         };
                 };
         };
-
-        case "civ_lsmo":
-        {
-                switch(true) do
-                {
-                        case (playerSide != civilian): {"You are not a civ!"};
-                        case (!license_civ_lsmo): {"You are not a LSMO security officer."};
-                        default
-                        {
-                                ["Lakeside Security Detail Store                                                                                                                                                                                                ",
-                                        [
-                                                ["RH_Deagleg",nil,40000],
-                                                ["RH_7Rnd_50_AE",nil,50]
-                                        ]
-                                ];
-                        };
-                };
-        };
-        ///////////////////////////////////////////////////////////////////////////////////////////
         case "recruit":
         {
                 switch(true) do
                 {
-                        case (playerSide != west): {"You are not a officer!"};
+                        case (playerSide != west): {"You are not in the JCSO!"};
                         case (__GETC__(life_coplevel) < 1): {"You are not a Cadet!"};
                         default
                         {
-                                ["Recuit Shop",
+                                ["Cadet Shop",
                                         [
                                             //Taser
                                             ["JD_Taser",nil,500],
@@ -116,6 +113,9 @@ switch(_shop) do
                                             //sidearm
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100]
+                                            //Accessories
+											["RH_X300",nil,100],
+                                            ["RH_M6X",nil,100]
                                         ]
                                 ];
                         };
@@ -125,11 +125,11 @@ switch(_shop) do
         {
                 switch(true) do
                 {
-                        case (playerSide != west): {"You are not a Officer!"};
-                        case (__GETC__(life_coplevel) < 2): {"You are not a Officer!"};
+                        case (playerSide != west): {"You are not in the JCSO!"};
+                        case (__GETC__(life_coplevel) < 3): {"You are not a Deputy!"};
                         default
                         {
-                                ["Officer Shop",
+                                ["Deputy Shop",
                                         [
                                             //Taser
                                             ["JD_Taser",nil,500],
@@ -138,22 +138,23 @@ switch(_shop) do
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100],
                                             //Primary
-                                            ["CUP_arifle_M16A4_Base",nil,1500],
-                                            ["30Rnd_556x45_Stanag",nil,100],
+                                            ["hlc_rifle_M4",nil,1500],
+                                            ["hlc_30rnd_556x45_EPR",nil,100],
                                             //Accessories
-											["RH_eotech553",nil,100],
-                                            ["FHQ_optic_AC11704",nil,100]
-                                        ]
+											["RH_barska_rds",nil,100],
+                                            ["optic_Hamr",nil,100]
+                                            ["RH_SFM952V",nil,100]
+                                            ["RH_X300",nil,100]
                                 ];
                         };
                 };
         };
-         case "cop_corporal":
+        case "cop_corporal":
         {
                 switch(true) do
                 {
-                        case (playerSide != west): {"You are not a officer!"};
-                        case (__GETC__(life_coplevel) < 3): {"You are not a Corporal!"};
+                        case (playerSide != west): {"You are not in the JCSO!"};
+                        case (__GETC__(life_coplevel) < 4): {"You are not a Corporal!"};
                         default
                         {
                                 ["Corporal Shop",
@@ -165,14 +166,15 @@ switch(_shop) do
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100],
                                             //Primary
-                                            ["hlc_smg_mp5a4",nil,1500],
-                                            ["hlc_30Rnd_9x19_B_MP5",nil,100],
-                                            ["hlc_rifle_M4",nil,2500],
-                                            ["hlc_30rnd_556x45_EPR",nil,1250],
+                                            ["hlc_rifle_M4",nil,1500],
+                                            ["hlc_30rnd_556x45_EPR",nil,100],
                                             //Accessories
-                                            ["FHQ_optic_AC11704",nil,100]
-
-
+											["RH_barska_rds",nil,100],
+                                            ["optic_Hamr",nil,100]
+                                            ["SMA_eotech552",nil,100]
+                                            ["RH_compM2",nil,100]
+                                            ["RH_SFM952V",nil,100]
+                                            ["RH_X300",nil,100]
                                         ]
                                 ];
                         };
@@ -182,8 +184,8 @@ switch(_shop) do
         {
                 switch(true) do
                 {
-                        case (playerSide != west): {"You are not a officer!"};
-                        case (__GETC__(life_coplevel) < 4): {"You are not a Sergeant!"};
+                        case (playerSide != west): {"You are not in the JCSO!"};
+                        case (__GETC__(life_coplevel) < 5): {"You are not a Sergeant!"};
                         default
                         {
                                 ["Sergeant Shop",
@@ -194,18 +196,78 @@ switch(_shop) do
                                             //Sidearm
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100],
+                                            ["RH_p226",nil,1000],
+                                            ["RH_15Rnd_9x19_SIG",nil,100],
                                             //Primary
-                                            ["hlc_smg_mp5a4",nil,1500],
-                                            ["hlc_30Rnd_9x19_B_MP5",nil,100],
-                                            ["RH_M16A4",nil,2000],
-                                            ["30Rnd_556x45_Stanag",nil,200],
-                                            ["hlc_rifle_M4",nil,2500],
-                                            ["hlc_30rnd_556x45_EPR",nil,300],
+                                            ["hlc_rifle_M4",nil,1500],
+                                            ["hlc_30rnd_556x45_EPR",nil,100],
+                                            ["hlc_rifle_416D10_RAHG_x15",nil,1500],
+                                            ["hlc_30rnd_556x45_EPR",nil,100],
                                             //Accessories
-                                            ["FHQ_optic_AC11704",nil,100],
-                                            ["RH_compM2",nil,300],
-                                            ["RH_ta31rmr",nil,100],
-                                            ["optic_Arco",nil,100]
+											["RH_barska_rds",nil,100],
+                                            ["optic_Hamr",nil,100]
+                                            ["SMA_eotech552",nil,100]
+                                            ["RH_eotech553mag",nil,100]
+                                            ["RH_SFM952V",nil,100]
+                                            ["RH_X300",nil,100]
+                                            ["RH_M6X",nil,100]
+                                        ]
+                                ];
+                        };
+                };
+        };
+
+		case "cop_r1":
+        {
+                switch(true) do
+                {
+                        case (playerSide != west): {"You are not in the JCSO!"};
+                        case (__GETC__(life_coplevel) < 5): {" You are not Part of DTU!"};
+                        default
+                        {
+                                ["DTU Armoury",
+                                        [
+                                            //Taser
+                                            ["JD_Taser",nil,500],
+                                            ["Taser_mag",nil,100],
+                                            //Sidearm
+                                            ["RH_kimber_nw",nil,1000],
+                                            ["",nil,100],
+                                            ["RH_g18",nil,1000],
+                                            ["",nil,100],
+                                            ["RH_tec9",nil,1000],
+                                            ["",nil,100],
+                                            ["RH_p226",nil,1000],
+                                            ["",nil,100],
+                                            ["RH_usp",nil,1000],
+                                            ["",nil,100],
+                                            //Primary
+                                            ["RH_ar10",nil,1500],
+                                            ["RH_20Rnd_762x51_AR10",nil,100],
+                                            ["hlc_rifle_CQBR",nil,1500],
+                                            ["hlc_30rnd_556x45_EPR",nil,100],
+                                            ["RH_PDW",nil,1500],
+                                            ["RH_30Rnd_6x35_mag",nil,100],
+                                            ["SMA_MK18afgBLK",nil,1500],
+                                            ["SMA_30Rnd_556x45_M855A1",nil,100],
+                                            ["SMA_AAC_MPW_12_Black",nil,1500],
+                                            ["SMA_30Rnd_762x35_BLK_EPR",nil,100],
+                                            ["arifle_AKM_F",nil,1500],
+                                            ["30Rnd_762x39_Mag_F",nil,100],
+                                            ["SMA_M4MOE",nil,1500],
+                                            ["SMA_30Rnd_556x45_M855A1",nil,100],
+                                            //Accessories
+											["RH_Delft",nil,100],
+                                            ["RH_barska_rds",nil,100]
+                                            ["optic_Hamr",nil,100]
+                                            ["SMA_eotech552",nil,100]
+                                            ["RH_eotech553mag",nil,100]
+                                            ["RH_pdwsd",nil,100]
+                                            ["RH_ta31rmr",nil,100]
+                                            ["RH_compM2",nil,100]
+                                            ["RH_SFM952V",nil,100]
+                                            ["RH_X300",nil,100]
+                                            ["RH_M6X",nil,100]
                                         ]
                                 ];
                         };
@@ -216,90 +278,55 @@ switch(_shop) do
         {
                 switch(true) do
                 {
-                        case (playerSide != west): {"You are not a cop!"};
-                        case (__GETC__(life_coplevel) < 5): {" You are not Part of SWAT!"};
+                        case (playerSide != west): {"You are not in the JCSO!"};
+                        case (__GETC__(life_coplevel) < 6): {" You are not Part of SERT!"};
                         default
                         {
-                                ["SWAT Armoury",
+                                ["SERT Armoury",
                                         [
                                             //Taser
                                             ["JD_Taser",nil,500],
                                             ["Taser_mag",nil,100],
-                                            //MK16
-                                            ["CUP_arifle_Mk16_STD_FG_black",nil,3000],
-                                            ["CUP_30Rnd_556x45_Stanag",nil,100],
-											//AUGA3
-                                            ["hlc_rifle_auga3_b",nil,3000],
-                                            ["hlc_30Rnd_556x45_B_AUG",nil,100],
-											//L119A1 CQB
-                                            ["arifle_mas_l119c",nil,3000],
-                                            ["30Rnd_mas_556x45_Stanag",nil,100],
-											//M4 RIS 
-                                            ["RH_M4A1_ris",nil,3000],
-                                            ["30Rnd_556x45_Stanag",nil,100],
-											//HK416c
-                                            ["arifle_mas_hk416c",nil,3000],
-                                            ["30Rnd_mas_556x45_Stanag",nil,100],
-											//Bushmaster .300
-                                            ["hlc_rifle_Bushmaster300",nil,3000],
+                                            //Sidearm
+                                            ["CSW_FN57_Ballistic_Shield",nil,1000],
+                                            ["CSW_20Rnd_57x28_SS190",nil,100],
+                                            ["RH_usp",nil,1000],
+                                            ["RH_12Rnd_45cal_usp",nil,100],
+                                            ["RH_p226",nil,1000],
+                                            ["RH_15Rnd_9x19_SIG",nil,100],
+                                            //Primary
+                                            ["hlc_rifle_RU5562",nil,1500],
+                                            ["hlc_30rnd_556x45_EPR",nil,100],
+                                            ["hlc_rifle_RU556",nil,1500],
                                             ["29rnd_300BLK_STANAG",nil,100],
-											//BallisticShield
-                                            ["CUP_hgun_BallisticShield_Armed",nil,3000],
-                                            ["CUP_15Rnd_9x19_M9",nil,100],
-											//M4C
-                                            ["arifle_mas_m4c",nil,3000],
-                                            ["30Rnd_mas_556x45_Stanag",nil,100],
-											//M24
-                                            ["FHQ_srifle_M2010_BLK",nil,3000],
-                                            ["FHQ_rem_5Rnd_300Win_M2010",nil,100],
-											//LRR
-                                            ["srifle_mas_lrr",nil,3000],
-                                            ["10Rnd_mas_338_Stanag",nil,100],
-											//SR-25
-                                            ["srifle_mas_sr25",nil,3000],
-                                            ["20Rnd_mas_762x51_Stanag",nil,100],
-											//HK417
-                                            ["srifle_mas_hk417",nil,3000],
-                                            ["20Rnd_mas_762x51_Stanag",nil,100],
-                                            //Sidearms
-                                            ["RH_bullb",nil,1500],
-                                            ["RH_6Rnd_454_Mag",nil,500],
-                                            ["RH_p226",nil,1500],
-                                            ["RH_15Rnd_9x19_SIG",nil,500],
-                                            ["RH_usp",nil,1500],
-                                            ["RH_12Rnd_45cal_usp",nil,500],
-                                            ["RH_g19",nil,1000],
-                                            ["RH_17Rnd_9x19_g17",nil,100],
+                                            ["hlc_rifle_bcmblackjack",nil,1500],
+                                            ["hlc_30Rnd_10mm_B_MP5",nil,100],
+                                            ["hlc_rifle_416D10_RAHG_x15_grip2",nil,1500],
+                                            ["30Rnd_556x45_Stanag",nil,100],
+                                            ["hlc_smg_mp510",nil,1500],
+                                            ["SMA_30Rnd_68x43_SPC_FMJ",nil,100],
+                                            ["SMA_ACRREMblk",nil,1500],
+                                            ["SMA_30Rnd_556x45_M855A1",nil,100],
+                                            ["RH_M16A4_m",nil,1500],
+                                            ["RH_30Rnd_556x45_Mk262",nil,100],
+                                            ["SMA_M4afg_SM",nil,1500],
+                                            ["SMA_30Rnd_556x45_M855A1",nil,100],
+                                            ["RH_Mk12mod1",nil,1500],
+                                            ["",nil,100],
+                                            ["SMA_Mk16_blackQCB",nil,1500],
+                                            ["",nil,100],
                                             //Accessories
-                                            ["RH_shortdot",nil,300],
-                                            ["RH_qdss_nt4",nil,300],
-                                            ["optic_SOS",nil,300],
-                                            ["optic_MRCO",nil,300],
-                                            ["optic_mas_acog",nil,300],
-                                            ["RH_ta31rmr",nil,300],
-                                            ["optic_mas_Holosight_blk",nil,300],
-                                            ["RH_eotech553",nil,300],
-                                            ["RH_eotech553mag",nil,300],
-                                            ["RH_compM2l",nil,300],
-                                            ["optic_mas_aim",nil,300],
-                                            ["FHQ_optic_AC12136",nil,200],
-                                            ["RH_peq15b",nil,300],
-                                            ["RH_X300",nil,1000],
-                                            ["acc_flashlight",nil,300],
-                                            ["RH_qdss_nt4",nil,300],
-                                            ["RH_SFM952V",nil,300],
-                                            ["FHQ_optic_AIM",nil,300],
-                                            ["optic_LRPS",nil,300],
-                                            ["optic_Hamr",nil,300],
-                                            ["optic_DMS",nil,300],
-                                            ["RH_saker",nil,300],
-                                            ["RH_ta648",nil,300],
-                                            ["RH_barska_rds",nil,300],
-                                            ["bipod_01_F_blk",nil,300],
-                                            //Misc
-                                            ["Rangefinder",nil,2000],
-                                            ["SmokeShellYellow","Tear Gas",1250],
-                                            ["HandGrenade_Stone","Flashbang",1250]
+											["",nil,100],
+                                            ["",nil,100]
+                                            ["",nil,100]
+                                            ["",nil,100]
+                                            ["",nil,100]
+                                            ["",nil,100]
+                                            ["",nil,100]
+                                            ["",nil,100]
+                                            ["",nil,100]
+                                            ["",nil,100]
+                                            ["",nil,100]
                                         ]
                                 ];
                         };
@@ -309,7 +336,7 @@ switch(_shop) do
         {
                 switch(true) do
                 {
-                        case (playerSide != west): {"You are not a officer!"};
+                        case (playerSide != west): {"You are not in the JCSO!"};
                         case (__GETC__(life_coplevel) < 6): {"You are not a Lieutenant!"};
                         default
                         {
@@ -340,7 +367,7 @@ switch(_shop) do
         {
                 switch(true) do
                 {
-                        case (playerSide != west): {"You are not a officer!"};
+                        case (playerSide != west): {"You are not in the JCSO!"};
                         case (__GETC__(life_coplevel) < 6): {"You are not a Captain!"};
                         default
                         {
@@ -376,7 +403,7 @@ switch(_shop) do
         {
                 switch(true) do
                 {
-                        case (playerSide != west): {"You are not a cop!"};
+                        case (playerSide != west): {"You are not in the JCSO!"};
                         case (__GETC__(life_coplevel) < 7): {"You are not a part of State Command!"};
                         default
                         {
