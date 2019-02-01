@@ -787,7 +787,7 @@ class Harris_twitterType
 };
 
 
-class CfgSounds
+class cfgSounds
 {
 	sounds[] = {};
 	class buyCar
@@ -795,6 +795,54 @@ class CfgSounds
 		name = "buyCar";
 		sound[] = {"Harris_Client\sounds\buyCar.ogg", 1, 1};
 		titles[] = {};
+	};
+	class iphone_ringtone
+	{
+		name="Original iPhone Ringtone";
+		sound[]={"\Harris_Client\Sounds\originaliphone.ogg",1,1};
+		titles[]={};
+	};
+	class chimba_ringtone
+	{
+		name="Chimba Ringtone";
+		sound[]= { "\Harris_Client\Sounds\chimba.ogg", 1, 1 };
+		titles[]={};
+	};
+	class hoc_ringtone
+	{
+		name="House of Cards Ringtone";
+		sound[]= { "\Harris_Client\Sounds\houseofcards.ogg", 1, 1 };
+		titles[]={};
+	};
+	class marimba2_ringtone
+	{
+		name="Relaxing Marimba Ringtone";
+		sound[]= { "\Harris_Client\Sounds\relaxingmarimba.ogg", 1, 1 };
+		titles[]={};
+	};
+	class unavailable_tone
+	{
+		name="Unavailable Person";
+		sound[]= { "\Harris_Client\Sounds\unavailableperson.ogg", 1, 1 };
+		titles[]={};
+	};
+	class notinservice_tone
+	{
+		name="Number not in service";
+		sound[]= { "\Harris_Client\Sounds\notinservice.ogg", 1, 1 };
+		titles[]={};
+	};
+	class dialing_tone
+	{
+		name="Dialing Tone";
+		sound[]= { "\Harris_Client\Sounds\dialing.ogg", 1, 1 };
+		titles[]={};
+	};
+	class message1_tone
+	{
+		name="New Message Tone 1";
+		sound[]= { "\Harris_Client\Sounds\newmessage1.ogg", 1, 1 };
+		titles[]={};
 	};
 	class endbeep
 	{
