@@ -1,15 +1,34 @@
+Harris_Messages = [];
+Harris_callNumber = [];
 
-profileNameSpace setVariable ["contactList",[["Test","Ben Harris"]]];
-Harris_Messages = [["Test", "123456789012345"],["Test", "12345678901"],["Test2", "12345678901"],["Test3", "12345678901"], ["Test4", "12345678901"], ["Test5", "12345678901"], ["Test6", "12345678901"]];
-
+Harris_twitterColours = 
+[
+	["Default", "default",true],
+	["Red","Red",false],
+	["Blue","Blue",false],
+	["Gold","Gold",false],
+	["Green","Green",false]
+];
 
 Harris_openPhone = {
+		if !(isNil "Harris_inCurrentCall") exitWith { [] call Harris_openPhoneInCall; };
+		if !(isNil "Harris_receivingCall") exitWith { [] call Harris_openPhoneInCalling; };
+		if !(isNil "Harris_Calling") exitWith { [] call Harris_openPhoneWhileCalling; };
+
 		createDialog "Harris_Phone_mainScreen";
+};
 
-		_id = profileNameSpace getVariable ["backGround",4];
+Harris_phoneOpened = {
+	waitUntil {!isNull (findDisplay 5000)};
+	_id = profileNameSpace getVariable ["backGround",4];
 
-		_background = format ["\Harris_Client\Phone\background%1.paa", _id];
-		ctrlSetText [7565, _backGround];
+	if (_id in [1,2,3,4,5,7,8,11]) then {
+		ctrlSetText [1202, "Harris_Client\Phone\iconsw.paa"]
+	};
+
+	_background = format ["\Harris_Client\Phone\background%1.paa", _id];
+	ctrlSetText [7565, _backGround];
+	
 };
 
 Harris_setBackground = {
@@ -51,7 +70,18 @@ Harris_listContacts = {
 	_vars = ["","","","","",""];
 
 	_contacts = profileNameSpace getVariable ["contactList",[]];
-	_yourNumber = profileNamespace getVariable ["yourNumber", 1];
+	_yourNumber = profileNamespace getVariable "yourNumber";
+
+	_t = false;
+	{
+		if ((_contacts select 0) select 0 == _yourNumber) then {
+			_t = true;
+		};
+	} forEach _contacts;
+
+	if !(_t) then {
+		_contacts append [[_yourNumber, "Your Number"]];
+	};
 
 	//_yourNumber = [_yourNumber] call Harris_phoneNumberText;
 
@@ -59,7 +89,6 @@ Harris_listContacts = {
 
 	Harris_contactsList = [];
 	Harris_contactsVar = call compile (str _contacts);
-
 	{
 		if (count Harris_contactsVar < 6) then {
 			Harris_contactsVar pushBack _x;
@@ -356,8 +385,8 @@ Harris_listMessages = {
 
 
 
-			_caller = _x select 0;
-			_message = _x select 1;
+			_caller = _x select 1;
+			_message = _x select 0;
 
 			if (count _message < 14) then {
 				_message = _message + "...";
@@ -496,7 +525,7 @@ Harris_openSendMessageContact = {
 
 
 Harris_textPlayer = {
-	if !(isNull (findDisplay 5013)) then {
+	if (isNull (findDisplay 5013)) then {
 		Harris_numberToCall = ctrlText 1400;
 	};
 	
@@ -508,7 +537,6 @@ Harris_textPlayer = {
 	_callerID = profileNameSpace getVariable "yourNumber";
 
 	_messageToSend = [_message, _callerID];
-	Harris_playerToCall = false;
 
 
 	if !(Harris_numberToCall in (missionNamespace getVariable ["cellNumbers", []])) exitWith  { playSound "notinservice_tone"; ["Invalid CallerID", "This Cell Phone Number is not in service", "Failure"] spawn Harris_Notifications; };
@@ -547,6 +575,15 @@ if (isNil {profileNameSpace getVariable "yourNumber"}) then {
 arr pushBackUnique (profileNameSpace getVariable "yourNumber");
 missionNamespace setVariable ["cellNumbers", arr];
 
+Harris_ringTones = 
+[
+	["Classic iPhone", "iphone_ringtone", 3],
+	["Chimba", "chimba_ringtone", 3],
+	["House of Cards", "hoc_ringtone", 3],
+	["Marimba", "marimba2_ringtone", 3]
+];
+
+
 //
 
 Harris_receiveText = {
@@ -560,3 +597,609 @@ Harris_receiveText = {
 	};
 };
 
+
+
+Harris_Dial = {
+	params["_number"];
+
+	Harris_callNumber pushBack _number;
+
+	Harris_numberToCall = Harris_callNumber joinString "";		
+
+	ctrlSetText [1600, Harris_numberToCall];
+};
+
+Harris_clearDial = {
+	Harris_callNumber = [];
+
+	Harris_numberToCall = "";
+	ctrlSetText [1600, ""];
+};
+
+
+
+Harris_phoneCall = {
+	if (!isNil "Harris_Calling") exitWith { ["Error","You are already in a call", "Failure"] spawn Harris_Notifications;};
+
+	Harris_Calling = true;
+	_value = false;
+
+
+	if !(_value) exitWith { [] spawn { for "_i" from 0 to 2 do { playSound "dialing_tone"; sleep 3;	}; playSound "notinservice_tone"; ["Invalid CallerID", "This Cell Phone Number is Invalid", "Failure"] spawn Harris_Notifications; Harris_Calling = nil; }; };
+	if (Harris_numberToCall isEqualTo (profileNameSpace getVariable "yourNumber")) exitWith { ["Failed", "You cannot call yourself", "Failure"] spawn Harris_Notifications; Harris_Calling = nil; };
+	
+	//if (Harris_playerToCall getVariable "inCurrentCall") exitWith { ["Failure","This person is already in a call", "Failure"] spawn Harris_Notifications; Harris_Calling = nil; };
+	//if (damage Harris_playerToCall >= 1) exitWith { [] spawn { for "_i" from 0 to 2 do { playSound "dialing_tone"; sleep 3;	}; playSound "unavailable_tone"; ["Invalid CallerID", "This Cell Phone Number is Unavailable", "Failure"] spawn Harris_Notifications; Harris_Calling = false; }; };
+
+
+	_callFreq = str (round (random 10000));
+
+	_cellNumber = profileNamespace getVariable "yourNumber";
+	if (player getVariable "anonymousCalling") then {
+		_cellNumber = "Anonymous Caller ID";
+	};
+
+	[_callFreq, _cellNumber, player, Harris_numberToCall] remoteExecCall ["Harris_receiveCall", 0];
+
+	Harris_inCall = "Calling";
+	[] spawn { 
+		while {true} do 
+		{
+			if (Harris_inCall isEqualTo "Declined") exitWith { Harris_inCall = nil; };
+			if (Harris_inCall isEqualTo "Accepted") exitWith { Harris_inCall = nil; };
+			if (Harris_inCall isEqualTo "Cancelled") exitWith { Harris_inCall = nil; };
+			if (Harris_inCall isEqualTo "Blocked") exitWith { sleep 3; playSound "unavailable_tone"; Harris_inCall = nil; };
+			playSound "dialing_tone";
+			sleep 3;
+		};
+	};
+
+	[] call Harris_openPhoneWhileCalling;
+};
+
+
+Harris_receiveCall = {
+	params["_callFreq", "_callerID", "_caller", "_id"];
+
+	if (_id == profileNamespace getVariable "yourNumber") then {
+	
+		if !(isNil {profileNamespace getVariable 'blockingCalls'}) exitWith { [] remoteExecCall ["Harris_blockedCall", _caller]; };
+
+
+		Harris_receivingCall = true;
+
+		Harris_Caller = _caller;
+		Harris_CallerID = _callerID;
+		Harris_CallerFreq = _callFreq;
+
+
+		{
+			if (_callerID == _x select 0) then {
+				_callerID = _x select 1;
+			}
+		} forEach (profileNamespace getVariable ["contactList", []]);
+
+		systemChat format ["You are Getting a Call From %1", _callerID];
+		
+
+		//{
+			//if (_ringTone isEqualTo (_x select 1)) then{
+			//	_ringSleepTime = _x select 2;
+			//};
+		//} forEach Harris_ringTones;
+		
+
+		[] spawn {
+			_ringTone = profileNamespace getVariable ["ringTone", "iphone_ringtone"];
+			_ringSleepTime = 2.9;
+			while {true} do
+			{
+		 		if (isNil "Harris_receivingCall") exitWith {};
+		 		playSound _ringTone;
+		 		sleep _ringSleepTime;
+			};
+		};
+	};
+};
+
+Harris_blockedCall = {
+	Harris_Calling = false;
+	closeDialog 5011;
+	Harris_inCall = "Blocked";
+};
+
+
+
+Harris_openPhoneWhileCalling = {
+	if (!isNull (findDisplay 5011)) exitWith {};
+	createDialog "Harris_Phone_outgoingCall";
+
+	_callerID = Harris_numberToCall;
+		{
+			if (_callerID == _x select 0) then {
+				_callerID = _x select 1;
+			}
+		} forEach (profileNamespace getVariable ["contactList", []]);
+
+	if (_callerID == Harris_numberToCall) then {
+		_number = [_callerID] call Harris_phoneNumberText;
+	};
+	ctrlSetText [1400, _number];
+};
+
+
+Harris_openPhoneInCalling = {
+	if (!isNull (findDisplay 5010)) exitWith {};
+	createDialog "Harris_Phone_inComingCall";
+
+	_callerID = Harris_CallerID;
+		{
+			if (_callerID == _x select 0) then {
+				_callerID = _x select 1;
+			}
+		} forEach (profileNamespace getVariable ["contactList", []]);
+
+	if (_callerID == Harris_numberToCall && !(_callerID == "Anonymous Caller ID")) then {
+		_callerID = [_callerID] call Harris_phoneNumberText;
+	};
+
+	ctrlSetText [1400, _callerID];
+};
+
+
+Harris_declineCall = {
+	[] remoteExecCall ["HarriS_declinedCall", Harris_Caller];	
+	Harris_receivingCall = nil;
+};
+
+Harris_declinedCall = {
+	Harris_Calling = nil;
+	closeDialog 5011;
+	Harris_inCall = "Declined";
+	["Call Declined", "You call has been Declined", "Info"] spawn Harris_Notifications;
+};
+
+
+Harris_acceptCall = {
+
+	Harris_oldFrequency = [(call TFAR_fnc_activeSwRadio), 1] call TFAR_fnc_GetChannelFrequency;
+	if ("tf_anprc152" in (assignedItems player)) then {
+		player unassignItem "tf_anprc152";
+		
+		if !("RR_CellPhone" in items player) then {
+			player addItem "RR_CellPhone";
+		};
+			player assignItem "RR_CellPhone";
+		Harris_hadRadio = true;
+	};
+
+	[(call TFAR_fnc_activeSwRadio), 1, Harris_CallerFreq] call TFAR_fnc_SetChannelFrequency;
+
+	[Harris_CallerFreq, (profileNamespace getVariable "yourNumber"), player] remoteExecCall ["Harris_acceptedCall", Harris_Caller];
+	Harris_inCurrentCall = true;
+	Harris_receivingCall = nil;
+
+	[] call Harris_openPhoneInCall;
+};
+
+
+Harris_acceptedCall = {
+	params["_freq", "_callerID", "_caller"];
+
+	Harris_Calling = nil;
+	closeDialog 5011;
+	createDialog "Harris_Phone_inCall";
+	Harris_Caller = _caller;
+	Harris_CallerID = _callerID;
+
+	Harris_inCall = "Accepted";
+
+	Harris_oldFrequency = [(call TFAR_fnc_activeSwRadio), 1] call TFAR_fnc_GetChannelFrequency;
+	if ("tf_anprc152" in (assignedItems player)) then {
+		player unassignItem "tf_anprc152";
+		
+		if !("RR_CellPhone" in items player) then {
+			player addItem "RR_CellPhone";
+		};
+		player assignItem "RR_CellPhone";
+		Harris_hadRadio = true;
+	};
+	
+
+	[(call TFAR_fnc_activeSwRadio), 1, _freq] call TFAR_fnc_SetChannelFrequency;
+	Harris_inCurrentCall = true;
+
+	
+
+	_callerID = Harris_CallerID;
+		{
+			if (_callerID == _x select 0) then {
+				_callerID = _x select 1;
+			}
+		} forEach (profileNamespace getVariable ["contactList", []]);
+
+	if (_callerID == Harris_numberToCall &&  !(_callerID == "Anonymous Caller ID")) then {
+		_callerID = [_callerID] call Harris_phoneNumberText;
+	};
+
+	ctrlSetText [1601, _callerID];
+
+	["Call Accepted", "You call has been Accepted", true] spawn Harris_Notifications; 
+};
+
+Harris_openPhoneInCall = {
+	createDialog "Harris_Phone_inCall";
+
+	
+	_callerID = Harris_CallerID;
+		{
+			if (_callerID == _x select 0) then {
+				_callerID = _x select 1;
+			}
+		} forEach (profileNamespace getVariable ["contactList", []]);
+
+	if (_callerID == Harris_numberToCall && !(_callerID == "Anonymous Caller ID")) then {
+		_callerID = [_callerID] call Harris_phoneNumberText;
+	};
+
+	ctrlSetText [1601, _callerID];
+};
+
+
+Harris_hangUp = {
+
+	if ("tf_anprc152" in (items player) && Harris_hadRadio) then {
+		player unassignItem "Harris_CellPhone";
+		player assignItem "tf_anprc152";
+		Harris_hadRadio = nil;
+	};
+
+	[] remoteExecCall ["Harris_hungUp", Harris_Caller];
+	
+	[(call TFAR_fnc_activeSwRadio), 1, Harris_oldFrequency] call TFAR_fnc_SetChannelFrequency;
+	Harris_inCurrentCall = nil;
+	Harris_Calling = nil;
+};
+
+Harris_hungUp = {
+	
+	if ("tf_anprc152" in (items player) && Harris_hadRadio) then {
+		player unassignItem "RR_CellPhone";
+		player assignItem "tf_anprc152";
+		Harris_hadRadio = nil;
+	};
+
+	[(call TFAR_fnc_activeSwRadio), 1, Harris_oldFrequency] call TFAR_fnc_SetChannelFrequency;
+	["Hung Up", "You have been hung up on", "Info"] spawn Harris_Notifications;
+	Harris_inCurrentCall = nil;
+	Harris_Calling = nil;
+
+	if (!isNull (findDisplay 5020)) then {
+		closeDialog 5020;
+	};
+};
+
+
+// Todo Keyhandler
+
+
+
+
+Harris_cancelCall = {
+	Harris_inCall = "Cancelled";
+	Harris_Calling = nil;
+	[Harris_numberToCall] remoteExecCall ["Harris_canceledCall", 0];
+};
+
+
+Harris_canceledCall = {
+	params["_id"];
+
+	if (_id == profileNamespace getVariable "yourNumber") then {
+		Harris_receivingCall = nil;
+
+		if (!isNull (findDisplay 5010)) then { closeDialog 5010; };
+	};
+};
+
+Harris_openSettings = {
+	waitUntil {!isNull (findDisplay 5008)};
+	settingsLoad = true;
+
+	{
+		_index = lbAdd [2100, _x select 0];
+		lbSetData [2100, _index, _x select 1];
+
+		if (_x select 1 isEqualTo (profileNamespace getVariable ["ringTone", "iphone_ringtone"])) then {
+			lbSetCurSel [2100, _forEachIndex];
+		};
+	} forEach Harris_ringtones;
+
+	if (profileNamespace getVariable ["anonCalling", false]) then {
+		ctrlShow [1203, true];
+		ctrlShow [1604, false];
+		ctrlShow [1205, false];
+		ctrlShow [1605, true];
+	} else {
+		ctrlShow [1203, false];
+		ctrlShow [1604, true];
+		ctrlShow [1205, true];
+		ctrlShow [1605, false];
+	};
+
+	if (profileNamespace getVariable ["blockingCalls", false]) then {
+		ctrlShow [1202, true];
+		ctrlShow [1606, false];
+		ctrlShow [1204, false];
+		ctrlShow [1607, true];
+	} else {
+		ctrlShow [1202, false];
+		ctrlShow [1606, true];
+		ctrlShow [1204, true];
+		ctrlShow [1607, false];
+	};
+
+	{
+		if (_x select 2) then {
+			_index = lbAdd [2101, _x select 0];
+			lbSetData [2101, _index, _x select 1];
+		};
+		if (_x select 1 == profileNamespace getVariable ["colour", "Default"]) then {
+			lbSetCurSel [2101, _forEachIndex];
+		};
+	} forEach Harris_twitterColours;
+
+	if (lbCurSel 2101 == -1) then {
+		profileNamespace setVariable ["colour", "Default"];
+		lbSetCurSel [2101, 0];
+	};
+};
+
+Harris_changeRingTone = {
+	params["_index"];
+
+	_ringTone = lbData [2100, _index];
+	
+	if (isNil "settingsLoad") then {
+		playSound _ringTone;
+	} else {
+		settingsLoad = nil;
+	};	
+
+	if (_ringTone != profileNamespace getVariable ["ringTone", ""]) then {
+		profileNamespace setVariable ["ringTone", _ringTone];
+		saveProfileNamespace;	
+	};
+};
+
+Harris_switchAnonCalling = {
+	params["_type"];
+
+	if (_type) then {
+		profileNamespace setVariable ["anonCalling", true];
+		ctrlShow [1203, true];
+		ctrlShow [1604, false];
+		ctrlShow [1205, false];
+		ctrlShow [1605, true];
+	} else {
+		profileNamespace setVariable ["anonCalling", false];
+		ctrlShow [1203, false];
+		ctrlShow [1604, true];
+		ctrlShow [1205, true];
+		ctrlShow [1605, false];
+	};
+};
+
+
+Harris_switchBlockCalling = {
+	params["_type"];
+
+	if (_type) then {
+		profileNamespace setVariable ["blockingCalls", true];
+		ctrlShow [1202, true];
+		ctrlShow [1606, false];
+		ctrlShow [1204, false];
+		ctrlShow [1607, true];
+	} else {
+		profileNamespace setVariable ["blockingCalls", nil];
+		ctrlShow [1202, false];
+		ctrlShow [1606, true];
+		ctrlShow [1204, true];
+		ctrlShow [1607, false];
+	};
+};
+
+Harris_updateVInventory = {
+	waitUntil {!isNull (findDisplay 5001)};
+
+	_dialog = findDisplay 5001;
+
+	_inv = _dialog displayCtrl 2005;
+
+	lbClear _inv;
+
+	{
+	_str = [_x] call life_fnc_varToStr;
+	_shrt = [_x,1] call life_fnc_varHandle;
+	_val = missionNameSpace getVariable _x;
+	if(_val > 0) then
+	{
+		_inv lbAdd format["%1x - %2",_val,_str];
+		_inv lbSetData [(lbSize _inv)-1,_shrt];
+	};
+	} foreach asdih_inv_items;
+
+};
+
+Harris_updateKeys = {
+	waitUntil {!isNull (findDisplay 5003)};
+
+	_dialog = findDisplay 5003;
+	_vehicles = _dialog displayCtrl 2701;
+	lbClear _vehicles;
+	_plist = _display displayCtrl 2702;
+	lbClear _plist;
+	_near_units = [];
+
+	{ if(player distance _x < 20) then {_near_units set [count _near_units,_x];};} foreach playableUnits;
+
+	for "_i" from 0 to (count life_vehicles)-1 do
+	{
+		_veh = life_vehicles select _i;
+		if(!isNull _veh && alive _veh) then
+		{
+			_color = [(typeOf _veh),(_veh getVariable "Life_VEH_color")] call life_fnc_vehicleColorStr;
+			_text = format["(%1)",_color];
+			if(_text == "()") then
+			{
+				_text = "";
+			};
+			
+			_name = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
+			_pic = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "picture");
+			_vehicles lbAdd format["%1 %3 - [Distance: %2m]",_name,round(player distance _veh),_text];
+			if(_pic != "pictureStaticObject") then {
+				_vehicles lbSetPicture [(lbSize _vehicles)-1,_pic];
+			};
+			_vehicles lbSetData [(lbSize _vehicles)-1,str(_i)];
+		};
+	};
+
+	{
+		if(!isNull _x && alive _x && player distance _x < 20 && _x != player) then
+		{
+			_plist lbAdd format["%1",_x getVariable["realname",name _x]];
+			_plist lbSetData [(lbSize _plist)-1,str(_x)];
+		};
+	} foreach _near_units;
+
+	if(((lbSize _vehicles)-1) == -1) then
+	{
+		_vehicles lbAdd "You don't own any vehicles";
+		_vehicles lbSetData [(lbSize _vehicles)-1,str(ObjNull)];
+	};
+};
+
+
+Harris_updateBanking = {
+	waitUntil {!isNull (findDisplay 5015)};
+
+	_dialog = findDisplay 5015;
+	_units = _dialog displayCtrl 2100;
+
+	ctrlSetText [1400,format["$%1",[gm_memecash] call life_fnc_numberText]];
+	ctrlSetText [1401,format["$%1",[gm_memecash] call life_fnc_numberText]];
+	ctrlSetText [1402,format["$%1",[LIMMITTCASH] call life_fnc_numberText]];
+
+	{
+		if(alive _x) then
+		{
+			switch (side _x) do
+			{
+				case west: {_type = "Cop"};
+				case civilian: {_type = "Civ"};
+				case independent: {_type = "EMS"};
+			};
+			_units lbAdd format["%1 (%2)",_x getVariable["realname",name _x],_type];
+			_units lbSetData [(lbSize _units)-1,str(_x)];
+		};
+	} foreach playableUnits;
+
+	lbSetCurSel [2100, 0];
+};
+
+Harris_updateLicenses = {
+	waitUntil {!isNull (findDisplay 5022)};
+
+	_dialog = findDisplay 5022;
+	_licenses = [];
+	{
+		if((_x select 1) == _side) then
+		{
+			_str = [_x select 0] call life_fnc_varToStr;
+			_val = missionNamespace getVariable (_x select 0);
+			if(_val) then
+			{
+				_licenses pushBack _str;
+			};
+		};
+	} foreach life_licenses;
+
+	if(str _licenses == "[]") then
+	{
+		_licenses = ["No Licenses"];
+	};
+	
+	{
+		lbAdd [2702, _x];
+	} forEach _licenses;
+};
+
+Harris_giveItemPhone = {
+	private["_unit","_val"];
+	if((lbCurSel 2023) == -1) exitWith {["Error", "No one was selected!", "Failure"] call Harris_Notifications; ctrlShow[2002,true];};
+	_unit = lbData [2023,lbCurSel 2023];
+	_unit = call compile format["%1",_unit];
+	if((lbCurSel 2005) == -1) exitWith {["Error", "You didn't select an item you wanted to give.", "Failure"] call Harris_Notifications;ctrlShow[2002,true];};
+	_item = lbData [2005,(lbCurSel 2005)];
+
+	//A series of checks *ugh*
+	if(isNil "_unit") exitWith {ctrlShow[2001,true]; ["Error", "The selected player is not within range", "Failure"] call Harris_Notifications;};
+	[[_unit,1,_item,player],"life_fnc_receiveItem",_unit,false] spawn bis_fnc_mp;
+	_type = [_item,0] call life_fnc_varHandle;
+	_type = [_type] call life_fnc_varToStr;
+	["Success",  format["You gave %1 %2 %3",_unit getVariable["realname",name _unit],_val,_type], "Success"] call Harris_Notifications;
+	[] spawn Harris_updateVInventory;
+};
+
+Harris_giveKeyPhone = {
+	private["_dialog","_list","_plist","_sel","_vehicle","_owners","_index","_unit","_uid"];
+	disableSerialization;
+
+	_dialog = findDisplay 5003;
+	_list = _dialog displayCtrl 2701;
+	_plist = _dialog displayCtrl 2702;
+
+	_sel = lbCurSel _list;
+	_vehicle = _list lbData _sel;
+	_vehicle = life_vehicles select parseNumber(_vehicle);
+
+	_sel = lbCurSel _plist;
+	_unit = _plist lbData _sel;
+	_unit = call compile format["%1", _unit];
+	if(isNull _unit OR isNil "_unit") exitWith {}; 
+
+	_uid = getPlayerUID _unit;
+	_owners = _vehicle getVariable "vehicle_info_owners";
+	_index = [_uid,_owners] call fnc_index;
+	if(_index == -1) then 
+	{
+		_owners set[count _owners,[_uid,_unit getVariable["realname",name _unit]]];
+		_vehicle setVariable["vehicle_info_owners",_owners,true];
+	};
+
+	["Success",  format["You have given %1 keys to your %2",_unit getVariable["realname",name _unit],typeOf _vehicle], "Success"] call Harris_Notifications;
+	[[_vehicle,_unit,profileName], "clientGetKey",_unit,false] spawn bis_fnc_mp;
+};
+
+Harris_keyDropPhone = {
+	private["_dialog","_list","_sel","_vehicle","_impounded","_owners","_index","_index2","_i"];
+	disableSerialization;
+
+	_dialog = findDisplay 5003;
+	_list = _dialog displayCtrl 2701;
+	_sel = lbCurSel _list;
+	if(_sel == -1) exitWith {["Error",  "No Data Selected", "Failure"] call Harris_Notifications;};
+	_index = (parseNumber(_list lbData _sel));
+	_vehicle = life_vehicles select _index;
+	if(_vehicle isKindOf "House_F") exitWith {["Error",  "You can't remove the keys to your house!", "Failure"] call Harris_Notifications;};
+	_owners = _vehicle getVariable "vehicle_info_owners";
+
+	_index2 = [(getPlayerUID player),_owners] call fnc_index;
+	life_vehicles = life_vehicles - [_vehicle];
+	_owners set[_index,-1];
+	_owners = _owners - [-1];
+	_vehicle setVariable["vehicle_info_owners",_owners,true];
+
+	[] spawn Harris_updateKeys;
+}
