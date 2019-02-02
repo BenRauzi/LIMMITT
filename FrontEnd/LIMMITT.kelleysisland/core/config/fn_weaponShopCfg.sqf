@@ -145,6 +145,7 @@ switch(_shop) do
                                             ["optic_Hamr",nil,100],
                                             ["RH_SFM952V",nil,100],
                                             ["RH_X300",nil,100]
+                                        ]
                                 ];
                         };
                 };
@@ -649,14 +650,18 @@ switch(_shop) do
                                 ["Harris_RDX",nil,2000],
                                 ["Harris_Burlap",nil,3000],
                                 ["Harris_Rope",nil,3000],
-                                 ["Harris_weedSeeds",nil,1000],
-                                //["A3L_ChainSaw","Chainsaw(Primary Slot)",25000],
-                                //["A3L_Shovel","Shovel(Primary Slot)",5000],
-                                //["A3L_Hammer","Hammer(Secondary Slot)",2500],
-                                //["A3L_Spanner","Spanner(Secondary Slot)",1250],
                                 ["A3L_Sign2","Weed Sign(Secondary Slot)",1000],
                                 ["A3L_Sign","Police Sign(Secondary Slot)",1000],
                                 ["Tv_Camera","TV Camera(Secondary Slot)",15000]
+                        ]
+                ];
+        };
+
+        case "seedsstore":
+        {
+                ["Sketchy Store",
+                        [
+                             ["Harris_weedSeeds",nil,1000]
                         ]
                 ];
         };

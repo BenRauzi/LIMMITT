@@ -628,6 +628,7 @@ Harris_phoneCall = {
 	if !(Harris_numberToCall in (missionNamespace getVariable ["cellNumbers", []])) exitWith  { playSound "notinservice_tone"; Harris_Calling = nil; ["Invalid CallerID", "This Cell Phone Number is not in service", "Failure"] spawn Harris_Notifications; };
 
 	closeDialog 0;
+	
 	Harris_Calling = true;
 
 	

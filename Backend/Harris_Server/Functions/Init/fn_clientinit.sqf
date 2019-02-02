@@ -301,5 +301,18 @@ LIMMITT_clientInit = {
 	escorting = false;
 
 	Harris_growTime = 10;
+
+	player addEventHandler ["GetInMan", {
+	    params ["_vehicle", "_role", "_unit", "_turret"];
+
+	    if (_role == "driver" && player getVariable ["Foski_Restrained", false]) then {
+	        if (vehicle player isKindOf     'Air') then {
+	            player action["GetOut",vehicle player];
+	        } else {
+	                player action["eject",vehicle player];
+	        };
+	    };
+	}];
+
 };
 
