@@ -68,6 +68,7 @@ switch (_code) do
 
 	case 15:
 	{
+		if (player getVariable "Foski_Restrained" || player getVariable "Foski_Surrender" || !isNil {player getVariable "Harris_unconscious"}) exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
 		if (alive player && !_alt && !_shift && !_ctrlKey && !(isNull (findDisplay 46))) then {
 				[]call Harris_openInteraction;
 		};
@@ -436,7 +437,7 @@ switch (_code) do
 	case _interactionKey:
 	{
 
-		if (player getVariable "Foski_Restrained" || player getVariable "Foski_Surrender") exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
+		if (player getVariable "Foski_Restrained" || player getVariable "Foski_Surrender" || !isNil {player getVariable "Harris_unconscious"}) exitWith {}; // Added by Nicholas Jo'Foski to stop players restrained sending messages
 		if (alive player && !_alt && !_shift && !_ctrlKey && !(isNull (findDisplay 46)) && (isNull (findDisplay 1723))) then {
 				[]call Harris_openInteraction;
 				_handled = true;
@@ -484,19 +485,18 @@ switch (_code) do
 			};
 		};
 	};
-	
 	//Knockout
 	case 34:
 	{
 		if(_shift) then {_handled = true;};
 		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 5) then
 		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player ) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed && !life_paintball) then
+			if(isNil {player getVariable "Harris_unconscious"} && (animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player ) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed && !life_paintball) then
 			{
 				[cursorTarget] spawn life_fnc_knockoutAction;
 			};
 
-			if ((animationState cursorTarget) != "Incapacitated" && (player getVariable "breakouton") == 2 && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !life_paintball) then {
+			if (isNil {player getVariable "Harris_unconscious"} && (animationState cursorTarget) != "Incapacitated" && (player getVariable "breakouton") == 2 && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !life_paintball) then {
 				[cursorTarget] spawn life_fnc_knockoutAction;
 			};
 		};

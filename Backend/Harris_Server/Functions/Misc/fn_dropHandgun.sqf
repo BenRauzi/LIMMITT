@@ -13,11 +13,11 @@ Foski_dropHandgun ={
 				_gun = currentWeapon player;
 				_mag = (getArray (configfile >> "CfgWeapons" >> _gun >> "magazines")) select 0;
 				if (player ammo _gun > 0) then {_ammo = 1;};
-				player removeWeaponGlobal _gun;
-				_gunI = "GroundWeaponHolder" createvehicle position player;
-				_gunI setPos position player;
-				_gunI addWeaponCargoGlobal [_gun,1];
-				_gunI addMagazinecargoGlobal [_mag,_ammo];
+				player removeWeapon _gun;
+				_gunI = "GroundWeaponHolder" createvehicle getPosATL player;
+				_gunI setPos [(getPosATL player select 0) + 1, getPosATL player select 1, getPosATL player select 2 + 0.2];
+				_gunI addItemCargoGlobal [_gun,1];
+				_gunI addItemCargoGlobal [_mag,_ammo];
 				player removeAction (_this select 2);
 			}];
 			waitUntil {(!(player getVariable [_var, false])) || currentWeapon player == ""};
