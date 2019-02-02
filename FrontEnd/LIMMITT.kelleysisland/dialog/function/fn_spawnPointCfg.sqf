@@ -20,7 +20,7 @@ switch (_side) do
 	case west:
 	{
 		_return = [
-			["cop_spawn_1","Elwood PD","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["cop_spawn_1","Elwood Sheriff's Office","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_5","Department of Corrections","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
 	};
@@ -28,7 +28,7 @@ switch (_side) do
 	case civilian:
 	{
 		_return = [
-			["civ_spawn_1","Elwood","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["civ_spawn_1","Elwood Plaza","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};
 

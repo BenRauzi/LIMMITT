@@ -98,9 +98,6 @@ LIMMITT_clientInit = {
 
 	Harris_craftAbleItems =   
 	[
-		["AK-74 Assault Rifle","CUP_arifle_AK47", "", [["Harris_steelIngot",11, "Steel Ingot"]], "Rifles", 1.5, false],
-		["30rnd 5.45x39 Subsonic Magazine","CUP_30Rnd_762x39_AK47_M", "", [["Harris_steelIngot",2, "Steel Ingot"]], "Rifles", 0.2, true],
-
 		["M16A4","RH_M16A4", "", [["Harris_steelIngot",18, "Steel Ingot"]], "Rifles", 2.5, false], 
 		["30rnd 5.45x39 Stanag Magazine","30Rnd_556x45_Stanag", "", [["Harris_steelIngot",4, "Steel Ingot"]], "Rifles", 0.2, true], 
 
@@ -264,10 +261,14 @@ LIMMITT_clientInit = {
 
 	Harris_prices = 
 	[
+		["Coal Ore", 1000],
+		["Iron Ore", 1500],
+		["Gold Ore", 2500],
+		["Diamond Ore", 3000],
 		["Harris_coal", 2000],
 		["Harris_ironIngot", 3000],
 		["Harris_goldIngot", 5000],
-		["Harris_diamond", 10000],
+		["Harris_diamond", 8000],
 		["Harris_weedBag", 3000]
 	];
 
@@ -314,5 +315,35 @@ LIMMITT_clientInit = {
 	    };
 	}];
 
+	
+	arr = missionNamespace getVariable ["cellNumbers", []];
+
+	if (isNil {profileNameSpace getVariable "yourNumber"}) then {
+		profileNameSpace setVariable ["yourNumber", [] call Harris_assignNumber];
+		saveProfileNamespace;
+	};
+	arr pushBackUnique (profileNameSpace getVariable "yourNumber");
+	missionNamespace setVariable ["cellNumbers", arr];
+
+
+	Harris_ringTones = 
+	[
+		["Classic iPhone", "iphone_ringtone", 3],
+		["Chimba", "chimba_ringtone", 3],
+		["House of Cards", "hoc_ringtone", 3],
+		["Marimba", "marimba2_ringtone", 3]
+	];
+
+	Harris_Messages = [];
+	Harris_callNumber = [];
+
+	Harris_twitterColours = 
+	[
+		["Default", "default",true],
+		["Red","Red",false],
+		["Blue","Blue",false],
+		["Gold","Gold",false],
+		["Green","Green",false]
+	];
 };
 

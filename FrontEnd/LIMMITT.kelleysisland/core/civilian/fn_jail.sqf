@@ -5,7 +5,7 @@
 	Description:
 	Starts the initial process of jailing.
 */
-private["_bad","_unit"];
+private["_bad","_unit", "_pos"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 hint format["%1", _unit];
 if(isNull _unit) exitWith {}; //Dafuq?
@@ -18,7 +18,8 @@ player setVariable["transporting",false,true];
 
 titleText[localize "STR_Jail_Warn","PLAIN"];
 ["General",  localize "STR_Jail_LicenseNOTF", "General"] call Harris_Notifications;
-player setPos (getMarkerPos "jail_marker");
+_pos = selectRandom ["jail_marker","jail_marker_2","jail_marker_3","jail_marker_4","jail_marker_5","jail_marker_6"];
+player setPos (getMarkerPos _pos);
 
 if (uniform player == "A3L_Prisoner_Outfit") then 
 {
@@ -36,9 +37,9 @@ if(_bad) then
 };
 
 //Check to make sure they goto check
-if(player distance (getMarkerPos "jail_marker") > 40) then
+if(player distance (getMarkerPos _pos) > 40) then
 {
-	player setPos (getMarkerPos "jail_marker");
+	player setPos (getMarkerPos _pos);
 };
 
 [1] call life_fnc_removeLicenses;

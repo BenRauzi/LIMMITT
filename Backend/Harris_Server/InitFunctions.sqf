@@ -144,6 +144,21 @@ Citations_Functions =
   ["fn_sendTicket", "Harris_sendTicket"]
 ];
 
+PhoneDir = "\Harris_Server\Functions\Phone\";
+Phone_Functions = 
+[
+  ["fn_playerRestrained", "Foski_playerRestrained"],
+  ["fn_playerUnRestrained", "Foski_playerUnRestrained"],
+  ["fn_restrainPlayer", "Foski_restrainPlayer"],
+  ["fn_unRestrainPlayer", "Foski_unRestrainPlayer"],
+  ["fn_code1", "Harris_code1"],
+  ["fn_code2", "Harris_code2"],
+  ["fn_code3", "Harris_code3"],
+  ["fn_tazed", "Harris_tazed"],
+  ["fn_shackle", "Harris_shackle"]
+
+];
+
 
 functionArrays = 
 "[
@@ -160,7 +175,8 @@ functionArrays =
   ['Shops_Functions','ShopsDir'],
   ['Crime_Functions','CrimeDir'],
   ['Weed_Functions','WeedDir'],
-  ['Citations_Functions','CitationsDir']
+  ['Citations_Functions','CitationsDir'],
+  ['Phone_Functions','PhoneDir']
 ]";
 
 functionArrays2 = call compile functionArrays;

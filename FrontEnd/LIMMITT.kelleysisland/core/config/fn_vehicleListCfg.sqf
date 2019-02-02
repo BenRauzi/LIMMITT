@@ -353,33 +353,24 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["ivory_b206_police",25000],
 			["B_Heli_Light_01_F",25000],
-			["C_Heli_Light_01_civil_F",27500],
-			["O_Heli_Light_02_unarmed_F",27500],
-			["IVORY_BELL512_POLICE",25000],
 			["I_Heli_Transport_02_F",30000],
 			["I_Heli_light_03_unarmed_F",30000],
 			["EC635_Unarmed",32500],
 			["d3s_AS_365_PD",32500],
-			["EC635_SAR",32500],
-			["NH90",35000]
+			["EC635_SAR",32500]
 		];
 	};
 	case "cop_airhq":
 	{
 		_return =
 		[
-			["ivory_b206_police",25000],
 			["B_Heli_Light_01_F",25000],
-			["C_Heli_Light_01_civil_F",27500],
-			["O_Heli_Light_02_unarmed_F",27500],
-			["IVORY_BELL512_POLICE",25000],
 			["I_Heli_Transport_02_F",30000],
 			["I_Heli_light_03_unarmed_F",30000],
 			["EC635_Unarmed",32500],
-			["EC635_SAR",32500],
-			["NH90",35000]
+			["d3s_AS_365_PD",32500],
+			["EC635_SAR",32500]
 		];
 	};
 	case "civ_ship":

@@ -142,21 +142,21 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		gm_memecash = 46500; //Starting Bank Money
+		gm_memecash = 30000; //Starting Bank Money
 		life_paycheck = 0; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		gm_memecash = 46500; //Starting Bank Money
+		gm_memecash = 30000; //Starting Bank Money
 		life_paycheck = 2750; //Paycheck Amount
 	};
 	case independent: {
-		gm_memecash = 46500;
+		gm_memecash = 30000;
 		life_paycheck = 0;
 	};
 	case east:
 	{
-		gm_memecash = 46500; //Starting Bank Money
+		gm_memecash = 30000; //Starting Bank Money
 		life_paycheck = 2750; //Paycheck Amount
 	};
 };
@@ -316,38 +316,16 @@ life_licenses =
 	["license_cop_cg","cop"],
 	["license_civ_driver","civ"],
 	["license_civ_air","civ"],
-	["license_civ_heroin","civ"],
-	["license_civ_marijuana","civ"],
 	["license_civ_gang","civ"],
 	["license_civ_boat","civ"],
-	["license_civ_oil","civ"],
 	["license_civ_dive","civ"],
 	["license_civ_truck","civ"],
 	["license_civ_gun","civ"],
 	["license_civ_rebel","civ"],
-	["license_civ_diamond","civ"],
-	["license_civ_copper","civ"],
-	["license_civ_iron","civ"],
-	["license_civ_sand","civ"],
-	["license_civ_salt","civ"],
 	["license_civ_cement","civ"],
 	["license_med_air","med"],
 	["license_civ_home","civ"],
-	["license_civ_rifle","civ"],
-	["license_civ_uranium","civ"],
-	["license_civ_forestry","civ"],
-	["license_civ_lsmo","civ"],
-	["license_civ_lsmovehicle","civ"],
-	["license_civ_harv","civ"],
-	["license_civ_strife","civ"],
-	["license_civ_dino","civ"],
-	["license_civ_mason","civ"],
-	["license_civ_narcos","civ"],
-	["license_civ_whyos","civ"],
-	["license_civ_davis","civ"],
-	["license_civ_casper","civ"],
-	["license_civ_corleone","civ"],
-	["license_civ_kavali","civ"]
+	["license_civ_rifle","civ"]
 ];
 
 //Setup License Variables

@@ -19,4 +19,8 @@ LIMMITT_ServerInit ={
 			sleep 50;
 		};
 	};
+
+		
+	missionNamespace setVariable ["cellNumbers", []];
+	missionNamespace setVariable ["uberDrivers", [], true];	
 };
