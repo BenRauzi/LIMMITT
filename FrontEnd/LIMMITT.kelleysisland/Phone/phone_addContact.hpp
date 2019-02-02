@@ -54,7 +54,7 @@ class Harris_phone_addContact
 			h = 0.033 * safezoneH;
 			action = "[] call Harris_addContact";
 		};
-		class Name_Text: RscEdit
+		class Name_Text: RscPhoneEdit
 		{
 			idc = 1400;
 			text = "Name";
@@ -65,7 +65,7 @@ class Harris_phone_addContact
 			w = 0.13 * safezoneW;
 			h = 0.025 * safezoneH;
 		};
-		class Number_Text: RscEdit
+		class Number_Text: RscPhoneEdit
 		{
 			idc = 1401;
 			text = "Number";

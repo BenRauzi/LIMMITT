@@ -126,7 +126,7 @@ Harris_Notifications = {
 		};
 		case 4:
 		{
-			8 cutRsc ["Harris_Notifications4","PLAIN"];
+			123 cutRsc ["Harris_Notifications4","PLAIN"];
 			_display4 = uiNameSpace getVariable ["Harris_Notifications4",displayNull];
 			_typeCtrl = _display4 displayCtrl 4500; 
 			_iconCtrl = _display4 displayCtrl 4200; 

@@ -33,7 +33,7 @@ class Harris_phone_sendMessage
 			h = 0.03 * safezoneH;
 			action = "closeDialog 0; createDialog 'Harris_Phone_mainScreen'";
 		};
-		class Number_Edit: RscEdit
+		class Number_Edit: RscPhoneEdit
 		{
 			idc = 1400;
 			x = 0.443281 * safezoneW + safezoneX;
@@ -42,7 +42,7 @@ class Harris_phone_sendMessage
 			h = 0.022 * safezoneH;
 			onKeyDown = "[_this select 1] call Harris_idEdited;";
 		};
-		class Message_Edit: RscEdit
+		class Message_Edit: RscPhoneEdit
 		{
 			idc = 1401;
 			x = 0.44328 * safezoneW + safezoneX;

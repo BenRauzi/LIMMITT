@@ -530,7 +530,7 @@ Harris_openSendMessageContact = {
 
 
 Harris_textPlayer = {
-	if (isNull (findDisplay 5013)) then {
+	if (isNull (findDisplay 5025)) then {
 		Harris_numberToCall = ctrlText 1400;
 	};
 	
@@ -1090,7 +1090,7 @@ Harris_updateBanking = {
 	waitUntil {!isNull (findDisplay 5015)};
 
 	_dialog = findDisplay 5015;
-	_units = _dialog displayCtrl 2100;
+	_units = _dialog displayCtrl 2703;
 
 	ctrlSetText [1400,format["$%1",[gm_memecash] call life_fnc_numberText]];
 	ctrlSetText [1401,format["$%1",[gm_memecash] call life_fnc_numberText]];
@@ -1111,7 +1111,7 @@ Harris_updateBanking = {
 		};
 	} foreach playableUnits;
 
-	lbSetCurSel [2100, 0];
+	lbSetCurSel [2703, 0];
 };
 
 Harris_updateLicenses = {

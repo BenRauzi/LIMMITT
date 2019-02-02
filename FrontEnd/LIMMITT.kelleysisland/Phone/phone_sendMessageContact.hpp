@@ -1,7 +1,7 @@
 
 class Harris_phone_sendMessageContact
 {
-	idd = 5013;
+	idd = 5025;
 	movingEnabled = false;
 	onLoad = "[] spawn Harris_openSendMessageContact";
 	class controls 
@@ -44,7 +44,7 @@ class Harris_phone_sendMessageContact
 			h = 0.022 * safezoneH;
 			colorText[] = {0,0,0,1};
 		};
-		class Message_Edit: RscEdit
+		class Message_Edit: RscPhoneEdit
 		{
 			idc = 1401;
 			x = 0.44328 * safezoneW + safezoneX;

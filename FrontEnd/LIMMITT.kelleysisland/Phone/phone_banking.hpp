@@ -72,7 +72,7 @@ class Harris_phone_banking
 			y = 0.499074 * safezoneH + safezoneY;
 			w = 0.0515625 * safezoneW;
 			h = 0.022 * safezoneH;
-			onKeyDown = "[] call Harris_bankEdited";
+			onKeyDown = "[_this select 1] call Harris_bankEdited";
 		};
 		class TransferTarget_Combo: RscCombo
 		{
