@@ -12,6 +12,47 @@ if(_shop == "") exitWith {[]};
 _return = [];
 switch (_shop) do
 {
+	case "civ_secondHand"
+	{
+		_return = [
+			["ADM_Ford_F100",5600],
+			["ADM_1964_Impala",4370],
+			["Jonzie_Mini_Cooper",2690],
+			["ADM_GMC_Vandura",7240],
+			["DAR_FusionCivBlue",8346],
+			["DAR_ChargerCiv",10000]
+		];
+	};
+	case "civ_luxury"
+	{
+		_return = [
+			["kw_db9_blue",125000],
+			["kw_db9_silver",130000],
+			["kw_db9_black",130000],
+			["kw_audir8_liberty_black",160000],
+			["kw_audir8_liberty_black",160000],
+			["kw_R8_blue",160000],
+			["kw_R8_grey",165500],
+			["kw_R8_pink",166000],
+			["kw_R8_urban",100000], 
+			["kw_corvette_c7_black",100000],
+			["kw_corvette_c7_silver",100000],
+			["kw_corvette_c7_blue",100000],
+			["kw_corvette_c7_purple",100000],
+			["kw_corvette_c7_grey",100000]
+		];
+	};
+	case "civ_mercedesBenz":
+	{
+		_return =
+		[
+			["kw_audi_q7_black",45000],
+			["ks_rs3_11_black",50000],
+			["cg_audi_rs5_noir",55000],
+			["kw_audis8_black",105000],
+			["kw_corvette_c7_black",105000]
+		];
+	};
 	case "dezzie_car":
 	{
 		_return = [
@@ -26,7 +67,6 @@ switch (_shop) do
 			["IVORY_R8",150000],
 			["IVORY_R8SPYDER",150000],
 			["IVORY_REV",15000]
-
 		];
 	};
 	case "super_bikes":
