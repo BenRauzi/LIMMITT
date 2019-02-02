@@ -107,3 +107,4 @@ class RscPhoneEdit
 #include "phone_sendMessageContact.hpp"
 #include "phone_readMessage.hpp"
 #include "phone_banking.hpp"
+#include "phone_map.hpp"

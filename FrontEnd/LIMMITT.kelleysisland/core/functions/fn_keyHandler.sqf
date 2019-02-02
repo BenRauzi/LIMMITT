@@ -436,9 +436,22 @@ switch (_code) do
 	
 	case 50:
 	{	
-		if((player getVariable "tied")) then {
-			_handled = true;
-		};	
+		if((player getVariable "tied")) then { 
+			_handled = true; 
+		} else {
+			if (isNull (findDisplay 5026)) then {
+				createDialog "Harris_phone_map";
+				_handled = true;
+				[] spawn {
+					hintSilent "Press M again to open full map";
+					waitUntil {isNull (findDisplay 5026)};
+					hintSilent "";
+				};
+			} else {
+				closeDialog 5026;
+			};
+		};
+		
 	};	
 
 
