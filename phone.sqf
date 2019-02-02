@@ -264,6 +264,11 @@ Harris_idEdited = {
 	if (!(_number in [2,3,4,5,6,7,8,9,11]) || count (ctrlText 1400) > 10) exitWith {ctrlSetText [1400,(ctrlText 1400) select [0, count (ctrlText 1400) - 1]];};
 };
 
+Harris_bankEdited = {
+	_number = _this select 0;
+	if (!(_number in [2,3,4,5,6,7,8,9,11]) || count (ctrlText 2702) > 10) exitWith {ctrlSetText [2702,(ctrlText 2702) select [0, count (ctrlText 2702) - 1]];};
+};
+
 
 Harris_viewContact = {
 	params["_id"];
@@ -1037,7 +1042,7 @@ Harris_updateKeys = {
 	_dialog = findDisplay 5003;
 	_vehicles = _dialog displayCtrl 2701;
 	lbClear _vehicles;
-	_plist = _display displayCtrl 2702;
+	_plist = _dialog displayCtrl 2702;
 	lbClear _plist;
 	_near_units = [];
 
@@ -1091,6 +1096,7 @@ Harris_updateBanking = {
 	ctrlSetText [1401,format["$%1",[gm_memecash] call life_fnc_numberText]];
 	ctrlSetText [1402,format["$%1",[LIMMITTCASH] call life_fnc_numberText]];
 
+	_type = "Civ";
 	{
 		if(alive _x) then
 		{
@@ -1113,6 +1119,7 @@ Harris_updateLicenses = {
 
 	_dialog = findDisplay 5022;
 	_licenses = [];
+	_side = str (playerSide);
 	{
 		if((_x select 1) == _side) then
 		{
@@ -1144,7 +1151,7 @@ Harris_giveItemPhone = {
 	_item = lbData [2005,(lbCurSel 2005)];
 
 	//A series of checks *ugh*
-	if(isNil "_unit") exitWith {ctrlShow[2001,true]; ["Error", "The selected player is not within range", "Failure"] call Harris_Notifications;};
+	if(isNil "_unit") exitWith { ["Error", "The selected player is not within range", "Failure"] call Harris_Notifications;};
 	[[_unit,1,_item,player],"life_fnc_receiveItem",_unit,false] spawn bis_fnc_mp;
 	_type = [_item,0] call life_fnc_varHandle;
 	_type = [_type] call life_fnc_varToStr;
@@ -1152,6 +1159,21 @@ Harris_giveItemPhone = {
 	[] spawn Harris_updateVInventory;
 };
 
+Harris_removeItemPhone = {
+	private["_data","_value","_obj","_pos","_ind"];
+	disableSerialization;
+	_data = lbData[2005,(lbCurSel 2005)];
+	_value = 1;
+	if(_data == "") exitWith { ["Error", "You didn't select anything to remove.", "Failure"] call Harris_Notifications;};
+	_ind = [_data,life_illegal_items] call fnc_index;
+	if(_ind != -1 && ([west,getPos player,100] call life_fnc_nearUnits)) exitWith {titleText["This is an illegal item and cops are near by, you cannot dispose of the evidence","PLAIN"]};
+	if(player != vehicle player) exitWith {titleText["You cannot remove an item when you are in a vehicle.","PLAIN"]};
+	_type = [_data,0] call life_fnc_varHandle;
+	_type = [_type] call life_fnc_varToStr;
+	 ["Success", format["You have successfully removed %1 %2 from your inventory.",(parseNumber _value), _type], "Success"] call Harris_Notifications;
+		
+	[] call Harris_updateVInventory;	
+};
 Harris_giveKeyPhone = {
 	private["_dialog","_list","_plist","_sel","_vehicle","_owners","_index","_unit","_uid"];
 	disableSerialization;

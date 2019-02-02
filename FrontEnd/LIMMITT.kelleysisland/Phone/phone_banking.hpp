@@ -66,16 +66,17 @@ class Harris_phone_banking
 		};
 		class AmountToTransfer: RscPhoneEdit
 		{
-			idc = 2703;
+			idc = 2702;
 			text = "Balance"; //--- ToDo: Localize;
 			x = 0.520104 * safezoneW + safezoneX;
 			y = 0.499074 * safezoneH + safezoneY;
 			w = 0.0515625 * safezoneW;
 			h = 0.022 * safezoneH;
+			onKeyDown = "[] call Harris_bankEdited";
 		};
 		class TransferTarget_Combo: RscCombo
 		{
-			idc = 2100;
+			idc = 2703;
 			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.533 * safezoneH + safezoneY;
 			w = 0.06 * safezoneW;
@@ -88,7 +89,7 @@ class Harris_phone_banking
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "[] call life_fnC_bankTransfer";
+			action = "[] call life_fnc_bankTransfer";
 		};
 	};
 };
