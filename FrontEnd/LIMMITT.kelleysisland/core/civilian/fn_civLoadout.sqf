@@ -10,8 +10,7 @@ private["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
-player addUniform "A3LShirt";
-player addHeadgear "Kio_Santa_Hat";
+player addUniform "JD_LN";
 
 /* ITEMS */
 player addItem "ItemMap";

@@ -288,7 +288,7 @@ class Harris_phone_contacts
 			y = 0.287296 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[0] call Harris_viewContact";
+			action = "closeDialog 5004; [0] call Harris_viewContact";
 		};
 		class contactButton_2_1: phoneButton
 		{
@@ -297,7 +297,7 @@ class Harris_phone_contacts
 			y = 0.359602 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[1] call Harris_viewContact";
+			action = "closeDialog 5004; [1] call Harris_viewContact";
 		};
 		class contactButton_3_1: phoneButton
 		{
@@ -306,7 +306,7 @@ class Harris_phone_contacts
 			y = 0.431908 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[2] call Harris_viewContact";
+			action = "closeDialog 5004; [2] call Harris_viewContact";
 		};
 		class contactButton_4_1: phoneButton
 		{
@@ -315,7 +315,7 @@ class Harris_phone_contacts
 			y = 0.504214 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[3] call Harris_viewContact";
+			action = "closeDialog 5004; [3] call Harris_viewContact";
 		};
 		class contactButton_5_1: phoneButton
 		{
@@ -324,7 +324,7 @@ class Harris_phone_contacts
 			y = 0.57652 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[4] call Harris_viewContact";
+			action = "closeDialog 5004; [4] call Harris_viewContact";
 		};
 		class contactButton_6_1: phoneButton
 		{
@@ -333,7 +333,7 @@ class Harris_phone_contacts
 			y = 0.648826 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[5] call Harris_viewContact";
+			action = "closeDialog 5004; [5] call Harris_viewContact";
 		};
 		class contactButton_1_2: phoneButton
 		{
@@ -342,7 +342,7 @@ class Harris_phone_contacts
 			y = 0.325 * safezoneH + safezoneY;
 			w = 0.1 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[0] call Harris_viewContact";
+			action = "closeDialog 5004; [0] call Harris_viewContact";
 		};
 		class contactButton_2_2: phoneButton
 		{
@@ -351,7 +351,7 @@ class Harris_phone_contacts
 			y = 0.397306 * safezoneH + safezoneY;
 			w = 0.1 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[1] call Harris_viewContact";
+			action = "closeDialog 5004; [1] call Harris_viewContact";
 		};
 		class contactButton_3_2: phoneButton
 		{
@@ -360,7 +360,7 @@ class Harris_phone_contacts
 			y = 0.469612 * safezoneH + safezoneY;
 			w = 0.1 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[2] call Harris_viewContact";
+			action = "closeDialog 5004; [2] call Harris_viewContact";
 		};
 		class contactButton_4_2: phoneButton
 		{
@@ -369,7 +369,7 @@ class Harris_phone_contacts
 			y = 0.54191 * safezoneH + safezoneY;
 			w = 0.1 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[3] call Harris_viewContact";
+			action = "closeDialog 5004; [3] call Harris_viewContact";
 		};
 		class contactButton_5_2: phoneButton
 		{
@@ -378,7 +378,7 @@ class Harris_phone_contacts
 			y = 0.614216 * safezoneH + safezoneY;
 			w = 0.1 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[4] call Harris_viewContact";
+			action = "closeDialog 5004; [4] call Harris_viewContact";
 		};
 		class contactButton_6_2: phoneButton
 		{
@@ -387,7 +387,7 @@ class Harris_phone_contacts
 			y = 0.686522 * safezoneH + safezoneY;
 			w = 0.1 * safezoneW;
 			h = 0.04 * safezoneH;
-			action = "[5] call Harris_viewContact";
+			action = "closeDialog 5004; [5] call Harris_viewContact";
 		};
 		class NxtPg_Button: phoneButton
 		{

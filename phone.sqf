@@ -624,10 +624,12 @@ Harris_clearDial = {
 
 Harris_phoneCall = {
 	if (!isNil "Harris_Calling") exitWith { ["Error","You are already in a call", "Failure"] spawn Harris_Notifications;};
+	if (Harris_numberToCall isEqualTo (profileNameSpace getVariable "yourNumber")) exitWith { ["Failed", "You cannot call yourself", "Failure"] spawn Harris_Notifications; Harris_Calling = nil; };
+	if !(Harris_numberToCall in (missionNamespace getVariable ["cellNumbers", []])) exitWith  { playSound "notinservice_tone"; Harris_Calling = nil; ["Invalid CallerID", "This Cell Phone Number is not in service", "Failure"] spawn Harris_Notifications; };
 
+	closeDialog 0;
 	Harris_Calling = true;
 
-	if (Harris_numberToCall isEqualTo (profileNameSpace getVariable "yourNumber")) exitWith { ["Failed", "You cannot call yourself", "Failure"] spawn Harris_Notifications; Harris_Calling = nil; };
 	
 	//if (Harris_playerToCall getVariable "inCurrentCall") exitWith { ["Failure","This person is already in a call", "Failure"] spawn Harris_Notifications; Harris_Calling = nil; };
 	//if (damage Harris_playerToCall >= 1) exitWith { [] spawn { for "_i" from 0 to 2 do { playSound "dialing_tone"; sleep 3;	}; playSound "unavailable_tone"; ["Invalid CallerID", "This Cell Phone Number is Unavailable", "Failure"] spawn Harris_Notifications; Harris_Calling = false; }; };
@@ -639,6 +641,7 @@ Harris_phoneCall = {
 	if (player getVariable "anonymousCalling") then {
 		_cellNumber = "Anonymous Caller ID";
 	};
+
 
 	[_callFreq, _cellNumber, player, Harris_numberToCall] remoteExecCall ["Harris_receiveCall", 0];
 
@@ -733,7 +736,7 @@ Harris_openPhoneInCalling = {
 	if (!isNull (findDisplay 5010)) exitWith {};
 	createDialog "Harris_Phone_inComingCall";
 
-	_callerID = Harris_CallerID;
+	_callerID = Harris_numberToCall;
 		{
 			if (_callerID == _x select 0) then {
 				_callerID = _x select 1;
