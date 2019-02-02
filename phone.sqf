@@ -1212,4 +1212,4 @@ Harris_keyDropPhone = {
 	_vehicle setVariable["vehicle_info_owners",_owners,true];
 
 	[] spawn Harris_updateKeys;
-}
+};

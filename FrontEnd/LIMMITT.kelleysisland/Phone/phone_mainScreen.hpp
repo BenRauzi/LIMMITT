@@ -83,6 +83,7 @@ class Harris_phone_mainScreen
 			w = 0.0257812 * safezoneW;
 			h = 0.055 * safezoneH;
 		};
+	
 		class Licenses_Button: phoneButton
 		{
 			idc = 1610;
@@ -92,6 +93,16 @@ class Harris_phone_mainScreen
 			w = 0.0257812 * safezoneW;
 			h = 0.055 * safezoneH;
 			action = "closeDialog 5000; createDialog 'Harris_phone_Licenses'";
+		};
+		class Map_Button: phoneButton
+		{
+			idc = 1611;
+
+			x = 0.506703 * safezoneW + safezoneX;
+			y = 0.33324 * safezoneH + safezoneY;
+			w = 0.0257812 * safezoneW;
+			h = 0.055 * safezoneH;
+			action = "closeDialog 5000; createDialog 'Harris_phone_map'";
 		};
 		class Contacts_Button: phoneButton
 		{
