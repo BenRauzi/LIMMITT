@@ -1,7 +1,7 @@
 
 class Harris_phone_sendMessageContact
 {
-	idd = 5025;
+	idd = 5030;
 	movingEnabled = false;
 	onLoad = "[] spawn Harris_openSendMessageContact";
 	class controls 
@@ -64,3 +64,4 @@ class Harris_phone_sendMessageContact
 		};
 	};
 };
+

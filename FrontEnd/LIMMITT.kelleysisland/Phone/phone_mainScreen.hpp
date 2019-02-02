@@ -73,6 +73,7 @@ class Harris_phone_mainScreen
 			y = 0.25954 * safezoneH + safezoneY;
 			w = 0.0257812 * safezoneW;
 			h = 0.055 * safezoneH;
+			action = "closeDialog 7565; createDialog 'Harris_phone_uber'";
 		};
 		class Information_Button: phoneButton
 		{
@@ -82,6 +83,7 @@ class Harris_phone_mainScreen
 			y = 0.33324 * safezoneH + safezoneY;
 			w = 0.0257812 * safezoneW;
 			h = 0.055 * safezoneH;
+			action = "closeDialog 7565; createDialog 'Harris_phone_information'";
 		};
 	
 		class Licenses_Button: phoneButton

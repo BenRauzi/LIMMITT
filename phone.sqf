@@ -1,15 +1,3 @@
-Harris_Messages = [];
-Harris_callNumber = [];
-
-Harris_twitterColours = 
-[
-	["Default", "default",true],
-	["Red","Red",false],
-	["Blue","Blue",false],
-	["Gold","Gold",false],
-	["Green","Green",false]
-];
-
 Harris_openPhone = {
 		if !(isNil "Harris_inCurrentCall") exitWith { [] call Harris_openPhoneInCall; };
 		if !(isNil "Harris_receivingCall") exitWith { [] call Harris_openPhoneInCalling; };
@@ -512,8 +500,7 @@ Harris_viewMessage = {
 };
 
 Harris_openSendMessageContact = {
-	waitUntil {!isNull (findDisplay 5013)};
-
+	waitUntil {!isNull (findDisplay 5030)};
 	_id = Harris_numberToCall;
 	{
 		if (_id == _x select 0) then {
@@ -530,7 +517,7 @@ Harris_openSendMessageContact = {
 
 
 Harris_textPlayer = {
-	if (isNull (findDisplay 5025)) then {
+	if (isNull (findDisplay 5030) && isNull (findDisplay 5031)) then {
 		Harris_numberToCall = ctrlText 1400;
 	};
 	
@@ -568,6 +555,7 @@ Harris_assignNumber = {
 // InitServer
 
 missionNamespace setVariable ["cellNumbers", []];
+missionNamespace setVariable ["uberDrivers", [], true];	
 
 // Initclient
 
@@ -588,6 +576,17 @@ Harris_ringTones =
 	["Marimba", "marimba2_ringtone", 3]
 ];
 
+Harris_Messages = [];
+Harris_callNumber = [];
+
+Harris_twitterColours = 
+[
+	["Default", "default",true],
+	["Red","Red",false],
+	["Blue","Blue",false],
+	["Gold","Gold",false],
+	["Green","Green",false]
+];
 
 //
 
@@ -627,10 +626,7 @@ Harris_phoneCall = {
 	if (!isNil "Harris_Calling") exitWith { ["Error","You are already in a call", "Failure"] spawn Harris_Notifications;};
 
 	Harris_Calling = true;
-	_value = false;
 
-
-	if !(_value) exitWith { [] spawn { for "_i" from 0 to 2 do { playSound "dialing_tone"; sleep 3;	}; playSound "notinservice_tone"; ["Invalid CallerID", "This Cell Phone Number is Invalid", "Failure"] spawn Harris_Notifications; Harris_Calling = nil; }; };
 	if (Harris_numberToCall isEqualTo (profileNameSpace getVariable "yourNumber")) exitWith { ["Failed", "You cannot call yourself", "Failure"] spawn Harris_Notifications; Harris_Calling = nil; };
 	
 	//if (Harris_playerToCall getVariable "inCurrentCall") exitWith { ["Failure","This person is already in a call", "Failure"] spawn Harris_Notifications; Harris_Calling = nil; };
@@ -883,9 +879,6 @@ Harris_hungUp = {
 		closeDialog 5020;
 	};
 };
-
-
-// Todo Keyhandler
 
 
 
@@ -1212,4 +1205,103 @@ Harris_keyDropPhone = {
 	_vehicle setVariable["vehicle_info_owners",_owners,true];
 
 	[] spawn Harris_updateKeys;
+};
+
+Harris_uberOpened = {
+	waitUntil {!isNull (findDisplay 5027)};
+	lbClear 1500;
+
+	{
+		_index = lbAdd[1500,name (_x select 0)];
+		lbSetData [1500, _index, str _forEachIndex];
+	} forEach (missionNamespace getVariable "uberDrivers");
+
+	ctrlSetText[1602, "N/A"];
+	ctrlSetText[1603, "None"];
+
+	if (!isNil "isUber") then {
+		ctrlShow [1203, true];
+		ctrlShow [1604, false];
+		ctrlShow [1205, false];
+		ctrlShow [1605, true];
+	} else {
+		ctrlShow [1203, false];
+		ctrlShow [1604, true];
+		ctrlShow [1205, true];
+		ctrlShow [1605, false];
+	};
+
+	if (count (missionNamespace getVariable 'uberDrivers') == 0) exitWith {};
+	lbSetCurSel [1500,0];
+
+	
+};
+
+Harris_onUberLbChanged = {
+	params["_index"];
+	_uberID = ((missionNamespace getVariable "uberDrivers") select _index);
+	_uber = _uberID select 0;
+	Harris_numberToCall = _uberID select 1;
+	
+
+	ctrlSetText[1602, str (player distance _uber)];
+	_vehicle = vehicle _uber;
+	if (_vehicle == _uber) then {
+		_vehicle = "None";
+	} else {
+		_vehicle = [typeOf _vehicle] call Harris_getVehicleName;
+	};
+
+	ctrlSetText[1603, _vehicle];
+};
+
+Harris_onDutyUber = {
+	_ubers = missionNamespace getVariable "uberDrivers";
+	_ubers pushBack [player, profileNamespace getVariable "yourNumber"];
+	missionNamespace setVariable ["uberDrivers", _ubers, true];	
+	isUber = true;
+
+	[] call Harris_uberOpened;
+};
+
+Harris_offDutyUber = {
+	_ubers = missionNamespace getVariable "uberDrivers";
+	_ubers deleteAt (_ubers find [player, profileNamespace getVariable "yourNumber"]);
+	missionNamespace setVariable ["uberDrivers", _ubers, true];	
+	isUber = nil;
+
+	[] call Harris_uberOpened;
+};
+
+
+Harris_openSendMessageUber = {
+	waitUntil {!isNull (findDisplay 5031)};
+
+	_id = Harris_numberToCall;
+	{
+		if (_id == _x select 0) then {
+			_id = _x select 1;
+		};
+	} forEach (profileNamespace getVariable ["contactList", []]);
+
+	if (_id == Harris_numberToCall) then {
+		ctrlSetText [1400, [Harris_numberToCall] call Harris_phoneNumberText];
+	} else {
+		ctrlSetText [1400, _id];
+	};
+};
+
+Harris_getVehicleName = {
+	params ["_class"];
+
+	_return = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
+
+	_return;
+};
+
+Harris_informationOpened = {
+	waitUntil {!isNull (findDisplay 5032)};
+	ctrlSetText [1600, format["Current Police: %1", west countside allPlayers]];
+	ctrlSetText [1601, format["Current Paramedics: %1", independent countside allPlayers]];
+	ctrlSetText [1602, format["Current Civilians: %1", civilian countside allPlayers]];
 };

@@ -30,6 +30,5 @@ class Harris_phone_map
 			w = 0.455 * safezoneW;
 			h = 0.825 * safezoneH;
 		};
-		
 	};
 };

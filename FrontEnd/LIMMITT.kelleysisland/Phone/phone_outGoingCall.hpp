@@ -62,7 +62,7 @@ class Harris_phone_outGoingCall
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "[] call Harris_cancelCall";
+			action = "closeDialog 5011; [] call Harris_cancelCall";
 		};
 	};
 };

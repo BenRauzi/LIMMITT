@@ -52,6 +52,7 @@ switch (_code) do
 
 	//--- Tag Menu
 	// Shift + F9
+
 	case 67: 
 	{
 		if(_shift) then
@@ -247,6 +248,24 @@ switch (_code) do
 	//Map Key
 	case _mapKey:
 	{
+		if (visibleMap) then {
+    		openMap false;;
+    	} else {
+	    	if (isNull (findDisplay 5026)) then {
+				createDialog "Harris_phone_map";
+				_handled = true;
+				[] spawn {
+					hintSilent "Press M again to open full map";
+					waitUntil {isNull (findDisplay 5026)};
+					hintSilent "";
+				};
+			} else {
+				closeDialog 5026;
+				_handled = false;
+				openMap true;
+			};
+		};
+
 		switch (playerSide) do 
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
@@ -433,26 +452,6 @@ switch (_code) do
 			};
 		};
 	};
-	
-	case 50:
-	{	
-		if((player getVariable "tied")) then { 
-			_handled = true; 
-		} else {
-			if (isNull (findDisplay 5026)) then {
-				createDialog "Harris_phone_map";
-				_handled = true;
-				[] spawn {
-					hintSilent "Press M again to open full map";
-					waitUntil {isNull (findDisplay 5026)};
-					hintSilent "";
-				};
-			} else {
-				closeDialog 5026;
-			};
-		};
-		
-	};	
 
 
 	case 36:
