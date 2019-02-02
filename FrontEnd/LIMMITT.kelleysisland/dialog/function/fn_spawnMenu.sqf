@@ -64,3 +64,5 @@
 		life_spawn_point = _sp;
 		 
 		ctrlSetText[38501,format["%2: %1",_sp select 1,localize "STR_Spawn_CSP"]];
+
+		player setDir 277;

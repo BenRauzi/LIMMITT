@@ -90,7 +90,7 @@ class RscPhoneEdit
 };
 
 
-class RscMapControl 
+class RscPhoneMapControl 
 {
 	access = 0;
 	type = 101;

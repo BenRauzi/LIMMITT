@@ -16,7 +16,7 @@ case "meth": {150000};
 case "coke": {150000};
 	case "driver": {5000}; //Drivers License cost
 	case "boat": {10000}; //Boating license cost
-	case "pilot": {75000}; //Pilot/air license cost
+	case "pilot": {10000}; //Pilot/air license cost
 	case "gun": {25000}; //Firearm/gun license cost
 	case "dive": {8500}; //Diving license cost
 	case "oil": {30000}; //Oil processing license cost

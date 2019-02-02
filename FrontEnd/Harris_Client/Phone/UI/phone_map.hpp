@@ -6,7 +6,7 @@ class Harris_phone_map
 	//onLoad = "[] spawn Harris_phoneOpened";
 	class controlsbackground
 	{
-		class RscButton_1600: RscMapControl
+		class RscButton_1600: RscPhoneMapControl
 		{
 			idc = 1600;
 			x = 0.42625 * safezoneW + safezoneX;

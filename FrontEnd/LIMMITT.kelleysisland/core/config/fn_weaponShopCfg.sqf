@@ -15,6 +15,7 @@ switch(_shop) do
                                 ["EMS Supplies Shop",
                                         [
                                             ["FirstAidKit",nil,250],
+                                            ["LIMMITT_Network_Phone",nil,50],
                                             ["Medikit",nil,250],
                                             ["Harris_medkit",nil,1000],
                                             ["ToolKit",nil,250]
@@ -81,6 +82,7 @@ switch(_shop) do
                                 ["Patrol Gear Shop",
                                         [
                                                 ["Harris_keyCard",nil,250],
+                                                ["LIMMITT_Network_Phone",nil,50],
                                                 ["FirstAidKit",nil,250],
                                                 ["Harris_medkit",nil,1000],
                                                 ["Medikit",nil,250],
@@ -513,15 +515,6 @@ switch(_shop) do
                                         ["RH_M16A4",nil,60000],
                                         ["30Rnd_556x45_Stanag",nil,1000],
                                        
-                                        //SG553
-                                        ["SG553_CQB",nil,70000],
-                                        ["30Rnd_556x45_Stanag",nil,1000],
-                                         //AK Gold
-                                        ["CUP_arifle_AKS_Gold",nil,100000],
-                                        ["hlc_30Rnd_545x39_B_AK",nil,7500],
-                                        //AK74
-                                        ["hlc_rifle_ak74",nil,100000],
-                                        ["hlc_30Rnd_545x39_B_AK",nil,1000],
                                         //PDW
                                         ["RH_PDW",nil,85000],
                                         ["RH_30Rnd_6x35_mag",nil,1000],
@@ -629,6 +622,7 @@ switch(_shop) do
                                 //["A3L_JackHammer","Jack Hammer (Primary Slot)",10000],
                                 //["jackhammerfuel","Jack Hammer Fuel",500],
                                 ["ItemMap",nil,50],
+                                ["LIMMITT_Network_Phone",nil,50],
                                 ["Harris_medkit",nil,1000],
                                 ["tf_anprc152",nil,1000],
                                 ["a3l_pickaxe",nil,1000],

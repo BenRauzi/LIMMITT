@@ -193,79 +193,79 @@
 			<Portuguese>Transferir</Portuguese>
 		</Key>
 		<Key ID="STR_ATM_GreaterThan">
-			<Original>LAKESIDE BANK: Max Deposit is $999,999.</Original>
-			<English>LAKESIDE BANK: Max Deposit is $999,999.</English>
+			<Original>Elwood BANK: Max Deposit is $999,999.</Original>
+			<English>Elwood BANK: Max Deposit is $999,999.</English>
 			<German>Du kannst nicht mehr als $999,999 gleichzeitig einzahlen</German>
 			<French>Vous ne pouvez pas déposer plus de $999,999</French>
 			<Italian>Non puoi depositare più di €999,999 alla volta</Italian>
 			<Portuguese>Você não pode transferir mais de R$999,999 em uma transação</Portuguese>
 		</Key>
 		<Key ID="STR_ATM_notnumeric">
-			<Original>LAKESIDE BANK: The amount entered isn't a numeric value.</Original>
-			<English>LAKESIDE BANK: The amount entered isn't a numeric value.</English>
+			<Original>Elwood BANK: The amount entered isn't a numeric value.</Original>
+			<English>Elwood BANK: The amount entered isn't a numeric value.</English>
 			<German>Die eingegebene Zahl ist keine richtige Zahl</German>
 			<French>Vous devez entrer un nombre.</French>
 			<Italian>L'importo inserito non è numerico.</Italian>
 			<Portuguese>O valor digitado não é um número.</Portuguese>
 		</Key>
 		<Key ID="STR_ATM_DepositMSG">
- 			<Original>LAKESIDE BANK: Deposit $%1</Original>
- 			<English>LAKESIDE BANK: Deposit $%1</English>
+ 			<Original>Elwood BANK: Deposit $%1</Original>
+ 			<English>Elwood BANK: Deposit $%1</English>
 			<German>Du hast $%1 auf dein Bankkonto überwiesen</German>
  			<French>Vous avez déposé $%1 dans votre compte bancaire</French>
 			<Italian>Hai despositato €%1 nel tuo conto bancario</Italian>
 			<Portuguese>Você depositou R$%1 na sua conta bancária</Portuguese>
  		</Key>
  		<Key ID="STR_ATM_NoneSelected">
- 			<Original>LAKESIDE BANK: You need to select someone to transfer to</Original>
- 			<English>LAKESIDE BANK: You need to select someone to transfer to</English>
+ 			<Original>Elwood BANK: You need to select someone to transfer to</Original>
+ 			<English>Elwood BANK: You need to select someone to transfer to</English>
 			<German>Du hast niemanden für den Transfer ausgewählt</German>
  			<French>Sélectionnez une personne pour le transfert</French>
 			<Italian>Devi selezionare qualcuno per trasferire fondi</Italian>
 			<Portuguese>Você tem que selecionar para quem deseja transferir</Portuguese>
 		</Key>
  		<Key ID="STR_ATM_DoesntExist">
- 			<Original>LAKESIDE BANK: The player selected doesn't seem to exist?</Original>
- 			<English>LAKESIDE BANK: The player selected doesn't seem to exist?</English>
+ 			<Original>Elwood BANK: The player selected doesn't seem to exist?</Original>
+ 			<English>Elwood BANK: The player selected doesn't seem to exist?</English>
 			<German>Der Spieler scheint nicht zu existieren?</German>
  			<Italian>Sembra che il giocatore selezionato non esista</Italian>
 			<Portuguese>O jogador selecionado parece não existir!</Portuguese>
  		</Key>
  		<Key ID="STR_ATM_TransferMax">
- 			<Original>LAKESIDE BANK: $999,999 is max transfer.</Original>
- 			<English>LAKESIDE BANK: $999,999 is max transfer.</English>
+ 			<Original>Elwood BANK: $999,999 is max transfer.</Original>
+ 			<English>Elwood BANK: $999,999 is max transfer.</English>
 			<German>Du kannst nicht mehr als $999,999 überweisen</German>
  			<French>Vous ne pouvez pas transférer plus de $999,999</French>
 			<Italian>Non puoi trasferire più di €999.000 alla volta</Italian>
 			<Portuguese>Você pode trasferir no máximo R$999.999.</Portuguese>
  		</Key>
  		<Key ID="STR_ATM_NotEnoughFunds">
- 			<Original>LAKESIDE BANK: Insufficient Money. </Original>
- 			<English>LAKESIDE BANK: Insufficient Money. </English>
+ 			<Original>Elwood BANK: Insufficient Money. </Original>
+ 			<English>Elwood BANK: Insufficient Money. </English>
 			<German>Du hast nicht so viel Geld auf deinem Bankkonto!</German>
  			<French>Vous n'avez pas autant dans votre compte bancaire</French>
 			<Italian>Non hai fondi sufficienti nel tuo conto in banca!</Italian>
 			<Portuguese>Você não tem todo esse dinhero na sua conta bancária</Portuguese>
  		</Key>
  		<Key ID="STR_ATM_SentMoneyFail">
- 			<Original>LAKESIDE BANK: You do not have enough money in your bank account, to transfer $%1 you will need $%2 as a tax fee.</Original>
- 			<English>LAKESIDE BANK: You do not have enough money in your bank account, to transfer $%1 you will need $%2 as a tax fee.</English>
+ 			<Original>Elwood BANK: You do not have enough money in your bank account, to transfer $%1 you will need $%2 as a tax fee.</Original>
+ 			<English>Elwood BANK: You do not have enough money in your bank account, to transfer $%1 you will need $%2 as a tax fee.</English>
 			<German>Du hast nicht genug Geld auf deinem Konto, es kostet $%2, um $%1 zu überweisen.</German>
  			<French>Vous n'avez pas assez d'agent dans votre compte bancaire, pour transférer $%1 vous devez payer $%2 de taxe</French>
 			<Italian>Non hai fondi sufficienti nel tuo conto in banca, per trasferire €%1 necessiti di €%2 per pagare la tassa di traferimento.</Italian>
 			<Portuguese>Você não tem dinheiro suficiente na suca conta bancária. Para trasferir R$%1 você vai pagar R$%2 de taxa</Portuguese>
  		</Key>
  		<Key ID="STR_ATM_SentMoneySuccess">
- 			<Original>LAKESIDE BANK: You have transfered $%1 to %2.\n\nA tax fee of $%3 was taken for the wire transfer.</Original>
- 			<English>LAKESIDE BANK: You have transfered $%1 to %2.\n\nA tax fee of $%3 was taken for the wire transfer.</English>
+ 			<Original>Elwood BANK: You have transfered $%1 to %2.\n\nA tax fee of $%3 was taken for the wire transfer.</Original>
+ 			<English>Elwood BANK: You have transfered $%1 to %2.\n\nA tax fee of $%3 was taken for the wire transfer.</English>
 			<German>Du hast $%1 an %2 überwiesen.\n\nEine Gebühr von $%3 wurde verrechnet.</German>
  			<French>Vous avez transférer $%1 à %2.\n\nA La taxe de $%3 vous à été prélevée pendant le transfert.</French>
 			<Italian>Hai trasferito €%1 a €%2.\n\nSono stati trattenuti €%3 di tassa per il trasferimento.</Italian>
 			<Portuguese>Você trasferiu R$%1 para %2.\n\nA taxa de trasferencia foi de R$%1.</Portuguese>
  		</Key>
  		<Key ID="STR_ATM_WithdrawMax">
- 			<Original>LAKESIDE BANK: You can't withdraw more then $999,999</Original>
- 			<English>LAKESIDE BANK: You can't withdraw more then $999,999</English>
+ 			<Original>Elwood BANK: You can't withdraw more then $999,999</Original>
+ 			<English>Elwood BANK: You can't withdraw more then $999,999</English>
 			<German>Du kannst nicht mehr als $999,999 abheben</German>
  			<French>Vous ne pouvez pas retirer plus de $999,999</French>
 			<Italian>Non puoi prelevare più di €999.000 in una volta</Italian>
@@ -280,8 +280,8 @@
 			<Portuguese>Você não pode sacar menos de R$100.</Portuguese>
  		</Key>
  		<Key ID="STR_ATM_WithdrawSuccess">
- 			<Original>LAKESIDE BANK: $%1 withdrawn.</Original>
- 			<English>LAKESIDE BANK: $%1 withdrawn.</English>
+ 			<Original>Elwood BANK: $%1 withdrawn.</Original>
+ 			<English>Elwood BANK: $%1 withdrawn.</English>
 			<German>Du hast $%1 von deinem Bankkonto abgehoben</German>
  			<French>Vous avez retiré $%1 de votre compte en banque</French>
 			<Italian>Hai prelevato €%1 dal tuo conto in banca</Italian>

@@ -23,12 +23,10 @@ switch (_filter) do
 			["U_PMC_CombatUniformLS_GSBPBB",nil,10000],
 			["U_PMC_CombatUniformRS_GSSPBB",nil,10000],
 			["A3LJumperCIDBlack",nil,10000],
-			["IRA_Soldier_Outfit_11",nil,15000],
 			["U_O_OfficerUniform_ocamo",nil,20000],
 			["TRYK_U_B_ARO1_BLK_CombatUniform",nil,20000],
 			["TRYK_U_B_AOR2_BLK_R_CombatUniform",nil,20000],
 			["TRYK_U_B_Snowt",nil,30000],
-			["TRYK_U_B_PCUHsW3",nil,20000]
 
 
 

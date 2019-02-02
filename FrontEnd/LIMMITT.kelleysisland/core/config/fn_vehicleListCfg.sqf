@@ -12,7 +12,7 @@ if(_shop == "") exitWith {[]};
 _return = [];
 switch (_shop) do
 {
-	case "civ_secondHand"
+	case "civ_secondHand":
 	{
 		_return = [
 			["ADM_Ford_F100",5600],
@@ -23,7 +23,7 @@ switch (_shop) do
 			["DAR_ChargerCiv",10000]
 		];
 	};
-	case "civ_luxury"
+	case "civ_luxury":
 	{
 		_return = [
 			["kw_db9_blue",125000],
@@ -51,22 +51,6 @@ switch (_shop) do
 			["cg_audi_rs5_noir",55000],
 			["kw_audis8_black",105000],
 			["kw_corvette_c7_black",105000]
-		];
-	};
-	case "dezzie_car":
-	{
-		_return = [
-			["IVORY_PRIUS",1000],
-			["A3L_FordKaBlue",15000],
-			["A3L_FordKaRed",15000],
-			["A3L_FordKaBlack",15000],
-			["A3L_FordKaWhite",15000],
-			["A3L_FordKaGrey",15000],
-			["DAR_FusionCiv",2000],
-			["DAR_FusionCivBlue",20000],
-			["IVORY_R8",150000],
-			["IVORY_R8SPYDER",150000],
-			["IVORY_REV",15000]
 		];
 	};
 	case "super_bikes":
@@ -360,17 +344,9 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["IVORY_T6A_1",300000],
-			["bwi_a3_t6a_6",300000],
-			["bwi_a3_t6a_nta",300000],
-			["bwi_a3_t6a_7",300000],
-			["bwi_a3_t6a_9",300000],
-			["bwi_a3_t6a_4",300000],
-			["C_Heli_Light_01_civil_F",325000],
-			["O_Heli_Light_02_unarmed_F",350000],
-			["ivory_b206",350000],
-			["ivory_b206_news",375000],
-			["GNT_C185",1000000]
+			["C_Plane_Civil_01_F",50000],
+			["C_Heli_Light_01_civil_F",250000],
+			["d3s_AS_365",150000]
 		];
 	};
 	case "cop_air":

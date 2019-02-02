@@ -17,8 +17,8 @@ player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemCompass";
 player assignItem "ItemCompass";
-player addItem "tf_microdagr";
-player assignItem "tf_microdagr";
+player addItem "LIMMITT_Network_Phone";
+player assignItem "LIMMITT_Network_Phone";
 
 [] call life_fnc_saveGear;
 

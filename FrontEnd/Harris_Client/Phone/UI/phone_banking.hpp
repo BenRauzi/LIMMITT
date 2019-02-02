@@ -89,7 +89,7 @@ class Harris_phone_banking
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "[] call life_fnc_bankTransfer";
+			action = "[] call life_fnc_bankTransfer; [] spawn Harris_updateBanking";
 		};
 	};
 };

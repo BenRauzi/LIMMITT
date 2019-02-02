@@ -771,10 +771,10 @@ Harris_acceptCall = {
 	if ("tf_anprc152" in (assignedItems player)) then {
 		player unassignItem "tf_anprc152";
 		
-		if !("RR_CellPhone" in items player) then {
-			player addItem "RR_CellPhone";
+		if !("LIMMITT_Network_Phone" in items player) then {
+			player addItem "LIMMITT_Network_Phone";
 		};
-			player assignItem "RR_CellPhone";
+			player assignItem "LIMMITT_Network_Phone";
 		Harris_hadRadio = true;
 	};
 
@@ -803,10 +803,10 @@ Harris_acceptedCall = {
 	if ("tf_anprc152" in (assignedItems player)) then {
 		player unassignItem "tf_anprc152";
 		
-		if !("RR_CellPhone" in items player) then {
-			player addItem "RR_CellPhone";
+		if !("LIMMITT_Network_Phone" in items player) then {
+			player addItem "LIMMITT_Network_Phone";
 		};
-		player assignItem "RR_CellPhone";
+		player assignItem "LIMMITT_Network_Phone";
 		Harris_hadRadio = true;
 	};
 	
@@ -869,7 +869,7 @@ Harris_hangUp = {
 Harris_hungUp = {
 	
 	if ("tf_anprc152" in (items player) && Harris_hadRadio) then {
-		player unassignItem "RR_CellPhone";
+		player unassignItem "LIMMITT_Network_Phone";
 		player assignItem "tf_anprc152";
 		Harris_hadRadio = nil;
 	};

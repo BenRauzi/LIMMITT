@@ -37,7 +37,7 @@ compileFinal "
 	if(!([str(_val)] call fnc_isnumber)) exitWith {};
 	if(_from == """") exitWith {};
 	gm_memecash = gm_memecash + _val;
-	hint format[""%1 has wire transferred $%2 to you."",_from,[_val] call life_fnc_numberText];
+	['Money Received', format[""%1 has wire transferred $%2 to you."",_from,[_val] call life_fnc_numberText], 'Info'] call Harris_Notifications;
 	
 ";
 publicVariable "clientWireTransfer";
