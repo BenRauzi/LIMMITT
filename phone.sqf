@@ -1142,38 +1142,26 @@ Harris_updateLicenses = {
 	} forEach _licenses;
 };
 
-Harris_giveItemPhone = {
-	private["_unit","_val"];
-	if((lbCurSel 2023) == -1) exitWith {["Error", "No one was selected!", "Failure"] call Harris_Notifications; ctrlShow[2002,true];};
-	_unit = lbData [2023,lbCurSel 2023];
-	_unit = call compile format["%1",_unit];
-	if((lbCurSel 2005) == -1) exitWith {["Error", "You didn't select an item you wanted to give.", "Failure"] call Harris_Notifications;ctrlShow[2002,true];};
-	_item = lbData [2005,(lbCurSel 2005)];
-
-	//A series of checks *ugh*
-	if(isNil "_unit") exitWith { ["Error", "The selected player is not within range", "Failure"] call Harris_Notifications;};
-	[[_unit,1,_item,player],"life_fnc_receiveItem",_unit,false] spawn bis_fnc_mp;
-	_type = [_item,0] call life_fnc_varHandle;
-	_type = [_type] call life_fnc_varToStr;
-	["Success",  format["You gave %1 %2 %3",_unit getVariable["realname",name _unit],_val,_type], "Success"] call Harris_Notifications;
-	[] spawn Harris_updateVInventory;
+Harris_useItemPhone= {
+	[] call life_fnc_useItem;
 };
 
 Harris_removeItemPhone = {
-	private["_data","_value","_obj","_pos","_ind"];
+	private["_data","_obj","_pos","_ind"];
 	disableSerialization;
 	_data = lbData[2005,(lbCurSel 2005)];
-	_value = 1;
 	if(_data == "") exitWith { ["Error", "You didn't select anything to remove.", "Failure"] call Harris_Notifications;};
 	_ind = [_data,life_illegal_items] call fnc_index;
 	if(_ind != -1 && ([west,getPos player,100] call life_fnc_nearUnits)) exitWith {titleText["This is an illegal item and cops are near by, you cannot dispose of the evidence","PLAIN"]};
 	if(player != vehicle player) exitWith {titleText["You cannot remove an item when you are in a vehicle.","PLAIN"]};
+	if(!([false,_data,1] call life_fnc_handleInv)) exitWith { ["Error", "Couldn't remove that much of that item, maybe you don't have that amount?", "Failure"] call Harris_Notifications;};
 	_type = [_data,0] call life_fnc_varHandle;
 	_type = [_type] call life_fnc_varToStr;
-	 ["Success", format["You have successfully removed %1 %2 from your inventory.",(parseNumber _value), _type], "Success"] call Harris_Notifications;
+	 ["Success", format["You have successfully removed %1 %2 from your inventory.",1, _type], "Success"] call Harris_Notifications;
 		
 	[] call Harris_updateVInventory;	
 };
+
 Harris_giveKeyPhone = {
 	private["_dialog","_list","_plist","_sel","_vehicle","_owners","_index","_unit","_uid"];
 	disableSerialization;

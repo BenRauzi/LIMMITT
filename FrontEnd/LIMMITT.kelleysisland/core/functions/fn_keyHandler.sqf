@@ -98,6 +98,8 @@ switch (_code) do
 			_handled = true;
 		};
 	};
+
+
 /*
 	case 15:
 	{
@@ -568,9 +570,11 @@ switch (_code) do
 		{
 			createdialog "Life_key_management";
 		};
-		if(!_alt && !_ctrlKey && !dialog && !_stop) then
-		{
-			[] call fnc_opentablet;
+		if(!_alt && !_ctrlKey && !dialog && !_stop) then {
+			[] call Harris_openPhone;
+		};
+		if (_alt && !_ctrlKey && !dialog && !_stop) then {
+			[] call fnc_openTablet;
 		};
 	};
 
