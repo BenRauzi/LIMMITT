@@ -124,7 +124,7 @@ switch (_shop) do
 			["kw_viper_08_urban",55000]
 		];
 	};
-	case "super_bikes":
+	case "civ_motorcycle":
 	{
 		_return = [
 			["kw_xr_silver",100000],
