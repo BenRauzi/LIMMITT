@@ -349,6 +349,6 @@ LIMMITT_clientInit = {
 		["Green","Green",false]
 	];
 
-	//setViewDistance 5000;
+	setViewDistance 4000;
 };
 
