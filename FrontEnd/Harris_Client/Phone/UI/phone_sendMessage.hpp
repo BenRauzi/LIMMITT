@@ -58,7 +58,7 @@ class Harris_phone_sendMessage
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.113437 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "[] call Harris_textPlayer";
+			action = "[] call Harris_textPlayer; closeDialog 5013; [] call Harris_openPhone";
 		};
 	};
 };

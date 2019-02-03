@@ -3,7 +3,7 @@
 	Description: Phone - Read Function Name
 */
 
-Harris_phoneCall = {+
+Harris_phoneCall = {
 	
 	systemChat "Note: Calling functions have not yet been tested. If not working they will be fixed within the next 48 hours.";
 	if (!isNil "Harris_Calling") exitWith { ["Error","You are already in a call", "Failure"] spawn Harris_Notifications;};

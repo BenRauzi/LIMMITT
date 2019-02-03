@@ -326,7 +326,7 @@ LIMMITT_clientInit = {
 		saveProfileNamespace;
 	};
 	arr pushBackUnique (profileNameSpace getVariable "yourNumber");
-	missionNamespace setVariable ["cellNumbers", arr];
+	missionNamespace setVariable ["cellNumbers", arr,true];
 
 
 	Harris_ringTones = 

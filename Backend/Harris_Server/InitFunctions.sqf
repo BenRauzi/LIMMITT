@@ -176,7 +176,7 @@ Phone_Functions =
   ["fn_onDutyUber", "Harris_onDutyUber"],
   ["fn_onUberLbChanged", "Harris_onUberLbChanged"],
   ["fn_openPhone", "Harris_openPhone"],
-  ["fn_openPhoned", "Harris_openPhoned"],
+  ["fn_phoneOpened", "Harris_phoneOpened"],
   ["fn_openPhoneInCall", "Harris_openPhoneInCall"],
   ["fn_openPhoneInCalling", "Harris_openPhoneInCalling"],
   ["fn_openPhoneWhileCalling", "Harris_openPhoneWhileCalling"],

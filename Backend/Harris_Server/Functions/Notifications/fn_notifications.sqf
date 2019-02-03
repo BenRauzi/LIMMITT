@@ -11,7 +11,7 @@
 		Warning
 
 	For Config Init:
-		Harris_Messages = 0;
+		Harris_MessagesN = 0;
 		message1_active = false;
 		message2_active = false;
 		message3_active = false;
@@ -62,37 +62,37 @@ Harris_Notifications = {
 	{
 		case !(message1_active):
 		{
-			 Harris_Messages = 1;
+			 Harris_MessagesN = 1;
 		};
 		case !(message2_active):
 		{
-			Harris_Messages = 2;
+			Harris_MessagesN = 2;
 		};
 		case !(message3_active):
 		{
-			Harris_Messages = 3;
+			Harris_MessagesN = 3;
 		};
 		case !(message4_active):
 		{
-			Harris_Messages = 4;
+			Harris_MessagesN = 4;
 		};
 		case !(message5_active):
 		{
-			Harris_Messages = 5;
+			Harris_MessagesN = 5;
 		};
 		default
 		{
-			Harris_Messages = 0;
+			Harris_MessagesN = 0;
 		};
 	};
 
-	_messages = Harris_Messages;
+	_messages = Harris_MessagesN;
 
 	_typeCtrl = "";
 	_titleCtrl = "";
 	_bodyCtrl = "";
 	_iconCtrl = "";
-	switch(Harris_Messages) do
+	switch(Harris_MessagesN) do
 	{
 		case 1:
 		{
@@ -181,7 +181,7 @@ Harris_Notifications = {
 
 		call compile(format["message%1_active = false",_this select 0]);
 
-		Harris_Messages = Harris_Messages - 1;
+		Harris_MessagesN = Harris_MessagesN - 1;
 
 	};
 };
