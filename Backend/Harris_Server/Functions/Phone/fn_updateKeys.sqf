@@ -40,7 +40,7 @@ Harris_updateKeys = {
 	{
 		if(!isNull _x && alive _x && player distance _x < 20 && _x != player) then
 		{
-			_plist lbAdd format["%1",_x getVariable["realname",name _x]];
+			_plist lbAdd format["%1",(format ["%1 - %2", getPlayerUID _x select [13,17], profileNamespace getVariable [str (getPlayerUID _x), "Unknown"]])];
 			_plist lbSetData [(lbSize _plist)-1,str(_x)];
 		};
 	} foreach _near_units;
