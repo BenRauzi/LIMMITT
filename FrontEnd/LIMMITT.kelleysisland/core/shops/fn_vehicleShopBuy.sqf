@@ -65,8 +65,8 @@ switch (life_veh_shop select 0) do { // Switch Statement added by Nicholas Jo'Fo
 		_vehicle setPos [(getMarkerPos _spawnPoint) select 0,(getMarkerPos _spawnPoint) select 1,8.5];
 		[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn bis_fnc_mp;
 		[_vehicle] call life_fnc_clearVehicleAmmo;
-		[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
-		[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
+		_vehicle setVariable["trunk_in_use",false,true];
+		_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
 		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 	}; 
 	default {
@@ -79,8 +79,8 @@ switch (life_veh_shop select 0) do { // Switch Statement added by Nicholas Jo'Fo
 		_vehicle setPos (getMarkerPos _spawnPoint);
 		[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn bis_fnc_mp;
 		[_vehicle] call life_fnc_clearVehicleAmmo;
-		[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
-		[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
+		_vehicle setVariable["trunk_in_use",false,true];
+		_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
 		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 	}; 
 };
