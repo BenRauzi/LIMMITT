@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=878;
+		nextID=880;
 	};
 	class Camera
 	{
-		pos[]={3593.667,17.364031,3300.2949};
-		dir[]={-0.93510717,-0.21681879,-0.28064218};
-		up[]={-0.20772885,0.97617745,-0.06233979};
-		aside[]={-0.28748143,-3.1095988e-007,0.95788258};
+		pos[]={3529.7485,19.263582,3218.7268};
+		dir[]={0.072124735,-0.13534448,0.98827761};
+		up[]={0.0098598646,0.9907648,0.13506112};
+		aside[]={0.9974466,9.9476893e-008,-0.072790913};
 	};
 };
 binarizationWanted=0;
@@ -39,13 +39,14 @@ addons[]=
 	"A3_Structures_F_Heli_Items_Electronics",
 	"A3_Props_F_Orange_Items_Electronics",
 	"A3_Structures_F_EPA_Walls",
-	"JD_Client_Clothing"
+	"JD_Client_Clothing",
+	"ADM_GMC_Vandura"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -156,6 +157,11 @@ class AddonsMetaData
 			name="JD_Client_Clothing";
 			author="John Doe";
 		};
+		class Item18
+		{
+			className="ADM_GMC_Vandura";
+			name="ADM_GMC_Vandura";
+		};
 	};
 };
 randomSeed=8413355;
@@ -184,7 +190,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=292;
+		items=293;
 		class Item0
 		{
 			dataType="Marker";
@@ -7671,6 +7677,24 @@ class Mission
 			id=875;
 			type="Land_PCSet_01_case_F";
 			atlOffset=0.49281502;
+		};
+		class Item292
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3522.8879,17.019577,3243.7952};
+				angles[]={0,2.8296499,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowDamage false; this lock 2;}";
+			};
+			id=879;
+			type="ADM_GMC_Vandura";
+			atlOffset=0.00037288666;
 		};
 	};
 	class Connections
