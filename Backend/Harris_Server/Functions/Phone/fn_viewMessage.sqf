@@ -18,8 +18,8 @@ Harris_viewMessage = {
 
 	_message = Harris_messages select (count Harris_messages - 1) - _newid;
 
-	_cellNumber = _message select 0;
-	_messageBody = _message select 1;
+	_cellNumber = _message select 1;
+	_messageBody = _message select 0;
 	
 	Harris_numberToCall = _cellNumber;
 
