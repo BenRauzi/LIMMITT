@@ -156,6 +156,37 @@ switch (_shop) do
 			["kw_xr_baby_pink",100000]
 		];
 	};
+	case "dcso_patrol":
+	{
+		_return =
+		[
+			["JD_CVPI_Skin2",1000],
+			["JD_CVPI_U_Skin2",1000],
+			["JD_CVPI_White",1000],
+			["JD_CVPI_U_White",1000],
+			["JD_CVPI_Black",1000],
+			["JD_CVPI_U_Black",1000],
+			["JD_PoliceB_1",2000],
+			["kw_06Surburban_sheriff",4000],
+			["kw_09Tahoe_SHERIFF",4000],
+			["kw_15Charger_SHERIFF",4000],
+			["kw_Explorer_14_SHERIFF",4000],
+			["kw_fordRaptor_2017_SHERIFF",8000],
+			["kw_sentinal_swat",10000]
+		];
+	};
+	case "dcso_air":
+	{
+		_return =
+		[
+			["B_Heli_Light_01_F",25000],
+			["I_Heli_Transport_02_F",30000],
+			["I_Heli_light_03_unarmed_F",30000],
+			["EC635_Unarmed",32500],
+			["d3s_AS_365_PD",32500],
+			["EC635_SAR",32500]
+		];
+	};
 	case "civ_lsmovehicle":
 	{
 		_return = [
@@ -235,25 +266,6 @@ switch (_shop) do
 		if(license_civ_rebel) then
 		{
 		};
-	};
-	case "cop_patrol":
-	{
-		_return =
-		[
-			["JD_CVPI_Skin2",1000],
-			["JD_CVPI_U_Skin2",1000],
-			["JD_CVPI_White",1000],
-			["JD_CVPI_U_White",1000],
-			["JD_CVPI_Black",1000],
-			["JD_CVPI_U_Black",1000],
-			["JD_PoliceB_1",2000],
-			["kw_06Surburban_sheriff",4000],
-			["kw_09Tahoe_SHERIFF",4000],
-			["kw_15Charger_SHERIFF",4000],
-			["kw_Explorer_14_SHERIFF",4000],
-			["kw_fordRaptor_2017_SHERIFF",8000],
-			["kw_sentinal_swat",10000]
-		];
 	};
 	case "cop_marshals":
 	{

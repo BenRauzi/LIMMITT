@@ -46,6 +46,51 @@ _price = _baseprice;
 hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
 //Spawn the vehicle and prep it.
+switch (life_veh_shop select 0) do { // Switch Statement added by Nicholas Jo'Foski on the 03/01/2019
+	case "med_air_hs" : {
+	 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
+		waitUntil {!isNil "_vehicle"}; //Wait?
+		_vehicle allowDamage false; //Temp disable damage handling..
+		_vehicle lock 2;
+		_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
+		_vehicle setDir (markerDir _spawnPoint);
+		_vehicle setPos (getMarkerPos _spawnPoint);
+		[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn bis_fnc_mp;
+		[_vehicle] call life_fnc_clearVehicleAmmo;
+		[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
+		[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
+		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+	}; 
+	case "dcso_air" : { // Spawn on top of helipad added by Nicholas Jo'Foski on the 03/01/2019
+		_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
+		waitUntil {!isNil "_vehicle"}; //Wait?
+		_vehicle allowDamage false; //Temp disable damage handling..
+		_vehicle lock 2;
+		_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
+		_vehicle setDir (markerDir _spawnPoint);
+		_vehicle setPos [(getMarkerPos _spawnPoint) select 0,(getMarkerPos _spawnPoint) select 1,8.5];
+		[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn bis_fnc_mp;
+		[_vehicle] call life_fnc_clearVehicleAmmo;
+		[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
+		[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
+		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+	}; 
+	default {
+		_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
+		waitUntil {!isNil "_vehicle"}; //Wait?
+		_vehicle allowDamage false; //Temp disable damage handling..
+		_vehicle lock 2;
+		_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
+		_vehicle setDir (markerDir _spawnPoint);
+		_vehicle setPos (getMarkerPos _spawnPoint);
+		[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn bis_fnc_mp;
+		[_vehicle] call life_fnc_clearVehicleAmmo;
+		[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
+		[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
+		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+	}; 
+};
+/*
 if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
@@ -73,7 +118,7 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn bis_fnc_mp;
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 };
-
+*/
 if(_className == "IVORY_REV") then {
 	if(_colorIndex in [11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]) then {
 		[_vehicle,"cop_rev",true] spawn life_fnc_vehicleAnimate;
