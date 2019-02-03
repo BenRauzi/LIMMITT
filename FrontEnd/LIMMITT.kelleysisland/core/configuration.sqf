@@ -27,7 +27,6 @@ tradingDirtyMoney = false;
 gm_robbing = false;
 gm_robbedStores = [];
 life_clothing_uniform = -1;
-gm_viewDistance = 1500;
 life_koil_rally = 0;
 life_redgull_effect = time;
 gm_containerInUse = false;
