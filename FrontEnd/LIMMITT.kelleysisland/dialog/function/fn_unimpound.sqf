@@ -27,14 +27,14 @@ if(typeName life_garage_sp == "ARRAY") then {
 	if(life_garage_sp in ["medic_spawn_1","medic_spawn_2","medic_spawn_3"]) then {
 		[[_vid,_pid,life_garage_sp,_unit,_price],"TON_fnc_spawnVehicle",false,false] spawn bis_fnc_mp;
 	} else {
-		if (life_garage_sp == "dcso_air") {
-			[[_vid,_pid,([(getMarkerPos life_garage_sp) select 0,(getMarkerPos life_garage_sp) select 1,8.5]),_unit,_price,markerDir life_garage_sp],"TON_fnc_spawnVehicle",false,false] spawn bis_fnc_mp;
-		} else {
-			[[_vid,_pid,(getMarkerPos life_garage_sp),_unit,_price,markerDir life_garage_sp],"TON_fnc_spawnVehicle",false,false] spawn bis_fnc_mp;
+		_spawnPoint = getMarkerPos life_garage_sp;
+		if (life_garage_sp == "dcso_air") then {
+			_spawnPoint = [(getMarkerPos life_garage_sp) select 0,(getMarkerPos life_garage_sp) select 1,8.5];
 		};
+		[[_vid,_pid,_spawnPoint,_unit,_price,markerDir life_garage_sp],"TON_fnc_spawnVehicle",false,false] spawn bis_fnc_mp;
 	};
 };
 
 ["Success",localize "STR_Garage_SpawningVeh","Success"] spawn Harris_Notifications;
 
-gm_memecash = gm_memecash - _price;
+limmittcash = limmittcash - _price;
