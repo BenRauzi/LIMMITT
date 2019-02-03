@@ -14,28 +14,28 @@ class cfgInteractions
 		text = "Police";
 		class Registration
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), !isNull Harris_currentCursorObject, !(cursorObject isKindOf 'Man')]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Ship'), (playerSide == west), !isNull Harris_currentCursorObject, !(cursorObject isKindOf 'Man')]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_searchVehAction;";
 			icon = "002_Tag.paa";
 			text = "Registration";
 		};
 		class Search
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), !isNull Harris_currentCursorObject,!(cursorObject isKindOf 'Man')]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Ship'), (playerSide == west), !isNull Harris_currentCursorObject,!(cursorObject isKindOf 'Man')]";
 			action = "[Harris_currentCursorObject] spawn fnc_searchVehicle;";
 			icon = "030-search.paa";
 			text = "Search Vehicle";
 		};
 		class Pullout
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), !isNull Harris_currentCursorObject,count crew cursorObject > 0,!(cursorObject isKindOf 'Man')]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Ship'), (playerSide == west), !isNull Harris_currentCursorObject,count crew cursorObject > 0,!(cursorObject isKindOf 'Man')]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_pulloutAction;";
 			icon = "006_DragChild.paa";
 			text = "Pullout";
 		};
 		class Impound
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), !isNull Harris_currentCursorObject, !(Harris_currentCursorObject isKindOf 'Man')]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Ship'), (playerSide == west), !isNull Harris_currentCursorObject, !(Harris_currentCursorObject isKindOf 'Man')]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_impoundAction;";
 			icon = "029-license-plate.paa";
 			text = "Impound";
@@ -43,7 +43,7 @@ class cfgInteractions
 	};
 	class ImpoundEMS
 	{
-		condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == independent), !(Harris_currentCursorObject isKindOf 'Man')]";
+		condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Ship'), (playerSide == independent), !(Harris_currentCursorObject isKindOf 'Man')]";
 		action = "[Harris_currentCursorObject] spawn life_fnc_impoundAction;";
 		icon = "029-license-plate.paa";
 		text = "Impound";
@@ -71,14 +71,14 @@ class cfgInteractions
 	};
 	class Pullout
 	{
-		condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), Harris_currentCursorObject in life_vehicles, count crew cursorObject > 0, playerside != west]";
+		condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Ship'), Harris_currentCursorObject in life_vehicles, count crew cursorObject > 0, playerside != west]";
 		action = "[Harris_currentCursorObject] spawn life_fnc_pulloutAction;";
 		icon = "006_DragChild.paa";
 		text = "Pullout";
 	};
 	class checkLicense 
 	{
-		condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), (playerSide == west), (driver Harris_currentCursorObject != Harris_currentCursorObject), (!isNull (driver Harris_currentCursorObject))]";
+		condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Ship'), (playerSide == west), (driver Harris_currentCursorObject != Harris_currentCursorObject), (!isNull (driver Harris_currentCursorObject))]";
 		action = "[[driver Harris_currentCursorObject],""life_fnc_licenseCheck"",Harris_currentCursorObject,FALSE] spawn bis_fnc_mp;";
 		icon = "030-identity-card.paa";
 		text = "Check License";
@@ -90,7 +90,7 @@ class cfgInteractions
 		text = "Vehicle";
 		class pushBoat 
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Sea')]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Ship')]";
 			action = "[] spawn life_fnc_pushObject;";
 			icon = "020-hand.paa";
 			text = "Push Boat";
@@ -111,7 +111,7 @@ class cfgInteractions
 		};
 		class repairVehicle
 		{
-			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Sea'), player distance Harris_currentCursorObject < 10,!(Harris_currentCursorObject isKindOf 'Man')]";
+			condition = "[(Harris_currentCursorObject isKindOf 'Land' || Harris_currentCursorObject isKindOf 'Air' || Harris_currentCursorObject isKindOf 'Ship'), player distance Harris_currentCursorObject < 10,!(Harris_currentCursorObject isKindOf 'Man')]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_repairTruck;";
 			icon = "023-car-repair.paa";
 			text = "Repair";

@@ -488,3 +488,4 @@ class RscPhoneMapControl
 #include "phone_map.hpp"
 #include "phone_sendMessageUber.hpp"
 #include "phone_uber.hpp"
+#include "phone_information.hpp"

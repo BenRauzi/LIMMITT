@@ -1,0 +1,62 @@
+ Volume in drive C has no label.
+ Volume Serial Number is A6E8-BBD7
+
+ Directory of C:\Users\Ben\Documents\GitHub\LIMMITT\Backend\Harris_Server\Functions\Phone
+
+03/02/2019  12:45 PM               799 fn_acceptCall.sqf
+03/02/2019  12:45 PM             1,267 fn_acceptedCall.sqf
+03/02/2019  12:37 PM               817 fn_addContact.sqf
+03/02/2019  12:41 PM               306 fn_assignNumber.sqf
+03/02/2019  12:39 PM               286 fn_bankEdited.sqf
+03/02/2019  12:43 PM               174 fn_blockedCall.sqf
+03/02/2019  12:47 PM               222 fn_cancelCall.sqf
+03/02/2019  12:47 PM               285 fn_canceledCall.sqf
+03/02/2019  12:49 PM               428 fn_changeRingTone.sqf
+03/02/2019  12:42 PM               179 fn_clearDial.sqf
+03/02/2019  12:38 PM               287 fn_contactEdited.sqf
+03/02/2019  12:45 PM               192 fn_declineCall.sqf
+03/02/2019  12:45 PM               260 fn_declinedCall.sqf
+03/02/2019  12:36 PM               493 fn_deleteContact.sqf
+03/02/2019  12:40 PM               451 fn_deleteMessage.sqf
+03/02/2019  12:42 PM               261 fn_dial.sqf
+03/02/2019  12:57 PM               217 fn_getVehicleName.sqf
+03/02/2019  12:54 PM             1,127 fn_giveKeyPhone.sqf
+03/02/2019  12:47 PM               477 fn_hangUp.sqf
+03/02/2019  12:47 PM               573 fn_hungUp.sqf
+03/02/2019  12:38 PM               282 fn_idEdited.sqf
+03/02/2019  12:58 PM               402 fn_informationOpened.sqf
+03/02/2019  12:56 PM               946 fn_keyDropPhone.sqf
+03/02/2019  12:36 PM             3,423 fn_listContacts.sqf
+03/02/2019  12:39 PM             3,447 fn_listMessages.sqf
+03/02/2019  12:57 PM               349 fn_offDutyUber.sqf
+03/02/2019  12:57 PM               335 fn_onDutyUber.sqf
+03/02/2019  12:57 PM               515 fn_onUberLbChanged.sqf
+03/02/2019  12:34 PM               397 fn_openPhone.sqf
+03/02/2019  12:34 PM               410 fn_openPhoned.sqf
+03/02/2019  12:46 PM               510 fn_openPhoneInCall.sqf
+03/02/2019  12:44 PM               569 fn_openPhoneInCalling.sqf
+03/02/2019  12:43 PM               523 fn_openPhoneWhileCalling.sqf
+03/02/2019  12:40 PM               473 fn_openSendMessageContact.sqf
+03/02/2019  12:57 PM               472 fn_openSendMessageUber.sqf
+03/02/2019  12:49 PM             1,430 fn_openSettings.sqf
+03/02/2019  12:43 PM             2,013 fn_phoneCall.sqf
+03/02/2019  12:36 PM               363 fn_phoneNumberText.sqf
+03/02/2019  12:43 PM             1,120 fn_receiveCall.sqf
+03/02/2019  12:42 PM               421 fn_receiveText.sqf
+03/02/2019  12:54 PM             1,128 fn_removeItemPhone.sqf
+03/02/2019  12:35 PM               197 fn_setBackground.sqf
+03/02/2019  12:50 PM               485 fn_switchAnonCalling.sqf
+03/02/2019  12:51 PM               488 fn_switchBlockCalling.sqf
+03/02/2019  12:37 PM             1,114 fn_switchContactPage.sqf
+03/02/2019  12:40 PM             1,092 fn_switchMessagesPage.sqf
+03/02/2019  12:41 PM             1,008 fn_textPlayer.sqf
+03/02/2019  12:56 PM               740 fn_uberOpened.sqf
+03/02/2019  12:52 PM               822 fn_updateBanking.sqf
+03/02/2019  12:51 PM             1,570 fn_updateKeys.sqf
+03/02/2019  12:52 PM               593 fn_updateLicenses.sqf
+03/02/2019  12:51 PM               508 fn_updateVInventory.sqf
+03/02/2019  12:53 PM               127 fn_useItemPhone.sqf
+03/02/2019  12:39 PM               452 fn_viewContact.sqf
+03/02/2019  12:40 PM               888 fn_viewMessage.sqf
+              55 File(s)         38,713 bytes
+               0 Dir(s)  26,689,622,016 bytes free

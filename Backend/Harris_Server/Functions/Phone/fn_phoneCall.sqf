@@ -3,7 +3,9 @@
 	Description: Phone - Read Function Name
 */
 
-Harris_phoneCall = {
+Harris_phoneCall = {+
+	
+	systemChat "Note: Calling functions have not yet been tested. If not working they will be fixed within the next 48 hours.";
 	if (!isNil "Harris_Calling") exitWith { ["Error","You are already in a call", "Failure"] spawn Harris_Notifications;};
 	if (Harris_numberToCall isEqualTo (profileNameSpace getVariable "yourNumber")) exitWith { ["Failed", "You cannot call yourself", "Failure"] spawn Harris_Notifications; Harris_Calling = nil; };
 	if !(Harris_numberToCall in (missionNamespace getVariable ["cellNumbers", []])) exitWith  { playSound "notinservice_tone"; Harris_Calling = nil; ["Invalid CallerID", "This Cell Phone Number is not in service", "Failure"] spawn Harris_Notifications; };

@@ -200,21 +200,12 @@ switch (_code) do
 
 	case 78:
 	{
-	    if(_ctrlKey) then
-	    {
-	        if (viewDistance isEqualTo 7500 || (viewDistance + 500) > 7500) then {
-	         hint parseText format["<t size='1.2' color='#ffffff'>You are already at the maximum view distance (7500m)"];
-	        } else {
-	          _wantedDistance = viewDistance + 500;
-	          setViewDistance _wantedDistance;
-	          hint parseText format["<t size='1.2' color='#ffffff'>View Distance: %1m (+500m)", viewDistance];
-	        };
-	        _handled = true;
-	    };
+	
 	};
 	
 	case 74:
 	{
+		/*
 	    if(_ctrlKey) then
 	    {
 	        if (viewDistance isEqualTo 500 || (viewDistance - 500) < 500) then {
@@ -226,6 +217,7 @@ switch (_code) do
 	        };
 	        _handled = true;
 	    };
+	    */
 	};
 	case 211:
 	{

@@ -307,11 +307,14 @@ LIMMITT_clientInit = {
 	    params ["_vehicle", "_role", "_unit", "_turret"];
 
 	    if (_role == "driver" && player getVariable ["Foski_Restrained", false]) then {
-	        if (vehicle player isKindOf     'Air') then {
+	        if (vehicle player isKindOf 'Air') then {
 	            player action["GetOut",vehicle player];
 	        } else {
 	                player action["eject",vehicle player];
 	        };
+	    };
+	    if (vehicle player isKindOf "Air") then {
+	    	[(call TFAR_fnc_activeLrRadio), 1, "80.7"] call TFAR_fnc_SetChannelFrequency;
 	    };
 	}];
 
@@ -345,5 +348,7 @@ LIMMITT_clientInit = {
 		["Gold","Gold",false],
 		["Green","Green",false]
 	];
+
+	//setViewDistance 5000;
 };
 
