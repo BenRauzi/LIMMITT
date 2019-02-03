@@ -231,6 +231,8 @@ LIMMITT_clientInit = {
 		[] remoteExecCall ["Foski_manageTrafficLights",2];
 		[] remoteExec ["Harris_initOreLoop", 2];
 		missionNamespace setVariable ["firstLogin", nil, true];
+		missionNamespace setVariable ["cellNumbers", [], true];
+		missionNamespace setVariable ["uberDrivers", [], true];	
 
 		_bank = (nearestObjects [[3606.31,3070.24,3.11581],["Land_CommonwealthBank"],100]) select 0;
 		_bank animate ["Vault_Door",0]; 

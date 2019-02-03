@@ -21,6 +21,6 @@ LIMMITT_ServerInit ={
 	};
 
 		
-	missionNamespace setVariable ["cellNumbers", []];
+	missionNamespace setVariable ["cellNumbers", [], true];
 	missionNamespace setVariable ["uberDrivers", [], true];	
 };
