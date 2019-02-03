@@ -102,6 +102,28 @@ switch (_shop) do
 			["kw_taurus_10_blue",60000]
 		];
 	};
+	case "civ_dodge":
+	{
+		_return =
+		[
+			["kw_challenger_16_silver",45000],
+			["kw_challenger_16_camo",75000],
+			["kw_challenger_16_blue",85000],
+			["kw_challenger_16_green",95000],
+			["kw_challenger_16_pink",105000],
+			["kw_challenger_16_black",100000],
+			["kw_charger_15_black",95000],
+			["kw_charger_15_blue",45000],
+			["kw_charger_15_darkred",50000],
+			["kw_charger_15_yellow",55000],
+			["kw_charger_15_green",55000],
+			["kw_charger_15_pink",55000],
+			["kw_viper_08_black",55000],
+			["kw_viper_08_darkred",55000],
+			["kw_viper_08_white",55000],
+			["kw_viper_08_urban",55000]
+		];
+	};
 	case "super_bikes":
 	{
 		_return = [
