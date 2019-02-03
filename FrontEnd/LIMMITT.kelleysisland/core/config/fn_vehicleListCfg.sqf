@@ -53,6 +53,55 @@ switch (_shop) do
 			["kw_corvette_c7_black",105000]
 		];
 	};
+	case "civ_chevrolet":
+	{
+		_return = [
+			["A3L_SuburbanWhite",195000],
+			["A3L_SuburbanBlue",195000],
+			["A3L_SuburbanRed",195000],
+			["A3L_SuburbanBlack",195000],
+			["A3L_SuburbanGrey",195000],
+			["A3L_SuburbanOrange",195000],
+			["D_Cobalt_Blue",32500],
+			["D_Cobalt_DarkRed",32500],
+			["D_Cobalt_Granite",32500],
+			["D_Cobalt_Red",32500],
+			["D_Cobalt_White",32500],
+			["D_Cobalt_Yellow",32500],
+			["DAR_ImpalaCivA",30000],
+			["DAR_ImpalaCivB",30000],
+			["DAR_ImpalaCivD",30000],
+			["DAR_ImpalaCiv",30000],
+			["DAR_ImpalaCivE",30000],
+			["DAR_ImpalaCivG",30000],
+			["DAR_ImpalaCivF",30000],
+			["A3L_Camaro",200000],
+			["AM_15Suburban_White",150000],
+			["AM_15Suburban_Black",150000],
+			["AM_15Suburban_Red",150000],
+			["AM_15Suburban_Blue",150000],
+			["AM_15Suburban_Green",150000]
+		];
+	};
+	case "civ_ford":
+	{
+		_return = [
+			["kw_67Mustang_black",25000],
+			["kw_Victoria_06_black",60000],
+			["kw_Victoria_06_blue",70000],
+			["kw_Victoria_06_silver",80000],
+			["kw_explorer_14_black",85000],
+			["kw_explorer_14_blue",90000],
+			["kw_explorer_14_silver",45000],
+			["kw_Ford_Raptor_SVT",50000],
+			["kw_Ford_Raptor_SVT_Blue",147500],
+			["kw_Ford_Raptor_SVT_Black",152500],
+			["kw_Ford_Raptor_SVT_Red",155000],
+			["kw_ford_focusrs_grey",70000],
+			["kw_taurus_10_black",60000],
+			["kw_taurus_10_blue",60000]
+		];
+	};
 	case "super_bikes":
 	{
 		_return = [
