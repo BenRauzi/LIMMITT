@@ -68,24 +68,30 @@ _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid
 waitUntil {!DB_Async_Active};
 [_query,false] spawn DB_fnc_asyncCall;
 
-if(typeName _sp == "STRING") then {
+
+if (_sp == "dcso_air") { // Modified by Nicholas Jo'Foski on 03/01/2019
+	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
+	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
+	_vehicle allowDamage false;
+	_vehicle setPos [_sp select 0,_sp select 1,8.5];
+	_vehicle setVectorUp (surfaceNormal _sp);
+	_vehicle setDir _dir;
+} else {
+	if(typeName _sp == "STRING") then {
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
-	if (_sp == "dcso_air") {
-	 	_vehicle setPos [(getMarkerPos _sp) select 0,(getMarkerPos _sp) select 1,8.5];
-	} else {
-		_hs = nearestObjects[getMarkerPos _sp,["Land_Hospital_side2_F"],50] select 0;
-		_vehicle setPosATL (_hs modelToWorld [-0.4,-4,14]);
-	};
+	_hs = nearestObjects[getMarkerPos _sp,["Land_Hospital_side2_F"],50] select 0;
+	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,14]);
 	sleep 0.6;
-} else {
+	} else {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
 	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
 	_vehicle setPos _sp;
 	_vehicle setVectorUp (surfaceNormal _sp);
 	_vehicle setDir _dir;
+	};
 };
 _vehicle allowDamage true;
 
