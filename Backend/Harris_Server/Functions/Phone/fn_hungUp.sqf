@@ -17,6 +17,6 @@ Harris_hungUp = {
 	Harris_Calling = nil;
 
 	if (!isNull (findDisplay 5020)) then {
-		closeDialog 5020;
+		createDialog "Harris_phone_contacts";
 	};
 };
