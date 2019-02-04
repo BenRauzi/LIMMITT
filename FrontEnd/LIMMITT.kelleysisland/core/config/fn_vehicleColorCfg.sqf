@@ -91,26 +91,6 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,1,1,1.0,CO)","cop"]
 		];
 	};
-	
-	case "critgamin_vangmcc_civ_noir": 
-	{
-		_ret =
-		[
-			["textures\GMC_montana4.paa","civ"]
-		];
-	};
-	
-	case "EVO_09_Tahoe_P_L": 
-	{
-		_ret =
-		[
-			["textures\evo_car_sign_COMMAND.paa","cop"],
-			["textures\evo_car_sign_PATROL.paa","cop"],
-			["textures\evo_car_sign_SWAT.paa","cop"],
-			["textures\evo_car_sign_DOC.paa","cop"],
-			["textures\evo_car_sign_IA.paa","cop"]
-		];
-	};
 
 	case "IVORY_R8": {
 		_path = "\IVORY_R8SPYDER\data\";

@@ -24,7 +24,7 @@ class osefStatusBar {
 			size = 0.03;
 			type = 13;
 			style = 1;
-			text="[EVO] Waiting on scripts to load...";
+			text="[LN] Waiting on scripts to load...";
 			class Attributes {
 				align="right";
 				color = "#FFFFFF";
