@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3806.3188,89.392075,3119.7168};
-		dir[]={-0.62690818,-0.77546644,0.075515456};
-		up[]={-0.76993412,0.6313405,0.092743039};
-		aside[]={0.11959607,3.2258686e-007,0.99285144};
+		pos[]={3717.8687,23.81356,3156.9661};
+		dir[]={-0.86363882,-0.49755138,-0.08149831};
+		up[]={-0.49542069,0.867387,-0.046751678};
+		aside[]={-0.093951158,2.4816654e-007,0.99561077};
 	};
 };
 binarizationWanted=0;
@@ -194,7 +194,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=313;
+		items=312;
 		class Item0
 		{
 			dataType="Marker";
@@ -775,8 +775,8 @@ class Mission
 		class Item57
 		{
 			dataType="Marker";
-			position[]={3708.8403,15,3153.0439};
-			name="carGarage_1";
+			position[]={3708.8401,15,3153.0439};
+			name="carGarage";
 			type="Empty";
 			angle=9.5639954;
 			id=184;
@@ -823,7 +823,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = [""carGarage_1"",""carGarage_2""];  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];}";
+				init="call{this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""carGarage"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];}";
 			};
 			id=209;
 			type="A3L_Savepoint";
@@ -7946,15 +7946,6 @@ class Mission
 			};
 			id=964;
 			type="Land_light_1_1";
-		};
-		class Item312
-		{
-			dataType="Marker";
-			position[]={3716.2246,15,3152.9421};
-			name="carGarage_2";
-			type="Empty";
-			angle=9.5639973;
-			id=967;
 		};
 	};
 	class Connections
