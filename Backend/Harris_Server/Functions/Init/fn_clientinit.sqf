@@ -101,6 +101,9 @@ LIMMITT_clientInit = {
 		["M16A4","RH_M16A4", "", [["Harris_steelIngot",18, "Steel Ingot"]], "Rifles", 2.5, false], 
 		["30rnd 5.45x39 Stanag Magazine","30Rnd_556x45_Stanag", "", [["Harris_steelIngot",4, "Steel Ingot"]], "Rifles", 0.2, true], 
 
+		["KAC PDW","RH_PDW", "", [["Harris_steelIngot",18, "Steel Ingot"]], "Rifles", 2.5, false], 
+		["30rnd 6.5x35 Stanag Magazine","RH_30Rnd_6x35_mag", "", [["Harris_steelIngot",4, "Steel Ingot"]], "Rifles", 0.2, true], 
+
 		["RPG-7","launch_RPG7_F", "bp_rpg7", [["Harris_steelIngot",30, "Steel Ingot"]], "Rifles", 3.5, false],
 		["RPG-7 HEAT Grenade","RPG7_F", "bp_rpg7", [["Harris_steelIngot",15, "Steel Ingot"]], "Rifles", 1, true],
 
@@ -242,7 +245,7 @@ LIMMITT_clientInit = {
 		{
 			_doors = getNumber(configFile >> "CfgVehicles" >> (typeOf _x) >> "numberOfDoors");
 
-			_housestoLock = ["Land_i_Garage_V1_F","Land_i_House_Big_01_V3_F","Land_i_House_Big_02_V3_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_02_V2_F","Land_i_Addon_02_V1_F","Land_i_House_Small_01_V1_F"];
+			_housestoLock = ["Land_i_Garage_V1_F","Land_i_House_Big_01_V3_F","Land_i_House_Big_02_V3_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_02_V2_F","Land_i_Addon_02_V1_F","Land_i_House_Small_01_V1_F", "Land_House_Small_06_F","Land_i_House_Small_01_b_white_F","Land_i_House_Big_01_b_yellow_F","Land_i_House_Big_01_b_white_F","Land_i_House_Big_02_b_white_F"];
 
 			if ((typeOf _x) in _housestoLock) then {
 				for "_i" from 1 to _doors do {
