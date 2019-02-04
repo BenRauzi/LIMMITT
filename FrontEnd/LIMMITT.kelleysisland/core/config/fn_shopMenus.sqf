@@ -20,7 +20,7 @@ switch (_shop) do
 {
 	case "reb":
 	{
-		ctrlSetText[2505,"LV Rebel Shop"];
+		ctrlSetText[2505,"DC Rebel Shop"];
 		ctrlShow[2503,false];
 		ctrlShow[2513,false];
 		ctrlShow[2514,false];
@@ -28,13 +28,13 @@ switch (_shop) do
 	
 	case "cop":
 	{
-		ctrlSetText[2505,"LV Cop Shop"];
+		ctrlSetText[2505,"DC Cop Shop"];
 		ctrlShow[2503,false];
 	};
 	
 	case "gun":
 	{
-		ctrlSetText[2505,"LV Gun Store"];
+		ctrlSetText[2505,"DC Gun Store"];
 		ctrlShow[2503,false];
 		ctrlShow[2513,false];
 		ctrlShow[2514,false];
@@ -50,7 +50,7 @@ switch (_shop) do
 	
 	case "dive":
 	{
-		ctrlSetText[2505,"LV Diving Shop"];
+		ctrlSetText[2505,"DC Diving Shop"];
 		ctrlShow[2503,false];
 		ctrlShow[2510,false];
 		ctrlShow[2511,false];
@@ -70,7 +70,7 @@ switch (_shop) do
 	
 	case "gen":
 	{
-		ctrlSetText[2505,"LV General Store"];
+		ctrlSetText[2505,"DC General Store"];
 		ctrlShow[2503,false];
 	};
 	
