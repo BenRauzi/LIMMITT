@@ -23,11 +23,6 @@ if ((call life_adminlevel) >=6) then {
 	_instant ctrlShow true;
 };
 
-if ((getPlayerUID player) isEqualTo "76561198371278078") then {
-	_respawn ctrlShow true;
-	_instant ctrlShow true;
-};
-
 waitUntil {
 	_nearby = 99999;
 	{
