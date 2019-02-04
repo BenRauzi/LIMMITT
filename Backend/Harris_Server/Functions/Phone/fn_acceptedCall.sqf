@@ -17,12 +17,13 @@ Harris_acceptedCall = {
 	Harris_oldFrequency = [(call TFAR_fnc_activeSwRadio), 1] call TFAR_fnc_GetChannelFrequency;
 	if ("tf_anprc152" in (assignedItems player)) then {
 		player unassignItem "tf_anprc152";
-		
-		if !("LIMMITT_Network_Phone" in items player) then {
-			player addItem "LIMMITT_Network_Phone";
-		};
-		player assignItem "LIMMITT_Network_Phone";
 		Harris_hadRadio = true;
+	};
+	if !("LIMMITT_Network_Phone" in items player) then {
+		player addItem "LIMMITT_Network_Phone";
+	};
+	if !("LIMMITT_Network_Phone" in assignedItems player) then {
+		player assignItem "LIMMITT_Network_Phone";;
 	};
 	
 

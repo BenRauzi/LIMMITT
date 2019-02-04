@@ -2,7 +2,6 @@ class Harris_phone_dial
 {
 	idd = 5005;
 	movingEnabled = false;
-	onLoad = "systemChat "'Note: Calling functions have not yet been tested. If not working they will be fixed within the next 48 hours.';
 	class controls 
 	{
 		class Background_Image: RscPicture
