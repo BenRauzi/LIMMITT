@@ -19,10 +19,12 @@ player setVariable["robbed",FALSE,TRUE];
 [] spawn {
 	player setVariable ["tf_unable_to_use_radio", true];
 	player setVariable ["tf_voiceVolume", 0, true];
+	player setVariable ["Harris_unconscious", true, true];
 	[] spawn KK_fnc_forceRagdoll;
 	sleep 7;
 	player setVariable ["tf_unable_to_use_radio", false];
 	player setVariable ["tf_voiceVolume", 1, true];
+	player setVariable ["Harris_unconscious", true, true];
 };
 
 //player playMoveNow "Incapacitated";

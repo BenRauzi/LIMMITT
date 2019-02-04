@@ -10,6 +10,7 @@ private["_unit","_corpse"];
 _unit = _this select 0;
 _corpse = _this select 1;
 life_corpse = _corpse;
+player setpos [143.707,8113.42,0.00143886];
 
 //Comment this code out if you want them to keep the weapon on the ground.
 private["_containers"];
