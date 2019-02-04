@@ -17,17 +17,21 @@ if(_veh == "B_Quadbike_01_F") exitWith {true}; //ATV's don't need to require a l
 
 switch (life_veh_shop select 0) do
 {
+	// Civilian Vehicle Stores
 	case "civ_secondHand": {_ret = license_civ_driver;};
 	case "civ_luxury": {_ret = license_civ_driver;};
 	case "civ_mercedesBenz": {_ret = license_civ_driver;};
 	case "civ_chevrolet": {_ret = license_civ_driver;};
 	case "civ_ford": {_ret = license_civ_driver;};
 	case "civ_dodge": {_ret = license_civ_driver;};
+	case "civ_truck":	{_ret = license_civ_truck;};
 	case "civ_motorcycle": {_ret = license_civ_driver;};
+
+	// Douglas County Sheriff's Office Vehicle Stores
 	case "dcso_patrol": {_ret = true;};
 	case "dcso_air": {_ret = true;};
 
-	
+
 	case "med_shop": {_ret = true;};
 	case "super_bikes": {_ret = license_civ_driver;};
 	case "dezzie_car": {_ret = license_civ_driver;};
@@ -46,7 +50,7 @@ switch (life_veh_shop select 0) do
 	case "civ_air": {_ret = license_civ_air;};
 	case "cop_air": {_ret = true;};
 	case "cop_airhq": {_ret = true;};
-	case "civ_truck":	{_ret = license_civ_truck;};
+	
 	case "reb_car": {_ret = license_civ_rebel;};
 	case "cop_swat": {_ret = true;};
 	case "cop_caruc": {_ret = true;};

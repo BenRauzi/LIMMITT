@@ -12,6 +12,7 @@ if(_shop == "") exitWith {[]};
 _return = [];
 switch (_shop) do
 {
+	// Civilian Vehicle Stores
 	case "civ_secondHand":
 	{
 		_return = [
@@ -156,6 +157,8 @@ switch (_shop) do
 			["kw_xr_baby_pink",100000]
 		];
 	};
+
+	// Douglas County Sheriff's Office Vehicle Stores
 	case "dcso_patrol":
 	{
 		_return =
@@ -190,7 +193,7 @@ switch (_shop) do
 
 
 
-	
+
 	case "civ_lsmovehicle":
 	{
 		_return = [

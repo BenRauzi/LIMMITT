@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=137;
 	class ItemIDProvider
 	{
-		nextID=965;
+		nextID=970;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3674.2217,105.70126,3197.7373};
-		dir[]={-0.71830404,-0.47421387,0.5093199};
-		up[]={-0.38697708,0.8802442,0.27438873};
-		aside[]={0.57846397,-1.3532845e-006,0.8158105};
+		pos[]={3806.3188,89.392075,3119.7168};
+		dir[]={-0.62690818,-0.77546644,0.075515456};
+		up[]={-0.76993412,0.6313405,0.092743039};
+		aside[]={0.11959607,3.2258686e-007,0.99285144};
 	};
 };
 binarizationWanted=0;
@@ -194,7 +194,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=312;
+		items=313;
 		class Item0
 		{
 			dataType="Marker";
@@ -775,7 +775,7 @@ class Mission
 		class Item57
 		{
 			dataType="Marker";
-			position[]={3709.9724,15,3152.5891};
+			position[]={3708.8403,15,3153.0439};
 			name="carGarage_1";
 			type="Empty";
 			angle=9.5639954;
@@ -815,15 +815,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3701.5786,15.698975,3155.3608};
-				angles[]={0,1.6701823,0};
+				position[]={3701.5791,15.698975,3155.3611};
+				angles[]={0,1.6701753,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""carGarage_1"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];}";
+				init="call{this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = [""carGarage_1"",""carGarage_2""];  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];}";
 			};
 			id=209;
 			type="A3L_Savepoint";
@@ -6772,8 +6772,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3580.8977,25.803322,3152.3154};
-				angles[]={0,1.3136952,0};
+				position[]={3580.8979,25.803001,3152.3149};
+				angles[]={0,1.3136919,0};
 			};
 			side="Empty";
 			class Attributes
@@ -6783,7 +6783,7 @@ class Mission
 			};
 			id=833;
 			type="Land_InvisibleBarrier_F";
-			atlOffset=10.803322;
+			atlOffset=10.803001;
 		};
 		class Item264
 		{
@@ -7928,7 +7928,7 @@ class Mission
 			};
 			id=963;
 			type="Land_light_1_1";
-			atlOffset=0.21000004;
+			atlOffset=0.21000099;
 		};
 		class Item311
 		{
@@ -7936,7 +7936,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3605.1543,18.449591,3311.9202};
-				angles[]={-0,1.7471268,0};
+				angles[]={0,1.7471268,0};
 			};
 			side="Empty";
 			flags=4;
@@ -7946,6 +7946,15 @@ class Mission
 			};
 			id=964;
 			type="Land_light_1_1";
+		};
+		class Item312
+		{
+			dataType="Marker";
+			position[]={3716.2246,15,3152.9421};
+			name="carGarage_2";
+			type="Empty";
+			angle=9.5639973;
+			id=967;
 		};
 	};
 	class Connections
