@@ -12,6 +12,7 @@ if(_shop == "") exitWith {[]};
 _return = [];
 switch (_shop) do
 {
+	// Civilian Vehicle Stores
 	case "civ_secondHand":
 	{
 		_return = [
@@ -156,6 +157,45 @@ switch (_shop) do
 			["kw_xr_baby_pink",100000]
 		];
 	};
+	case "civ_air":
+	{
+		_return =
+		[
+			["C_Plane_Civil_01_F",50000],
+			["C_Heli_Light_01_civil_F",250000],
+			["d3s_AS_365",150000]
+		];
+	};
+	case "civ_boat":
+	{
+		_return =
+		[
+			["C_Rubberboat",30000],
+			["C_Boat_Civil_01_F",135000],
+			["A3L_Ship",625000],
+			["A3L_SpeedYacht",675000],
+			["A3L_Jetski",115000],
+			["B_SDV_01_F",225000],
+			["kw_yacht",115000]
+		];
+	};
+	case "civ_rebel":
+	{
+		_return =
+		[
+			["B_Quadbike_01_F",3500],
+			["I_G_Van_01_fuel_F",80000],
+			["B_Heli_Light_01_F",425000],
+			["B_G_Van_01_transport_F",50000],
+			["B_G_Offroad_01_F",145000]
+		];
+
+		if(license_civ_rebel) then
+		{
+		};
+	};
+
+	// Douglas County Sheriff's Office Vehicle Stores
 	case "dcso_patrol":
 	{
 		_return =
@@ -187,30 +227,17 @@ switch (_shop) do
 			["EC635_SAR",32500]
 		];
 	};
-	case "civ_lsmovehicle":
+	case "dcso_boat":
 	{
-		_return = [
-			["DAR_H1A",15000],
-			["DAR_TahoeCivBlack",15000],
-			["cg_audi_rs4_pol_white",15000],
-			["A3L_TaurusUC",15000],
-			["A3L_Camaro",15000],
-			["Nhz_audia8limo",15000],
-			["AM_Sexcalade_Custom",15000],
-			["A3L_EvoXBlack",15000]
+		_return =
+		[
+			["B_Boat_Transport_01_F",4000],
+			["B_SDV_01_F",4500],
+			["C_Boat_Civil_01_police_F",5000]
+		];
+	};
 
-		];
-	};
-	case "kart_shop":
-	{
-		_return = [
-			["A3L_Karts",2000],
-			["C_Kart_01_Blu_F",2000],
-			["C_Kart_01_Fuel_F",2000],
-			["C_Kart_01_Red_F",2000],
-			["C_Kart_01_Vrana_F",2000]
-		];
-	};
+	// Douglas County Fire Department
 	case "med_shop":
 	{
 		_return = [
@@ -235,115 +262,6 @@ switch (_shop) do
 			["IVORY_BELL512_RESCUE",500],
 			["ivory_b206_rescue",500],
 			["RobJ_Rescue1",500]
-		];
-	};
-	case "civ_motorbike":
-	{
-		_return =
-		[
-			["kw_xr_silver",250000],
-			["kw_xr_flame",250000],
-			["kw_xr_camo_urban",250000],
-			["kw_xr_aqua",250000],
-			["kw_xr_camo",250000],
-			["kw_xr_white",250000],
-			["kw_xr_light_blue",250000],
-			["kw_xr_black",250000],
-			["kw_xr_baby_pink",250000]
-		];
-	};
-	case "reb_car":
-	{
-		_return =
-		[
-			["B_Quadbike_01_F",3500],
-			["I_G_Van_01_fuel_F",80000],
-			["B_Heli_Light_01_F",425000],
-			["B_G_Van_01_transport_F",50000],
-			["B_G_Offroad_01_F",145000]
-		];
-
-		if(license_civ_rebel) then
-		{
-		};
-	};
-	case "cop_marshals":
-	{
-		_return =
-		[
-		];
-	};
-	case "cop_doc":
-	{
-		_return =
-		[
-		];
-	};
-	case "cop_swat":
-	{
-		_return =
-		[
-		];
-	};
-	case "cop_caruc":
-	{
-		_return =
-		[
-		];
-    };
-	case "civ_air":
-	{
-		_return =
-		[
-			["C_Plane_Civil_01_F",50000],
-			["C_Heli_Light_01_civil_F",250000],
-			["d3s_AS_365",150000]
-		];
-	};
-	case "cop_air":
-	{
-		_return =
-		[
-			["B_Heli_Light_01_F",25000],
-			["I_Heli_Transport_02_F",30000],
-			["I_Heli_light_03_unarmed_F",30000],
-			["EC635_Unarmed",32500],
-			["d3s_AS_365_PD",32500],
-			["EC635_SAR",32500]
-		];
-	};
-	case "cop_airhq":
-	{
-		_return =
-		[
-			["B_Heli_Light_01_F",25000],
-			["I_Heli_Transport_02_F",30000],
-			["I_Heli_light_03_unarmed_F",30000],
-			["EC635_Unarmed",32500],
-			["d3s_AS_365_PD",32500],
-			["EC635_SAR",32500]
-		];
-	};
-	case "civ_ship":
-	{
-		_return =
-		[
-			["C_Rubberboat",30000],
-			["C_Boat_Civil_01_F",135000],
-			["A3L_Ship",625000],
-			["A3L_SpeedYacht",675000],
-			["A3L_Jetski",115000],
-			["B_SDV_01_F",225000],
-			["kw_yacht",115000]
-		];
-	};
-	case "cop_ship":
-	{
-		_return =
-		[
-			["B_Boat_Transport_01_F",4000],
-			["B_SDV_01_F",4500],
-			["C_Boat_Civil_01_police_F",5000]
 		];
 	};
 };

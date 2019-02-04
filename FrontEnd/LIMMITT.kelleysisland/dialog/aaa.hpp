@@ -14,7 +14,7 @@ class AAA
 			sizeEx = 0.1;
 			idc = 12312399;
 			font = "PuristaLight";
-			text = "EVO Menu";
+			text = "LIMMITT Menu";
 			x = "SafeZoneX + (75.833333333333 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (60.8333333333334 / 1080) * SafeZoneH";
 			w = "(1654 / 1920) * SafeZoneW";

@@ -172,7 +172,6 @@ switch (_var) do
 	case "license_civ_uranium": {"Uranium Processing License"};
 	case "license_civ_forestry": {"Forestry License"};
 	case "license_civ_lsmo": {"LSMO Badge"};
-	case "license_civ_strife": {"Montana Family ID Badge"};
 	case "license_civ_harv": {"M8 i'm Harvie Rhodes"};
 	case "license_civ_lsmovehicle": {"LSMO Vehicle License"};
 	case "license_civ_dino": {"Dino Family ID Badge"};

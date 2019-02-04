@@ -193,25 +193,6 @@ switch (_vehicle) do
 			case 4: {_color = "Cop";};
 		};
 	};
-	case "critgamin_vangmcc_civ_noir":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "MONTANA";};
-			
-		};
-	};
-	case "EVO_09_Tahoe_P_L":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "State Command";};
-			case 1: {_color = "Patrol";};
-			case 2: {_color = "SWAT";};
-			case 3: {_color = "DOC";};
-			case 4: {_color = "IA";};
-		};
-	};
 	case "C_Van_01_box_F":
 	{
 		switch (_index) do
@@ -270,7 +251,6 @@ switch (_vehicle) do
 			case 12: {_color = "Waves Blue"};
 			case 13: {_color = "Rebel Digital"};
 			case 14: {_color = "EMS White"};
-			case 15: {_color = "Montana Air DONT USE!"};
 		};
 	};
 	case "C_Heli_Light_01_civil_F":
