@@ -26,6 +26,8 @@ switch (life_veh_shop select 0) do
 	case "civ_motorcycle": {_ret = license_civ_driver;};
 	case "dcso_patrol": {_ret = true;};
 	case "dcso_air": {_ret = true;};
+
+	
 	case "med_shop": {_ret = true;};
 	case "super_bikes": {_ret = license_civ_driver;};
 	case "dezzie_car": {_ret = license_civ_driver;};

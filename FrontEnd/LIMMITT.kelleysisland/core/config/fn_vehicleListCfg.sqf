@@ -187,6 +187,10 @@ switch (_shop) do
 			["EC635_SAR",32500]
 		];
 	};
+
+
+
+	
 	case "civ_lsmovehicle":
 	{
 		_return = [
