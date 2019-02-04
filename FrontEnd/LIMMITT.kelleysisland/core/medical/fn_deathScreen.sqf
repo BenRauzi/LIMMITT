@@ -39,10 +39,6 @@ waitUntil {
 	(isNull (findDisplay 7300))
 };
 
-
-
-
-
 /*
 OLD
 waitUntil {
