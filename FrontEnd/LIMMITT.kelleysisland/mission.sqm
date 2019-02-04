@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=961;
+		nextID=965;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3577.6316,56.522846,3266.2512};
-		dir[]={0.12550664,-0.40679243,0.90499347};
-		up[]={0.055905536,0.91336524,0.40312004};
-		aside[]={0.99060673,-5.1858297e-007,-0.13738428};
+		pos[]={3674.2217,105.70126,3197.7373};
+		dir[]={-0.71830404,-0.47421387,0.5093199};
+		up[]={-0.38697708,0.8802442,0.27438873};
+		aside[]={0.57846397,-1.3532845e-006,0.8158105};
 	};
 };
 binarizationWanted=0;
@@ -194,7 +194,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=310;
+		items=312;
 		class Item0
 		{
 			dataType="Marker";
@@ -7883,7 +7883,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3600.0081,18.660772,3299.5769};
-				angles[]={-0,3.2946057,0};
+				angles[]={0,3.2946057,0};
 			};
 			side="Empty";
 			flags=4;
@@ -7909,7 +7909,42 @@ class Mission
 			{
 				init="call{this allowDamage false;}";
 			};
-			id=960;
+			id=961;
+			type="Land_light_1_2";
+		};
+		class Item310
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3577.3259,18.659592,3306.105};
+				angles[]={0,4.8777237,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowDamage false;}";
+			};
+			id=963;
+			type="Land_light_1_1";
+			atlOffset=0.21000004;
+		};
+		class Item311
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3605.1543,18.449591,3311.9202};
+				angles[]={-0,1.7471268,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowDamage false;}";
+			};
+			id=964;
 			type="Land_light_1_1";
 		};
 	};
