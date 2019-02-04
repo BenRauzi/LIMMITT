@@ -19,7 +19,7 @@ if(isNil "_vehicle") exitWith { ["Error",localize "STR_Garage_Selection_Error","
 
 _price = [_vehicle,__GETC__(life_garage_prices)] call fnc_index;
 if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_prices) select _price) select 1;};
-if(limmittcash < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
+if(gm_memecash < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 
 if(typeName life_garage_sp == "ARRAY") then {
 	hint "MULTIPLE CAR GARAGE SPAWN POINT";
@@ -38,4 +38,4 @@ if(typeName life_garage_sp == "ARRAY") then {
 
 ["Success",localize "STR_Garage_SpawningVeh","Success"] spawn Harris_Notifications;
 
-limmittcash = limmittcash - _price;
+gm_memecash = gm_memecash - _price;

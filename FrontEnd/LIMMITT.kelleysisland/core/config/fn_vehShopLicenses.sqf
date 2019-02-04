@@ -26,50 +26,17 @@ switch (life_veh_shop select 0) do
 	case "civ_dodge": {_ret = license_civ_driver;};
 	case "civ_truck":	{_ret = license_civ_truck;};
 	case "civ_motorcycle": {_ret = license_civ_driver;};
-
+	case "civ_air": {_ret = license_civ_air;};
+	case "civ_boat": {_ret = license_civ_boat;};
+	case "civ_rebel": {_ret = license_civ_rebel;};
 	// Douglas County Sheriff's Office Vehicle Stores
 	case "dcso_patrol": {_ret = true;};
 	case "dcso_air": {_ret = true;};
-
-
+	case "dcso_boat": {_ret = true;};
+	// Douglas County Fire Department Vehicle Stores
 	case "med_shop": {_ret = true;};
-	case "super_bikes": {_ret = license_civ_driver;};
-	case "dezzie_car": {_ret = license_civ_driver;};
-	case "kart_shop": {_ret = license_civ_driver;};
 	case "med_air_hs": {_ret = license_med_air;};
-	case "civ_car": {_ret = license_civ_driver;};
-	case "ford_car": {_ret = license_civ_driver;};
-	case "jaguar_car": {_ret = license_civ_driver;};
-	case "chev_car": {_ret = license_civ_driver;};
-	case "moto_car": {_ret = license_civ_driver;};
-	case "dodge_car": {_ret = license_civ_driver;};
-	case "merc_car": {_ret = license_civ_driver;};
-	case "exo_car": {_ret = license_civ_driver;};
-	case "kavali_car": {_ret = license_civ_driver;};
-	case "civ_ship": {_ret = license_civ_boat;};
-	case "civ_air": {_ret = license_civ_air;};
-	case "cop_air": {_ret = true;};
-	case "cop_airhq": {_ret = true;};
-	
 	case "reb_car": {_ret = license_civ_rebel;};
-	case "cop_swat": {_ret = true;};
-	case "cop_caruc": {_ret = true;};
-	case "cop_ia": {_ret = true;};
-	case "cop_marshals": {_ret = true;};
-	case "cop_doc": {_ret = true;};
-	case "cop_command": {_ret = true;};
-	case "civ_lsmovehicle": {_ret = true;};
-	case "cop_ship": 
-	{
-		if(_veh == "B_Boat_Armed_01_minigun_F") then
-		{
-			_ret = license_cop_cg;
-		}
-			else
-		{
-			_ret = true;
-		};
-	};
 };
 
 _ret;
