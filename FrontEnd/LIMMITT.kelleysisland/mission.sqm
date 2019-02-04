@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3229.6414,47.245892,4012.7778};
-		dir[]={0.39875257,-0.64364874,-0.65324998};
-		up[]={0.33535528,0.76531434,-0.54938877};
-		aside[]={-0.8535555,-2.4214387e-008,-0.52102327};
+		pos[]={2525.5217,42.123055,4207.6401};
+		dir[]={-0.14622843,-0.6419242,-0.7527383};
+		up[]={-0.12241838,0.76674891,-0.63017362};
+		aside[]={-0.98168182,-1.5646219e-007,0.19070303};
 	};
 };
 binarizationWanted=0;
@@ -239,7 +239,7 @@ class Mission
 			position[]={4068.4807,21.851999,2828.8845};
 			name="dcso_car2";
 			type="Empty";
-			angle=93.499954;
+			angle=93.499947;
 			id=8;
 			atlOffset=6.8519993;
 		};
@@ -427,7 +427,7 @@ class Mission
 			position[]={3260.7959,15,3998.8601};
 			name="civ_truck_2";
 			type="Empty";
-			angle=91.999985;
+			angle=91.999977;
 			id=69;
 		};
 		class Item23
@@ -436,7 +436,7 @@ class Mission
 			position[]={3240.647,15,4000.917};
 			name="civ_truck_2_1";
 			type="Empty";
-			angle=91.999985;
+			angle=91.999977;
 			id=70;
 		};
 		class Item24
@@ -721,7 +721,7 @@ class Mission
 		class Item52
 		{
 			dataType="Marker";
-			position[]={2833.2017,15,3867.1572};
+			position[]={2516.9133,15,4185.3389};
 			name="Min_1";
 			text="Mineral Processing Plant";
 			type="A3L_Factory_Green_Icon";

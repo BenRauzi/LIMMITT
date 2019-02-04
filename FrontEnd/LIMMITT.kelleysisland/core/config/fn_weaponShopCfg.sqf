@@ -630,7 +630,7 @@ switch(_shop) do
                                 ["LIMMITT_Network_Phone",nil,50],
                                 ["Harris_medkit",nil,1000],
                                 ["tf_anprc152",nil,1000],
-                                ["a3l_pickaxe",,1000],
+                                ["a3l_pickaxe",1000],
                                 ["pickaxe_swing",nil,10],
                                 ["Binocular",nil,2000],
                                 ["tf_microdagr",nil,150],
