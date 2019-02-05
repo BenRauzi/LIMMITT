@@ -17,9 +17,9 @@ Harris_playerTags = {
 		    	} else {
 
 		    		if (isNil {profileNamespace getVariable (str (getPlayerUID	_x))}) then {
-		    			 drawIcon3D ["", [1, 1, 1, 1], [visiblePosition _x select 0, visiblePosition _x select 1,(getPosATL _x select 2)+2.1], 0.2, 0.2, 45, (format ["%1 - %2", getPlayerUID _x select [13,17], profileNamespace getVariable [str (getPlayerUID _x), "Unknown"]]), 1, 0.04, "PuristaMedium"];
+		    			 drawIcon3D ["", [1, 1, 1, 1], [visiblePosition _x select 0, visiblePosition _x select 1,(_x selectionPosition "head" select 2) + 0.5], 0.2, 0.2, 45, (format ["%1 - %2", getPlayerUID _x select [13,17], profileNamespace getVariable [str (getPlayerUID _x), "Unknown"]]), 1, 0.04, "PuristaMedium"];
 		    		} else {
-		    			 drawIcon3D ["", [1, 1, 1, 1], [visiblePosition _x select 0, visiblePosition _x select 1,(getPosATL _x select 2)+2.1], 0.2, 0.2, 45, (format ["%1 - %2", getPlayerUID _x select [13,17], profileNamespace getVariable [str (getPlayerUID _x), "Unknown"]]), 1, 0.04, "PuristaMedium"];
+		    			 drawIcon3D ["", [1, 1, 1, 1], [visiblePosition _x select 0, visiblePosition _x select 1,(_x selectionPosition "head" select 2) + 0.5], 0.2, 0.2, 45, (format ["%1 - %2", getPlayerUID _x select [13,17], profileNamespace getVariable [str (getPlayerUID _x), "Unknown"]]), 1, 0.04, "PuristaMedium"];
 		    		};
 		    	};
 		   };
