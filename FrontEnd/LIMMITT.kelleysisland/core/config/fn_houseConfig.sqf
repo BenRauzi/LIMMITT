@@ -16,7 +16,7 @@ switch (true) do {
 	case (_house in ["Land_i_House_Big_02_V1_F","Land_i_House_Big_02_V2_F","Land_i_House_Big_02_V3_F","xCam_i_House_Big_02_V3_F""xCam_i_House_Big_02_V2_F","xCam_i_House_Big_02_V1_F"]): {[1550000,3]};
 	case (_house in ["Land_i_House_Big_01_V1_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_01_V3_F","xCam_i_House_Big_01_V3_F""xCam_i_House_Big_01_V2_F","xCam_i_House_Big_01_V1_F"]): {[1700000,4]};
 	case (_house in ["Land_i_Garage_V1_F","Land_i_Garage_V2_F"]): {[750000,0]};
-	case (_house in ["Land_i_House_Small_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_01_V3_F", "Land_i_House_Big_01_b_yellow_F","Land_i_House_Big_01_b_white_F","Land_i_House_Big_02_b_white_F"]): {[400000,2]};
+	case (_house in ["Land_i_House_Small_01_V1_F","Land_i_House_Small_01_V2_F","Land_i_House_Small_01_V3_F", "Land_i_House_Big_01_b_yellow_F","Land_i_House_Big_01_b_white_F","Land_i_House_Big_02_b_white_F", "Land_Shop_Town_05_F","Land_Warehouse_03_F","Land_GuardHouse_01_F"]): {[400000,2]};
 	case (_house in ["Land_i_House_Small_02_V1_F","Land_i_House_Small_02_V2_F","Land_i_House_Small_02_V3_F", "Land_House_Small_06_F","Land_i_House_Small_01_b_white_F"]): {[300000,2]};
 	case (_house in ["Land_i_House_Small_03_V1_F"]): {[750000,3]};
 	case (_house in ["Land_i_Stone_HouseSmall_V2_F","Land_i_Stone_HouseSmall_V1_F","Land_i_Stone_HouseSmall_V3_F"]): {[750000,1]};
@@ -30,3 +30,4 @@ switch (true) do {
 	case (_house in ["Land_Stone_Gate_F"]): {[125000,0]};
 	default {[]};
 };
+

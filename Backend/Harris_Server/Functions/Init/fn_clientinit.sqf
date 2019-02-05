@@ -229,7 +229,7 @@ LIMMITT_clientInit = {
 		};
 	};
 
-	Harris_Houses = ["Land_i_Garage_V1_F","Land_i_House_Big_01_V3_F","Land_i_House_Big_02_V3_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_02_V2_F","Land_i_Addon_02_V1_F","Land_i_House_Small_01_V1_F", "Land_House_Small_06_F","Land_i_House_Small_01_b_white_F","Land_i_House_Big_01_b_yellow_F","Land_i_House_Big_01_b_white_F","Land_i_House_Big_02_b_white_F", "Land_Shop_Town_05_F", "Land_Shop_Town_03_F","Land_Shop_Town_01_F","Land_Warehouse_03_F","Land_GuardHouse_01_F"];
+	Harris_Houses = ["Land_i_Garage_V1_F","Land_i_House_Big_01_V3_F","Land_i_House_Big_02_V3_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_02_V2_F","Land_i_Addon_02_V1_F","Land_i_House_Small_01_V1_F", "Land_House_Small_06_F","Land_i_House_Small_01_b_white_F","Land_i_House_Big_01_b_yellow_F","Land_i_House_Big_01_b_white_F","Land_i_House_Big_02_b_white_F", "Land_Shop_Town_05_F","Land_Warehouse_03_F","Land_GuardHouse_01_F"];
 
 
 	waitUntil {!(isNull (findDisplay 46))};
@@ -247,8 +247,6 @@ LIMMITT_clientInit = {
 
 		{
 			_doors = getNumber(configFile >> "CfgVehicles" >> (typeOf _x) >> "numberOfDoors");
-
-			Harris_Houses = ["Land_i_Garage_V1_F","Land_i_House_Big_01_V3_F","Land_i_House_Big_02_V3_F","Land_i_House_Big_01_V2_F","Land_i_House_Big_02_V2_F","Land_i_Addon_02_V1_F","Land_i_House_Small_01_V1_F", "Land_House_Small_06_F","Land_i_House_Small_01_b_white_F","Land_i_House_Big_01_b_yellow_F","Land_i_House_Big_01_b_white_F","Land_i_House_Big_02_b_white_F", "Land_Shop_Town_05_F", "Land_Shop_Town_03_F","Land_Shop_Town_01_F","Land_Warehouse_03_F","Land_GuardHouse_01_F"];
 
 			if ((typeOf _x) in _housestoLock) then {
 				for "_i" from 1 to _doors do {
