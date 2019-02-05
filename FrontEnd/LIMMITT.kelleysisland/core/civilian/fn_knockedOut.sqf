@@ -24,7 +24,7 @@ player setVariable["robbed",FALSE,TRUE];
 	sleep 7;
 	player setVariable ["tf_unable_to_use_radio", false];
 	player setVariable ["tf_voiceVolume", 1, true];
-	player setVariable ["Harris_unconscious", false, true];
+	player setVariable ["Harris_unconscious", nil, true];
 };
 
 //player playMoveNow "Incapacitated";

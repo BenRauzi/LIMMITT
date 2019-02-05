@@ -325,7 +325,18 @@ LIMMITT_clientInit = {
 	    };
 	}];
 
-	
+	player addEventHandler ["SeatSwitchedMan", { // Added to fix people be able to switch to drivers seat while restrained
+		params ["_unit1", "_unit2", "_vehicle"];
+		if (driver _vehicle == _unit1 && _unit1 getVariable ["Foski_Restrained", false]) then {
+		    if (vehicle player isKindOf 'Air') then {
+		        player action["GetOut",vehicle player];
+		    } else {
+		        player action["eject",vehicle player];
+		    };
+		};
+	}];
+
+
 	arr = missionNamespace getVariable ["cellNumbers", []];
 
 	if (isNil {profileNameSpace getVariable "yourNumber"}) then {

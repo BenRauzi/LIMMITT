@@ -1,6 +1,9 @@
+// Mission Details
+onLoadName = "Douglas County 0.2 - Alpha";
 author = "LIMMITT Network Development Team";
-onLoadName = "LIMMITT NETWORK";
-onLoadMission = "Please refrain from going out of character.";
+onLoadMission = "Please ensure you are connected to our teamspeak server. ts.limmitt-network.co.uk - https://www.limmitt-network.co.uk";
+loadScreen = "textures\missionPicture.paa";
+
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 1;
@@ -14,7 +17,7 @@ disableChannels[] = {
 	{5, true, true}, //--- Direct Chat
 	{6, true, true} //--- System Chat
 };
-enableDebugConsole[] = {"76561198072625284","76561198099644981","76561198062192032"}; 
+enableDebugConsole[] = {"76561198072625284","76561198099644981","76561198062192032"};  // Nicholas Jo'Foski -> Ben Harris -> John Doe
 
 respawnDialog = 0;
 onPauseScript[] = { "life_fnc_escapeInterupt" };
