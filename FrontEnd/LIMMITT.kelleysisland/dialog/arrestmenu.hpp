@@ -27,7 +27,7 @@ class nameofplayer: Life_RscText
 	w = 0.199531 * safezoneW;
 	h = 0.033 * safezoneH;
 };
-class jailtime: RscEdit
+class jailtime: RscFixedEdit
 {
 	idc = 2201;
 	text = "0";
@@ -36,7 +36,7 @@ class jailtime: RscEdit
 	w = 0.0786977 * safezoneW;
 	h = 0.0311481 * safezoneH;
 };
-class crimescommited: RscEdit
+class crimescommited: RscFixedEdit
 {
 	idc = 2202;
 	x = 0.480729 * safezoneW + safezoneX;
