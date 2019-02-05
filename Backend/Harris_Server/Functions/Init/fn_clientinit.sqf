@@ -172,13 +172,14 @@ LIMMITT_clientInit = {
 
 	Harris_smeltAbleItems =   
 	[
-		["Refined Coal","Harris_coal", "", [["Harris_CoalOre",2, "Coal Ore"]], "Refine", 0.1, true],
-		["Iron Ingot","Harris_ironIngot", "", [["Harris_ironOre",2, "Iron Ore"]], "Refine", 0.1, true],
-		["Steel Ingot","Harris_steelIngot", "", [["Harris_ironOre",2, "Iron Ore"],["Harris_coalOre",4, "Coal Ore"]], "Refine", 0.2, true],
-		["Gold Bar","Harris_goldIngot", "", [["Harris_goldOre",2, "Gold Ore"]], "Refine", 0.3, true],
-		["Diamonds","Harris_diamond", "", [["Harris_diamondOre",2, "Uncut Diamonds"]], "Refine", 0.3, true]
+		["Refined Coal","Harris_coal", "", [["Harris_CoalOre",2, "Coal Ore"]], "Refine Minerals", 0.1, true],
+		["Iron Ingot","Harris_ironIngot", "", [["Harris_ironOre",2, "Iron Ore"]], "Refine Minerals", 0.1, true],
+		["Steel Ingot","Harris_steelIngot", "", [["Harris_ironOre",2, "Iron Ore"],["Harris_coalOre",4, "Coal Ore"]], "Refine Minerals", 0.2, true],
+		["Gold Bar","Harris_goldIngot", "", [["Harris_goldOre",2, "Gold Ore"]], "Refine Minerals", 0.3, true],
+		["Cut Diamond","Harris_diamond", "", [["Harris_diamondOre",2, "Uncut Diamonds"]], "Refine Minerals", 0.3, true],
+		["Timber","Harris_woodLog", "", [["Harris_woodLog",2, "Wood Logs"]], "Woodworking", 0.3, true]
 	]; // Add Timber from Logs and Diamonds
-	Harris_smeltTypes = ["Refine"];
+	Harris_smeltTypes = ["Refine Minerals", "Woodworking"];
 	Harris_craftTypes = ["Rifles", "Pistols", "Items"]; //??
 
 	Harris_bluePrints = [
@@ -257,6 +258,9 @@ LIMMITT_clientInit = {
 				_x setVariable["locked",true,true];
 			};
 		} forEach nearestObjects[[8642.21,7000.47,0.00143719], ["House_F"],5000];
+
+		addMissionEventHandler ["HandleDisconnect",{ [] spawn SOCK_fnc_syncData; deleteVehicle (_this select 0); }];
+
 
 	};
 
