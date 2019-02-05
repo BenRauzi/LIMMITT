@@ -259,7 +259,7 @@ LIMMITT_clientInit = {
 			};
 		} forEach nearestObjects[[8642.21,7000.47,0.00143719], ["House_F"],5000];
 
-		addMissionEventHandler ["HandleDisconnect",{ [] spawn SOCK_fnc_syncData; deleteVehicle (_this select 0); }];
+		addMissionEventHandler ["HandleDisconnect",{ [] spawn SOCK_fnc_syncSilent; deleteVehicle (_this select 0); }];
 
 
 	};

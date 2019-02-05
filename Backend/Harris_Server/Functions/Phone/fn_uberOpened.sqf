@@ -8,6 +8,17 @@ Harris_uberOpened = {
 	waitUntil {!isNull (findDisplay 5027)};
 	lbClear 1500;
 
+	arr = (missionNamespace getVariable "uberDrivers");
+	_count = 0;
+	{
+		if (isNull (_x select 0)) then {
+			arr deleteAt (_forEachIndex - _count);
+			_count = _count + 1;
+		};
+	} forEach (missionNamespace getVariable "uberDrivers");
+
+	missionNamespace setVariable ["uberDrivers", arr, true];
+
 	{
 		_index = lbAdd[1500,name (_x select 0)];
 		lbSetData [1500, _index, str _forEachIndex];

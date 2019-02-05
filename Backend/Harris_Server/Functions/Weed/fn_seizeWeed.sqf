@@ -9,4 +9,6 @@ Harris_seizeWeed = {
 	deleteVehicle _plant;	
 	_ct setVariable ['growingPlant', nil, true];
 	_ct setVariable ["seized",true,true];
+
+	["Success", "This weed has been seized", "Success"] call Harris_Notifications;
 };

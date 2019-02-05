@@ -124,7 +124,7 @@ class Harris_phone_mainScreen
 			y = 0.68238 * safezoneH + safezoneY;
 			w = 0.0257812 * safezoneW;
 			h = 0.055 * safezoneH;
-			action = "closeDialog 7565; createDialog 'Harris_phone_dial'";
+			action = "closeDialog 7565; createDialog 'Harris_phone_dial'; [] call Harris_clearDial;";
 		};
 		class Messages_Button: phoneButton
 		{
