@@ -338,14 +338,14 @@ class cfgInteractions
 		text = "For Sale";
 		class buyHouse 
 		{
-			condition = "[(!(Harris_currentCursorObject in life_vehicles) && isNil {Harris_currentCursorObject getVariable 'house_owner'}), player distance Harris_currentCursorObject < 10, Harris_currentCursorObject isKindOf 'House_F']";
+			condition = "[(!(Harris_currentCursorObject in life_vehicles) && isNil {Harris_currentCursorObject getVariable 'house_owner'}), player distance Harris_currentCursorObject < 10, Harris_currentCursorObject isKindOf 'House_F', typeOf Harris_currentCursorObject in Harris_Houses]";
 			action = "[Harris_currentCursorObject] spawn life_fnc_buyHouse;";
 			icon = "046-for-sale-post.paa";
 			text = "Buy House";
 		};
 		class priceHouse 
 		{
-			condition = "[(!(Harris_currentCursorObject in life_vehicles) && isNil {Harris_currentCursorObject getVariable 'house_owner'}), player distance Harris_currentCursorObject < 10,Harris_currentCursorObject isKindOf 'House_F']";
+			condition = "[(!(Harris_currentCursorObject in life_vehicles) && isNil {Harris_currentCursorObject getVariable 'house_owner'}), player distance Harris_currentCursorObject < 10,Harris_currentCursorObject isKindOf 'House_F', typeOf Harris_currentCursorObject in Harris_Houses]";
 			action = "[Harris_currentCursorObject] call life_fnc_housePrice;";
 			icon = "019-open-male-purse.paa";
 			text = "House Price";
