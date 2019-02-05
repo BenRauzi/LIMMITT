@@ -31,12 +31,14 @@ switch (life_veh_shop select 0) do
 	case "civ_rebel": {_ret = license_civ_rebel;};
 	// Douglas County Sheriff's Office Vehicle Stores
 	case "dcso_patrol": {_ret = true;};
-	case "dcso_air": {_ret = true;};
+	case "dcso_dtu": {_ret = true;};
+	case "dcso_sert": {_ret = true;};
+	case "dcso_patrol": {_ret = true;};
+	case "dcso_command": {_ret = true;};
 	case "dcso_boat": {_ret = true;};
 	// Douglas County Fire Department Vehicle Stores
 	case "med_shop": {_ret = true;};
 	case "med_air_hs": {_ret = license_med_air;};
-	case "reb_car": {_ret = license_civ_rebel;};
 };
 
 _ret;
