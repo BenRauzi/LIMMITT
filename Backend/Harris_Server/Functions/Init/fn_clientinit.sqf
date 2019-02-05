@@ -175,7 +175,8 @@ LIMMITT_clientInit = {
 		["Refined Coal","Harris_coal", "", [["Harris_CoalOre",2, "Coal Ore"]], "Refine", 0.1, true],
 		["Iron Ingot","Harris_ironIngot", "", [["Harris_ironOre",2, "Iron Ore"]], "Refine", 0.1, true],
 		["Steel Ingot","Harris_steelIngot", "", [["Harris_ironOre",2, "Iron Ore"],["Harris_coalOre",4, "Coal Ore"]], "Refine", 0.2, true],
-		["Gold Bar","Harris_goldIngot", "", [["Harris_goldOre",2, "Gold Ore"]], "Refine", 0.3, true]
+		["Gold Bar","Harris_goldIngot", "", [["Harris_goldOre",2, "Gold Ore"]], "Refine", 0.3, true],
+		["Diamonds","Harris_diamond", "", [["Harris_diamondOre",2, "Uncut Diamonds"]], "Refine", 0.3, true]
 	]; // Add Timber from Logs and Diamonds
 	Harris_smeltTypes = ["Refine"];
 	Harris_craftTypes = ["Rifles", "Pistols", "Items"]; //??
@@ -267,10 +268,10 @@ LIMMITT_clientInit = {
 
 	Harris_prices = 
 	[
-		["Coal Ore", 1000],
-		["Iron Ore", 1500],
-		["Gold Ore", 2500],
-		["Diamond Ore", 3000],
+		["Harris_coalOre", 1000],
+		["Harris_ironOre", 1500],
+		["Harris_goldOre", 2500],
+		["Harris_diamondOre", 3000],
 		["Harris_coal", 2000],
 		["Harris_ironIngot", 3000],
 		["Harris_goldIngot", 5000],

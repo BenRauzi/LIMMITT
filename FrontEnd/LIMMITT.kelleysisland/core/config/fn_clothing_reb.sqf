@@ -12,6 +12,11 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Shop Title Name
 ctrlSetText[3103,"Rebel Shop"];
 
+
+
+
+
+
 switch (_filter) do
 {
 	//Uniforms
@@ -19,17 +24,11 @@ switch (_filter) do
 	{
 		[
 
-			["U_PMC_CombatUniformLS_BSGPSB",nil,10000],
-			["U_PMC_CombatUniformLS_GSBPBB",nil,10000],
-			["U_PMC_CombatUniformRS_GSSPBB",nil,10000],
-			["A3LJumperCIDBlack",nil,10000],
-			["U_O_OfficerUniform_ocamo",nil,20000],
-			["TRYK_U_B_ARO1_BLK_CombatUniform",nil,20000],
-			["TRYK_U_B_AOR2_BLK_R_CombatUniform",nil,20000],
-			["TRYK_U_B_Snowt",nil,30000],
-
-
-
+			["U_B_T_Soldier_F",nil,6000],
+			["U_B_T_Soldier_AR_F",nil,6000],
+			["U_I_CombatUniform",nil,6000],
+			["U_B_CTRG_Soldier_F",nil,6000],
+			["U_B_CTRG_Soldier_3_F",nil,6000]
 		];
 	};
 	
@@ -37,18 +36,13 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["TRYK_H_Booniehat_AOR2",nil,1000],
+			["H_MilCap_ghex_F",nil,1000],
 			["TRYK_H_Booniehat_MARPAT_WOOD",nil,1000],
 			["TRYK_H_Booniehat_AOR1",nil,1000],
 			["TRYK_H_Booniehat_JSDF",nil,1000],
 			["H_Bandanna_camo",nil,650],
 			["H_Shemag_olive",nil,650],
-			["jokermask","Joker Mask",25000],
 			["TRYK_Kio_Balaclava","Ghost Balaclava",15000],
-			["A3L_Halloween_JigSaw","JigSaw Mask",25000],
-			["kio_skl_msk","Black Skull Mask",30000],
-			["kio_skl_msk_grn","Green Skull Mask",30000],
-			["kio_skl_msk_red","Red Skull Mask",30000],
 			["H_HelmetB_light_black",nil,30000],
 			["H_HelmetSpecB_snakeskin",nil,30000]
 		];
@@ -78,19 +72,13 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_TacVest_khk",nil,18500],
-			["V_TacVest_oli",nil,18500],
+			["V_TacVest_camo",nil,18500],
+			["V_TacVest_darkblck",nil,18500],
 			["V_TacVest_brn",nil,18500],
-			["V_BandollierB_cbr",nil,15000],
-			["V_BandollierB_rgr",nil,15000],
-			["V_BandollierB_khk",nil,15000],
-			["V_BandollierB_oli",nil,15000],
-			["REB_VEST_DIGI",nil,75000],
-			["TRYK_V_ArmorVest_Delta2",nil,30000],
-			["TRYK_V_ArmorVest_green",nil,30000],
-			["TRYK_V_PlateCarrier_wood",nil,30000],
-			["V_HarnessO_brn",nil,7500],
-			["V_HarnessO_gry",nil,7500]
+			["REB_vest_base",nil,15000],
+			["V_TacVest_oli",nil,15000],
+			["TRYK_V_Bulletproof_BLK",nil,18500],
+			["V_BandollierB_oli",nil,30000]
 		];
 	};
 	

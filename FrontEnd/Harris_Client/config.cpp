@@ -949,12 +949,12 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_rocks\bits_small_rock - Coal.p3d";
-		picture = "Harris_Client\Data\coalUnrefined.paa";
+		picture = "\Harris_Client\Data\coalUnrefined.paa";
 		descriptionShort = "Unrefined Coal";
 	};
 	class Harris_diamondOre: ToolKit
 	{
-		displayName = "Diamond Ore";
+		displayName = "Uncut Diamond";
 		count = 1;
 		class ItemInfo
 		{
@@ -965,8 +965,8 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_rocks\bits_small_rock.p3d";
-		picture = "Harris_Client\Data\ironOre.paa";
-		descriptionShort = "Diamond Ore";
+		picture = "\Harris_Client\Data\ironOre.paa";
+		descriptionShort = "Uncut Diamond";
 	};
 	class Harris_ironOre: ToolKit
 	{
@@ -981,7 +981,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_rocks\bits_small_rock - Iron.p3d";
-		picture = "Harris_Client\Data\ironOre.paa";
+		picture = "\Harris_Client\Data\ironOre.paa";
 		descriptionShort = "Iron Ore";
 	};
 	class Harris_goldOre: ToolKit
@@ -997,7 +997,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_rocks\bits_small_rock - Gold.p3d";
-		picture = "Harris_Client\Data\ironOre.paa";
+		picture = "\Harris_Client\Data\ironOre.paa";
 		descriptionShort = "Gold Ore";
 	};
 	class Harris_woodLog: ToolKit
@@ -1012,8 +1012,8 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "Harris_Client\Crafting\Log.p3d"; // To Update
-		picture = "Harris_Client\Crafting\Wood.paa";
+		model = "\Harris_Client\Crafting\Log.p3d"; // To Update
+		picture = "\Harris_Client\Crafting\Wood.paa";
 		descriptionShort = "Wooden Logs";
 	};
 	class Harris_ironIngot: ToolKit
@@ -1029,7 +1029,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\A3L_Bars\silver_bar.p3d";
-		picture = "Harris_Client\Crafting\ironIngot.paa";
+		picture = "\Harris_Client\Crafting\ironIngot.paa";
 		descriptionShort = "Iron Ingot";
 	};
 
@@ -1046,7 +1046,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\a3l_boxes\box_small.p3d";
-		picture = "Harris_Client\Crafting\coal.paa";
+		picture = "\Harris_Client\Crafting\coal.paa";
 		descriptionShort = "Piece of refined Coal";
 	};
 
@@ -1063,7 +1063,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\A3L_Bars\steel_bar.p3d";
-		picture = "Harris_Client\Crafting\ironIngot.paa";
+		picture = "\Harris_Client\Crafting\ironIngot.paa";
 		descriptionShort = "Steel Ingot";
 	};
 
@@ -1080,7 +1080,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\A3L_Bars\steel_bar.p3d";
-		picture = "Harris_Client\Crafting\ironIngot.paa";
+		picture = "\Harris_Client\Crafting\ironIngot.paa";
 		descriptionShort = "Gold Ingot";
 	};
 	class Harris_Workbench: ToolKit
@@ -1096,13 +1096,13 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\A3L_WorkBench\workbench.p3d";
-		picture = "Harris_Client\Crafting\Workbench.paa";
+		picture = "\Harris_Client\Crafting\Workbench.paa";
 		descriptionShort = "Workbench";
 	};
 	class Harris_Pot : Toolkit {
 		displayName = "Plant Pot";
 		descriptionShort = "A Pot used to Grow Some Legal Plants, and some illegal ones";
-		picture = "Harris_Client\Crafting\pot.paa";
+		picture = "\Harris_Client\Crafting\pot.paa";
 		model = "\JD_Client\Objects\pot.p3d";
 		class ItemInfo
 		{
@@ -1131,7 +1131,7 @@ class CfgWeapons
 		displayName = "Crafting Notes";
 		descriptionShort = "A notepad containing notes used for crafting";
 		picture = "\cg_Items\custom\tuna_ca.paa";
-		model = "Harris_Client\Crafting\Blueprint.p3d";
+		model = "\Harris_Client\Crafting\Blueprint.p3d";
 		class ItemInfo
 		{
 			allowedSlots[] = {701, 801, 901};
@@ -1169,7 +1169,7 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "cl3_objects\cl3_objects_pack\cl_hemp_seeds.p3d";
+		model = "\cl3_objects\cl3_objects_pack\cl_hemp_seeds.p3d";
 		picture = "\Harris_Client\Crafting\seeds.paa";
 		descriptionShort = "Weed Seeds";
 	};
@@ -1185,7 +1185,7 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
+		model = "\cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
 		picture = "\Harris_Client\Crafting\Toolbox.paa";
 		descriptionShort = "Can be used a repairkit to fix vehicles";
 	};
@@ -1201,7 +1201,7 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
+		model = "\cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
 		picture = "\Harris_Client\Crafting\Toolbox.paa";
 		descriptionShort = "CPR Medkit";
 	};
@@ -1217,7 +1217,7 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "cl3_objects\cl3_objects_pack\cl_handcuffs.p3d";
+		model = "\cl3_objects\cl3_objects_pack\cl_handcuffs.p3d";
 		picture = "\cl3_objects\cl3_objects_pack\icons\cl_handcuffs_icon.paa";
 		descriptionShort = "A pair of handcuffs used to restrain people's hands";
 	};
