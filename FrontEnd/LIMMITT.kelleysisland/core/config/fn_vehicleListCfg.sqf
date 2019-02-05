@@ -146,6 +146,10 @@ switch (_shop) do
 	case "civ_motorcycle":
 	{
 		_return = [
+			["JD_Renegade_Black",20000],
+			["JD_Renegade_Blue",20000],
+			["JD_Renegade_Red",20000],
+			["JD_Renegade_Green",20000],
 			["kw_xr_silver",100000],
 			["kw_xr_flame",100000],
 			["kw_xr_camo_urban",100000],
@@ -161,8 +165,9 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Plane_Civil_01_F",50000],
-			["C_Heli_Light_01_civil_F",250000],
+			["C_Plane_Civil_01_F",40000],
+			["C_Plane_Civil_01_racing_F",80000],
+			["C_Heli_Light_01_civil_F",100000],
 			["d3s_AS_365",150000]
 		];
 	};
@@ -170,13 +175,12 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Rubberboat",30000],
-			["C_Boat_Civil_01_F",135000],
-			["A3L_Ship",625000],
-			["A3L_SpeedYacht",675000],
-			["A3L_Jetski",115000],
-			["B_SDV_01_F",225000],
-			["kw_yacht",115000]
+			["C_Scooter_Transport_01_F",5000],
+			["C_Boat_Transport_02_F",10000],
+			["C_Boat_Civil_01_F",20000],
+			["A3L_Ship",60000],
+			["Kw_Yacht",500000],
+			["I_SDV_01_F",300000]
 		];
 	};
 	case "civ_rebel":
@@ -200,31 +204,67 @@ switch (_shop) do
 	{
 		_return =
 		[
+			//patrol
+			["M_CVPI_NEW",1000],
+			["M_CVPI_Slick",1000],
 			["JD_CVPI_Skin2",1000],
 			["JD_CVPI_U_Skin2",1000],
-			["JD_CVPI_White",1000],
-			["JD_CVPI_U_White",1000],
-			["JD_CVPI_Black",1000],
-			["JD_CVPI_U_Black",1000],
-			["JD_PoliceB_1",2000],
-			["kw_06Surburban_sheriff",4000],
-			["kw_09Tahoe_SHERIFF",4000],
-			["kw_15Charger_SHERIFF",4000],
-			["kw_Explorer_14_SHERIFF",4000],
-			["kw_fordRaptor_2017_SHERIFF",8000],
-			["kw_sentinal_swat",10000]
+			["M_FPIS_NEW",2000],
+			["M_FPIS_slick",2000],
+			["M_Charger12_NEW",4000],
+			["M_Charger12_Slick",4000],
+			["M_Tahoe_NEW",3000],
+			["M_Tahoe_supervisor",3000],
+			["JD_PoliceB_1",5000]
+		];
+	};
+	case "dcso_dtu":
+	{
+		_return =
+		[
+			//DTU
+			["M_FPIS_UC_Grey",1000],
+			["M_FPIS_UC_White",1000],
+			["M_CVPI_UC_Black",1000],
+			["M_CVPI_UC_Grey",1000],
+			["M_CVPI_UC_White",1000],
+			["M_Charger12_UC_Black",4000],
+			["M_Charger12_UC_Grey",4000],
+			["M_Charger12_UC_White",4000],
+			["M_Tahoe_UC_White",3000],
+			["M_Tahoe_UC_Grey",3000]
+		];
+	};
+	case "dcso_sert":
+	{
+		_return =
+		[
+			//Sert
+			["M_CVPI_UC_Black",3000],
+			["M_Charger12_UC_Black",3000],
+			["M_Tahoe_UC_Black",3000],
+			["kw_Suburban_06_Black",3000],
+			["kw_Sentinal_SWAT",10000]
+		];
+	};
+	case "dcso_command":
+	{
+		_return =
+		[
+			["M_Silverado_cab",1000],
+			["M_Silverado",1000],
+			["kw_Suburban_06_Black",1000],
+			["kw_SUV_Black",1000],
+			["JD_PoliceB_1",1000]
 		];
 	};
 	case "dcso_air":
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",25000],
-			["I_Heli_Transport_02_F",30000],
-			["I_Heli_light_03_unarmed_F",30000],
-			["EC635_Unarmed",32500],
-			["d3s_AS_365_PD",32500],
-			["EC635_SAR",32500]
+			["MELB_MH6M",10000],
+			["O_Heli_Light_02_unarmed_F",30000],
+			["ds3_AS_365_PD",30000]
 		];
 	};
 	case "dcso_boat":
@@ -232,7 +272,6 @@ switch (_shop) do
 		_return =
 		[
 			["B_Boat_Transport_01_F",4000],
-			["B_SDV_01_F",4500],
 			["C_Boat_Civil_01_police_F",5000]
 		];
 	};
@@ -242,26 +281,16 @@ switch (_shop) do
 	{
 		_return = [
 		
-			["KW_Taurus_10_TAC",500],
-			["KW_11RS3_EMS",500],
-			["KW_12M5_EMS",500],
-			["KW_06Suburban_FD",500],
-			["KW_15Charger_EMS",500],
-			["KW_12Charger_EMS",500],
-			["KW_06Victoria_FD",500],
-			["cg_merc_atego_firetruck_reg",500],
-			["kw_Ford_Raptor_2017_Sheriff ",500],
-			["JD_F350_Red",500]
-			
+			["C_Van_02_medevac_F",500],
+			["M_Ambulance",2000],
+			["JD_F350_Red",3000],
+			["M_Tahoe_EMS",3000]
 		];
 	};
 	case "med_air_hs": {
 		_return = [
-			["EMS_Chopper",500],
-			["EMS_Orca",500],
-			["IVORY_BELL512_RESCUE",500],
-			["ivory_b206_rescue",500],
-			["RobJ_Rescue1",500]
+			["EMS_Chopper",5000],
+			["d3s_HH_65",10000]
 		];
 	};
 };
