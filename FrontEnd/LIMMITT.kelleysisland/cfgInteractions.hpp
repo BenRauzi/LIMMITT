@@ -220,7 +220,7 @@ class cfgInteractions
 		};
 		class testIntox
 		{
-			condition = "[isPlayer Harris_currentCursorObject,playerside == west, !(player distance getMarkerPos 'A3L_jailMarker' < 50)]";
+			condition = "[isPlayer Harris_currentCursorObject,playerside == west, !(player distance getMarkerPos 'A3L_jailMarker' < 50), (player distance getMarkerPos 'Correctional_Facility_1' > 50)]";
 			action = "[Harris_currentCursorObject] call life_fnc_testIntox";
 			icon = "028-antibiotic.paa";
 			text = "Test Intox";
