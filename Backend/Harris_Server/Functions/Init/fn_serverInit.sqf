@@ -23,4 +23,5 @@ LIMMITT_ServerInit ={
 		
 	missionNamespace setVariable ["cellNumbers", [], true];
 	missionNamespace setVariable ["uberDrivers", [], true];
+	addMissionEventHandler ["HandleDisconnect",{ [] spawn SOCK_fnc_syncSilent; deleteVehicle (_this select 0); }];
 };
