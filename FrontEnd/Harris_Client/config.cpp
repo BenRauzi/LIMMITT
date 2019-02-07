@@ -1297,6 +1297,22 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 	};
+	class Harris_diamond: ToolKit
+	{
+		displayName = "Diamond";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 15;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\a3l_rocks\bits_small_rock.p3d";
+		picture = "\Harris_Client\Data\ironOre.paa";
+		descriptionShort = "Diamond";
+	};
 
 };
 
