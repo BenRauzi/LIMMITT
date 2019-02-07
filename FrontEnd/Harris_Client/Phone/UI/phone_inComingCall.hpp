@@ -61,7 +61,7 @@ class Harris_phone_incomingCall
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.0515625 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "[] call Harris_acceptCall";
+			action = "[] spawn Harris_acceptCall";
 		};
 		class Decline_Button: phoneButton
 		{

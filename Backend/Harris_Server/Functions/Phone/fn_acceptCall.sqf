@@ -7,7 +7,7 @@
 Harris_acceptCall = {
 
 	Harris_oldFrequency = [(call TFAR_fnc_activeSwRadio), 1] call TFAR_fnc_GetChannelFrequency;
-	{ // Check if the player has a cop radio
+	{ // Check if the player has a radio
 		if (_x find "tf_anprc152" >= 0) then {
 			player unassignItem _x;
 			Harris_hadRadio = true;
@@ -55,7 +55,12 @@ Harris_acceptCall = {
 	};
 	*/		
 	
-	[(call TFAR_fnc_activeSwRadio), 1, Harris_CallerFreq] call TFAR_fnc_SetChannelFrequency;
+	if (Harris_hadRadio) then {
+		waitUntil {{_x find "LIMMITT_Network_Phone" >= 0} forEach assignedItems player};
+		[(call TFAR_fnc_activeSwRadio), 1, Harris_CallerFreq] call TFAR_fnc_SetChannelFrequency;
+	} else {
+		[(call TFAR_fnc_activeSwRadio), 1, Harris_CallerFreq] call TFAR_fnc_SetChannelFrequency;
+	};
 
 	[Harris_CallerFreq, (profileNamespace getVariable "yourNumber"), player] remoteExecCall ["Harris_acceptedCall", Harris_Caller];
 	Harris_inCurrentCall = true;
