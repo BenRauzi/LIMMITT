@@ -5,6 +5,7 @@
 Harris_seizeWeed = {
 	params["_ct"];
 
+	player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';
 	_plant = _ct getVariable ['growingPlant', objNull];
 	deleteVehicle _plant;	
 	_ct setVariable ['growingPlant', nil, true];
