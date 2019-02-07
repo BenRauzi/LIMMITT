@@ -468,10 +468,12 @@ switch (_code) do
 		{
 			//[] call life_fnc_restrainAction;
 			if ((_shift) && !(cursorObject getVariable ["Foski_Restrained", false])) then {
+				player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';
 				[cursorObject] call Foski_restrainPlayer;
 				_handled = true;
 			};
 			if ((_ctrlKey) && (cursorObject getVariable ["Foski_Restrained", false])) then {
+				player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';
 				[cursorObject] call Foski_unRestrainPlayer;
 				_handled = true;
 			};
