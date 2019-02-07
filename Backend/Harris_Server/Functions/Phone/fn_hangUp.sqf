@@ -5,16 +5,16 @@
 
 Harris_hangUp = {
 
-	// Get the players phone
-	_phone = "";
-	{
-		if (_x find "LIMMITT_Network_Phone" >= 0) then {
-			_phone = _x;
-		};
-	} forEach assignedItems player;
-
-	{ // Check if the player HAD a radio
+	{ // If the player HAD a radio then replace their phone with the radio
 		if (_x find "tf_anprc152" >= 0 && Harris_hadRadio) then {
+			// Get the phone
+			_phone = "";
+			{
+				if (_x find "LIMMITT_Network_Phone" >= 0) then {
+					_phone = _x;
+				};
+			} forEach assignedItems player;
+			// Swap the radio/phone
 			player unassignItem _phone;
 			player assignItem _x;
 			Harris_hadRadio = nil;

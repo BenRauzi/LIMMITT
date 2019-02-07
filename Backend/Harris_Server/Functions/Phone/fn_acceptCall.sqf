@@ -3,7 +3,6 @@
 	Description: Phone - Read Function Name
 */
 
-
 Harris_acceptCall = {
 
 	Harris_oldFrequency = [(call TFAR_fnc_activeSwRadio), 1] call TFAR_fnc_GetChannelFrequency;
