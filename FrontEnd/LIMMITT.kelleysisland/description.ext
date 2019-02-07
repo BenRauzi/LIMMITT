@@ -1,5 +1,5 @@
 // Mission Details
-onLoadName = "Douglas County 0.2 - Alpha";
+onLoadName = "Douglas County 0.3 - Alpha";
 author = "LIMMITT Network Development Team";
 onLoadMission = "Please ensure you are connected to our teamspeak server. ts.limmitt-network.co.uk - https://www.limmitt-network.co.uk";
 loadScreen = "textures\missionPicture.paa";
