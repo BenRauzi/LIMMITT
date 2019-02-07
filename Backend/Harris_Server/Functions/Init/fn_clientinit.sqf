@@ -317,13 +317,14 @@ LIMMITT_clientInit = {
 	player addEventHandler ["GetInMan", {
 	    params ["_vehicle", "_role", "_unit", "_turret"];
 
-	    if (_role == "driver" && player getVariable ["Foski_Restrained", false]) then {
+	    if ((_role == "driver" || _role == "gunner" || "Turret" in (assignedVehicleRole player)) && player getVariable ["Foski_Restrained", false]) then {
 	        if (vehicle player isKindOf 'Air') then {
 	            player action["GetOut",vehicle player];
 	        } else {
 	                player action["eject",vehicle player];
 	        };
 	    };
+
 	    if (vehicle player isKindOf "Air") then {
 	    	[(call TFAR_fnc_activeLrRadio), 1, "80.7"] call TFAR_fnc_SetChannelFrequency;
 	    };
@@ -331,7 +332,7 @@ LIMMITT_clientInit = {
 
 	player addEventHandler ["SeatSwitchedMan", { // Added to fix people be able to switch to drivers seat while restrained
 		params ["_unit1", "_unit2", "_vehicle"];
-		if (driver _vehicle == _unit1 && _unit1 getVariable ["Foski_Restrained", false]) then {
+		if ((driver _vehicle == _unit1 || gunner _vehicle == _unit1 || "Turret" in (assignedVehicleRole player)) && _unit1 getVariable ["Foski_Restrained", false]) then {
 		    if (vehicle player isKindOf 'Air') then {
 		        player action["GetOut",vehicle player];
 		    } else {
