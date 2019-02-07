@@ -204,7 +204,6 @@ switch (_shop) do
 	{
 		_return =
 		[
-			//patrol
 			["M_CVPI_NEW",1000],
 			["M_CVPI_Slick",1000],
 			["JD_CVPI_Skin2",1000],
@@ -222,7 +221,6 @@ switch (_shop) do
 	{
 		_return =
 		[
-			//DTU
 			["M_FPIS_UC_Grey",1000],
 			["M_FPIS_UC_White",1000],
 			["M_CVPI_UC_Black",1000],
@@ -239,7 +237,6 @@ switch (_shop) do
 	{
 		_return =
 		[
-			//Sert
 			["M_CVPI_UC_Black",3000],
 			["M_Charger12_UC_Black",3000],
 			["M_Tahoe_UC_Black",3000],
