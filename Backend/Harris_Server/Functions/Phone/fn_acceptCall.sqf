@@ -55,7 +55,7 @@ Harris_acceptCall = {
 	*/		
 	
 	if (Harris_hadRadio) then {
-		waitUntil {{_x find "LIMMITT_Network_Phone" >= 0} forEach assignedItems player};
+		waitUntil {[] call TFAR_fnc_haveSWRadio};
 		[(call TFAR_fnc_activeSwRadio), 1, Harris_CallerFreq] call TFAR_fnc_SetChannelFrequency;
 	} else {
 		[(call TFAR_fnc_activeSwRadio), 1, Harris_CallerFreq] call TFAR_fnc_SetChannelFrequency;
