@@ -72,7 +72,7 @@ switch(_shop) do
         };
 
 
-        case "cop_basic":
+        case "dcso_patrol":
         {
                 switch(true) do
                 {
@@ -99,7 +99,7 @@ switch(_shop) do
                         };
                 };
         };
-        case "recruit":
+        case "dsco_cadet":
         {
                 switch(true) do
                 {
@@ -116,14 +116,14 @@ switch(_shop) do
                                             ["RH_g19",nil,1000],
                                             ["RH_17Rnd_9x19_g17",nil,100],
                                             //Accessories
-											["RH_X300",nil,100],
+                                            ["RH_X300",nil,100],
                                             ["RH_M6X",nil,100]
                                         ]
                                 ];
                         };
                 };
         };
-        case "cop_patrol":
+        case "dcso_deputy":
         {
                 switch(true) do
                 {
@@ -152,7 +152,7 @@ switch(_shop) do
                         };
                 };
         };
-        case "cop_corporal":
+        case "dcso_corporal":
         {
                 switch(true) do
                 {
@@ -183,7 +183,7 @@ switch(_shop) do
                         };
                 };
         };
-        case "cop_sergeant":
+        case "dcso_sergeant":
         {
                 switch(true) do
                 {
@@ -219,12 +219,12 @@ switch(_shop) do
                         };
                 };
         };
-		case "cop_r1":
+		case "dcso_DTU":
         {
                 switch(true) do
                 {
                         case (playerSide != west): {"You are not in the DCSO!"};
-                        case (__GETC__(life_coplevel) < 5): {" You are not Part of DTU!"};
+                        case (!license_dcso_DTU): {"You are not Part of DTU!"};
                         default
                         {
                                 ["DTU Armoury",
@@ -275,12 +275,12 @@ switch(_shop) do
                         };
                 };
         };
-		case "cop_r2":
+		case "dcso_SERT":
         {
                 switch(true) do
                 {
                         case (playerSide != west): {"You are not in the DCSO!"};
-                        case (__GETC__(life_coplevel) < 6): {" You are not Part of SERT!"};
+                        case (!license_dcso_SERT): {"You are not Part of SERT!"};
                         default
                         {
                                 ["SERT Armoury",
@@ -338,7 +338,7 @@ switch(_shop) do
                         };
                 };
         };
-        case "cop_lowcommand":
+        case "dcso_lowCommand":
         {
                 switch(true) do
                 {
@@ -378,7 +378,7 @@ switch(_shop) do
                         };
                 };
         };
-        case "cop_command":
+        case "dcso_command":
         {
                 switch(true) do
                 {

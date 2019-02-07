@@ -143,7 +143,9 @@ switch (_var) do
 	case "asdih_inv_raxsrum": {"Rax's Rum"};
 
 	//License Block
-	
+	case "license_dcso_DTU": {"DCSO: DTU"};
+	case "license_dcso_SERT": {"DCSO: SERT"};
+
 	case "license_civ_driver": {(localize "STR_License_Driver")};
 	case "license_civ_air": {(localize "STR_License_Pilot")};
 	case "license_civ_heroin": {(localize "STR_License_Heroin")};

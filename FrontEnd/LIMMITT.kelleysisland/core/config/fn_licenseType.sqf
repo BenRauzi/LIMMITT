@@ -16,6 +16,9 @@ switch (_mode) do
 	{
 		switch (_type) do
 		{
+			case "DSCO_DTU": {_vat = "license_dcso_DTU"};
+			case "DSCO_SERT": {_vat = "license_dcso_DTU"};
+
 			case "MDMA": {_var = "license_civ_MDMA"};  // in the upper field
 			case "meth": {_var = "license_civ_meth"};  // in the upper field
 			case "driver": {_var = "license_civ_driver"}; //Drivers License cost
@@ -50,14 +53,6 @@ switch (_mode) do
 			case "strife": {_var = "license_civ_strife"};
 			case "harv": {_var = "license_civ_harv"};
 			case "lsmovehicle": {_var = "license_civ_lsmovehicle"};
-			case "dino": {_var = "license_civ_dino"};
-			case "mason": {_var = "license_civ_mason"};
-			case "narcos": {_var = "license_civ_narcos"};
-			case "whyos": {_var = "license_civ_whyos"};
-			case "davis": {_var = "license_civ_davis"};
-			case "casper": {_var = "license_civ_casper"};
-			case "corleone": {_var = "license_civ_corleone"};
-			case "kavali": {_var = "license_civ_kavali"};
 			default {_var = ""};
 		};
 	};
@@ -66,6 +61,9 @@ switch (_mode) do
 	{
 		switch (_type) do
 		{
+			case "license_dcso_DTU": {_vat = "DCSO DTU"};
+			case "license_dcso_DTU": {_vat = "DCSO SERT"};
+
 			case "license_civ_MDMA": {_var = "MDMA"};  // in the lower field
 			case "license_civ_meth": {_var = "meth"};  // in the lower field
 			case "license_civ_driver": {_var = "driver"}; //Drivers License cost
@@ -96,15 +94,7 @@ switch (_mode) do
 			case "license_civ_uranium": {_var = "uranium"};
 			case "license_civ_rifle": {_var = "rifle"};
 			case "license_civ_lsmo": {_var = "lsmo"};
-			case "license_civ_strife": {_var = "strife"};
-			case "license_civ_harv": {_var = "harv"};
 			case "license_civ_lsmovehicle": {_var = "lsmovehicle"};
-			case "license_civ_narcos": {_var = "narcos"};
-			case "license_civ_whyos": {_var = "whyos"};
-			case "license_civ_davis": {_var = "davis"};
-			case "license_civ_casper": {_var = "casper"};
-			case "license_civ_corleone": {_var = "corleone"};
-			case "license_civ_kavali": {_var = "kavali"};
 			default {_var = ""};
 		};
 	};

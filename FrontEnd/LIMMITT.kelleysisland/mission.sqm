@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=985;
+		nextID=988;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3642.3828,96.708084,3105.1829};
-		dir[]={-0.46854144,-0.43738604,0.76771557};
-		up[]={-0.22788009,0.8992461,0.37338293};
-		aside[]={0.85368502,-1.1962256e-006,0.52101541};
+		pos[]={4066.9382,28.381351,2794.6167};
+		dir[]={0.8239336,-0.43415797,0.36452895};
+		up[]={0.3970851,0.90079534,0.1756819};
+		aside[]={0.40465096,-5.5739656e-007,-0.9146089};
 	};
 };
 binarizationWanted=0;
@@ -44,7 +44,7 @@ addons[]=
 	"A3_Props_F_Orange_Items_Electronics",
 	"A3_Structures_F_EPA_Walls",
 	"JD_Client_Clothing",
-	"ADM_GMC_Vandura"
+	"DAR_Charger_F"
 };
 class AddonsMetaData
 {
@@ -163,8 +163,8 @@ class AddonsMetaData
 		};
 		class Item18
 		{
-			className="ADM_GMC_Vandura";
-			name="ADM_GMC_Vandura";
+			className="DAR_Charger_F";
+			name="DAR_Charger_F";
 		};
 	};
 };
@@ -417,7 +417,7 @@ class Mission
 			position[]={3260.7959,15,3998.8601};
 			name="truck_dealer2";
 			type="Empty";
-			angle=91.999977;
+			angle=91.999962;
 			id=69;
 		};
 		class Item22
@@ -426,18 +426,18 @@ class Mission
 			position[]={3240.647,15,4000.917};
 			name="truck_dealer1";
 			type="Empty";
-			angle=91.999977;
+			angle=91.999962;
 			id=70;
 		};
 		class Item23
 		{
 			dataType="Marker";
-			position[]={5594.7197,15.064453,3250.9136};
+			position[]={5594.7202,15.064,3250.9141};
 			name="air_g_1";
 			type="Empty";
-			angle=349.74551;
+			angle=349.746;
 			id=74;
-			atlOffset=-4.6730042e-005;
+			atlOffset=-0.00049972534;
 		};
 		class Item24
 		{
@@ -823,8 +823,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5617.6167,15.763474,3253.2339};
-				angles[]={0,4.7005816,0};
+				position[]={5617.6172,15.763474,3253.2339};
+				angles[]={0,4.700573,0};
 			};
 			side="Empty";
 			flags=4;
@@ -842,19 +842,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5617.9927,15.636117,3258.5024};
-				angles[]={0,1.6179938,0};
+				position[]={5617.9932,15.635864,3258.502};
+				angles[]={0,1.61799,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_1"";  }]; this addAction[""Store vehicle in Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn bis_fnc_mp;   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+				init="call{this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;  life_garage_type = ""air_g_1""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_1"";  }]; this addAction[""Store vehicle in Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn bis_fnc_mp;   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];}";
 			};
 			id=224;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.0037469864;
+			atlOffset=-0.0039997101;
 		};
 		class Item62
 		{
@@ -891,7 +891,7 @@ class Mission
 			};
 			id=226;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.38799953;
+			atlOffset=0.38799858;
 		};
 		class Item64
 		{
@@ -5986,7 +5986,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation""; " \n "this enableSimulation false;  " \n "this allowDamage false; " \n " " \n "comment ""Set NPC's Loadout (Clothing) - NJF""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n "this forceAddUniform ""KAEL_SUITS_BR_F12""; " \n "this setFace ""GreekHead_A3_02""; " \n "this setSpeaker ""male01gre""; " \n " " \n "comment ""Add Actions (Shop)""; " \n "this addAction[""Luxury Car Dealership"",life_fnc_vehicleShopMenu,[""civ_luxury"",civilian,[""luxury_dealer1"",""luxury_dealer2""],""civ"",""Luxury Car Dealership""]];  " \n "this setVariable[""realname"", ""Luxury Car Dealership""];}";
+						init="call{comment ""Disable Damage & Simulation"";  " \n "this enableSimulation false;   " \n "this allowDamage false;  " \n "  " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";  " \n "removeAllWeapons this;  " \n "removeAllItems this;  " \n "removeAllAssignedItems this;  " \n "removeUniform this;  " \n "removeVest this;  " \n "removeBackpack this;  " \n "removeHeadgear this;  " \n "removeGoggles this;  " \n "this forceAddUniform ""KAEL_SUITS_BR_F12"";  " \n "this setFace ""GreekHead_A3_02"";  " \n "this setSpeaker ""male01gre"";  " \n "  " \n "comment ""Add Actions (Shop)"";  " \n "this addAction[""Luxury Car Dealership"",life_fnc_vehicleShopMenu,[""civ_luxury"",civilian,[""luxury_dealer1"",""luxury_dealer2""],""civ"",""Luxury Car Dealership""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4']; " \n "this setVariable[""realname"", ""Luxury Car Dealership""];}";
 					};
 					id=773;
 					type="C_man_1";
@@ -6097,7 +6097,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation""; " \n "this enableSimulation false;  " \n "this allowDamage false; " \n " " \n "comment ""Set NPC's Loadout (Clothing) - NJF""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n "this forceAddUniform ""U_C_Man_casual_2_F""; " \n "this setFace ""AsianHead_A3_05""; " \n "this setSpeaker ""male05gre""; " \n " " \n "comment ""Add Actions (Shop)""; " \n "this addAction[""Second Hand Car Dealership"",life_fnc_vehicleShopMenu,[""civ_secondHand"",civilian,[""secondHand_dealer1"",""secondHand_dealer2""],""civ"",""Second Hand Car Dealership""]];  " \n "this setVariable[""realname"", ""Second Hand Car Dealership""];}";
+						init="call{comment ""Disable Damage & Simulation"";  " \n "this enableSimulation false;   " \n "this allowDamage false;  " \n "  " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";  " \n "removeAllWeapons this;  " \n "removeAllItems this;  " \n "removeAllAssignedItems this;  " \n "removeUniform this;  " \n "removeVest this;  " \n "removeBackpack this;  " \n "removeHeadgear this;  " \n "removeGoggles this;  " \n "this forceAddUniform ""U_C_Man_casual_2_F"";  " \n "this setFace ""AsianHead_A3_05"";  " \n "this setSpeaker ""male05gre"";  " \n "  " \n "comment ""Add Actions (Shop)"";  " \n "this addAction[""Second Hand Car Dealership"",life_fnc_vehicleShopMenu,[""civ_secondHand"",civilian,[""secondHand_dealer1"",""secondHand_dealer2""],""civ"",""Second Hand Car Dealership""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4'];  " \n "this setVariable[""realname"", ""Second Hand Car Dealership""];}";
 					};
 					id=790;
 					type="C_man_1";
@@ -6304,7 +6304,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation""; " \n "this enableSimulation false;  " \n "this allowDamage false; " \n " " \n "comment ""Set NPC's Loadout (Clothing) - NJF""; " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n "this forceAddUniform ""KAEL_SUITS_BR_F3""; " \n "this setFace ""GreekHead_A3_07""; " \n "this setSpeaker ""male01eng""; " \n " " \n "comment ""Add Actions (Shop)""; " \n "this addAction[""Mercedes Benz Dealership"",life_fnc_vehicleShopMenu,[""civ_mercedesBenz"",civilian,[""mercedesBenz_dealer1"",""mercedesBenz_dealer2""],""civ"",""Mercedes Benz Dealership""]]; " \n "this setVariable[""realname"", ""Mercedes Benz Dealership""];}";
+						init="call{comment ""Disable Damage & Simulation"";  " \n "this enableSimulation false;   " \n "this allowDamage false;  " \n "  " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";  " \n "comment ""Remove existing items"";  " \n "removeAllWeapons this;  " \n "removeAllItems this;  " \n "removeAllAssignedItems this;  " \n "removeUniform this;  " \n "removeVest this;  " \n "removeBackpack this;  " \n "removeHeadgear this;  " \n "removeGoggles this;  " \n "this forceAddUniform ""KAEL_SUITS_BR_F3"";  " \n "this setFace ""GreekHead_A3_07"";  " \n "this setSpeaker ""male01eng"";  " \n "  " \n "comment ""Add Actions (Shop)"";  " \n "this addAction[""Mercedes Benz Dealership"",life_fnc_vehicleShopMenu,[""civ_mercedesBenz"",civilian,[""mercedesBenz_dealer1"",""mercedesBenz_dealer2""],""civ"",""Mercedes Benz Dealership""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4'];  " \n "this setVariable[""realname"", ""Mercedes Benz Dealership""];}";
 					};
 					id=803;
 					type="C_man_1";
@@ -6481,7 +6481,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation""; " \n "this enableSimulation false;  " \n "this allowDamage false; " \n " " \n "comment ""Set NPC's Loadout (Clothing) - NJF""; " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n "this forceAddUniform ""U_007_BIS_Marshall""; " \n "this setFace ""GreekHead_A3_11""; " \n "this setSpeaker ""male01eng""; " \n " " \n "comment ""Add Actions (Shop)""; " \n "this addAction[""Chevrolet Dealership"",life_fnc_vehicleShopMenu,[""civ_chevrolet"",civilian,[""chevrolet_dealer1"",""chevrolet_dealer2""],""civ"",""Chevrolet Dealership""]]; " \n "this setVariable[""realname"", ""Chevrolet Dealership""];}";
+						init="call{comment ""Disable Damage & Simulation"";  " \n "this enableSimulation false;   " \n "this allowDamage false;  " \n "  " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";  " \n "comment ""Remove existing items"";  " \n "removeAllWeapons this;  " \n "removeAllItems this;  " \n "removeAllAssignedItems this;  " \n "removeUniform this;  " \n "removeVest this;  " \n "removeBackpack this;  " \n "removeHeadgear this;  " \n "removeGoggles this;  " \n "this forceAddUniform ""U_007_BIS_Marshall"";  " \n "this setFace ""GreekHead_A3_11"";  " \n "this setSpeaker ""male01eng"";  " \n "  " \n "comment ""Add Actions (Shop)"";  " \n "this addAction[""Chevrolet Dealership"",life_fnc_vehicleShopMenu,[""civ_chevrolet"",civilian,[""chevrolet_dealer1"",""chevrolet_dealer2""],""civ"",""Chevrolet Dealership""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4']; " \n "this setVariable[""realname"", ""Chevrolet Dealership""];}";
 					};
 					id=818;
 					type="C_man_1";
@@ -6852,7 +6852,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation"";  " \n "this enableSimulation false;   " \n "this allowDamage false;  " \n "  " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";  " \n "comment ""Remove existing items"";  " \n "removeAllWeapons this;  " \n "removeAllItems this;  " \n "removeAllAssignedItems this;  " \n "removeUniform this;  " \n "removeVest this;  " \n "removeBackpack this;  " \n "removeHeadgear this;  " \n "removeGoggles this;  " \n "this forceAddUniform ""JD_Plain""; " \n "this addVest ""JD_Vest1""; " \n "this addHeadgear ""JD_SheriffHat_Green""; " \n "this setFace ""PersianHead_A3_01""; " \n "this setSpeaker ""male01eng""; " \n "  " \n "comment ""Add Actions (Shop)"";  " \n "this addAction[""Item Shop"",life_fnc_virt_menu,""cop""]; " \n "this addAction[""Gear"",life_fnc_weaponShopMenu,""cop_basic""]; " \n "this addAction[""Cadet Shop"",life_fnc_weaponShopMenu,""recruit""]; " \n "this addAction[""Officer/Snr Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; " \n "this addAction[""Corporal Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; " \n "this addAction[""Sergeant Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; " \n "this addAction[""Captain/LT Shop"",life_fnc_weaponShopMenu,""cop_captain""]; " \n "this addAction[""SWAT Shop"",life_fnc_weaponShopMenu,""cop_r2""]; " \n "this addAction[""Detective Weapons"",life_fnc_weaponShopMenu,""cop_det""]; " \n "this addAction[""Command Shop"",life_fnc_weaponShopMenu,""cop_command""]; " \n "this addAction[""Commissioner Shop"",life_fnc_weaponShopMenu,""cop_commissioner""]; " \n "this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; " \n "this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; " \n "this addAction[""Trade suitcase"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }];}";
+						init="call{comment ""Disable Damage & Simulation"";   " \n "this enableSimulation false;    " \n "this allowDamage false;   " \n "   " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";   " \n "comment ""Remove existing items"";   " \n "removeAllWeapons this;   " \n "removeAllItems this;   " \n "removeAllAssignedItems this;   " \n "removeUniform this;   " \n "removeVest this;   " \n "removeBackpack this;   " \n "removeHeadgear this;   " \n "removeGoggles this;   " \n "this forceAddUniform ""JD_Plain"";  " \n "this addVest ""JD_Vest1"";  " \n "this addHeadgear ""JD_SheriffHat_Green"";  " \n "this setFace ""PersianHead_A3_01"";  " \n "this setSpeaker ""male01eng"";  " \n "   " \n "comment ""Add Actions (Shop)"";   " \n "this addAction[""Item Shop"",life_fnc_virt_menu,""cop""];  " \n "this addAction[""Patrol Gear Shop"",life_fnc_weaponShopMenu,""dcso_patrol"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == west && player distance _target < 4']; " \n "this addAction[""Cadet Shop"",life_fnc_weaponShopMenu,""dsco_cadet"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == west && player distance _target < 4']; " \n "this addAction[""Deputy Shop"",life_fnc_weaponShopMenu,""dcso_deputy"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == west && player distance _target < 4']; " \n "this addAction[""Corporal Shop"",life_fnc_weaponShopMenu,""dcso_corporal"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == west && player distance _target < 4']; " \n "this addAction[""Sergeant Shop"",life_fnc_weaponShopMenu,""dcso_sergeant"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == west && player distance _target < 4']; " \n "this addAction[""DTU Shop"",life_fnc_weaponShopMenu,""dcso_DTU"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == west && license_dcso_DTU && player distance _target < 4']; " \n "this addAction[""SERT Shop"",life_fnc_weaponShopMenu,""dcso_SERT"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == west && license_dcso_SERT && player distance _target < 4']; " \n "this addAction[""Low Command Shop"",life_fnc_weaponShopMenu,""dcso_lowCommand"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == west && player distance _target < 4']; " \n "this addAction[""Command Shop"",life_fnc_weaponShopMenu,""dcso_command"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == west && player distance _target < 4'];}";
 					};
 					id=844;
 					type="JD_Sergeant_rangemaster";
@@ -6893,8 +6893,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4084.21,15.68106,2788.574};
-				angles[]={0,3.1915441,0};
+				position[]={4084.1738,15.68106,2788.4536};
+				angles[]={-0,3.1915441,0};
 			};
 			side="Empty";
 			class Attributes
@@ -6935,7 +6935,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4081.1541,16.343048,2787.6001};
-				angles[]={0,0.037419859,0};
+				angles[]={0,0.037419856,0};
 			};
 			side="Empty";
 			flags=4;
@@ -7020,7 +7020,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation"";  " \n "this enableSimulation false;   " \n "this allowDamage false;  " \n "  " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";  " \n "comment ""Remove existing items"";  " \n "removeAllWeapons this;  " \n "removeAllItems this;  " \n "removeAllAssignedItems this;  " \n "removeUniform this;  " \n "removeVest this;  " \n "removeBackpack this;  " \n "removeHeadgear this;  " \n "removeGoggles this;  " \n "this forceAddUniform ""U_Marshal""; " \n "this setFace ""asczHead_logan_A3""; " \n "this setSpeaker ""male01eng""; " \n "  " \n "comment ""Add Actions (Shop)"";  " \n "this addAction[""Ford Dealership"",life_fnc_vehicleShopMenu,[""civ_ford"",civilian,[""ford_dealer1"",""ford_dealer2""],""civ"",""Ford Dealership""]];  " \n "this setVariable[""realname"", ""Ford Dealership""];}";
+						init="call{comment ""Disable Damage & Simulation"";   " \n "this enableSimulation false;    " \n "this allowDamage false;   " \n "   " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";   " \n "comment ""Remove existing items"";   " \n "removeAllWeapons this;   " \n "removeAllItems this;   " \n "removeAllAssignedItems this;   " \n "removeUniform this;   " \n "removeVest this;   " \n "removeBackpack this;   " \n "removeHeadgear this;   " \n "removeGoggles this;   " \n "this forceAddUniform ""U_Marshal"";  " \n "this setFace ""asczHead_logan_A3"";  " \n "this setSpeaker ""male01eng"";  " \n "   " \n "comment ""Add Actions (Shop)"";   " \n "this addAction[""Ford Dealership"",life_fnc_vehicleShopMenu,[""civ_ford"",civilian,[""ford_dealer1"",""ford_dealer2""],""civ"",""Ford Dealership""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4']; " \n "this setVariable[""realname"", ""Ford Dealership""];}";
 					};
 					id=857;
 					type="C_man_1";
@@ -7209,7 +7209,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation"";  " \n "this enableSimulation false;   " \n "this allowDamage false;  " \n "  " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";  " \n "comment ""Remove existing items"";  " \n "removeAllWeapons this;  " \n "removeAllItems this;  " \n "removeAllAssignedItems this;  " \n "removeUniform this;  " \n "removeVest this;  " \n "removeBackpack this;  " \n "removeHeadgear this;  " \n "removeGoggles this;  " \n "this forceAddUniform ""U_Marshal""; " \n "this setFace ""TanoanHead_A3_05""; " \n "this setSpeaker ""male01eng""; " \n "  " \n "comment ""Add Actions (Shop)"";  " \n "this addAction[""Dodge Dealership"",life_fnc_vehicleShopMenu,[""civ_dodge"",civilian,[""dodge_dealer1"",""dodge_dealer2""],""civ"",""Dodge Dealership""]];  " \n "this setVariable[""realname"", ""Dodge Dealership""];}";
+						init="call{comment ""Disable Damage & Simulation"";   " \n "this enableSimulation false;    " \n "this allowDamage false;   " \n "   " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";   " \n "comment ""Remove existing items"";   " \n "removeAllWeapons this;   " \n "removeAllItems this;   " \n "removeAllAssignedItems this;   " \n "removeUniform this;   " \n "removeVest this;   " \n "removeBackpack this;   " \n "removeHeadgear this;   " \n "removeGoggles this;   " \n "this forceAddUniform ""U_Marshal"";  " \n "this setFace ""TanoanHead_A3_05"";  " \n "this setSpeaker ""male01eng"";  " \n "   " \n "comment ""Add Actions (Shop)"";   " \n "this addAction[""Dodge Dealership"",life_fnc_vehicleShopMenu,[""civ_dodge"",civilian,[""dodge_dealer1"",""dodge_dealer2""],""civ"",""Dodge Dealership""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4']; " \n "this setVariable[""realname"", ""Dodge Dealership""];}";
 					};
 					id=870;
 					type="C_man_1";
@@ -7351,24 +7351,6 @@ class Mission
 		};
 		class Item284
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3522.8879,17.019577,3243.7952};
-				angles[]={0,2.8296499,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="call{this allowDamage false; this lock 2;}";
-			};
-			id=879;
-			type="ADM_GMC_Vandura";
-			atlOffset=0.00037193298;
-		};
-		class Item285
-		{
 			dataType="Marker";
 			position[]={3445.4351,15.755,3308.9509};
 			name="car1_1_2_7";
@@ -7379,7 +7361,7 @@ class Mission
 			id=880;
 			atlOffset=0.34426975;
 		};
-		class Item286
+		class Item285
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7397,7 +7379,7 @@ class Mission
 			id=881;
 			type="Land_CashDesk_F";
 		};
-		class Item287
+		class Item286
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7416,7 +7398,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation"";  " \n "this enableSimulation false;   " \n "this allowDamage false;  " \n "  " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";  " \n "comment ""Remove existing items"";  " \n "removeAllWeapons this;  " \n "removeAllItems this;  " \n "removeAllAssignedItems this;  " \n "removeUniform this;  " \n "removeVest this;  " \n "removeBackpack this;  " \n "removeHeadgear this;  " \n "removeGoggles this;  " \n "this forceAddUniform ""JD_ShirtB""; " \n "this setFace ""WhiteHead_04""; " \n "this setSpeaker ""male01eng""; " \n "  " \n "comment ""Add Actions (Shop)"";  " \n "this addAction[""Motorcycle Dealership"",life_fnc_vehicleShopMenu,[""civ_motorcycle"",civilian,[""motorcycle_dealer1"",""motorcycle_dealer2""],""civ"",""Motorcycle Dealership""]];  " \n "this setVariable[""realname"", ""Motorcycle Dealership""];}";
+						init="call{comment ""Disable Damage & Simulation"";   " \n "this enableSimulation false;    " \n "this allowDamage false;   " \n "   " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";   " \n "comment ""Remove existing items"";   " \n "removeAllWeapons this;   " \n "removeAllItems this;   " \n "removeAllAssignedItems this;   " \n "removeUniform this;   " \n "removeVest this;   " \n "removeBackpack this;   " \n "removeHeadgear this;   " \n "removeGoggles this;   " \n "this forceAddUniform ""JD_ShirtB"";  " \n "this setFace ""WhiteHead_04"";  " \n "this setSpeaker ""male01eng"";  " \n "   " \n "comment ""Add Actions (Shop)"";   " \n "this addAction[""Motorcycle Dealership"",life_fnc_vehicleShopMenu,[""civ_motorcycle"",civilian,[""motorcycle_dealer1"",""motorcycle_dealer2""],""civ"",""Motorcycle Dealership""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4'];  " \n "this setVariable[""realname"", ""Motorcycle Dealership""];}";
 					};
 					id=883;
 					type="C_man_1";
@@ -7471,7 +7453,7 @@ class Mission
 			id=882;
 			atlOffset=0.00026988983;
 		};
-		class Item288
+		class Item287
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7488,7 +7470,7 @@ class Mission
 			type="Land_PCSet_01_screen_F";
 			atlOffset=1.0078411;
 		};
-		class Item289
+		class Item288
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7505,7 +7487,7 @@ class Mission
 			type="Land_PCSet_01_keyboard_F";
 			atlOffset=1.0017509;
 		};
-		class Item290
+		class Item289
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7522,7 +7504,7 @@ class Mission
 			type="Land_PCSet_01_mousepad_F";
 			atlOffset=1.0023184;
 		};
-		class Item291
+		class Item290
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7539,7 +7521,7 @@ class Mission
 			id=887;
 			type="Land_PCSet_01_mouse_F";
 		};
-		class Item292
+		class Item291
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7556,7 +7538,7 @@ class Mission
 			type="Land_PCSet_01_case_F";
 			atlOffset=0.49284935;
 		};
-		class Item293
+		class Item292
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7568,18 +7550,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4074.5374,22.384109,2800.3977};
-						angles[]={0,3.8964047,0};
+						position[]={4074.5371,22.384438,2800.3979};
+						angles[]={0,3.8964126,0};
 					};
 					side="Civilian";
 					flags=3;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation"";   " \n "this enableSimulation false;    " \n "this allowDamage false;   " \n "   " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";   " \n "comment ""Remove existing items"";   " \n "removeAllWeapons this;   " \n "removeAllItems this;   " \n "removeAllAssignedItems this;   " \n "removeUniform this;   " \n "removeVest this;   " \n "removeBackpack this;   " \n "removeHeadgear this;   " \n "removeGoggles this;   " \n "this forceAddUniform ""JD_Plain"";  " \n "this addVest ""JD_Belt3"";  " \n "this addHeadgear ""TCG_pdav_helmet"";  " \n "this setFace ""asczHead_beardy_A3"";  " \n "this setSpeaker ""male01gre"";      " \n "                                      " \n "comment ""Add Actions (Shop)"";   " \n "this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""dcso_air"",west,[""dcso_air""],""cop"",""Elwood District""]];  " \n "this addAction[""Vehicle Garage"",{[[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;createDialog ""Life_impound_menu"";disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];life_garage_sp = ""dcso_air"";life_garage_type = ""Air"";},"""",0,false,false,"""",'playerSide == west'];  " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];}";
+						init="call{comment ""Disable Damage & Simulation"";    " \n "this enableSimulation false;     " \n "this allowDamage false;    " \n "    " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";    " \n "comment ""Remove existing items"";    " \n "removeAllWeapons this;    " \n "removeAllItems this;    " \n "removeAllAssignedItems this;    " \n "removeUniform this;    " \n "removeVest this;    " \n "removeBackpack this;    " \n "removeHeadgear this;    " \n "removeGoggles this;    " \n "this forceAddUniform ""JD_Plain"";   " \n "this addVest ""JD_Belt3"";   " \n "this addHeadgear ""TCG_pdav_helmet"";   " \n "this setFace ""asczHead_beardy_A3"";   " \n "this setSpeaker ""male01gre"";       " \n "                                       " \n "comment ""Add Actions (Shop)"";    " \n "this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""dcso_air"",west,[""dcso_air""],""cop"",""Elwood District""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4']; " \n "this addAction[""Vehicle Garage"",{[[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;createDialog ""Life_impound_menu"";disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];life_garage_sp = ""dcso_air"";life_garage_type = ""Air"";},"""",0,false,false,"""",'vehicle player == player && playerSide == west && player distance _target < 4'];   " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == west && player distance _target < 4'];}";
 					};
 					id=899;
 					type="C_man_1";
-					atlOffset=3.170208;
+					atlOffset=3.170536;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7628,9 +7610,9 @@ class Mission
 			{
 			};
 			id=898;
-			atlOffset=3.170208;
+			atlOffset=3.170536;
 		};
-		class Item294
+		class Item293
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7649,7 +7631,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation"";   " \n "this enableSimulation false;    " \n "this allowDamage false;   " \n "   " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";   " \n "comment ""Remove existing items"";   " \n "removeAllWeapons this;   " \n "removeAllItems this;   " \n "removeAllAssignedItems this;   " \n "removeUniform this;   " \n "removeVest this;   " \n "removeBackpack this;   " \n "removeHeadgear this;   " \n "removeGoggles this;   " \n "this forceAddUniform ""JD_Plain"";  " \n "this addVest ""JD_Belt3"";                                           " \n "this setFace ""GreekHead_A3_03"";  " \n "this setSpeaker ""male01gre"";  " \n "   " \n "comment ""Add Actions (Shop)"";   " \n "this addAction[""Patrol Vehicles"",life_fnc_vehicleShopMenu,[""dcso_patrol"",west,[""dcso_car1"",""dcso_car2""],""cop"",""Patrol Vehicles""]];  " \n "this addAction[""Vehicle Garage"", {[[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;createDialog ""Life_impound_menu"";disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];life_garage_sp = ""dcso_car1"";life_garage_type = ""Car"";},"""",0,false,false,"""",'playerSide == west'];   " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];}";
+						init="call{comment ""Disable Damage & Simulation"";    " \n "this enableSimulation false;     " \n "this allowDamage false;    " \n "    " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";    " \n "comment ""Remove existing items"";    " \n "removeAllWeapons this;    " \n "removeAllItems this;    " \n "removeAllAssignedItems this;    " \n "removeUniform this;    " \n "removeVest this;    " \n "removeBackpack this;    " \n "removeHeadgear this;    " \n "removeGoggles this;    " \n "this forceAddUniform ""JD_Plain"";   " \n "this addVest ""JD_Belt3"";                                            " \n "this setFace ""GreekHead_A3_03"";   " \n "this setSpeaker ""male01gre"";   " \n "    " \n "comment ""Add Actions (Shop)"";    " \n "this addAction[""Patrol Vehicles"",life_fnc_vehicleShopMenu,[""dcso_patrol"",west,[""dcso_car1"",""dcso_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4']; " \n "this addAction[""DTU Vehicles"",life_fnc_vehicleShopMenu,[""dcso_dtu"",west,[""dcso_car1"",""dcso_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && license_dcso_DTU && player distance _target < 4']; " \n "this addAction[""SERT Vehicles"",life_fnc_vehicleShopMenu,[""dcso_sert"",west,[""dcso_car1"",""dcso_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && license_dcso_SERT && player distance _target < 4']; " \n "this addAction[""Command Vehicles"",life_fnc_vehicleShopMenu,[""dcso_command"",west,[""dcso_car1"",""dcso_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && __GETC__(life_coplevel) >= 8 && player distance _target < 4']; " \n "this addAction[""Vehicle Garage"", {[[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;createDialog ""Life_impound_menu"";disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];life_garage_sp = ""dcso_car1"";life_garage_type = ""Car"";},"""",0,false,false,"""",'playerSide == west && player distance _target < 4'];    " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == west && player distance _target < 4'];}";
 					};
 					id=912;
 					type="C_man_1";
@@ -7702,7 +7684,7 @@ class Mission
 			};
 			id=911;
 		};
-		class Item295
+		class Item294
 		{
 			dataType="Marker";
 			position[]={165.57248,205.78806,8050.0034};
@@ -7711,7 +7693,7 @@ class Mission
 			id=915;
 			atlOffset=203.78806;
 		};
-		class Item296
+		class Item295
 		{
 			dataType="Marker";
 			position[]={85.560944,205.36554,8056.5044};
@@ -7720,7 +7702,7 @@ class Mission
 			id=916;
 			atlOffset=203.36554;
 		};
-		class Item297
+		class Item296
 		{
 			dataType="Marker";
 			position[]={139.69817,205.98904,8046.396};
@@ -7730,7 +7712,7 @@ class Mission
 			id=917;
 			atlOffset=203.98904;
 		};
-		class Item298
+		class Item297
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7748,7 +7730,7 @@ class Mission
 			type="Land_light_2_1";
 			atlOffset=0.21299934;
 		};
-		class Item299
+		class Item298
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7766,7 +7748,7 @@ class Mission
 			type="Land_light_2_1";
 			atlOffset=0.21800041;
 		};
-		class Item300
+		class Item299
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7784,7 +7766,7 @@ class Mission
 			type="Land_light_1_2";
 			atlOffset=0.22599983;
 		};
-		class Item301
+		class Item300
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7802,7 +7784,7 @@ class Mission
 			type="Land_light_1_2";
 			atlOffset=0.22248459;
 		};
-		class Item302
+		class Item301
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7820,7 +7802,7 @@ class Mission
 			type="Land_light_2_2";
 			atlOffset=0.23398209;
 		};
-		class Item303
+		class Item302
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7838,7 +7820,7 @@ class Mission
 			type="Land_light_2_2";
 			atlOffset=0.23494339;
 		};
-		class Item304
+		class Item303
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7856,7 +7838,7 @@ class Mission
 			type="Land_light_1_1";
 			atlOffset=0.24198151;
 		};
-		class Item305
+		class Item304
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7874,7 +7856,7 @@ class Mission
 			type="Land_light_1_1";
 			atlOffset=0.20965385;
 		};
-		class Item306
+		class Item305
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7892,7 +7874,7 @@ class Mission
 			type="Land_light_2_2";
 			atlOffset=0.21199989;
 		};
-		class Item307
+		class Item306
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7909,7 +7891,7 @@ class Mission
 			id=961;
 			type="Land_light_1_2";
 		};
-		class Item308
+		class Item307
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7927,7 +7909,7 @@ class Mission
 			type="Land_light_1_1";
 			atlOffset=0.21000099;
 		};
-		class Item309
+		class Item308
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7944,7 +7926,7 @@ class Mission
 			id=964;
 			type="Land_light_1_1";
 		};
-		class Item310
+		class Item309
 		{
 			dataType="Marker";
 			position[]={3232.947,15,3979.6931};
@@ -7955,7 +7937,7 @@ class Mission
 			angle=4.7349987;
 			id=970;
 		};
-		class Item311
+		class Item310
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7973,7 +7955,7 @@ class Mission
 			type="Land_CashDesk_F";
 			atlOffset=0.35064888;
 		};
-		class Item312
+		class Item311
 		{
 			dataType="Group";
 			side="Civilian";
@@ -8047,7 +8029,7 @@ class Mission
 			id=972;
 			atlOffset=0.35400009;
 		};
-		class Item313
+		class Item312
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8064,7 +8046,7 @@ class Mission
 			type="Land_PCSet_01_screen_F";
 			atlOffset=0.98783684;
 		};
-		class Item314
+		class Item313
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8081,7 +8063,7 @@ class Mission
 			type="Land_PCSet_01_keyboard_F";
 			atlOffset=0.98633194;
 		};
-		class Item315
+		class Item314
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8098,7 +8080,7 @@ class Mission
 			type="Land_PCSet_01_mousepad_F";
 			atlOffset=0.99110413;
 		};
-		class Item316
+		class Item315
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8115,7 +8097,7 @@ class Mission
 			type="Land_PCSet_01_mouse_F";
 			atlOffset=0.99668026;
 		};
-		class Item317
+		class Item316
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8131,6 +8113,24 @@ class Mission
 			id=978;
 			type="Land_PCSet_01_case_F";
 			atlOffset=0.47097492;
+		};
+		class Item317
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3522.8879,17.016869,3243.7949};
+				angles[]={0,2.8296499,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this allowDamage false; this lock 2;}";
+			};
+			id=987;
+			type="DAR_ChargerCiv";
+			atlOffset=0.00037384033;
 		};
 	};
 	class Connections

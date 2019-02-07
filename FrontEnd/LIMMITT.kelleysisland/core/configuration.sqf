@@ -307,11 +307,14 @@ asdih_inv_items =
 //Licenses [license var, civ/cop]
 life_licenses =
 [
+	["license_dcso_DTU","cop"],
+	["license_dcso_SERT","cop"],
+
+
     ["license_civ_MDMA","civ"],
     ["license_civ_meth","civ"],
     ["license_civ_coke","civ"],
 	["license_cop_air","cop"],
-	["license_cop_swat","cop"],
 	["license_cop_cg","cop"],
 	["license_civ_driver","civ"],
 	["license_civ_air","civ"],
