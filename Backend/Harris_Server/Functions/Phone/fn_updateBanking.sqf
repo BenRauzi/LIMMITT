@@ -14,6 +14,7 @@ Harris_updateBanking = {
 	ctrlSetText [1402,format["$%1",[LIMMITTCASH] call life_fnc_numberText]];
 
 	_type = "Civ";
+	lbClear 2703; // Clears the lisbox to stop duplication - NJF
 	{
 		if(alive _x) then
 		{
