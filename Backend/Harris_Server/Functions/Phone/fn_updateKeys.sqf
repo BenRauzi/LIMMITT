@@ -47,7 +47,7 @@ Harris_updateKeys = {
 		} foreach _near_units;
 	} else {
 		_plist lbAdd "N/A";
-		_plist lbSetData [(lbSize _plist)-1,"N/A"];
+		_plist lbSetData [(lbSize _plist)-1,nil];
 	};
 	lbSetCurSel [2702, 0];
 	if(((lbSize _vehicles)-1) == -1) then

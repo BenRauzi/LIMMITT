@@ -33,7 +33,7 @@ Harris_updateBanking = {
 	} else {
 		if (count playAbleUnits <= 1) then {
 			_units lbAdd "N/A";
-			_units lbSetData [(lbSize _units)-1,"N/A"];
+			_units lbSetData [(lbSize _units)-1,nil];
 		};
 	};
 	lbSetCurSel [2703, 0];

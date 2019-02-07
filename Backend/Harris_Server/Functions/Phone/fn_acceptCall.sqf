@@ -57,7 +57,7 @@ Harris_acceptCall = {
 	waitUntil {[] call TFAR_fnc_haveSWRadio};
 	[(call TFAR_fnc_activeSwRadio), 1, Harris_CallerFreq] call TFAR_fnc_SetChannelFrequency;
 
-	[Harris_CallerFreq, (profileNamespace getVariable "yourNumber"), player] remoteExecCall ["Harris_acceptedCall", Harris_Caller];
+	[Harris_CallerFreq, (profileNamespace getVariable "yourNumber"), player] remoteExec ["Harris_acceptedCall", Harris_Caller];
 	Harris_inCurrentCall = true;
 	Harris_receivingCall = nil;
 

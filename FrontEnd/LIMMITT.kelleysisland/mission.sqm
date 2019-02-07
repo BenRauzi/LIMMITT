@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4066.9382,28.381351,2794.6167};
-		dir[]={0.8239336,-0.43415797,0.36452895};
-		up[]={0.3970851,0.90079534,0.1756819};
-		aside[]={0.40465096,-5.5739656e-007,-0.9146089};
+		pos[]={5606.4482,22.375713,3266.667};
+		dir[]={0.67353022,-0.33171794,-0.6607362};
+		up[]={0.236853,0.94333321,-0.23235327};
+		aside[]={-0.70037794,1.6996637e-008,-0.71394998};
 	};
 };
 binarizationWanted=0;
@@ -831,7 +831,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_v"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+				init="call{this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_1"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];}";
 				name="airfield_garage";
 			};
 			id=223;
@@ -6894,7 +6894,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4084.1738,15.68106,2788.4536};
-				angles[]={-0,3.1915441,0};
+				angles[]={0,3.1915441,0};
 			};
 			side="Empty";
 			class Attributes
@@ -6935,18 +6935,18 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4081.1541,16.343048,2787.6001};
-				angles[]={0,0.037419856,0};
+				angles[]={0,0.037419859,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction[""Clothing Shop"",life_fnc_clothingMenu,""cop""];}";
+				init="call{this addAction[""Clothing Shop"",life_fnc_clothingMenu,""cop"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == west && player distance _target < 4']; " \n "}";
 				disableSimulation=1;
 			};
 			id=853;
 			type="JD_Lockers2";
-			atlOffset=0.20800114;
+			atlOffset=0.20800018;
 			class CustomAttributes
 			{
 				class Attribute0
