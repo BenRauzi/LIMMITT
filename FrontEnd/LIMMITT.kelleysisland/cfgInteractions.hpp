@@ -413,7 +413,7 @@ class cfgInteractions
 	class seizePot
 	{
 		condition = "[typeOf Harris_currentCursorObject isEqualTo 'JD_Pot', player distance Harris_currentCursorObject < 5, (isNil {Harris_currentCursorObject getVariable 'growingPlant'}), playerside == west]";
-		action = "[Harris_currentCursorObject] spawn Harris_seizeWeed";
+		action = "[Harris_currentCursorObject] spawn Harris_seizePot";
 		icon = "033-upload.paa";
 		text = "Seize Pot";
 	};
