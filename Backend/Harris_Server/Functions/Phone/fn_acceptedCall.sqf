@@ -62,7 +62,7 @@ Harris_acceptedCall = {
 	};
 	*/
 	
-	if (Harris_hadRadio) then {
+	if (isNil ("Harris_hadRadio") || Harris_hadRadio) then {
 		waitUntil {{_x find "LIMMITT_Network_Phone" >= 0} forEach assignedItems player};
 		[(call TFAR_fnc_activeSwRadio), 1, _freq] call TFAR_fnc_SetChannelFrequency;
 	} else {

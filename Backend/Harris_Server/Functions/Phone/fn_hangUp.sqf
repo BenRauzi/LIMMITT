@@ -5,11 +5,29 @@
 
 Harris_hangUp = {
 
+	// Get the players phone
+	_phone = "";
+	{
+		if (_x find "LIMMITT_Network_Phone" >= 0) then {
+			_phone = _x;
+		};
+	} forEach assignedItems player;
+
+	{ // Check if the player HAD a radio
+		if (_x find "tf_anprc152" >= 0 && Harris_hadRadio) then {
+			player unassignItem _phone;
+			player assignItem _x;
+			Harris_hadRadio = nil;
+		};
+	} forEach items player;
+
+	/* !! OLD AND DOESNT WORK !!
 	if ("tf_anprc152" in (items player) && Harris_hadRadio) then {
 		player unassignItem "Harris_CellPhone";
 		player assignItem "tf_anprc152";
 		Harris_hadRadio = nil;
 	};
+	*/
 
 	[] remoteExecCall ["Harris_hungUp", Harris_Caller];
 	
