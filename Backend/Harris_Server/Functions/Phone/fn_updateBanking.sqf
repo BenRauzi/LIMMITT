@@ -17,8 +17,7 @@ Harris_updateBanking = {
 	lbClear 2703; // Clears the lisbox to stop duplication - NJF
 	if (count playAbleUnits > 1) then {
 		{
-			if (_x == player) exitWith {};
-			if(alive _x) then
+			if(alive _x && _x != player) then
 			{
 				switch (side _x) do
 				{
@@ -31,10 +30,7 @@ Harris_updateBanking = {
 			};
 		} foreach playableUnits;
 	} else {
-		if (count playAbleUnits <= 1) then {
-			_units lbAdd "N/A";
-			_units lbSetData [(lbSize _units)-1,nil];
-		};
+		_units lbAdd "N/A";
 	};
 	lbSetCurSel [2703, 0];
 };
