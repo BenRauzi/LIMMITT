@@ -37,14 +37,19 @@ Harris_updateKeys = {
 		};
 	};
 
-	{
-		if(!isNull _x && alive _x && player distance _x < 20 && _x != player) then
+	if (count _near_units > 1) then {
 		{
-			_plist lbAdd format["%1",(format ["%1 - %2", getPlayerUID _x select [13,17], profileNamespace getVariable [str (getPlayerUID _x), "Unknown"]])];
-			_plist lbSetData [(lbSize _plist)-1,str(_x)];
-		};
-	} foreach _near_units;
-
+			if(!isNull _x && alive _x && player distance _x < 20 && _x != player) then
+			{
+				_plist lbAdd format["%1",(format ["%1 - %2", getPlayerUID _x select [13,17], profileNamespace getVariable [str (getPlayerUID _x), "Unknown"]])];
+				_plist lbSetData [(lbSize _plist)-1,str(_x)];
+			};
+		} foreach _near_units;
+	} else {
+		_plist lbAdd "N/A";
+		_plist lbSetData [(lbSize _plist)-1,"N/A"];
+	};
+	lbSetCurSel [2702, 0];
 	if(((lbSize _vehicles)-1) == -1) then
 	{
 		_vehicles lbAdd "You don't own any vehicles";

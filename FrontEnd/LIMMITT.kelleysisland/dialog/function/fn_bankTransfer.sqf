@@ -10,6 +10,7 @@ _val = parseNumber(ctrlText 2702);
 _unit = call compile format["%1",(lbData[2703,(lbCurSel 2703)])];
 if(isNull _unit) exitWith {};
 if((lbCurSel 2703) == -1) exitWith { ["Failure", localize "STR_ATM_NoneSelected", "Failure"] call Harris_Notifications;};
+if (_unit == "N/A") exitWith {["Failure",  "There is no one online to transfer money too.", "Failure"] call Harris_Notifications;};
 if(isNil "_unit") exitWith { ["Failure", localize "STR_ATM_DoesntExist", "Failure"] call Harris_Notifications;};
 if(_val > 999999) exitWith {["Failure", localize "STR_ATM_TransferMax", "Failure"] call Harris_Notifications;};
 if(_val < 0) exitwith {};

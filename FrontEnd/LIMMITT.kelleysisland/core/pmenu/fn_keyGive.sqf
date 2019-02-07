@@ -21,6 +21,7 @@ _sel = lbCurSel _plist;
 _unit = _plist lbData _sel;
 _unit = call compile format["%1", _unit];
 if(isNull _unit OR isNil "_unit") exitWith {}; 
+if (_unit == "N/A") exitWith {["Failure",  "There is no one around you to give keys.", "Failure"] call Harris_Notifications;};
 
 _uid = getPlayerUID _unit;
 _owners = _vehicle getVariable "vehicle_info_owners";

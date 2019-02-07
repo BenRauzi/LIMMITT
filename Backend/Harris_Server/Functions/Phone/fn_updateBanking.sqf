@@ -15,22 +15,26 @@ Harris_updateBanking = {
 
 	_type = "Civ";
 	lbClear 2703; // Clears the lisbox to stop duplication - NJF
-	{
-		if (_x == player) exitWith {};
-		if(alive _x) then
+	if (count playAbleUnits > 1) then {
 		{
-			switch (side _x) do
+			if (_x == player) exitWith {};
+			if(alive _x) then
 			{
-				case west: {_type = "Cop"};
-				case civilian: {_type = "Civ"};
-				case independent: {_type = "EMS"};
+				switch (side _x) do
+				{
+					case west: {_type = "Cop"};
+					case civilian: {_type = "Civ"};
+					case independent: {_type = "EMS"};
+				};
+				_units lbAdd format["%1 (%2)",_x getVariable["realname",name _x],_type];
+				_units lbSetData [(lbSize _units)-1,str(_x)];
 			};
-			_units lbAdd format["%1 (%2)",_x getVariable["realname",name _x],_type];
-			_units lbSetData [(lbSize _units)-1,str(_x)];
+		} foreach playableUnits;
+	} else {
+		if (count playAbleUnits <= 1) then {
+			_units lbAdd "N/A";
+			_units lbSetData [(lbSize _units)-1,"N/A"];
 		};
-	} foreach playableUnits;
-	if (count playAbleUnits <= 1) then {
-		_units lbAdd "N/A";
 	};
 	lbSetCurSel [2703, 0];
 };
