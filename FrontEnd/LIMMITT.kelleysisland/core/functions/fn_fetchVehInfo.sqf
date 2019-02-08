@@ -37,6 +37,7 @@ _armor = 0;
 _seats = 0;
 _hp = 0;
 _fuel = 0;
+_maxLoad  = 0;
 
 //Fetch
 _scope = getNumber(configFile >> "CfgVehicles" >> _class >> "scope");
@@ -51,6 +52,7 @@ _armor = getNumber(configFile >> "CfgVehicles" >> _class >> "armor");
 _seats = getNumber(configFile >> "CfgVehicles" >> _class >> "transportSoldier");
 _hp = getNumber(configFile >> "CfgVehicles" >> _class >> "enginePower");
 _fuel = getNumber(configFile >> "CfgVehicles" >> _class >> "fuelCapacity");
+_maxLoad  = getNumber(configFile >> "CfgVehicles" >> _class >> "maximumLoad");
 
 //Return
-[_class,_scope,_picture,_displayName,_vehicleClass,_side,_faction,_superClass,_speed,_armor,_seats,_hp,_fuel];
+[_class,_scope,_picture,_displayName,_vehicleClass,_side,_faction,_superClass,_speed,_armor,_seats,_hp,_fuel,_maxLoad];
