@@ -51,8 +51,8 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\Harris_Client\Models\model_ironOre.p3d";
-		picture = "\Harris_Client\Data\ironOre.paa";
-		descriptionShort = "Iron Ore";
+		picture = "\Harris_Client\Data\icon_ironOre.paa";
+		descriptionShort = "The ores are usually rich in iron oxides";
 	};
 	class Harris_ironIngot: ToolKit
 	{
@@ -66,9 +66,9 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\A3L_Bars\silver_bar.p3d";
-		picture = "\Harris_Client\Crafting\ironIngot.paa";
-		descriptionShort = "Iron Ingot";
+		model = "\Harris_Client\Models\model_ironIngot.p3d";
+		picture = "\Harris_Client\Data\icon_ironIngot.paa";
+		descriptionShort = "Casted out of pure molten iron";
 	};
 
 	// Gold
@@ -85,8 +85,8 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\Harris_Client\Models\model_goldOre.p3d";
-		picture = "\Harris_Client\Data\ironOre.paa";
-		descriptionShort = "Gold Ore";
+		picture = "\Harris_Client\Data\icon_goldOre.paa";
+		descriptionShort = "A rock that contains gold which can be extracted";
 	};
 	class Harris_goldIngot: ToolKit
 	{
@@ -100,9 +100,9 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\A3L_Bars\steel_bar.p3d";
-		picture = "\Harris_Client\Crafting\ironIngot.paa";
-		descriptionShort = "Gold Ingot";
+		model = "\Harris_Client\Models\model_goldIngot.p3d";
+		picture = "\Harris_Client\Data\icon_goldIngot.paa";
+		descriptionShort = "Casted out of pure molten gold";
 	};
 
 	// Diamond
@@ -119,7 +119,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\Harris_Client\Models\model_diamondOre.p3d";
-		picture = "\Harris_Client\Data\ironOre.paa";
+		picture = "\Harris_Client\Data\icon_diamondOre.paa";
 		descriptionShort = "A stone that has not been shaped in any particular form or undergone any polishing";
 	};
 	class Harris_diamond: ToolKit
@@ -134,9 +134,27 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\a3l_rocks\bits_small_rock.p3d";
-		picture = "\Harris_Client\Data\ironOre.paa";
-		descriptionShort = "Diamond";
+		model = "\Harris_Client\Models\model_diamond.p3d";
+		picture = "\Harris_Client\Data\icon_diamond.paa";
+		descriptionShort = "The cut of a diamond greatly affects a diamond's brilliance";
+	};
+
+	// Steel
+	class Harris_steelIngot: ToolKit
+	{
+		displayName = "Steel Ingot";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 15;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\Harris_Client\Models\model_steelIngot.p3d";
+		picture = "\Harris_Client\Data\icon_steelIngot.paa";
+		descriptionShort = "An alloy of iron and carbon, and sometimes other elements. ";
 	};
 
 	class Harris_woodLog: ToolKit
@@ -154,22 +172,6 @@ class CfgWeapons
 		model = "\Harris_Client\Crafting\Log.p3d"; // To Update
 		picture = "\Harris_Client\Crafting\Wood.paa";
 		descriptionShort = "Wooden Logs";
-	};
-	class Harris_steelIngot: ToolKit
-	{
-		displayName = "Steel Ingot";
-		count = 1;
-		class ItemInfo
-		{
-			allowedSlots[] = {701,801,901};
-			mass = 15;
-			scope = 0;
-			type = 620;
-			uniformModel = "\A3\Weapons_F\Items\Toolkit";
-		};
-		model = "\A3L_Bars\steel_bar.p3d";
-		picture = "\Harris_Client\Crafting\ironIngot.paa";
-		descriptionShort = "Steel Ingot";
 	};
 	class Harris_Workbench: ToolKit
 	{
