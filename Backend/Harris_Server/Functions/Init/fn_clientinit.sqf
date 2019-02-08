@@ -279,7 +279,7 @@ LIMMITT_clientInit = {
 		["Harris_coal", 2000],
 		["Harris_ironIngot", 3000],
 		["Harris_goldIngot", 5000],
-		["Harris_diamond", 8000],
+		["Harris_diamond", 11000],
 		["Harris_weedBag", 3000]
 	];
 

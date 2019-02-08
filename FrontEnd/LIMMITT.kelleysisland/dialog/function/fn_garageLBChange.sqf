@@ -30,7 +30,7 @@ _sellPrice = if(_sellPrice == -1) then {1000} else {(__GETC__(life_garage_sell) 
 	" +(localize "STR_Shop_Veh_UI_MaxSpeed")+ " %3 km/h<br/>
 	" +(localize "STR_Shop_Veh_UI_HPower")+ " %4<br/>
 	" +(localize "STR_Shop_Veh_UI_PSeats")+ " %5<br/>
-	" +(localize "STR_Shop_Veh_UI_Trunk")+ " %6<br/>
+	" +"Storage Capacity:"+ " %6<br/>
 	" +(localize "STR_Shop_Veh_UI_Fuel")+ " %7
 	",
 [_retrievePrice] call life_fnc_numberText,
@@ -38,7 +38,7 @@ _sellPrice = if(_sellPrice == -1) then {1000} else {(__GETC__(life_garage_sell) 
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,
-if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
+if(_vehicleInfo select 13 == -1) then {"None"} else {_vehicleInfo select 13},
 _vehicleInfo select 12,
 _vehicleColor
 ];
