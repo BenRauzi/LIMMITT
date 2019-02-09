@@ -10,13 +10,13 @@ LIMMITT_ServerInit ={
 	setTimeMultiplier 25;
 	
 	[] spawn {
+		bank = (nearestObjects [[3606.93,3069.6,0.00143814],["Land_CommonwealthBank"],100]) select 0;
 		while {true} do 
 		{
-			_bank = (nearestObjects [[8581.29,6624.8,0.00143909],["Land_CommonwealthBank"],100]) select 0;
-			_bank animate ["Vault_Door",0]; 
-			_bank setVariable ['vaultUnlocked', false, true];
-			missionNamespace setVariable ["inRobbery", false, true];
-			sleep 50;
+			waitUntil{bank animationPhase "Vault_Door" > 0 && !(bank getVariable ['vaultUnlocked', false])};
+			bank animate ["Vault_Door",0]; 
+			bank setVariable ['vaultUnlocked', false, true];
+			missionNamespace setVariable ["inRobbery", false, true];	
 		};
 	};
 
