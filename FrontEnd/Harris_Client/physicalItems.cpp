@@ -188,10 +188,11 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\A3L_WorkBench\workbench.p3d";
-		picture = "\Harris_Client\Crafting\Workbench.paa";
-		descriptionShort = "Workbench";
+		model = "\Harris_Client\Models\model_workbench.p3d";
+		picture = "\Harris_Client\Data\icon_workbench.paa";
+		descriptionShort = "A sturdy table at which manual work is done.";
 	};
+	
 	class Harris_Pot : Toolkit {
 		displayName = "Plant Pot";
 		descriptionShort = "A Pot used to Grow Some Legal Plants, and some illegal ones";
