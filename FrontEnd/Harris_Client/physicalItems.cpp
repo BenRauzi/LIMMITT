@@ -192,35 +192,43 @@ class CfgWeapons
 		picture = "\Harris_Client\Data\icon_workbench.paa";
 		descriptionShort = "A sturdy table at which manual work is done.";
 	};
-	
-	class Harris_Pot : Toolkit {
+
+	// Pot
+	class Harris_Pot: ToolKit
+	{
 		displayName = "Plant Pot";
-		descriptionShort = "A Pot used to Grow Some Legal Plants, and some illegal ones";
-		picture = "\Harris_Client\Crafting\pot.paa";
-		model = "\JD_Client\Objects\pot.p3d";
+		count = 1;
 		class ItemInfo
 		{
-			allowedSlots[] = {701, 801, 901};
-			mass = 25;
+			allowedSlots[] = {701,801,901};
+			mass = 100;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
+		model = "\Harris_Client\Models\model_pot.p3d";
+		picture = "\Harris_Client\Data\icon_pot.paa";
+		descriptionShort = "A Pot used to grow some legal plants, and some illegal ones.";
 	};
-	class Harris_c4 : Toolkit {
+
+	// C4
+	class Harris_c4: ToolKit
+	{
 		displayName = "C4 Explosive";
-		descriptionShort = "Used to blow shit up!";
-		picture = "cl3_objects\cl3_objects_pack\icons\processed\c4.paa";
-		model = "cl3_objects\cl3_objects_pack\cl_composition4.p3d";
+		count = 1;
 		class ItemInfo
 		{
-			allowedSlots[] = {701, 801, 901};
-			mass = 20;
+			allowedSlots[] = {701,801,901};
+			mass = 100;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
+		model = "cl3_objects\cl3_objects_pack\cl_composition4.p3d";
+		picture = "cl3_objects\cl3_objects_pack\icons\processed\c4.paa";
+		descriptionShort = "a common variety of the plastic explosive family known as Composition C.";
 	};
+
 	class Harris_blueprintnotes : Toolkit {
 		displayName = "Crafting Notes";
 		descriptionShort = "A notepad containing notes used for crafting";
