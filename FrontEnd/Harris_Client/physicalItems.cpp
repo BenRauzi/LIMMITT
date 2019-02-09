@@ -174,6 +174,8 @@ class CfgWeapons
 		picture = "\Harris_Client\Data\icon_woodLog.paa";
 		descriptionShort = "A subpart of a felled tree trunk.";
 	};
+
+	// Workbench
 	class Harris_Workbench: ToolKit
 	{
 		displayName = "Workbench";
