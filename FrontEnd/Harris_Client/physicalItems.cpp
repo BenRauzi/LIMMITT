@@ -18,7 +18,7 @@ class CfgWeapons
 		};
 		model = "\Harris_Client\Models\model_coalOre.p3d";
 		picture = "\Harris_Client\Data\icon_coalOre.paa";
-		descriptionShort = "Unrefined Coal";
+		descriptionShort = "The extraction and use of coal causes many premature deaths and much illness.";
 	};
 	class Harris_coal: ToolKit
 	{
@@ -34,7 +34,7 @@ class CfgWeapons
 		};
 		model = "\Harris_Client\Models\model_coal.p3d";
 		picture = "\Harris_Client\Data\icon_coal.paa";
-		descriptionShort = "A combustible black or brownish-black sedimentary rock";
+		descriptionShort = "A combustible black or brownish-black sedimentary rock.";
 	};
 
 	// Iron
@@ -52,7 +52,7 @@ class CfgWeapons
 		};
 		model = "\Harris_Client\Models\model_ironOre.p3d";
 		picture = "\Harris_Client\Data\icon_ironOre.paa";
-		descriptionShort = "The ores are usually rich in iron oxides";
+		descriptionShort = "The ores are usually rich in iron oxides.";
 	};
 	class Harris_ironIngot: ToolKit
 	{
@@ -68,7 +68,7 @@ class CfgWeapons
 		};
 		model = "\Harris_Client\Models\model_ironIngot.p3d";
 		picture = "\Harris_Client\Data\icon_ironIngot.paa";
-		descriptionShort = "Casted out of pure molten iron";
+		descriptionShort = "Casted out of pure molten iron.";
 	};
 
 	// Gold
@@ -86,7 +86,7 @@ class CfgWeapons
 		};
 		model = "\Harris_Client\Models\model_goldOre.p3d";
 		picture = "\Harris_Client\Data\icon_goldOre.paa";
-		descriptionShort = "A rock that contains gold which can be extracted";
+		descriptionShort = "A rock that contains gold which can be extracted.";
 	};
 	class Harris_goldIngot: ToolKit
 	{
@@ -102,7 +102,7 @@ class CfgWeapons
 		};
 		model = "\Harris_Client\Models\model_goldIngot.p3d";
 		picture = "\Harris_Client\Data\icon_goldIngot.paa";
-		descriptionShort = "Casted out of pure molten gold";
+		descriptionShort = "Casted out of pure molten gold.";
 	};
 
 	// Diamond
@@ -120,7 +120,7 @@ class CfgWeapons
 		};
 		model = "\Harris_Client\Models\model_diamondOre.p3d";
 		picture = "\Harris_Client\Data\icon_diamondOre.paa";
-		descriptionShort = "A stone that has not been shaped in any particular form or undergone any polishing";
+		descriptionShort = "A stone that has not been shaped in any particular form or undergone any polishing.";
 	};
 	class Harris_diamond: ToolKit
 	{
@@ -136,7 +136,7 @@ class CfgWeapons
 		};
 		model = "\Harris_Client\Models\model_diamond.p3d";
 		picture = "\Harris_Client\Data\icon_diamond.paa";
-		descriptionShort = "The cut of a diamond greatly affects a diamond's brilliance";
+		descriptionShort = "The cut of a diamond greatly affects a diamond's brilliance.";
 	};
 
 	// Steel
@@ -154,7 +154,7 @@ class CfgWeapons
 		};
 		model = "\Harris_Client\Models\model_steelIngot.p3d";
 		picture = "\Harris_Client\Data\icon_steelIngot.paa";
-		descriptionShort = "An alloy of iron and carbon, and sometimes other elements. ";
+		descriptionShort = "An alloy of iron and carbon, and sometimes other elements.";
 	};
 
 	class Harris_woodLog: ToolKit
