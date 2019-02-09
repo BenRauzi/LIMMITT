@@ -157,9 +157,10 @@ class CfgWeapons
 		descriptionShort = "An alloy of iron and carbon, and sometimes other elements.";
 	};
 
+	// Wood
 	class Harris_woodLog: ToolKit
 	{
-		displayName = "Wooden Logs";
+		displayName = "Wooden Log";
 		count = 1;
 		class ItemInfo
 		{
@@ -169,9 +170,9 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\Harris_Client\Crafting\Log.p3d"; // To Update
-		picture = "\Harris_Client\Crafting\Wood.paa";
-		descriptionShort = "Wooden Logs";
+		model = "\Harris_Client\Models\model_woodLog.p3d";
+		picture = "\Harris_Client\Data\icon_woodLog.paa";
+		descriptionShort = "A subpart of a felled tree trunk.";
 	};
 	class Harris_Workbench: ToolKit
 	{
