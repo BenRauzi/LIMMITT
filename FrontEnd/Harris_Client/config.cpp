@@ -737,7 +737,7 @@ class rscTitles
 		class controls
 		{
 				
-			class Title: RscText
+			class Title: Harris_RscText
 			{
 				idc = 1000;
 				text = "LIMMITT Twitter Feed"; //--- ToDo: Localize;
@@ -766,7 +766,7 @@ class Harris_twitterType
 	movingEnable = false;
 	class controls
 	{
-		class Title: RscText
+		class Title: Harris_RscText
 		{
 			idc = 1000;
 			text = "LIMMITT Twitter Feed"; //--- ToDo: Localize;
@@ -1605,7 +1605,7 @@ class sell_shop
 			x = 0.11; y = 0.64;
 			w = 0.3; h = 0.035;
 		};
-		class Title : RscText
+		class Title : Harris_RscText
 		{
 			colorBackground[] = {0,0,0,0};
 			idc = 38401;
