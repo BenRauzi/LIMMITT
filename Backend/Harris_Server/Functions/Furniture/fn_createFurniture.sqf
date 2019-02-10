@@ -9,11 +9,11 @@ Harris_createFurniture = {
 	_pos = position player;
 	_furniture = _type createVehicle _pos;
 
-	if (typeOf _furniture == "JD_Pot") then {
+	if (_type == "JD_Pot") then {
 		_furniture attachTo [player, [0,1,0.2]];
 	} else {
 		_furniture attachTo [player, [0,1,0.4]];
-	}
+	};
 
 	_furniture allowDamage false;
 
