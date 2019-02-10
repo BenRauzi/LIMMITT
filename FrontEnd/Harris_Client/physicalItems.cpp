@@ -225,7 +225,7 @@ class CfgWeapons
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
 		model = "\Harris_Client\Models\model_c4.p3d";
-		picture = "cl3_objects\cl3_objects_pack\icons\processed\c4.paa";
+		picture = "\Harris_Client\Data\icon_c4.paa";
 		descriptionShort = "A common variety of the plastic explosive family known as Composition C.";
 	};
 
