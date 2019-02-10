@@ -363,13 +363,14 @@ LIMMITT_clientInit = {
 	Harris_Messages = [];
 	Harris_callNumber = [];
 
+	
 	Harris_twitterColours = 
 	[
 		["Default", "default",true],
-		["Red","Red",false],
-		["Blue","Blue",false],
-		["Gold","Gold",false],
-		["Green","Green",false]
+		["Red","Red", getPlayerUID player in ["76561198072625284","76561198099644981","76561198062192032"]],
+		["Blue","Blue",getPlayerUID player in ["76561198072625284","76561198099644981","76561198062192032"]],
+		["Gold","Gold",getPlayerUID player in ["76561198072625284","76561198099644981","76561198062192032"]],
+		["Green","Green",getPlayerUID player in ["76561198072625284","76561198099644981","76561198062192032"]]
 	];
 
 	setViewDistance 4000;
