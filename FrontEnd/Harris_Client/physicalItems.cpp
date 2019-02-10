@@ -224,9 +224,9 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "cl3_objects\cl3_objects_pack\cl_composition4.p3d";
+		model = "\Harris_Client\Models\model_c4.p3d";
 		picture = "cl3_objects\cl3_objects_pack\icons\processed\c4.paa";
-		descriptionShort = "a common variety of the plastic explosive family known as Composition C.";
+		descriptionShort = "A common variety of the plastic explosive family known as Composition C.";
 	};
 
 	class Harris_blueprintnotes : Toolkit {
