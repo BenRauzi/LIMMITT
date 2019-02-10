@@ -20,19 +20,19 @@ Harris_addMessage = {
 	
 	switch(_colour)do
 	{
-		case 'red':
+		case 'Red':
 		{
 			_colour = "#FF0000"
 		};
-		case 'green':
+		case 'Green':
 		{
 			_colour = "#42FF00"
 		};
-		case 'gold':
+		case 'Gold':
 		{
 			_colour = "#FFD700"
 		};
-		case 'blue':
+		case 'Blue':
 		{
 			_colour = "#00C1FF"
 		};

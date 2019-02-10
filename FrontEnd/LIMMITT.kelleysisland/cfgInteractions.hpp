@@ -258,7 +258,7 @@ class cfgInteractions
 	};
 	class openCrafting
 	{
-		condition = "[typeOf Harris_currentCursorObject == 'A3L_WorkBench', isNil {player getVariable 'carryingObject'}]";
+		condition = "[typeOf Harris_currentCursorObject == 'JD_WorkBench', isNil {player getVariable 'carryingObject'}]";
 		action = "[] call Harris_openCraftingMenu";
 		icon = "014_wrench.paa";
 		text = "Craft";

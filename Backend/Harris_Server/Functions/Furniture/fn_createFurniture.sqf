@@ -8,7 +8,12 @@ Harris_createFurniture = {
 	params["_type", "_remove"];
 	_pos = position player;
 	_furniture = _type createVehicle _pos;
-	_furniture attachTo [player, [0,1,0]];
+
+	if (_type == "JD_Pot") then {
+		_furniture attachTo [player, [0,1,0.2]];
+	} else {
+		_furniture attachTo [player, [0,1,0.4]];
+	};
 
 	_furniture allowDamage false;
 

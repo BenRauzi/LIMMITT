@@ -54,7 +54,8 @@ while {true} do
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(!alive player) exitWith {life_action_inUse = false;};
-if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
+if(life_interrupted) exitWith {life_interrupted = false; ["Cancelled", localize "STR_NOTF_ActionCancel", "Failure"] call Harris_Notifications;
+ life_action_inUse = false;};
 life_action_inUse = false;
 _house animate [format["door_%1_rot",_door],1];
 _house setVariable[format["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.

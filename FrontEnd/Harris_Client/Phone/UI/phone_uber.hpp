@@ -34,7 +34,7 @@ class Harris_phone_uber
 			y = 0.189222 * safezoneH + safezoneY;
 			w = 0.02 * safezoneW;
 			h = 0.03 * safezoneH;
-			action = "closeDialog 5014; createDialog 'Harris_Phone_mainScreen'";
+			action = "closeDialog 5027; createDialog 'Harris_Phone_mainScreen'";
 		};
 		class call_button: phoneButton
 		{
@@ -43,7 +43,7 @@ class Harris_phone_uber
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.0567187 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "if (count (missionNamespace getVariable 'uberDrivers') == 0) exitWith {}; [] call Harris_phoneCall";
+			action = "if (count (missionNamespace getVariable 'uberDrivers') == 0) exitWith {}; closeDialog 5027; [] call Harris_phoneCall";
 		};
 		class message_button: phoneButton
 		{
@@ -52,7 +52,7 @@ class Harris_phone_uber
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.0515625 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "closeDialog  5014; createDialog 'Harris_phone_sendMessageUber'";
+			action = "closeDialog  5027; createDialog 'Harris_phone_sendMessageUber'";
 		};
 		class Ubers_Lb: RscListBox
 		{

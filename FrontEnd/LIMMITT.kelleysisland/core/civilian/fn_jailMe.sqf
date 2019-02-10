@@ -35,7 +35,7 @@ while {true} do
 		hintSilent parseText format[(localize "STR_Jail_Time")+ "<br/> <t size='2'><t color='#FF0000'>%1</t></t><br/><br/>" +(localize "STR_Jail_Pay")+ " %3<br/>" +(localize "STR_Jail_Price")+ " $%2",_countDown,[life_bail_amount] call life_fnc_numberText,if(isNil "life_canpay_bail") then {"Yes"} else {"No"}];
 	};
 	
-	if(player distance (getMarkerPos "jail_marker") > 100) exitWith {
+	if(player distance (getMarkerPos "jail_marker") > 120) exitWith {
 		_esc = true;
 	};
 	
@@ -56,7 +56,6 @@ switch (true) do
 		player addUniform A3L_Fnc_OldUniform;
 		life_is_arrested = false;
 		life_bail_paid = false;
-		hint localize "STR_Jail_Paid";
 		["Paid",  localize "STR_Jail_Paid", "Info"] call Harris_Notifications;
 		serv_wanted_remove = [player];
 		player setPos (getMarkerPos "jail_release");
@@ -67,7 +66,8 @@ switch (true) do
 	case (_esc) :
 	{
 		life_is_arrested = false;
-		hint localize "STR_Jail_EscapeSelf";
+		hintSilent "";
+		["Escaped", localize "STR_Jail_EscapeSelf", "Success"] call Harris_Notifications;
 		[[0,format[localize "STR_Jail_EscapeNOTF",profileName]],"life_fnc_broadcast",nil,false] spawn bis_fnc_mp;
 		[[getPlayerUID player,profileName,"901"],"life_fnc_wantedAdd",false,false] spawn bis_fnc_mp;
 		[5] call SOCK_fnc_updatePartial;
@@ -77,7 +77,8 @@ switch (true) do
 	{
 		player addUniform A3L_Fnc_OldUniform;
 		life_is_arrested = false;
-		hint localize "STR_Jail_Released";
+		hintSilent "";
+		["Released", localize "STR_Jail_Released", "Success"] call Harris_Notifications;
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn bis_fnc_mp;
 		player setPos (getMarkerPos "jail_release");
 		[5] call SOCK_fnc_updatePartial;
