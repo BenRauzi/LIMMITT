@@ -250,14 +250,14 @@ LIMMITT_clientInit = {
 		{
 			_doors = getNumber(configFile >> "CfgVehicles" >> (typeOf _x) >> "numberOfDoors");
 
-			if ((typeOf _x) in _housestoLock) then {
+			if ((typeOf _x) in Harris_Houses) then {
 				for "_i" from 1 to _doors do {
 					_x animate[format["door_%1_rot",_i],0];
 					_x setVariable[format["bis_disabled_Door_%1",_i],1,true];
 				};
 				_x setVariable["locked",true,true];
 			};
-		} forEach nearestObjects[[8642.21,7000.47,0.00143719], ["House_F"],5000];
+		} forEach nearestObjects[[3943.78,3584.45,0.00143909], ["House_F"],5000];
 
 		//addMissionEventHandler ["HandleDisconnect",{ [] spawn SOCK_fnc_syncSilent; deleteVehicle (_this select 0); }]; -> Added to server Init
 

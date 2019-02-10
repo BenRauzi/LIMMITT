@@ -16,7 +16,7 @@ _version = _display displayCtrl 1005;
 _respawn ctrlEnable false; //Disable Respawn
 _manual ctrlEnable false; //Stops a RE Bug
 
-[] call life_fnc_saveGear;
+[] spawn SOCK_fnc_syncSilent;
 
 _version ctrlSetText "LIMMITT Network v1.0";
 _title ctrlSetText "LIMMITT Network";
