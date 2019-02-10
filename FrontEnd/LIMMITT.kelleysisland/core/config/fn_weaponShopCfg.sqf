@@ -63,8 +63,8 @@ switch(_shop) do
                         {
                                 ["Lakeside Security Detail Store                                                                                                                                                                                                ",
                                         [
-                                                ["RH_Deagleg",nil,40000],
-                                                ["RH_7Rnd_50_AE",nil,50]
+                                            ["RH_Deagleg",nil,40000],
+                                            ["RH_7Rnd_50_AE",nil,50]
                                         ]
                                 ];
                         };
@@ -645,7 +645,7 @@ switch(_shop) do
                                 ["Chemlight_green",nil,150],
                                 ["Chemlight_blue",nil,150],
                                 ["Harris_workbench",nil,3000],
-                                ["Harris_pot",nil,3000],
+                                ["Harris_pot",nil,4000],
                                 ["Harris_RDX",nil,2000],
                                 ["Harris_Burlap",nil,3000],
                                 ["Harris_Rope",nil,3000],
