@@ -212,6 +212,22 @@ class CfgWeapons
 	};
 
 	// C4
+	class Harris_RDX: ToolKit
+	{
+		displayName = "RDX Compound";
+		count = 1;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 4;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\Harris_Client\Models\model_RDX.p3d";
+		picture = "\Harris_Client\Data\icon_RDX.paa";
+		descriptionShort = "A modern compound used for controlled detonations.";
+	};
 	class Harris_c4: ToolKit
 	{
 		displayName = "C4 Explosive";
@@ -229,19 +245,39 @@ class CfgWeapons
 		descriptionShort = "A common variety of the plastic explosive family known as Composition C.";
 	};
 
-	class Harris_blueprintnotes : Toolkit {
+	// Blue Prints
+	class Harris_blueprintnotes: ToolKit
+	{
 		displayName = "Crafting Notes";
-		descriptionShort = "A notepad containing notes used for crafting";
-		picture = "\cg_Items\custom\tuna_ca.paa";
-		model = "\Harris_Client\Crafting\Blueprint.p3d";
+		count = 1;
 		class ItemInfo
 		{
-			allowedSlots[] = {701, 801, 901};
-			mass = 6;
+			allowedSlots[] = {701,801,901};
+			mass = 100;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
+		model = "\Harris_Client\Models\model_blueprint.p3d";
+		picture = "\Harris_Client\Data\icon_blueprint.paa";
+		descriptionShort = "A reproduction of a technical drawing using a contact print process on light-sensitive sheets.";
+	};
+
+	// Weed
+	class Harris_weedSeeds: ToolKit
+	{
+		displayName = "Weed Seeds";
+		count = 1;
+		class ItemInfo
+		{
+			mass = 2;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\Harris_Client\Models\model_weedSeeds.p3d";
+		picture = "\Harris_Client\Data\icon_weedSeeds.paa";
+		descriptionShort = "Plant seeds used to grow Marijuana.";
 	};
 	class Harris_weedBag: ToolKit
 	{
@@ -255,26 +291,12 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\a3l_drugs\weed_bag.p3d";
-		picture = "\a3l_drugs\weedbag_icon.paa";
-		descriptionShort = "Bag of Weed";
+		model = "\Harris_Client\Models\model_weedBag.p3d";
+		picture = "\Harris_Client\Data\icon_weedBag.paa";
+		descriptionShort = "Baggie full of Marijuana.";
 	};
 
-	class Harris_weedSeeds: ToolKit
-	{
-		displayName = "Weed Seeds";
-		count = 1;
-		class ItemInfo
-		{
-			mass = 2;
-			scope = 0;
-			type = 620;
-			uniformModel = "\A3\Weapons_F\Items\Toolkit";
-		};
-		model = "\cl3_objects\cl3_objects_pack\cl_hemp_seeds.p3d";
-		picture = "\Harris_Client\Crafting\seeds.paa";
-		descriptionShort = "Weed Seeds";
-	};
+	// Toolbox
 	class Harris_Toolbox: ToolKit
 	{
 		displayName = "Toolbox";
@@ -287,10 +309,12 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
-		picture = "\Harris_Client\Crafting\Toolbox.paa";
-		descriptionShort = "Can be used a repairkit to fix vehicles";
+		model = "\Harris_Client\Models\model_toolbox.p3d";
+		picture = "\Harris_Client\Data\icon_toolbox.paa";
+		descriptionShort = "Box full of helpful tools which can be used to repair vehicles.";
 	};
+
+	// Medkit
 	class Harris_medKit: ToolKit
 	{
 		displayName = "CPR Medkit";
@@ -303,10 +327,12 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\cl3_objects\cl3_objects_pack\cl_toolbox.p3d";
-		picture = "\Harris_Client\Crafting\Toolbox.paa";
-		descriptionShort = "CPR Medkit";
+		model = "\Harris_Client\Models\model_medkit.p3d";
+		picture = "\Harris_Client\Data\icon_medkit.paa";
+		descriptionShort = "A small case containing medical supplies.";
 	};
+
+	// Handcuffs
 	class Harris_handcuff: ToolKit
 	{
 		displayName = "Handcuffs";
@@ -319,9 +345,9 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\cl3_objects\cl3_objects_pack\cl_handcuffs.p3d";
-		picture = "\cl3_objects\cl3_objects_pack\icons\cl_handcuffs_icon.paa";
-		descriptionShort = "A pair of handcuffs used to restrain people's hands";
+		model = "\Harris_Client\Models\model_handcuffs.p3d";
+		picture = "\Harris_Client\Data\icon_handcuffs.paa";
+		descriptionShort = "A pair of handcuffs used to restrain people's hands.";
 	};
 	class Harris_cuffkeys: ToolKit
 	{
@@ -337,8 +363,10 @@ class CfgWeapons
 		};
 		model = "\MM_objects\keys.p3d";
 		picture = "\MM_objects\images\keychain.paa";
-		descriptionShort = "A pair of keys used to unlock leg shackles or Handcuffs";
+		descriptionShort = "A pair of keys used to unlock handcuffs and leg shackles.";
 	};
+
+	// Burlap
 	class Harris_burlap: ToolKit
 	{
 		displayName = "Burlap";
@@ -355,6 +383,8 @@ class CfgWeapons
 		picture = "Harris_Client\Crafting\burlap.paa";
 		descriptionShort = "Burlap";
 	};
+
+	// Rope
 	class Harris_rope: ToolKit
 	{
 		displayName = "Rope";
@@ -371,20 +401,8 @@ class CfgWeapons
 		picture = "\Harris_Client\Crafting\Rope.paa";
 		descriptionShort = "Rope";
 	};
-	class Harris_RDX : Toolkit {
-		displayName = "RDX Compound";
-		descriptionShort = "A modern compound used for controlled detonations.";
-		picture = "\Harris_Client\Crafting\RDX.paa";
-		model = "\a3l_boxes\box_small.p3d";
-		class ItemInfo
-		{
-			allowedSlots[] = {701, 801, 901};
-			mass = 4;
-			scope = 0;
-			type = 620;
-			uniformModel = "\A3\Weapons_F\Items\Toolkit";
-		};
-	};
+
+	// Keycard
 	class Harris_keyCard : Toolkit {
 		displayName = "Police KeyCard";
 		descriptionShort = "This is used to gain police access to secure facilities.";
