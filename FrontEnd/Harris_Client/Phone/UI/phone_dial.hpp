@@ -30,7 +30,7 @@ class Harris_phone_dial
 			y = 0.189222 * safezoneH + safezoneY;
 			w = 0.02 * safezoneW;
 			h = 0.03 * safezoneH;
-			action = "closeDialog 0; createDialog 'Harris_Phone_mainScreen'";
+			action = "closeDialog 5005; createDialog 'Harris_Phone_mainScreen'";
 		};
 		class Number_Text: RscPhoneText
 		{
@@ -158,7 +158,7 @@ class Harris_phone_dial
 			y = 0.696295 * safezoneH + safezoneY;
 			w = 0.11 * safezoneW;
 			h = 0.035 * safezoneH;
-			action = "closeDialog 0; [] call Harris_phoneCall";
+			action = "closeDialog 5005; [] call Harris_phoneCall";
 		};
 	};
 };

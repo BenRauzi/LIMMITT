@@ -31,7 +31,7 @@ class Harris_phone_incomingCall
 			y = 0.189222 * safezoneH + safezoneY;
 			w = 0.02 * safezoneW;
 			h = 0.03 * safezoneH;
-			action = "closeDialog 0; createDialog 'Harris_Phone_mainScreen'";
+			action = "closeDialog 5010; createDialog 'Harris_Phone_mainScreen'";
 		};
 		class personIcon_Image: RscPicture
 		{
@@ -61,7 +61,7 @@ class Harris_phone_incomingCall
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.0515625 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "[] spawn Harris_acceptCall";
+			action = "closeDialog 5010; [] spawn Harris_acceptCall";
 		};
 		class Decline_Button: phoneButton
 		{
@@ -71,7 +71,7 @@ class Harris_phone_incomingCall
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.0515625 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "[] call Harris_declineCall";
+			action = "closeDialog 5010; [] call Harris_declineCall";
 		};
 		
 	};

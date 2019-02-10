@@ -31,7 +31,7 @@ class Harris_phone_contactDetails
 			y = 0.189222 * safezoneH + safezoneY;
 			w = 0.02 * safezoneW;
 			h = 0.03 * safezoneH;
-			action = "closeDialog 0; createDialog 'Harris_phone_contacts'";
+			action = "closeDialog 5011; createDialog 'Harris_phone_contacts'";
 		};
 		class personIcon_Image: RscPicture
 		{
@@ -51,7 +51,7 @@ class Harris_phone_contactDetails
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.0515625 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "[] call Harris_phoneCall";
+			action = "closeDialog 5011; [] call Harris_phoneCall";
 		};
 		class Message_Button: phoneButton
 		{
@@ -61,7 +61,7 @@ class Harris_phone_contactDetails
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.0515625 * safezoneW;
 			h = 0.033 * safezoneH;
-			action = "closeDialog  5014; createDialog 'Harris_phone_sendMessageContact'";
+			action = "closeDialog  5011; createDialog 'Harris_phone_sendMessageContact'";
 		};
 		class Name_Text: RscPhoneText
 		{
