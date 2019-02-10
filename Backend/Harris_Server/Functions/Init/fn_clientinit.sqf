@@ -268,7 +268,7 @@ LIMMITT_clientInit = {
 
 	[] call Harris_playerTags;
 
-	Harris_Furniture = ["A3L_WorkBench", "JD_Pot"];
+	Harris_Furniture = ["JD_WorkBench", "JD_Pot"];
 
 	Harris_prices = 
 	[
@@ -363,7 +363,7 @@ LIMMITT_clientInit = {
 	Harris_Messages = [];
 	Harris_callNumber = [];
 
-	
+
 	Harris_twitterColours = 
 	[
 		["Default", "default",true],

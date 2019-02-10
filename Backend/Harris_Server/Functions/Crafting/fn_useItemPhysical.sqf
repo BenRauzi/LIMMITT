@@ -19,7 +19,7 @@ Harris_useItemPhysical = {
 		};
 		case "Workbench":
 		{
-			["A3L_Workbench", "Harris_WorkBench"] spawn Harris_createFurniture;
+			["JD_Workbench", "Harris_WorkBench"] spawn Harris_createFurniture;
 		};
 	};
 };

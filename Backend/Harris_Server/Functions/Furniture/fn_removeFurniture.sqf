@@ -11,7 +11,7 @@ Harris_removeFurniture = {
 	_item = "";
 	switch (typeOf _object) do
 	{
-		case "A3L_WorkBench":
+		case "JD_WorkBench":
 		{
 			_item = "Harris_workBench";
 		};
