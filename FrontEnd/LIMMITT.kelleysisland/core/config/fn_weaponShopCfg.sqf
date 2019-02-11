@@ -512,15 +512,15 @@ switch(_shop) do
                                 ["Black Market Dealer",
                                     [
                                         //M16A4
-                                        ["RH_M16A4",nil,70000],
-                                        ["30Rnd_556x45_Stanag",nil,1000],
+                                        ["RH_M16A4",nil,100000],
+                                        ["30Rnd_556x45_Stanag",nil,5000],
                                        
                                        //Sting
                                         ["SMG_02_F",nil,50000],
                                         ["30Rnd_9x21_Mag_SMG_02",nil,1000],
 
-                                        ["hlc_rifle_CQBR",nil,70000],
-                                        ["hlc_30rnd_556x45_EPR",nil,1000],
+                                        ["hlc_rifle_CQBR",nil,100000],
+                                        ["hlc_30rnd_556x45_EPR",nil,5000],
 
                                         //PDW
                                         ["RH_PDW",nil,110000],
