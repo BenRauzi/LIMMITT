@@ -28,15 +28,7 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 };
 
 // Custom Paychecks for Medic's Created by Dez Edited by Killian
-switch (__GETC__(life_medicLevel)) do 
-			{
-	             case 1: {life_paycheck = life_paycheck + 1500;}; // Recruit & Trainee
-	             case 2: {life_paycheck = life_paycheck + 3500;}; // Junior EMT to Senior EMT
-	             case 3: {life_paycheck = life_paycheck + 4000;}; // Junior Paramedic to Senior Paramedic
-	             case 4: {life_paycheck = life_paycheck + 5750;}; // Second LT to Internal Operations
-	             case 5: {life_paycheck = life_paycheck + 6450;}; // External Operations to Chief
-			};
-
+life_paycheck = 2350 + 600 * __GETC__(life_medicLevel);
 			
 [false] spawn life_fnc_spawnMenu;
 [] execVM "core\welcomemedic.sqf";
