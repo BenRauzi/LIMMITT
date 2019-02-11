@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=988;
+		nextID=992;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5606.4482,22.375713,3266.667};
-		dir[]={0.67353022,-0.33171794,-0.6607362};
-		up[]={0.236853,0.94333321,-0.23235327};
-		aside[]={-0.70037794,1.6996637e-008,-0.71394998};
+		pos[]={4191.2681,54.221287,2429.4338};
+		dir[]={-0.077564314,-0.63265049,-0.77070814};
+		up[]={-0.063350797,0.77439004,-0.62948602};
+		aside[]={-0.99510431,-5.3301337e-006,0.1001342};
 	};
 };
 binarizationWanted=0;
@@ -317,14 +317,14 @@ class Mission
 		class Item12
 		{
 			dataType="Marker";
-			position[]={4210.1318,15.241154,2412.8237};
+			position[]={4179.9141,10.600034,2426.1616};
 			name="boat_2";
 			text="Boat Shop";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorWhite";
 			angle=0.22146492;
 			id=36;
-			atlOffset=10.621154;
+			atlOffset=5.8780341;
 		};
 		class Item13
 		{
@@ -340,14 +340,14 @@ class Mission
 		class Item14
 		{
 			dataType="Marker";
-			position[]={4211.792,18.592049,2428.5134};
+			position[]={4181.5708,13.940674,2426.0613};
 			name="dive_shop";
 			text="Diving Shop";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorOrange";
 			angle=359.21579;
 			id=38;
-			atlOffset=13.972049;
+			atlOffset=9.2186737;
 		};
 		class Item15
 		{
@@ -1104,8 +1104,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4211.8936,5.195364,2427.6367};
-				angles[]={0,4.7171707,0};
+				position[]={4181.5718,5.2973638,2426.0608};
+				angles[]={-0,3.0795636,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1122,8 +1122,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4204.7588,5.195364,2375.21};
-				angles[]={0,4.7401571,0};
+				position[]={4183.7061,5.2995501,2426.04};
+				angles[]={0,3.0795636,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1134,14 +1134,15 @@ class Mission
 			};
 			id=296;
 			type="Land_InfoStand_V1_F";
+			atlOffset=0.0021862984;
 		};
 		class Item77
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4208.231,5.195364,2413.071};
-				angles[]={0,4.5993266,0};
+				position[]={4179.9141,5.2973638,2426.1619};
+				angles[]={-0,3.0795636,0};
 			};
 			side="Empty";
 			flags=4;
@@ -6760,7 +6761,7 @@ class Mission
 		class Item262
 		{
 			dataType="Marker";
-			position[]={4271.0981,4.6893034,2216.5938};
+			position[]={4219.7095,4.6199999,2174.7852};
 			name="marker_334";
 			text="Mineral Trader";
 			type="A3L_Business_Icon";
@@ -6779,18 +6780,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4269.938,5.1996937,2214.0051};
-						angles[]={0,4.8614926,0};
+						position[]={4219.71,4.621439,2174.832};
+						angles[]={0,5.7822232,0};
 					};
 					side="Civilian";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
-						init="call{this setVariable [""Harris_Shop"",""Mineral_Trader"",true]; this enableSimulation false;  this allowDamage false;}";
+						init="call{comment ""Disable Damage & Simulation"";   " \n "this enableSimulation false;    " \n "this allowDamage false;   " \n "   " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";   " \n "comment ""Remove existing items"";   " \n "removeAllWeapons this;   " \n "removeAllItems this;   " \n "removeAllAssignedItems this;   " \n "removeUniform this;   " \n "removeVest this;   " \n "removeBackpack this;   " \n "removeHeadgear this;   " \n "removeGoggles this;   " \n "this forceAddUniform ""U_C_Poor_1""; " \n "this addHeadgear ""JD_Cap2""; " \n "this addGoggles ""JD_Pipe""; " \n "this setFace ""GreekHead_A3_13""; " \n "this setSpeaker ""male03gre""; " \n "   " \n "comment ""Add Actions (Shop)"";   " \n "this setVariable [""Harris_Shop"",""Mineral_Trader"",true];}";
 					};
 					id=838;
 					type="C_man_polo_5_F_afro";
-					atlOffset=0.51500034;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6820,19 +6820,18 @@ class Mission
 			{
 			};
 			id=837;
-			atlOffset=0.51500034;
 		};
 		class Item264
 		{
 			dataType="Marker";
-			position[]={4205.8447,15.241,2375.6755};
+			position[]={4183.7075,10.575684,2426.0427};
 			name="boat_3";
 			text="Police Boat Shop";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorBlue";
 			angle=0.22099958;
 			id=840;
-			atlOffset=10.621;
+			atlOffset=5.8536839;
 		};
 		class Item265
 		{
@@ -6946,7 +6945,7 @@ class Mission
 			};
 			id=853;
 			type="JD_Lockers2";
-			atlOffset=0.20800018;
+			atlOffset=0.20800114;
 			class CustomAttributes
 			{
 				class Attribute0
