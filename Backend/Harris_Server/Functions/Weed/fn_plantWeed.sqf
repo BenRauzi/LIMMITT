@@ -6,7 +6,7 @@
 Harris_plantWeed = {
 	params["_ct"];
 
-	if !("Harris_weedSeeds" in items player) exitWith {["Error", "You need seeds to grow weed", "Failure"] call Harris_Notifications; };
+	if !("Harris_weedSeeds" in items player) exitWith {["Error", "You need seeds to grow weed", "Failure"] call Harris_Notifications;};
 	player removeItem "Harris_weedSeeds";
 	
 	_plant = "Foski_Marijuana" createVehicle (getPosATL _ct);
