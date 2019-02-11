@@ -224,7 +224,7 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\Harris_Client\Models\model_RDX.p3d";
+		model = "\Harris_Client\Models\model_smallBox.p3d";
 		picture = "\Harris_Client\Data\icon_RDX.paa";
 		descriptionShort = "A modern compound used for controlled detonations.";
 	};
@@ -361,8 +361,8 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\MM_objects\keys.p3d";
-		picture = "\MM_objects\images\keychain.paa";
+		model = "\Harris_Client\Models\model_cuffKeys.p3d";
+		picture = "\Harris_Client\Data\icon_cuffKeys.paa";
 		descriptionShort = "A pair of keys used to unlock handcuffs and leg shackles.";
 	};
 
@@ -379,9 +379,9 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\a3l_boxes\box_small.p3d";
-		picture = "Harris_Client\Crafting\burlap.paa";
-		descriptionShort = "Burlap";
+		model = "\Harris_Client\Models\model_smallBox.p3d";
+		picture = "\Harris_Client\Data\icon_burlap.paa";
+		descriptionShort = "A woven fabric usually made from skin of the jute plant or sisal fibres.";
 	};
 
 	// Rope
@@ -397,24 +397,26 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\a3l_boxes\box_small.p3d";
-		picture = "\Harris_Client\Crafting\Rope.paa";
-		descriptionShort = "Rope";
+		model = "\Harris_Client\Models\model_smallBox.p3d";
+		picture = "\Harris_Client\Data\icon_rope.paa";
+		descriptionShort = "Sturdy rope used to tie things.";
 	};
 
 	// Keycard
-	class Harris_keyCard : Toolkit {
-		displayName = "Police KeyCard";
-		descriptionShort = "This is used to gain police access to secure facilities.";
-		picture = "Harris_Client\radial\icons\002_Tag.paa";
-		model = "\MM_objects\keys.p3d";
+	class Harris_keyCard: ToolKit
+	{
+		displayName = "Police Keycard";
+		count = 10;
 		class ItemInfo
 		{
-			allowedSlots[] = {701, 801, 901};
+			allowedSlots[] = {701,801,901};
 			mass = 4;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
+		model = "\Harris_Client\Models\model_keyCard.p3d";
+		picture = "\Harris_Client\Data\icon_keyCard.paa";
+		descriptionShort = "This is used to gain police access to secure facilities.";
 	};
 };
