@@ -5,7 +5,7 @@
 
 Harris_updateVInventory = {
 	waitUntil {!isNull (findDisplay 5001)};
-
+	lbClear 2005;
 	_dialog = findDisplay 5001;
 
 	_inv = _dialog displayCtrl 2005;

@@ -49,7 +49,7 @@ class Harris_phone_inventory
 			y = 0.698 * safezoneH + safezoneY;
 			w = 0.05 * safezoneW;
 			h = 0.03 * safezoneH;
-			onButtonClick = "[] call Harris_useItemPhone;";
+			onButtonClick = "[] call Harris_useItemPhone; [] spawn Harris_updateVInventory;";
 		};
 		class Drop_Button: phoneButton
 		{
@@ -58,7 +58,7 @@ class Harris_phone_inventory
 			y = 0.698148 * safezoneH + safezoneY;
 			w = 0.05 * safezoneW;
 			h = 0.03 * safezoneH;
-			onButtonClick = "[] call Harris_removeItemPhone;";
+			onButtonClick = "[] call Harris_removeItemPhone; [] spawn Harris_updateVInventory;";
 		};
 	};
 };
