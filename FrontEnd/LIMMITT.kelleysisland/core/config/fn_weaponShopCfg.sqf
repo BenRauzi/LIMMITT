@@ -53,7 +53,7 @@ switch(_shop) do
         };
 
 
-		case "civ_lsmo":
+        case "civ_lsmo":
         {
                 switch(true) do
                 {
@@ -143,7 +143,7 @@ switch(_shop) do
                                             ["hlc_rifle_M4",nil,1500],
                                             ["hlc_30rnd_556x45_EPR",nil,100],
                                             //Accessories
-											["RH_barska_rds",nil,100],
+                                            ["RH_barska_rds",nil,100],
                                             ["optic_Hamr",nil,100],
                                             ["RH_SFM952V",nil,100],
                                             ["RH_X300",nil,100]
@@ -172,7 +172,7 @@ switch(_shop) do
                                             ["hlc_rifle_M4",nil,1500],
                                             ["hlc_30rnd_556x45_EPR",nil,100],
                                             //Accessories
-											["RH_barska_rds",nil,100],
+                                            ["RH_barska_rds",nil,100],
                                             ["optic_Hamr",nil,100],
                                             ["SMA_eotech552",nil,100],
                                             ["RH_compM2",nil,100],
@@ -207,7 +207,7 @@ switch(_shop) do
                                             ["hlc_rifle_416D10_RAHG_x15",nil,1500],
                                             ["hlc_30rnd_556x45_EPR",nil,100],
                                             //Accessories
-											["RH_barska_rds",nil,100],
+                                            ["RH_barska_rds",nil,100],
                                             ["optic_Hamr",nil,100],
                                             ["SMA_eotech552",nil,100],
                                             ["RH_eotech553mag",nil,100],
@@ -219,7 +219,7 @@ switch(_shop) do
                         };
                 };
         };
-		case "dcso_DTU":
+        case "dcso_DTU":
         {
                 switch(true) do
                 {
@@ -259,7 +259,7 @@ switch(_shop) do
                                             ["SMA_M4MOE",nil,1500],
                                             ["SMA_30Rnd_556x45_M855A1",nil,100],
                                             //Accessories
-											["RH_Delft",nil,100],
+                                            ["RH_Delft",nil,100],
                                             ["RH_barska_rds",nil,100],
                                             ["optic_Hamr",nil,100],
                                             ["SMA_eotech552",nil,100],
@@ -275,7 +275,7 @@ switch(_shop) do
                         };
                 };
         };
-		case "dcso_SERT":
+        case "dcso_SERT":
         {
                 switch(true) do
                 {
@@ -317,7 +317,7 @@ switch(_shop) do
                                             ["RH_M16A4",nil,1500],
                                             ["30Rnd_556x45_Stanag",nil,100],
                                             //Accessories
-											["RH_barska_rds",nil,100],
+                                            ["RH_barska_rds",nil,100],
                                             ["optic_Hamr",nil,100],
                                             ["SMA_eotech552",nil,100],
                                             ["RH_eotech553mag",nil,100],
@@ -346,7 +346,7 @@ switch(_shop) do
                         case (__GETC__(life_coplevel) < 6): {"You are not Command!"};
                         default
                         {
-                                ["Captain Shop",
+                                ["Low Command Shop",
                                         [
                                             //Taser
                                             ["JD_Taser",nil,500],
@@ -386,7 +386,7 @@ switch(_shop) do
                         case (__GETC__(life_coplevel) < 7): {"You are not a part of County Command!"};
                         default
                         {
-                                ["Command Store",
+                                ["Command Shop",
                                         [
                                             //Taser
                                             ["JD_Taser",nil,500],
