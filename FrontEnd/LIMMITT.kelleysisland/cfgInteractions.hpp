@@ -174,7 +174,7 @@ class cfgInteractions
 	};
 	class Rope 
 	{
-		condition = "[!(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, 'Harris_Rope' in items player]";
+		condition = "[!(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, 'Harris_rope' in items player]";
 		action = "[Harris_currentCursorObject] call Foski_restrainPlayer; Harris_currentCursorObject setVariable ['Harris_roped', true,true]; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
 		icon = "icon_handcuffs.paa";
 		text = "Tie";
