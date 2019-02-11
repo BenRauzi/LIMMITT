@@ -1150,6 +1150,7 @@ class Harris_setName
 			y = 0.467 * safezoneH + safezoneY;
 			w = 0.05 * safezoneW;
 			h = 0.035 * safezoneH;
+			text = "Set Name";
 			action = "[] call Harris_setName; closeDialog 0";
 		};
 		class Current_Name: RscText
