@@ -132,7 +132,7 @@ class cfgInteractions
 		class Unrestrain 
 		{
 			condition = "[(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
-			action = "[Harris_currentCursorObject] call Foski_unrestrainPlayer; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
+			action = "[Harris_currentCursorObject] call Foski_unrestrainPlayer; Harris_currentCursorObject setVariable ['Harris_roped', nil,true]; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
 			icon = "icon_handcuffs.paa";
 			text = "Unrestrain";
 		};
@@ -171,6 +171,20 @@ class cfgInteractions
 			icon = "033-download.paa";
 			text = "Put In Vehicle";
 		};
+	};
+	class Rope 
+	{
+		condition = "[!(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, playerside == west]";
+		action = "[Harris_currentCursorObject] call Foski_restrainPlayer; Harris_currentCursorObject setVariable ['Harris_roped', true,true]; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
+		icon = "icon_handcuffs.paa";
+		text = "Tie";
+	};
+	class UnRope 
+	{
+		condition = "[(Harris_currentCursorObject getVariable ['Foski_Restrained', false]), isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 3.5, Harris_currentCursorObject getVariable ['Harris_roped', false]]";
+		action = "[Harris_currentCursorObject] call Foski_unrestrainPlayer; Harris_currentCursorObject setVariable ['Harris_roped', nil,true]; player playMove 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon';";
+		icon = "icon_handcuffs.paa";
+		text = "Untie";
 	};
 	class searchPlayer 
 	{
