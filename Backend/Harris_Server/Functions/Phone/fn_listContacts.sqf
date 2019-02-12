@@ -24,14 +24,11 @@ Harris_listContacts = {
 	_contacts = profileNameSpace getVariable ["contactList",[]];
 	_yourNumber = profileNamespace getVariable "yourNumber";
 
-	_t = false;
-	{
-		if ((_contacts select 0) select 0 == _yourNumber) then {
-			_t = true;
+	if (count _contacts > 0) then {
+		if ((_contacts select 0) select 0 != _yourNumber) then {
+			_contacts append [[_yourNumber, "Your Number"]];
 		};
-	} forEach _contacts;
-
-	if !(_t) then {
+	} else {
 		_contacts append [[_yourNumber, "Your Number"]];
 	};
 
@@ -107,6 +104,7 @@ Harris_listContacts = {
 			_ID3 = _buttons2 select _count;
 			_ID4 = _textBoxes select _count;
 			_ID5 = _textBoxes2 select _count;
+			_ID6 = _buttons3 select _count;
 
 
 			ctrlShow [_ID, true];
@@ -114,6 +112,7 @@ Harris_listContacts = {
 			ctrlShow [_ID3, true];
 			ctrlShow [_ID4, true];
 			ctrlShow [_ID5, true];
+			ctrlShow [_ID6, true];
 
 			_name = _x select 1;
 
@@ -124,4 +123,10 @@ Harris_listContacts = {
 
 		};
 	} foreach Harris_contactsList;
+
+	if (Harris_contactsPage == 1) then {
+		ctrlShow[8001, false];
+		ctrlShow[1602, false];
+		ctrlShow[2603, false];
+	}
 };
