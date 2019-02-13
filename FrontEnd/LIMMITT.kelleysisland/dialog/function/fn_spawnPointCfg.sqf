@@ -32,11 +32,6 @@ switch (_side) do
 		];
 	};
 
-	
-		
-
-			
-
 	//i
 
 	if(count life_houses > 0) then {
