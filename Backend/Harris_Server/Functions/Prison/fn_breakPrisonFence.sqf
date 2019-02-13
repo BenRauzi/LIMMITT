@@ -8,11 +8,16 @@ Foski_breakPrisonFence ={
 	_wpn = currentWeapon player;
 
 	// Animate player (weapon)
-	if (_wpn == Foski_prisonShank) then { 
-		player playAction "GestureSwing";
+	if !(_wpn in Foski_prisonFenceWpns) exitWith {}; 
+
+	switch (_wpn) do { 
+		case "A3L_Pickaxe" : {
+			player playAction "GestureSwing";
+		}; 
+		default {}; 
 	};
 
-	if (isNull _fence || typeOf _fence != (Foski_prisonFences select 0)) exitWith {}; // Not a breakable fence
+	if (isNull _fence || typeOf _fence != (Foski_prisonFences select 0) || player distance _fence > 3.5) exitWith {}; // Not a breakable fence
 	//if (isNull _fence || str _fence find (Foski_prisonFences select 0) < 0 || player distance _fence > 3.5) exitWith {}; // Not a breakable fence
 
 	// Set the fence cut & hit variables
