@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3808.0386,17.317484,3124.2549};
-		dir[]={0.32592544,-0.3731671,-0.86868691};
-		up[]={0.13111605,0.92772931,-0.34946236};
-		aside[]={-0.9363187,8.511779e-007,-0.35129932};
+		pos[]={3809.4841,17.11591,3122.4543};
+		dir[]={-0.87371123,-0.31171086,-0.37362289};
+		up[]={-0.28668943,0.95014012,-0.12259687};
+		aside[]={-0.39320949,9.9028694e-007,0.91951978};
 	};
 };
 binarizationWanted=0;
@@ -8288,7 +8288,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation"";     " \n "this enableSimulation false;      " \n "this allowDamage false;     " \n "     " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";     " \n "comment ""Remove existing items"";     " \n "removeAllWeapons this;     " \n "removeAllItems this;     " \n "removeAllAssignedItems this;     " \n "removeUniform this;     " \n "removeVest this;     " \n "removeBackpack this;     " \n "removeHeadgear this;     " \n "removeGoggles this;     " \n "this forceAddUniform ""emsoff_uni""; " \n "this setFace ""WhiteHead_04""; " \n "this setSpeaker ""male05gre""; " \n "     " \n "comment ""Add Actions (Shop)"";     " \n "this addAction[""Grab Stretcher"",life_fnc_stretcherpls,"""",0,false,false,"""",'playerSide == independent && player distance _target < 4']; " \n "this addAction[""Item Shop"",life_fnc_virt_menu,""ems"",0,false,false,"""",'playerSide == independent && player distance _target < 4']; " \n "this addAction[""Clothing Shop"",life_fnc_clothingMenu,""ems"",false,"""",'playerSide == independent && player distance _target < 4']; " \n "this addAction[""Patrol Supplies"",life_fnc_weaponShopMenu,""med_supplies"",false,"""",'playerSide == independent && player distance _target < 4']; " \n "this addAction[""Patrol Gear"",life_fnc_weaponShopMenu,""med_basic""]; " \n "this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""dcfd_car"",""med"",""Elwood Hosptial""],false,"""",'playerSide == independent && player distance _target < 4']; " \n "this addAction[""Vehicle Garage"", {[[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;createDialog ""Life_impound_menu"";disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];life_garage_sp = ""dcso_car1"";life_garage_type = ""Car"";},"""",0,false,false,"""",'playerSide == west && player distance _target < 4'];     " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == west && player distance _target < 4'];}";
+						init="call{comment ""Disable Damage & Simulation"";    " \n "this enableSimulation false;     " \n "this allowDamage false;    " \n "    " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";      " \n "comment ""Remove existing items"";      " \n "removeAllWeapons this;      " \n "removeAllItems this;      " \n "removeAllAssignedItems this;      " \n "removeUniform this;      " \n "removeVest this;      " \n "removeBackpack this;      " \n "removeHeadgear this;      " \n "removeGoggles this;      " \n "this forceAddUniform ""emsoff_uni"";  " \n "this setFace ""WhiteHead_04"";  " \n "this setSpeaker ""male05gre"";  " \n "    " \n "comment ""Add Actions (Shop)"";    " \n "this addAction[""Grab Stretcher"",life_fnc_stretcherpls,"""",0,false,false,"""",'playerSide == independent && player distance _target < 4']; " \n "this addAction[""Item Shop"",life_fnc_virt_menu,""ems"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == independent && player distance _target < 4']; " \n "this addAction[""Clothing Shop"",life_fnc_clothingMenu,""cop"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == independent && player distance _target < 4']; " \n "this addAction[""Patrol Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == independent && player distance _target < 4']; " \n "this addAction[""Patrol Gear Shop"",life_fnc_weaponShopMenu,""med_basic"",0,FALSE,FALSE,"""",'vehicle player == player && playerSide == independent && player distance _target < 4']; " \n "this addAction[""Patrol Vehicles"",life_fnc_vehicleShopMenu,[""dcfd_patrol"",west,""dcfd_car"",""med"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4']; " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == independent && player distance _target < 4'];}";
 					};
 					id=1019;
 					type="C_man_1";
@@ -8423,7 +8423,7 @@ class Mission
 			position[]={3809.6851,15.31,3120.2119};
 			name="spawn_dcfd";
 			type="Empty";
-			angle=1.3449999;
+			angle=1.3449998;
 			id=1032;
 			atlOffset=0.0001077652;
 		};
