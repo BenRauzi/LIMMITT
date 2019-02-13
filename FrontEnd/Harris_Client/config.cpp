@@ -791,6 +791,12 @@ class Harris_twitterType
 class cfgSounds
 {
 	sounds[] = {};
+	class cuttingWire
+	{
+		name = "cuttingWire";
+		sound[] = {"Harris_Client\sounds\new\cuttingWire.ogg", 1, 1};
+		titles[] = {};
+	};
 	class buyCar
 	{
 		name = "buyCar";
