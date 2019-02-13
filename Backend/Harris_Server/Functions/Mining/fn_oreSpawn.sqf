@@ -45,9 +45,14 @@ Harris_oreSpawn = {
 				};
 			};
 
-			_ore = _object createVehicle Harris_orePos;
-			_ores pushBack _ore;
-			_ore setVariable ["mined", 0, true];
+			if !(isOnRoad Harris_orePos) then {
+				_ore = _object createVehicle Harris_orePos;
+				_ores pushBack _ore;
+				_ore setVariable ["mined", 0, true];
+			} else {
+				_i = _i - 1;
+			};
+			
 		} foreach Harris_mineArea;
 	};
 
