@@ -64,6 +64,20 @@ switch (life_veh_shop select 0) do { // Switch Statement added by Nicholas Jo'Fo
 		_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
 		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 	}; 
+	case "dcfd_air" : { // Spawn on top of helipad added by Nicholas Jo'Foski on the 13/02/2019
+		_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
+		waitUntil {!isNil "_vehicle"}; //Wait?
+		_vehicle allowDamage false; //Temp disable damage handling..
+		_vehicle lock 2;
+		_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
+		_vehicle setDir (markerDir _spawnPoint);
+		_vehicle setPos [(getMarkerPos _spawnPoint) select 0,(getMarkerPos _spawnPoint) select 1,19.5];
+		[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn bis_fnc_mp;
+		[_vehicle] call life_fnc_clearVehicleAmmo;
+		_vehicle setVariable["trunk_in_use",false,true];
+		_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
+		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+	}; 
 	default {
 		_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 		waitUntil {!isNil "_vehicle"}; //Wait?

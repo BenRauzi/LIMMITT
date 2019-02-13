@@ -381,14 +381,14 @@ class cfgInteractions
 		class unLockStorage 
 		{
 			condition = "[player distance Harris_currentCursorObject < 10, (Harris_currentCursorObject in life_vehicles), (Harris_currentCursorObject getVariable ['locked',false]), Harris_currentCursorObject isKindOf 'House_F']";
-			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_sellHouse";
+			action = "[cursorObject] spawn life_fnc_lockHouse";
 			icon = "031-key-silhouette-security-tool-interface-symbol-of-password.paa";
 			text = "Unlock";
 		};
 		class lockStorage 
 		{
 			condition = "[player distance Harris_currentCursorObject < 10, (Harris_currentCursorObject in life_vehicles), !(Harris_currentCursorObject getVariable ['locked',false]),Harris_currentCursorObject isKindOf 'House_F']";
-			action = "[Harris_currentCursorObject,""Car""] spawn life_fnc_sellHouse";
+			action = "[cursorObject] spawn life_fnc_lockHouse";
 			icon = "031-key-silhouette-security-tool-interface-symbol-of-password.paa";
 			text = "Lock";
 		};
