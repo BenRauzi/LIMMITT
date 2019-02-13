@@ -22,7 +22,6 @@ if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_pric
 if(gm_memecash < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 
 if(typeName life_garage_sp == "ARRAY") then {
-	hint "MULTIPLE CAR GARAGE SPAWN POINT";
 	[[_vid,_pid,life_garage_sp select 0,_unit,_price,life_garage_sp select 1],"TON_fnc_spawnVehicle",false,false] spawn bis_fnc_mp;
 } else {
 	if(life_garage_sp in ["medic_spawn_1","medic_spawn_2","medic_spawn_3"]) then {
@@ -31,6 +30,9 @@ if(typeName life_garage_sp == "ARRAY") then {
 		_spawnPoint = getMarkerPos life_garage_sp;
 		if (life_garage_sp == "dcso_air") then {
 			_spawnPoint = [(getMarkerPos life_garage_sp) select 0,(getMarkerPos life_garage_sp) select 1,8.5];
+		};
+		if (life_garage_sp == "dcfd_air") then {
+			_spawnPoint = [(getMarkerPos life_garage_sp) select 0,(getMarkerPos life_garage_sp) select 1,19.5];
 		};
 		[[_vid,_pid,_spawnPoint,_unit,_price,markerDir life_garage_sp],"TON_fnc_spawnVehicle",false,false] spawn bis_fnc_mp;
 	};
