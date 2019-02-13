@@ -8,7 +8,7 @@ Harris_mineObject = {
 	if (_weapon isEqualTo "A3L_Pickaxe") then {
 		player playAction "GestureSwing";
 	};
-	if (_weapon isEqualTo "A3L_Pickaxe" && typeOf _ct in Harris_mineObjects) then {
+	if (_weapon isEqualTo "A3L_Pickaxe" && typeOf _ct in Harris_mineObjects && player distance _ct < 3.5) then {
 		{
 			if (typeOf _ct isEqualTo (_x select 0)) then {
 				Harris_oreMined = Harris_oreMined + round (random 7);
