@@ -5,8 +5,9 @@
 
 LIMMITT_clientInit = {
 	
-	Foski_prisonShank = "A3L_Pickaxe";
-	Foski_prisonFences = ["fence1.p3d","JD_Fence1_d"]; // Normal -> Broken (fence1.p3d will be changed to JD_Fence1 once John fixes his fences
+	Foski_prisonFences = ["fence1.p3d","JD_Fence1_d"]; // Classnames of fences that can be cut | Normal -> Broken (fence1.p3d will be changed to JD_Fence1 once John fixes his fences)
+	Foski_prisonShank = "A3L_Pickaxe"; // Classname of weapon used to cut fences
+	Foski_prisonFenceCut = [20,30,40]; // Numbers used to randomly generate a number of times a person has to hit an individual fence (Min, Mid, Max)
 
 	player setVariable ["Harris_TwitterEnabled",true,false]; // Able to use twitter variable
 	player setVariable ["Harris_InteractionEnabled",true,false]; // Able to use the interaction menu variable
