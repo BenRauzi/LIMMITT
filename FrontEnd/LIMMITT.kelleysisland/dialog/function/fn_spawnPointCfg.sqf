@@ -13,25 +13,24 @@ _side = [_this,0,civilian,[civilian]] call BIS_fnc_param;
 
 //Spawn Marker, Spawn Name, PathToImage
 _return = [
-	["spawn_civilian","Elwood","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+	["civ_spawn_1","Elwood","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 ];
 switch (_side) do
 {
 	case west:
 	{
 		_return = [
-			["spawn_dcso","Elwood Sheriff's Office","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["spawn_dcso_doc","Department of Corrections","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			["cop_spawn_1","Elwood Sheriff's Office","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["cop_spawn_5","Department of Corrections","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
 	};
 	
 	case civilian:
 	{
 		_return = [
-			["spawn_civilian","Elwood Plaza","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["civ_spawn_1","Elwood Plaza","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 
-		// Houses & Garages
 		if(count life_houses > 0) then {
 			{
 				_pos = call compile format["%1",_x select 0];
@@ -40,12 +39,16 @@ switch (_side) do
 				
 				_return set[count _return,[format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"]];
 			} foreach life_houses;
-		};
+		};	
 	};
+
+	//i
+
+
 	
 	case independent: {
 		_return = [
-			["spawn_dcfd","Elwood Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_hospital","Elwood Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
 };
