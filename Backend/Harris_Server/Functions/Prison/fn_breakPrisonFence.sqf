@@ -27,6 +27,7 @@ Foski_breakPrisonFence ={
 
 	_cut = _fence getVariable "Foski_fenceCut" select 0;
 	_cutHits = _fence getVariable "Foski_fenceCut" select 1;
+	_fence say3D "cuttingWire";
 	_cut = _cut + 1;
 	if (_cut >= _cutHits) then {
 		_cutFence = (Foski_prisonFences select 1) createVehicle [0,0,0];
