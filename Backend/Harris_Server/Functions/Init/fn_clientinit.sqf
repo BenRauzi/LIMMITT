@@ -273,14 +273,14 @@ LIMMITT_clientInit = {
 	Harris_prices = 
 	[
 		["Harris_coalOre", 1000],
-		["Harris_ironOre", 1500],
-		["Harris_goldOre", 2500],
-		["Harris_diamondOre", 3000],
+		["Harris_ironOre", 1000],
+		["Harris_goldOre", 1500],
+		["Harris_diamondOre", 2000],
 		["Harris_coal", 2000],
-		["Harris_ironIngot", 3000],
-		["Harris_goldIngot", 5000],
-		["Harris_diamond", 11000],
-		["Harris_weedBag", 3000]
+		["Harris_ironIngot", 2500],
+		["Harris_goldIngot", 3500],
+		["Harris_diamond", 4500],
+		["Harris_weedBag", 2000]
 	];
 
 	Harris_Shops = 
