@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=137;
 	class ItemIDProvider
 	{
-		nextID=1028;
+		nextID=1033;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3809.5493,16.998659,3134.0474};
-		dir[]={-0.13900229,-0.21700394,-0.96626365};
-		up[]={-0.030911291,0.97614974,-0.21487577};
-		aside[]={-0.98985201,3.8530197e-007,0.14239608};
+		pos[]={3808.0386,17.317484,3124.2549};
+		dir[]={0.32592544,-0.3731671,-0.86868691};
+		up[]={0.13111605,0.92772931,-0.34946236};
+		aside[]={-0.9363187,8.511779e-007,-0.35129932};
 	};
 };
 binarizationWanted=0;
@@ -188,7 +188,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=320;
+		items=321;
 		class Item0
 		{
 			dataType="Marker";
@@ -263,7 +263,7 @@ class Mission
 			position[]={3615.137,15,3164.571};
 			name="spawn_civilian";
 			type="Empty";
-			angle=270.64191;
+			angle=270.64185;
 			id=15;
 		};
 		class Item8
@@ -589,7 +589,7 @@ class Mission
 			position[]={3807.469,15,3127.915};
 			name="dcfd_air";
 			type="Empty";
-			angle=19.659998;
+			angle=107.69685;
 			id=138;
 		};
 		class Item40
@@ -8416,6 +8416,16 @@ class Mission
 			};
 			id=1026;
 			atlOffset=3.3387585;
+		};
+		class Item320
+		{
+			dataType="Marker";
+			position[]={3809.6851,15.31,3120.2119};
+			name="spawn_dcfd";
+			type="Empty";
+			angle=1.3449999;
+			id=1032;
+			atlOffset=0.0001077652;
 		};
 	};
 	class Connections
