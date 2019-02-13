@@ -13,22 +13,22 @@ _side = [_this,0,civilian,[civilian]] call BIS_fnc_param;
 
 //Spawn Marker, Spawn Name, PathToImage
 _return = [
-	["civ_spawn_1","Elwood","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+	["spawn_civilian","Elwood","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 ];
 switch (_side) do
 {
 	case west:
 	{
 		_return = [
-			["cop_spawn_1","Elwood Sheriff's Office","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_5","Department of Corrections","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			["spawn_dcso","Elwood Sheriff's Office","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["spawn_dcso_doc","Department of Corrections","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
 	};
 	
 	case civilian:
 	{
 		_return = [
-			["civ_spawn_1","Elwood Plaza","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["spawn_civilian","Elwood Plaza","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 
 		if(count life_houses > 0) then {
@@ -41,14 +41,10 @@ switch (_side) do
 			} foreach life_houses;
 		};	
 	};
-
-	//i
-
-
 	
 	case independent: {
 		_return = [
-			["medic_spawn_hospital","Elwood Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["spawn_dcfd","Elwood Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
 };

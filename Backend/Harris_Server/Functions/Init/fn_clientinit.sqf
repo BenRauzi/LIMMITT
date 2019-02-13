@@ -4,43 +4,10 @@
 */
 
 LIMMITT_clientInit = {
-
-	/*
-	Harris_d3sPD = ["d3s_charger_15_CPP"];
-	player addEventHandler ["GetInMan", {
-	    params ["_vehicle", "_role", "_unit", "_turret"];
-
-	    if (_role == "driver" && player getVariable ["Foski_Restrained", false]) then {
-	        if (vehicle player isKindOf 'Air') then {
-	            player action["GetOut",vehicle player];
-	        } else {
-                player action["eject",vehicle player];
-	        };
-	    };
-
-	    if (typeOf vehicle player in Harris_d3sPD) then {
-	    	sirenAction1 = player addAction ["<t color='#FFFFFF'>Code 1</t>", {[] call Harris_code1}];
-	   		sirenAction2 = player addAction ["<t color='#2e7bf7'>Code 2</t>", {[] call Harris_code2}];
-	    	sirenAction3 = player addAction ["<t color='#ff0000'>Code 3</t>", {[] call Harris_code3}];	
-	    };
-	}];
-
-	player addEventHandler ["GetOutMan", {
-		if !(isNil "sirenAction1") then {
-			player removeAction sirenAction1;
-			sirenAction1 = nil;
-		};
-		if !(isNil "sirenAction2") then {
-			player removeAction sirenAction2;
-			sirenAction2 = nil;
-		};
-		if !(isNil "sirenAction3") then {
-			player removeAction sirenAction3;
-			sirenAction3 = nil;
-		};
-	}];
-
-	*/
+	
+	Foski_prisonFences = ["fence1.p3d","JD_Fence1_d"]; // Classnames of fences that can be cut | Normal -> Broken (fence1.p3d will be changed to JD_Fence1 once John fixes his fences)
+	Foski_prisonShank = "A3L_Pickaxe"; // Classname of weapon used to cut fences
+	Foski_prisonFenceCut = [20,30,40]; // Numbers used to randomly generate a number of times a person has to hit an individual fence (Min, Mid, Max)
 
 	player setVariable ["Harris_TwitterEnabled",true,false]; // Able to use twitter variable
 	player setVariable ["Harris_InteractionEnabled",true,false]; // Able to use the interaction menu variable
@@ -68,8 +35,7 @@ LIMMITT_clientInit = {
 
 	Harris_oreMined = 0;
 
-	Harris_action = false;
-
+	Harris_action = false
 	Harris_oreTypes =
 	[
 		["JD_OreCoal","Harris_coalOre"],
