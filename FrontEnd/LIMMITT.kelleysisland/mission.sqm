@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1008;
+		nextID=1010;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2954.9019,1041.8453,3549.5425};
-		dir[]={-0.58872366,-0.72688431,0.35377121};
-		up[]={-0.6231131,0.68667245,0.37443608};
-		aside[]={0.51509953,7.2711555e-007,0.85719728};
+		pos[]={3815.2969,16.747307,3162.3386};
+		dir[]={0.67702347,-0.1886535,0.71138245};
+		up[]={0.13008708,0.98203516,0.13668883};
+		aside[]={0.72439051,-5.8158184e-007,-0.68940413};
 	};
 };
 binarizationWanted=0;
@@ -207,7 +207,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={4071.0339,21.851999,2789.4651};
-			name="cop_spawn_1";
+			name="spawn_dcso";
 			type="Empty";
 			angle=90;
 			id=4;
@@ -266,10 +266,10 @@ class Mission
 		class Item7
 		{
 			dataType="Marker";
-			position[]={3615.137,15,3164.5708};
-			name="civ_spawn_1";
+			position[]={3615.137,15,3164.571};
+			name="spawn_civilian";
 			type="Empty";
-			angle=270.64185;
+			angle=270.64197;
 			id=15;
 		};
 		class Item8
@@ -700,10 +700,10 @@ class Mission
 		class Item50
 		{
 			dataType="Marker";
-			position[]={3819.0332,15,3162.4817};
-			name="medic_spawn_hospital";
+			position[]={3818.2361,15,3164.8401};
+			name="spawn_dcfd";
 			type="Empty";
-			angle=185;
+			angle=192.992;
 			id=166;
 		};
 		class Item51
@@ -5478,11 +5478,10 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={2784.9771,25.674,4479.4268};
-			name="cop_spawn_5";
-			text="cop_spawn_5";
+			name="spawn_dcso_doc";
 			type="Empty";
 			colorName="ColorRed";
-			angle=299.99991;
+			angle=299.99997;
 			id=564;
 			atlOffset=3.27384;
 		};
