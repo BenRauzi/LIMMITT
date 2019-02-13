@@ -419,4 +419,38 @@ class CfgWeapons
 		picture = "\Harris_Client\Data\icon_keyCard.paa";
 		descriptionShort = "This is used to gain police access to secure facilities.";
 	};
+
+	// Oil
+	class Harris_oilBarrel: ToolKit
+	{
+		displayName = "Oil Barrel";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 4;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\Harris_Client\Models\model_oilBarrel.p3d";
+		picture = "\Harris_Client\Data\icon_oilBarrel.paa";
+		descriptionShort = "42 US gallons, which is about 159 litres or 35 imperial gallons of pure oil.";
+	};
+	class Harris_petroleumBarrel: ToolKit
+	{
+		displayName = "Petroleum Barrel";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 4;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\Harris_Client\Models\model_petroleumBarrel.p3d";
+		picture = "\Harris_Client\Data\icon_petroleumBarrel.paa";
+		descriptionShort = "42 US gallons, which is about 159 litres or 35 imperial gallons of pure petroleum.";
+	};
 };

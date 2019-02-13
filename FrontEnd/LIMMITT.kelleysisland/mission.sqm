@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2859.5415,82.919601,3339.8184};
-		dir[]={-0.050158866,-0.26511058,0.9629246};
-		up[]={-0.013796684,0.96418995,0.2648482};
-		aside[]={0.99865967,1.3381941e-007,0.052021649};
+		pos[]={2954.9019,1041.8453,3549.5425};
+		dir[]={-0.58872366,-0.72688431,0.35377121};
+		up[]={-0.6231131,0.68667245,0.37443608};
+		aside[]={0.51509953,7.2711555e-007,0.85719728};
 	};
 };
 binarizationWanted=0;
@@ -275,19 +275,18 @@ class Mission
 		class Item8
 		{
 			dataType="Marker";
-			position[]={6550.7104,26.265291,5899.7646};
-			name="Gold_1";
-			text="Gold Mine";
+			position[]={6548.6348,26.147692,5902.9517};
+			name="CoalMine";
+			text="Coal Mine";
 			type="A3L_Pickaxe_Icon";
 			colorName="ColorBrown";
 			id=19;
-			atlOffset=0.15645409;
 		};
 		class Item9
 		{
 			dataType="Marker";
-			position[]={1124.0759,30.331818,1311.5449};
-			name="diamond_1";
+			position[]={1123.7979,30.286272,1311.2472};
+			name="DiamondMine";
 			text="Diamond Mine";
 			type="A3L_Pickaxe_Icon";
 			colorName="ColorBrown";
@@ -1005,6 +1004,7 @@ class Mission
 			};
 			id=273;
 			type="Land_InfoStand_V1_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item70
 		{
@@ -5801,8 +5801,8 @@ class Mission
 		class Item219
 		{
 			dataType="Marker";
-			position[]={1123.7971,29.717285,1311.2471};
-			name="Diamond_1_MineArea";
+			position[]={1123.797,29.716999,1311.2469};
+			name="Harris_mineArea_Diamond";
 			text="Diamond Mine";
 			markerType="ELLIPSE";
 			type="ellipse";
@@ -5810,14 +5810,14 @@ class Mission
 			a=50;
 			b=50;
 			id=629;
-			atlOffset=-0.56884003;
+			atlOffset=-0.56910515;
 		};
 		class Item220
 		{
 			dataType="Marker";
 			position[]={6548.6328,12.57,5902.9482};
-			name="Gold_1_MineArea";
-			text="Gold Mine";
+			name="Harris_mineArea_Coal";
+			text="Coal Mine";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorBlue";
@@ -5829,8 +5829,8 @@ class Mission
 		class Item221
 		{
 			dataType="Marker";
-			position[]={4801.5581,15.355809,3188.5566};
-			name="Iron_1_MineArea";
+			position[]={4801.5581,15.356,3188.5569};
+			name="Harris_mineArea_Iron";
 			text="Iron Mine";
 			markerType="ELLIPSE";
 			type="ellipse";
@@ -5838,26 +5838,27 @@ class Mission
 			a=50;
 			b=50;
 			id=631;
-			atlOffset=0.29969025;
+			atlOffset=0.29988289;
 		};
 		class Item222
 		{
 			dataType="Marker";
-			position[]={3136.1099,15.0106,5160.8931};
-			name="Coal_1_MineArea";
-			text="Coal Mine";
+			position[]={3136.1101,15.011,5160.8931};
+			name="Harris_mineArea_Gold";
+			text="Gold Mine";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorBlue";
 			a=50;
 			b=50;
 			id=632;
+			atlOffset=0.00039958954;
 		};
 		class Item223
 		{
 			dataType="Marker";
-			position[]={4800.187,15.047921,3188.3481};
-			name="iron_2";
+			position[]={4801.5586,15.056135,3188.5554};
+			name="IronMine";
 			text="Iron Mine";
 			type="A3L_Pickaxe_Icon";
 			colorName="ColorBrown";
@@ -5866,9 +5867,9 @@ class Mission
 		class Item224
 		{
 			dataType="Marker";
-			position[]={3137.2476,15.0106,5163.5508};
-			name="Coal_1";
-			text="Coal Mine";
+			position[]={3136.1108,15.0106,5160.894};
+			name="GoldMine";
+			text="Gold Mine";
 			type="A3L_Pickaxe_Icon";
 			colorName="ColorBrown";
 			id=634;
@@ -8144,17 +8145,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4151.0469,15.087913,2889.48};
+						position[]={4151.0469,15.08744,2889.48};
 					};
 					side="Civilian";
 					flags=7;
 					class Attributes
 					{
 						init="call{this allowDamage false; this enableSimulation false;  this addAction[""Market"",life_fnc_virt_menu,""market""];  this addAction [""Rob Gas Station"", life_fnc_robGasStation]; this setVariable [""GasName"", ""Elwood Gas Station"", true];}";
-						isPlayer=1;
 					};
 					id=997;
 					type="C_man_polo_2_F";
+					atlOffset=0.086000443;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8203,6 +8204,7 @@ class Mission
 			{
 			};
 			id=996;
+			atlOffset=0.086000443;
 		};
 		class Item319
 		{

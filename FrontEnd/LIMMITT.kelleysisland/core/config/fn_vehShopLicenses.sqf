@@ -38,8 +38,8 @@ switch (life_veh_shop select 0) do
 	case "dcso_command": {_ret = true;};
 	case "dcso_boat": {_ret = true;};
 	// Douglas County Fire Department Vehicle Stores
-	case "med_shop": {_ret = true;};
-	case "med_air_hs": {_ret = license_med_air;};
+	case "dcfd_patrol": {_ret = true;};
+	case "dcfd_air": {_ret = true;};
 };
 
 _ret;

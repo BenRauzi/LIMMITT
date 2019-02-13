@@ -80,10 +80,10 @@ LIMMITT_clientInit = {
 
 	Harris_mineArea = 
 	[
-		["Coal_1_MineArea","Coal","JD_OreCoal"],
-		["Iron_1_MineArea","Iron","JD_OreIron"],
-		["Gold_1_MineArea","Gold","JD_OreGold"],
-		["Diamond_1_MineArea","Gold","JD_OreDiamond"]
+		["Harris_mineArea_Coal","Coal","JD_OreCoal"],
+		["Harris_mineArea_Iron","Iron","JD_OreIron"],
+		["Harris_mineArea_Gold","Gold","JD_OreGold"],
+		["Harris_mineArea_Diamond","Diamond","JD_OreDiamond"]
 	];
 
 

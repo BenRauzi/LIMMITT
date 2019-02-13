@@ -10,18 +10,11 @@ private["_shop","_return"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {[]};
 _return = [];
-switch (_shop) do
-{
+switch (_shop) do {
 	// Civilian Vehicle Stores
-	case "civ_secondHand":
-	{
+	case "civ_secondHand": {
 		_return = [
 			["B_Quadbike_01_F",350],
-			["A3L_Escort",720],
-			["A3L_EscortTaxi",720],
-			["A3L_EscortBlack",720],
-			["A3L_EscortBlue",720],
-			["A3L_EscortWhite",720],
 			["ADM_Ford_F100",5600],
 			["ADM_1964_Impala",4370],
 			["Jonzie_Mini_Cooper",2690],
@@ -30,8 +23,7 @@ switch (_shop) do
 			["DAR_ChargerCiv",10000]
 		];
 	};
-	case "civ_luxury":
-	{
+	case "civ_luxury": {
 		_return = [
 			["kw_db9_blue",125000],
 			["kw_db9_silver",130000],
@@ -49,8 +41,7 @@ switch (_shop) do
 			["kw_corvette_c7_grey",100000]
 		];
 	};
-	case "civ_mercedesBenz":
-	{
+	case "civ_mercedesBenz": {
 		_return =
 		[
 			["kw_audi_q7_black",45000],
@@ -60,8 +51,7 @@ switch (_shop) do
 			["kw_corvette_c7_black",105000]
 		];
 	};
-	case "civ_chevrolet":
-	{
+	case "civ_chevrolet": {
 		_return = [
 			["A3L_SuburbanWhite",195000],
 			["A3L_SuburbanBlue",195000],
@@ -90,8 +80,7 @@ switch (_shop) do
 			["AM_15Suburban_Green",150000]
 		];
 	};
-	case "civ_ford":
-	{
+	case "civ_ford": {
 		_return = [
 			["kw_67Mustang_black",25000],
 			["kw_Victoria_06_black",60000],
@@ -109,8 +98,7 @@ switch (_shop) do
 			["kw_taurus_10_blue",60000]
 		];
 	};
-	case "civ_dodge":
-	{
+	case "civ_dodge": {
 		_return =
 		[
 			["kw_challenger_16_silver",45000],
@@ -131,8 +119,7 @@ switch (_shop) do
 			["kw_viper_08_urban",55000]
 		];
 	};
-	case "civ_truck":
-	{
+	case "civ_truck": {
 		_return =
 		[
 			["C_van_01_box_f",80000],
@@ -143,8 +130,7 @@ switch (_shop) do
 	        
 		];
 	};
-	case "civ_motorcycle":
-	{
+	case "civ_motorcycle": {
 		_return = [
 			["JD_Renegade_Black",20000],
 			["JD_Renegade_Blue",20000],
@@ -161,8 +147,7 @@ switch (_shop) do
 			["kw_xr_baby_pink",100000]
 		];
 	};
-	case "civ_air":
-	{
+	case "civ_air": {
 		_return =
 		[
 			["C_Plane_Civil_01_F",40000],
@@ -171,8 +156,7 @@ switch (_shop) do
 			["d3s_AS_365",150000]
 		];
 	};
-	case "civ_boat":
-	{
+	case "civ_boat": {
 		_return =
 		[
 			["C_Scooter_Transport_01_F",5000],
@@ -183,8 +167,7 @@ switch (_shop) do
 			["I_SDV_01_F",300000]
 		];
 	};
-	case "civ_rebel":
-	{
+	case "civ_rebel": {
 		_return =
 		[
 			["B_Quadbike_01_F",3500],
@@ -200,8 +183,7 @@ switch (_shop) do
 	};
 
 	// Douglas County Sheriff's Office Vehicle Stores
-	case "dcso_patrol":
-	{
+	case "dcso_patrol": {
 		_return =
 		[
 			["M_CVPI_NEW",1000],
@@ -217,8 +199,7 @@ switch (_shop) do
 			["JD_PoliceB_1",5000]
 		];
 	};
-	case "dcso_dtu":
-	{
+	case "dcso_dtu": {
 		_return =
 		[
 			["M_FPIS_UC_Grey",1000],
@@ -233,8 +214,7 @@ switch (_shop) do
 			["M_Tahoe_UC_Grey",3000]
 		];
 	};
-	case "dcso_sert":
-	{
+	case "dcso_sert": {
 		_return =
 		[
 			["M_CVPI_UC_Black",3000],
@@ -244,8 +224,7 @@ switch (_shop) do
 			["kw_Sentinal_SWAT",10000]
 		];
 	};
-	case "dcso_command":
-	{
+	case "dcso_command": {
 		_return =
 		[
 			["M_Silverado_cab",1000],
@@ -255,8 +234,7 @@ switch (_shop) do
 			["JD_PoliceB_1",1000]
 		];
 	};
-	case "dcso_air":
-	{
+	case "dcso_air": {
 		_return =
 		[
 			["MELB_MH6M",10000],
@@ -264,8 +242,7 @@ switch (_shop) do
 			["ds3_AS_365_PD",30000]
 		];
 	};
-	case "dcso_boat":
-	{
+	case "dcso_boat": {
 		_return =
 		[
 			["B_Boat_Transport_01_F",4000],
@@ -273,18 +250,24 @@ switch (_shop) do
 		];
 	};
 
-	// Douglas County Fire Department
-	case "med_shop":
-	{
+	// Douglas County Fire Department Vehicle Stores
+	case "dcfd_patrol": {
 		_return = [
-		
-			["C_Van_02_medevac_F",500],
 			["M_Ambulance",2000],
-			["JD_F350_Red",3000],
-			["M_Tahoe_EMS",3000]
+			["M_Tahoe_EMS",3000],
+			["KW_Taurus_10_TAC",3000],
+			["KW_11RS3_EMS",3000],
+			["KW_12M5_EMS",3000],
+			["KW_06Suburban_FD",3000],
+			["KW_15Charger_EMS",3000],
+			["KW_12Charger_EMS",3000],
+			["KW_06Victoria_FD",3000],
+
+			["C_Van_02_medevac_F",500],
+			["JD_F350_Red",3000]
 		];
 	};
-	case "med_air_hs": {
+	case "dcfd_air": {
 		_return = [
 			["EMS_Chopper",5000],
 			["d3s_HH_65",10000]
