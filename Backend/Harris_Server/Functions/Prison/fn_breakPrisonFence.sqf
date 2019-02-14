@@ -18,11 +18,10 @@ Foski_breakPrisonFence ={
 	};
 
 	if (isNull _fence || typeOf _fence != (Foski_prisonFences select 0) || player distance _fence > 3.5) exitWith {}; // Not a breakable fence
-	//if (isNull _fence || str _fence find (Foski_prisonFences select 0) < 0 || player distance _fence > 3.5) exitWith {}; // Not a breakable fence
 
 	// Set the fence cut & hit variables
 	if (isNil {_fence getVariable "Foski_fenceCut"}) then {
-		_fence setVariable ["Foski_fenceCut",[0,round(random Foski_prisonFenceCut)]];
+		_fence setVariable ["Foski_fenceCut",[0,round(random Foski_prisonFenceCut)],true];
 	};
 
 	_cut = _fence getVariable "Foski_fenceCut" select 0;
@@ -32,9 +31,10 @@ Foski_breakPrisonFence ={
 	if (_cut >= _cutHits) then {
 		_cutFence = (Foski_prisonFences select 1) createVehicle [0,0,0];
 		_cutFence setDir (direction _fence);
-		deleteVehicle _fence;
+		_fence hideObject true;
 		_cutFence setPosATL (getPosATL _fence);
+		_cutFence setVariable ["Foski_fixedFence",_fence,true];
 	} else {
-		_fence setVariable ["Foski_fenceCut",[_cut,_cutHits]];
+		_fence setVariable ["Foski_fenceCut",[_cut,_cutHits],true];
 	};
 };
