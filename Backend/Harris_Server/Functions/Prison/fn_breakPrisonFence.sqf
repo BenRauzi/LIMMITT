@@ -29,6 +29,7 @@ Foski_breakPrisonFence ={
 	_fence say3D "cuttingWire";
 	_cut = _cut + 1;
 	if (_cut >= _cutHits) then {
+		_fence setVariable ["Foski_fenceCut",nil,true];
 		_cutFence = (Foski_prisonFences select 1) createVehicle [0,0,0];
 		_cutFence setDir (direction _fence);
 		_fence hideObject true;
