@@ -255,16 +255,16 @@ switch (_shop) do {
 		_return = [
 			["M_Ambulance",2000],
 			["M_Tahoe_EMS",3000],
-			["KW_Taurus_10_TAC",3000],
-			["KW_11RS3_EMS",3000],
-			["KW_12M5_EMS",3000],
-			["KW_06Suburban_FD",3000],
-			["KW_15Charger_EMS",3000],
-			["KW_12Charger_EMS",3000],
-			["KW_06Victoria_FD",3000],
-
-			["C_Van_02_medevac_F",500],
-			["JD_F350_Red",3000]
+		];
+	};
+	case "dcfd_fd": {
+		_return = [
+			["Fox_HeavyRescue",2000],
+			["Fox_HeavyRescue2",3000],
+			["Fox_ArrowXTLadder",3000],
+			["Fox_Firetruck",3000],
+			["JD_F350_Red",3000],
+			["M_Tahoe_EMS",3000],
 		];
 	};
 	case "dcfd_air": {
