@@ -453,4 +453,38 @@ class CfgWeapons
 		picture = "\Harris_Client\Data\icon_petroleumBarrel.paa";
 		descriptionShort = "42 US gallons, which is about 159 litres or 35 imperial gallons of pure petroleum.";
 	};
+
+	// Dirty Cash
+	class Harris_dirtyCash: ToolKit
+	{
+		displayName = "Dirty Cash";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 4;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\Harris_Client\Models\model_dirtyCash.p3d";
+		picture = "\Harris_Client\Data\icon_dirtyCash.paa";
+		descriptionShort = "Money that is illegally gained, illegally transferred or illegally utilized.";
+	};
+	class Harris_dyedDirtyCash: ToolKit
+	{
+		displayName = "Dyed Dirty Cash";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {701,801,901};
+			mass = 4;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\Harris_Client\Models\model_dyedDirtyCash.p3d";
+		picture = "\Harris_Client\Data\icon_dyedDirtyCash.paa";
+		descriptionShort = "Illegally gained money that has been destroyed by a dye pack.";
+	};
 };
