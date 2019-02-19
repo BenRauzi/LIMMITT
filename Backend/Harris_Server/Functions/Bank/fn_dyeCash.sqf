@@ -2,6 +2,7 @@
 	Author: Nicholas Jo'Foski
 	Description: Creates a random chance of a 'Dye Pack' exploding when a player leaves the bank (Function Called) with dirty cash in their inventory
 */
+// Foski_takeCash
 
 Foski_dyeCash = {
 	[] spawn {
