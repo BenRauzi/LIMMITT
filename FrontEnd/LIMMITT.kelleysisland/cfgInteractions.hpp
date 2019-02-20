@@ -288,11 +288,28 @@ class cfgInteractions
 
 	class openRefinery2
 	{
-		condition = "[(player distance (getMarkerPos 'Oil_Rig')]";
+		condition = "[(player distance (getMarkerPos 'Oil_Rig') < 50]";
 		action = "[2,2] call Harris_openCraftingMenu";
 		icon = "014_wrench.paa";
 		text = "Refinery";
 	};
+
+	class startPumping
+	{
+		condition = "[typeOf Harris_currentCursorObject == 'Land_oil_pump', !(Harris_currentCursorObject getVariable ['isDrillingOil', false])]";
+		action = "[Harris_currentCursorObject] spawn Harris_drillOil";
+		icon = "014_wrench.paa";
+		text = "Start Pumping";
+	};
+
+	class stopPumping
+	{
+		condition = "[typeOf Harris_currentCursorObject == 'Land_oil_pump', (Harris_currentCursorObject getVariable ['isDrillingOil', false])]";
+		action = "Harris_currentCursorObject setVariable ['isDrillingOil', nil,true];";
+		icon = "014_wrench.paa";
+		text = "Stop Pumping";
+	};
+
 	class setName
 	{
 		condition = "[isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 5]";

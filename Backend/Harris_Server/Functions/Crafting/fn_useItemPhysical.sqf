@@ -6,7 +6,7 @@
 Harris_useItemPhysical = {
 
 	_value = lbText [_this select 0, _this select 1];
-
+	systemChat _value;
 	switch (_value) do
 	{
 		case "Plant Pot":
