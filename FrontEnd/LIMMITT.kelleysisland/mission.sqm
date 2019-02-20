@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1057;
+		nextID=1059;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3810.1155,16.884005,3125.908};
-		dir[]={-0.58294201,-0.12286027,-0.80332273};
-		up[]={-0.072228104,0.99239147,-0.099533595};
-		aside[]={-0.80945045,-2.814777e-007,0.58739799};
+		pos[]={3776.2158,24.963284,3127.3435};
+		dir[]={0.84045517,-0.5220378,-0.14613423};
+		up[]={0.51436424,0.85287291,-0.089435525};
+		aside[]={-0.17133349,3.2312455e-006,-0.98533744};
 	};
 };
 binarizationWanted=0;
@@ -577,10 +577,10 @@ class Mission
 		class Item38
 		{
 			dataType="Marker";
-			position[]={3793.1069,15,3121.2959};
+			position[]={3788.4341,15,3122.8535};
 			name="dcfd_car";
 			type="Empty";
-			angle=271.75995;
+			angle=186.50526;
 			id=136;
 		};
 		class Item39
@@ -589,7 +589,7 @@ class Mission
 			position[]={3807.469,15,3127.915};
 			name="dcfd_air";
 			type="Empty";
-			angle=107.69685;
+			angle=107.69684;
 			id=138;
 		};
 		class Item40
@@ -8322,7 +8322,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={3603.885,17.929001,3070.1741};
-			angle=1.7160075;
+			angle=1.7160074;
 			class Attributes
 			{
 				condition="call{this}";
