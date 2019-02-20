@@ -61,7 +61,7 @@ Foski_takeCash = {
 		if (_time <= 0) exitWith {
 			_cashAmnt = round(random [1,3,5]);
 			if !(player canAdd [Foski_dirtyCash, _cashAmnt]) exitWith {
-				["Error", format["You do not have enough room to take %1 peice(s) of dirty cash.",_cashAmnt], "Failure"] call Harris_Notifications;
+				["Error", format["You do not have enough room to take %1 piece(s) of dirty cash.",_cashAmnt], "Failure"] call Harris_Notifications;
 				_cashObj setVariable ["Foski_cashLeft", ((_cashObj getVariable ["Foski_cashLeft", 0]) + 1), true];
 			};
 			for "_i" from 1 to _cashAmnt do {
