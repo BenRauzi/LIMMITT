@@ -8,11 +8,7 @@ class EditorData
 	toggles=137;
 	class ItemIDProvider
 	{
-<<<<<<< HEAD
-		nextID=1014;
-=======
 		nextID=1033;
->>>>>>> parent of 39d9307... Update mission.sqm
 	};
 	class MarkerIDProvider
 	{
@@ -20,17 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-<<<<<<< HEAD
-		pos[]={3579.1536,22.972952,3071.4783};
-		dir[]={0.94900161,-0.31532687,-0.014255805};
-		up[]={0.3153924,0.94892174,-0.0047387686};
-		aside[]={-0.015028853,3.0429601e-007,-1.0000237};
-=======
 		pos[]={3809.4841,17.11591,3122.4543};
 		dir[]={-0.87371123,-0.31171086,-0.37362289};
 		up[]={-0.28668943,0.95014012,-0.12259687};
 		aside[]={-0.39320949,9.9028694e-007,0.91951978};
->>>>>>> parent of 39d9307... Update mission.sqm
 	};
 };
 binarizationWanted=0;
@@ -46,10 +35,6 @@ addons[]=
 	"Unlocked_Uniforms",
 	"POMI_PMC_UNITS",
 	"task_force_radio_items",
-<<<<<<< HEAD
-	"mm_bank",
-=======
->>>>>>> parent of 39d9307... Update mission.sqm
 	"A3L_MoneyPile",
 	"A3_Structures_F_Bootcamp_Items_Electronics",
 	"JD_Client",
@@ -122,19 +107,11 @@ class AddonsMetaData
 		};
 		class Item9
 		{
-			className="mm_bank";
-			name="mm_bank";
-		};
-		class Item10
-		{
-<<<<<<< HEAD
 			className="A3L_MoneyPile";
 			name="A3L_MoneyPile";
 		};
-		class Item11
+		class Item10
 		{
-=======
->>>>>>> parent of 39d9307... Update mission.sqm
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
@@ -211,11 +188,7 @@ class Mission
 	};
 	class Entities
 	{
-<<<<<<< HEAD
-		items=325;
-=======
 		items=321;
->>>>>>> parent of 39d9307... Update mission.sqm
 		class Item0
 		{
 			dataType="Marker";
@@ -5330,8 +5303,6 @@ class Mission
 		};
 		class Item185
 		{
-<<<<<<< HEAD
-=======
 			dataType="Object";
 			class PositionInfo
 			{
@@ -5371,7 +5342,6 @@ class Mission
 		};
 		class Item187
 		{
->>>>>>> parent of 39d9307... Update mission.sqm
 			dataType="Marker";
 			position[]={3407.9509,15,3159.2439};
 			name="mercedesBenz_dealer1";
@@ -5379,11 +5349,7 @@ class Mission
 			angle=187.25392;
 			id=556;
 		};
-<<<<<<< HEAD
-		class Item190
-=======
 		class Item188
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3409.6433,15,3171.0061};
@@ -5392,11 +5358,7 @@ class Mission
 			angle=190.01173;
 			id=557;
 		};
-<<<<<<< HEAD
-		class Item191
-=======
 		class Item189
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3425.4351,15.573,3166.178};
@@ -5408,11 +5370,7 @@ class Mission
 			id=558;
 			atlOffset=0.34584808;
 		};
-<<<<<<< HEAD
-		class Item192
-=======
 		class Item190
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2789.6846,25.746571,4519.2739};
@@ -5422,11 +5380,7 @@ class Mission
 			id=559;
 			atlOffset=10.746571;
 		};
-<<<<<<< HEAD
-		class Item193
-=======
 		class Item191
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2828.542,26.128,4500.1758};
@@ -5436,11 +5390,7 @@ class Mission
 			id=560;
 			atlOffset=7.4384575;
 		};
-<<<<<<< HEAD
-		class Item194
-=======
 		class Item192
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2840.717,26.128,4495.707};
@@ -5450,11 +5400,7 @@ class Mission
 			id=561;
 			atlOffset=7.4384575;
 		};
-<<<<<<< HEAD
-		class Item195
-=======
 		class Item193
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2788.6008,25.746571,4515.4443};
@@ -5464,11 +5410,7 @@ class Mission
 			id=562;
 			atlOffset=10.746571;
 		};
-<<<<<<< HEAD
-		class Item196
-=======
 		class Item194
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2782.2932,25.674,4512.5166};
@@ -5480,11 +5422,7 @@ class Mission
 			id=563;
 			atlOffset=10.674;
 		};
-<<<<<<< HEAD
-		class Item197
-=======
 		class Item195
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2784.9771,25.674,4479.4268};
@@ -5495,11 +5433,7 @@ class Mission
 			id=564;
 			atlOffset=3.27384;
 		};
-<<<<<<< HEAD
-		class Item198
-=======
 		class Item196
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2838.5828,25.674007,4490.0425};
@@ -5509,11 +5443,7 @@ class Mission
 			id=565;
 			atlOffset=6.9844646;
 		};
-<<<<<<< HEAD
-		class Item199
-=======
 		class Item197
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2839.595,26.128,4492.6641};
@@ -5523,11 +5453,7 @@ class Mission
 			id=566;
 			atlOffset=7.4384575;
 		};
-<<<<<<< HEAD
-		class Item200
-=======
 		class Item198
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2826.5161,25.674,4495.064};
@@ -5537,11 +5463,7 @@ class Mission
 			id=567;
 			atlOffset=6.984457;
 		};
-<<<<<<< HEAD
-		class Item201
-=======
 		class Item199
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2827.532,26.128,4497.5239};
@@ -5551,11 +5473,7 @@ class Mission
 			id=568;
 			atlOffset=7.4384575;
 		};
-<<<<<<< HEAD
-		class Item202
-=======
 		class Item200
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2761.5667,25.674007,4493.6782};
@@ -5566,11 +5484,7 @@ class Mission
 			id=569;
 			atlOffset=10.674007;
 		};
-<<<<<<< HEAD
-		class Item203
-=======
 		class Item201
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2762.4612,25.674004,4496.0352};
@@ -5581,11 +5495,7 @@ class Mission
 			id=570;
 			atlOffset=10.674004;
 		};
-<<<<<<< HEAD
-		class Item204
-=======
 		class Item202
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5627,11 +5537,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-<<<<<<< HEAD
-		class Item205
-=======
 		class Item203
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5673,11 +5579,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-<<<<<<< HEAD
-		class Item206
-=======
 		class Item204
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={2763.467,25.988968,4498.5879};
@@ -5688,11 +5590,7 @@ class Mission
 			id=573;
 			atlOffset=10.988968;
 		};
-<<<<<<< HEAD
-		class Item207
-=======
 		class Item205
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={5593.1807,15.064453,3270.0422};
@@ -5703,11 +5601,7 @@ class Mission
 			id=574;
 			atlOffset=-4.6730042e-005;
 		};
-<<<<<<< HEAD
-		class Item208
-=======
 		class Item206
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3756.24,23.016565,3282.4395};
@@ -5717,11 +5611,7 @@ class Mission
 			id=581;
 			atlOffset=8.0165653;
 		};
-<<<<<<< HEAD
-		class Item209
-=======
 		class Item207
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5739,29 +5629,7 @@ class Mission
 			type="Land_InfoStand_V2_F";
 			atlOffset=0.1405859;
 		};
-<<<<<<< HEAD
-		class Item210
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3808.9255,15.516791,3137.4446};
-				angles[]={0,1.7514205,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
-			};
-			id=587;
-			type="Land_Mattaust_ATM";
-		};
-		class Item211
-=======
 		class Item208
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5779,11 +5647,7 @@ class Mission
 			type="Land_InfoStand_V2_F";
 			atlOffset=0.17806149;
 		};
-<<<<<<< HEAD
-		class Item212
-=======
 		class Item209
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3702.948,15.405,3040.665};
@@ -5795,53 +5659,26 @@ class Mission
 			id=589;
 			atlOffset=0.17784786;
 		};
-<<<<<<< HEAD
-		class Item213
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3810.2383,15.708465,3137.0107};
-				angles[]={0,4.8544302,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="this enableSimulation false;  this allowDamage false; this addAction[""Grab Stretcher"",life_fnc_stretcherpls];   this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent '];    this addAction[""EMT Item Shop"",life_fnc_virt_menu,""ems""];   this addAction[""EMT Clothing Shop"",life_fnc_clothingMenu,""ems""];    this addAction[""EMT Supplies Shop"",life_fnc_weaponShopMenu,""med_supplies""];  this addAction[""EMT Basic Shop"",life_fnc_weaponShopMenu,""med_basic""];     this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_4"",""med"",""Kavala Hosptial""]];    this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""med_air_1"",""med"",""Kavala Hosptial""]];    this addAction[""Car Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp =  ""med_car_4""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent']; this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];    this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""Phones and Gadgets"",life_fnc_virt_menu,""phones""]; this addAction[""Free 35 Charge"",life_fnc_rechargePhone];  this addAction[""100 Charge ($250)"",life_fnc_standardPhone]; this addAction[""200 Charge ($450)"",life_fnc_doubleCharge];";
-			};
-			id=594;
-			type="Land_InfoStand_V1_F";
-			atlOffset=0.13310051;
-		};
-		class Item214
-=======
 		class Item210
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3600.6221,19.33481,3069.3059};
-				angles[]={0,3.2927034,0};
+				position[]={3600.6216,19.247746,3069.3062};
+				angles[]={0,3.2927115,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this allowDamage false; this enableSimulation false; this addAction[""Take money"",Foski_takeCash];}";
+				init="this allowDamage false; this enableSimulation false; this addAction[""Take money"",life_fnc_A3L_bankrobbery,this];";
 				name="money1_1";
 			};
 			id=598;
 			type="A3L_MoneyPile";
-			atlOffset=0.92962456;
+			atlOffset=0.84255981;
 		};
-<<<<<<< HEAD
-		class Item215
-=======
 		class Item211
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3601.0769,15,3071.0271};
@@ -5852,17 +5689,13 @@ class Mission
 			angle=359.83286;
 			id=599;
 		};
-<<<<<<< HEAD
-		class Item216
-=======
 		class Item212
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3601.1929,16.170855,3064.3174};
-				angles[]={-0,3.3342376,-0};
+				position[]={3601.6426,15.731616,3071.5767};
+				angles[]={0,0.1487413,0};
 			};
 			side="Empty";
 			flags=4;
@@ -5873,12 +5706,9 @@ class Mission
 			};
 			id=605;
 			type="Land_WaterCooler_01_new_F";
+			atlOffset=-0.00045681;
 		};
-<<<<<<< HEAD
-		class Item217
-=======
 		class Item213
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={1123.797,29.716999,1311.2469};
@@ -5892,11 +5722,7 @@ class Mission
 			id=629;
 			atlOffset=-0.56910515;
 		};
-<<<<<<< HEAD
-		class Item218
-=======
 		class Item214
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={6548.6328,12.57,5902.9482};
@@ -5910,11 +5736,7 @@ class Mission
 			id=630;
 			atlOffset=-13.577715;
 		};
-<<<<<<< HEAD
-		class Item219
-=======
 		class Item215
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={4801.5581,15.356,3188.5569};
@@ -5928,11 +5750,7 @@ class Mission
 			id=631;
 			atlOffset=0.29988289;
 		};
-<<<<<<< HEAD
-		class Item220
-=======
 		class Item216
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3136.1101,15.011,5160.8931};
@@ -5946,11 +5764,7 @@ class Mission
 			id=632;
 			atlOffset=0.00039958954;
 		};
-<<<<<<< HEAD
-		class Item221
-=======
 		class Item217
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={4801.5586,15.056135,3188.5554};
@@ -5960,11 +5774,7 @@ class Mission
 			colorName="ColorBrown";
 			id=633;
 		};
-<<<<<<< HEAD
-		class Item222
-=======
 		class Item218
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3136.1108,15.0106,5160.894};
@@ -5974,11 +5784,7 @@ class Mission
 			colorName="ColorBrown";
 			id=634;
 		};
-<<<<<<< HEAD
-		class Item223
-=======
 		class Item219
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={4943.144,1.9231495,3978.7495};
@@ -5987,11 +5793,7 @@ class Mission
 			type="A3L_Business_Icon";
 			id=649;
 		};
-<<<<<<< HEAD
-		class Item224
-=======
 		class Item220
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -6044,11 +5846,7 @@ class Mission
 			};
 			id=749;
 		};
-<<<<<<< HEAD
-		class Item225
-=======
 		class Item221
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6065,11 +5863,7 @@ class Mission
 			type="JD_ATM";
 			atlOffset=0.45799923;
 		};
-<<<<<<< HEAD
-		class Item226
-=======
 		class Item222
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6086,11 +5880,7 @@ class Mission
 			type="JD_ATM";
 			atlOffset=0.36709309;
 		};
-<<<<<<< HEAD
-		class Item227
-=======
 		class Item223
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -6164,11 +5954,7 @@ class Mission
 			id=772;
 			atlOffset=2.6702881e-005;
 		};
-<<<<<<< HEAD
-		class Item228
-=======
 		class Item224
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6187,11 +5973,7 @@ class Mission
 			type="Land_CashDesk_F";
 			atlOffset=0.22700024;
 		};
-<<<<<<< HEAD
-		class Item229
-=======
 		class Item225
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6209,11 +5991,7 @@ class Mission
 			type="DAR_FusionCivBlue";
 			atlOffset=0.00037193298;
 		};
-<<<<<<< HEAD
-		class Item230
-=======
 		class Item226
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -6287,11 +6065,7 @@ class Mission
 			id=789;
 			atlOffset=0.00037288666;
 		};
-<<<<<<< HEAD
-		class Item231
-=======
 		class Item227
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6308,11 +6082,7 @@ class Mission
 			type="Land_PCSet_01_screen_F";
 			atlOffset=0.97237206;
 		};
-<<<<<<< HEAD
-		class Item232
-=======
 		class Item228
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6329,11 +6099,7 @@ class Mission
 			type="Land_PCSet_01_keyboard_F";
 			atlOffset=0.97337151;
 		};
-<<<<<<< HEAD
-		class Item233
-=======
 		class Item229
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6350,11 +6116,7 @@ class Mission
 			type="Land_PCSet_01_mousepad_F";
 			atlOffset=0.97237206;
 		};
-<<<<<<< HEAD
-		class Item234
-=======
 		class Item230
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6371,11 +6133,7 @@ class Mission
 			type="Land_PCSet_01_mouse_F";
 			atlOffset=0.97937393;
 		};
-<<<<<<< HEAD
-		class Item235
-=======
 		class Item231
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6392,11 +6150,7 @@ class Mission
 			type="Land_PCSet_01_case_F";
 			atlOffset=0.32237339;
 		};
-<<<<<<< HEAD
-		class Item236
-=======
 		class Item232
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3526.4578,15.258627,3245.2869};
@@ -6407,11 +6161,7 @@ class Mission
 			angle=358.09689;
 			id=798;
 		};
-<<<<<<< HEAD
-		class Item237
-=======
 		class Item233
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3510.439,15.227152,3232.7432};
@@ -6420,11 +6170,7 @@ class Mission
 			angle=278.41086;
 			id=799;
 		};
-<<<<<<< HEAD
-		class Item238
-=======
 		class Item234
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3523.668,15.227,3230.7893};
@@ -6434,11 +6180,7 @@ class Mission
 			id=800;
 			atlOffset=0.0052022934;
 		};
-<<<<<<< HEAD
-		class Item239
-=======
 		class Item235
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6456,11 +6198,7 @@ class Mission
 			id=801;
 			type="Land_CashDesk_F";
 		};
-<<<<<<< HEAD
-		class Item240
-=======
 		class Item236
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -6534,11 +6272,7 @@ class Mission
 			id=802;
 			atlOffset=0.34384823;
 		};
-<<<<<<< HEAD
-		class Item241
-=======
 		class Item237
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6555,11 +6289,7 @@ class Mission
 			type="Land_PCSet_01_screen_F";
 			atlOffset=1.0076256;
 		};
-<<<<<<< HEAD
-		class Item242
-=======
 		class Item238
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6576,11 +6306,7 @@ class Mission
 			type="Land_PCSet_01_keyboard_F";
 			atlOffset=1.002327;
 		};
-<<<<<<< HEAD
-		class Item243
-=======
 		class Item239
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6597,11 +6323,7 @@ class Mission
 			type="Land_PCSet_01_mousepad_F";
 			atlOffset=1.0030003;
 		};
-<<<<<<< HEAD
-		class Item244
-=======
 		class Item240
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6618,11 +6340,7 @@ class Mission
 			type="Land_PCSet_01_mouse_F";
 			atlOffset=1.0066814;
 		};
-<<<<<<< HEAD
-		class Item245
-=======
 		class Item241
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6639,11 +6357,7 @@ class Mission
 			type="Land_PCSet_01_case_F";
 			atlOffset=0.4932251;
 		};
-<<<<<<< HEAD
-		class Item246
-=======
 		class Item242
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6661,11 +6375,7 @@ class Mission
 			id=816;
 			type="Land_CashDesk_F";
 		};
-<<<<<<< HEAD
-		class Item247
-=======
 		class Item243
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -6739,11 +6449,7 @@ class Mission
 			id=817;
 			atlOffset=5.9127808e-005;
 		};
-<<<<<<< HEAD
-		class Item248
-=======
 		class Item244
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6760,11 +6466,7 @@ class Mission
 			type="Land_PCSet_01_screen_F";
 			atlOffset=1.0076084;
 		};
-<<<<<<< HEAD
-		class Item249
-=======
 		class Item245
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6781,11 +6483,7 @@ class Mission
 			type="Land_PCSet_01_keyboard_F";
 			atlOffset=1.0023689;
 		};
-<<<<<<< HEAD
-		class Item250
-=======
 		class Item246
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6802,11 +6500,7 @@ class Mission
 			type="Land_PCSet_01_mousepad_F";
 			atlOffset=1.003047;
 		};
-<<<<<<< HEAD
-		class Item251
-=======
 		class Item247
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6823,11 +6517,7 @@ class Mission
 			id=822;
 			type="Land_PCSet_01_mouse_F";
 		};
-<<<<<<< HEAD
-		class Item252
-=======
 		class Item248
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6844,11 +6534,7 @@ class Mission
 			type="Land_PCSet_01_case_F";
 			atlOffset=0.49324989;
 		};
-<<<<<<< HEAD
-		class Item253
-=======
 		class Item249
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6865,11 +6551,7 @@ class Mission
 			type="JD_ATM";
 			atlOffset=0.42299938;
 		};
-<<<<<<< HEAD
-		class Item254
-=======
 		class Item250
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={5656.4419,15.160382,4305.3516};
@@ -6879,11 +6561,7 @@ class Mission
 			colorName="ColorRed";
 			id=183;
 		};
-<<<<<<< HEAD
-		class Item255
-=======
 		class Item251
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={6295.9937,3.3046935,2985.0088};
@@ -6892,11 +6570,7 @@ class Mission
 			type="A3L_Business_Icon";
 			id=827;
 		};
-<<<<<<< HEAD
-		class Item256
-=======
 		class Item252
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -6951,11 +6625,7 @@ class Mission
 			id=828;
 			atlOffset=0.5150001;
 		};
-<<<<<<< HEAD
-		class Item257
-=======
 		class Item253
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3541.0959,15.411015,3153.2888};
@@ -6964,11 +6634,7 @@ class Mission
 			type="A3L_Store_Red_Icon";
 			id=603;
 		};
-<<<<<<< HEAD
-		class Item258
-=======
 		class Item254
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -6986,11 +6652,7 @@ class Mission
 			type="Land_InvisibleBarrier_F";
 			atlOffset=4.6169033;
 		};
-<<<<<<< HEAD
-		class Item259
-=======
 		class Item255
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7008,11 +6670,7 @@ class Mission
 			type="Land_InvisibleBarrier_F";
 			atlOffset=10.803001;
 		};
-<<<<<<< HEAD
-		class Item260
-=======
 		class Item256
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={4219.7095,4.6199999,2174.7852};
@@ -7022,11 +6680,7 @@ class Mission
 			colorName="ColorRed";
 			id=836;
 		};
-<<<<<<< HEAD
-		class Item261
-=======
 		class Item257
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7079,11 +6733,7 @@ class Mission
 			};
 			id=837;
 		};
-<<<<<<< HEAD
-		class Item262
-=======
 		class Item258
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={4183.7075,10.575684,2426.0427};
@@ -7095,11 +6745,7 @@ class Mission
 			id=840;
 			atlOffset=5.8536839;
 		};
-<<<<<<< HEAD
-		class Item263
-=======
 		class Item259
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="West";
@@ -7153,11 +6799,7 @@ class Mission
 			id=843;
 			atlOffset=0.25800037;
 		};
-<<<<<<< HEAD
-		class Item264
-=======
 		class Item260
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7198,11 +6840,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-<<<<<<< HEAD
-		class Item265
-=======
 		class Item261
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7244,11 +6882,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-<<<<<<< HEAD
-		class Item266
-=======
 		class Item262
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3733.1841,15.572,3267.0049};
@@ -7260,11 +6894,7 @@ class Mission
 			id=854;
 			atlOffset=0.34484768;
 		};
-<<<<<<< HEAD
-		class Item267
-=======
 		class Item263
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7282,11 +6912,7 @@ class Mission
 			id=855;
 			type="Land_CashDesk_F";
 		};
-<<<<<<< HEAD
-		class Item268
-=======
 		class Item264
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7360,11 +6986,7 @@ class Mission
 			id=856;
 			atlOffset=0.34484863;
 		};
-<<<<<<< HEAD
-		class Item269
-=======
 		class Item265
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7381,11 +7003,7 @@ class Mission
 			type="Land_PCSet_01_screen_F";
 			atlOffset=1.0079403;
 		};
-<<<<<<< HEAD
-		class Item270
-=======
 		class Item266
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7402,11 +7020,7 @@ class Mission
 			type="Land_PCSet_01_keyboard_F";
 			atlOffset=1.0018234;
 		};
-<<<<<<< HEAD
-		class Item271
-=======
 		class Item267
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7423,11 +7037,7 @@ class Mission
 			type="Land_PCSet_01_mousepad_F";
 			atlOffset=1.0024891;
 		};
-<<<<<<< HEAD
-		class Item272
-=======
 		class Item268
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7444,11 +7054,7 @@ class Mission
 			id=861;
 			type="Land_PCSet_01_mouse_F";
 		};
-<<<<<<< HEAD
-		class Item273
-=======
 		class Item269
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7465,11 +7071,7 @@ class Mission
 			type="Land_PCSet_01_case_F";
 			atlOffset=0.49302387;
 		};
-<<<<<<< HEAD
-		class Item274
-=======
 		class Item270
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3558.7991,15.918,3290.231};
@@ -7481,11 +7083,7 @@ class Mission
 			id=867;
 			atlOffset=0.34386635;
 		};
-<<<<<<< HEAD
-		class Item275
-=======
 		class Item271
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7503,11 +7101,7 @@ class Mission
 			id=868;
 			type="Land_CashDesk_F";
 		};
-<<<<<<< HEAD
-		class Item276
-=======
 		class Item272
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7581,11 +7175,7 @@ class Mission
 			id=869;
 			atlOffset=0.34684849;
 		};
-<<<<<<< HEAD
-		class Item277
-=======
 		class Item273
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7602,11 +7192,7 @@ class Mission
 			type="Land_PCSet_01_screen_F";
 			atlOffset=1.0078564;
 		};
-<<<<<<< HEAD
-		class Item278
-=======
 		class Item274
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7623,11 +7209,7 @@ class Mission
 			type="Land_PCSet_01_keyboard_F";
 			atlOffset=1.0017052;
 		};
-<<<<<<< HEAD
-		class Item279
-=======
 		class Item275
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7644,11 +7226,7 @@ class Mission
 			type="Land_PCSet_01_mousepad_F";
 			atlOffset=1.0022621;
 		};
-<<<<<<< HEAD
-		class Item280
-=======
 		class Item276
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7665,11 +7243,7 @@ class Mission
 			id=874;
 			type="Land_PCSet_01_mouse_F";
 		};
-<<<<<<< HEAD
-		class Item281
-=======
 		class Item277
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7686,11 +7260,7 @@ class Mission
 			type="Land_PCSet_01_case_F";
 			atlOffset=0.49281502;
 		};
-<<<<<<< HEAD
-		class Item282
-=======
 		class Item278
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3445.4351,15.755,3308.9509};
@@ -7702,11 +7272,7 @@ class Mission
 			id=880;
 			atlOffset=0.34426975;
 		};
-<<<<<<< HEAD
-		class Item283
-=======
 		class Item279
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7724,11 +7290,7 @@ class Mission
 			id=881;
 			type="Land_CashDesk_F";
 		};
-<<<<<<< HEAD
-		class Item284
-=======
 		class Item280
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7802,11 +7364,7 @@ class Mission
 			id=882;
 			atlOffset=0.00026988983;
 		};
-<<<<<<< HEAD
-		class Item285
-=======
 		class Item281
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7823,11 +7381,7 @@ class Mission
 			type="Land_PCSet_01_screen_F";
 			atlOffset=1.0078411;
 		};
-<<<<<<< HEAD
-		class Item286
-=======
 		class Item282
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7844,11 +7398,7 @@ class Mission
 			type="Land_PCSet_01_keyboard_F";
 			atlOffset=1.0017509;
 		};
-<<<<<<< HEAD
-		class Item287
-=======
 		class Item283
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7865,11 +7415,7 @@ class Mission
 			type="Land_PCSet_01_mousepad_F";
 			atlOffset=1.0023184;
 		};
-<<<<<<< HEAD
-		class Item288
-=======
 		class Item284
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7886,11 +7432,7 @@ class Mission
 			id=887;
 			type="Land_PCSet_01_mouse_F";
 		};
-<<<<<<< HEAD
-		class Item289
-=======
 		class Item285
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7907,11 +7449,7 @@ class Mission
 			type="Land_PCSet_01_case_F";
 			atlOffset=0.49284935;
 		};
-<<<<<<< HEAD
-		class Item290
-=======
 		class Item286
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -7985,11 +7523,7 @@ class Mission
 			id=898;
 			atlOffset=3.170536;
 		};
-<<<<<<< HEAD
-		class Item291
-=======
 		class Item287
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -8061,11 +7595,7 @@ class Mission
 			};
 			id=911;
 		};
-<<<<<<< HEAD
-		class Item292
-=======
 		class Item288
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={165.57248,205.78806,8050.0034};
@@ -8074,11 +7604,7 @@ class Mission
 			id=915;
 			atlOffset=203.78806;
 		};
-<<<<<<< HEAD
-		class Item293
-=======
 		class Item289
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={85.560944,205.36554,8056.5044};
@@ -8087,11 +7613,7 @@ class Mission
 			id=916;
 			atlOffset=203.36554;
 		};
-<<<<<<< HEAD
-		class Item294
-=======
 		class Item290
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={139.69817,205.98904,8046.396};
@@ -8101,11 +7623,7 @@ class Mission
 			id=917;
 			atlOffset=203.98904;
 		};
-<<<<<<< HEAD
-		class Item295
-=======
 		class Item291
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8123,11 +7641,7 @@ class Mission
 			type="Land_light_2_1";
 			atlOffset=0.21299934;
 		};
-<<<<<<< HEAD
-		class Item296
-=======
 		class Item292
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8145,11 +7659,7 @@ class Mission
 			type="Land_light_2_1";
 			atlOffset=0.21800041;
 		};
-<<<<<<< HEAD
-		class Item297
-=======
 		class Item293
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8167,11 +7677,7 @@ class Mission
 			type="Land_light_1_2";
 			atlOffset=0.22599983;
 		};
-<<<<<<< HEAD
-		class Item298
-=======
 		class Item294
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8189,11 +7695,7 @@ class Mission
 			type="Land_light_1_2";
 			atlOffset=0.22248459;
 		};
-<<<<<<< HEAD
-		class Item299
-=======
 		class Item295
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8211,11 +7713,7 @@ class Mission
 			type="Land_light_2_2";
 			atlOffset=0.23398209;
 		};
-<<<<<<< HEAD
-		class Item300
-=======
 		class Item296
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8233,11 +7731,7 @@ class Mission
 			type="Land_light_2_2";
 			atlOffset=0.23494339;
 		};
-<<<<<<< HEAD
-		class Item301
-=======
 		class Item297
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8255,11 +7749,7 @@ class Mission
 			type="Land_light_1_1";
 			atlOffset=0.24198151;
 		};
-<<<<<<< HEAD
-		class Item302
-=======
 		class Item298
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8277,11 +7767,7 @@ class Mission
 			type="Land_light_1_1";
 			atlOffset=0.20965385;
 		};
-<<<<<<< HEAD
-		class Item303
-=======
 		class Item299
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8299,11 +7785,7 @@ class Mission
 			type="Land_light_2_2";
 			atlOffset=0.21199989;
 		};
-<<<<<<< HEAD
-		class Item304
-=======
 		class Item300
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8320,11 +7802,7 @@ class Mission
 			id=961;
 			type="Land_light_1_2";
 		};
-<<<<<<< HEAD
-		class Item305
-=======
 		class Item301
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8342,11 +7820,7 @@ class Mission
 			type="Land_light_1_1";
 			atlOffset=0.21000099;
 		};
-<<<<<<< HEAD
-		class Item306
-=======
 		class Item302
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8363,11 +7837,7 @@ class Mission
 			id=964;
 			type="Land_light_1_1";
 		};
-<<<<<<< HEAD
-		class Item307
-=======
 		class Item303
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3232.947,15,3979.6931};
@@ -8378,11 +7848,7 @@ class Mission
 			angle=4.7349987;
 			id=970;
 		};
-<<<<<<< HEAD
-		class Item308
-=======
 		class Item304
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8400,11 +7866,7 @@ class Mission
 			type="Land_CashDesk_F";
 			atlOffset=0.35064888;
 		};
-<<<<<<< HEAD
-		class Item309
-=======
 		class Item305
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -8478,11 +7940,7 @@ class Mission
 			id=972;
 			atlOffset=0.35400009;
 		};
-<<<<<<< HEAD
-		class Item310
-=======
 		class Item306
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8499,11 +7957,7 @@ class Mission
 			type="Land_PCSet_01_screen_F";
 			atlOffset=0.98783684;
 		};
-<<<<<<< HEAD
-		class Item311
-=======
 		class Item307
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8520,11 +7974,7 @@ class Mission
 			type="Land_PCSet_01_keyboard_F";
 			atlOffset=0.98633194;
 		};
-<<<<<<< HEAD
-		class Item312
-=======
 		class Item308
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8541,11 +7991,7 @@ class Mission
 			type="Land_PCSet_01_mousepad_F";
 			atlOffset=0.99110413;
 		};
-<<<<<<< HEAD
-		class Item313
-=======
 		class Item309
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8562,11 +8008,7 @@ class Mission
 			type="Land_PCSet_01_mouse_F";
 			atlOffset=0.99668026;
 		};
-<<<<<<< HEAD
-		class Item314
-=======
 		class Item310
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8583,11 +8025,7 @@ class Mission
 			type="Land_PCSet_01_case_F";
 			atlOffset=0.47097492;
 		};
-<<<<<<< HEAD
-		class Item315
-=======
 		class Item311
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8605,11 +8043,7 @@ class Mission
 			type="DAR_ChargerCiv";
 			atlOffset=0.00037384033;
 		};
-<<<<<<< HEAD
-		class Item316
-=======
 		class Item312
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -8682,11 +8116,7 @@ class Mission
 			id=996;
 			atlOffset=0.086000443;
 		};
-<<<<<<< HEAD
-		class Item317
-=======
 		class Item313
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={4149.0854,15.086473,2889.3579};
@@ -8696,11 +8126,7 @@ class Mission
 			colorName="ColorGreen";
 			id=998;
 		};
-<<<<<<< HEAD
-		class Item318
-=======
 		class Item314
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={4532.1538,15.086,4099.8481};
@@ -8711,11 +8137,7 @@ class Mission
 			id=1001;
 			atlOffset=0.086000443;
 		};
-<<<<<<< HEAD
-		class Item319
-=======
 		class Item315
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -8788,11 +8210,7 @@ class Mission
 			id=1006;
 			atlOffset=0.086000443;
 		};
-<<<<<<< HEAD
-		class Item320
-=======
 		class Item316
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8834,11 +8252,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-<<<<<<< HEAD
-		class Item321
-=======
 		class Item317
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8855,11 +8269,7 @@ class Mission
 			type="JD_ATM";
 			atlOffset=0.39010715;
 		};
-<<<<<<< HEAD
-		class Item322
-=======
 		class Item318
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Group";
 			side="Civilian";
@@ -9007,11 +8417,7 @@ class Mission
 			id=1026;
 			atlOffset=3.3387585;
 		};
-<<<<<<< HEAD
-		class Item323
-=======
 		class Item320
->>>>>>> parent of 39d9307... Update mission.sqm
 		{
 			dataType="Marker";
 			position[]={3809.6851,15.31,3120.2119};
@@ -9020,26 +8426,6 @@ class Mission
 			angle=1.3449996;
 			id=1032;
 			atlOffset=0.0001077652;
-		};
-		class Item324
-		{
-			dataType="Trigger";
-			position[]={3603.885,17.929001,3070.1741};
-			angle=1.7160077;
-			class Attributes
-			{
-				condition="call{this}";
-				onDeactivation="call{[] call Foski_dyeCash;}";
-				sizeA=6.5999999;
-				sizeB=10.5;
-				sizeC=3;
-				repeatable=1;
-				activationBy="ANYPLAYER";
-				isRectangle=1;
-			};
-			id=1013;
-			type="EmptyDetector";
-			atlOffset=2.4902191;
 		};
 	};
 	class Connections
