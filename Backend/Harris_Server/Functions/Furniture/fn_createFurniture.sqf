@@ -20,7 +20,7 @@ Harris_createFurniture = {
 		case "Land_oil_pump":
 		{
 			_furniture attachTo [player, [0,3,2.12]];
-			_furniture setDir ((_furniture getRelDir player) + 90)
+			_furniture setDir ((_furniture getRelDir player) + 90);
 		};
 		case "JD_Pot":
 		{

@@ -23,6 +23,10 @@ Harris_removeFurniture = {
 				deleteVehicle (_object getVariable 'growingPlant');
 			};
 		};
+		case "Land_oil_pump":
+		{
+			_item = "Harris_oilPump";
+		};
 	};
 
 	deleteVehicle _object;
