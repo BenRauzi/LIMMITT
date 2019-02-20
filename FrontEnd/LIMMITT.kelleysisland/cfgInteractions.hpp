@@ -288,7 +288,7 @@ class cfgInteractions
 
 	class openRefinery2
 	{
-		condition = "[(player distance (getMarkerPos 'Oil_Rig') < 50]";
+		condition = "[player distance (getMarkerPos 'Oil_Rig') < 50]";
 		action = "[2,2] call Harris_openCraftingMenu";
 		icon = "014_wrench.paa";
 		text = "Refinery";
@@ -465,4 +465,3 @@ class cfgInteractions
 		text = "Take Cash";
 	};
 };
-
