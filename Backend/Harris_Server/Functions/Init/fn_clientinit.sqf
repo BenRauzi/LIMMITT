@@ -217,8 +217,8 @@ LIMMITT_clientInit = {
 		missionNamespace setVariable ["firstLogin", nil, true];
 		missionNamespace setVariable ["cellNumbers", [], true];
 		missionNamespace setVariable ["uberDrivers", [], true];
-		missionNamespace setVariable ["Foski_bankObj",nearestObject [player, "Land_CommonwealthBank"], true];
-		missionNamespace setVariable ["Foski_banksCashObj",nearestObject [player, "A3L_MoneyPile"], true];
+		missionNamespace setVariable ["Foski_bankObj",nearestObjects [player, ["Land_CommonwealthBank"], 9999] select 0, true];
+		missionNamespace setVariable ["Foski_banksCashObj",nearestObjects [player, ["A3L_MoneyPile"], 9999] select 0, true];
 
 		Foski_bankObj animate ["Vault_Door",0]; 
 		Foski_bankObj setVariable ['vaultUnlocked', false, true];
