@@ -255,6 +255,8 @@ LIMMITT_clientInit = {
 		["Harris_ironIngot", 2500],
 		["Harris_goldIngot", 3500],
 		["Harris_diamond", 4500],
+		["Harris_dirtyCash",75000],
+		["Harris_dyedDirtyCash",25000],
 		["Harris_oilBarrel", 3000],
 		["Harris_petroleumBarrel", 5500],
 		["Harris_weedBag", 2000]
@@ -266,6 +268,12 @@ LIMMITT_clientInit = {
 			"Weed_Dealer",
 			"Weed Dealer",
 			["Bag of Weed", "Harris_weedBag"]
+		],
+		[
+			"DirtyCash_Trader",
+			"Dirty Cash Trader",
+			["Dirty Cash", "Harris_dirtyCash"],
+			["Dyed Dirty Cash", "Harris_dyedDirtyCash"]
 		],
 		[
 			"Oil_Trader",
