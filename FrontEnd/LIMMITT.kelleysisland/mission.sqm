@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=137;
 	class ItemIDProvider
 	{
-		nextID=1062;
+		nextID=1065;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5518.8975,95.333786,768.48102};
-		dir[]={0.070504382,-0.59974211,0.79718173};
-		up[]={0.052840833,0.80014968,0.59746855};
-		aside[]={0.99619859,7.195631e-007,-0.088104948};
+		pos[]={4235.3569,29.782375,2245.4226};
+		dir[]={0.50067848,-0.34703413,0.79302996};
+		up[]={0.18526624,0.93785113,0.29344535};
+		aside[]={0.84557903,-3.6205165e-008,-0.53385532};
 	};
 };
 binarizationWanted=0;
@@ -194,7 +194,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=328;
+		items=330;
 		class Item0
 		{
 			dataType="Marker";
@@ -595,7 +595,7 @@ class Mission
 			position[]={3807.469,15,3127.915};
 			name="dcfd_air";
 			type="Empty";
-			angle=107.69683;
+			angle=107.69682;
 			id=138;
 		};
 		class Item40
@@ -8617,6 +8617,71 @@ class Mission
 			colorName="ColorRed";
 			id=1060;
 			atlOffset=38.680382;
+		};
+		class Item328
+		{
+			dataType="Marker";
+			position[]={4241.5737,4.6219397,2249.666};
+			name="marker_335";
+			text="Oil  Trader";
+			type="A3L_Business_Icon";
+			colorName="ColorRed";
+			id=1062;
+		};
+		class Item329
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4240.7412,24.797352,2249.991};
+						angles[]={0,5.3910427,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="call{ " \n "this enableSimulation false;    " \n "this allowDamage false; this setVariable [""Harris_Shop"",""Oil_Trader"",true];}";
+					};
+					id=1064;
+					type="C_man_polo_5_F_afro";
+					atlOffset=0.030057907;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1063;
+			atlOffset=0.030057907;
 		};
 	};
 	class Connections
