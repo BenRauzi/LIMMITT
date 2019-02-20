@@ -4,7 +4,7 @@
 */
 
 Harris_openCraftingMenu = {
-	params["_type"];
+	params["_type", "_ct"];
 
 	if (isNil "_type") then {
 		createDialog "Harris_Crafting";
@@ -12,8 +12,13 @@ Harris_openCraftingMenu = {
 		craftType = 0;
 	} else {
 		createDialog "Harris_Refine";
-		craftTypes = Harris_smeltTypes;
-		craftType = 1;
+		if !(isNil "_ct") then {
+			craftTypes = ["Refine Oil"];
+			craftType = 1;
+		} else {
+			craftTypes = Harris_smeltTypes;
+			craftType = 1;
+		}
 	};
 
 	_bluePrints = player getVariable ["bluePrints",[]];

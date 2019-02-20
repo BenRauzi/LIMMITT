@@ -286,6 +286,13 @@ class cfgInteractions
 		text = "Refinery";
 	};
 
+	class openRefinery2
+	{
+		condition = "[(player distance (getMarkerPos 'Oil_Rig')]";
+		action = "[2,2] call Harris_openCraftingMenu";
+		icon = "014_wrench.paa";
+		text = "Refinery";
+	};
 	class setName
 	{
 		condition = "[isPlayer Harris_currentCursorObject, player distance Harris_currentCursorObject < 5]";
