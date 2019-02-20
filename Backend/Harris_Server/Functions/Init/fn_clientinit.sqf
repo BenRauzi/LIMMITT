@@ -40,7 +40,7 @@ LIMMITT_clientInit = {
 
 	Harris_oreMined = 0;
 
-	Harris_action = false
+	Harris_action = false;
 	Harris_oreTypes =
 	[
 		["JD_OreCoal","Harris_coalOre"],
