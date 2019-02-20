@@ -271,7 +271,7 @@ LIMMITT_clientInit = {
 		],
 		[
 			"DirtyCash_Trader",
-			"Dirty Cash Trader",
+			"Dirty Cash Cleaner",
 			["Dirty Cash", "Harris_dirtyCash"],
 			["Dyed Dirty Cash", "Harris_dyedDirtyCash"]
 		],
