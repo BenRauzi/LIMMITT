@@ -428,7 +428,7 @@ class CfgWeapons
 		class ItemInfo
 		{
 			allowedSlots[] = {701,801,901};
-			mass = 4;
+			mass = 100;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
@@ -444,7 +444,7 @@ class CfgWeapons
 		class ItemInfo
 		{
 			allowedSlots[] = {701,801,901};
-			mass = 4;
+			mass = 100;
 			scope = 0;
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
@@ -452,6 +452,22 @@ class CfgWeapons
 		model = "\Harris_Client\Models\model_petroleumBarrel.p3d";
 		picture = "\Harris_Client\Data\icon_petroleumBarrel.paa";
 		descriptionShort = "42 US gallons, which is about 159 litres or 35 imperial gallons of pure petroleum.";
+	};
+	class Harris_oilPump: ToolKit
+	{
+		displayName = "Oil Pump Kit";
+		count = 10;
+		class ItemInfo
+		{
+			allowedSlots[] = {901};
+			mass = 300;
+			scope = 0;
+			type = 620;
+			uniformModel = "\A3\Weapons_F\Items\Toolkit";
+		};
+		model = "\Harris_Client\Model\model_aBox.p3d";
+		picture = "\Harris_Client\Data\icon_oilPump.paa";
+		descriptionShort = "Used to construct an oil pump used for pumping oil from the ground";
 	};
 
 	// Dirty Cash

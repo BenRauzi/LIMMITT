@@ -21,6 +21,10 @@ Harris_useItemPhysical = {
 		{
 			["JD_Workbench", "Harris_WorkBench"] spawn Harris_createFurniture;
 		};
+		case "Oil Pump Kit":
+		{
+			["Land_oil_pump", "Harris_oilPump"] spawn Harris_createFurniture;
+		};
 	};
 };
 
