@@ -15,7 +15,7 @@ HRP_fnc_robBank = {
 	if !("Harris_c4" in (items player)) exitWith { ["Error", "You need a blasting charge!", "Failure"] spawn Harris_Notifications; };
 	if (_bank getVariable "recentlyRobbed") exitWith { ["Error", "A bank robbery has occured recently", "Failure"] spawn Harris_Notifications; };
 		
-	_bank setVariable ["inRobbery", true, true];
+	_bank setVariable ["inRobbery", true];
 	_pos = getPosAtl player;
 	
 	for "_i" from 0 to 1 do {
@@ -39,6 +39,6 @@ HRP_fnc_robBank = {
 	"R_60mm_HE" createvehicle _pos; 
 
 	["Success", "You have breached the Vault", "Success"] spawn Harris_Notifications;
-	_bank setVariable ["inRobbery", false, true];
-	_bank setVariable ["vaultUnlocked", true, true];
+	_bank setVariable ["inRobbery", false];
+	_bank setVariable ["vaultUnlocked", true];
 };

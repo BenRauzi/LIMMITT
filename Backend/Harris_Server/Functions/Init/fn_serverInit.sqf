@@ -12,7 +12,7 @@ LIMMITT_ServerInit ={
 	[] spawn { // Stop bank vault randomly opening
 		bank = (nearestObjects [[3606.93,3069.6,0.00143814],["Land_CommonwealthBank"],100]) select 0;
 		while {alive bank} do {
-			waitUntil {(bank animationPhase "Vault_Door" > 0 && !(bank getVariable ['vaultUnlocked', false]))};
+			waitUntil {bank animationPhase "Vault_Door" > 0 && !(bank getVariable ['vaultUnlocked', false])};
 			bank animate ["Vault_Door",0]; 
 			bank setVariable ['vaultUnlocked', false, true];
 			missionNamespace setVariable ["inRobbery", false, true];	
