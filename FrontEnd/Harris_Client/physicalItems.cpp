@@ -465,9 +465,9 @@ class CfgWeapons
 			type = 620;
 			uniformModel = "\A3\Weapons_F\Items\Toolkit";
 		};
-		model = "\Harris_Client\Model\model_aBox.p3d";
+		model = "\Harris_Client\Models\model_aBox.p3d";
 		picture = "\Harris_Client\Data\icon_oilPump.paa";
-		descriptionShort = "Used to construct an oil pump used for pumping oil from the ground";
+		descriptionShort = "Used to construct an oil pump used for pumping oil from the ground.";
 	};
 
 	// Dirty Cash

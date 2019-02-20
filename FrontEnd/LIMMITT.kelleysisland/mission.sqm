@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3602.5325,19.598249,3067.0398};
-		dir[]={-0.50375009,-0.24019305,0.82992351};
-		up[]={-0.12467594,0.97068506,0.20540474};
-		aside[]={0.85495073,-1.8961146e-008,0.51893246};
+		pos[]={3799.0042,464.13663,3069.7366};
+		dir[]={0.37780869,-0.56803197,-0.73132801};
+		up[]={0.26072681,0.82296634,-0.5046947};
+		aside[]={-0.88855833,2.5914487e-006,-0.45902774};
 	};
 };
 binarizationWanted=0;
@@ -5539,7 +5539,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3601.1851,16.172663,3064.3105};
-				angles[]={-0,3.303987,-0};
+				angles[]={0,3.303987,0};
 			};
 			side="Empty";
 			flags=4;
@@ -8322,11 +8322,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={3603.885,17.929001,3070.1741};
-			angle=1.7160077;
+			angle=1.7160076;
 			class Attributes
 			{
 				condition="call{this}";
-				onActivation="call{[] call Foski_dyeCash;}";
+				onDeactivation="call{[] call Foski_dyeCash;}";
 				sizeA=6.5999999;
 				sizeB=10.5;
 				sizeC=3;
@@ -8357,7 +8357,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{comment ""Disable Damage & Simulation"";     " \n "this enableSimulation false;      " \n "this allowDamage false;     " \n "     " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";     " \n "comment ""Remove existing items"";     " \n "removeAllWeapons this;     " \n "removeAllItems this;     " \n "removeAllAssignedItems this;     " \n "removeUniform this;     " \n "removeVest this;     " \n "removeBackpack this;     " \n "removeHeadgear this;     " \n "removeGoggles this;     " \n "this forceAddUniform ""JD_Plain"";    " \n "this addVest ""JD_Belt3"";                                             " \n "this setFace ""GreekHead_A3_03"";    " \n "this setSpeaker ""male01gre"";    " \n "     " \n "comment ""Add Actions (Shop)"";     " \n "this addAction[""Patrol Vehicles"",life_fnc_vehicleShopMenu,[""dcso_patrol"",west,[""doc_car1"",""doc_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4'];  " \n "this addAction[""DTU Vehicles"",life_fnc_vehicleShopMenu,[""dcso_dtu"",west,[""doc_car1"",""doc_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && license_dcso_DTU && player distance _target < 4'];  " \n "this addAction[""SERT Vehicles"",life_fnc_vehicleShopMenu,[""dcso_sert"",west,[""doc_car1"",""doc_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && license_dcso_SERT && player distance _target < 4'];  " \n "this addAction[""Command Vehicles"",life_fnc_vehicleShopMenu,[""dcso_command"",west,[""doc_car1"",""doc_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && __GETC__(life_coplevel) >= 8 && player distance _target < 4'];  " \n "this addAction[""Vehicle Garage"", {[[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;createDialog ""Life_impound_menu"";disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];life_garage_sp = ""doc_car1"";life_garage_type = ""Car"";},"""",0,false,false,"""",'playerSide == west && player distance _target < 4'];     " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == west && player distance _target < 4'];}";
+						init="call{comment ""Disable Damage & Simulation"";      " \n "this enableSimulation false;       " \n "this allowDamage false;      " \n "      " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";      " \n "comment ""Remove existing items"";      " \n "removeAllWeapons this;      " \n "removeAllItems this;      " \n "removeAllAssignedItems this;      " \n "removeUniform this;      " \n "removeVest this;      " \n "removeBackpack this;      " \n "removeHeadgear this;      " \n "removeGoggles this;      " \n "this forceAddUniform ""JD_Plain"";     " \n "this addVest ""JD_Belt3"";                                              " \n "this setFace ""GreekHead_A3_03"";     " \n "this setSpeaker ""male01gre"";     " \n "      " \n "comment ""Add Actions (Shop)"";      " \n "this addAction[""Patrol Vehicles"",life_fnc_vehicleShopMenu,[""dcso_patrol"",west,[""dcso_doc_car1"",""dcso_doc_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4'];   " \n "this addAction[""DTU Vehicles"",life_fnc_vehicleShopMenu,[""dcso_dtu"",west,[""dcso_doc_car1"",""dcso_doc_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && license_dcso_DTU && player distance _target < 4'];   " \n "this addAction[""SERT Vehicles"",life_fnc_vehicleShopMenu,[""dcso_sert"",west,[""dcso_doc_car1"",""dcso_doc_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && license_dcso_SERT && player distance _target < 4'];   " \n "this addAction[""Command Vehicles"",life_fnc_vehicleShopMenu,[""dcso_command"",west,[""dcso_doc_car1"",""dcso_doc_car2""],""cop"",""Patrol Vehicles""],0,FALSE,FALSE,"""",'vehicle player == player && __GETC__(life_coplevel) >= 8 && player distance _target < 4'];   " \n "this addAction[""Vehicle Garage"", {[[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn bis_fnc_mp;createDialog ""Life_impound_menu"";disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];life_garage_sp = ""dcso_doc_car1"";life_garage_type = ""Car"";},"""",0,false,false,"""",'playerSide == west && player distance _target < 4'];      " \n "this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && playerSide == west && player distance _target < 4'];}";
 					};
 					id=1039;
 					type="C_man_1";
@@ -8416,7 +8416,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2775.7915,16.382713,4485.1147};
-				angles[]={0,3.5983522,-0};
+				angles[]={0,3.5983522,0};
 			};
 			side="Empty";
 			flags=4;
@@ -8427,7 +8427,7 @@ class Mission
 			};
 			id=1041;
 			type="JD_Lockers2";
-			atlOffset=0.24766541;
+			atlOffset=0.24766636;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8563,7 +8563,7 @@ class Mission
 			};
 			id=1045;
 			type="JD_ATM";
-			atlOffset=0.38711548;
+			atlOffset=0.38711452;
 		};
 		class Item324
 		{
