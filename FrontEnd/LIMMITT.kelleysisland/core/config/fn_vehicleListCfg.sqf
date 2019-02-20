@@ -264,7 +264,7 @@ switch (_shop) do {
 			["Fox_ArrowXTLadder",3000],
 			["Fox_Firetruck",3000],
 			["JD_F350_Red",3000],
-			["M_Tahoe_EMS",3000],
+			["M_Tahoe_EMS",3000]
 		];
 	};
 	case "dcfd_air": {
