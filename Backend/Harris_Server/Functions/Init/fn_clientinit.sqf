@@ -7,7 +7,7 @@ LIMMITT_clientInit = {
 	
 	// Foski Bank Functions
 	Foski_dirtyCash = "Harris_dirtyCash"; // Classname of the dirty cash physical inventory item
-	Foski_dyedCash = "Harris_dyedDirtyCash"; // Classname of the dyed dirty cash physical inventory item
+	Foski_dyedDirtyCash = "Harris_dyedDirtyCash"; // Classname of the dyed dirty cash physical inventory item
 
 	// Foski's Prison Functions
 	Foski_prisonFences = ["Land_Fence1","Land_Fence1_d"]; // Classnames of fences that can be cut | Normal -> Broken

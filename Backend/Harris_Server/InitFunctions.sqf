@@ -209,7 +209,8 @@ BankDir = "\Harris_Server\Functions\Bank\";
 Bank_Functions = 
 [
   ["fn_takeCash", "Foski_takeCash"],
-  ["fn_dyeCash", "Foski_dyeCash"]
+  ["fn_dyeCash", "Foski_dyeCash"],
+  ["fn_dyeProbability", "Foski_dyeProbability"]
 ];
 
 
