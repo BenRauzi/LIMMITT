@@ -135,7 +135,9 @@ LIMMITT_clientInit = {
 		["Ghilie Suit (Jungle)","U_O_T_FullGhillie_tna_F", "", [["Harris_burlap",4, "Burlap"],["Harris_rope",6, "Rope"]], "Items", 0.5, false],
 		["Ghilie Suit (Arid)","U_I_FullGhillie_ard", "", [["Harris_burlap",4, "Burlap"],["Harris_rope",6, "Rope"]], "Items", 0.5, false],
 		["Ghilie Suit (Lush)","U_I_FullGhillie_lsh", "", [["Harris_burlap",4, "Burlap"],["Harris_rope",6, "Rope"]], "Items", 0.5, false],
-		["Ghilie Suit (Semi-Arid)","U_I_FullGhillie_sard", "", [["Harris_burlap",4, "Burlap"],["Harris_rope",6, "Rope"]], "Items", 0.5, false]
+		["Ghilie Suit (Semi-Arid)","U_I_FullGhillie_sard", "", [["Harris_burlap",4, "Burlap"],["Harris_rope",6, "Rope"]], "Items", 0.5, false],
+
+		["Oil Pump","Harris_oilPump", "", [["Harris_coal",5, "Refined Coal"],["Harris_steelIngot",15, "Steel"]], "Machinery", 1, false]
 
 		//["Lockpicks","RR_lockpicks", "", [["RR_IronIngot",4, "Iron Ingot"]], "Items", 0.5, false]
 
@@ -148,10 +150,11 @@ LIMMITT_clientInit = {
 		["Steel Ingot","Harris_steelIngot", "", [["Harris_ironOre",2, "Iron Ore"],["Harris_coalOre",4, "Coal Ore"]], "Refine Minerals", 0.2, true],
 		["Gold Bar","Harris_goldIngot", "", [["Harris_goldOre",2, "Gold Ore"]], "Refine Minerals", 0.3, true],
 		["Cut Diamond","Harris_diamond", "", [["Harris_diamondOre",2, "Uncut Diamonds"]], "Refine Minerals", 0.3, true],
+		["Petroleum Barrel","Harris_petroleumBarrel", "", [["Harris_oilBarrel",2, "Oil Barrel"]], "Refine Oil", 0.3, true],
 		["Timber","Harris_woodLog", "", [["Harris_woodLog",2, "Wood Logs"]], "Woodworking", 0.3, true]
 	]; // Add Timber from Logs and Diamonds
 	Harris_smeltTypes = ["Refine Minerals", "Woodworking"];
-	Harris_craftTypes = ["Rifles", "Pistols", "Items"]; //??
+	Harris_craftTypes = ["Rifles", "Pistols", "Items", "Machinery"]; //??
 
 	Harris_bluePrints = [
 		["bp_uzi", "Uzi"], 
