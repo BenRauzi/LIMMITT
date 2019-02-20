@@ -205,6 +205,13 @@ Phone_Functions =
   ["fn_viewMessage", "Harris_viewMessage"]
 ];
 
+BankDir = "\Harris_Server\Functions\Bank\";
+Bank_Functions = 
+[
+  ["fn_takeCash", "Foski_takeCash"],
+  ["fn_dyeCash", "Foski_dyeCash"]
+];
+
 
 functionArrays = 
 "[
@@ -222,7 +229,8 @@ functionArrays =
   ['Crime_Functions','CrimeDir'],
   ['Weed_Functions','WeedDir'],
   ['Citations_Functions','CitationsDir'],
-  ['Phone_Functions','PhoneDir']
+  ['Phone_Functions','PhoneDir'],
+  ['Bank_Functions','BankDir']
 ]";
 
 functionArrays2 = call compile functionArrays;
