@@ -255,6 +255,8 @@ LIMMITT_clientInit = {
 		["Harris_ironIngot", 2500],
 		["Harris_goldIngot", 3500],
 		["Harris_diamond", 4500],
+		["Harris_oilBarrel", 3000],
+		["Harris_petroleumBarrel", 5500],
 		["Harris_weedBag", 2000]
 	];
 
@@ -264,6 +266,12 @@ LIMMITT_clientInit = {
 			"Weed_Dealer",
 			"Weed Dealer",
 			["Bag of Weed", "Harris_weedBag"]
+		],
+		[
+			"Oil_Trader",
+			"Oil Trader",
+			["Oil Barrel", "Harris_oilBarrel"],
+			["Petroleum Barrel", "Harris_petroleumBarrel"]
 		],
 		[
 			"Mineral_Trader",
@@ -349,5 +357,8 @@ LIMMITT_clientInit = {
 	];
 
 	setViewDistance 4000;
+
+	Harris_oilFields = ["Oil_Field_1", "Oil_Field_2"];
+
 };
 

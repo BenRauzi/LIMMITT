@@ -59,7 +59,9 @@ Crafting_Functions =
   ["fn_onCraftSelectionLbChanged", "Harris_onCraftSelectionLbChanged"],
   ["fn_openCraftingMenu", "Harris_openCraftingMenu"],
   ["fn_openCraftTimer", "Harris_openCraftTimer"],
-  ["fn_useItemPhysical", "Harris_useItemPhysical"]
+  ["fn_useItemPhysical", "Harris_useItemPhysical"],
+  ["fn_drillOil", "Harris_drillOil"],
+  ["fn_oilSpawned", "Harris_oilSpawned"]
 ];
 
 FurnitureDir = "\Harris_Server\Functions\Furniture\";

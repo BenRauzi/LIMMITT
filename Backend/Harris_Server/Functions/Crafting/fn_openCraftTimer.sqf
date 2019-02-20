@@ -50,7 +50,7 @@ Harris_openCraftTimer = {
 		};
 		if (_progressPosition >= 1) exitWith {
 			Harris_craftSchedule deleteAt 0;
-			["Success", "Item Crafted", true] spawn Harris_Notifications;
+			["Success", "Item Crafted", "Success"] spawn Harris_Notifications;
 			if (player canAdd _item) then {
 				player addItem _item;
 			} else {

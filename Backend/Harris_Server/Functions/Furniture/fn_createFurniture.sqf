@@ -9,12 +9,6 @@ Harris_createFurniture = {
 	_pos = position player;
 	_furniture = _type createVehicle _pos;
 
-	if (_type == "JD_Pot") then {
-		_furniture attachTo [player, [0,1,0.2]];
-	} else {
-		
-	};
-
 	switch(_type) do
 	{
 		case "Land_oil_pump":
@@ -26,9 +20,10 @@ Harris_createFurniture = {
 		{
 			_furniture attachTo [player, [0,1,0.2]];
 		};
-		default:
+		default
 		{
-			_furniture attachTo [player, [0,7,2.12]];
+			_furniture attachTo [player, [0,1,0.4]];
+			_furniture setDir ((_furniture getRelDir player) + 90);
 		};
 	};
 
