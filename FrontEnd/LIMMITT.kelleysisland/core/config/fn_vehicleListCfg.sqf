@@ -254,7 +254,7 @@ switch (_shop) do {
 	case "dcfd_patrol": {
 		_return = [
 			["M_Ambulance",2000],
-			["M_Tahoe_EMS",3000],
+			["M_Tahoe_EMS",3000]
 		];
 	};
 	case "dcfd_fd": {
