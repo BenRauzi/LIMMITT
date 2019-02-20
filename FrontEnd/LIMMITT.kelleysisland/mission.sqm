@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=137;
+	toggles=9;
 	class ItemIDProvider
 	{
 		nextID=1065;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4235.3569,29.782375,2245.4226};
-		dir[]={0.50067848,-0.34703413,0.79302996};
-		up[]={0.18526624,0.93785113,0.29344535};
-		aside[]={0.84557903,-3.6205165e-008,-0.53385532};
+		pos[]={1668.6097,20.48852,1089.2216};
+		dir[]={-0.12383942,-0.44727629,-0.88578713};
+		up[]={-0.061930649,0.89439076,-0.44297448};
+		aside[]={-0.99037182,-1.5017577e-008,0.13846096};
 	};
 };
 binarizationWanted=0;
@@ -571,14 +571,14 @@ class Mission
 		class Item37
 		{
 			dataType="Marker";
-			position[]={3508.55,18.584209,4216.395};
+			position[]={1670.0061,21.832575,1082.4976};
 			name="atm_proc_1";
 			text="Dirty Cash Cleaner";
 			type="A3L_Business_Icon";
 			colorName="ColorRed";
 			angle=359.578;
 			id=124;
-			atlOffset=2.6889057;
+			atlOffset=2.6828709;
 		};
 		class Item38
 		{
@@ -927,19 +927,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3508.5718,16.485806,4219.9639};
-				angles[]={0,0.68251115,0};
+				position[]={1668.339,19.691448,1086.8918};
+				angles[]={6.2780066,0.68251097,0.010294561};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction [""Trade Dirty Money"",life_fnc_dirtyMoney];";
+				init="call{ " \n "this enableSimulation false;    " \n "this allowDamage false; this setVariable [""Harris_Shop"",""DirtyCash_Trader"",true];}";
 				name="dirtyMoneySign";
 			};
 			id=271;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.91047955;
+			atlOffset=0.91153145;
 		};
 		class Item65
 		{
