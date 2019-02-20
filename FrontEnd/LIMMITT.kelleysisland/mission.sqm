@@ -8,18 +8,18 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1059;
+		nextID=1062;
 	};
 	class MarkerIDProvider
 	{
-		nextID=2;
+		nextID=4;
 	};
 	class Camera
 	{
-		pos[]={3776.2158,24.963284,3127.3435};
-		dir[]={0.84045517,-0.5220378,-0.14613423};
-		up[]={0.51436424,0.85287291,-0.089435525};
-		aside[]={-0.17133349,3.2312455e-006,-0.98533744};
+		pos[]={5518.8975,95.333786,768.48102};
+		dir[]={0.070504382,-0.59974211,0.79718173};
+		up[]={0.052840833,0.80014968,0.59746855};
+		aside[]={0.99619859,7.195631e-007,-0.088104948};
 	};
 };
 binarizationWanted=0;
@@ -43,13 +43,14 @@ addons[]=
 	"A3_Props_F_Orange_Items_Electronics",
 	"A3_Structures_F_EPA_Walls",
 	"JD_Client_Clothing",
-	"DAR_Charger_F"
+	"DAR_Charger_F",
+	"usec_rig_a"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -160,6 +161,11 @@ class AddonsMetaData
 			className="DAR_Charger_F";
 			name="DAR_Charger_F";
 		};
+		class Item18
+		{
+			className="usec_rig_a";
+			name="usec_rig_a";
+		};
 	};
 };
 randomSeed=8413355;
@@ -188,7 +194,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=326;
+		items=328;
 		class Item0
 		{
 			dataType="Marker";
@@ -589,7 +595,7 @@ class Mission
 			position[]={3807.469,15,3127.915};
 			name="dcfd_air";
 			type="Empty";
-			angle=107.69684;
+			angle=107.69683;
 			id=138;
 		};
 		class Item40
@@ -7146,18 +7152,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3445.436,15.412439,3309.001};
+						position[]={2517.4824,45.931656,2765.5999};
 						angles[]={0,5.6726165,0};
 					};
 					side="Civilian";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						init="call{comment ""Disable Damage & Simulation"";   " \n "this enableSimulation false;    " \n "this allowDamage false;   " \n "   " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";   " \n "comment ""Remove existing items"";   " \n "removeAllWeapons this;   " \n "removeAllItems this;   " \n "removeAllAssignedItems this;   " \n "removeUniform this;   " \n "removeVest this;   " \n "removeBackpack this;   " \n "removeHeadgear this;   " \n "removeGoggles this;   " \n "this forceAddUniform ""JD_ShirtB"";  " \n "this setFace ""WhiteHead_04"";  " \n "this setSpeaker ""male01eng"";  " \n "   " \n "comment ""Add Actions (Shop)"";   " \n "this addAction[""Motorcycle Dealership"",life_fnc_vehicleShopMenu,[""civ_motorcycle"",civilian,[""motorcycle_dealer1"",""motorcycle_dealer2""],""civ"",""Motorcycle Dealership""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4'];  " \n "this setVariable[""realname"", ""Motorcycle Dealership""];}";
 					};
 					id=883;
 					type="C_man_1";
-					atlOffset=0.00026988983;
+					atlOffset=52.799625;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7206,7 +7212,7 @@ class Mission
 			{
 			};
 			id=882;
-			atlOffset=0.00026988983;
+			atlOffset=52.799625;
 		};
 		class Item274
 		{
@@ -8584,6 +8590,33 @@ class Mission
 			angle=69.444;
 			id=1050;
 			atlOffset=6.8519993;
+		};
+		class Item326
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5523.1919,23.083979,908.55225};
+				angles[]={0,5.7377148,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1059;
+			type="oilrig_base";
+			atlOffset=42.193298;
+		};
+		class Item327
+		{
+			dataType="Marker";
+			position[]={5523.7554,-0.20166016,906.63043};
+			name="Oil_Rig";
+			text="Oil Rig";
+			type="A3L_Fuel_Icon";
+			colorName="ColorRed";
+			id=1060;
+			atlOffset=38.680382;
 		};
 	};
 	class Connections
