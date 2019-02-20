@@ -11,6 +11,8 @@
 	Triggers are NOT my preferred method so this is considered temporary until a more suitable
 	option is presented.
 */
+
+/*
 private["_appleZones","_peachZones","_heroinZones","_cocaineZones","_weedZones", "_methZones","_MDMAZones","_shank","_HHZones"];
 _appleZones = ["wheat_1","wheat_2","sunflower_1","sunflower_2"];
 _peachZones = ["corn_1","bean_1","cotton_1","olive_1"];
@@ -88,5 +90,4 @@ _HHZones = ["HH_1"];
 	_zone setTriggerActivation["CIV","PRESENT",true];
 	_zone setTriggerStatements["player in thislist","LIFE_Action_Cannabis = player addAction[(localize ""STR_Gather_Cannabis""),life_fnc_gather,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Cannabis;"];
 } foreach _weedZones;
-
-
+*/
