@@ -57,7 +57,7 @@ switch (_filter) do
 		[
 			["JD_Tank",nil,0],
 			["JD_Medic",nil,0],
-			["JD_Vest7",nil,0],
+			["JD_Vest7",nil,0]
 		];
 	};
 	

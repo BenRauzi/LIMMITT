@@ -6,21 +6,8 @@
 Foski_dyeCash = {
 	[] spawn {
 		if (Foski_dirtyCash in (items player) && !(player getVariable ["Foski_dyeCash",false])) then {
-			// Max Load Uniform
-			_maxLoadUniform = 0;
-			if (getContainerMaxLoad uniform player > 0) then {_maxLoadUniform = getContainerMaxLoad uniform player;};
-			// Max Load Vest
-			_maxLoadVest = 0;
-			if (getContainerMaxLoad vest player > 0) then {_maxLoadVest = getContainerMaxLoad vest player;};
-			// Max Load Backpack
-			_maxLoadBackpack = 0;
-			if (getContainerMaxLoad backpack player > 0) then {_maxLoadBackpack = getContainerMaxLoad backpack player;};
-			// Total Max Load
-			_maxLoad = _maxLoadUniform + _maxLoadVest + _maxLoadBackpack;
-
-			//((({_x == Foski_dirtyCash} count (items player)) / _maxLoad) / 3) < 0.3
-
-			if (random 100 > 50) then {
+			_probability = [] call Foski_dyeProbability;
+			if (_probability) then {
 				player setVariable ["Foski_dyeCash",true,true];
 				// Create Smoke Object
 				_smoke = "SmokeShellPurple" createVehicle position player; 
@@ -33,7 +20,7 @@ Foski_dyeCash = {
 					_amnt = {_x == Foski_dirtyCash} count (items player);
 					if (_amnt > 0) then {
 						player removeItems Foski_dirtyCash;
-						for "_i" from 1 to _amnt do {player addItem Foski_dyedCash};
+						for "_i" from 1 to _amnt do {player addItem Foski_dyedDirtyCash};
 					};
 				};
 				waitUntil {isNull _smoke};
