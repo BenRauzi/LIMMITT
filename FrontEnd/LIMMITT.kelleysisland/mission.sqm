@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.08726646;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=137;
+	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1033;
+		nextID=1037;
 	};
 	class MarkerIDProvider
 	{
@@ -188,7 +188,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=321;
+		items=325;
 		class Item0
 		{
 			dataType="Marker";
@@ -8426,6 +8426,53 @@ class Mission
 			angle=1.3449996;
 			id=1032;
 			atlOffset=0.0001077652;
+		};
+		class Item321
+		{
+			dataType="Marker";
+			position[]={2885.6987,15,3123.9009};
+			name="Oil_Field_1";
+			text="Oil Field";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorBlue";
+			a=120;
+			b=120;
+			id=1033;
+		};
+		class Item322
+		{
+			dataType="Marker";
+			position[]={2885.7258,15,3118.5374};
+			name="Oil_1";
+			text="Oil Field";
+			type="A3L_Pickaxe_Icon";
+			colorName="ColorBrown";
+			id=1034;
+		};
+		class Item323
+		{
+			dataType="Marker";
+			position[]={5770.7617,15.025742,4573.8135};
+			name="Oil_Field_2";
+			text="Oil Field";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorBlue";
+			a=120;
+			b=120;
+			id=1035;
+			atlOffset=0.025741577;
+		};
+		class Item324
+		{
+			dataType="Marker";
+			position[]={5771.5576,15,4575.0186};
+			name="Oil_2";
+			text="Oil Field";
+			type="A3L_Pickaxe_Icon";
+			colorName="ColorBrown";
+			id=1036;
 		};
 	};
 	class Connections
