@@ -5,9 +5,11 @@
 
 LIMMITT_clientInit = {
 	
-	// Foski Bank Functions
+	// Foski's Bank Functions
+	Foski_copsNeeded2RobBank = 5; // Number of cops needed online to rob the bank
 	Foski_dirtyCash = "Harris_dirtyCash"; // Classname of the dirty cash physical inventory item
 	Foski_dyedDirtyCash = "Harris_dyedDirtyCash"; // Classname of the dyed dirty cash physical inventory item
+	Foski_startupBankCash = 10; // Total number of times cash can be taken from the bank
 
 	// Foski's Prison Functions
 	Foski_prisonFences = ["Land_Fence1","Land_Fence1_d"]; // Classnames of fences that can be cut | Normal -> Broken
@@ -215,11 +217,12 @@ LIMMITT_clientInit = {
 		missionNamespace setVariable ["firstLogin", nil, true];
 		missionNamespace setVariable ["cellNumbers", [], true];
 		missionNamespace setVariable ["uberDrivers", [], true];
-		missionNamespace setVariable ["bankBuilding",nearestObject [player, "Land_CommonwealthBank"],true];
+		missionNamespace setVariable ["Foski_bankObj",nearestObject [player, "Land_CommonwealthBank"], true];
+		missionNamespace setVariable ["Foski_banksCashObj",nearestObject [player, "A3L_MoneyPile"], true];
 
-		bankBuilding = (nearestObjects [[3606.31,3070.24,3.11581],["Land_CommonwealthBank"],100]) select 0;
-		bankBuilding animate ["Vault_Door",0]; 
-		bankBuilding setVariable ['vaultUnlocked', false, true];
+		Foski_bankObj animate ["Vault_Door",0]; 
+		Foski_bankObj setVariable ['vaultUnlocked', false, true];
+		Foski_banksCashObj setVariable ["Foski_cashLeft", Foski_startupBankCash, true];
 		missionNamespace setVariable ["inRobbery", false, true];
 
 		{

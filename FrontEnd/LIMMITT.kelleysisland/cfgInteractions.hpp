@@ -460,7 +460,7 @@ class cfgInteractions
 	class takeBankCash
 	{
 		condition = "[typeOf Harris_currentCursorObject isEqualTo 'A3L_MoneyPile', player distance Harris_currentCursorObject < 5]";
-		action = "[] spawn Foski_takeCash";
+		action = "[Harris_currentCursorObject] spawn Foski_takeCash;";
 		icon = "050-money.paa";
 		text = "Take Cash";
 	};

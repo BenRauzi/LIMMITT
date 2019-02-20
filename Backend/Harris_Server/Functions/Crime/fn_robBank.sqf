@@ -9,11 +9,9 @@
 HRP_fnc_robBank = {
 	params["_bank"];
 
-	_count = (west countSide playableUnits);
-
-	if (_count < 5) exitWith { ["Error", "There are not enough on-duty law enforcement to commit this crime", "Failure"] spawn Harris_Notifications; };
-	if !("Harris_c4" in (items player)) exitWith { ["Error", "You need a blasting charge!", "Failure"] spawn Harris_Notifications; };
-	if (_bank getVariable "recentlyRobbed") exitWith { ["Error", "A bank robbery has occured recently", "Failure"] spawn Harris_Notifications; };
+	if ((west countSide playableUnits) < Foski_copsNeeded2RobBank) exitWith {["Error", "There are not enough on-duty law enforcement to commit this crime.", "Failure"] spawn Harris_Notifications;};
+	if !("Harris_c4" in (items player)) exitWith {["Error", "You need a blasting charge!", "Failure"] spawn Harris_Notifications;};
+	if (_bank getVariable "recentlyRobbed") exitWith {["Error", "This bank was recently robbed.", "Failure"] spawn Harris_Notifications;};
 		
 	_bank setVariable ["inRobbery", true, true];
 	_pos = getPosAtl player;
