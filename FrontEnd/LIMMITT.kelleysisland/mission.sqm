@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1065;
+		nextID=1067;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1668.6097,20.48852,1089.2216};
-		dir[]={-0.12383942,-0.44727629,-0.88578713};
-		up[]={-0.061930649,0.89439076,-0.44297448};
-		aside[]={-0.99037182,-1.5017577e-008,0.13846096};
+		pos[]={5549.79,12.186923,944.19385};
+		dir[]={-0.12298372,-0.42229578,-0.89808768};
+		up[]={-0.057294808,0.90645725,-0.41839436};
+		aside[]={-0.99076235,1.0433723e-008,0.13567464};
 	};
 };
 binarizationWanted=0;
@@ -44,13 +44,14 @@ addons[]=
 	"A3_Structures_F_EPA_Walls",
 	"JD_Client_Clothing",
 	"DAR_Charger_F",
-	"usec_rig_a"
+	"usec_rig_a",
+	"A3L_CivClothesPack"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -166,6 +167,11 @@ class AddonsMetaData
 			className="usec_rig_a";
 			name="usec_rig_a";
 		};
+		class Item19
+		{
+			className="A3L_CivClothesPack";
+			name="A3L_CivClothesPack";
+		};
 	};
 };
 randomSeed=8413355;
@@ -194,7 +200,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=330;
+		items=331;
 		class Item0
 		{
 			dataType="Marker";
@@ -939,7 +945,7 @@ class Mission
 			};
 			id=271;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.91153145;
+			atlOffset=0.91158676;
 		};
 		class Item65
 		{
@@ -8596,7 +8602,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5523.1919,23.083979,908.55225};
+				position[]={5523.1919,20.756781,908.55225};
 				angles[]={0,5.7377148,0};
 			};
 			side="Empty";
@@ -8605,7 +8611,7 @@ class Mission
 			};
 			id=1059;
 			type="oilrig_base";
-			atlOffset=42.193298;
+			atlOffset=39.866104;
 		};
 		class Item327
 		{
@@ -8682,6 +8688,37 @@ class Mission
 			};
 			id=1063;
 			atlOffset=0.030057907;
+		};
+		class Item330
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5544.8984,-0.67115903,926.75262};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1066;
+					type="A3L_CivShirtAdidas";
+					atlOffset=41.303444;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1065;
+			atlOffset=41.303444;
 		};
 	};
 	class Connections
