@@ -37,7 +37,7 @@ class Life_atm_management {
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = -1;
-			text = "Lakeside Valley Banking"; //--- ToDo: Localize;
+			text = "Douglas County Banking"; //--- ToDo: Localize;
 			x = 0.420674 * safezoneW + safezoneX;
 			y = 0.298756 * safezoneH + safezoneY;
 			w = 0.154248 * safezoneW;

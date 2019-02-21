@@ -20,7 +20,7 @@ HRP_fnc_robBank = {
 		["!!BANK ROBBERY IN PROGRESS!!"] remoteExecCall ["Harris_serverMsg", 0];
 	};
 
-
+	player removeItem "Harris_c4";
 	missionNamespace setVariable ["inRobbery", true, true];
 	[_bank] spawn Harris_checkBank;
 	sleep (Harris_bankRobberyTime * 60);
@@ -39,4 +39,5 @@ HRP_fnc_robBank = {
 	["Success", "You have breached the Vault", "Success"] spawn Harris_Notifications;
 	_bank setVariable ["inRobbery", false, true];
 	_bank setVariable ["vaultUnlocked", true, true];
+	_bank animate ["Vault_Door",1];
 };
