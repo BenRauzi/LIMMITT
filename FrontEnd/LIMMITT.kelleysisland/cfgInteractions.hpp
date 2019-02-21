@@ -459,7 +459,7 @@ class cfgInteractions
 
 	class takeBankCash
 	{
-		condition = "[typeOf Harris_currentCursorObject isEqualTo 'A3L_MoneyPile', player distance Harris_currentCursorObject < 5]";
+		condition = "[Harris_currentCursorObject == Foski_banksCashObj, player distance Harris_currentCursorObject < 5, animationState player != 'AinvPknlMstpSnonWnonDnon_medic_1', isNil 'Foski_takingCash']";
 		action = "[Harris_currentCursorObject] spawn Foski_takeCash;";
 		icon = "050-money.paa";
 		text = "Take Cash";

@@ -30,7 +30,7 @@ Foski_takeCash = {
 	if ((west countSide playableUnits) < Foski_copsNeeded2RobBank) exitWith { // Check if enough cops are online
 		["Error", "There are not enough on-duty law enforcement to steal cash.", "Failure"] spawn Harris_Notifications;
 	};
-	if (animationState player == "AinvPknlMstpSnonWnonDnon_medic_1") exitWith { // Check if the player is currently grabbing any cash
+	if ((animationState player == "AinvPknlMstpSnonWnonDnon_medic_1") || (!isNil "Foski_takingCash")) exitWith { // Check if the player is currently grabbing any cash
 		["Error", "You are already in the process of grabbing cash.", "Failure"] spawn Harris_Notifications;
 	};
 	if ((isNull _cashObj) || (_cashObj != Foski_banksCashObj) || ((_cashObj getVariable ["Foski_cashLeft", 0]) <= 0)) exitWith { // Check if the cash object still exists and still has money
@@ -42,10 +42,12 @@ Foski_takeCash = {
 	["Bank Robbery", "You have started to steal some cash, this may take a few seconds.", "Info"] spawn Harris_Notifications;
 	_cashObj setVariable ["Foski_cashLeft", ((_cashObj getVariable ["Foski_cashLeft", 0]) - 1), true];
 	while {_time > 0} do {
+		Foski_takingCash = true;
 		// Important checks... again
 		if ((!isNil {player getVariable "Harris_unconscious"}) || (player getVariable ["Foski_Surrender",false]) || (player getVariable ["Foski_Restrained",false]) || player distance _cashObj > 5) exitWith { // Check if player is unconscious, surrendering or restrained
 			["Error", "Something has happened which is stopping you from stealing the cash.", "Failure"] spawn Harris_Notifications;
 			_cashObj setVariable ["Foski_cashLeft", ((_cashObj getVariable ["Foski_cashLeft", 0]) + 1), true];
+			Foski_takingCash = nil;
 			player playMoveNow "";
 		};
 
@@ -63,11 +65,14 @@ Foski_takeCash = {
 			if !(player canAdd [Foski_dirtyCash, _cashAmnt]) exitWith {
 				["Error", format["You do not have enough room to take %1 piece(s) of dirty cash.",_cashAmnt], "Failure"] call Harris_Notifications;
 				_cashObj setVariable ["Foski_cashLeft", ((_cashObj getVariable ["Foski_cashLeft", 0]) + 1), true];
+				Foski_takingCash = nil;
+				player playMoveNow "";
 			};
 			for "_i" from 1 to _cashAmnt do {
 				player addItem Foski_dirtyCash;
 			};
 			["Success", format["You have managed to steal %1 peice(s) of dirty cash.",_cashAmnt], "Success"] call Harris_Notifications;
+			Foski_takingCash = nil;
 			player playMoveNow "";
 		};
 		sleep 1;
