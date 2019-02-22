@@ -5,6 +5,9 @@
 
 LIMMITT_clientInit = {
 	
+	// Disable text/voice channels just incase description fails
+	for "_i" from 0 to 5 do {_i enableChannel false;};
+
 	// Foski's Bank Functions
 	Foski_copsNeeded2RobBank = 5; // Number of cops needed online to rob the bank
 	Foski_dirtyCash = "Harris_dirtyCash"; // Classname of the dirty cash physical inventory item
