@@ -11,6 +11,7 @@ Foski_serverRestarter ={
 		["Server Restart","The server command password hasn't been included, please contact an admin.", "Failure"] remoteExecCall ["Harris_Notifications", 0];
 	};
 	if (_restart) then {
+		diag_log "Foski's Server Restarter: The Server restarter function has started.";
 		sleep 300;
 		["Server Restart","This server will automatically restart in precisely 6 hours.", "Info"] remoteExecCall ["Harris_Notifications", 0];
 		waitUntil {serverTime >= 10800}; // Wait until the server has been up for 3 hours
