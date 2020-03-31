@@ -7,7 +7,8 @@ InitDir = "\Harris_Server\Functions\Init\";
 Init_Functions =
 [
   ["fn_serverInit","LIMMITT_ServerInit"],
-  ["fn_clientInit","LIMMITT_clientInit"]
+  ["fn_clientInit","LIMMITT_clientInit"],
+  ["fn_serverRestarter","Foski_serverRestarter"]
 ];
 
 TwitterDir = "\Harris_Server\Functions\Twitter\";

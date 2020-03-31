@@ -12,7 +12,7 @@ Foski_dyeCash = {
 				// Create Smoke Object
 				_smoke = "SmokeShellPurple" createVehicle position player; 
 				_smoke attachTo [player, [0,0,0.3], "pelvis"];
-				_smoke hideObject true; 
+				[_smoke] remoteExec ["hideObjectGlobal", 2]; // Needed to hide object globally
 				// Replace Cash with Dyed Cash
 				sleep 4;
 				while {!isNull _smoke} do {

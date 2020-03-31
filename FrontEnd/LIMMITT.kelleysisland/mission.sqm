@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5549.79,12.186923,944.19385};
-		dir[]={-0.12298372,-0.42229578,-0.89808768};
-		up[]={-0.057294808,0.90645725,-0.41839436};
-		aside[]={-0.99076235,1.0433723e-008,0.13567464};
+		pos[]={3601.73,19.341768,3067.2981};
+		dir[]={-0.6433115,-0.38868323,0.65968633};
+		up[]={-0.27142262,0.9213255,0.27832788};
+		aside[]={0.71597201,-5.0012022e-007,0.69820154};
 	};
 };
 binarizationWanted=0;
@@ -933,19 +933,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1668.339,19.691448,1086.8918};
-				angles[]={6.2780066,0.68251097,0.010294561};
+				position[]={1668.339,19.691858,1086.8921};
+				angles[]={6.2780018,0.68251097,0.010297442};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{ " \n "this enableSimulation false;    " \n "this allowDamage false; this setVariable [""Harris_Shop"",""DirtyCash_Trader"",true];}";
+				init="call{ " \n "this enableSimulation false;    " \n "this allowDamage false; this setVariable [""Harris_Shop"",""DirtyCash_Cleaner"",true];}";
 				name="dirtyMoneySign";
 			};
 			id=271;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.91158676;
+			atlOffset=0.91200066;
 		};
 		class Item65
 		{
@@ -5527,8 +5527,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this allowDamage false; this enableSimulation false; this addAction[""Take money"",Foski_takeCash];}";
-				name="money1_1";
+				init="call{this allowDamage false; this enableSimulation false;}";
 			};
 			id=598;
 			type="A3L_MoneyPile";
@@ -7158,18 +7157,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2517.4824,45.931656,2765.5999};
+						position[]={3445.426,15.420149,3308.8699};
 						angles[]={0,5.6726165,0};
 					};
 					side="Civilian";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="call{comment ""Disable Damage & Simulation"";   " \n "this enableSimulation false;    " \n "this allowDamage false;   " \n "   " \n "comment ""Set NPC's Loadout (Clothing) - NJF"";   " \n "comment ""Remove existing items"";   " \n "removeAllWeapons this;   " \n "removeAllItems this;   " \n "removeAllAssignedItems this;   " \n "removeUniform this;   " \n "removeVest this;   " \n "removeBackpack this;   " \n "removeHeadgear this;   " \n "removeGoggles this;   " \n "this forceAddUniform ""JD_ShirtB"";  " \n "this setFace ""WhiteHead_04"";  " \n "this setSpeaker ""male01eng"";  " \n "   " \n "comment ""Add Actions (Shop)"";   " \n "this addAction[""Motorcycle Dealership"",life_fnc_vehicleShopMenu,[""civ_motorcycle"",civilian,[""motorcycle_dealer1"",""motorcycle_dealer2""],""civ"",""Motorcycle Dealership""],0,FALSE,FALSE,"""",'vehicle player == player && player distance _target < 4'];  " \n "this setVariable[""realname"", ""Motorcycle Dealership""];}";
 					};
 					id=883;
 					type="C_man_1";
-					atlOffset=52.799625;
+					atlOffset=0.0080051422;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7218,7 +7217,7 @@ class Mission
 			{
 			};
 			id=882;
-			atlOffset=52.799625;
+			atlOffset=0.0080051422;
 		};
 		class Item274
 		{
