@@ -3,12 +3,12 @@
 	Description: Open Set Name Menu
 */
 
-Harris_openSetName = {
+NZF_openSetName = {
 	params["_ct"];
 
-	createDialog "Harris_setName";
+	createDialog "NZF_setName";
 	
-	Harris_toSetName = _ct;
-	_currentName = profileNamespace getVariable	[str (getPlayerUID Harris_toSetName), "Unknown"];
+	NZF_toSetName = _ct;
+	_currentName = profileNamespace getVariable	[str (getPlayerUID NZF_toSetName), "Unknown"];
 	ctrlSetText	[1000, format ["Current Name: %1"], _currentName];
 };

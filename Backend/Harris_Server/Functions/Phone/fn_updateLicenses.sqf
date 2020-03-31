@@ -8,19 +8,16 @@ Harris_updateLicenses = {
 	waitUntil {!isNull (findDisplay 5022)};
 
 	_dialog = findDisplay 5022;
-	_licenses = [];
-	_side = str (playerSide);
+	_licenses = []
+
+	_licenseList = player getVariable "licenses";
 	{
-		if((_x select 1) == _side) then
-		{
-			_str = [_x select 0] call life_fnc_varToStr;
-			_val = missionNamespace getVariable (_x select 0);
-			if(_val) then
-			{
-				_licenses pushBack _str;
+			_licenseArray = _x select 1;
+			_licenseCompiled = (call compile _licenseArray) select 0;
+			if (_licenseCompiled in _licenseList) then {
+				_licenses pushBack (_x select 0);
 			};
-		};
-	} foreach life_licenses;
+	} foreach HRP_dmvLicenses;	
 
 	if(str _licenses == "[]") then
 	{
